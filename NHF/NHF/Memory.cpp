@@ -1,6 +1,6 @@
 #include "Memory.h"
 
-std::string Memory::getSizeType_string()const {
+std::string Storage::getSizeType_string()const {
 	switch (notation) {
 	case 0:
 		return "bit";
@@ -25,7 +25,7 @@ std::string Memory::getSizeType_string()const {
 		break;
 	}
 }
-std::string Memory::getNotation()const {
+std::string Storage::getNotation()const {
 	switch (notation) {
 	case 0:
 		return "bit";
@@ -49,13 +49,13 @@ std::string Memory::getNotation()const {
 		break;
 	}
 }
-Memory::Memory(const Memory& m) {
+Storage::Storage(const Storage& m) {
 	(Product)*this = Product(m);
 	this->capacity = m.capacity;
 	this->notation = m.notation;
 }
 RAM::RAM(const RAM& r) {
-	(Memory)*this = Memory(r);
+	(Storage)*this = Storage(r);
 	this->cl = r.cl;
 	this->clockSpeed = r.clockSpeed;
 	this->type = r.type;

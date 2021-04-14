@@ -138,10 +138,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="catalogue.h" />
+    <ClInclude Include="Computer.h" />
     <ClInclude Include="Memory.h" />
+    <ClInclude Include="Motherboard.h" />
+    <ClInclude Include="processor.h" />
     <ClInclude Include="products.h" />
+    <ClInclude Include="Videocard.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="catalogue.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Memory.cpp" />
   </ItemGroup>

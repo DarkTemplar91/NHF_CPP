@@ -21,12 +21,30 @@
     <ClInclude Include="Memory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="processor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Motherboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Videocard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Computer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="catalogue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Memory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="catalogue.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
