@@ -1,0 +1,4 @@
+PRODUCT_OBJ
+{
+name:PlayStation 5;price:500;description:The newest member of the PlayStation family;manufacturer:Sony;
+}

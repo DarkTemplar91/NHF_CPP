@@ -15,10 +15,8 @@ void Catalogue::Add(Product* p) {
 }
 void Catalogue::Remove(Product* p) {
 	Product** temp = new Product * [--size];
-	int idx = -1;
 	for (size_t i = 0; i < size +1; i++) {
 		if (p == list[i]) {
-			idx = i;
 			delete p;
 			Product* t = list[i];
 			list[i] = list[size];

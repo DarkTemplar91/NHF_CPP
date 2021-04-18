@@ -1,0 +1,9 @@
+﻿  catalogue.cpp
+C:\Users\szasz\Desktop\Egyetem\Prog2\HF\NHF\NHF\NHF\catalogue.cpp(21,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  main.cpp
+  Memory.cpp
+  Generating Code...
+C:\Users\szasz\Desktop\Egyetem\Prog2\HF\NHF\NHF\NHF\products.h(36): error C4716: 'Product::operator>>': must return a value
+C:\Users\szasz\Desktop\Egyetem\Prog2\HF\NHF\NHF\NHF\products.h(32): error C4716: 'Product::operator<<': must return a value
+C:\Users\szasz\Desktop\Egyetem\Prog2\HF\NHF\NHF\NHF\products.h(32): error C4716: 'Product::operator<<': must return a value
+C:\Users\szasz\Desktop\Egyetem\Prog2\HF\NHF\NHF\NHF\products.h(36): error C4716: 'Product::operator>>': must return a value
