@@ -6,13 +6,75 @@
 #include "Computer.h"
 #include "catalogue.h"
 #include <fstream>
+#include "gtest_lite.h"
+#include "memtrace.h" 
 
-int main(){
-	Product p1 = Product("PlayStation 5", 500, "Sony", "The newest member of the PlayStation family");
-	std::ofstream savefile;
-	savefile << p1;
-	Product p2;
-	std::ifstream inp;
-	inp >> p2;
+
+int main() {
 	
+	TEST(Product, Read/Write_file) {
+		Product p1 = Product("PlayStation 5", 500, "Sony", "The newest member of the PlayStation family");
+		std::ofstream savefile;
+		savefile << p1;
+		if (savefile.is_open())
+			savefile.close();
+		Product p2;
+		std::ifstream inp;
+		inp >> p2;
+		if (inp.is_open())
+			inp.close();
+		EXPECT_EQ(p1.getName(), p2.getName()) << "Név hibás!";
+		EXPECT_EQ(p1.getDescription(), p2.getDescription()) << "Leírás hibás!";
+		EXPECT_EQ(p1.getManufacturer(), p2.getManufacturer()) << "Gyártó hibás!";
+		EXPECT_EQ(p1.getPrice(), p1.getPrice());
+
+	}END
+	
+	TEST(PROCESSOR_H, READ) {
+		CPU c1 = CPU("Ryzen 5", 300, "6 core powerful gaming processor.", "AMD", "5600X", 120, socket::AMD_AM4, 3700, 6, 12, 3, false);
+		std::ofstream savefile;
+		savefile << c1;
+		std::ifstream inp;
+		CPU c2;
+		inp >> c2;
+		EXPECT_EQ(c1.getName(), c2.getName()) << "Hiba az öröklődésnél!";
+		EXPECT_EQ(c1.getCoreCount(), c2.getCoreCount());
+
+	}END
+
+	RAM r1, r2;
+	Motherboard m1,m2;
+	GPU g1,g2;
+	//Tests multiple inheritance and file I/O funcs
+		TEST(CLASSES, cons) {
+		r1 = RAM("HyperX Fury 2x8GB", 100, "HyperX RAM", "Kingston", 16, ByteUnit::gigabyte, MemoryType::DDR4, 3200, 14, 1.2);
+		m1 = Motherboard("MSI B550 Tomahawk", 120,"MSI","B550 motherboard from MSI","B550",socket::AMD_AM4,64, 4000, 6, 4, 3);
+		g1 = GPU("EVGA RTX2060 KO", 300, "EVGA", "Gaming GPU", 1, 1, 2400, 7000, 6, 300);
+		std::ofstream savefile;
+		std::ifstream inp;
+		savefile << r1;
+		RAM r2;
+		inp >> r2;
+		EXPECT_EQ(r1.getlatency(), r2.getlatency());
+		Motherboard m2;
+		savefile << m1;
+		inp >> m2;
+		EXPECT_EQ(m1.getPorts(), m2.getPorts());
+		GPU g2;
+		savefile << g1;
+		inp >> g2;
+		EXPECT_EQ(g1.getHDMIports() , g2.getHDMIports());
+	}END
+
+	TEST(CATALOGUE_H, create) {
+		Catalogue c = Catalogue();
+		c.Add(r1.clone());
+		c.Add(r2.clone());
+		c.Add(g2.clone());
+		EXPECT_ANY_THROW(c[5]) <<"Hibát várt!";
+		EXPECT_EQ(c.getSize(), 3);
+		c.Remove(g2.clone());
+		EXPECT_EQ(c.getSize(), 2);
+		
+	}END
 }

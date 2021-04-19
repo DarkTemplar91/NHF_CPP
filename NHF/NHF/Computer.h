@@ -8,6 +8,7 @@
 #include "Memory.h"
 #include "Videocard.h"
 #include "Motherboard.h"
+#include "memtrace.h"
 
 
 class PC :public Product {
@@ -20,6 +21,14 @@ class PC :public Product {
 	RAM ramslots[4];
 public:
 	PC();
+	PC(const PC& pc);
+	std::string getObjType() {
+		return "PC_OBJ";
+	}
+	PC* clone() {
+		PC* newpc = new PC(*this);
+		return newpc;
+	}
 
 };
 

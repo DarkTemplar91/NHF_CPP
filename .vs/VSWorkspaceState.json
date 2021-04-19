@@ -2,10 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\NHF",
-    "\\NHF\\Debug",
     "\\NHF\\NHF",
-    "\\NHF\\x64\\Debug"
+    "\\NHF\\NHF\\Header",
+    "\\NHF\\NHF\\Source"
   ],
-  "SelectedNode": "\\NHF\\NHF\\main.cpp",
+  "SelectedNode": "\\NHF\\NHF\\Source\\main.cpp",
   "PreviewInSolutionExplorer": false
 }

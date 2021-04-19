@@ -97,7 +97,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitios);MEMTRACE</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -140,7 +140,9 @@
   <ItemGroup>
     <ClInclude Include="catalogue.h" />
     <ClInclude Include="Computer.h" />
+    <ClInclude Include="gtest_lite.h" />
     <ClInclude Include="Memory.h" />
+    <ClInclude Include="memtrace.h" />
     <ClInclude Include="Motherboard.h" />
     <ClInclude Include="processor.h" />
     <ClInclude Include="products.h" />
@@ -148,8 +150,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="catalogue.cpp" />
+    <ClCompile Include="Computer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Memory.cpp" />
+    <ClCompile Include="memtrace.cpp" />
+    <ClCompile Include="Motherboard.cpp" />
+    <ClCompile Include="processor.cpp" />
+    <ClCompile Include="Videocard.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="savefile.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
