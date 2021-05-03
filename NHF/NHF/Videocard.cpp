@@ -4,10 +4,31 @@
 #include <fstream>
 #include "memtrace.h"
 
+
+GPU::GPU(unsigned int portHDMI, unsigned int portDisplay,
+	unsigned int gpuClock, unsigned int memoryClock, unsigned int vram, unsigned int tdp) : Product(),
+	portHDMI(portHDMI), portDisplay(portDisplay), gpuClock(gpuClock), memoryClock(memoryClock), vram(vram), tdp(tdp) {}
+GPU::GPU(std::string name, double price, std::string manuf, std::string descript, unsigned int portHDMI, unsigned int portDisplay,
+	unsigned int gpuClock, unsigned int memoryClock, unsigned int vram, unsigned int tdp) :
+	Product(name, price, manuf, descript),
+	portHDMI(portHDMI), portDisplay(portDisplay), gpuClock(gpuClock), memoryClock(memoryClock), vram(vram), tdp(tdp) {}
+
+unsigned int GPU::getHDMIports() { return portHDMI; }
+unsigned int GPU::getDisplayports() { return portDisplay; }
+unsigned int GPU::getGPUclock() { return gpuClock; }
+unsigned int GPU::getMemClock() { return memoryClock; }
+unsigned int GPU::getVRAM() { return vram; }
+unsigned int GPU::getTDP() { return tdp; }
+
+
+std::string GPU::getObjType() {
+	return "GPU_OBJ";
+}
+
 std::string GPU::serializeObj() {
 	std::ostringstream sStream;
 	sStream << "\t" << this->Product::serializeObj();
-	sStream << "\n\tGPU_SPECIF\n\t{\n\t" << "\hdmi:" << portHDMI << ";display:" << portDisplay << 
+	sStream << "\n\tGPU_SPECIF\n\t{\n\t" << "hdmi:" << portHDMI << ";display:" << portDisplay << 
 		";gpuClock:"<<gpuClock<<";memoryClock:"<<memoryClock<<";vram:"<<vram<<";tdp:"<<tdp
 		<<";\n\t}";
 	return sStream.str();

@@ -18,22 +18,17 @@ class Motherboard :public Product {
 	int pcie;
 public:
 	Motherboard() {}
-	Motherboard(std::string chip, socket s, int maxRam = 64, int maxFreq = 2666, int usbPorts = 2, int sata = 1, int pcie = 1) :Product(),
-		chipset(chip), socketType(s), maxRAM(maxRam), maxRFreq(maxFreq), usbPorts(usbPorts), sata(sata), pcie(pcie) {}
+	Motherboard(std::string chip, socket s, int maxRam = 64, int maxFreq = 2666, int usbPorts = 2, int sata = 1, int pcie = 1);
 	Motherboard(std::string name, double price, std::string manuf, std::string descript,
-		std::string chip, socket s, int maxRam = 64, int maxFreq = 2666, int usbPorts = 2, int sata = 1, int pcie = 1)
-		:Product(name, price, manuf, descript),
-		chipset(chip), socketType(s), maxRAM(maxRam), maxRFreq(maxFreq), usbPorts(usbPorts), sata(sata), pcie(pcie) {}
+		std::string chip, socket s, int maxRam = 64, int maxFreq = 2666, int usbPorts = 2, int sata = 1, int pcie = 1);
 	Motherboard(const Motherboard& m);
-	std::string getChip() { return chipset; }
-	socket getSocket() { return socketType; }
-	int getRAM() { return maxRAM; }
-	int getPorts() { return usbPorts; }
-	int getSata() { return sata; }
-	int getPCIE() { return pcie; }
-	std::string getObjType() {
-		return "MB_OBJ";
-	}
+	std::string getChip();
+	socket getSocket();
+	int getRAM();
+	int getPorts();
+	int getSata();
+	int getPCIE();
+	std::string getObjType();
 	std::string serializeObj();
 	Motherboard* clone();
 };

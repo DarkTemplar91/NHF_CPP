@@ -4,6 +4,23 @@
 #include "processor.h"
 #include "memtrace.h"
 
+
+Motherboard::Motherboard(std::string chip, socket s, int maxRam, int maxFreq, int usbPorts, int sata, int pcie) :Product(),
+chipset(chip), socketType(s), maxRAM(maxRam), maxRFreq(maxFreq), usbPorts(usbPorts), sata(sata), pcie(pcie) {}
+Motherboard::Motherboard(std::string name, double price, std::string manuf, std::string descript,
+	std::string chip, socket s, int maxRam, int maxFreq, int usbPorts, int sata, int pcie)
+	:Product(name, price, manuf, descript),
+	chipset(chip), socketType(s), maxRAM(maxRam), maxRFreq(maxFreq), usbPorts(usbPorts), sata(sata), pcie(pcie) {}
+std::string Motherboard::getChip() { return chipset; }
+socket Motherboard::getSocket() { return socketType; }
+int Motherboard::getRAM() { return maxRAM; }
+int Motherboard::getPorts() { return usbPorts; }
+int Motherboard::getSata() { return sata; }
+int Motherboard::getPCIE() { return pcie; }
+std::string Motherboard::getObjType() {
+	return "MB_OBJ";
+}
+
 std::string Motherboard::serializeObj() {
 	std::ostringstream sStream;
 	sStream << "\t" << this->Product::serializeObj();

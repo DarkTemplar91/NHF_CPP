@@ -21,24 +21,20 @@ class CPU : public Product {
 	bool iVGA = false;
 public:
 	CPU() {}
-	CPU(std::string name, int tdp, socket type, unsigned int clock, unsigned int core, unsigned int thread,double c,bool vga) :Product(), genName(name), tdp(tdp),
-		socketType(type), baseClock(clock), coreCount(core), threadCount(thread),L2_cache(c),iVGA(vga) {}
-	CPU(std::string pName, double price,std::string manuf, std::string descript , std::string name, int tdp,
-		socket type, unsigned int clock, unsigned int core, unsigned int thread,double c,bool vga)
-		:Product(pName,price,manuf,descript), 
-		genName(name), tdp(tdp),
-		socketType(type), baseClock(clock), coreCount(core), threadCount(thread),L2_cache(c),iVGA(vga) {}
+	CPU(std::string name, int tdp, socket type, unsigned int clock, unsigned int core, unsigned int thread, double c, bool vga);
+	CPU(std::string pName, double price, std::string manuf, std::string descript, std::string name, int tdp,
+		socket type, unsigned int clock, unsigned int core, unsigned int thread, double c, bool vga);
 	CPU(const CPU& c);
 
-	std::string getGenName() { return genName; }
-	int getTDP() { return tdp; }
-	socket getSocketType() { return socketType; }
+	std::string getGenName();
+	int getTDP();
+	socket getSocketType();
 	std::string getStringSocket();
-	unsigned int getBaseClock() { return baseClock; }
-	unsigned int getCoreCount() { return coreCount; }
-	unsigned int getThreadCount() { return threadCount; }
-	double getCacheSize() { return L2_cache; }
-	bool ivga() { return iVGA; }
+	unsigned int getBaseClock();
+	unsigned int getCoreCount();
+	unsigned int getThreadCount();
+	double getCacheSize();
+	bool ivga();
 	
 	CPU* clone();
 	std::string getObjType();

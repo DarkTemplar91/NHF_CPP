@@ -33,61 +33,36 @@ class Product {
 	std::string dscrpt;
 	std::string manufacturer;
 public:
-	Product(const Product& p) :name(p.name), price(p.price), dscrpt(p.dscrpt), manufacturer(p.manufacturer) {};
-	Product(std::string name, double price, std::string manuf, std::string descript = "There is no description for this item!") :name(name), price(price), dscrpt(descript), manufacturer(manuf) {}
-	Product() : name("Unnamed Product"), price(0), dscrpt("There is no description for this item!") {}
+	Product(const Product& p);
+	Product(std::string name, double price, std::string manuf, std::string descript = "There is no description for this item!");
+	Product();
 
-	std::string getManufacturer() const { return manufacturer; }
-	std::string getName() const { return name; }
-	std::string getDescription() const { return dscrpt; }
-	double getPrice() const { return price; }
+	std::string getManufacturer() const;
+	std::string getName() const;
+	std::string getDescription() const;
+	double getPrice() const;
 
-	void setName(std::string s) { name = s; }
-	void setDescription(std::string s) { dscrpt = s; }
-	void setManuf(std::string s) { manufacturer = s; }
-	void setPrice(double p) { price = p; }
+	void setName(std::string s);
+	void setDescription(std::string s);
+	void setManuf(std::string s);
+	void setPrice(double p);
 	///Prints out basic data of a product
-	virtual void print() {
-		std::cout << "Product Name: " << name << "\tPrice: " << price <<
-			"\nDescription:" << std::endl << "\t" << dscrpt;
-	}
-	virtual std::string serializeObj() const{
-		std::ostringstream sStream;
-		sStream <<"name:" <<name << ";price:" << price << ";description:" << dscrpt << ";manufacturer:" << manufacturer<<";";
-		return sStream.str();
-	}
+	virtual void print();
+	virtual std::string serializeObj()const;
 	
-	virtual Product* clone() {
-		Product* p = new Product(*this);
-		return p;
-	}
-	virtual std::string getObjType() const{
-		return "PRODUCT_OBJ";
-	}
+	virtual Product* clone();
+	virtual std::string getObjType() const;
 
+	virtual bool operator==(Product& rhs);
+	virtual bool operator!=(Product& rhs);
+
+	virtual ~Product() {}
 
 };
 
 
  ///Overloads the >> to save the object to file
- inline std::ifstream& operator>>(std::ifstream& savefile, Product& rhs) {
-	 if (!savefile.is_open())
-	 {
-		 savefile.open("savefile.txt");
-	 }
-	 std::string name; double price; std::string desc; std::string manuf;
-	 std::string temp;
-	 std::getline(savefile, temp, ':');
-	 std::getline(savefile,name ,';');
-	 std::getline(savefile, temp, ':');
-	 savefile >> price;
-	 std::getline(savefile, temp, ':');
-	 std::getline(savefile, desc, ';');
-	 std::getline(savefile, temp, ':');
-	 std::getline(savefile, manuf, ';');
-	 rhs = Product(name,price, manuf, desc);
-	 return savefile;
- }
+std::ifstream& operator>>(std::ifstream& savefile, Product& rhs);
 
  
  

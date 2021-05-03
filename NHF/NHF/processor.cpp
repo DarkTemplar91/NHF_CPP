@@ -12,7 +12,22 @@ std::string CPU::serializeObj(){
 		";core:" << coreCount << ";threads:" << threadCount << ";cache:" << L2_cache << ";ivga:" << iVGA << ";\n\t}";
 	return sStream.str();
 }
+CPU::CPU(std::string name, int tdp, socket type, unsigned int clock, unsigned int core, unsigned int thread, double c, bool vga) :Product(), genName(name), tdp(tdp),
+socketType(type), baseClock(clock), coreCount(core), threadCount(thread), L2_cache(c), iVGA(vga) {}
+CPU::CPU(std::string pName, double price, std::string manuf, std::string descript, std::string name, int tdp,
+	socket type, unsigned int clock, unsigned int core, unsigned int thread, double c, bool vga)
+	:Product(pName, price, manuf, descript),
+	genName(name), tdp(tdp),
+	socketType(type), baseClock(clock), coreCount(core), threadCount(thread), L2_cache(c), iVGA(vga) {}
 
+std::string CPU::getGenName() { return genName; }
+int CPU::getTDP() { return tdp; }
+socket CPU::getSocketType() { return socketType; }
+unsigned int CPU::getBaseClock() { return baseClock; }
+unsigned int CPU::getCoreCount() { return coreCount; }
+unsigned int CPU::getThreadCount() { return threadCount; }
+double CPU::getCacheSize() { return L2_cache; }
+bool CPU::ivga() { return iVGA; }
 
 
 std::ifstream& operator>>(std::ifstream& is, socket& s) {

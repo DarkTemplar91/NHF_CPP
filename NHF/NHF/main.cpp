@@ -72,9 +72,40 @@ int main() {
 		c.Add(r2.clone());
 		c.Add(g2.clone());
 		EXPECT_ANY_THROW(c[5]) <<"Hibát várt!";
-		EXPECT_EQ(c.getSize(), 3);
+		EXPECT_EQ(c.getSize(), (size_t)3);
 		c.Remove(g2.clone());
-		EXPECT_EQ(c.getSize(), 2);
+		EXPECT_EQ(c.getSize(), (size_t)2);
 		
+	}END
+
+	TEST(CATALOGUE_H, .search) {
+		Catalogue c = Catalogue();
+		c.Add(new GPU("ASUS Strix RTX 3090 OC", 1200, "ASUS", "Extremely powerful gaming GPU", 2, 2, 23, 42421, 45123, 300));
+		c.Add(Product("RTX GPU Bracket", 100, "").clone());
+		GPU g = GPU("Asus GTX 1650ti", 150, "Asus", "labla", 2, 3, 4532, 654, 6, 8);
+		c.Add(g.clone());
+		Product** s1 = c.Search("Asus");
+		Product** s2 = c.Search("RTX");
+		EXPECT_EQ(s1[0]->getName(), c[0]->getName());
+		EXPECT_EQ(s2[1]->getName(), c[1]->getName());
+		delete[] s1;
+		delete[] s2;
+
+	}END
+	TEST(CATALOGUE_H, Iterators) {
+		Catalogue c = Catalogue();
+		int sum = 0;
+		srand(0);
+		for (size_t i = 0; i < 30; i++) {
+			std::string s = "Product" + std::to_string(i);
+			int price = rand() % 980 + 20;
+			c.Add(new Product(s,price,"-"));
+			sum += price;
+		}
+		int fs = 0;
+		for (auto x : c) {
+			fs += (int)x.getPrice();
+		}
+		EXPECT_EQ(sum, fs);
 	}END
 }

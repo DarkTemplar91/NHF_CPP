@@ -156,6 +156,7 @@
     <ClCompile Include="memtrace.cpp" />
     <ClCompile Include="Motherboard.cpp" />
     <ClCompile Include="processor.cpp" />
+    <ClCompile Include="products.cpp" />
     <ClCompile Include="Videocard.cpp" />
   </ItemGroup>
   <ItemGroup>

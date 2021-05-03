@@ -1,2 +1,5 @@
-﻿  main.cpp
+﻿  catalogue.cpp
+  main.cpp
+  Generating Code...
+C:\Users\szasz\Desktop\Egyetem\Prog2\HF\NHF\NHF\NHF\catalogue.cpp(137): warning C4172: returning address of local variable or temporary: tmp
   NHF.vcxproj -> C:\Users\szasz\Desktop\Egyetem\Prog2\HF\NHF\NHF\x64\Debug\NHF.exe

@@ -13,18 +13,17 @@ class Storage : public Product {
 	ByteUnit notation;
 public:
 	Storage(const Storage& m);
-	Storage(size_t c=1, ByteUnit bu=ByteUnit::gigabyte) :capacity(c), notation(bu) {}
-	Storage(std::string name, double price, std::string descript, std::string manuf, size_t c, ByteUnit bu) :Product(name, price, manuf, descript),
-		capacity(c),notation(bu) {}
-	size_t getCapacity()const { return capacity; }
-	ByteUnit getSizeType()const { return notation; }
+	Storage(size_t c = 1, ByteUnit bu = ByteUnit::gigabyte);
+	Storage(std::string name, double price, std::string descript, std::string manuf, size_t c, ByteUnit bu);
+	size_t getCapacity()const;
+	ByteUnit getSizeType()const;
 	std::string getSizeType_string()const;
 	std::string getNotation()const;
 	std::string serializeObj();
 
-	virtual std::string getObjType() {
-		return "STORAGE_OBJ";
-	}
+	virtual bool operator==(Storage& rhs);
+	virtual bool operator!=(Storage& rhs);
+	virtual std::string getObjType();
 	virtual Storage* clone();
 	
 
@@ -38,37 +37,35 @@ class RAM : public Storage {
 public:
 	RAM() {}
 	RAM(const RAM& r);
-	RAM(MemoryType type, int clockSpeed, int cl, double v) :type(type), clockSpeed(clockSpeed), cl(cl), v(v) {}
-	RAM(size_t c, ByteUnit bu, MemoryType type, int clockSpeed, int cl, double v) :Storage(c,bu),type(type), clockSpeed(clockSpeed), cl(cl), v(v) {}
-	RAM(std::string name, double price, std::string descript, std::string manuf, size_t c, ByteUnit bu, MemoryType type, int clockSpeed, int cl, double v)
-		:Storage(name, price, descript, manuf, c, bu), type(type), clockSpeed(clockSpeed), cl(cl), v(v) {}
-	MemoryType getMemType() { return type; }
-	int getClockSpeed() { return clockSpeed; }
-	int getlatency() { return cl; }
-	double getVoltage() { return v; }
-	std::string getObjType() {
-		return "RAM_OBJ";
-	}
-
+	RAM(MemoryType type, int clockSpeed, int cl, double v);
+	RAM(size_t c, ByteUnit bu, MemoryType type, int clockSpeed, int cl, double v);
+	RAM(std::string name, double price, std::string descript, std::string manuf, size_t c, ByteUnit bu, MemoryType type, int clockSpeed, int cl, double v);
+	MemoryType getMemType();
+	int getClockSpeed();
+	int getlatency();
+	double getVoltage();
+	std::string getObjType();
 	std::string serializeObj();
 	RAM* clone();
+
+	bool operator!=(RAM& rhs);
+	bool operator==(RAM& rhs);
 };
 
 class HDD :public Storage {
 	unsigned int rpm;
 public:
 	HDD() {}
-	HDD(unsigned int rpm) :Storage(),rpm(rpm) {}
-	HDD(std::string name, double price, std::string dscrpt, std::string manufacturer,size_t c=1, ByteUnit bu=gigabyte,
-		unsigned int rpm=7200) :
-		Storage(name, price, dscrpt, manufacturer,c,bu), rpm(rpm) {}
+	HDD(unsigned int rpm);
+	HDD(std::string name, double price, std::string dscrpt, std::string manufacturer, size_t c = 1, ByteUnit bu = gigabyte,
+		unsigned int rpm = 7200);
 	HDD(const HDD& hdd);
-	unsigned int getRPM() { return rpm; }
-	std::string getObjType() {
-		return "HDD_OBJ";
-	}
+	unsigned int getRPM();
+	std::string getObjType();
 	std::string serializeObj();
 	HDD* clone();
+	bool operator==(HDD& rhs);
+	bool operator!=(HDD& rhs);
 
 };
 class SSD : public Storage {
@@ -76,18 +73,17 @@ class SSD : public Storage {
 	unsigned int rSpeed;
 public:
 	SSD() {}
-	SSD(unsigned int wSpeed, unsigned int rSpeed) :Storage(), wSpeed(wSpeed), rSpeed(rSpeed) {}
+	SSD(unsigned int wSpeed, unsigned int rSpeed);
 	SSD(std::string name, double price, std::string dscrpt, std::string manufacturer, size_t c = 1,
-		ByteUnit bu = gigabyte, unsigned int wSpeed = 0, unsigned int rSpeed = 0) :Storage(name, price, dscrpt, manufacturer, c, bu),
-		wSpeed(wSpeed), rSpeed(rSpeed) {}
+		ByteUnit bu = gigabyte, unsigned int wSpeed = 0, unsigned int rSpeed = 0);
 	SSD(const SSD& ssd);
-	unsigned int getReadSpeed() { return rSpeed; }
-	unsigned int getWriteSpeed() { return wSpeed; }
-	std::string getObjType() {
-		return "SSD_OBJ";
-	}
+	unsigned int getReadSpeed();
+	unsigned int getWriteSpeed();
+	std::string getObjType();
 	std::string serializeObj();
 	SSD* clone();
+	bool operator==(SSD& rhs);
+	bool operator!=(SSD& rhs);
 };
 
 std::ifstream& operator>>(std::ifstream& savefile, Storage& rhs);
