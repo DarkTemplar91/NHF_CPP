@@ -10,7 +10,8 @@
 /// <summary>
 /// Enumerator for the object types
 /// </summary>
-enum class obj_t{Product,Storage, RAM, HDD, SSD,MB,CPU,GPU,PC};
+enum class obj_t{Product,Storage, RAM, HDD, SSD,MB,CPU,GPU,PC, NONE};
+std::ifstream& operator>>(std::ifstream& s,obj_t rhs);
 
 //Template for writing the serialized object to file
 
@@ -62,8 +63,7 @@ public:
 	double getPrice() const;				///Price getter
 	size_t getAmount()const;				///Returns tha available stock
 	obj_t getObj_t()const;					///Returns the obj_t enum type
-	//Redundant. TODO: Replace with getObj_t
-	virtual std::string getObjType() const;	///Returns a string with the object type for serialization
+	std::string getObjType() const;	///Returns a string with the object type for serialization
 
 	void setName(std::string s);			///Change name
 	void setDescription(std::string s);     ///Change description

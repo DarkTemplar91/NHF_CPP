@@ -1,9 +1,7 @@
 #include "Computer.h"
 #include "memtrace.h"
 
-std::string PC::getObjType() {
-	return "PC_OBJ";
-}
+PC::PC(){}
 PC::PC(const PC& pc) :Product(pc) {
 	this->board = pc.board;
 	this->cpu = pc.cpu;

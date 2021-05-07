@@ -126,20 +126,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="24" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.cpp" bodystart="7" bodyend="16"/>
-      </memberdef>
-      <memberdef kind="function" id="class_p_c_1a78b1592a015aa0213ad5ee441daa4dc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string PC::getObjType</definition>
-        <argsstring>()</argsstring>
-        <name>getObjType</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="25" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.cpp" bodystart="4" bodyend="6"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="24" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.cpp" bodystart="5" bodyend="14"/>
       </memberdef>
       <memberdef kind="function" id="class_p_c_1aa4f5779cf5f9a4ec7806da64a09b8cb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_p_c" kindref="compound">PC</ref> *</type>
@@ -153,7 +140,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="26" column="4" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.cpp" bodystart="17" bodyend="20"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="25" column="4" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.cpp" bodystart="15" bodyend="18"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -233,7 +220,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="14" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" bodystart="14" bodyend="28"/>
+    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="14" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" bodystart="14" bodyend="27"/>
     <listofallmembers>
       <member refid="class_p_c_1a1af1f6ded64f3db1242ed1f472521466" prot="private" virt="non-virtual"><scope>PC</scope><name>board</name></member>
       <member refid="class_p_c_1aa4f5779cf5f9a4ec7806da64a09b8cb3" prot="public" virt="virtual"><scope>PC</scope><name>clone</name></member>
@@ -245,8 +232,7 @@
       <member refid="class_product_1a2f5aeb9d25fcbbcf0f6125351850d4ff" prot="public" virt="non-virtual"><scope>PC</scope><name>getManufacturer</name></member>
       <member refid="class_product_1a9cbd896ca6b2d95088be8ad8c3b11e3b" prot="public" virt="non-virtual"><scope>PC</scope><name>getName</name></member>
       <member refid="class_product_1a0dc7c2163bf9c07e6283c2cbcaef58d3" prot="public" virt="non-virtual"><scope>PC</scope><name>getObj_t</name></member>
-      <member refid="class_p_c_1a78b1592a015aa0213ad5ee441daa4dc5" prot="public" virt="non-virtual"><scope>PC</scope><name>getObjType</name></member>
-      <member refid="class_product_1a60e8ab009f51c39442257e96409144de" prot="public" virt="virtual" ambiguityscope="Product::"><scope>PC</scope><name>getObjType</name></member>
+      <member refid="class_product_1a60e8ab009f51c39442257e96409144de" prot="public" virt="non-virtual"><scope>PC</scope><name>getObjType</name></member>
       <member refid="class_product_1a3be25f647260d61df6063ef706261c7f" prot="public" virt="non-virtual"><scope>PC</scope><name>getPrice</name></member>
       <member refid="class_p_c_1a6494081edf14e9c83ee0efa460e5e291" prot="private" virt="non-virtual"><scope>PC</scope><name>gpu</name></member>
       <member refid="class_product_1ae216152e43f64a82294c2c583396d13f" prot="public" virt="non-virtual"><scope>PC</scope><name>increaseStock</name></member>

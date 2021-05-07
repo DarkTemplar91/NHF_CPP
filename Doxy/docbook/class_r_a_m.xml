@@ -3,6 +3,11 @@
 <title>RAM Class Reference</title>
 <indexterm><primary>RAM</primary></indexterm>
 <para>
+
+<para>Class for modelling Random Access Memory Inheriting from storage </para>
+ 
+</para>
+<para>
 <computeroutput>#include &lt;Memory.h&gt;</computeroutput>
 </para>
 Inheritance diagram for RAM:<para>
@@ -27,6 +32,8 @@ Collaboration diagram for RAM:<para>
     <title>Public Member Functions    </title>
         <itemizedlist>
             <listitem><para><link linkend="_class_r_a_m_1a25289e9f70eb7de231f869a6032f179b">RAM</link> ()</para>
+
+<para>Voltage;. </para>
 </listitem>
             <listitem><para><link linkend="_class_r_a_m_1a89d0c46c92bdedb13e1381c5bd238734">RAM</link> (const <link linkend="_class_r_a_m">RAM</link> &amp;r)</para>
 </listitem>
@@ -39,14 +46,20 @@ Collaboration diagram for RAM:<para>
             <listitem><para><link linkend="__memory_8h_1a462bfa9dfea81692463ecb192183dd01">MemoryType</link> <link linkend="_class_r_a_m_1ae6dcb0ce5ed7f072b803ed005f22e6ec">getMemType</link> ()</para>
 </listitem>
             <listitem><para>int <link linkend="_class_r_a_m_1ad7b791e374a00c8462a64beead0bea95">getClockSpeed</link> ()</para>
+
+<para>Returns memory type. </para>
 </listitem>
             <listitem><para>int <link linkend="_class_r_a_m_1a18b3b49c6522e5ab2b3a403860211d20">getlatency</link> ()</para>
+
+<para>Returns clockspeed of <link linkend="_class_r_a_m">RAM</link>. </para>
 </listitem>
             <listitem><para>double <link linkend="_class_r_a_m_1af2b254d13a98ff26768081de811805b9">getVoltage</link> ()</para>
-</listitem>
-            <listitem><para>std::string <link linkend="_class_r_a_m_1acacd036409fa0e75f9d28700cbbdf47d">getObjType</link> ()</para>
+
+<para>Returns latency. </para>
 </listitem>
             <listitem><para>std::string <link linkend="_class_r_a_m_1ae69fec37d54b641062ed6a2ffd88a184">serializeObj</link> ()</para>
+
+<para>Returns stock voltage. </para>
 </listitem>
             <listitem><para><link linkend="_class_r_a_m">RAM</link> * <link linkend="_class_r_a_m_1a2dbd94dada94130817a298b91023e4c9">clone</link> ()</para>
 </listitem>
@@ -62,10 +75,16 @@ Collaboration diagram for RAM:<para>
             <listitem><para><link linkend="__memory_8h_1a462bfa9dfea81692463ecb192183dd01">MemoryType</link> <link linkend="_class_r_a_m_1af6a1d40b000e6f7b61fd596c0ecb8618">type</link></para>
 </listitem>
             <listitem><para>int <link linkend="_class_r_a_m_1a06c470d0b80cded09950fa3be4788dc8">clockSpeed</link></para>
+
+<para>Memory type. </para>
 </listitem>
             <listitem><para>int <link linkend="_class_r_a_m_1ac703baaed79a25ed1467f55d3a24ae10">cl</link></para>
+
+<para>Clockspeed of <link linkend="_class_r_a_m">RAM</link> in Mhz. </para>
 </listitem>
             <listitem><para>double <link linkend="_class_r_a_m_1a63f119dea231b01f176e14af27e3223f">v</link></para>
+
+<para>Cas Latency. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -73,12 +92,23 @@ Collaboration diagram for RAM:<para>
     <title>Additional Inherited Members    </title>
 </simplesect>
 <section>
+<title>Detailed Description</title>
+
+<para>Class for modelling Random Access Memory Inheriting from storage </para>
+
+
+</section>
+<section>
 <title>Constructor &amp; Destructor Documentation</title>
 <anchor xml:id="_class_r_a_m_1a25289e9f70eb7de231f869a6032f179b"/>    <section>
     <title>RAM()<computeroutput>[1/5]</computeroutput></title>
 <indexterm><primary>RAM</primary><secondary>RAM</secondary></indexterm>
 <indexterm><primary>RAM</primary><secondary>RAM</secondary></indexterm>
-<para><computeroutput>RAM::RAM ( )<computeroutput>[inline]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_r_a_m_1a89d0c46c92bdedb13e1381c5bd238734"/>    <section>
+<para><computeroutput>RAM::RAM ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Voltage;. </para>
+</para>
+    </section><anchor xml:id="_class_r_a_m_1a89d0c46c92bdedb13e1381c5bd238734"/>    <section>
     <title>RAM()<computeroutput>[2/5]</computeroutput></title>
 <indexterm><primary>RAM</primary><secondary>RAM</secondary></indexterm>
 <indexterm><primary>RAM</primary><secondary>RAM</secondary></indexterm>
@@ -108,25 +138,31 @@ Reimplemented from <link linkend="_class_storage_1af7f626e3a0bc9d46c59ef7dd8f57c
     <title>getClockSpeed()</title>
 <indexterm><primary>getClockSpeed</primary><secondary>RAM</secondary></indexterm>
 <indexterm><primary>RAM</primary><secondary>getClockSpeed</secondary></indexterm>
-<para><computeroutput>int RAM::getClockSpeed ( )</computeroutput></para>    </section><anchor xml:id="_class_r_a_m_1a18b3b49c6522e5ab2b3a403860211d20"/>    <section>
+<para><computeroutput>int RAM::getClockSpeed ( )</computeroutput></para><para>
+
+<para>Returns memory type. </para>
+</para>
+    </section><anchor xml:id="_class_r_a_m_1a18b3b49c6522e5ab2b3a403860211d20"/>    <section>
     <title>getlatency()</title>
 <indexterm><primary>getlatency</primary><secondary>RAM</secondary></indexterm>
 <indexterm><primary>RAM</primary><secondary>getlatency</secondary></indexterm>
-<para><computeroutput>int RAM::getlatency ( )</computeroutput></para>    </section><anchor xml:id="_class_r_a_m_1ae6dcb0ce5ed7f072b803ed005f22e6ec"/>    <section>
+<para><computeroutput>int RAM::getlatency ( )</computeroutput></para><para>
+
+<para>Returns clockspeed of <link linkend="_class_r_a_m">RAM</link>. </para>
+</para>
+    </section><anchor xml:id="_class_r_a_m_1ae6dcb0ce5ed7f072b803ed005f22e6ec"/>    <section>
     <title>getMemType()</title>
 <indexterm><primary>getMemType</primary><secondary>RAM</secondary></indexterm>
 <indexterm><primary>RAM</primary><secondary>getMemType</secondary></indexterm>
-<para><computeroutput><link linkend="__memory_8h_1a462bfa9dfea81692463ecb192183dd01">MemoryType</link> RAM::getMemType ( )</computeroutput></para>    </section><anchor xml:id="_class_r_a_m_1acacd036409fa0e75f9d28700cbbdf47d"/>    <section>
-    <title>getObjType()</title>
-<indexterm><primary>getObjType</primary><secondary>RAM</secondary></indexterm>
-<indexterm><primary>RAM</primary><secondary>getObjType</secondary></indexterm>
-<para><computeroutput>std::string RAM::getObjType ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
-Reimplemented from <link linkend="_class_storage_1a9c6d68e682a8c329dc0611ce7266f2bc">Storage</link>.</para>
-    </section><anchor xml:id="_class_r_a_m_1af2b254d13a98ff26768081de811805b9"/>    <section>
+<para><computeroutput><link linkend="__memory_8h_1a462bfa9dfea81692463ecb192183dd01">MemoryType</link> RAM::getMemType ( )</computeroutput></para>    </section><anchor xml:id="_class_r_a_m_1af2b254d13a98ff26768081de811805b9"/>    <section>
     <title>getVoltage()</title>
 <indexterm><primary>getVoltage</primary><secondary>RAM</secondary></indexterm>
 <indexterm><primary>RAM</primary><secondary>getVoltage</secondary></indexterm>
-<para><computeroutput>double RAM::getVoltage ( )</computeroutput></para>    </section><anchor xml:id="_class_r_a_m_1a6e77fc59fd9957e975d7946830373e06"/>    <section>
+<para><computeroutput>double RAM::getVoltage ( )</computeroutput></para><para>
+
+<para>Returns latency. </para>
+</para>
+    </section><anchor xml:id="_class_r_a_m_1a6e77fc59fd9957e975d7946830373e06"/>    <section>
     <title>operator!=()</title>
 <indexterm><primary>operator!=</primary><secondary>RAM</secondary></indexterm>
 <indexterm><primary>RAM</primary><secondary>operator!=</secondary></indexterm>
@@ -138,7 +174,11 @@ Reimplemented from <link linkend="_class_storage_1a9c6d68e682a8c329dc0611ce7266f
     <title>serializeObj()</title>
 <indexterm><primary>serializeObj</primary><secondary>RAM</secondary></indexterm>
 <indexterm><primary>RAM</primary><secondary>serializeObj</secondary></indexterm>
-<para><computeroutput>std::string RAM::serializeObj ( )</computeroutput></para></section>
+<para><computeroutput>std::string RAM::serializeObj ( )</computeroutput></para><para>
+
+<para>Returns stock voltage. </para>
+</para>
+</section>
 </section>
 <section>
 <title>Member Data Documentation</title>
@@ -146,11 +186,19 @@ Reimplemented from <link linkend="_class_storage_1a9c6d68e682a8c329dc0611ce7266f
     <title>cl</title>
 <indexterm><primary>cl</primary><secondary>RAM</secondary></indexterm>
 <indexterm><primary>RAM</primary><secondary>cl</secondary></indexterm>
-<para><computeroutput>int RAM::cl<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_r_a_m_1a06c470d0b80cded09950fa3be4788dc8"/>    <section>
+<para><computeroutput>int RAM::cl<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Clockspeed of <link linkend="_class_r_a_m">RAM</link> in Mhz. </para>
+</para>
+    </section><anchor xml:id="_class_r_a_m_1a06c470d0b80cded09950fa3be4788dc8"/>    <section>
     <title>clockSpeed</title>
 <indexterm><primary>clockSpeed</primary><secondary>RAM</secondary></indexterm>
 <indexterm><primary>RAM</primary><secondary>clockSpeed</secondary></indexterm>
-<para><computeroutput>int RAM::clockSpeed<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_r_a_m_1af6a1d40b000e6f7b61fd596c0ecb8618"/>    <section>
+<para><computeroutput>int RAM::clockSpeed<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Memory type. </para>
+</para>
+    </section><anchor xml:id="_class_r_a_m_1af6a1d40b000e6f7b61fd596c0ecb8618"/>    <section>
     <title>type</title>
 <indexterm><primary>type</primary><secondary>RAM</secondary></indexterm>
 <indexterm><primary>RAM</primary><secondary>type</secondary></indexterm>
@@ -158,7 +206,11 @@ Reimplemented from <link linkend="_class_storage_1a9c6d68e682a8c329dc0611ce7266f
     <title>v</title>
 <indexterm><primary>v</primary><secondary>RAM</secondary></indexterm>
 <indexterm><primary>RAM</primary><secondary>v</secondary></indexterm>
-<para><computeroutput>double RAM::v<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para><computeroutput>double RAM::v<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Cas Latency. </para>
+</para>
+</section>
 <para>
 The documentation for this class was generated from the following files:</para>
 C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/<link linkend="__memory_8h">Memory.h</link>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/<link linkend="__memory_8cpp">Memory.cpp</link></section>

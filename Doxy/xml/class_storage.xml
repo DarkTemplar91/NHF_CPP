@@ -19,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="12" column="8" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" bodystart="12" bodyend="-1"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="18" column="8" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_storage_1a58275af4fc94f89edd8af0721aea467e" prot="private" static="no" mutable="no">
         <type><ref refid="_memory_8h_1a284499ae529838dbabf4c7a520e99a85" kindref="member">ByteUnit</ref></type>
@@ -27,12 +27,13 @@
         <argsstring></argsstring>
         <name>notation</name>
         <briefdescription>
+<para>Capacity of storage. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="13" column="10" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" bodystart="13" bodyend="-1"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="19" column="10" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" bodystart="19" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -46,12 +47,13 @@
           <declname>m</declname>
         </param>
         <briefdescription>
+<para>Unit of capacity. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="15" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="12" bodyend="12"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="21" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="13" bodyend="13"/>
       </memberdef>
       <memberdef kind="function" id="class_storage_1a51e13f81461a42036b877f158d6c807b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -74,7 +76,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="16" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="7" bodyend="7"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="22" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="8" bodyend="8"/>
       </memberdef>
       <memberdef kind="function" id="class_storage_1af1098adcb33fd74e57cd855514014b73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -111,7 +113,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="17" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="8" bodyend="11"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="23" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="9" bodyend="12"/>
       </memberdef>
       <memberdef kind="function" id="class_storage_1acdb19059f3115eceb8cb420b18658440" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>size_t</type>
@@ -124,7 +126,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="18" column="8" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="13" bodyend="13"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="24" column="8" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="16" bodyend="16"/>
       </memberdef>
       <memberdef kind="function" id="class_storage_1af6dc4a84e1566ab8103623214eee2671" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="_memory_8h_1a284499ae529838dbabf4c7a520e99a85" kindref="member">ByteUnit</ref></type>
@@ -132,25 +134,13 @@
         <argsstring>() const</argsstring>
         <name>getSizeType</name>
         <briefdescription>
+<para>Returns capacity. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="19" column="10" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="14" bodyend="14"/>
-      </memberdef>
-      <memberdef kind="function" id="class_storage_1ac52c20f77eeb4cb13cc3d02b5818e04c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string Storage::getSizeType_string</definition>
-        <argsstring>() const</argsstring>
-        <name>getSizeType_string</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="20" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="18" bodyend="42"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="25" column="10" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="17" bodyend="17"/>
       </memberdef>
       <memberdef kind="function" id="class_storage_1a3836c9fff79b96e8c87ab8a5976d89f8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -158,12 +148,13 @@
         <argsstring>() const</argsstring>
         <name>getNotation</name>
         <briefdescription>
+<para>Returns the unit type. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="21" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="43" bodyend="66"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="26" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="18" bodyend="41"/>
       </memberdef>
       <memberdef kind="function" id="class_storage_1ac7065b274cfcf6979a95ac9451846c6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -171,12 +162,13 @@
         <argsstring>()</argsstring>
         <name>serializeObj</name>
         <briefdescription>
+<para>Return notation in string. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="22" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="156" bodyend="161"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="27" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="133" bodyend="138"/>
       </memberdef>
       <memberdef kind="function" id="class_storage_1ab10853458f897082ba028cef2477005d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -188,12 +180,13 @@
           <declname>rhs</declname>
         </param>
         <briefdescription>
+<para>Serializes object. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="24" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="67" bodyend="71"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="30" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="43" bodyend="47"/>
       </memberdef>
       <memberdef kind="function" id="class_storage_1ac44ec07b755c2a60f976cbd7ae13de81" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -210,23 +203,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="25" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="72" bodyend="74"/>
-      </memberdef>
-      <memberdef kind="function" id="class_storage_1a9c6d68e682a8c329dc0611ce7266f2bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>std::string</type>
-        <definition>std::string Storage::getObjType</definition>
-        <argsstring>()</argsstring>
-        <name>getObjType</name>
-        <reimplementedby refid="class_r_a_m_1acacd036409fa0e75f9d28700cbbdf47d">getObjType</reimplementedby>
-        <reimplementedby refid="class_h_d_d_1ae7a29f20418291ed9c9a65ad393729e3">getObjType</reimplementedby>
-        <reimplementedby refid="class_s_s_d_1a4ab856f2201417d79af96755fe67f13b">getObjType</reimplementedby>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="26" column="21" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="15" bodyend="17"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="31" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="48" bodyend="50"/>
       </memberdef>
       <memberdef kind="function" id="class_storage_1af7f626e3a0bc9d46c59ef7dd8f57c6c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_storage" kindref="compound">Storage</ref> *</type>
@@ -243,10 +220,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="27" column="17" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="268" bodyend="271"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="32" column="17" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="245" bodyend="248"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Base class for data storage/memory </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -292,7 +270,7 @@
         <link refid="class_product"/>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="11" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" bodystart="11" bodyend="30"/>
+    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="17" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" bodystart="17" bodyend="35"/>
     <listofallmembers>
       <member refid="class_storage_1aae754660623b8e0e5046b967cb4cdb73" prot="private" virt="non-virtual"><scope>Storage</scope><name>capacity</name></member>
       <member refid="class_storage_1af7f626e3a0bc9d46c59ef7dd8f57c6c9" prot="public" virt="virtual"><scope>Storage</scope><name>clone</name></member>
@@ -305,11 +283,9 @@
       <member refid="class_product_1a9cbd896ca6b2d95088be8ad8c3b11e3b" prot="public" virt="non-virtual"><scope>Storage</scope><name>getName</name></member>
       <member refid="class_storage_1a3836c9fff79b96e8c87ab8a5976d89f8" prot="public" virt="non-virtual"><scope>Storage</scope><name>getNotation</name></member>
       <member refid="class_product_1a0dc7c2163bf9c07e6283c2cbcaef58d3" prot="public" virt="non-virtual"><scope>Storage</scope><name>getObj_t</name></member>
-      <member refid="class_storage_1a9c6d68e682a8c329dc0611ce7266f2bc" prot="public" virt="virtual"><scope>Storage</scope><name>getObjType</name></member>
-      <member refid="class_product_1a60e8ab009f51c39442257e96409144de" prot="public" virt="virtual" ambiguityscope="Product::"><scope>Storage</scope><name>getObjType</name></member>
+      <member refid="class_product_1a60e8ab009f51c39442257e96409144de" prot="public" virt="non-virtual"><scope>Storage</scope><name>getObjType</name></member>
       <member refid="class_product_1a3be25f647260d61df6063ef706261c7f" prot="public" virt="non-virtual"><scope>Storage</scope><name>getPrice</name></member>
       <member refid="class_storage_1af6dc4a84e1566ab8103623214eee2671" prot="public" virt="non-virtual"><scope>Storage</scope><name>getSizeType</name></member>
-      <member refid="class_storage_1ac52c20f77eeb4cb13cc3d02b5818e04c" prot="public" virt="non-virtual"><scope>Storage</scope><name>getSizeType_string</name></member>
       <member refid="class_product_1ae216152e43f64a82294c2c583396d13f" prot="public" virt="non-virtual"><scope>Storage</scope><name>increaseStock</name></member>
       <member refid="class_product_1a831f4ac197a88d2c2b7260765714c0d4" prot="private" virt="non-virtual"><scope>Storage</scope><name>inv</name></member>
       <member refid="class_product_1af3d21858bb34986f54309b877678daa8" prot="private" virt="non-virtual"><scope>Storage</scope><name>manufacturer</name></member>

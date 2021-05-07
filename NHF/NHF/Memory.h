@@ -29,7 +29,6 @@ public:
 
 	virtual bool operator==(Storage& rhs);
 	virtual bool operator!=(Storage& rhs);
-	virtual std::string getObjType();
 	virtual Storage* clone();
 	
 
@@ -60,7 +59,6 @@ public:
 	int getlatency();				///Returns latency
 	double getVoltage();			///Returns stock voltage
 	
-	std::string getObjType();
 	std::string serializeObj();
 	
 	RAM* clone();
@@ -83,7 +81,6 @@ public:
 
 	unsigned int getRPM();		///Returns RPM of HDD
 
-	std::string getObjType();
 	std::string serializeObj();
 	HDD* clone();
 	bool operator==(HDD& rhs);
@@ -107,7 +104,6 @@ public:
 	unsigned int getReadSpeed();	///Returns Read speed
 	unsigned int getWriteSpeed();	///Returns write speed
 
-	std::string getObjType();
 	std::string serializeObj();
 	SSD* clone();
 	bool operator==(SSD& rhs);

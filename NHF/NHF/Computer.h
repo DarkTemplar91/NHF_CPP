@@ -22,7 +22,6 @@ class PC :public Product {
 public:
 	PC();
 	PC(const PC& pc);
-	std::string getObjType();
 	PC* clone();
 
 };

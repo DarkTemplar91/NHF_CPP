@@ -74,5 +74,6 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="savefile.txt" />
+    <Text Include="stock.txt" />
   </ItemGroup>
 </Project>

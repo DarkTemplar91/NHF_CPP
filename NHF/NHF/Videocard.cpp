@@ -38,10 +38,6 @@ unsigned int GPU::getVRAM() { return vram; }
 unsigned int GPU::getTDP() { return tdp; }
 
 
-std::string GPU::getObjType() {
-	return "GPU_OBJ";
-}
-
 std::string GPU::serializeObj() {
 	std::ostringstream sStream;
 	sStream << "\t" << this->Product::serializeObj();	///Calls base class's

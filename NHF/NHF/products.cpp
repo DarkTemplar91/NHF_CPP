@@ -27,7 +27,12 @@ std::ifstream& operator>>(std::ifstream& savefile, Product& rhs) {
 	rhs = Product(name, price, manuf, desc);
 	return savefile;
 }
-
+std::ifstream& operator>>(std::ifstream& s, obj_t rhs) {
+	int temp;
+	s >> temp;
+	rhs = static_cast<obj_t>(temp);
+	return s;
+}
 void Product::print() {
 	std::cout << serializeObj();
 }
@@ -42,7 +47,40 @@ Product* Product::clone() {
 	return p;
 }
 std::string Product::getObjType() const {
-	return "PRODUCT_OBJ";
+	switch (t)
+	{
+	case obj_t::Product:
+		return "0\nPRODUCT_OBJ";
+		break;
+	case obj_t::Storage:
+		return "1\nSTORAGE_OBJ";
+		break;
+	case obj_t::RAM:
+		return "2\nRAM_OBJ";
+		break;
+	case obj_t::HDD:
+		return "3\nHDD_OBJ";
+		break;
+	case obj_t::SSD:
+		return "4\nSSD_OBJ";
+		break;
+	case obj_t::MB:
+		return "5\nMB_OBJ";
+		break;
+	case obj_t::CPU:
+		return "6\nCPU_OBJ";
+		break;
+	case obj_t::GPU:
+		return "7\nGPU_OBJ";
+		break;
+	case obj_t::PC:
+		return "8\nPC_OBJ";
+		break;
+	default:
+		return "Something went wrong";
+		break;
+	}
+	
 }
 
 std::string Product::getManufacturer() const { return manufacturer; }

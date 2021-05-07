@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="12" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="12" bodyend="-1"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="15" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_motherboard_1a96c475cc3d6cee4245090a3257f2c6c6" prot="private" static="no" mutable="no">
         <type><ref refid="processor_8h_1a84edc84c8145e7997b70f9919ce44d68" kindref="member">socket</ref></type>
@@ -24,12 +24,13 @@
         <argsstring></argsstring>
         <name>socketType</name>
         <briefdescription>
+<para>Type of chipset (B550, Z490 etc.) </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="13" column="8" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="13" bodyend="-1"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="16" column="8" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_motherboard_1a807219a358ae5de54db7e590d6ff77ec" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -37,45 +38,7 @@
         <argsstring></argsstring>
         <name>maxRAM</name>
         <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="14" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="14" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_motherboard_1a7d5fc2dfa0915d7256c8627385c904bd" prot="private" static="no" mutable="no">
-        <type>int</type>
-        <definition>int Motherboard::maxRFreq</definition>
-        <argsstring></argsstring>
-        <name>maxRFreq</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="15" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="15" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_motherboard_1a5632309f2b4224c1ba05289d6aaf9c74" prot="private" static="no" mutable="no">
-        <type>int</type>
-        <definition>int Motherboard::usbPorts</definition>
-        <argsstring></argsstring>
-        <name>usbPorts</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="16" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="16" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_motherboard_1ab237d87d79328daf0903b0c17fc56240" prot="private" static="no" mutable="no">
-        <type>int</type>
-        <definition>int Motherboard::sata</definition>
-        <argsstring></argsstring>
-        <name>sata</name>
-        <briefdescription>
+<para>Socket type of <ref refid="class_c_p_u" kindref="compound">CPU</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -83,18 +46,61 @@
         </inbodydescription>
         <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="17" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="17" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="class_motherboard_1a3b141240779b25dec7618b96938a3fba" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="class_motherboard_1a7d5fc2dfa0915d7256c8627385c904bd" prot="private" static="no" mutable="no">
         <type>int</type>
-        <definition>int Motherboard::pcie</definition>
+        <definition>int Motherboard::maxRFreq</definition>
         <argsstring></argsstring>
-        <name>pcie</name>
+        <name>maxRFreq</name>
         <briefdescription>
+<para>Max <ref refid="class_r_a_m" kindref="compound">RAM</ref> capacity supported by MB. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="18" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_motherboard_1a5632309f2b4224c1ba05289d6aaf9c74" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Motherboard::usbPorts</definition>
+        <argsstring></argsstring>
+        <name>usbPorts</name>
+        <briefdescription>
+<para>Max frequecy of <ref refid="class_r_a_m" kindref="compound">RAM</ref> supported. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="19" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_motherboard_1ab237d87d79328daf0903b0c17fc56240" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Motherboard::sata</definition>
+        <argsstring></argsstring>
+        <name>sata</name>
+        <briefdescription>
+<para>Number of USB ports. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="20" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_motherboard_1a3b141240779b25dec7618b96938a3fba" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Motherboard::pcie</definition>
+        <argsstring></argsstring>
+        <name>pcie</name>
+        <briefdescription>
+<para>Number of SATA connectors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="21" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="21" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -104,12 +110,13 @@
         <argsstring>()</argsstring>
         <name>Motherboard</name>
         <briefdescription>
+<para>Number of PCI-E slots. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="20" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="20" bodyend="20"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="23" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="23" bodyend="23"/>
       </memberdef>
       <memberdef kind="function" id="class_motherboard_1acffdbb5f149098ee6c6bc664f1095185" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -155,7 +162,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="21" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="8" bodyend="11"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="24" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="8" bodyend="11"/>
       </memberdef>
       <memberdef kind="function" id="class_motherboard_1a73378524673636ce81453b7c19f9cdb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -217,7 +224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="22" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="12" bodyend="17"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="25" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="12" bodyend="17"/>
       </memberdef>
       <memberdef kind="function" id="class_motherboard_1a751a0f579be28f20e94828d576e76edd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -234,7 +241,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="24" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="18" bodyend="21"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="27" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="18" bodyend="21"/>
       </memberdef>
       <memberdef kind="function" id="class_motherboard_1adfcc0e942c0c6cbeb6fee6d863b9b51f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -247,7 +254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="25" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="22" bodyend="22"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="29" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="24" bodyend="24"/>
       </memberdef>
       <memberdef kind="function" id="class_motherboard_1a747bcabd7b0baa1e4c4cefd5373c9ee0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="processor_8h_1a84edc84c8145e7997b70f9919ce44d68" kindref="member">socket</ref></type>
@@ -255,12 +262,13 @@
         <argsstring>()</argsstring>
         <name>getSocket</name>
         <briefdescription>
+<para>Returns type of chipset. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="26" column="8" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="23" bodyend="23"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="30" column="8" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="25" bodyend="25"/>
       </memberdef>
       <memberdef kind="function" id="class_motherboard_1ad93e8a9e213eb7a842323d392ad5471f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -268,12 +276,13 @@
         <argsstring>()</argsstring>
         <name>getRAM</name>
         <briefdescription>
+<para>Returns socket type. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="27" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="24" bodyend="24"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="31" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="26" bodyend="26"/>
       </memberdef>
       <memberdef kind="function" id="class_motherboard_1a505b4ef1ac8c36193a6ee79eb921e9fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -281,12 +290,13 @@
         <argsstring>()</argsstring>
         <name>getPorts</name>
         <briefdescription>
+<para>Returns max <ref refid="class_r_a_m" kindref="compound">RAM</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="28" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="25" bodyend="25"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="32" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="27" bodyend="27"/>
       </memberdef>
       <memberdef kind="function" id="class_motherboard_1a1534ea6d3be715dd09b964d78a0f91cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -294,12 +304,13 @@
         <argsstring>()</argsstring>
         <name>getSata</name>
         <briefdescription>
+<para>Returns number of USB ports. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="29" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="26" bodyend="26"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="33" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="28" bodyend="28"/>
       </memberdef>
       <memberdef kind="function" id="class_motherboard_1a1bdb19d8e2fc3fdc9b9669fbc688a015" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -307,25 +318,13 @@
         <argsstring>()</argsstring>
         <name>getPCIE</name>
         <briefdescription>
+<para>Returns number of SATA ports. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="30" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="27" bodyend="27"/>
-      </memberdef>
-      <memberdef kind="function" id="class_motherboard_1a7c35d76cd1952d69308b04ae0804080e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string Motherboard::getObjType</definition>
-        <argsstring>()</argsstring>
-        <name>getObjType</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="31" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="28" bodyend="30"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="34" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="29" bodyend="29"/>
       </memberdef>
       <memberdef kind="function" id="class_motherboard_1a9d0666b839ef01ea6072ffeb41653d3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -338,7 +337,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="32" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="32" bodyend="38"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="37" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="32" bodyend="38"/>
       </memberdef>
       <memberdef kind="function" id="class_motherboard_1af3ad07ad9398abe1bdd0315ec9acb7e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_motherboard" kindref="compound">Motherboard</ref> *</type>
@@ -352,7 +351,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="33" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="74" bodyend="77"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="38" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="74" bodyend="77"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -383,7 +382,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="11" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="11" bodyend="34"/>
+    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="14" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="14" bodyend="39"/>
     <listofallmembers>
       <member refid="class_motherboard_1a289ecf61f1bd15373e9dade0598b1eec" prot="private" virt="non-virtual"><scope>Motherboard</scope><name>chipset</name></member>
       <member refid="class_motherboard_1af3ad07ad9398abe1bdd0315ec9acb7e3" prot="public" virt="virtual"><scope>Motherboard</scope><name>clone</name></member>
@@ -395,8 +394,7 @@
       <member refid="class_product_1a2f5aeb9d25fcbbcf0f6125351850d4ff" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>getManufacturer</name></member>
       <member refid="class_product_1a9cbd896ca6b2d95088be8ad8c3b11e3b" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>getName</name></member>
       <member refid="class_product_1a0dc7c2163bf9c07e6283c2cbcaef58d3" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>getObj_t</name></member>
-      <member refid="class_motherboard_1a7c35d76cd1952d69308b04ae0804080e" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>getObjType</name></member>
-      <member refid="class_product_1a60e8ab009f51c39442257e96409144de" prot="public" virt="virtual" ambiguityscope="Product::"><scope>Motherboard</scope><name>getObjType</name></member>
+      <member refid="class_product_1a60e8ab009f51c39442257e96409144de" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>getObjType</name></member>
       <member refid="class_motherboard_1a1bdb19d8e2fc3fdc9b9669fbc688a015" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>getPCIE</name></member>
       <member refid="class_motherboard_1a505b4ef1ac8c36193a6ee79eb921e9fa" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>getPorts</name></member>
       <member refid="class_product_1a3be25f647260d61df6063ef706261c7f" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>getPrice</name></member>

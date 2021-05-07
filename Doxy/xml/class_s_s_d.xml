@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="72" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" bodystart="72" bodyend="-1"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="95" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" bodystart="95" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_s_s_d_1a49fb67fecc3e51532c161260a1852099" prot="private" static="no" mutable="no">
         <type>unsigned int</type>
@@ -24,12 +24,13 @@
         <argsstring></argsstring>
         <name>rSpeed</name>
         <briefdescription>
+<para>Write speed (MB/s) </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="73" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" bodystart="73" bodyend="-1"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="96" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" bodystart="96" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -39,12 +40,13 @@
         <argsstring>()</argsstring>
         <name>SSD</name>
         <briefdescription>
+<para>Read speed (MB/s) </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="75" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" bodystart="75" bodyend="75"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="98" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" bodystart="98" bodyend="98"/>
       </memberdef>
       <memberdef kind="function" id="class_s_s_d_1a29d672d46a008f4067e5707e5da39242" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -65,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="76" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="110" bodyend="110"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="99" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="89" bodyend="89"/>
       </memberdef>
       <memberdef kind="function" id="class_s_s_d_1a351234f073d98a3f7dd4834170ef1166" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -114,7 +116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="77" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="111" bodyend="115"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="100" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="90" bodyend="94"/>
       </memberdef>
       <memberdef kind="function" id="class_s_s_d_1ae5c0ad45299683e1d39e34490c2df5f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -131,7 +133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="79" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="105" bodyend="109"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="102" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="84" bodyend="88"/>
       </memberdef>
       <memberdef kind="function" id="class_s_s_d_1a309d748d1273262845bad668e797ae73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>unsigned int</type>
@@ -144,7 +146,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="80" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="116" bodyend="116"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="104" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="96" bodyend="96"/>
       </memberdef>
       <memberdef kind="function" id="class_s_s_d_1a16388ad4698bea556b140e2c7e5a6ba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>unsigned int</type>
@@ -152,26 +154,13 @@
         <argsstring>()</argsstring>
         <name>getWriteSpeed</name>
         <briefdescription>
+<para>Returns Read speed. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="81" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="117" bodyend="117"/>
-      </memberdef>
-      <memberdef kind="function" id="class_s_s_d_1a4ab856f2201417d79af96755fe67f13b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>std::string</type>
-        <definition>std::string SSD::getObjType</definition>
-        <argsstring>()</argsstring>
-        <name>getObjType</name>
-        <reimplements refid="class_storage_1a9c6d68e682a8c329dc0611ce7266f2bc">getObjType</reimplements>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="82" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="118" bodyend="120"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="105" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="97" bodyend="97"/>
       </memberdef>
       <memberdef kind="function" id="class_s_s_d_1ac13108d9272a5fecb72f17e675b2d1ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -179,12 +168,13 @@
         <argsstring>()</argsstring>
         <name>serializeObj</name>
         <briefdescription>
+<para>Returns write speed. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="83" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="222" bodyend="227"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="107" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="197" bodyend="202"/>
       </memberdef>
       <memberdef kind="function" id="class_s_s_d_1adfbc00ab863bca1aff44b3ff233b5255" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_s_s_d" kindref="compound">SSD</ref> *</type>
@@ -198,7 +188,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="84" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="272" bodyend="275"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="108" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="249" bodyend="252"/>
       </memberdef>
       <memberdef kind="function" id="class_s_s_d_1aaaa23a6a0819baf5afc6ab140f728140" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -215,7 +205,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="85" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="121" bodyend="126"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="109" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="98" bodyend="103"/>
       </memberdef>
       <memberdef kind="function" id="class_s_s_d_1a5561ea54e1f8ac3d1d2aad8905d9a869" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -232,10 +222,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="86" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="127" bodyend="129"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="110" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="104" bodyend="106"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Class for modelling SSDs Inheriting directly from <ref refid="class_storage" kindref="compound">Storage</ref> class </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -275,7 +266,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="71" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" bodystart="71" bodyend="87"/>
+    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="94" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" bodystart="94" bodyend="111"/>
     <listofallmembers>
       <member refid="class_storage_1aae754660623b8e0e5046b967cb4cdb73" prot="private" virt="non-virtual"><scope>SSD</scope><name>capacity</name></member>
       <member refid="class_s_s_d_1adfbc00ab863bca1aff44b3ff233b5255" prot="public" virt="virtual"><scope>SSD</scope><name>clone</name></member>
@@ -288,12 +279,10 @@
       <member refid="class_product_1a9cbd896ca6b2d95088be8ad8c3b11e3b" prot="public" virt="non-virtual"><scope>SSD</scope><name>getName</name></member>
       <member refid="class_storage_1a3836c9fff79b96e8c87ab8a5976d89f8" prot="public" virt="non-virtual"><scope>SSD</scope><name>getNotation</name></member>
       <member refid="class_product_1a0dc7c2163bf9c07e6283c2cbcaef58d3" prot="public" virt="non-virtual"><scope>SSD</scope><name>getObj_t</name></member>
-      <member refid="class_s_s_d_1a4ab856f2201417d79af96755fe67f13b" prot="public" virt="virtual"><scope>SSD</scope><name>getObjType</name></member>
-      <member refid="class_product_1a60e8ab009f51c39442257e96409144de" prot="public" virt="virtual" ambiguityscope="Product::"><scope>SSD</scope><name>getObjType</name></member>
+      <member refid="class_product_1a60e8ab009f51c39442257e96409144de" prot="public" virt="non-virtual"><scope>SSD</scope><name>getObjType</name></member>
       <member refid="class_product_1a3be25f647260d61df6063ef706261c7f" prot="public" virt="non-virtual"><scope>SSD</scope><name>getPrice</name></member>
       <member refid="class_s_s_d_1a309d748d1273262845bad668e797ae73" prot="public" virt="non-virtual"><scope>SSD</scope><name>getReadSpeed</name></member>
       <member refid="class_storage_1af6dc4a84e1566ab8103623214eee2671" prot="public" virt="non-virtual"><scope>SSD</scope><name>getSizeType</name></member>
-      <member refid="class_storage_1ac52c20f77eeb4cb13cc3d02b5818e04c" prot="public" virt="non-virtual"><scope>SSD</scope><name>getSizeType_string</name></member>
       <member refid="class_s_s_d_1a16388ad4698bea556b140e2c7e5a6ba7" prot="public" virt="non-virtual"><scope>SSD</scope><name>getWriteSpeed</name></member>
       <member refid="class_product_1ae216152e43f64a82294c2c583396d13f" prot="public" virt="non-virtual"><scope>SSD</scope><name>increaseStock</name></member>
       <member refid="class_product_1a831f4ac197a88d2c2b7260765714c0d4" prot="private" virt="non-virtual"><scope>SSD</scope><name>inv</name></member>

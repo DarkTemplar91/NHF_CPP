@@ -32,7 +32,7 @@ public:
 	int getPorts();			///Returns number of USB ports
 	int getSata();			///Returns number of SATA ports
 	int getPCIE();			
-	std::string getObjType();
+
 	
 	std::string serializeObj();
 	Motherboard* clone();

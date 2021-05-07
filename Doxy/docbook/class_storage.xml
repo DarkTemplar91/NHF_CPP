@@ -3,6 +3,11 @@
 <title>Storage Class Reference</title>
 <indexterm><primary>Storage</primary></indexterm>
 <para>
+
+<para>Base class for data storage/memory </para>
+ 
+</para>
+<para>
 <computeroutput>#include &lt;Memory.h&gt;</computeroutput>
 </para>
 Inheritance diagram for Storage:<para>
@@ -27,6 +32,8 @@ Collaboration diagram for Storage:<para>
     <title>Public Member Functions    </title>
         <itemizedlist>
             <listitem><para><link linkend="_class_storage_1aa557b155d438649718b658971c097859">Storage</link> (const <link linkend="_class_storage">Storage</link> &amp;m)</para>
+
+<para>Unit of capacity. </para>
 </listitem>
             <listitem><para><link linkend="_class_storage_1a51e13f81461a42036b877f158d6c807b">Storage</link> (size_t c=1, <link linkend="__memory_8h_1a284499ae529838dbabf4c7a520e99a85">ByteUnit</link> bu=<link linkend="__memory_8h_1a284499ae529838dbabf4c7a520e99a85af9deabc33a5630ffb405bb42d7cff365">ByteUnit::gigabyte</link>)</para>
 </listitem>
@@ -35,18 +42,22 @@ Collaboration diagram for Storage:<para>
             <listitem><para>size_t <link linkend="_class_storage_1acdb19059f3115eceb8cb420b18658440">getCapacity</link> () const</para>
 </listitem>
             <listitem><para><link linkend="__memory_8h_1a284499ae529838dbabf4c7a520e99a85">ByteUnit</link> <link linkend="_class_storage_1af6dc4a84e1566ab8103623214eee2671">getSizeType</link> () const</para>
-</listitem>
-            <listitem><para>std::string <link linkend="_class_storage_1ac52c20f77eeb4cb13cc3d02b5818e04c">getSizeType_string</link> () const</para>
+
+<para>Returns capacity. </para>
 </listitem>
             <listitem><para>std::string <link linkend="_class_storage_1a3836c9fff79b96e8c87ab8a5976d89f8">getNotation</link> () const</para>
+
+<para>Returns the unit type. </para>
 </listitem>
             <listitem><para>std::string <link linkend="_class_storage_1ac7065b274cfcf6979a95ac9451846c6f">serializeObj</link> ()</para>
+
+<para>Return notation in string. </para>
 </listitem>
             <listitem><para>virtual bool <link linkend="_class_storage_1ab10853458f897082ba028cef2477005d">operator==</link> (<link linkend="_class_storage">Storage</link> &amp;rhs)</para>
+
+<para>Serializes object. </para>
 </listitem>
             <listitem><para>virtual bool <link linkend="_class_storage_1ac44ec07b755c2a60f976cbd7ae13de81">operator!=</link> (<link linkend="_class_storage">Storage</link> &amp;rhs)</para>
-</listitem>
-            <listitem><para>virtual std::string <link linkend="_class_storage_1a9c6d68e682a8c329dc0611ce7266f2bc">getObjType</link> ()</para>
 </listitem>
             <listitem><para>virtual <link linkend="_class_storage">Storage</link> * <link linkend="_class_storage_1af7f626e3a0bc9d46c59ef7dd8f57c6c9">clone</link> ()</para>
 </listitem>
@@ -58,6 +69,8 @@ Collaboration diagram for Storage:<para>
             <listitem><para>size_t <link linkend="_class_storage_1aae754660623b8e0e5046b967cb4cdb73">capacity</link></para>
 </listitem>
             <listitem><para><link linkend="__memory_8h_1a284499ae529838dbabf4c7a520e99a85">ByteUnit</link> <link linkend="_class_storage_1a58275af4fc94f89edd8af0721aea467e">notation</link></para>
+
+<para>Capacity of storage. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -65,12 +78,23 @@ Collaboration diagram for Storage:<para>
     <title>Additional Inherited Members    </title>
 </simplesect>
 <section>
+<title>Detailed Description</title>
+
+<para>Base class for data storage/memory </para>
+
+
+</section>
+<section>
 <title>Constructor &amp; Destructor Documentation</title>
 <anchor xml:id="_class_storage_1aa557b155d438649718b658971c097859"/>    <section>
     <title>Storage()<computeroutput>[1/3]</computeroutput></title>
 <indexterm><primary>Storage</primary><secondary>Storage</secondary></indexterm>
 <indexterm><primary>Storage</primary><secondary>Storage</secondary></indexterm>
-<para><computeroutput>Storage::Storage (const <link linkend="_class_storage">Storage</link> &amp; m)</computeroutput></para>    </section><anchor xml:id="_class_storage_1a51e13f81461a42036b877f158d6c807b"/>    <section>
+<para><computeroutput>Storage::Storage (const <link linkend="_class_storage">Storage</link> &amp; m)</computeroutput></para><para>
+
+<para>Unit of capacity. </para>
+</para>
+    </section><anchor xml:id="_class_storage_1a51e13f81461a42036b877f158d6c807b"/>    <section>
     <title>Storage()<computeroutput>[2/3]</computeroutput></title>
 <indexterm><primary>Storage</primary><secondary>Storage</secondary></indexterm>
 <indexterm><primary>Storage</primary><secondary>Storage</secondary></indexterm>
@@ -100,21 +124,19 @@ Reimplemented in <link linkend="_class_s_s_d_1adfbc00ab863bca1aff44b3ff233b5255"
     <title>getNotation()</title>
 <indexterm><primary>getNotation</primary><secondary>Storage</secondary></indexterm>
 <indexterm><primary>Storage</primary><secondary>getNotation</secondary></indexterm>
-<para><computeroutput>std::string Storage::getNotation ( ) const</computeroutput></para>    </section><anchor xml:id="_class_storage_1a9c6d68e682a8c329dc0611ce7266f2bc"/>    <section>
-    <title>getObjType()</title>
-<indexterm><primary>getObjType</primary><secondary>Storage</secondary></indexterm>
-<indexterm><primary>Storage</primary><secondary>getObjType</secondary></indexterm>
-<para><computeroutput>std::string Storage::getObjType ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
-Reimplemented in <link linkend="_class_s_s_d_1a4ab856f2201417d79af96755fe67f13b">SSD</link>, <link linkend="_class_h_d_d_1ae7a29f20418291ed9c9a65ad393729e3">HDD</link>, and <link linkend="_class_r_a_m_1acacd036409fa0e75f9d28700cbbdf47d">RAM</link>.</para>
+<para><computeroutput>std::string Storage::getNotation ( ) const</computeroutput></para><para>
+
+<para>Returns the unit type. </para>
+</para>
     </section><anchor xml:id="_class_storage_1af6dc4a84e1566ab8103623214eee2671"/>    <section>
     <title>getSizeType()</title>
 <indexterm><primary>getSizeType</primary><secondary>Storage</secondary></indexterm>
 <indexterm><primary>Storage</primary><secondary>getSizeType</secondary></indexterm>
-<para><computeroutput><link linkend="__memory_8h_1a284499ae529838dbabf4c7a520e99a85">ByteUnit</link> Storage::getSizeType ( ) const</computeroutput></para>    </section><anchor xml:id="_class_storage_1ac52c20f77eeb4cb13cc3d02b5818e04c"/>    <section>
-    <title>getSizeType_string()</title>
-<indexterm><primary>getSizeType_string</primary><secondary>Storage</secondary></indexterm>
-<indexterm><primary>Storage</primary><secondary>getSizeType_string</secondary></indexterm>
-<para><computeroutput>std::string Storage::getSizeType_string ( ) const</computeroutput></para>    </section><anchor xml:id="_class_storage_1ac44ec07b755c2a60f976cbd7ae13de81"/>    <section>
+<para><computeroutput><link linkend="__memory_8h_1a284499ae529838dbabf4c7a520e99a85">ByteUnit</link> Storage::getSizeType ( ) const</computeroutput></para><para>
+
+<para>Returns capacity. </para>
+</para>
+    </section><anchor xml:id="_class_storage_1ac44ec07b755c2a60f976cbd7ae13de81"/>    <section>
     <title>operator!=()</title>
 <indexterm><primary>operator!=</primary><secondary>Storage</secondary></indexterm>
 <indexterm><primary>Storage</primary><secondary>operator!=</secondary></indexterm>
@@ -122,11 +144,19 @@ Reimplemented in <link linkend="_class_s_s_d_1a4ab856f2201417d79af96755fe67f13b"
     <title>operator==()</title>
 <indexterm><primary>operator==</primary><secondary>Storage</secondary></indexterm>
 <indexterm><primary>Storage</primary><secondary>operator==</secondary></indexterm>
-<para><computeroutput>bool Storage::operator== (<link linkend="_class_storage">Storage</link> &amp; rhs)<computeroutput>[virtual]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_storage_1ac7065b274cfcf6979a95ac9451846c6f"/>    <section>
+<para><computeroutput>bool Storage::operator== (<link linkend="_class_storage">Storage</link> &amp; rhs)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Serializes object. </para>
+</para>
+    </section><anchor xml:id="_class_storage_1ac7065b274cfcf6979a95ac9451846c6f"/>    <section>
     <title>serializeObj()</title>
 <indexterm><primary>serializeObj</primary><secondary>Storage</secondary></indexterm>
 <indexterm><primary>Storage</primary><secondary>serializeObj</secondary></indexterm>
-<para><computeroutput>std::string Storage::serializeObj ( )</computeroutput></para></section>
+<para><computeroutput>std::string Storage::serializeObj ( )</computeroutput></para><para>
+
+<para>Return notation in string. </para>
+</para>
+</section>
 </section>
 <section>
 <title>Member Data Documentation</title>
@@ -138,7 +168,11 @@ Reimplemented in <link linkend="_class_s_s_d_1a4ab856f2201417d79af96755fe67f13b"
     <title>notation</title>
 <indexterm><primary>notation</primary><secondary>Storage</secondary></indexterm>
 <indexterm><primary>Storage</primary><secondary>notation</secondary></indexterm>
-<para><computeroutput><link linkend="__memory_8h_1a284499ae529838dbabf4c7a520e99a85">ByteUnit</link> Storage::notation<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para><computeroutput><link linkend="__memory_8h_1a284499ae529838dbabf4c7a520e99a85">ByteUnit</link> Storage::notation<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Capacity of storage. </para>
+</para>
+</section>
 <para>
 The documentation for this class was generated from the following files:</para>
 C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/<link linkend="__memory_8h">Memory.h</link>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/<link linkend="__memory_8cpp">Memory.cpp</link></section>

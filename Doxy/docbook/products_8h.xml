@@ -48,12 +48,16 @@ This graph shows which files directly or indirectly include this file:<para>
 , 
 <link linkend="_products_8h_1a6f54b54b1983a312948d8ead9f19b9afa88dba0c4e2af76447df43d1e31331a3d">PC</link>
  }</para>
+
+<para>Enumerator for the object types </para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
     <title>Functions    </title>
         <itemizedlist>
+            <listitem><para>std::ifstream &amp; <link linkend="_products_8h_1ac2faf34b8deb32d47403eb685de6c3f6">operator&gt;&gt;</link> (std::ofstream &amp;of, <link linkend="_products_8h_1a6f54b54b1983a312948d8ead9f19b9af">obj_t</link> rhs)</para>
+</listitem>
             <listitem><para>template&lt;class T &gt; </para><para>std::ofstream &amp; <link linkend="_products_8h_1a9de3e0ccf990b76a227192215795f84a">operator&lt;&lt;</link> (std::ofstream &amp;savefile, T &amp;rhs)</para>
 
 <para>Template for writing the serialized object to file </para>
@@ -70,7 +74,11 @@ This graph shows which files directly or indirectly include this file:<para>
     <title>obj_t</title>
 <indexterm><primary>obj_t</primary><secondary>products.h</secondary></indexterm>
 <indexterm><primary>products.h</primary><secondary>obj_t</secondary></indexterm>
-<para><computeroutput>enum <link linkend="_products_8h_1a6f54b54b1983a312948d8ead9f19b9af">obj_t</link><computeroutput>[strong]</computeroutput></computeroutput></para><informaltable frame="all">
+<para><computeroutput>enum <link linkend="_products_8h_1a6f54b54b1983a312948d8ead9f19b9af">obj_t</link><computeroutput>[strong]</computeroutput></computeroutput></para><para>
+
+<para>Enumerator for the object types </para>
+</para>
+<informaltable frame="all">
 <title>Enumerator</title>
     <tgroup cols="2" align="left" colsep="1" rowsep="1">
       <colspec colname='c1'/>
@@ -173,7 +181,7 @@ Parameters                    </title>
 </formalpara>
 </para>
     </section><anchor xml:id="_products_8h_1a3c4c53fadab31183f9737475efa6c3ec"/>    <section>
-    <title>operator&gt;&gt;()</title>
+    <title>operator&gt;&gt;()<computeroutput>[1/2]</computeroutput></title>
 <indexterm><primary>operator&gt;&gt;</primary><secondary>products.h</secondary></indexterm>
 <indexterm><primary>products.h</primary><secondary>operator&gt;&gt;</secondary></indexterm>
 <para><computeroutput>std::ifstream&amp; operator&gt;&gt; (std::ifstream &amp; savefile, <link linkend="_class_product">Product</link> &amp; rhs)</computeroutput></para><para>
@@ -182,6 +190,10 @@ Parameters                    </title>
 </para>
 
 <para>Overloads the &gt;&gt; to save the object to file. </para>
-</section>
+    </section><anchor xml:id="_products_8h_1ac2faf34b8deb32d47403eb685de6c3f6"/>    <section>
+    <title>operator&gt;&gt;()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator&gt;&gt;</primary><secondary>products.h</secondary></indexterm>
+<indexterm><primary>products.h</primary><secondary>operator&gt;&gt;</secondary></indexterm>
+<para><computeroutput>std::ifstream&amp; operator&gt;&gt; (std::ofstream &amp; of, <link linkend="_products_8h_1a6f54b54b1983a312948d8ead9f19b9af">obj_t</link> rhs)</computeroutput></para></section>
 </section>
 </section>

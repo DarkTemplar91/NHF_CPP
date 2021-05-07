@@ -88,16 +88,21 @@ Collaboration diagram for Catalogue::Iterator:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a07a6afd7d24ea4ed54e39a9649c2e86b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_catalogue_1_1_iterator.html#a07a6afd7d24ea4ed54e39a9649c2e86b">Iterator</a> (<a class="el" href="class_product.html">Product</a> **p)</td></tr>
+<tr class="memdesc:a07a6afd7d24ea4ed54e39a9649c2e86b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the pointer of the list's element.  <a href="class_catalogue_1_1_iterator.html#a07a6afd7d24ea4ed54e39a9649c2e86b">More...</a><br /></td></tr>
 <tr class="separator:a07a6afd7d24ea4ed54e39a9649c2e86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a710e43cbd5cf6755db5abc514fee2cbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_catalogue_1_1_iterator.html">Iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_catalogue_1_1_iterator.html#a710e43cbd5cf6755db5abc514fee2cbc">operator++</a> ()</td></tr>
+<tr class="memdesc:a710e43cbd5cf6755db5abc514fee2cbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloaded preincrement operator for incrementing the stored pointer.  <a href="class_catalogue_1_1_iterator.html#a710e43cbd5cf6755db5abc514fee2cbc">More...</a><br /></td></tr>
 <tr class="separator:a710e43cbd5cf6755db5abc514fee2cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef9b281974d9a66ba6540a7400041a6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_catalogue_1_1_iterator.html">Iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_catalogue_1_1_iterator.html#aef9b281974d9a66ba6540a7400041a6e">operator++</a> (int)</td></tr>
+<tr class="memdesc:aef9b281974d9a66ba6540a7400041a6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloaded post-increment operator  <a href="class_catalogue_1_1_iterator.html#aef9b281974d9a66ba6540a7400041a6e">More...</a><br /></td></tr>
 <tr class="separator:aef9b281974d9a66ba6540a7400041a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff6647d77a7d91098a2a07374a57a8e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_catalogue_1_1_iterator.html#aff6647d77a7d91098a2a07374a57a8e2">operator==</a> (const <a class="el" href="class_catalogue_1_1_iterator.html">Iterator</a> &amp;rhs)</td></tr>
 <tr class="separator:aff6647d77a7d91098a2a07374a57a8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a114c19ae7660bb10d913398bd36a9271"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_catalogue_1_1_iterator.html#a114c19ae7660bb10d913398bd36a9271">operator!=</a> (const <a class="el" href="class_catalogue_1_1_iterator.html">Iterator</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a114c19ae7660bb10d913398bd36a9271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloaded equality operator so it can be used for foreach.  <a href="class_catalogue_1_1_iterator.html#a114c19ae7660bb10d913398bd36a9271">More...</a><br /></td></tr>
 <tr class="separator:a114c19ae7660bb10d913398bd36a9271"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0eb533fe60b2b25c7291f6542e66418e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_product.html">Product</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_catalogue_1_1_iterator.html#a0eb533fe60b2b25c7291f6542e66418e">operator*</a> ()</td></tr>
+<tr class="memdesc:a0eb533fe60b2b25c7291f6542e66418e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverse of equality operator. Used for the loop's stop condition.  <a href="class_catalogue_1_1_iterator.html#a0eb533fe60b2b25c7291f6542e66418e">More...</a><br /></td></tr>
 <tr class="separator:a0eb533fe60b2b25c7291f6542e66418e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -130,6 +135,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Pointer to the pointer of the list's element. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -149,6 +156,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Overloaded equality operator so it can be used for foreach. </p>
+
 </div>
 </div>
 <a id="a0eb533fe60b2b25c7291f6542e66418e"></a>
@@ -165,6 +174,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Inverse of equality operator. Used for the loop's stop condition. </p>
 
 </div>
 </div>
@@ -183,6 +194,10 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Overloaded preincrement operator for incrementing the stored pointer. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<p>Returns an <a class="el" href="class_catalogue_1_1_iterator.html">Iterator</a> (itself) pointing to the next element </p>
+
 </div>
 </div>
 <a id="aef9b281974d9a66ba6540a7400041a6e"></a>
@@ -200,6 +215,10 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Overloaded post-increment operator </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<p>Returns another pointer pointing to the current element. </p>
 
 </div>
 </div>

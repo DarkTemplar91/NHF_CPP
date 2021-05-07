@@ -57,7 +57,7 @@ public:
 	/// and placing them into the catalogue
 	/// </summary>
 	/// <param name="path"></param> Path to the file to read from
-	void Load(const std::string path)const;
+	void Load(const std::string path);
 
 	/// <summary>
 	/// Searches the catalogue and returns with an array of pointers

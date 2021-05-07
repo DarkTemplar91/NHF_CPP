@@ -28,7 +28,7 @@ public:
 	unsigned int getVRAM();
 	unsigned int getTDP();
 
-	std::string getObjType();
+
 	std::string serializeObj();
 	GPU* clone();
 

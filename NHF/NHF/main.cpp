@@ -121,6 +121,9 @@ int main() {
 		cSave.Add(new HDD("HDD1", 60, "hard drive", "Kingston"));
 		cSave.Add(new CPU("Ryzen 9 5900x", 500, "cpu", "AMD", "Zen 3", 200, socket::AMD_AM4, 3600, 16, 32, 20, false));
 		cSave.Save("stock.txt");
+		Catalogue cLoad = Catalogue();
+		cLoad.Load("stock.txt");
+		std::cout << "";
 
 	}END
 }

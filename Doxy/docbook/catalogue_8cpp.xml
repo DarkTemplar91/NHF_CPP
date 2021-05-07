@@ -18,6 +18,8 @@
     <title>Functions    </title>
         <itemizedlist>
             <listitem><para>bool <link linkend="_catalogue_8cpp_1aaf8a5ecd48b352ef42d27388de9f4f00">insFind</link> (const std::string &amp;sourceStr, const std::string &amp;subStr)</para>
+
+<para>Help function for case insensitive find Returns true if the string includes the given substring </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -27,6 +29,54 @@
     <title>insFind()</title>
 <indexterm><primary>insFind</primary><secondary>catalogue.cpp</secondary></indexterm>
 <indexterm><primary>catalogue.cpp</primary><secondary>insFind</secondary></indexterm>
-<para><computeroutput>bool insFind (const std::string &amp; sourceStr, const std::string &amp; subStr)</computeroutput></para></section>
+<para><computeroutput>bool insFind (const std::string &amp; sourceStr, const std::string &amp; subStr)</computeroutput></para><para>
+
+<para>Help function for case insensitive find Returns true if the string includes the given substring </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>sourceStr</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                String to search in 
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>subStr</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                String searched <formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+Returns if it includes the substring </para>
+</section>
 </section>
 </section>

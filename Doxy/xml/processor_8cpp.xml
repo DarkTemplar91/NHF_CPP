@@ -104,6 +104,7 @@
           <declname>rhs</declname>
         </param>
         <briefdescription>
+<para>overloaded enum for socket </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -126,7 +127,7 @@
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal">std::string<sp/><ref refid="class_c_p_u_1a76b924aa80f3acf2bfdd7299f2be6044" kindref="member">CPU::serializeObj</ref>(){</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostringstream<sp/>sStream;</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>sStream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal">&lt;&lt;this-&gt;<ref refid="class_product_1a749f163f9319f2cf6e9e0620d7133f0b" kindref="member">Product::serializeObj</ref>();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>sStream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal">&lt;&lt;this-&gt;<ref refid="class_product_1a749f163f9319f2cf6e9e0620d7133f0b" kindref="member">Product::serializeObj</ref>();<sp/></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>sStream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n\tCPU_SPECIF\n\t{\n\t&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\tGenName:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_c_p_u_1acf0ec240e61c72c6252a2f8e7b339189" kindref="member">genName</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;;tdp:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_c_p_u_1a65f32aa0ee6335f15d7a7087da2564f3" kindref="member">tdp</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;;SocketType:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_c_p_u_1a1f1bb470721f49e48139e46bbea9f109" kindref="member">socketType</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;;base:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_c_p_u_1a5b9fd4e0c27dcff1bcb33fbca6da2a6c" kindref="member">baseClock</ref><sp/>&lt;&lt;</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;;core:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_c_p_u_1ab0af78c0a115e6c8659b43332439f36e" kindref="member">coreCount</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;;threads:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_c_p_u_1a19e584d567f61b968f2f5e09c86abc4c" kindref="member">threadCount</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;;cache:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_c_p_u_1a4ad29b59532a1c456a1aec62437aa5cd" kindref="member">L2_cache</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;;ivga:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_c_p_u_1a3de211accd8ac7dc87cfecb446c4ebf9" kindref="member">iVGA</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;;\n\t}\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sStream.str();</highlight></codeline>
@@ -200,7 +201,7 @@
 <codeline lineno="81"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//Prints<sp/>the<sp/>basic<sp/>properties<sp/>of<sp/>the<sp/>object</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="83"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_p_u_1aa2af36b3447c4e7b4e1f25f699a06824" kindref="member">CPU::print</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/><ref refid="class_c_p_u_1a76b924aa80f3acf2bfdd7299f2be6044" kindref="member">serializeObj</ref>();</highlight></codeline>
 <codeline lineno="85"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"></highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight></codeline>
@@ -231,14 +232,11 @@
 <codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p;</highlight></codeline>
 <codeline lineno="113"><highlight class="normal"></highlight></codeline>
 <codeline lineno="114"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="115"><highlight class="normal">std::string<sp/><ref refid="class_c_p_u_1a07222b545e69fcc328b18d7b44a27027" kindref="member">CPU::getObjType</ref>(){</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;CPU_OBJ&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="117"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
 <codeline lineno="118"><highlight class="normal"></highlight></codeline>
 <codeline lineno="119"><highlight class="normal"></highlight></codeline>
-<codeline lineno="120"><highlight class="normal"></highlight></codeline>
-<codeline lineno="121"><highlight class="normal"></highlight></codeline>
-<codeline lineno="122"><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp"/>
   </compounddef>

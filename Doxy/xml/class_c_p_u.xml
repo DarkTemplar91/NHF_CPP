@@ -24,6 +24,7 @@
         <argsstring></argsstring>
         <name>tdp</name>
         <briefdescription>
+<para>Name of the cpu generation. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -37,6 +38,7 @@
         <argsstring></argsstring>
         <name>socketType</name>
         <briefdescription>
+<para>Total drawn power. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -123,6 +125,7 @@
         <argsstring>()</argsstring>
         <name>CPU</name>
         <briefdescription>
+<para>Included igpu. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -384,19 +387,6 @@
         </inbodydescription>
         <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="39" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp" bodystart="109" bodyend="114"/>
       </memberdef>
-      <memberdef kind="function" id="class_c_p_u_1a07222b545e69fcc328b18d7b44a27027" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::string</type>
-        <definition>std::string CPU::getObjType</definition>
-        <argsstring>()</argsstring>
-        <name>getObjType</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="40" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp" bodystart="115" bodyend="117"/>
-      </memberdef>
       <memberdef kind="function" id="class_c_p_u_1aa2af36b3447c4e7b4e1f25f699a06824" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
         <definition>void CPU::print</definition>
@@ -404,13 +394,13 @@
         <name>print</name>
         <reimplements refid="class_product_1a82a40e1860ffe2c88ea08084037a6c42">print</reimplements>
         <briefdescription>
-<para>Prints out basic data of a product. </para>
+<para>Prints out basic data of a product to the output stream. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="41" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp" bodystart="83" bodyend="85"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="40" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp" bodystart="83" bodyend="85"/>
       </memberdef>
       <memberdef kind="function" id="class_c_p_u_1a76b924aa80f3acf2bfdd7299f2be6044" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -422,8 +412,9 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
+<para>Calls base class&apos;s serialize fucntion</para>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="42" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp" bodystart="8" bodyend="14"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="41" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp" bodystart="8" bodyend="14"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -454,7 +445,7 @@
         <link refid="class_product"/>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="13" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" bodystart="13" bodyend="45"/>
+    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="13" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" bodystart="13" bodyend="44"/>
     <listofallmembers>
       <member refid="class_c_p_u_1a5b9fd4e0c27dcff1bcb33fbca6da2a6c" prot="private" virt="non-virtual"><scope>CPU</scope><name>baseClock</name></member>
       <member refid="class_c_p_u_1ab4f1ec2a356344187dc6598404012df9" prot="public" virt="virtual"><scope>CPU</scope><name>clone</name></member>
@@ -475,8 +466,7 @@
       <member refid="class_product_1a2f5aeb9d25fcbbcf0f6125351850d4ff" prot="public" virt="non-virtual"><scope>CPU</scope><name>getManufacturer</name></member>
       <member refid="class_product_1a9cbd896ca6b2d95088be8ad8c3b11e3b" prot="public" virt="non-virtual"><scope>CPU</scope><name>getName</name></member>
       <member refid="class_product_1a0dc7c2163bf9c07e6283c2cbcaef58d3" prot="public" virt="non-virtual"><scope>CPU</scope><name>getObj_t</name></member>
-      <member refid="class_c_p_u_1a07222b545e69fcc328b18d7b44a27027" prot="public" virt="non-virtual"><scope>CPU</scope><name>getObjType</name></member>
-      <member refid="class_product_1a60e8ab009f51c39442257e96409144de" prot="public" virt="virtual" ambiguityscope="Product::"><scope>CPU</scope><name>getObjType</name></member>
+      <member refid="class_product_1a60e8ab009f51c39442257e96409144de" prot="public" virt="non-virtual"><scope>CPU</scope><name>getObjType</name></member>
       <member refid="class_product_1a3be25f647260d61df6063ef706261c7f" prot="public" virt="non-virtual"><scope>CPU</scope><name>getPrice</name></member>
       <member refid="class_c_p_u_1a70b831ad7cfe74ce44be5d1349620e87" prot="public" virt="non-virtual"><scope>CPU</scope><name>getSocketType</name></member>
       <member refid="class_c_p_u_1ad492c4bcbc0fe07eb7bd644be677c87f" prot="public" virt="non-virtual"><scope>CPU</scope><name>getStringSocket</name></member>

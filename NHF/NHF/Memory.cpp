@@ -15,9 +15,6 @@ Storage::Storage(const Storage& m) : Product(m), capacity(m.capacity), notation(
 
 size_t Storage::getCapacity()const { return capacity; }
 ByteUnit Storage::getSizeType()const { return notation; }
-std::string Storage::getObjType() {
-	return "STORAGE_OBJ";
-}
 std::string Storage::getNotation()const {
 	switch (notation) {
 	case 0:
@@ -69,10 +66,6 @@ MemoryType RAM::getMemType() { return type; }
 int RAM::getClockSpeed() { return clockSpeed; }
 int RAM::getlatency() { return cl; }
 double RAM::getVoltage() { return v; }
-std::string RAM::getObjType() {
-	return "RAM_OBJ";
-}
-
 bool RAM::operator==(RAM& rhs) {
 	if (Storage::operator==(rhs) &&
 		rhs.cl == cl && rhs.clockSpeed == clockSpeed &&
@@ -102,10 +95,6 @@ SSD::SSD(std::string name, double price, std::string dscrpt, std::string manufac
 
 unsigned int SSD::getReadSpeed() { return rSpeed; }
 unsigned int SSD::getWriteSpeed() { return wSpeed; }
-std::string SSD::getObjType() {
-	return "SSD_OBJ";
-}
-
 bool SSD::operator==(SSD& rhs) {
 	if (Storage::operator==(rhs) &&
 		rhs.rSpeed == rSpeed && rhs.wSpeed == wSpeed)
@@ -127,9 +116,6 @@ HDD::HDD(std::string name, double price, std::string dscrpt, std::string manufac
 	t = obj_t::HDD;
 }
 unsigned int HDD::getRPM() { return rpm; }
-std::string HDD::getObjType() {
-	return "HDD_OBJ";
-}
 HDD::HDD(const HDD& h) : Storage(h) {
 	this->rpm = h.rpm;
 	t = obj_t::HDD;

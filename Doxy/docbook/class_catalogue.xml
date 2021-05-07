@@ -3,6 +3,11 @@
 <title>Catalogue Class Reference</title>
 <indexterm><primary>Catalogue</primary></indexterm>
 <para>
+
+<para><link linkend="_class_catalogue">Catalogue</link> class An instance of <link linkend="_class_catalogue">Catalogue</link> stores and manages severak Products The Products are stored in a dynamically allocated array using a <link linkend="_class_product">Product</link> pointer array. </para>
+ 
+</para>
+<para>
 <computeroutput>#include &lt;catalogue.h&gt;</computeroutput>
 </para>
 Collaboration diagram for Catalogue:<para>
@@ -25,22 +30,38 @@ Collaboration diagram for Catalogue:<para>
     <title>Public Member Functions    </title>
         <itemizedlist>
             <listitem><para>void <link linkend="_class_catalogue_1a16755e25621142e6c29f3c2574c086ba">Add</link> (<link linkend="_class_product">Product</link> *p)</para>
+
+<para>Size of the array. </para>
 </listitem>
             <listitem><para>void <link linkend="_class_catalogue_1aa1cd6a60d22d6bd5cb904c6550668e29">Remove</link> (<link linkend="_class_product">Product</link> *p)</para>
+
+<para>Removes the product from the catalogue if it has the same attributes as the <link linkend="_class_product">Product</link> passed as a pointer. Alternatively, if the pointer is actually included, it removes it. </para>
 </listitem>
             <listitem><para>void <link linkend="_class_catalogue_1ae8859b3893a47bb9707f7e5a9e2a4d79">Clear</link> ()</para>
+
+<para>Clears the catalogue, freeing all the allocated pointers and resetting the size to 0. </para>
 </listitem>
             <listitem><para>void <link linkend="_class_catalogue_1afb2d18cb7a33814c40a526fbb4988018">Save</link> (const std::string path) const</para>
+
+<para>Saves the catalogue to a file given by the &apos;path&apos; variable. It uses the classes&apos; overloaded serializeObj method </para>
 </listitem>
             <listitem><para>void <link linkend="_class_catalogue_1a0055df0cb8fbe295bf93df7c29be96e5">Load</link> (const std::string path) const</para>
+
+<para>Loads the catalogue from a file by creting objects from the data read and placing them into the catalogue </para>
 </listitem>
             <listitem><para><link linkend="_class_product">Product</link> ** <link linkend="_class_catalogue_1a36939b9a4416c0fef711440b5b17161d">Search</link> (std::string criteria)</para>
+
+<para>Searches the catalogue and returns with an array of pointers pointing to the products that meet the criteria. It searches by name, substring included, case insensitive </para>
 </listitem>
             <listitem><para>void <link linkend="_class_catalogue_1a15c28294d8e38ca67c105e4fa971835b">OrderBy</link> (<link linkend="_catalogue_8h_1ac13fc3178aad8dbfd71419053e15691d">OrderReq</link> r, bool rev)</para>
+
+<para>Orders the catalogue by name or price. Price can be sorted by high to low Name can be sorted alphabetically or reversed </para>
 </listitem>
             <listitem><para>size_t <link linkend="_class_catalogue_1a68cc0da89a96d535a3ea7aeabc2ed944">getSize</link> ()</para>
 </listitem>
             <listitem><para><link linkend="_class_product">Product</link> * <link linkend="_class_catalogue_1af9ebacaaef724e5c04c334322f81a83b">operator[]</link> (size_t idx)</para>
+
+<para>Return the size of the catalogue. </para>
 </listitem>
             <listitem><para><link linkend="_class_catalogue_1a406ca1384645f90d84076fa8b3f4b3f2">Catalogue</link> ()</para>
 </listitem>
@@ -49,8 +70,12 @@ Collaboration diagram for Catalogue:<para>
             <listitem><para><link linkend="_class_catalogue_1a023fd8d70a58f76d2bbd6ef1e3ef0e9e">~Catalogue</link> ()</para>
 </listitem>
             <listitem><para><link linkend="_class_catalogue_1_1_iterator">Iterator</link> <link linkend="_class_catalogue_1ab431cf38c861220bd7be72ecbc1cc77e">begin</link> () const</para>
+
+<para>Returns an iterator pointing to the first element of the list </para>
 </listitem>
             <listitem><para><link linkend="_class_catalogue_1_1_iterator">Iterator</link> <link linkend="_class_catalogue_1a35b500feb3bb24104ccf324088972370">end</link> () const</para>
+
+<para>Returns an iterator pointing to the memory place after the last element of the list </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -60,9 +85,18 @@ Collaboration diagram for Catalogue:<para>
             <listitem><para><link linkend="_class_product">Product</link> ** <link linkend="_class_catalogue_1abab6ba1d196fbd84bb273c1b4199ccb2">list</link></para>
 </listitem>
             <listitem><para>size_t <link linkend="_class_catalogue_1a137484a0db7726821e1577a47b2a37fa">size</link> = 0</para>
+
+<para>The dynamically allocated array of <link linkend="_class_product">Product</link> pointers. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><link linkend="_class_catalogue">Catalogue</link> class An instance of <link linkend="_class_catalogue">Catalogue</link> stores and manages severak Products The Products are stored in a dynamically allocated array using a <link linkend="_class_product">Product</link> pointer array. </para>
+
+
+</section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
 <anchor xml:id="_class_catalogue_1a406ca1384645f90d84076fa8b3f4b3f2"/>    <section>
@@ -85,19 +119,95 @@ Collaboration diagram for Catalogue:<para>
     <title>Add()</title>
 <indexterm><primary>Add</primary><secondary>Catalogue</secondary></indexterm>
 <indexterm><primary>Catalogue</primary><secondary>Add</secondary></indexterm>
-<para><computeroutput>void Catalogue::Add (<link linkend="_class_product">Product</link> * p)</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1ab431cf38c861220bd7be72ecbc1cc77e"/>    <section>
+<para><computeroutput>void Catalogue::Add (<link linkend="_class_product">Product</link> * p)</computeroutput></para><para>
+
+<para>Size of the array. </para>
+</para>
+
+<para>Adds the clone of the object to the list. If the product is already in the catalogue, then throws an error!</para>
+
+<para>Adds <link linkend="_class_product">Product</link> to the catalogue. If the product is already in the catalogue, it throws an error</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>p</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <link linkend="_class_product">Product</link> pointer pointing to product that needs to be added</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>p</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <link linkend="_class_product">Product</link> to store. </para>
+    </section><anchor xml:id="_class_catalogue_1ab431cf38c861220bd7be72ecbc1cc77e"/>    <section>
     <title>begin()</title>
 <indexterm><primary>begin</primary><secondary>Catalogue</secondary></indexterm>
 <indexterm><primary>Catalogue</primary><secondary>begin</secondary></indexterm>
-<para><computeroutput><link linkend="_class_catalogue_1_1_iterator">Catalogue::Iterator</link> Catalogue::begin ( ) const</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1ae8859b3893a47bb9707f7e5a9e2a4d79"/>    <section>
+<para><computeroutput><link linkend="_class_catalogue_1_1_iterator">Catalogue::Iterator</link> Catalogue::begin ( ) const</computeroutput></para><para>
+
+<para>Returns an iterator pointing to the first element of the list </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+<link linkend="_class_catalogue_1_1_iterator">Iterator</link> type </para>
+    </section><anchor xml:id="_class_catalogue_1ae8859b3893a47bb9707f7e5a9e2a4d79"/>    <section>
     <title>Clear()</title>
 <indexterm><primary>Clear</primary><secondary>Catalogue</secondary></indexterm>
 <indexterm><primary>Catalogue</primary><secondary>Clear</secondary></indexterm>
-<para><computeroutput>void Catalogue::Clear ( )</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1a35b500feb3bb24104ccf324088972370"/>    <section>
+<para><computeroutput>void Catalogue::Clear ( )</computeroutput></para><para>
+
+<para>Clears the catalogue, freeing all the allocated pointers and resetting the size to 0. </para>
+</para>
+
+<para>Clears the catalogue by freeing up all of the allocated memory</para>
+    </section><anchor xml:id="_class_catalogue_1a35b500feb3bb24104ccf324088972370"/>    <section>
     <title>end()</title>
 <indexterm><primary>end</primary><secondary>Catalogue</secondary></indexterm>
 <indexterm><primary>Catalogue</primary><secondary>end</secondary></indexterm>
-<para><computeroutput><link linkend="_class_catalogue_1_1_iterator">Catalogue::Iterator</link> Catalogue::end ( ) const</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1a68cc0da89a96d535a3ea7aeabc2ed944"/>    <section>
+<para><computeroutput><link linkend="_class_catalogue_1_1_iterator">Catalogue::Iterator</link> Catalogue::end ( ) const</computeroutput></para><para>
+
+<para>Returns an iterator pointing to the memory place after the last element of the list </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+<link linkend="_class_catalogue_1_1_iterator">Iterator</link> </para>
+    </section><anchor xml:id="_class_catalogue_1a68cc0da89a96d535a3ea7aeabc2ed944"/>    <section>
     <title>getSize()</title>
 <indexterm><primary>getSize</primary><secondary>Catalogue</secondary></indexterm>
 <indexterm><primary>Catalogue</primary><secondary>getSize</secondary></indexterm>
@@ -105,27 +215,306 @@ Collaboration diagram for Catalogue:<para>
     <title>Load()</title>
 <indexterm><primary>Load</primary><secondary>Catalogue</secondary></indexterm>
 <indexterm><primary>Catalogue</primary><secondary>Load</secondary></indexterm>
-<para><computeroutput>void Catalogue::Load (const std::string path) const</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1af9ebacaaef724e5c04c334322f81a83b"/>    <section>
+<para><computeroutput>void Catalogue::Load (const std::string path) const</computeroutput></para><para>
+
+<para>Loads the catalogue from a file by creting objects from the data read and placing them into the catalogue </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>path</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Path to the file to read from </para>
+    </section><anchor xml:id="_class_catalogue_1af9ebacaaef724e5c04c334322f81a83b"/>    <section>
     <title>operator[]()</title>
 <indexterm><primary>operator[]</primary><secondary>Catalogue</secondary></indexterm>
 <indexterm><primary>Catalogue</primary><secondary>operator[]</secondary></indexterm>
-<para><computeroutput><link linkend="_class_product">Product</link> * Catalogue::operator[] (size_t idx)</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1a15c28294d8e38ca67c105e4fa971835b"/>    <section>
+<para><computeroutput><link linkend="_class_product">Product</link> * Catalogue::operator[] (size_t idx)</computeroutput></para><para>
+
+<para>Return the size of the catalogue. </para>
+</para>
+
+<para>Overloaded [] operator Return the element in the <link linkend="_class_catalogue">Catalogue</link> at the given index.</para>
+
+<para>Overloads the [] operator for <link linkend="_class_catalogue">Catalogue</link>. It returns the n-th element of the list enwrapped in the <link linkend="_class_catalogue">Catalogue</link> Throws error if it is out of bounds</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>idx</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                The index of the element to return <formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+The n-th element of the catalogue</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>idx</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_catalogue_1a15c28294d8e38ca67c105e4fa971835b"/>    <section>
     <title>OrderBy()</title>
 <indexterm><primary>OrderBy</primary><secondary>Catalogue</secondary></indexterm>
 <indexterm><primary>Catalogue</primary><secondary>OrderBy</secondary></indexterm>
-<para><computeroutput>void Catalogue::OrderBy (<link linkend="_catalogue_8h_1ac13fc3178aad8dbfd71419053e15691d">OrderReq</link> r, bool rev)</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1aa1cd6a60d22d6bd5cb904c6550668e29"/>    <section>
+<para><computeroutput>void Catalogue::OrderBy (<link linkend="_catalogue_8h_1ac13fc3178aad8dbfd71419053e15691d">OrderReq</link> r, bool reversed)</computeroutput></para><para>
+
+<para>Orders the catalogue by name or price. Price can be sorted by high to low Name can be sorted alphabetically or reversed </para>
+</para>
+
+<para>Sorts the <link linkend="_class_catalogue">Catalogue</link> with std::sort Uses lambda function</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>r</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Type to sort by. 
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>rev</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Reverse order?</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>r</entry>
+                                <entry></entry>
+                            </row>
+                            <row>
+                                <entry>reversed</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_catalogue_1aa1cd6a60d22d6bd5cb904c6550668e29"/>    <section>
     <title>Remove()</title>
 <indexterm><primary>Remove</primary><secondary>Catalogue</secondary></indexterm>
 <indexterm><primary>Catalogue</primary><secondary>Remove</secondary></indexterm>
-<para><computeroutput>void Catalogue::Remove (<link linkend="_class_product">Product</link> * p)</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1afb2d18cb7a33814c40a526fbb4988018"/>    <section>
+<para><computeroutput>void Catalogue::Remove (<link linkend="_class_product">Product</link> * p)</computeroutput></para><para>
+
+<para>Removes the product from the catalogue if it has the same attributes as the <link linkend="_class_product">Product</link> passed as a pointer. Alternatively, if the pointer is actually included, it removes it. </para>
+</para>
+
+<para>Removes the object from the list if the two objects&apos; attributes are identical</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>p</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Pointer to the product that need removing</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>p</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Pointer to the product to compare with. </para>
+    </section><anchor xml:id="_class_catalogue_1afb2d18cb7a33814c40a526fbb4988018"/>    <section>
     <title>Save()</title>
 <indexterm><primary>Save</primary><secondary>Catalogue</secondary></indexterm>
 <indexterm><primary>Catalogue</primary><secondary>Save</secondary></indexterm>
-<para><computeroutput>void Catalogue::Save (const std::string path) const</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1a36939b9a4416c0fef711440b5b17161d"/>    <section>
+<para><computeroutput>void Catalogue::Save (const std::string path) const</computeroutput></para><para>
+
+<para>Saves the catalogue to a file given by the &apos;path&apos; variable. It uses the classes&apos; overloaded serializeObj method </para>
+</para>
+
+<para>Iterates through the list and saves all the objects to a file</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>path</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Path of save file</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>path</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Path to save to </para>
+    </section><anchor xml:id="_class_catalogue_1a36939b9a4416c0fef711440b5b17161d"/>    <section>
     <title>Search()</title>
 <indexterm><primary>Search</primary><secondary>Catalogue</secondary></indexterm>
 <indexterm><primary>Catalogue</primary><secondary>Search</secondary></indexterm>
-<para><computeroutput><link linkend="_class_product">Product</link> ** Catalogue::Search (std::string criteria)</computeroutput></para></section>
+<para><computeroutput><link linkend="_class_product">Product</link> ** Catalogue::Search (std::string criteria)</computeroutput></para><para>
+
+<para>Searches the catalogue and returns with an array of pointers pointing to the products that meet the criteria. It searches by name, substring included, case insensitive </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>criteria</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Criteria: the substring to search for <formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+Array of <link linkend="_class_product">Product</link> pointers with product that met the criteria </para>
+</section>
 </section>
 <section>
 <title>Member Data Documentation</title>
@@ -137,7 +526,11 @@ Collaboration diagram for Catalogue:<para>
     <title>size</title>
 <indexterm><primary>size</primary><secondary>Catalogue</secondary></indexterm>
 <indexterm><primary>Catalogue</primary><secondary>size</secondary></indexterm>
-<para><computeroutput>size_t Catalogue::size = 0<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para><computeroutput>size_t Catalogue::size = 0<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>The dynamically allocated array of <link linkend="_class_product">Product</link> pointers. </para>
+</para>
+</section>
 <para>
 The documentation for this class was generated from the following files:</para>
 C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/<link linkend="_catalogue_8h">catalogue.h</link>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/<link linkend="_catalogue_8cpp">catalogue.cpp</link></section>

@@ -86,6 +86,85 @@ void Catalogue::Save(std::string path)const {
 	savefile.close();
 }
 
+void Catalogue::Load(std::string path) {
+	obj_t type=obj_t::Product;
+	std::ifstream s;
+	s.open(path);
+	s >> type;
+	while (true) {
+		s.open(path);
+		switch (type)
+		{
+		case obj_t::Product:
+		{
+			Product p;
+			s >> p;
+			Add(p.clone());
+			break;
+		}
+		case obj_t::Storage:
+		{
+			Storage st;
+			s >> st;
+			Add(st.clone());
+			break;
+		}
+		case obj_t::RAM:
+		{	RAM r;
+		s >> r;
+		Add(r.clone());
+		break;
+		}
+		case obj_t::HDD:
+		{
+			HDD hdd;
+			s >> hdd;
+			Add(hdd.clone());
+			break;
+		}
+		case obj_t::SSD:
+		{
+			SSD ssd;
+			s >> ssd;
+			Add(ssd.clone());
+			break;
+		}
+		case obj_t::MB:
+		{
+			Motherboard mb;
+			s >> mb;
+			Add(mb.clone());
+			break;
+		}
+		case obj_t::CPU:
+		{
+			CPU cpu;
+			s >> cpu;
+			Add(cpu.clone());
+			break;
+		}
+		case obj_t::GPU:
+		{
+			GPU gpu;
+			s >> gpu;
+			Add(gpu.clone());
+			break;
+		}
+		case obj_t::PC:
+		{
+			PC pc;
+			s >> pc;
+			Add(pc.clone());
+		}
+			break;
+		default:
+			break;
+		}
+		s >> type;
+	}
+	
+}
+
 
 
 /// <summary>

@@ -71,13 +71,16 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p><a class="el" href="class_catalogue.html" title="Catalogue class An instance of Catalogue stores and manages severak Products The Products are stored ...">Catalogue</a> class An instance of <a class="el" href="class_catalogue.html" title="Catalogue class An instance of Catalogue stores and manages severak Products The Products are stored ...">Catalogue</a> stores and manages severak Products The Products are stored in a dynamically allocated array using a <a class="el" href="class_product.html">Product</a> pointer array.  
+ <a href="class_catalogue.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="catalogue_8h_source.html">catalogue.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for Catalogue:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_catalogue__coll__graph.png" border="0" usemap="#a_catalogue_coll__map" alt="Collaboration graph"/></div>
 <map name="a_catalogue_coll__map" id="a_catalogue_coll__map">
-<area shape="rect" title=" " alt="" coords="19,527,127,795"/>
+<area shape="rect" title="Catalogue class An instance of Catalogue stores and manages severak Products The Products are stored ..." alt="" coords="19,527,127,795"/>
 <area shape="rect" href="class_product.html" title=" " alt="" coords="5,5,140,464"/>
 </map>
 </div>
@@ -90,22 +93,30 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a16755e25621142e6c29f3c2574c086ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_catalogue.html#a16755e25621142e6c29f3c2574c086ba">Add</a> (<a class="el" href="class_product.html">Product</a> *p)</td></tr>
+<tr class="memdesc:a16755e25621142e6c29f3c2574c086ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the array.  <a href="class_catalogue.html#a16755e25621142e6c29f3c2574c086ba">More...</a><br /></td></tr>
 <tr class="separator:a16755e25621142e6c29f3c2574c086ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1cd6a60d22d6bd5cb904c6550668e29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_catalogue.html#aa1cd6a60d22d6bd5cb904c6550668e29">Remove</a> (<a class="el" href="class_product.html">Product</a> *p)</td></tr>
+<tr class="memdesc:aa1cd6a60d22d6bd5cb904c6550668e29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the product from the catalogue if it has the same attributes as the <a class="el" href="class_product.html">Product</a> passed as a pointer. Alternatively, if the pointer is actually included, it removes it.  <a href="class_catalogue.html#aa1cd6a60d22d6bd5cb904c6550668e29">More...</a><br /></td></tr>
 <tr class="separator:aa1cd6a60d22d6bd5cb904c6550668e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8859b3893a47bb9707f7e5a9e2a4d79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_catalogue.html#ae8859b3893a47bb9707f7e5a9e2a4d79">Clear</a> ()</td></tr>
+<tr class="memdesc:ae8859b3893a47bb9707f7e5a9e2a4d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the catalogue, freeing all the allocated pointers and resetting the size to 0.  <a href="class_catalogue.html#ae8859b3893a47bb9707f7e5a9e2a4d79">More...</a><br /></td></tr>
 <tr class="separator:ae8859b3893a47bb9707f7e5a9e2a4d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb2d18cb7a33814c40a526fbb4988018"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_catalogue.html#afb2d18cb7a33814c40a526fbb4988018">Save</a> (const std::string path) const</td></tr>
+<tr class="memdesc:afb2d18cb7a33814c40a526fbb4988018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the catalogue to a file given by the 'path' variable. It uses the classes' overloaded serializeObj method  <a href="class_catalogue.html#afb2d18cb7a33814c40a526fbb4988018">More...</a><br /></td></tr>
 <tr class="separator:afb2d18cb7a33814c40a526fbb4988018"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0055df0cb8fbe295bf93df7c29be96e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_catalogue.html#a0055df0cb8fbe295bf93df7c29be96e5">Load</a> (const std::string path) const</td></tr>
+<tr class="memdesc:a0055df0cb8fbe295bf93df7c29be96e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the catalogue from a file by creting objects from the data read and placing them into the catalogue  <a href="class_catalogue.html#a0055df0cb8fbe295bf93df7c29be96e5">More...</a><br /></td></tr>
 <tr class="separator:a0055df0cb8fbe295bf93df7c29be96e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36939b9a4416c0fef711440b5b17161d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_product.html">Product</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_catalogue.html#a36939b9a4416c0fef711440b5b17161d">Search</a> (std::string criteria)</td></tr>
+<tr class="memdesc:a36939b9a4416c0fef711440b5b17161d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches the catalogue and returns with an array of pointers pointing to the products that meet the criteria. It searches by name, substring included, case insensitive  <a href="class_catalogue.html#a36939b9a4416c0fef711440b5b17161d">More...</a><br /></td></tr>
 <tr class="separator:a36939b9a4416c0fef711440b5b17161d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15c28294d8e38ca67c105e4fa971835b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_catalogue.html#a15c28294d8e38ca67c105e4fa971835b">OrderBy</a> (<a class="el" href="catalogue_8h.html#ac13fc3178aad8dbfd71419053e15691d">OrderReq</a> r, bool rev)</td></tr>
+<tr class="memdesc:a15c28294d8e38ca67c105e4fa971835b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Orders the catalogue by name or price. Price can be sorted by high to low Name can be sorted alphabetically or reversed  <a href="class_catalogue.html#a15c28294d8e38ca67c105e4fa971835b">More...</a><br /></td></tr>
 <tr class="separator:a15c28294d8e38ca67c105e4fa971835b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68cc0da89a96d535a3ea7aeabc2ed944"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_catalogue.html#a68cc0da89a96d535a3ea7aeabc2ed944">getSize</a> ()</td></tr>
 <tr class="separator:a68cc0da89a96d535a3ea7aeabc2ed944"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9ebacaaef724e5c04c334322f81a83b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_product.html">Product</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_catalogue.html#af9ebacaaef724e5c04c334322f81a83b">operator[]</a> (size_t idx)</td></tr>
+<tr class="memdesc:af9ebacaaef724e5c04c334322f81a83b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the size of the catalogue.  <a href="class_catalogue.html#af9ebacaaef724e5c04c334322f81a83b">More...</a><br /></td></tr>
 <tr class="separator:af9ebacaaef724e5c04c334322f81a83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a406ca1384645f90d84076fa8b3f4b3f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_catalogue.html#a406ca1384645f90d84076fa8b3f4b3f2">Catalogue</a> ()</td></tr>
 <tr class="separator:a406ca1384645f90d84076fa8b3f4b3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,8 +125,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a023fd8d70a58f76d2bbd6ef1e3ef0e9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_catalogue.html#a023fd8d70a58f76d2bbd6ef1e3ef0e9e">~Catalogue</a> ()</td></tr>
 <tr class="separator:a023fd8d70a58f76d2bbd6ef1e3ef0e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab431cf38c861220bd7be72ecbc1cc77e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_catalogue_1_1_iterator.html">Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_catalogue.html#ab431cf38c861220bd7be72ecbc1cc77e">begin</a> () const</td></tr>
+<tr class="memdesc:ab431cf38c861220bd7be72ecbc1cc77e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator pointing to the first element of the list  <a href="class_catalogue.html#ab431cf38c861220bd7be72ecbc1cc77e">More...</a><br /></td></tr>
 <tr class="separator:ab431cf38c861220bd7be72ecbc1cc77e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35b500feb3bb24104ccf324088972370"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_catalogue_1_1_iterator.html">Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_catalogue.html#a35b500feb3bb24104ccf324088972370">end</a> () const</td></tr>
+<tr class="memdesc:a35b500feb3bb24104ccf324088972370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator pointing to the memory place after the last element of the list  <a href="class_catalogue.html#a35b500feb3bb24104ccf324088972370">More...</a><br /></td></tr>
 <tr class="separator:a35b500feb3bb24104ccf324088972370"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -123,9 +136,12 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:abab6ba1d196fbd84bb273c1b4199ccb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_product.html">Product</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_catalogue.html#abab6ba1d196fbd84bb273c1b4199ccb2">list</a></td></tr>
 <tr class="separator:abab6ba1d196fbd84bb273c1b4199ccb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a137484a0db7726821e1577a47b2a37fa"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_catalogue.html#a137484a0db7726821e1577a47b2a37fa">size</a> = 0</td></tr>
+<tr class="memdesc:a137484a0db7726821e1577a47b2a37fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dynamically allocated array of <a class="el" href="class_product.html">Product</a> pointers.  <a href="class_catalogue.html#a137484a0db7726821e1577a47b2a37fa">More...</a><br /></td></tr>
 <tr class="separator:a137484a0db7726821e1577a47b2a37fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="class_catalogue.html" title="Catalogue class An instance of Catalogue stores and manages severak Products The Products are stored ...">Catalogue</a> class An instance of <a class="el" href="class_catalogue.html" title="Catalogue class An instance of Catalogue stores and manages severak Products The Products are stored ...">Catalogue</a> stores and manages severak Products The Products are stored in a dynamically allocated array using a <a class="el" href="class_product.html">Product</a> pointer array. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a406ca1384645f90d84076fa8b3f4b3f2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a406ca1384645f90d84076fa8b3f4b3f2">&#9670;&nbsp;</a></span>Catalogue() <span class="overload">[1/2]</span></h2>
 
@@ -205,6 +221,24 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Size of the array. </p>
+<p>Adds the clone of the object to the list. If the product is already in the catalogue, then throws an error!</p>
+<p>Adds <a class="el" href="class_product.html">Product</a> to the catalogue. If the product is already in the catalogue, it throws an error</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p><a class="el" href="class_product.html">Product</a> pointer pointing to product that needs to be added</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p><a class="el" href="class_product.html">Product</a> to store. </p>
+
 </div>
 </div>
 <a id="ab431cf38c861220bd7be72ecbc1cc77e"></a>
@@ -221,6 +255,10 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns an iterator pointing to the first element of the list </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<p><a class="el" href="class_catalogue_1_1_iterator.html">Iterator</a> type </p>
 
 </div>
 </div>
@@ -239,6 +277,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Clears the catalogue, freeing all the allocated pointers and resetting the size to 0. </p>
+<p>Clears the catalogue by freeing up all of the allocated memory</p>
+
 </div>
 </div>
 <a id="a35b500feb3bb24104ccf324088972370"></a>
@@ -255,6 +296,10 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns an iterator pointing to the memory place after the last element of the list </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<p><a class="el" href="class_catalogue_1_1_iterator.html">Iterator</a> </p>
 
 </div>
 </div>
@@ -291,6 +336,15 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Loads the catalogue from a file by creting objects from the data read and placing them into the catalogue </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Path to the file to read from </p>
+
 </div>
 </div>
 <a id="af9ebacaaef724e5c04c334322f81a83b"></a>
@@ -308,6 +362,25 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Return the size of the catalogue. </p>
+<p>Overloaded [] operator Return the element in the <a class="el" href="class_catalogue.html" title="Catalogue class An instance of Catalogue stores and manages severak Products The Products are stored ...">Catalogue</a> at the given index.</p>
+<p>Overloads the [] operator for <a class="el" href="class_catalogue.html" title="Catalogue class An instance of Catalogue stores and manages severak Products The Products are stored ...">Catalogue</a>. It returns the n-th element of the list enwrapped in the <a class="el" href="class_catalogue.html" title="Catalogue class An instance of Catalogue stores and manages severak Products The Products are stored ...">Catalogue</a> Throws error if it is out of bounds</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idx</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The index of the element to return </p><dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<p>The n-th element of the catalogue</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idx</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -327,7 +400,7 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>rev</em>&#160;</td>
+          <td class="paramname"><em>reversed</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -336,6 +409,29 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Orders the catalogue by name or price. Price can be sorted by high to low Name can be sorted alphabetically or reversed </p>
+<p>Sorts the <a class="el" href="class_catalogue.html" title="Catalogue class An instance of Catalogue stores and manages severak Products The Products are stored ...">Catalogue</a> with std::sort Uses lambda function</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Type to sort by. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rev</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Reverse order?</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td></td></tr>
+    <tr><td class="paramname">reversed</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -355,6 +451,23 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Removes the product from the catalogue if it has the same attributes as the <a class="el" href="class_product.html">Product</a> passed as a pointer. Alternatively, if the pointer is actually included, it removes it. </p>
+<p>Removes the object from the list if the two objects' attributes are identical</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Pointer to the product that need removing</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Pointer to the product to compare with. </p>
+
 </div>
 </div>
 <a id="afb2d18cb7a33814c40a526fbb4988018"></a>
@@ -373,6 +486,23 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Saves the catalogue to a file given by the 'path' variable. It uses the classes' overloaded serializeObj method </p>
+<p>Iterates through the list and saves all the objects to a file</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Path of save file</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Path to save to </p>
+
 </div>
 </div>
 <a id="a36939b9a4416c0fef711440b5b17161d"></a>
@@ -390,6 +520,16 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Searches the catalogue and returns with an array of pointers pointing to the products that meet the criteria. It searches by name, substring included, case insensitive </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">criteria</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Criteria: the substring to search for </p><dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<p>Array of <a class="el" href="class_product.html">Product</a> pointers with product that met the criteria </p>
 
 </div>
 </div>
@@ -435,6 +575,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The dynamically allocated array of <a class="el" href="class_product.html">Product</a> pointers. </p>
 
 </div>
 </div>

@@ -27,6 +27,8 @@ Collaboration diagram for CPU:<para>
     <title>Public Member Functions    </title>
         <itemizedlist>
             <listitem><para><link linkend="_class_c_p_u_1a2fdd8153d0979ccad9ed8452897267f4">CPU</link> ()</para>
+
+<para>Included igpu. </para>
 </listitem>
             <listitem><para><link linkend="_class_c_p_u_1a12c49868638bbc8d10a596553d147e67">CPU</link> (std::string <link linkend="_class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8">name</link>, int <link linkend="_class_c_p_u_1a65f32aa0ee6335f15d7a7087da2564f3">tdp</link>, <link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68">socket</link> type, unsigned int clock, unsigned int core, unsigned int thread, double c, bool vga)</para>
 </listitem>
@@ -54,11 +56,9 @@ Collaboration diagram for CPU:<para>
 </listitem>
             <listitem><para><link linkend="_class_c_p_u">CPU</link> * <link linkend="_class_c_p_u_1ab4f1ec2a356344187dc6598404012df9">clone</link> ()</para>
 </listitem>
-            <listitem><para>std::string <link linkend="_class_c_p_u_1a07222b545e69fcc328b18d7b44a27027">getObjType</link> ()</para>
-</listitem>
             <listitem><para>void <link linkend="_class_c_p_u_1aa2af36b3447c4e7b4e1f25f699a06824">print</link> ()</para>
 
-<para>Prints out basic data of a product. </para>
+<para>Prints out basic data of a product to the output stream. </para>
 </listitem>
             <listitem><para>std::string <link linkend="_class_c_p_u_1a76b924aa80f3acf2bfdd7299f2be6044">serializeObj</link> ()</para>
 </listitem>
@@ -70,8 +70,12 @@ Collaboration diagram for CPU:<para>
             <listitem><para>std::string <link linkend="_class_c_p_u_1acf0ec240e61c72c6252a2f8e7b339189">genName</link></para>
 </listitem>
             <listitem><para>int <link linkend="_class_c_p_u_1a65f32aa0ee6335f15d7a7087da2564f3">tdp</link></para>
+
+<para>Name of the cpu generation. </para>
 </listitem>
             <listitem><para><link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68">socket</link> <link linkend="_class_c_p_u_1a1f1bb470721f49e48139e46bbea9f109">socketType</link></para>
+
+<para>Total drawn power. </para>
 </listitem>
             <listitem><para>unsigned int <link linkend="_class_c_p_u_1a5b9fd4e0c27dcff1bcb33fbca6da2a6c">baseClock</link></para>
 
@@ -104,7 +108,11 @@ Collaboration diagram for CPU:<para>
     <title>CPU()<computeroutput>[1/4]</computeroutput></title>
 <indexterm><primary>CPU</primary><secondary>CPU</secondary></indexterm>
 <indexterm><primary>CPU</primary><secondary>CPU</secondary></indexterm>
-<para><computeroutput>CPU::CPU ( )<computeroutput>[inline]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_c_p_u_1a12c49868638bbc8d10a596553d147e67"/>    <section>
+<para><computeroutput>CPU::CPU ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Included igpu. </para>
+</para>
+    </section><anchor xml:id="_class_c_p_u_1a12c49868638bbc8d10a596553d147e67"/>    <section>
     <title>CPU()<computeroutput>[2/4]</computeroutput></title>
 <indexterm><primary>CPU</primary><secondary>CPU</secondary></indexterm>
 <indexterm><primary>CPU</primary><secondary>CPU</secondary></indexterm>
@@ -142,11 +150,7 @@ Reimplemented from <link linkend="_class_product_1a2cc3f5ef8abe14801e185734cfcc3
     <title>getGenName()</title>
 <indexterm><primary>getGenName</primary><secondary>CPU</secondary></indexterm>
 <indexterm><primary>CPU</primary><secondary>getGenName</secondary></indexterm>
-<para><computeroutput>std::string CPU::getGenName ( )</computeroutput></para>    </section><anchor xml:id="_class_c_p_u_1a07222b545e69fcc328b18d7b44a27027"/>    <section>
-    <title>getObjType()</title>
-<indexterm><primary>getObjType</primary><secondary>CPU</secondary></indexterm>
-<indexterm><primary>CPU</primary><secondary>getObjType</secondary></indexterm>
-<para><computeroutput>std::string CPU::getObjType ( )</computeroutput></para>    </section><anchor xml:id="_class_c_p_u_1a70b831ad7cfe74ce44be5d1349620e87"/>    <section>
+<para><computeroutput>std::string CPU::getGenName ( )</computeroutput></para>    </section><anchor xml:id="_class_c_p_u_1a70b831ad7cfe74ce44be5d1349620e87"/>    <section>
     <title>getSocketType()</title>
 <indexterm><primary>getSocketType</primary><secondary>CPU</secondary></indexterm>
 <indexterm><primary>CPU</primary><secondary>getSocketType</secondary></indexterm>
@@ -172,7 +176,7 @@ Reimplemented from <link linkend="_class_product_1a2cc3f5ef8abe14801e185734cfcc3
 <indexterm><primary>CPU</primary><secondary>print</secondary></indexterm>
 <para><computeroutput>void CPU::print ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
 
-<para>Prints out basic data of a product. </para>
+<para>Prints out basic data of a product to the output stream. </para>
 </para>
 <para>
 Reimplemented from <link linkend="_class_product_1a82a40e1860ffe2c88ea08084037a6c42">Product</link>.</para>
@@ -180,7 +184,9 @@ Reimplemented from <link linkend="_class_product_1a82a40e1860ffe2c88ea08084037a6
     <title>serializeObj()</title>
 <indexterm><primary>serializeObj</primary><secondary>CPU</secondary></indexterm>
 <indexterm><primary>CPU</primary><secondary>serializeObj</secondary></indexterm>
-<para><computeroutput>std::string CPU::serializeObj ( )</computeroutput></para></section>
+<para><computeroutput>std::string CPU::serializeObj ( )</computeroutput></para>
+<para>Calls base class&apos;s serialize fucntion</para>
+</section>
 </section>
 <section>
 <title>Member Data Documentation</title>
@@ -224,11 +230,19 @@ Reimplemented from <link linkend="_class_product_1a82a40e1860ffe2c88ea08084037a6
     <title>socketType</title>
 <indexterm><primary>socketType</primary><secondary>CPU</secondary></indexterm>
 <indexterm><primary>CPU</primary><secondary>socketType</secondary></indexterm>
-<para><computeroutput><link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68">socket</link> CPU::socketType<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_c_p_u_1a65f32aa0ee6335f15d7a7087da2564f3"/>    <section>
+<para><computeroutput><link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68">socket</link> CPU::socketType<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Total drawn power. </para>
+</para>
+    </section><anchor xml:id="_class_c_p_u_1a65f32aa0ee6335f15d7a7087da2564f3"/>    <section>
     <title>tdp</title>
 <indexterm><primary>tdp</primary><secondary>CPU</secondary></indexterm>
 <indexterm><primary>CPU</primary><secondary>tdp</secondary></indexterm>
-<para><computeroutput>int CPU::tdp<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_c_p_u_1a19e584d567f61b968f2f5e09c86abc4c"/>    <section>
+<para><computeroutput>int CPU::tdp<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Name of the cpu generation. </para>
+</para>
+    </section><anchor xml:id="_class_c_p_u_1a19e584d567f61b968f2f5e09c86abc4c"/>    <section>
     <title>threadCount</title>
 <indexterm><primary>threadCount</primary><secondary>CPU</secondary></indexterm>
 <indexterm><primary>CPU</primary><secondary>threadCount</secondary></indexterm>

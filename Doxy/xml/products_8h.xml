@@ -241,15 +241,37 @@
           </detaileddescription>
         </enumvalue>
         <briefdescription>
+<para>Enumerator for the object types </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.h" line="11" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.h" bodystart="11" bodyend="11"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.h" line="13" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.h" bodystart="13" bodyend="13"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
+      <memberdef kind="function" id="products_8h_1ac2faf34b8deb32d47403eb685de6c3f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ifstream &amp;</type>
+        <definition>std::ifstream&amp; operator&gt;&gt;</definition>
+        <argsstring>(std::ofstream &amp;of, obj_t rhs)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>std::ofstream &amp;</type>
+          <declname>of</declname>
+        </param>
+        <param>
+          <type><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9af" kindref="member">obj_t</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.h" line="14" column="15" declfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.h" declline="14" declcolumn="15"/>
+      </memberdef>
       <memberdef kind="function" id="products_8h_1a9de3e0ccf990b76a227192215795f84a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
@@ -302,7 +324,7 @@ rhs is the reference to the object being saved <simplesect kind="return"><para><
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.h" line="23" column="8" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.h" bodystart="23" bodyend="37"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.h" line="26" column="8" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.h" bodystart="26" bodyend="40"/>
       </memberdef>
       <memberdef kind="function" id="products_8h_1a3c4c53fadab31183f9737475efa6c3ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::ifstream &amp;</type>
@@ -325,7 +347,7 @@ rhs is the reference to the object being saved <simplesect kind="return"><para><
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.h" line="95" column="15" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.cpp" bodystart="9" bodyend="29" declfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.h" declline="95" declcolumn="15"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.h" line="97" column="15" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.cpp" bodystart="9" bodyend="29" declfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.h" declline="97" declcolumn="15"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -342,83 +364,82 @@ rhs is the reference to the object being saved <simplesect kind="return"><para><
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="memtrace_8h" kindref="compound">memtrace.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11" refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9af" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9af" kindref="member">obj_t</ref>{<ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afadeb10517653c255364175796ace3553f" kindref="member">Product</ref>,<ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa8c4aa541ee911e8d80451ef8cc304806" kindref="member">Storage</ref>,<sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afae53619c1fe611a51eeeb8d148ba6e532" kindref="member">RAM</ref>,<sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa9c2dc227590d4220750b52b21b0aeb99" kindref="member">HDD</ref>,<sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa34df20bab5e85dc75bfc94ef569cced9" kindref="member">SSD</ref>,<ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa8d8fcc1abd550c5f25dbfaa57d59cb67" kindref="member">MB</ref>,<ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa2b55387dd066c5bac646ac61543d152d" kindref="member">CPU</ref>,<ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa52f9ec21735243ad9917cda3ca077d32" kindref="member">GPU</ref>,<ref refid="class_p_c" kindref="compound">PC</ref>};</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//Template<sp/>for<sp/>writing<sp/>the<sp/>serialized<sp/>object<sp/>to<sp/>file</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="23" refid="products_8h_1a9de3e0ccf990b76a227192215795f84a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::ofstream&amp;<sp/><ref refid="products_8h_1a9de3e0ccf990b76a227192215795f84a" kindref="member">operator&lt;&lt;</ref>(std::ofstream&amp;<sp/>savefile,<sp/>T&amp;<sp/>rhs)<sp/>{</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//If<sp/>the<sp/>file<sp/>is<sp/>not<sp/>opened<sp/>yet,<sp/>the<sp/>function<sp/>will<sp/>open/create<sp/>a<sp/>default<sp/>file</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!savefile.is_open())</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>savefile.open(</highlight><highlight class="stringliteral">&quot;savefile.txt&quot;</highlight><highlight class="normal">,<sp/>std::ios_base::app);</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile<sp/>&lt;&lt;<sp/>rhs.getObjType();</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Const<sp/>char[]<sp/>type<sp/>does<sp/>not<sp/>have<sp/>a<sp/>.getObjType<sp/>function,<sp/>so<sp/>I<sp/>have<sp/>to<sp/>use<sp/>.write,</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//as<sp/>&lt;&lt;<sp/>would<sp/>cause<sp/>unwanted<sp/>recursion<sp/>with<sp/>char[]<sp/>type</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile.write(</highlight><highlight class="stringliteral">&quot;\n{&quot;</highlight><highlight class="normal">,<sp/>2);</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile.write(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">,1);</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile<sp/>&lt;&lt;<sp/>rhs.serializeObj();<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Saves<sp/>the<sp/>object<sp/>to<sp/>file</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile.write(</highlight><highlight class="stringliteral">&quot;\n}\n&quot;</highlight><highlight class="normal">,3);</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile.close();</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>savefile;</highlight></codeline>
-<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="41" refid="class_product" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_product" kindref="compound">Product</ref><sp/>{</highlight></codeline>
-<codeline lineno="42" refid="class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8" kindref="member">name</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="43" refid="class_product_1abb2572df7a832a509944905603ba5e4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_product_1abb2572df7a832a509944905603ba5e4f" kindref="member">price</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="44" refid="class_product_1ab88a1ecb238a74583a920a65f8cbee9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_product_1ab88a1ecb238a74583a920a65f8cbee9c" kindref="member">dscrpt</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="45" refid="class_product_1af3d21858bb34986f54309b877678daa8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_product_1af3d21858bb34986f54309b877678daa8" kindref="member">manufacturer</ref>;<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="46" refid="class_product_1a831f4ac197a88d2c2b7260765714c0d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_product_1a831f4ac197a88d2c2b7260765714c0d4" kindref="member">inv</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="48" refid="class_product_1afa7216e3fe55009b1862453041a34374" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9af" kindref="member">obj_t</ref><sp/><ref refid="class_product_1afa7216e3fe55009b1862453041a34374" kindref="member">t</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_product_1a847c1d85e67ce387166a597579a55135" kindref="member">Product</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_product" kindref="compound">Product</ref>&amp;<sp/>p);</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_product_1a847c1d85e67ce387166a597579a55135" kindref="member">Product</ref>(std::string<sp/><ref refid="class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8" kindref="member">name</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_product_1abb2572df7a832a509944905603ba5e4f" kindref="member">price</ref>,<sp/>std::string<sp/>manuf,<sp/>std::string<sp/>descript<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;There<sp/>is<sp/>no<sp/>description<sp/>for<sp/>this<sp/>item!&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>inventory=1);</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_product_1a847c1d85e67ce387166a597579a55135" kindref="member">Product</ref>();</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_product_1a2f5aeb9d25fcbbcf0f6125351850d4ff" kindref="member">getManufacturer</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_product_1a9cbd896ca6b2d95088be8ad8c3b11e3b" kindref="member">getName</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_product_1a874a2ad2556c8d82500cce9917d5ed8c" kindref="member">getDescription</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_product_1a3be25f647260d61df6063ef706261c7f" kindref="member">getPrice</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_product_1a9279a6d296d5b8aafa0143bda648c3da" kindref="member">getAmount</ref>()</highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9af" kindref="member">obj_t</ref><sp/><ref refid="class_product_1a0dc7c2163bf9c07e6283c2cbcaef58d3" kindref="member">getObj_t</ref>()</highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Redundant.<sp/>TODO:<sp/>Replace<sp/>with<sp/>getObj_t</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_product_1a60e8ab009f51c39442257e96409144de" kindref="member">getObjType</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_product_1a1f49f191dab6643d82aee0490bb96e7c" kindref="member">setName</ref>(std::string<sp/>s);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_product_1a08d9ddfb4db62491607f14ec9fba0d77" kindref="member">setDescription</ref>(std::string<sp/>s);<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_product_1aeeafda76687dbbd8b2f086671c17461d" kindref="member">setManuf</ref>(std::string<sp/>s);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_product_1a8ade25d68358bd4cb5b9f7c34fc53b44" kindref="member">setPrice</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>p);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_product_1ae216152e43f64a82294c2c583396d13f" kindref="member">increaseStock</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i=1);</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_product_1a948738c4cb8e65f1f54623001b8c3897" kindref="member">decreaseStock</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i=1);</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_product_1a82a40e1860ffe2c88ea08084037a6c42" kindref="member">print</ref>();</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_product_1a749f163f9319f2cf6e9e0620d7133f0b" kindref="member">serializeObj</ref>()</highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_product" kindref="compound">Product</ref>*<sp/><ref refid="class_product_1a2cc3f5ef8abe14801e185734cfcc3b57" kindref="member">clone</ref>();</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"></highlight></codeline>
-<codeline lineno="84"><highlight class="normal"></highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_product_1a8b72d673cf7d89fb2e375a080af6263d" kindref="member">operator==</ref>(<ref refid="class_product" kindref="compound">Product</ref>&amp;<sp/>rhs);<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_product_1af83d5faec51f3cf9c45d68d103a04114" kindref="member">operator!=</ref>(<ref refid="class_product" kindref="compound">Product</ref>&amp;<sp/>rhs);<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="89" refid="class_product_1a18f26095e25405579968c6ede367484f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_product_1a18f26095e25405579968c6ede367484f" kindref="member">~Product</ref>()<sp/>{}</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="13" refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9af" refkind="member"><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9af" kindref="member">obj_t</ref>{<ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afadeb10517653c255364175796ace3553f" kindref="member">Product</ref>,<ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa8c4aa541ee911e8d80451ef8cc304806" kindref="member">Storage</ref>,<sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afae53619c1fe611a51eeeb8d148ba6e532" kindref="member">RAM</ref>,<sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa9c2dc227590d4220750b52b21b0aeb99" kindref="member">HDD</ref>,<sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa34df20bab5e85dc75bfc94ef569cced9" kindref="member">SSD</ref>,<ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa8d8fcc1abd550c5f25dbfaa57d59cb67" kindref="member">MB</ref>,<ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa2b55387dd066c5bac646ac61543d152d" kindref="member">CPU</ref>,<ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa52f9ec21735243ad9917cda3ca077d32" kindref="member">GPU</ref>,<ref refid="class_p_c" kindref="compound">PC</ref>};</highlight></codeline>
+<codeline lineno="14" refid="products_8h_1ac2faf34b8deb32d47403eb685de6c3f6" refkind="member"><highlight class="normal">std::ifstream&amp;<sp/><ref refid="products_8h_1ac2faf34b8deb32d47403eb685de6c3f6" kindref="member">operator&gt;&gt;</ref>(std::ofstream&amp;<sp/>of,<ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9af" kindref="member">obj_t</ref><sp/>rhs);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//Template<sp/>for<sp/>writing<sp/>the<sp/>serialized<sp/>object<sp/>to<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="26" refid="products_8h_1a9de3e0ccf990b76a227192215795f84a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::ofstream&amp;<sp/><ref refid="products_8h_1a9de3e0ccf990b76a227192215795f84a" kindref="member">operator&lt;&lt;</ref>(std::ofstream&amp;<sp/>savefile,<sp/>T&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//If<sp/>the<sp/>file<sp/>is<sp/>not<sp/>opened<sp/>yet,<sp/>the<sp/>function<sp/>will<sp/>open/create<sp/>a<sp/>default<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!savefile.is_open())</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>savefile.open(</highlight><highlight class="stringliteral">&quot;savefile.txt&quot;</highlight><highlight class="normal">,<sp/>std::ios_base::app);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile<sp/>&lt;&lt;<sp/>rhs.getObjType();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Const<sp/>char[]<sp/>type<sp/>does<sp/>not<sp/>have<sp/>a<sp/>.getObjType<sp/>function,<sp/>so<sp/>I<sp/>have<sp/>to<sp/>use<sp/>.write,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//as<sp/>&lt;&lt;<sp/>would<sp/>cause<sp/>unwanted<sp/>recursion<sp/>with<sp/>char[]<sp/>type</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile.write(</highlight><highlight class="stringliteral">&quot;\n{&quot;</highlight><highlight class="normal">,<sp/>2);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile.write(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">,1);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile<sp/>&lt;&lt;<sp/>rhs.serializeObj();<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Saves<sp/>the<sp/>object<sp/>to<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile.write(</highlight><highlight class="stringliteral">&quot;\n}\n&quot;</highlight><highlight class="normal">,3);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile.close();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>savefile;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="class_product" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_product" kindref="compound">Product</ref><sp/>{</highlight></codeline>
+<codeline lineno="45" refid="class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8" kindref="member">name</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46" refid="class_product_1abb2572df7a832a509944905603ba5e4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_product_1abb2572df7a832a509944905603ba5e4f" kindref="member">price</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="class_product_1ab88a1ecb238a74583a920a65f8cbee9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_product_1ab88a1ecb238a74583a920a65f8cbee9c" kindref="member">dscrpt</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48" refid="class_product_1af3d21858bb34986f54309b877678daa8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_product_1af3d21858bb34986f54309b877678daa8" kindref="member">manufacturer</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="class_product_1a831f4ac197a88d2c2b7260765714c0d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_product_1a831f4ac197a88d2c2b7260765714c0d4" kindref="member">inv</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="51" refid="class_product_1afa7216e3fe55009b1862453041a34374" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9af" kindref="member">obj_t</ref><sp/><ref refid="class_product_1afa7216e3fe55009b1862453041a34374" kindref="member">t</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_product_1a847c1d85e67ce387166a597579a55135" kindref="member">Product</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_product" kindref="compound">Product</ref>&amp;<sp/>p);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_product_1a847c1d85e67ce387166a597579a55135" kindref="member">Product</ref>(std::string<sp/><ref refid="class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8" kindref="member">name</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_product_1abb2572df7a832a509944905603ba5e4f" kindref="member">price</ref>,<sp/>std::string<sp/>manuf,<sp/>std::string<sp/>descript<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;There<sp/>is<sp/>no<sp/>description<sp/>for<sp/>this<sp/>item!&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>inventory=1);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_product_1a847c1d85e67ce387166a597579a55135" kindref="member">Product</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_product_1a2f5aeb9d25fcbbcf0f6125351850d4ff" kindref="member">getManufacturer</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_product_1a9cbd896ca6b2d95088be8ad8c3b11e3b" kindref="member">getName</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_product_1a874a2ad2556c8d82500cce9917d5ed8c" kindref="member">getDescription</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_product_1a3be25f647260d61df6063ef706261c7f" kindref="member">getPrice</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_product_1a9279a6d296d5b8aafa0143bda648c3da" kindref="member">getAmount</ref>()</highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9af" kindref="member">obj_t</ref><sp/><ref refid="class_product_1a0dc7c2163bf9c07e6283c2cbcaef58d3" kindref="member">getObj_t</ref>()</highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_product_1a60e8ab009f51c39442257e96409144de" kindref="member">getObjType</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_product_1a1f49f191dab6643d82aee0490bb96e7c" kindref="member">setName</ref>(std::string<sp/>s);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_product_1a08d9ddfb4db62491607f14ec9fba0d77" kindref="member">setDescription</ref>(std::string<sp/>s);<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_product_1aeeafda76687dbbd8b2f086671c17461d" kindref="member">setManuf</ref>(std::string<sp/>s);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_product_1a8ade25d68358bd4cb5b9f7c34fc53b44" kindref="member">setPrice</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>p);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_product_1ae216152e43f64a82294c2c583396d13f" kindref="member">increaseStock</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i=1);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_product_1a948738c4cb8e65f1f54623001b8c3897" kindref="member">decreaseStock</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i=1);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_product_1a82a40e1860ffe2c88ea08084037a6c42" kindref="member">print</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_product_1a749f163f9319f2cf6e9e0620d7133f0b" kindref="member">serializeObj</ref>()</highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_product" kindref="compound">Product</ref>*<sp/><ref refid="class_product_1a2cc3f5ef8abe14801e185734cfcc3b57" kindref="member">clone</ref>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_product_1a8b72d673cf7d89fb2e375a080af6263d" kindref="member">operator==</ref>(<ref refid="class_product" kindref="compound">Product</ref>&amp;<sp/>rhs);<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_product_1af83d5faec51f3cf9c45d68d103a04114" kindref="member">operator!=</ref>(<ref refid="class_product" kindref="compound">Product</ref>&amp;<sp/>rhs);<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91" refid="class_product_1a18f26095e25405579968c6ede367484f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_product_1a18f26095e25405579968c6ede367484f" kindref="member">~Product</ref>()<sp/>{}</highlight></codeline>
 <codeline lineno="92"><highlight class="normal"></highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="95"><highlight class="normal">std::ifstream&amp;<sp/><ref refid="products_8h_1a3c4c53fadab31183f9737475efa6c3ec" kindref="member">operator&gt;&gt;</ref>(std::ifstream&amp;<sp/>savefile,<sp/><ref refid="class_product" kindref="compound">Product</ref>&amp;<sp/>rhs);</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/></highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal">std::ifstream&amp;<sp/><ref refid="products_8h_1ac2faf34b8deb32d47403eb685de6c3f6" kindref="member">operator&gt;&gt;</ref>(std::ifstream&amp;<sp/>savefile,<sp/><ref refid="class_product" kindref="compound">Product</ref>&amp;<sp/>rhs);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
 <codeline lineno="99"><highlight class="normal"><sp/></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"></highlight></codeline>
-<codeline lineno="101"><highlight class="normal"></highlight></codeline>
-<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.h"/>
   </compounddef>

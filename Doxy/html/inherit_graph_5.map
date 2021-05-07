@@ -4,8 +4,8 @@
 <area shape="rect" id="node3" href="$class_g_p_u.html" title=" " alt="" coords="142,56,193,83"/>
 <area shape="rect" id="node4" href="$class_motherboard.html" title=" " alt="" coords="120,107,215,133"/>
 <area shape="rect" id="node5" href="$class_p_c.html" title=" " alt="" coords="147,157,187,184"/>
-<area shape="rect" id="node6" href="$class_storage.html" title=" " alt="" coords="134,208,201,235"/>
-<area shape="rect" id="node7" href="$class_h_d_d.html" title=" " alt="" coords="263,157,313,184"/>
-<area shape="rect" id="node8" href="$class_r_a_m.html" title=" " alt="" coords="263,208,313,235"/>
-<area shape="rect" id="node9" href="$class_s_s_d.html" title=" " alt="" coords="263,259,313,285"/>
+<area shape="rect" id="node6" href="$class_storage.html" title="Base class for data storage/memory" alt="" coords="134,208,201,235"/>
+<area shape="rect" id="node7" href="$class_h_d_d.html" title="Class for modelling Hard Drive Disks. Inheriting from Storage" alt="" coords="263,157,313,184"/>
+<area shape="rect" id="node8" href="$class_r_a_m.html" title="Class for modelling Random Access Memory Inheriting from storage" alt="" coords="263,208,313,235"/>
+<area shape="rect" id="node9" href="$class_s_s_d.html" title="Class for modelling SSDs Inheriting directly from Storage class" alt="" coords="263,259,313,285"/>
 </map>

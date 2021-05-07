@@ -3,4 +3,14 @@
 <title>Class List</title>
 Here are the classes, structs, unions and interfaces with brief descriptions:<link linkend="_struct___is___types">_Is_Types&lt; F, T &gt;</link>
 <para>Segédsablon típuskonverzió futás közbeni ellenőrzésere </para>
-<link linkend="_class_catalogue">Catalogue</link><link linkend="_class_c_p_u">CPU</link><link linkend="_class_g_p_u">GPU</link><link linkend="_class_h_d_d">HDD</link><link linkend="_class_catalogue_1_1_iterator">Catalogue::Iterator</link><link linkend="_class_motherboard">Motherboard</link><link linkend="_classgtest__lite_1_1ostream_redir">gtest_lite::ostreamRedir</link><link linkend="_class_p_c">PC</link><link linkend="_class_product">Product</link><link linkend="_class_r_a_m">RAM</link><link linkend="_class_s_s_d">SSD</link><link linkend="_class_storage">Storage</link><link linkend="_structgtest__lite_1_1_test">gtest_lite::Test</link></section>
+<link linkend="_class_catalogue">Catalogue</link>
+<para><link linkend="_class_catalogue">Catalogue</link> class An instance of <link linkend="_class_catalogue">Catalogue</link> stores and manages severak Products The Products are stored in a dynamically allocated array using a <link linkend="_class_product">Product</link> pointer array </para>
+<link linkend="_class_c_p_u">CPU</link><link linkend="_class_g_p_u">GPU</link><link linkend="_class_h_d_d">HDD</link>
+<para>Class for modelling Hard Drive Disks. Inheriting from <link linkend="_class_storage">Storage</link> </para>
+<link linkend="_class_catalogue_1_1_iterator">Catalogue::Iterator</link><link linkend="_class_motherboard">Motherboard</link><link linkend="_classgtest__lite_1_1ostream_redir">gtest_lite::ostreamRedir</link><link linkend="_class_p_c">PC</link><link linkend="_class_product">Product</link><link linkend="_class_r_a_m">RAM</link>
+<para>Class for modelling Random Access Memory Inheriting from storage </para>
+<link linkend="_class_s_s_d">SSD</link>
+<para>Class for modelling SSDs Inheriting directly from <link linkend="_class_storage">Storage</link> class </para>
+<link linkend="_class_storage">Storage</link>
+<para>Base class for data storage/memory </para>
+<link linkend="_structgtest__lite_1_1_test">gtest_lite::Test</link></section>

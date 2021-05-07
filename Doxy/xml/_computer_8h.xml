@@ -177,12 +177,11 @@
 <codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="23" refid="class_p_c_1a213092addb3a1d89b761f780a055f0a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_p_c_1a213092addb3a1d89b761f780a055f0a3" kindref="member">PC</ref>();</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_p_c_1a213092addb3a1d89b761f780a055f0a3" kindref="member">PC</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_p_c" kindref="compound">PC</ref>&amp;<sp/>pc);</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_p_c_1a78b1592a015aa0213ad5ee441daa4dc5" kindref="member">getObjType</ref>();</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_p_c" kindref="compound">PC</ref>*<sp/><ref refid="class_p_c_1aa4f5779cf5f9a4ec7806da64a09b8cb3" kindref="member">clone</ref>();</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!COMPUTER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_p_c" kindref="compound">PC</ref>*<sp/><ref refid="class_p_c_1aa4f5779cf5f9a4ec7806da64a09b8cb3" kindref="member">clone</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!COMPUTER_H</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h"/>
   </compounddef>

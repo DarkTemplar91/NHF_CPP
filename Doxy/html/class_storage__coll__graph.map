@@ -1,4 +1,4 @@
 <map id="Storage" name="Storage">
-<area shape="rect" id="node1" title=" " alt="" coords="5,512,159,765"/>
-<area shape="rect" id="node2" href="$class_product.html" title=" " alt="" coords="15,5,149,464"/>
+<area shape="rect" id="node1" title="Base class for data storage/memory" alt="" coords="15,512,130,736"/>
+<area shape="rect" id="node2" href="$class_product.html" title=" " alt="" coords="5,5,140,464"/>
 </map>

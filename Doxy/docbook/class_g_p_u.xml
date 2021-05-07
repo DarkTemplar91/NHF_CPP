@@ -27,6 +27,8 @@ Collaboration diagram for GPU:<para>
     <title>Public Member Functions    </title>
         <itemizedlist>
             <listitem><para><link linkend="_class_g_p_u_1a2ca7973e32f63ba3472166a007419a75">GPU</link> ()</para>
+
+<para>total power drawn </para>
 </listitem>
             <listitem><para><link linkend="_class_g_p_u_1a0ab8fd437abb2fcd6a5a46541787f83b">GPU</link> (unsigned int <link linkend="_class_g_p_u_1a0dc45bd568c1a3667d114e59d2eb936b">portHDMI</link>, unsigned int <link linkend="_class_g_p_u_1abd8d988998cc1c91e8aef4653d84b93f">portDisplay</link>, unsigned int <link linkend="_class_g_p_u_1ac88b4ae97f83518d14c34aa95eed81a1">gpuClock</link>, unsigned int <link linkend="_class_g_p_u_1ad047558e044a698b9b4746366833290e">memoryClock</link>, unsigned int <link linkend="_class_g_p_u_1a48611570458ee623b5cb2e761f17a6fd">vram</link>, unsigned int <link linkend="_class_g_p_u_1a22c51b5240ede46c1aa9e0bbb1f96562">tdp</link>)</para>
 </listitem>
@@ -46,8 +48,6 @@ Collaboration diagram for GPU:<para>
 </listitem>
             <listitem><para>unsigned int <link linkend="_class_g_p_u_1a5806130e7c25709689917fcff437949a">getTDP</link> ()</para>
 </listitem>
-            <listitem><para>std::string <link linkend="_class_g_p_u_1abd4bde632b28ce5577ae7b6d05f947d6">getObjType</link> ()</para>
-</listitem>
             <listitem><para>std::string <link linkend="_class_g_p_u_1aa6accb9ff57ea98080a7496d77fea7e5">serializeObj</link> ()</para>
 </listitem>
             <listitem><para><link linkend="_class_g_p_u">GPU</link> * <link linkend="_class_g_p_u_1a13535142ba8cacba30f23f6bf8ed5200">clone</link> ()</para>
@@ -60,14 +60,24 @@ Collaboration diagram for GPU:<para>
             <listitem><para>unsigned int <link linkend="_class_g_p_u_1a0dc45bd568c1a3667d114e59d2eb936b">portHDMI</link></para>
 </listitem>
             <listitem><para>unsigned int <link linkend="_class_g_p_u_1abd8d988998cc1c91e8aef4653d84b93f">portDisplay</link></para>
+
+<para>Number of HDMI ports on <link linkend="_class_g_p_u">GPU</link>. </para>
 </listitem>
             <listitem><para>unsigned int <link linkend="_class_g_p_u_1ac88b4ae97f83518d14c34aa95eed81a1">gpuClock</link></para>
+
+<para>Number of Display ports on <link linkend="_class_g_p_u">GPU</link>. </para>
 </listitem>
             <listitem><para>unsigned int <link linkend="_class_g_p_u_1ad047558e044a698b9b4746366833290e">memoryClock</link></para>
+
+<para><link linkend="_class_g_p_u">GPU</link> Clock in Mhz. </para>
 </listitem>
             <listitem><para>unsigned int <link linkend="_class_g_p_u_1a48611570458ee623b5cb2e761f17a6fd">vram</link></para>
+
+<para>Memory Clock in Mhz. </para>
 </listitem>
             <listitem><para>unsigned int <link linkend="_class_g_p_u_1a22c51b5240ede46c1aa9e0bbb1f96562">tdp</link></para>
+
+<para>VRAM in GB. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -80,7 +90,11 @@ Collaboration diagram for GPU:<para>
     <title>GPU()<computeroutput>[1/4]</computeroutput></title>
 <indexterm><primary>GPU</primary><secondary>GPU</secondary></indexterm>
 <indexterm><primary>GPU</primary><secondary>GPU</secondary></indexterm>
-<para><computeroutput>GPU::GPU ( )<computeroutput>[inline]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_g_p_u_1a0ab8fd437abb2fcd6a5a46541787f83b"/>    <section>
+<para><computeroutput>GPU::GPU ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>total power drawn </para>
+</para>
+    </section><anchor xml:id="_class_g_p_u_1a0ab8fd437abb2fcd6a5a46541787f83b"/>    <section>
     <title>GPU()<computeroutput>[2/4]</computeroutput></title>
 <indexterm><primary>GPU</primary><secondary>GPU</secondary></indexterm>
 <indexterm><primary>GPU</primary><secondary>GPU</secondary></indexterm>
@@ -118,11 +132,7 @@ Reimplemented from <link linkend="_class_product_1a2cc3f5ef8abe14801e185734cfcc3
     <title>getMemClock()</title>
 <indexterm><primary>getMemClock</primary><secondary>GPU</secondary></indexterm>
 <indexterm><primary>GPU</primary><secondary>getMemClock</secondary></indexterm>
-<para><computeroutput>unsigned int GPU::getMemClock ( )</computeroutput></para>    </section><anchor xml:id="_class_g_p_u_1abd4bde632b28ce5577ae7b6d05f947d6"/>    <section>
-    <title>getObjType()</title>
-<indexterm><primary>getObjType</primary><secondary>GPU</secondary></indexterm>
-<indexterm><primary>GPU</primary><secondary>getObjType</secondary></indexterm>
-<para><computeroutput>std::string GPU::getObjType ( )</computeroutput></para>    </section><anchor xml:id="_class_g_p_u_1a5806130e7c25709689917fcff437949a"/>    <section>
+<para><computeroutput>unsigned int GPU::getMemClock ( )</computeroutput></para>    </section><anchor xml:id="_class_g_p_u_1a5806130e7c25709689917fcff437949a"/>    <section>
     <title>getTDP()</title>
 <indexterm><primary>getTDP</primary><secondary>GPU</secondary></indexterm>
 <indexterm><primary>GPU</primary><secondary>getTDP</secondary></indexterm>
@@ -134,7 +144,9 @@ Reimplemented from <link linkend="_class_product_1a2cc3f5ef8abe14801e185734cfcc3
     <title>serializeObj()</title>
 <indexterm><primary>serializeObj</primary><secondary>GPU</secondary></indexterm>
 <indexterm><primary>GPU</primary><secondary>serializeObj</secondary></indexterm>
-<para><computeroutput>std::string GPU::serializeObj ( )</computeroutput></para></section>
+<para><computeroutput>std::string GPU::serializeObj ( )</computeroutput></para>
+<para>Calls base class&apos;s</para>
+</section>
 </section>
 <section>
 <title>Member Data Documentation</title>
@@ -142,15 +154,27 @@ Reimplemented from <link linkend="_class_product_1a2cc3f5ef8abe14801e185734cfcc3
     <title>gpuClock</title>
 <indexterm><primary>gpuClock</primary><secondary>GPU</secondary></indexterm>
 <indexterm><primary>GPU</primary><secondary>gpuClock</secondary></indexterm>
-<para><computeroutput>unsigned int GPU::gpuClock<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_g_p_u_1ad047558e044a698b9b4746366833290e"/>    <section>
+<para><computeroutput>unsigned int GPU::gpuClock<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Number of Display ports on <link linkend="_class_g_p_u">GPU</link>. </para>
+</para>
+    </section><anchor xml:id="_class_g_p_u_1ad047558e044a698b9b4746366833290e"/>    <section>
     <title>memoryClock</title>
 <indexterm><primary>memoryClock</primary><secondary>GPU</secondary></indexterm>
 <indexterm><primary>GPU</primary><secondary>memoryClock</secondary></indexterm>
-<para><computeroutput>unsigned int GPU::memoryClock<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_g_p_u_1abd8d988998cc1c91e8aef4653d84b93f"/>    <section>
+<para><computeroutput>unsigned int GPU::memoryClock<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para><link linkend="_class_g_p_u">GPU</link> Clock in Mhz. </para>
+</para>
+    </section><anchor xml:id="_class_g_p_u_1abd8d988998cc1c91e8aef4653d84b93f"/>    <section>
     <title>portDisplay</title>
 <indexterm><primary>portDisplay</primary><secondary>GPU</secondary></indexterm>
 <indexterm><primary>GPU</primary><secondary>portDisplay</secondary></indexterm>
-<para><computeroutput>unsigned int GPU::portDisplay<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_g_p_u_1a0dc45bd568c1a3667d114e59d2eb936b"/>    <section>
+<para><computeroutput>unsigned int GPU::portDisplay<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Number of HDMI ports on <link linkend="_class_g_p_u">GPU</link>. </para>
+</para>
+    </section><anchor xml:id="_class_g_p_u_1a0dc45bd568c1a3667d114e59d2eb936b"/>    <section>
     <title>portHDMI</title>
 <indexterm><primary>portHDMI</primary><secondary>GPU</secondary></indexterm>
 <indexterm><primary>GPU</primary><secondary>portHDMI</secondary></indexterm>
@@ -158,11 +182,19 @@ Reimplemented from <link linkend="_class_product_1a2cc3f5ef8abe14801e185734cfcc3
     <title>tdp</title>
 <indexterm><primary>tdp</primary><secondary>GPU</secondary></indexterm>
 <indexterm><primary>GPU</primary><secondary>tdp</secondary></indexterm>
-<para><computeroutput>unsigned int GPU::tdp<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_g_p_u_1a48611570458ee623b5cb2e761f17a6fd"/>    <section>
+<para><computeroutput>unsigned int GPU::tdp<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>VRAM in GB. </para>
+</para>
+    </section><anchor xml:id="_class_g_p_u_1a48611570458ee623b5cb2e761f17a6fd"/>    <section>
     <title>vram</title>
 <indexterm><primary>vram</primary><secondary>GPU</secondary></indexterm>
 <indexterm><primary>GPU</primary><secondary>vram</secondary></indexterm>
-<para><computeroutput>unsigned int GPU::vram<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para><computeroutput>unsigned int GPU::vram<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Memory Clock in Mhz. </para>
+</para>
+</section>
 <para>
 The documentation for this class was generated from the following files:</para>
 C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/<link linkend="__videocard_8h">Videocard.h</link>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/<link linkend="__videocard_8cpp">Videocard.cpp</link></section>

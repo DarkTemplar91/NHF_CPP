@@ -30,8 +30,6 @@ Collaboration diagram for PC:<para>
 </listitem>
             <listitem><para><link linkend="_class_p_c_1ab76d67ed4e2548fdf49b8c7df9c88c46">PC</link> (const <link linkend="_class_p_c">PC</link> &amp;pc)</para>
 </listitem>
-            <listitem><para>std::string <link linkend="_class_p_c_1a78b1592a015aa0213ad5ee441daa4dc5">getObjType</link> ()</para>
-</listitem>
             <listitem><para><link linkend="_class_p_c">PC</link> * <link linkend="_class_p_c_1aa4f5779cf5f9a4ec7806da64a09b8cb3">clone</link> ()</para>
 </listitem>
         </itemizedlist>
@@ -78,11 +76,7 @@ Collaboration diagram for PC:<para>
 <indexterm><primary>PC</primary><secondary>clone</secondary></indexterm>
 <para><computeroutput><link linkend="_class_p_c">PC</link> * PC::clone ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
 Reimplemented from <link linkend="_class_product_1a2cc3f5ef8abe14801e185734cfcc3b57">Product</link>.</para>
-    </section><anchor xml:id="_class_p_c_1a78b1592a015aa0213ad5ee441daa4dc5"/>    <section>
-    <title>getObjType()</title>
-<indexterm><primary>getObjType</primary><secondary>PC</secondary></indexterm>
-<indexterm><primary>PC</primary><secondary>getObjType</secondary></indexterm>
-<para><computeroutput>std::string PC::getObjType ( )</computeroutput></para></section>
+</section>
 </section>
 <section>
 <title>Member Data Documentation</title>

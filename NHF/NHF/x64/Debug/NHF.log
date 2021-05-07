@@ -1,11 +1,3 @@
-﻿  Computer.cpp
-  Memory.cpp
-  Motherboard.cpp
-  Videocard.cpp
-  catalogue.cpp
-  main.cpp
-  processor.cpp
-  products.cpp
-  Generating Code...
-C:\Users\szasz\Desktop\Egyetem\Prog2\HF\NHF\NHF\NHF\catalogue.cpp(182): warning C4172: returning address of local variable or temporary: tmp
+﻿  catalogue.cpp
+C:\Users\szasz\Desktop\Egyetem\Prog2\HF\NHF\NHF\NHF\catalogue.cpp(311): warning C4172: returning address of local variable or temporary: tmp
   NHF.vcxproj -> C:\Users\szasz\Desktop\Egyetem\Prog2\HF\NHF\NHF\x64\Debug\NHF.exe

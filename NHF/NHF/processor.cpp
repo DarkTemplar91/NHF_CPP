@@ -112,9 +112,6 @@ CPU* CPU::clone() {
 	return p;
 
 }
-std::string CPU::getObjType(){
-	return "CPU_OBJ";
-}
 
 
 

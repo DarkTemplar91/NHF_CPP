@@ -27,6 +27,8 @@ Collaboration diagram for Motherboard:<para>
     <title>Public Member Functions    </title>
         <itemizedlist>
             <listitem><para><link linkend="_class_motherboard_1a7d8e651645b17aea61c4e125fd198140">Motherboard</link> ()</para>
+
+<para>Number of PCI-E slots. </para>
 </listitem>
             <listitem><para><link linkend="_class_motherboard_1acffdbb5f149098ee6c6bc664f1095185">Motherboard</link> (std::string chip, <link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68">socket</link> s, int maxRam=64, int maxFreq=2666, int <link linkend="_class_motherboard_1a5632309f2b4224c1ba05289d6aaf9c74">usbPorts</link>=2, int <link linkend="_class_motherboard_1ab237d87d79328daf0903b0c17fc56240">sata</link>=1, int <link linkend="_class_motherboard_1a3b141240779b25dec7618b96938a3fba">pcie</link>=1)</para>
 </listitem>
@@ -37,16 +39,24 @@ Collaboration diagram for Motherboard:<para>
             <listitem><para>std::string <link linkend="_class_motherboard_1adfcc0e942c0c6cbeb6fee6d863b9b51f">getChip</link> ()</para>
 </listitem>
             <listitem><para><link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68">socket</link> <link linkend="_class_motherboard_1a747bcabd7b0baa1e4c4cefd5373c9ee0">getSocket</link> ()</para>
+
+<para>Returns type of chipset. </para>
 </listitem>
             <listitem><para>int <link linkend="_class_motherboard_1ad93e8a9e213eb7a842323d392ad5471f">getRAM</link> ()</para>
+
+<para>Returns socket type. </para>
 </listitem>
             <listitem><para>int <link linkend="_class_motherboard_1a505b4ef1ac8c36193a6ee79eb921e9fa">getPorts</link> ()</para>
+
+<para>Returns max <link linkend="_class_r_a_m">RAM</link>. </para>
 </listitem>
             <listitem><para>int <link linkend="_class_motherboard_1a1534ea6d3be715dd09b964d78a0f91cf">getSata</link> ()</para>
+
+<para>Returns number of USB ports. </para>
 </listitem>
             <listitem><para>int <link linkend="_class_motherboard_1a1bdb19d8e2fc3fdc9b9669fbc688a015">getPCIE</link> ()</para>
-</listitem>
-            <listitem><para>std::string <link linkend="_class_motherboard_1a7c35d76cd1952d69308b04ae0804080e">getObjType</link> ()</para>
+
+<para>Returns number of SATA ports. </para>
 </listitem>
             <listitem><para>std::string <link linkend="_class_motherboard_1a9d0666b839ef01ea6072ffeb41653d3c">serializeObj</link> ()</para>
 </listitem>
@@ -60,16 +70,28 @@ Collaboration diagram for Motherboard:<para>
             <listitem><para>std::string <link linkend="_class_motherboard_1a289ecf61f1bd15373e9dade0598b1eec">chipset</link></para>
 </listitem>
             <listitem><para><link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68">socket</link> <link linkend="_class_motherboard_1a96c475cc3d6cee4245090a3257f2c6c6">socketType</link></para>
+
+<para>Type of chipset (B550, Z490 etc.) </para>
 </listitem>
             <listitem><para>int <link linkend="_class_motherboard_1a807219a358ae5de54db7e590d6ff77ec">maxRAM</link></para>
+
+<para>Socket type of <link linkend="_class_c_p_u">CPU</link>. </para>
 </listitem>
             <listitem><para>int <link linkend="_class_motherboard_1a7d5fc2dfa0915d7256c8627385c904bd">maxRFreq</link></para>
+
+<para>Max <link linkend="_class_r_a_m">RAM</link> capacity supported by MB. </para>
 </listitem>
             <listitem><para>int <link linkend="_class_motherboard_1a5632309f2b4224c1ba05289d6aaf9c74">usbPorts</link></para>
+
+<para>Max frequecy of <link linkend="_class_r_a_m">RAM</link> supported. </para>
 </listitem>
             <listitem><para>int <link linkend="_class_motherboard_1ab237d87d79328daf0903b0c17fc56240">sata</link></para>
+
+<para>Number of USB ports. </para>
 </listitem>
             <listitem><para>int <link linkend="_class_motherboard_1a3b141240779b25dec7618b96938a3fba">pcie</link></para>
+
+<para>Number of SATA connectors. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -82,7 +104,11 @@ Collaboration diagram for Motherboard:<para>
     <title>Motherboard()<computeroutput>[1/4]</computeroutput></title>
 <indexterm><primary>Motherboard</primary><secondary>Motherboard</secondary></indexterm>
 <indexterm><primary>Motherboard</primary><secondary>Motherboard</secondary></indexterm>
-<para><computeroutput>Motherboard::Motherboard ( )<computeroutput>[inline]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_motherboard_1acffdbb5f149098ee6c6bc664f1095185"/>    <section>
+<para><computeroutput>Motherboard::Motherboard ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Number of PCI-E slots. </para>
+</para>
+    </section><anchor xml:id="_class_motherboard_1acffdbb5f149098ee6c6bc664f1095185"/>    <section>
     <title>Motherboard()<computeroutput>[2/4]</computeroutput></title>
 <indexterm><primary>Motherboard</primary><secondary>Motherboard</secondary></indexterm>
 <indexterm><primary>Motherboard</primary><secondary>Motherboard</secondary></indexterm>
@@ -118,31 +144,47 @@ Reimplemented from <link linkend="_class_product_1a2cc3f5ef8abe14801e185734cfcc3
     <title>getChip()</title>
 <indexterm><primary>getChip</primary><secondary>Motherboard</secondary></indexterm>
 <indexterm><primary>Motherboard</primary><secondary>getChip</secondary></indexterm>
-<para><computeroutput>std::string Motherboard::getChip ( )</computeroutput></para>    </section><anchor xml:id="_class_motherboard_1a7c35d76cd1952d69308b04ae0804080e"/>    <section>
-    <title>getObjType()</title>
-<indexterm><primary>getObjType</primary><secondary>Motherboard</secondary></indexterm>
-<indexterm><primary>Motherboard</primary><secondary>getObjType</secondary></indexterm>
-<para><computeroutput>std::string Motherboard::getObjType ( )</computeroutput></para>    </section><anchor xml:id="_class_motherboard_1a1bdb19d8e2fc3fdc9b9669fbc688a015"/>    <section>
+<para><computeroutput>std::string Motherboard::getChip ( )</computeroutput></para>    </section><anchor xml:id="_class_motherboard_1a1bdb19d8e2fc3fdc9b9669fbc688a015"/>    <section>
     <title>getPCIE()</title>
 <indexterm><primary>getPCIE</primary><secondary>Motherboard</secondary></indexterm>
 <indexterm><primary>Motherboard</primary><secondary>getPCIE</secondary></indexterm>
-<para><computeroutput>int Motherboard::getPCIE ( )</computeroutput></para>    </section><anchor xml:id="_class_motherboard_1a505b4ef1ac8c36193a6ee79eb921e9fa"/>    <section>
+<para><computeroutput>int Motherboard::getPCIE ( )</computeroutput></para><para>
+
+<para>Returns number of SATA ports. </para>
+</para>
+    </section><anchor xml:id="_class_motherboard_1a505b4ef1ac8c36193a6ee79eb921e9fa"/>    <section>
     <title>getPorts()</title>
 <indexterm><primary>getPorts</primary><secondary>Motherboard</secondary></indexterm>
 <indexterm><primary>Motherboard</primary><secondary>getPorts</secondary></indexterm>
-<para><computeroutput>int Motherboard::getPorts ( )</computeroutput></para>    </section><anchor xml:id="_class_motherboard_1ad93e8a9e213eb7a842323d392ad5471f"/>    <section>
+<para><computeroutput>int Motherboard::getPorts ( )</computeroutput></para><para>
+
+<para>Returns max <link linkend="_class_r_a_m">RAM</link>. </para>
+</para>
+    </section><anchor xml:id="_class_motherboard_1ad93e8a9e213eb7a842323d392ad5471f"/>    <section>
     <title>getRAM()</title>
 <indexterm><primary>getRAM</primary><secondary>Motherboard</secondary></indexterm>
 <indexterm><primary>Motherboard</primary><secondary>getRAM</secondary></indexterm>
-<para><computeroutput>int Motherboard::getRAM ( )</computeroutput></para>    </section><anchor xml:id="_class_motherboard_1a1534ea6d3be715dd09b964d78a0f91cf"/>    <section>
+<para><computeroutput>int Motherboard::getRAM ( )</computeroutput></para><para>
+
+<para>Returns socket type. </para>
+</para>
+    </section><anchor xml:id="_class_motherboard_1a1534ea6d3be715dd09b964d78a0f91cf"/>    <section>
     <title>getSata()</title>
 <indexterm><primary>getSata</primary><secondary>Motherboard</secondary></indexterm>
 <indexterm><primary>Motherboard</primary><secondary>getSata</secondary></indexterm>
-<para><computeroutput>int Motherboard::getSata ( )</computeroutput></para>    </section><anchor xml:id="_class_motherboard_1a747bcabd7b0baa1e4c4cefd5373c9ee0"/>    <section>
+<para><computeroutput>int Motherboard::getSata ( )</computeroutput></para><para>
+
+<para>Returns number of USB ports. </para>
+</para>
+    </section><anchor xml:id="_class_motherboard_1a747bcabd7b0baa1e4c4cefd5373c9ee0"/>    <section>
     <title>getSocket()</title>
 <indexterm><primary>getSocket</primary><secondary>Motherboard</secondary></indexterm>
 <indexterm><primary>Motherboard</primary><secondary>getSocket</secondary></indexterm>
-<para><computeroutput><link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68">socket</link> Motherboard::getSocket ( )</computeroutput></para>    </section><anchor xml:id="_class_motherboard_1a9d0666b839ef01ea6072ffeb41653d3c"/>    <section>
+<para><computeroutput><link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68">socket</link> Motherboard::getSocket ( )</computeroutput></para><para>
+
+<para>Returns type of chipset. </para>
+</para>
+    </section><anchor xml:id="_class_motherboard_1a9d0666b839ef01ea6072ffeb41653d3c"/>    <section>
     <title>serializeObj()</title>
 <indexterm><primary>serializeObj</primary><secondary>Motherboard</secondary></indexterm>
 <indexterm><primary>Motherboard</primary><secondary>serializeObj</secondary></indexterm>
@@ -158,27 +200,51 @@ Reimplemented from <link linkend="_class_product_1a2cc3f5ef8abe14801e185734cfcc3
     <title>maxRAM</title>
 <indexterm><primary>maxRAM</primary><secondary>Motherboard</secondary></indexterm>
 <indexterm><primary>Motherboard</primary><secondary>maxRAM</secondary></indexterm>
-<para><computeroutput>int Motherboard::maxRAM<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_motherboard_1a7d5fc2dfa0915d7256c8627385c904bd"/>    <section>
+<para><computeroutput>int Motherboard::maxRAM<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Socket type of <link linkend="_class_c_p_u">CPU</link>. </para>
+</para>
+    </section><anchor xml:id="_class_motherboard_1a7d5fc2dfa0915d7256c8627385c904bd"/>    <section>
     <title>maxRFreq</title>
 <indexterm><primary>maxRFreq</primary><secondary>Motherboard</secondary></indexterm>
 <indexterm><primary>Motherboard</primary><secondary>maxRFreq</secondary></indexterm>
-<para><computeroutput>int Motherboard::maxRFreq<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_motherboard_1a3b141240779b25dec7618b96938a3fba"/>    <section>
+<para><computeroutput>int Motherboard::maxRFreq<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Max <link linkend="_class_r_a_m">RAM</link> capacity supported by MB. </para>
+</para>
+    </section><anchor xml:id="_class_motherboard_1a3b141240779b25dec7618b96938a3fba"/>    <section>
     <title>pcie</title>
 <indexterm><primary>pcie</primary><secondary>Motherboard</secondary></indexterm>
 <indexterm><primary>Motherboard</primary><secondary>pcie</secondary></indexterm>
-<para><computeroutput>int Motherboard::pcie<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_motherboard_1ab237d87d79328daf0903b0c17fc56240"/>    <section>
+<para><computeroutput>int Motherboard::pcie<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Number of SATA connectors. </para>
+</para>
+    </section><anchor xml:id="_class_motherboard_1ab237d87d79328daf0903b0c17fc56240"/>    <section>
     <title>sata</title>
 <indexterm><primary>sata</primary><secondary>Motherboard</secondary></indexterm>
 <indexterm><primary>Motherboard</primary><secondary>sata</secondary></indexterm>
-<para><computeroutput>int Motherboard::sata<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_motherboard_1a96c475cc3d6cee4245090a3257f2c6c6"/>    <section>
+<para><computeroutput>int Motherboard::sata<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Number of USB ports. </para>
+</para>
+    </section><anchor xml:id="_class_motherboard_1a96c475cc3d6cee4245090a3257f2c6c6"/>    <section>
     <title>socketType</title>
 <indexterm><primary>socketType</primary><secondary>Motherboard</secondary></indexterm>
 <indexterm><primary>Motherboard</primary><secondary>socketType</secondary></indexterm>
-<para><computeroutput><link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68">socket</link> Motherboard::socketType<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_motherboard_1a5632309f2b4224c1ba05289d6aaf9c74"/>    <section>
+<para><computeroutput><link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68">socket</link> Motherboard::socketType<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Type of chipset (B550, Z490 etc.) </para>
+</para>
+    </section><anchor xml:id="_class_motherboard_1a5632309f2b4224c1ba05289d6aaf9c74"/>    <section>
     <title>usbPorts</title>
 <indexterm><primary>usbPorts</primary><secondary>Motherboard</secondary></indexterm>
 <indexterm><primary>Motherboard</primary><secondary>usbPorts</secondary></indexterm>
-<para><computeroutput>int Motherboard::usbPorts<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para><computeroutput>int Motherboard::usbPorts<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Max frequecy of <link linkend="_class_r_a_m">RAM</link> supported. </para>
+</para>
+</section>
 <para>
 The documentation for this class was generated from the following files:</para>
 C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/<link linkend="__motherboard_8h">Motherboard.h</link>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/<link linkend="__motherboard_8cpp">Motherboard.cpp</link></section>

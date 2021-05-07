@@ -78,14 +78,14 @@ Inheritance diagram for Product:</div>
 <div class="center"><img src="class_product__inherit__graph.png" border="0" usemap="#a_product_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_product_inherit__map" id="a_product_inherit__map">
 <area shape="rect" title=" " alt="" coords="311,5,445,464"/>
-<area shape="rect" href="class_c_p_u.html" title=" " alt="" coords="5,512,140,927"/>
-<area shape="rect" href="class_g_p_u.html" title=" " alt="" coords="164,556,296,883"/>
-<area shape="rect" href="class_motherboard.html" title=" " alt="" coords="321,549,435,890"/>
-<area shape="rect" href="class_p_c.html" title=" " alt="" coords="460,615,568,824"/>
-<area shape="rect" href="class_storage.html" title=" " alt="" coords="592,593,745,846"/>
-<area shape="rect" href="class_h_d_d.html" title=" " alt="" coords="468,1026,579,1235"/>
-<area shape="rect" href="class_r_a_m.html" title=" " alt="" coords="603,975,734,1287"/>
-<area shape="rect" href="class_s_s_d.html" title=" " alt="" coords="758,1011,886,1250"/>
+<area shape="rect" href="class_c_p_u.html" title=" " alt="" coords="5,512,140,912"/>
+<area shape="rect" href="class_g_p_u.html" title=" " alt="" coords="164,556,296,868"/>
+<area shape="rect" href="class_motherboard.html" title=" " alt="" coords="321,549,435,875"/>
+<area shape="rect" href="class_p_c.html" title=" " alt="" coords="460,615,549,809"/>
+<area shape="rect" href="class_storage.html" title="Base class for data storage/memory" alt="" coords="574,600,689,824"/>
+<area shape="rect" href="class_h_d_d.html" title="Class for modelling Hard Drive Disks. Inheriting from Storage" alt="" coords="431,1011,541,1206"/>
+<area shape="rect" href="class_r_a_m.html" title="Class for modelling Random Access Memory Inheriting from storage" alt="" coords="566,960,697,1257"/>
+<area shape="rect" href="class_s_s_d.html" title="Class for modelling SSDs Inheriting directly from Storage class" alt="" coords="721,997,849,1221"/>
 </map>
 </div>
 <div class="dynheader">
@@ -123,7 +123,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0dc7c2163bf9c07e6283c2cbcaef58d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="products_8h.html#a6f54b54b1983a312948d8ead9f19b9af">obj_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_product.html#a0dc7c2163bf9c07e6283c2cbcaef58d3">getObj_t</a> () const</td></tr>
 <tr class="memdesc:a0dc7c2163bf9c07e6283c2cbcaef58d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns tha available stock.  <a href="class_product.html#a0dc7c2163bf9c07e6283c2cbcaef58d3">More...</a><br /></td></tr>
 <tr class="separator:a0dc7c2163bf9c07e6283c2cbcaef58d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60e8ab009f51c39442257e96409144de"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_product.html#a60e8ab009f51c39442257e96409144de">getObjType</a> () const</td></tr>
+<tr class="memitem:a60e8ab009f51c39442257e96409144de"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_product.html#a60e8ab009f51c39442257e96409144de">getObjType</a> () const</td></tr>
 <tr class="memdesc:a60e8ab009f51c39442257e96409144de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the obj_t enum type.  <a href="class_product.html#a60e8ab009f51c39442257e96409144de">More...</a><br /></td></tr>
 <tr class="separator:a60e8ab009f51c39442257e96409144de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f49f191dab6643d82aee0490bb96e7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_product.html#a1f49f191dab6643d82aee0490bb96e7c">setName</a> (std::string s)</td></tr>
@@ -145,7 +145,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a948738c4cb8e65f1f54623001b8c3897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decreases the stock by i.  <a href="class_product.html#a948738c4cb8e65f1f54623001b8c3897">More...</a><br /></td></tr>
 <tr class="separator:a948738c4cb8e65f1f54623001b8c3897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82a40e1860ffe2c88ea08084037a6c42"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_product.html#a82a40e1860ffe2c88ea08084037a6c42">print</a> ()</td></tr>
-<tr class="memdesc:a82a40e1860ffe2c88ea08084037a6c42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints out basic data of a product.  <a href="class_product.html#a82a40e1860ffe2c88ea08084037a6c42">More...</a><br /></td></tr>
+<tr class="memdesc:a82a40e1860ffe2c88ea08084037a6c42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints out basic data of a product to the output stream.  <a href="class_product.html#a82a40e1860ffe2c88ea08084037a6c42">More...</a><br /></td></tr>
 <tr class="separator:a82a40e1860ffe2c88ea08084037a6c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a749f163f9319f2cf6e9e0620d7133f0b"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_product.html#a749f163f9319f2cf6e9e0620d7133f0b">serializeObj</a> () const</td></tr>
 <tr class="memdesc:a749f163f9319f2cf6e9e0620d7133f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes object.  <a href="class_product.html#a749f163f9319f2cf6e9e0620d7133f0b">More...</a><br /></td></tr>
@@ -443,9 +443,6 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::string Product::getObjType </td>
@@ -454,11 +451,6 @@ Private Attributes</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Returns the obj_t enum type. </p>
@@ -582,7 +574,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Prints out basic data of a product. </p>
+<p>Prints out basic data of a product to the output stream. </p>
 
 <p>Reimplemented in <a class="el" href="class_c_p_u.html#aa2af36b3447c4e7b4e1f25f699a06824">CPU</a>.</p>
 

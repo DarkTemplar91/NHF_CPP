@@ -18,16 +18,26 @@ Collaboration diagram for Catalogue::Iterator:<para>
     <title>Public Member Functions    </title>
         <itemizedlist>
             <listitem><para><link linkend="_class_catalogue_1_1_iterator_1a07a6afd7d24ea4ed54e39a9649c2e86b">Iterator</link> (<link linkend="_class_product">Product</link> **p)</para>
+
+<para>Pointer to the pointer of the list&apos;s element. </para>
 </listitem>
             <listitem><para><link linkend="_class_catalogue_1_1_iterator">Iterator</link> &amp; <link linkend="_class_catalogue_1_1_iterator_1a710e43cbd5cf6755db5abc514fee2cbc">operator++</link> ()</para>
+
+<para>Overloaded preincrement operator for incrementing the stored pointer. </para>
 </listitem>
             <listitem><para><link linkend="_class_catalogue_1_1_iterator">Iterator</link> &amp; <link linkend="_class_catalogue_1_1_iterator_1aef9b281974d9a66ba6540a7400041a6e">operator++</link> (int)</para>
+
+<para>Overloaded post-increment operator </para>
 </listitem>
             <listitem><para>bool <link linkend="_class_catalogue_1_1_iterator_1aff6647d77a7d91098a2a07374a57a8e2">operator==</link> (const <link linkend="_class_catalogue_1_1_iterator">Iterator</link> &amp;rhs)</para>
 </listitem>
             <listitem><para>bool <link linkend="_class_catalogue_1_1_iterator_1a114c19ae7660bb10d913398bd36a9271">operator!=</link> (const <link linkend="_class_catalogue_1_1_iterator">Iterator</link> &amp;rhs)</para>
+
+<para>Overloaded equality operator so it can be used for foreach. </para>
 </listitem>
             <listitem><para><link linkend="_class_product">Product</link> &amp; <link linkend="_class_catalogue_1_1_iterator_1a0eb533fe60b2b25c7291f6542e66418e">operator*</link> ()</para>
+
+<para>Inverse of equality operator. Used for the loop&apos;s stop condition. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -44,7 +54,11 @@ Collaboration diagram for Catalogue::Iterator:<para>
     <title>Iterator()</title>
 <indexterm><primary>Iterator</primary><secondary>Catalogue::Iterator</secondary></indexterm>
 <indexterm><primary>Catalogue::Iterator</primary><secondary>Iterator</secondary></indexterm>
-<para><computeroutput>Catalogue::Iterator::Iterator (<link linkend="_class_product">Product</link> ** p)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<para><computeroutput>Catalogue::Iterator::Iterator (<link linkend="_class_product">Product</link> ** p)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Pointer to the pointer of the list&apos;s element. </para>
+</para>
+</section>
 </section>
 <section>
 <title>Member Function Documentation</title>
@@ -52,19 +66,47 @@ Collaboration diagram for Catalogue::Iterator:<para>
     <title>operator!=()</title>
 <indexterm><primary>operator!=</primary><secondary>Catalogue::Iterator</secondary></indexterm>
 <indexterm><primary>Catalogue::Iterator</primary><secondary>operator!=</secondary></indexterm>
-<para><computeroutput>bool Catalogue::Iterator::operator!= (const <link linkend="_class_catalogue_1_1_iterator">Iterator</link> &amp; rhs)</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1_1_iterator_1a0eb533fe60b2b25c7291f6542e66418e"/>    <section>
+<para><computeroutput>bool Catalogue::Iterator::operator!= (const <link linkend="_class_catalogue_1_1_iterator">Iterator</link> &amp; rhs)</computeroutput></para><para>
+
+<para>Overloaded equality operator so it can be used for foreach. </para>
+</para>
+    </section><anchor xml:id="_class_catalogue_1_1_iterator_1a0eb533fe60b2b25c7291f6542e66418e"/>    <section>
     <title>operator*()</title>
 <indexterm><primary>operator*</primary><secondary>Catalogue::Iterator</secondary></indexterm>
 <indexterm><primary>Catalogue::Iterator</primary><secondary>operator*</secondary></indexterm>
-<para><computeroutput><link linkend="_class_product">Product</link> &amp; Catalogue::Iterator::operator* ( )</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1_1_iterator_1a710e43cbd5cf6755db5abc514fee2cbc"/>    <section>
+<para><computeroutput><link linkend="_class_product">Product</link> &amp; Catalogue::Iterator::operator* ( )</computeroutput></para><para>
+
+<para>Inverse of equality operator. Used for the loop&apos;s stop condition. </para>
+</para>
+    </section><anchor xml:id="_class_catalogue_1_1_iterator_1a710e43cbd5cf6755db5abc514fee2cbc"/>    <section>
     <title>operator++()<computeroutput>[1/2]</computeroutput></title>
 <indexterm><primary>operator++</primary><secondary>Catalogue::Iterator</secondary></indexterm>
 <indexterm><primary>Catalogue::Iterator</primary><secondary>operator++</secondary></indexterm>
-<para><computeroutput><link linkend="_class_catalogue_1_1_iterator">Catalogue::Iterator</link> &amp; Catalogue::Iterator::operator++ ( )</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1_1_iterator_1aef9b281974d9a66ba6540a7400041a6e"/>    <section>
+<para><computeroutput><link linkend="_class_catalogue_1_1_iterator">Catalogue::Iterator</link> &amp; Catalogue::Iterator::operator++ ( )</computeroutput></para><para>
+
+<para>Overloaded preincrement operator for incrementing the stored pointer. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+Returns an <link linkend="_class_catalogue_1_1_iterator">Iterator</link> (itself) pointing to the next element </para>
+    </section><anchor xml:id="_class_catalogue_1_1_iterator_1aef9b281974d9a66ba6540a7400041a6e"/>    <section>
     <title>operator++()<computeroutput>[2/2]</computeroutput></title>
 <indexterm><primary>operator++</primary><secondary>Catalogue::Iterator</secondary></indexterm>
 <indexterm><primary>Catalogue::Iterator</primary><secondary>operator++</secondary></indexterm>
-<para><computeroutput><link linkend="_class_catalogue_1_1_iterator">Catalogue::Iterator</link> &amp; Catalogue::Iterator::operator++ (int )</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1_1_iterator_1aff6647d77a7d91098a2a07374a57a8e2"/>    <section>
+<para><computeroutput><link linkend="_class_catalogue_1_1_iterator">Catalogue::Iterator</link> &amp; Catalogue::Iterator::operator++ (int )</computeroutput></para><para>
+
+<para>Overloaded post-increment operator </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+Returns another pointer pointing to the current element. </para>
+    </section><anchor xml:id="_class_catalogue_1_1_iterator_1aff6647d77a7d91098a2a07374a57a8e2"/>    <section>
     <title>operator==()</title>
 <indexterm><primary>operator==</primary><secondary>Catalogue::Iterator</secondary></indexterm>
 <indexterm><primary>Catalogue::Iterator</primary><secondary>operator==</secondary></indexterm>

@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="41" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" bodystart="41" bodyend="-1"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="110" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" bodystart="110" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -29,12 +29,13 @@
           <declname>p</declname>
         </param>
         <briefdescription>
+<para>Pointer to the pointer of the list&apos;s element. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="43" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" bodystart="43" bodyend="43"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="112" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" bodystart="112" bodyend="112"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1_1_iterator_1a710e43cbd5cf6755db5abc514fee2cbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_catalogue_1_1_iterator" kindref="compound">Iterator</ref> &amp;</type>
@@ -42,12 +43,16 @@
         <argsstring>()</argsstring>
         <name>operator++</name>
         <briefdescription>
+<para>Overloaded preincrement operator for incrementing the stored pointer. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+Returns an <ref refid="class_catalogue_1_1_iterator" kindref="compound">Iterator</ref> (itself) pointing to the next element </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="44" column="10" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="175" bodyend="178"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="117" column="10" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="233" bodyend="236"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1_1_iterator_1aef9b281974d9a66ba6540a7400041a6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_catalogue_1_1_iterator" kindref="compound">Iterator</ref> &amp;</type>
@@ -58,12 +63,16 @@
           <type>int</type>
         </param>
         <briefdescription>
+<para>Overloaded post-increment operator </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+Returns another pointer pointing to the current element. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="45" column="10" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="179" bodyend="183"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="124" column="10" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="237" bodyend="241"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1_1_iterator_1aff6647d77a7d91098a2a07374a57a8e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -80,7 +89,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="46" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="184" bodyend="186"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="127" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="242" bodyend="244"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1_1_iterator_1a114c19ae7660bb10d913398bd36a9271" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -92,12 +101,13 @@
           <declname>rhs</declname>
         </param>
         <briefdescription>
+<para>Overloaded equality operator so it can be used for foreach. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="47" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="187" bodyend="189"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="128" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="245" bodyend="247"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1_1_iterator_1a0eb533fe60b2b25c7291f6542e66418e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_product" kindref="compound">Product</ref> &amp;</type>
@@ -105,12 +115,13 @@
         <argsstring>()</argsstring>
         <name>operator*</name>
         <briefdescription>
+<para>Inverse of equality operator. Used for the loop&apos;s stop condition. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="48" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="190" bodyend="192"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="129" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="248" bodyend="250"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -130,7 +141,7 @@
         <link refid="class_product"/>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="40" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" bodystart="40" bodyend="50"/>
+    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="109" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" bodystart="109" bodyend="131"/>
     <listofallmembers>
       <member refid="class_catalogue_1_1_iterator_1a07a6afd7d24ea4ed54e39a9649c2e86b" prot="public" virt="non-virtual"><scope>Catalogue::Iterator</scope><name>Iterator</name></member>
       <member refid="class_catalogue_1_1_iterator_1a114c19ae7660bb10d913398bd36a9271" prot="public" virt="non-virtual"><scope>Catalogue::Iterator</scope><name>operator!=</name></member>

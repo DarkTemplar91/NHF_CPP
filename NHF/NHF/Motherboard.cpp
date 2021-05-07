@@ -27,9 +27,6 @@ int Motherboard::getRAM() { return maxRAM; }
 int Motherboard::getPorts() { return usbPorts; }
 int Motherboard::getSata() { return sata; }
 int Motherboard::getPCIE() { return pcie; }
-std::string Motherboard::getObjType() {
-	return "MB_OBJ";
-}
 
 
 std::string Motherboard::serializeObj() {

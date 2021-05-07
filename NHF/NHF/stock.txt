@@ -1,7 +1,9 @@
+0
 PRODUCT_OBJ
 {
 name:Prod1;price:100;description:There is no description for this item!;manufacturer:-;inventory:1;
 }
+7
 GPU_OBJ
 {
 	name:GPU1;price:300;description:-;manufacturer:BrandName;inventory:1;
@@ -11,6 +13,7 @@ GPU_OBJ
 	}
 
 }
+3
 HDD_OBJ
 {
 		name:HDD1;price:60;description:hard drive;manufacturer:Kingston;inventory:1;
@@ -25,6 +28,7 @@ HDD_OBJ
 	}
 
 }
+6
 CPU_OBJ
 {
 	name:Ryzen 9 5900x;price:500;description:AMD;manufacturer:cpu;inventory:1;

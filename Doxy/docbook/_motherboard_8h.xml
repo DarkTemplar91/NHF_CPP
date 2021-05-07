@@ -39,6 +39,8 @@ This graph shows which files directly or indirectly include this file:<para>
 , <link linkend="__motherboard_8h_1adf354b92ab85f8ff2d68abc40d8573bdae4cfe297dcce539ae1a53c8b3234929f">mATX</link>
 , <link linkend="__motherboard_8h_1adf354b92ab85f8ff2d68abc40d8573bda24c80a512d46a1326f9be6bb89fe5d38">ITX</link>
  }</para>
+
+<para>enumerator for (a few) motherboard form factors </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -55,7 +57,11 @@ This graph shows which files directly or indirectly include this file:<para>
     <title>mbType</title>
 <indexterm><primary>mbType</primary><secondary>Motherboard.h</secondary></indexterm>
 <indexterm><primary>Motherboard.h</primary><secondary>mbType</secondary></indexterm>
-<para><computeroutput>enum <link linkend="__motherboard_8h_1adf354b92ab85f8ff2d68abc40d8573bd">mbType</link></computeroutput></para><informaltable frame="all">
+<para><computeroutput>enum <link linkend="__motherboard_8h_1adf354b92ab85f8ff2d68abc40d8573bd">mbType</link></computeroutput></para><para>
+
+<para>enumerator for (a few) motherboard form factors </para>
+</para>
+<informaltable frame="all">
 <title>Enumerator</title>
     <tgroup cols="2" align="left" colsep="1" rowsep="1">
       <colspec colname='c1'/>

@@ -37,7 +37,6 @@ public:
 	bool ivga();
 	
 	CPU* clone();
-	std::string getObjType();
 	void print();
 	std::string serializeObj();
 	

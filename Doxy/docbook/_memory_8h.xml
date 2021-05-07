@@ -28,12 +28,20 @@ This graph shows which files directly or indirectly include this file:<para>
     <title>Classes    </title>
         <itemizedlist>
             <listitem><para>class <link linkend="_class_storage">Storage</link></para>
+
+<para>Base class for data storage/memory </para>
 </listitem>
             <listitem><para>class <link linkend="_class_r_a_m">RAM</link></para>
+
+<para>Class for modelling Random Access Memory Inheriting from storage </para>
 </listitem>
             <listitem><para>class <link linkend="_class_h_d_d">HDD</link></para>
+
+<para>Class for modelling Hard Drive Disks. Inheriting from <link linkend="_class_storage">Storage</link> </para>
 </listitem>
             <listitem><para>class <link linkend="_class_s_s_d">SSD</link></para>
+
+<para>Class for modelling SSDs Inheriting directly from <link linkend="_class_storage">Storage</link> class </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -49,6 +57,8 @@ This graph shows which files directly or indirectly include this file:<para>
 <link linkend="__memory_8h_1a284499ae529838dbabf4c7a520e99a85af9deabc33a5630ffb405bb42d7cff365">gigabyte</link>
 , <link linkend="__memory_8h_1a284499ae529838dbabf4c7a520e99a85a2de85dd4694e7b66be249fb2215e9174">terabyte</link>
  }</para>
+
+<para>Enumerator for multiples of byte </para>
 </listitem>
             <listitem><para>enum <link linkend="__memory_8h_1a462bfa9dfea81692463ecb192183dd01">MemoryType</link> { 
 <link linkend="__memory_8h_1a462bfa9dfea81692463ecb192183dd01af5ba4f87a7fc21200aea1f42dd3eb3b4">DDR</link>
@@ -60,6 +70,8 @@ This graph shows which files directly or indirectly include this file:<para>
 , <link linkend="__memory_8h_1a462bfa9dfea81692463ecb192183dd01a4f33648364f484c1b99e23b96ffe0135">SO_DIMM</link>
 , <link linkend="__memory_8h_1a462bfa9dfea81692463ecb192183dd01a27d317a975fcfe8eb232d69e8c88c554">SO_DIMM2</link>
  }</para>
+
+<para>Enumerator for <link linkend="_class_r_a_m">RAM</link> types </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -82,7 +94,11 @@ This graph shows which files directly or indirectly include this file:<para>
     <title>ByteUnit</title>
 <indexterm><primary>ByteUnit</primary><secondary>Memory.h</secondary></indexterm>
 <indexterm><primary>Memory.h</primary><secondary>ByteUnit</secondary></indexterm>
-<para><computeroutput>enum <link linkend="__memory_8h_1a284499ae529838dbabf4c7a520e99a85">ByteUnit</link></computeroutput></para><informaltable frame="all">
+<para><computeroutput>enum <link linkend="__memory_8h_1a284499ae529838dbabf4c7a520e99a85">ByteUnit</link></computeroutput></para><para>
+
+<para>Enumerator for multiples of byte </para>
+</para>
+<informaltable frame="all">
 <title>Enumerator</title>
     <tgroup cols="2" align="left" colsep="1" rowsep="1">
       <colspec colname='c1'/>
@@ -107,7 +123,11 @@ This graph shows which files directly or indirectly include this file:<para>
     <title>MemoryType</title>
 <indexterm><primary>MemoryType</primary><secondary>Memory.h</secondary></indexterm>
 <indexterm><primary>Memory.h</primary><secondary>MemoryType</secondary></indexterm>
-<para><computeroutput>enum <link linkend="__memory_8h_1a462bfa9dfea81692463ecb192183dd01">MemoryType</link></computeroutput></para><informaltable frame="all">
+<para><computeroutput>enum <link linkend="__memory_8h_1a462bfa9dfea81692463ecb192183dd01">MemoryType</link></computeroutput></para><para>
+
+<para>Enumerator for <link linkend="_class_r_a_m">RAM</link> types </para>
+</para>
+<informaltable frame="all">
 <title>Enumerator</title>
     <tgroup cols="2" align="left" colsep="1" rowsep="1">
       <colspec colname='c1'/>

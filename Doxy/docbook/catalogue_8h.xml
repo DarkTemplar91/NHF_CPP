@@ -31,6 +31,8 @@ This graph shows which files directly or indirectly include this file:<para>
     <title>Classes    </title>
         <itemizedlist>
             <listitem><para>class <link linkend="_class_catalogue">Catalogue</link></para>
+
+<para><link linkend="_class_catalogue">Catalogue</link> class An instance of <link linkend="_class_catalogue">Catalogue</link> stores and manages severak Products The Products are stored in a dynamically allocated array using a <link linkend="_class_product">Product</link> pointer array. </para>
 </listitem>
             <listitem><para>class <link linkend="_class_catalogue_1_1_iterator">Catalogue::Iterator</link></para>
 </listitem>
@@ -42,6 +44,8 @@ This graph shows which files directly or indirectly include this file:<para>
             <listitem><para>enum <link linkend="_catalogue_8h_1ac13fc3178aad8dbfd71419053e15691d">OrderReq</link> { <link linkend="_catalogue_8h_1ac13fc3178aad8dbfd71419053e15691da5c6fe26787d4ef02f1a3ad1e00cc2a79">Price</link>
 , <link linkend="_catalogue_8h_1ac13fc3178aad8dbfd71419053e15691da923b92502c8f8beef4a620fee49b89ae">Name</link>
  }</para>
+
+<para>Enumerator used for ordering the catalogue </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -51,7 +55,11 @@ This graph shows which files directly or indirectly include this file:<para>
     <title>OrderReq</title>
 <indexterm><primary>OrderReq</primary><secondary>catalogue.h</secondary></indexterm>
 <indexterm><primary>catalogue.h</primary><secondary>OrderReq</secondary></indexterm>
-<para><computeroutput>enum <link linkend="_catalogue_8h_1ac13fc3178aad8dbfd71419053e15691d">OrderReq</link></computeroutput></para><informaltable frame="all">
+<para><computeroutput>enum <link linkend="_catalogue_8h_1ac13fc3178aad8dbfd71419053e15691d">OrderReq</link></computeroutput></para><para>
+
+<para>Enumerator used for ordering the catalogue </para>
+</para>
+<informaltable frame="all">
 <title>Enumerator</title>
     <tgroup cols="2" align="left" colsep="1" rowsep="1">
       <colspec colname='c1'/>

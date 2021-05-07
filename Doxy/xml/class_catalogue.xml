@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="15" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" bodystart="15" bodyend="-1"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="23" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" bodystart="23" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_catalogue_1a137484a0db7726821e1577a47b2a37fa" prot="private" static="no" mutable="no">
         <type>size_t</type>
@@ -25,12 +25,13 @@
         <name>size</name>
         <initializer>= 0</initializer>
         <briefdescription>
+<para>The dynamically allocated array of <ref refid="class_product" kindref="compound">Product</ref> pointers. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="16" column="8" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" bodystart="16" bodyend="-1"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="24" column="8" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" bodystart="24" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -44,12 +45,33 @@
           <declname>p</declname>
         </param>
         <briefdescription>
+<para>Size of the array. </para>
         </briefdescription>
         <detaileddescription>
+<para>Adds the clone of the object to the list. If the product is already in the catalogue, then throws an error!</para>
+<para>Adds <ref refid="class_product" kindref="compound">Product</ref> to the catalogue. If the product is already in the catalogue, it throws an error</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<ref refid="class_product" kindref="compound">Product</ref> pointer pointing to product that needs to be added</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<ref refid="class_product" kindref="compound">Product</ref> to store. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="19" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="11" bodyend="21"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="32" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="17" bodyend="33"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1aa1cd6a60d22d6bd5cb904c6550668e29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -61,12 +83,32 @@
           <declname>p</declname>
         </param>
         <briefdescription>
+<para>Removes the product from the catalogue if it has the same attributes as the <ref refid="class_product" kindref="compound">Product</ref> passed as a pointer. Alternatively, if the pointer is actually included, it removes it. </para>
         </briefdescription>
         <detaileddescription>
+<para>Removes the object from the list if the two objects&apos; attributes are identical</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Pointer to the product that need removing</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Pointer to the product to compare with. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="20" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="72" bodyend="92"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="40" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="103" bodyend="133"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1ae8859b3893a47bb9707f7e5a9e2a4d79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -74,12 +116,14 @@
         <argsstring>()</argsstring>
         <name>Clear</name>
         <briefdescription>
+<para>Clears the catalogue, freeing all the allocated pointers and resetting the size to 0. </para>
         </briefdescription>
         <detaileddescription>
+<para>Clears the catalogue by freeing up all of the allocated memory</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="21" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="93" bodyend="100"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="46" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="138" bodyend="145"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1afb2d18cb7a33814c40a526fbb4988018" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -91,12 +135,32 @@
           <declname>path</declname>
         </param>
         <briefdescription>
+<para>Saves the catalogue to a file given by the &apos;path&apos; variable. It uses the classes&apos; overloaded serializeObj method </para>
         </briefdescription>
         <detaileddescription>
+<para>Iterates through the list and saves all the objects to a file</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Path of save file</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Path to save to </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="23" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="23" bodyend="67"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="53" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="39" bodyend="87"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1a0055df0cb8fbe295bf93df7c29be96e5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -108,12 +172,22 @@
           <declname>path</declname>
         </param>
         <briefdescription>
+<para>Loads the catalogue from a file by creting objects from the data read and placing them into the catalogue </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Path to the file to read from </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="24" column="6"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="60" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="89" bodyend="95"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1a36939b9a4416c0fef711440b5b17161d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_product" kindref="compound">Product</ref> **</type>
@@ -125,12 +199,24 @@
           <declname>criteria</declname>
         </param>
         <briefdescription>
+<para>Searches the catalogue and returns with an array of pointers pointing to the products that meet the criteria. It searches by name, substring included, case insensitive </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>criteria</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Criteria: the substring to search for <simplesect kind="return"><para></para>
+</simplesect>
+Array of <ref refid="class_product" kindref="compound">Product</ref> pointers with product that met the criteria </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="26" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="118" bodyend="149"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="69" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="170" bodyend="201"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1a15c28294d8e38ca67c105e4fa971835b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -144,14 +230,50 @@
         <param>
           <type>bool</type>
           <declname>rev</declname>
+          <defname>reversed</defname>
         </param>
         <briefdescription>
+<para>Orders the catalogue by name or price. Price can be sorted by high to low Name can be sorted alphabetically or reversed </para>
         </briefdescription>
         <detaileddescription>
+<para>Sorts the <ref refid="class_catalogue" kindref="compound">Catalogue</ref> with std::sort Uses lambda function</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Type to sort by. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rev</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Reverse order?</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reversed</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="27" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="150" bodyend="163"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="78" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="208" bodyend="221"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1a68cc0da89a96d535a3ea7aeabc2ed944" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>size_t</type>
@@ -164,7 +286,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="29" column="8" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="7" bodyend="9"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="80" column="8" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="7" bodyend="9"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1af9ebacaaef724e5c04c334322f81a83b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_product" kindref="compound">Product</ref> *</type>
@@ -176,12 +298,37 @@
           <declname>idx</declname>
         </param>
         <briefdescription>
+<para>Return the size of the catalogue. </para>
         </briefdescription>
         <detaileddescription>
+<para>Overloaded [] operator Return the element in the <ref refid="class_catalogue" kindref="compound">Catalogue</ref> at the given index.</para>
+<para>Overloads the [] operator for <ref refid="class_catalogue" kindref="compound">Catalogue</ref>. It returns the n-th element of the list enwrapped in the <ref refid="class_catalogue" kindref="compound">Catalogue</ref> Throws error if it is out of bounds</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+The index of the element to return <simplesect kind="return"><para></para>
+</simplesect>
+The n-th element of the catalogue</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="30" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="107" bodyend="111"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="89" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="158" bodyend="162"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1a406ca1384645f90d84076fa8b3f4b3f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -194,7 +341,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="31" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="5" bodyend="5"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="91" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="5" bodyend="5"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1af313b7234d8995e181ddf1bb95d1074c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -215,7 +362,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="32" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="6" bodyend="6"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="92" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="6" bodyend="6"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1a023fd8d70a58f76d2bbd6ef1e3ef0e9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -228,7 +375,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="33" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="101" bodyend="106"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="93" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="146" bodyend="151"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1ab431cf38c861220bd7be72ecbc1cc77e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_catalogue_1_1_iterator" kindref="compound">Iterator</ref></type>
@@ -236,12 +383,16 @@
         <argsstring>() const</argsstring>
         <name>begin</name>
         <briefdescription>
+<para>Returns an iterator pointing to the first element of the list </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+<ref refid="class_catalogue_1_1_iterator" kindref="compound">Iterator</ref> type </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="37" column="10" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="167" bodyend="169"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="102" column="10" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="225" bodyend="227"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1a35b500feb3bb24104ccf324088972370" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_catalogue_1_1_iterator" kindref="compound">Iterator</ref></type>
@@ -249,15 +400,20 @@
         <argsstring>() const</argsstring>
         <name>end</name>
         <briefdescription>
+<para>Returns an iterator pointing to the memory place after the last element of the list </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+<ref refid="class_catalogue_1_1_iterator" kindref="compound">Iterator</ref> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="38" column="10" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="170" bodyend="172"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="107" column="10" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="228" bodyend="230"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para><ref refid="class_catalogue" kindref="compound">Catalogue</ref> class An instance of <ref refid="class_catalogue" kindref="compound">Catalogue</ref> stores and manages severak Products The Products are stored in a dynamically allocated array using a <ref refid="class_product" kindref="compound">Product</ref> pointer array. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -274,7 +430,7 @@
         <link refid="class_product"/>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="14" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" bodystart="14" bodyend="52"/>
+    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="22" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" bodystart="22" bodyend="133"/>
     <listofallmembers>
       <member refid="class_catalogue_1a16755e25621142e6c29f3c2574c086ba" prot="public" virt="non-virtual"><scope>Catalogue</scope><name>Add</name></member>
       <member refid="class_catalogue_1ab431cf38c861220bd7be72ecbc1cc77e" prot="public" virt="non-virtual"><scope>Catalogue</scope><name>begin</name></member>
