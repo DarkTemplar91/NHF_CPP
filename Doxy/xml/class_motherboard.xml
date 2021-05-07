@@ -1,0 +1,437 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_motherboard" kind="class" language="C++" prot="public">
+    <compoundname>Motherboard</compoundname>
+    <basecompoundref refid="class_product" prot="public" virt="non-virtual">Product</basecompoundref>
+    <includes refid="_motherboard_8h" local="no">Motherboard.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_motherboard_1a289ecf61f1bd15373e9dade0598b1eec" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Motherboard::chipset</definition>
+        <argsstring></argsstring>
+        <name>chipset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="12" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_motherboard_1a96c475cc3d6cee4245090a3257f2c6c6" prot="private" static="no" mutable="no">
+        <type><ref refid="processor_8h_1a84edc84c8145e7997b70f9919ce44d68" kindref="member">socket</ref></type>
+        <definition>socket Motherboard::socketType</definition>
+        <argsstring></argsstring>
+        <name>socketType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="13" column="8" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_motherboard_1a807219a358ae5de54db7e590d6ff77ec" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Motherboard::maxRAM</definition>
+        <argsstring></argsstring>
+        <name>maxRAM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="14" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_motherboard_1a7d5fc2dfa0915d7256c8627385c904bd" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Motherboard::maxRFreq</definition>
+        <argsstring></argsstring>
+        <name>maxRFreq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="15" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_motherboard_1a5632309f2b4224c1ba05289d6aaf9c74" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Motherboard::usbPorts</definition>
+        <argsstring></argsstring>
+        <name>usbPorts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="16" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_motherboard_1ab237d87d79328daf0903b0c17fc56240" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Motherboard::sata</definition>
+        <argsstring></argsstring>
+        <name>sata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="17" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_motherboard_1a3b141240779b25dec7618b96938a3fba" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Motherboard::pcie</definition>
+        <argsstring></argsstring>
+        <name>pcie</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="18" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_motherboard_1a7d8e651645b17aea61c4e125fd198140" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Motherboard::Motherboard</definition>
+        <argsstring>()</argsstring>
+        <name>Motherboard</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="20" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motherboard_1acffdbb5f149098ee6c6bc664f1095185" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Motherboard::Motherboard</definition>
+        <argsstring>(std::string chip, socket s, int maxRam=64, int maxFreq=2666, int usbPorts=2, int sata=1, int pcie=1)</argsstring>
+        <name>Motherboard</name>
+        <param>
+          <type>std::string</type>
+          <declname>chip</declname>
+        </param>
+        <param>
+          <type><ref refid="processor_8h_1a84edc84c8145e7997b70f9919ce44d68" kindref="member">socket</ref></type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxRam</declname>
+          <defval>64</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxFreq</declname>
+          <defval>2666</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>usbPorts</declname>
+          <defval>2</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sata</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pcie</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="21" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motherboard_1a73378524673636ce81453b7c19f9cdb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Motherboard::Motherboard</definition>
+        <argsstring>(std::string name, double price, std::string manuf, std::string descript, std::string chip, socket s, int maxRam=64, int maxFreq=2666, int usbPorts=2, int sata=1, int pcie=1)</argsstring>
+        <name>Motherboard</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>price</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>manuf</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>descript</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>chip</declname>
+        </param>
+        <param>
+          <type><ref refid="processor_8h_1a84edc84c8145e7997b70f9919ce44d68" kindref="member">socket</ref></type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxRam</declname>
+          <defval>64</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxFreq</declname>
+          <defval>2666</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>usbPorts</declname>
+          <defval>2</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sata</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pcie</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="22" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="12" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motherboard_1a751a0f579be28f20e94828d576e76edd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Motherboard::Motherboard</definition>
+        <argsstring>(const Motherboard &amp;m)</argsstring>
+        <name>Motherboard</name>
+        <param>
+          <type>const <ref refid="class_motherboard" kindref="compound">Motherboard</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="24" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motherboard_1adfcc0e942c0c6cbeb6fee6d863b9b51f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Motherboard::getChip</definition>
+        <argsstring>()</argsstring>
+        <name>getChip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="25" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motherboard_1a747bcabd7b0baa1e4c4cefd5373c9ee0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="processor_8h_1a84edc84c8145e7997b70f9919ce44d68" kindref="member">socket</ref></type>
+        <definition>socket Motherboard::getSocket</definition>
+        <argsstring>()</argsstring>
+        <name>getSocket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="26" column="8" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motherboard_1ad93e8a9e213eb7a842323d392ad5471f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Motherboard::getRAM</definition>
+        <argsstring>()</argsstring>
+        <name>getRAM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="27" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motherboard_1a505b4ef1ac8c36193a6ee79eb921e9fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Motherboard::getPorts</definition>
+        <argsstring>()</argsstring>
+        <name>getPorts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="28" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motherboard_1a1534ea6d3be715dd09b964d78a0f91cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Motherboard::getSata</definition>
+        <argsstring>()</argsstring>
+        <name>getSata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="29" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motherboard_1a1bdb19d8e2fc3fdc9b9669fbc688a015" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Motherboard::getPCIE</definition>
+        <argsstring>()</argsstring>
+        <name>getPCIE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="30" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motherboard_1a7c35d76cd1952d69308b04ae0804080e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Motherboard::getObjType</definition>
+        <argsstring>()</argsstring>
+        <name>getObjType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="31" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motherboard_1a9d0666b839ef01ea6072ffeb41653d3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Motherboard::serializeObj</definition>
+        <argsstring>()</argsstring>
+        <name>serializeObj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="32" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="32" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motherboard_1af3ad07ad9398abe1bdd0315ec9acb7e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_motherboard" kindref="compound">Motherboard</ref> *</type>
+        <definition>Motherboard * Motherboard::clone</definition>
+        <argsstring>()</argsstring>
+        <name>clone</name>
+        <reimplements refid="class_product_1a2cc3f5ef8abe14801e185734cfcc3b57">clone</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="33" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="74" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Product</label>
+        <link refid="class_product"/>
+      </node>
+      <node id="1">
+        <label>Motherboard</label>
+        <link refid="class_motherboard"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Product</label>
+        <link refid="class_product"/>
+      </node>
+      <node id="1">
+        <label>Motherboard</label>
+        <link refid="class_motherboard"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="11" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="11" bodyend="34"/>
+    <listofallmembers>
+      <member refid="class_motherboard_1a289ecf61f1bd15373e9dade0598b1eec" prot="private" virt="non-virtual"><scope>Motherboard</scope><name>chipset</name></member>
+      <member refid="class_motherboard_1af3ad07ad9398abe1bdd0315ec9acb7e3" prot="public" virt="virtual"><scope>Motherboard</scope><name>clone</name></member>
+      <member refid="class_product_1a948738c4cb8e65f1f54623001b8c3897" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>decreaseStock</name></member>
+      <member refid="class_product_1ab88a1ecb238a74583a920a65f8cbee9c" prot="private" virt="non-virtual"><scope>Motherboard</scope><name>dscrpt</name></member>
+      <member refid="class_product_1a9279a6d296d5b8aafa0143bda648c3da" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>getAmount</name></member>
+      <member refid="class_motherboard_1adfcc0e942c0c6cbeb6fee6d863b9b51f" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>getChip</name></member>
+      <member refid="class_product_1a874a2ad2556c8d82500cce9917d5ed8c" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>getDescription</name></member>
+      <member refid="class_product_1a2f5aeb9d25fcbbcf0f6125351850d4ff" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>getManufacturer</name></member>
+      <member refid="class_product_1a9cbd896ca6b2d95088be8ad8c3b11e3b" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>getName</name></member>
+      <member refid="class_product_1a0dc7c2163bf9c07e6283c2cbcaef58d3" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>getObj_t</name></member>
+      <member refid="class_motherboard_1a7c35d76cd1952d69308b04ae0804080e" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>getObjType</name></member>
+      <member refid="class_product_1a60e8ab009f51c39442257e96409144de" prot="public" virt="virtual" ambiguityscope="Product::"><scope>Motherboard</scope><name>getObjType</name></member>
+      <member refid="class_motherboard_1a1bdb19d8e2fc3fdc9b9669fbc688a015" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>getPCIE</name></member>
+      <member refid="class_motherboard_1a505b4ef1ac8c36193a6ee79eb921e9fa" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>getPorts</name></member>
+      <member refid="class_product_1a3be25f647260d61df6063ef706261c7f" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>getPrice</name></member>
+      <member refid="class_motherboard_1ad93e8a9e213eb7a842323d392ad5471f" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>getRAM</name></member>
+      <member refid="class_motherboard_1a1534ea6d3be715dd09b964d78a0f91cf" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>getSata</name></member>
+      <member refid="class_motherboard_1a747bcabd7b0baa1e4c4cefd5373c9ee0" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>getSocket</name></member>
+      <member refid="class_product_1ae216152e43f64a82294c2c583396d13f" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>increaseStock</name></member>
+      <member refid="class_product_1a831f4ac197a88d2c2b7260765714c0d4" prot="private" virt="non-virtual"><scope>Motherboard</scope><name>inv</name></member>
+      <member refid="class_product_1af3d21858bb34986f54309b877678daa8" prot="private" virt="non-virtual"><scope>Motherboard</scope><name>manufacturer</name></member>
+      <member refid="class_motherboard_1a807219a358ae5de54db7e590d6ff77ec" prot="private" virt="non-virtual"><scope>Motherboard</scope><name>maxRAM</name></member>
+      <member refid="class_motherboard_1a7d5fc2dfa0915d7256c8627385c904bd" prot="private" virt="non-virtual"><scope>Motherboard</scope><name>maxRFreq</name></member>
+      <member refid="class_motherboard_1a7d8e651645b17aea61c4e125fd198140" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>Motherboard</name></member>
+      <member refid="class_motherboard_1acffdbb5f149098ee6c6bc664f1095185" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>Motherboard</name></member>
+      <member refid="class_motherboard_1a73378524673636ce81453b7c19f9cdb3" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>Motherboard</name></member>
+      <member refid="class_motherboard_1a751a0f579be28f20e94828d576e76edd" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>Motherboard</name></member>
+      <member refid="class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8" prot="private" virt="non-virtual"><scope>Motherboard</scope><name>name</name></member>
+      <member refid="class_product_1af83d5faec51f3cf9c45d68d103a04114" prot="public" virt="virtual"><scope>Motherboard</scope><name>operator!=</name></member>
+      <member refid="class_product_1a8b72d673cf7d89fb2e375a080af6263d" prot="public" virt="virtual"><scope>Motherboard</scope><name>operator==</name></member>
+      <member refid="class_motherboard_1a3b141240779b25dec7618b96938a3fba" prot="private" virt="non-virtual"><scope>Motherboard</scope><name>pcie</name></member>
+      <member refid="class_product_1abb2572df7a832a509944905603ba5e4f" prot="private" virt="non-virtual"><scope>Motherboard</scope><name>price</name></member>
+      <member refid="class_product_1a82a40e1860ffe2c88ea08084037a6c42" prot="public" virt="virtual"><scope>Motherboard</scope><name>print</name></member>
+      <member refid="class_product_1a102f72142feba478ffe51c77a170537e" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>Product</name></member>
+      <member refid="class_product_1accbe232b71fcb8641b7c5021fa4f6e2f" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>Product</name></member>
+      <member refid="class_product_1a847c1d85e67ce387166a597579a55135" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>Product</name></member>
+      <member refid="class_motherboard_1ab237d87d79328daf0903b0c17fc56240" prot="private" virt="non-virtual"><scope>Motherboard</scope><name>sata</name></member>
+      <member refid="class_motherboard_1a9d0666b839ef01ea6072ffeb41653d3c" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>serializeObj</name></member>
+      <member refid="class_product_1a749f163f9319f2cf6e9e0620d7133f0b" prot="public" virt="virtual" ambiguityscope="Product::"><scope>Motherboard</scope><name>serializeObj</name></member>
+      <member refid="class_product_1a08d9ddfb4db62491607f14ec9fba0d77" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>setDescription</name></member>
+      <member refid="class_product_1aeeafda76687dbbd8b2f086671c17461d" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>setManuf</name></member>
+      <member refid="class_product_1a1f49f191dab6643d82aee0490bb96e7c" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>setName</name></member>
+      <member refid="class_product_1a8ade25d68358bd4cb5b9f7c34fc53b44" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>setPrice</name></member>
+      <member refid="class_motherboard_1a96c475cc3d6cee4245090a3257f2c6c6" prot="private" virt="non-virtual"><scope>Motherboard</scope><name>socketType</name></member>
+      <member refid="class_product_1afa7216e3fe55009b1862453041a34374" prot="protected" virt="non-virtual"><scope>Motherboard</scope><name>t</name></member>
+      <member refid="class_motherboard_1a5632309f2b4224c1ba05289d6aaf9c74" prot="private" virt="non-virtual"><scope>Motherboard</scope><name>usbPorts</name></member>
+      <member refid="class_product_1a18f26095e25405579968c6ede367484f" prot="public" virt="virtual"><scope>Motherboard</scope><name>~Product</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

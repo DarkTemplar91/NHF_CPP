@@ -1,0 +1,405 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_g_p_u" kind="class" language="C++" prot="public">
+    <compoundname>GPU</compoundname>
+    <basecompoundref refid="class_product" prot="public" virt="non-virtual">Product</basecompoundref>
+    <includes refid="_videocard_8h" local="no">Videocard.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_g_p_u_1a0dc45bd568c1a3667d114e59d2eb936b" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int GPU::portHDMI</definition>
+        <argsstring></argsstring>
+        <name>portHDMI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" line="10" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_p_u_1abd8d988998cc1c91e8aef4653d84b93f" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int GPU::portDisplay</definition>
+        <argsstring></argsstring>
+        <name>portDisplay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" line="11" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_p_u_1ac88b4ae97f83518d14c34aa95eed81a1" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int GPU::gpuClock</definition>
+        <argsstring></argsstring>
+        <name>gpuClock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" line="12" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_p_u_1ad047558e044a698b9b4746366833290e" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int GPU::memoryClock</definition>
+        <argsstring></argsstring>
+        <name>memoryClock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" line="13" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_p_u_1a48611570458ee623b5cb2e761f17a6fd" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int GPU::vram</definition>
+        <argsstring></argsstring>
+        <name>vram</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" line="14" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_p_u_1a22c51b5240ede46c1aa9e0bbb1f96562" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int GPU::tdp</definition>
+        <argsstring></argsstring>
+        <name>tdp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" line="15" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_g_p_u_1a2ca7973e32f63ba3472166a007419a75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GPU::GPU</definition>
+        <argsstring>()</argsstring>
+        <name>GPU</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" line="17" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_u_1a0ab8fd437abb2fcd6a5a46541787f83b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GPU::GPU</definition>
+        <argsstring>(unsigned int portHDMI, unsigned int portDisplay, unsigned int gpuClock, unsigned int memoryClock, unsigned int vram, unsigned int tdp)</argsstring>
+        <name>GPU</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>portHDMI</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>portDisplay</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>gpuClock</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>memoryClock</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>vram</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>tdp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" line="18" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.cpp" bodystart="8" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_u_1a0b941f006ff67e58ed5c066f68bc556b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GPU::GPU</definition>
+        <argsstring>(std::string name, double price, std::string manuf, std::string descript, unsigned int portHDMI, unsigned int portDisplay, unsigned int gpuClock, unsigned int memoryClock, unsigned int vram, unsigned int tdp)</argsstring>
+        <name>GPU</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>price</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>manuf</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>descript</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>portHDMI</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>portDisplay</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>gpuClock</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>memoryClock</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>vram</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>tdp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" line="20" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.cpp" bodystart="13" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_u_1aaa9d06537dbd2da2b35436266302f863" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GPU::GPU</definition>
+        <argsstring>(const GPU &amp;g)</argsstring>
+        <name>GPU</name>
+        <param>
+          <type>const <ref refid="class_g_p_u" kindref="compound">GPU</ref> &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" line="22" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.cpp" bodystart="68" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_u_1a72b7be0a970a7bf975826cffe78f271b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int GPU::getHDMIports</definition>
+        <argsstring>()</argsstring>
+        <name>getHDMIports</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" line="24" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.cpp" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_u_1a44f3ae76203125d5db08408b45315e46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int GPU::getDisplayports</definition>
+        <argsstring>()</argsstring>
+        <name>getDisplayports</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" line="25" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.cpp" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_u_1a397f97778ac47250dc55a25c1a877a6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int GPU::getGPUclock</definition>
+        <argsstring>()</argsstring>
+        <name>getGPUclock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" line="26" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.cpp" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_u_1a9ceef8ec791e1401966be7ebc1f7a639" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int GPU::getMemClock</definition>
+        <argsstring>()</argsstring>
+        <name>getMemClock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" line="27" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.cpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_u_1a6de14cc7aa846037ed74b90f97bad87b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int GPU::getVRAM</definition>
+        <argsstring>()</argsstring>
+        <name>getVRAM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" line="28" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.cpp" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_u_1a5806130e7c25709689917fcff437949a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int GPU::getTDP</definition>
+        <argsstring>()</argsstring>
+        <name>getTDP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" line="29" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.cpp" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_u_1abd4bde632b28ce5577ae7b6d05f947d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string GPU::getObjType</definition>
+        <argsstring>()</argsstring>
+        <name>getObjType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" line="31" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.cpp" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_u_1aa6accb9ff57ea98080a7496d77fea7e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string GPU::serializeObj</definition>
+        <argsstring>()</argsstring>
+        <name>serializeObj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" line="32" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.cpp" bodystart="32" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_u_1a13535142ba8cacba30f23f6bf8ed5200" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_g_p_u" kindref="compound">GPU</ref> *</type>
+        <definition>GPU * GPU::clone</definition>
+        <argsstring>()</argsstring>
+        <name>clone</name>
+        <reimplements refid="class_product_1a2cc3f5ef8abe14801e185734cfcc3b57">clone</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" line="33" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.cpp" bodystart="76" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>GPU</label>
+        <link refid="class_g_p_u"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Product</label>
+        <link refid="class_product"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>GPU</label>
+        <link refid="class_g_p_u"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Product</label>
+        <link refid="class_product"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" line="9" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" bodystart="9" bodyend="35"/>
+    <listofallmembers>
+      <member refid="class_g_p_u_1a13535142ba8cacba30f23f6bf8ed5200" prot="public" virt="virtual"><scope>GPU</scope><name>clone</name></member>
+      <member refid="class_product_1a948738c4cb8e65f1f54623001b8c3897" prot="public" virt="non-virtual"><scope>GPU</scope><name>decreaseStock</name></member>
+      <member refid="class_product_1ab88a1ecb238a74583a920a65f8cbee9c" prot="private" virt="non-virtual"><scope>GPU</scope><name>dscrpt</name></member>
+      <member refid="class_product_1a9279a6d296d5b8aafa0143bda648c3da" prot="public" virt="non-virtual"><scope>GPU</scope><name>getAmount</name></member>
+      <member refid="class_product_1a874a2ad2556c8d82500cce9917d5ed8c" prot="public" virt="non-virtual"><scope>GPU</scope><name>getDescription</name></member>
+      <member refid="class_g_p_u_1a44f3ae76203125d5db08408b45315e46" prot="public" virt="non-virtual"><scope>GPU</scope><name>getDisplayports</name></member>
+      <member refid="class_g_p_u_1a397f97778ac47250dc55a25c1a877a6d" prot="public" virt="non-virtual"><scope>GPU</scope><name>getGPUclock</name></member>
+      <member refid="class_g_p_u_1a72b7be0a970a7bf975826cffe78f271b" prot="public" virt="non-virtual"><scope>GPU</scope><name>getHDMIports</name></member>
+      <member refid="class_product_1a2f5aeb9d25fcbbcf0f6125351850d4ff" prot="public" virt="non-virtual"><scope>GPU</scope><name>getManufacturer</name></member>
+      <member refid="class_g_p_u_1a9ceef8ec791e1401966be7ebc1f7a639" prot="public" virt="non-virtual"><scope>GPU</scope><name>getMemClock</name></member>
+      <member refid="class_product_1a9cbd896ca6b2d95088be8ad8c3b11e3b" prot="public" virt="non-virtual"><scope>GPU</scope><name>getName</name></member>
+      <member refid="class_product_1a0dc7c2163bf9c07e6283c2cbcaef58d3" prot="public" virt="non-virtual"><scope>GPU</scope><name>getObj_t</name></member>
+      <member refid="class_g_p_u_1abd4bde632b28ce5577ae7b6d05f947d6" prot="public" virt="non-virtual"><scope>GPU</scope><name>getObjType</name></member>
+      <member refid="class_product_1a60e8ab009f51c39442257e96409144de" prot="public" virt="virtual" ambiguityscope="Product::"><scope>GPU</scope><name>getObjType</name></member>
+      <member refid="class_product_1a3be25f647260d61df6063ef706261c7f" prot="public" virt="non-virtual"><scope>GPU</scope><name>getPrice</name></member>
+      <member refid="class_g_p_u_1a5806130e7c25709689917fcff437949a" prot="public" virt="non-virtual"><scope>GPU</scope><name>getTDP</name></member>
+      <member refid="class_g_p_u_1a6de14cc7aa846037ed74b90f97bad87b" prot="public" virt="non-virtual"><scope>GPU</scope><name>getVRAM</name></member>
+      <member refid="class_g_p_u_1a2ca7973e32f63ba3472166a007419a75" prot="public" virt="non-virtual"><scope>GPU</scope><name>GPU</name></member>
+      <member refid="class_g_p_u_1a0ab8fd437abb2fcd6a5a46541787f83b" prot="public" virt="non-virtual"><scope>GPU</scope><name>GPU</name></member>
+      <member refid="class_g_p_u_1a0b941f006ff67e58ed5c066f68bc556b" prot="public" virt="non-virtual"><scope>GPU</scope><name>GPU</name></member>
+      <member refid="class_g_p_u_1aaa9d06537dbd2da2b35436266302f863" prot="public" virt="non-virtual"><scope>GPU</scope><name>GPU</name></member>
+      <member refid="class_g_p_u_1ac88b4ae97f83518d14c34aa95eed81a1" prot="private" virt="non-virtual"><scope>GPU</scope><name>gpuClock</name></member>
+      <member refid="class_product_1ae216152e43f64a82294c2c583396d13f" prot="public" virt="non-virtual"><scope>GPU</scope><name>increaseStock</name></member>
+      <member refid="class_product_1a831f4ac197a88d2c2b7260765714c0d4" prot="private" virt="non-virtual"><scope>GPU</scope><name>inv</name></member>
+      <member refid="class_product_1af3d21858bb34986f54309b877678daa8" prot="private" virt="non-virtual"><scope>GPU</scope><name>manufacturer</name></member>
+      <member refid="class_g_p_u_1ad047558e044a698b9b4746366833290e" prot="private" virt="non-virtual"><scope>GPU</scope><name>memoryClock</name></member>
+      <member refid="class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8" prot="private" virt="non-virtual"><scope>GPU</scope><name>name</name></member>
+      <member refid="class_product_1af83d5faec51f3cf9c45d68d103a04114" prot="public" virt="virtual"><scope>GPU</scope><name>operator!=</name></member>
+      <member refid="class_product_1a8b72d673cf7d89fb2e375a080af6263d" prot="public" virt="virtual"><scope>GPU</scope><name>operator==</name></member>
+      <member refid="class_g_p_u_1abd8d988998cc1c91e8aef4653d84b93f" prot="private" virt="non-virtual"><scope>GPU</scope><name>portDisplay</name></member>
+      <member refid="class_g_p_u_1a0dc45bd568c1a3667d114e59d2eb936b" prot="private" virt="non-virtual"><scope>GPU</scope><name>portHDMI</name></member>
+      <member refid="class_product_1abb2572df7a832a509944905603ba5e4f" prot="private" virt="non-virtual"><scope>GPU</scope><name>price</name></member>
+      <member refid="class_product_1a82a40e1860ffe2c88ea08084037a6c42" prot="public" virt="virtual"><scope>GPU</scope><name>print</name></member>
+      <member refid="class_product_1a102f72142feba478ffe51c77a170537e" prot="public" virt="non-virtual"><scope>GPU</scope><name>Product</name></member>
+      <member refid="class_product_1accbe232b71fcb8641b7c5021fa4f6e2f" prot="public" virt="non-virtual"><scope>GPU</scope><name>Product</name></member>
+      <member refid="class_product_1a847c1d85e67ce387166a597579a55135" prot="public" virt="non-virtual"><scope>GPU</scope><name>Product</name></member>
+      <member refid="class_g_p_u_1aa6accb9ff57ea98080a7496d77fea7e5" prot="public" virt="non-virtual"><scope>GPU</scope><name>serializeObj</name></member>
+      <member refid="class_product_1a749f163f9319f2cf6e9e0620d7133f0b" prot="public" virt="virtual" ambiguityscope="Product::"><scope>GPU</scope><name>serializeObj</name></member>
+      <member refid="class_product_1a08d9ddfb4db62491607f14ec9fba0d77" prot="public" virt="non-virtual"><scope>GPU</scope><name>setDescription</name></member>
+      <member refid="class_product_1aeeafda76687dbbd8b2f086671c17461d" prot="public" virt="non-virtual"><scope>GPU</scope><name>setManuf</name></member>
+      <member refid="class_product_1a1f49f191dab6643d82aee0490bb96e7c" prot="public" virt="non-virtual"><scope>GPU</scope><name>setName</name></member>
+      <member refid="class_product_1a8ade25d68358bd4cb5b9f7c34fc53b44" prot="public" virt="non-virtual"><scope>GPU</scope><name>setPrice</name></member>
+      <member refid="class_product_1afa7216e3fe55009b1862453041a34374" prot="protected" virt="non-virtual"><scope>GPU</scope><name>t</name></member>
+      <member refid="class_g_p_u_1a22c51b5240ede46c1aa9e0bbb1f96562" prot="private" virt="non-virtual"><scope>GPU</scope><name>tdp</name></member>
+      <member refid="class_g_p_u_1a48611570458ee623b5cb2e761f17a6fd" prot="private" virt="non-virtual"><scope>GPU</scope><name>vram</name></member>
+      <member refid="class_product_1a18f26095e25405579968c6ede367484f" prot="public" virt="virtual"><scope>GPU</scope><name>~Product</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

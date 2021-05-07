@@ -1,0 +1,1002 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="gtest__lite_8h" kind="file" language="C++">
+    <compoundname>gtest_lite.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">cassert</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">cstring</includes>
+    <includes local="no">limits</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">string</includes>
+    <includes local="no">fstream</includes>
+    <includedby refid="main_8cpp" local="yes">C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/main.cpp</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>limits</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h</label>
+        <link refid="gtest__lite_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cmath</label>
+      </node>
+      <node id="3">
+        <label>cassert</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="9">
+        <label>fstream</label>
+      </node>
+      <node id="7">
+        <label>cstdlib</label>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h</label>
+        <link refid="gtest__lite_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct___is___types" prot="public">_Is_Types</innerclass>
+    <innerclass refid="structgtest__lite_1_1_test" prot="public">gtest_lite::Test</innerclass>
+    <innerclass refid="classgtest__lite_1_1ostream_redir" prot="public">gtest_lite::ostreamRedir</innerclass>
+    <innernamespace refid="namespacegtest__lite">gtest_lite</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="gtest__lite_8h_1a379a7b57e74521cb2c8e99f0e2779a72" prot="public" static="no">
+        <name>TEST</name>
+        <param><defname>C</defname></param>
+        <param><defname>N</defname></param>
+        <initializer>do { gtest_lite::test.begin(#C&quot;.&quot;#N);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Teszt kezdete. A makró paraméterezése hasonlít a gtest paraméterezéséhez. Így az itt elkészített testek könnyen átemelhetők a gtest keretrendszerbe. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- teszteset neve (csak a gtest kompatibilitás miatt van külön neve az eseteknek) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>N</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- teszt neve </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="68" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1a29fd18bed01c4d836c7ebfe73a125c3f" prot="public" static="no">
+        <name>END</name>
+        <initializer>gtest_lite::test.end(); } while (false);</initializer>
+        <briefdescription>
+<para>Teszteset vége. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="71" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1acc9065c889d0797062317b30fd8767d4" prot="public" static="no">
+        <name>ENDM</name>
+        <initializer>gtest_lite::test.end(true); } while (false);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Teszteset vége allokált blokkok számának összehasonlításával Ez az ellenőrzés nem bomba biztos. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="75" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1ad2e2f10cb2a494ff7ae23938dfdfc41a" prot="public" static="no">
+        <name>ENDMsg</name>
+        <param><defname>t</defname></param>
+        <initializer>gtest_lite::test.end(true) &lt;&lt; t &lt;&lt; std::endl; } while (false);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Teszteset vége allokált blokkok számának összehasonlításával Ez az ellenőrzés nem bomba biztos. Ha hiba van kiírja az üzenetet. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="80" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1a75adcdf89f69b0b615e395daafc315af" prot="public" static="no">
+        <name>SUCCEED</name>
+        <param></param>
+        <initializer>gtest_lite::test.expect(true, __FILE__, __LINE__, &quot;SUCCEED()&quot;, true)</initializer>
+        <briefdescription>
+<para>Sikeres teszt makrója. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="86" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1a3e26a8d27caa386ed0ea7ce9d5b7c4ed" prot="public" static="no">
+        <name>FAIL</name>
+        <param></param>
+        <initializer>gtest_lite::test.expect(false, __FILE__, __LINE__, &quot;FAIL()&quot;, true)</initializer>
+        <briefdescription>
+<para>Sikertelen teszt fatális hiba makrója. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="89" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1adc16b5b0a740c39084ea5c9e960e3063" prot="public" static="no">
+        <name>ADD_FAILURE</name>
+        <param></param>
+        <initializer>gtest_lite::test.expect(false, __FILE__, __LINE__, &quot;ADD_FAILURE()&quot;, true)</initializer>
+        <briefdescription>
+<para>Sikertelen teszt makrója. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="92" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1aff8385840165a184edc29446aa51936f" prot="public" static="no">
+        <name>EXPECT_EQ</name>
+        <param><defname>expected</defname></param>
+        <param><defname>actual</defname></param>
+        <initializer><ref refid="namespacegtest__lite_1a73d2ede1d983327aea4fdd5b1d2709ce" kindref="member">gtest_lite::EXPECT_</ref>(expected, actual, <ref refid="namespacegtest__lite_1a884f0c7c25d80d78a73c759a8fc43a3d" kindref="member">gtest_lite::eq</ref>, __FILE__, __LINE__, &quot;EXPECT_EQ(&quot; #expected &quot;, &quot; #actual &quot;)&quot; )</initializer>
+        <briefdescription>
+<para>Azonosságot elváró makró </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="95" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1adb8a724f2c5c63ead11073c21fd51198" prot="public" static="no">
+        <name>EXPECT_NE</name>
+        <param><defname>expected</defname></param>
+        <param><defname>actual</defname></param>
+        <initializer><ref refid="namespacegtest__lite_1a73d2ede1d983327aea4fdd5b1d2709ce" kindref="member">gtest_lite::EXPECT_</ref>(expected, actual, <ref refid="namespacegtest__lite_1a2f36af995c570e62f68c148f7393eb54" kindref="member">gtest_lite::ne</ref>, __FILE__, __LINE__, &quot;EXPECT_NE(&quot; #expected &quot;, &quot; #actual &quot;)&quot;, &quot;etalon&quot; )</initializer>
+        <briefdescription>
+<para>Eltérést elváró makró </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="98" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1ac680be4a2404c20cae831740779d11cd" prot="public" static="no">
+        <name>EXPECT_LE</name>
+        <param><defname>expected</defname></param>
+        <param><defname>actual</defname></param>
+        <initializer><ref refid="namespacegtest__lite_1a73d2ede1d983327aea4fdd5b1d2709ce" kindref="member">gtest_lite::EXPECT_</ref>(expected, actual, <ref refid="namespacegtest__lite_1a5cd2ce368021471b16b4814b179c9c34" kindref="member">gtest_lite::le</ref>, __FILE__, __LINE__, &quot;EXPECT_LE(&quot; #expected &quot;, &quot; #actual &quot;)&quot;, &quot;etalon&quot; )</initializer>
+        <briefdescription>
+<para>Kisebb, vagy egyenlő relációt elváró makró </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="101" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1a46603095284e7bcd2f114cfdc7c79b4f" prot="public" static="no">
+        <name>EXPECT_LT</name>
+        <param><defname>expected</defname></param>
+        <param><defname>actual</defname></param>
+        <initializer><ref refid="namespacegtest__lite_1a73d2ede1d983327aea4fdd5b1d2709ce" kindref="member">gtest_lite::EXPECT_</ref>(expected, actual, <ref refid="namespacegtest__lite_1afb471377c0d2d30aeeaf8912db72f0ff" kindref="member">gtest_lite::lt</ref>, __FILE__, __LINE__, &quot;EXPECT_LT(&quot; #expected &quot;, &quot; #actual &quot;)&quot;, &quot;etalon&quot; )</initializer>
+        <briefdescription>
+<para>Kisebb, mint relációt elváró makró </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="104" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1aad891c6b36689d35ee54de65351ab224" prot="public" static="no">
+        <name>EXPECT_GE</name>
+        <param><defname>expected</defname></param>
+        <param><defname>actual</defname></param>
+        <initializer><ref refid="namespacegtest__lite_1a73d2ede1d983327aea4fdd5b1d2709ce" kindref="member">gtest_lite::EXPECT_</ref>(expected, actual, <ref refid="namespacegtest__lite_1a77c1a7cf1d34c46c1d97ed39b9f06050" kindref="member">gtest_lite::ge</ref>, __FILE__, __LINE__, &quot;EXPECT_GE(&quot; #expected &quot;, &quot; #actual &quot;)&quot;, &quot;etalon&quot; )</initializer>
+        <briefdescription>
+<para>Nagyobb, vagy egyenlő relációt elváró makró </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="107" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1ac2262f96c4664cf3e170d2edaaba6c44" prot="public" static="no">
+        <name>EXPECT_GT</name>
+        <param><defname>expected</defname></param>
+        <param><defname>actual</defname></param>
+        <initializer><ref refid="namespacegtest__lite_1a73d2ede1d983327aea4fdd5b1d2709ce" kindref="member">gtest_lite::EXPECT_</ref>(expected, actual, <ref refid="namespacegtest__lite_1aa0100ec9e095a9403a7b70ad4a162fdd" kindref="member">gtest_lite::gt</ref>, __FILE__, __LINE__, &quot;EXPECT_GT(&quot; #expected &quot;, &quot; #actual &quot;)&quot;, &quot;etalon&quot; )</initializer>
+        <briefdescription>
+<para>Nagyobb, mint relációt elváró makró </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="110" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1ab400890edc9f419e40c28a224e8ed79f" prot="public" static="no">
+        <name>EXPECT_TRUE</name>
+        <param><defname>actual</defname></param>
+        <initializer><ref refid="namespacegtest__lite_1a73d2ede1d983327aea4fdd5b1d2709ce" kindref="member">gtest_lite::EXPECT_</ref>(true, actual,  <ref refid="namespacegtest__lite_1a884f0c7c25d80d78a73c759a8fc43a3d" kindref="member">gtest_lite::eq</ref>, __FILE__, __LINE__, &quot;EXPECT_TRUE(&quot; #actual &quot;)&quot; )</initializer>
+        <briefdescription>
+<para>Igaz értéket elváró makró </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="113" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1a58cae60fff88d713c4850b50d3e592a6" prot="public" static="no">
+        <name>EXPECT_FALSE</name>
+        <param><defname>actual</defname></param>
+        <initializer><ref refid="namespacegtest__lite_1a73d2ede1d983327aea4fdd5b1d2709ce" kindref="member">gtest_lite::EXPECT_</ref>(false, actual, <ref refid="namespacegtest__lite_1a884f0c7c25d80d78a73c759a8fc43a3d" kindref="member">gtest_lite::eq</ref>, __FILE__, __LINE__, &quot;EXPECT_FALSE(&quot; #actual &quot;)&quot; )</initializer>
+        <briefdescription>
+<para>Hamis értéket elváró makró </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="116" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1a5ce7d58df8cb696aa05e77c2370de7a8" prot="public" static="no">
+        <name>EXPECT_FLOAT_EQ</name>
+        <param><defname>expected</defname></param>
+        <param><defname>actual</defname></param>
+        <initializer><ref refid="namespacegtest__lite_1a73d2ede1d983327aea4fdd5b1d2709ce" kindref="member">gtest_lite::EXPECT_</ref>(expected, actual, <ref refid="namespacegtest__lite_1affbf9748c4e4dec6db137f7c147fee61" kindref="member">gtest_lite::almostEQ</ref>, __FILE__, __LINE__, &quot;EXPECT_FLOAT_EQ(&quot; #expected &quot;, &quot; #actual &quot;)&quot; )</initializer>
+        <briefdescription>
+<para>Valós számok azonosságát elváró makró </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="119" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1a6e6277442d96cd18300619c321614397" prot="public" static="no">
+        <name>EXPECT_DOUBLE_EQ</name>
+        <param><defname>expected</defname></param>
+        <param><defname>actual</defname></param>
+        <initializer><ref refid="namespacegtest__lite_1a73d2ede1d983327aea4fdd5b1d2709ce" kindref="member">gtest_lite::EXPECT_</ref>(expected, actual, <ref refid="namespacegtest__lite_1affbf9748c4e4dec6db137f7c147fee61" kindref="member">gtest_lite::almostEQ</ref>, __FILE__, __LINE__, &quot;EXPECT_DOUBLE_EQ(&quot; #expected &quot;, &quot; #actual &quot;)&quot; )</initializer>
+        <briefdescription>
+<para>Valós számok azonosságát elváró makró </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="122" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1a5b4b193a92c39b99d7b9404c49feef0b" prot="public" static="no">
+        <name>EXPECT_STREQ</name>
+        <param><defname>expected</defname></param>
+        <param><defname>actual</defname></param>
+        <initializer><ref refid="namespacegtest__lite_1aea477921e4c26d2a2806bc3011066270" kindref="member">gtest_lite::EXPECTSTR</ref>(expected, actual, <ref refid="namespacegtest__lite_1a34055f353dabbe4ed9063f1d36af6022" kindref="member">gtest_lite::eqstr</ref>, __FILE__, __LINE__, &quot;EXPECT_STREQ(&quot; #expected &quot;, &quot; #actual &quot;)&quot; )</initializer>
+        <briefdescription>
+<para>C stringek (const char *) azonosságát tesztelő makró </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="125" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1aa511aad7b6a6a8e8d0279f16d925b094" prot="public" static="no">
+        <name>EXPECT_STRNE</name>
+        <param><defname>expected</defname></param>
+        <param><defname>actual</defname></param>
+        <initializer><ref refid="namespacegtest__lite_1aea477921e4c26d2a2806bc3011066270" kindref="member">gtest_lite::EXPECTSTR</ref>(expected, actual, <ref refid="namespacegtest__lite_1a0a34b1bb0d55bc0c6a3e878ec2bcd49f" kindref="member">gtest_lite::nestr</ref>, __FILE__, __LINE__, &quot;EXPECT_STRNE(&quot; #expected &quot;, &quot; #actual &quot;)&quot;, &quot;etalon&quot; )</initializer>
+        <briefdescription>
+<para>C stringek (const char *) eltéréset tesztelő makró </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="128" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1acd0cb7ae81a768e9cc639804a478e71c" prot="public" static="no">
+        <name>EXPECT_STRCASEEQ</name>
+        <param><defname>expected</defname></param>
+        <param><defname>actual</defname></param>
+        <initializer><ref refid="namespacegtest__lite_1aea477921e4c26d2a2806bc3011066270" kindref="member">gtest_lite::EXPECTSTR</ref>(expected, actual, <ref refid="namespacegtest__lite_1a50e47b21dec025ed15ef3767e556d038" kindref="member">gtest_lite::eqstrcase</ref>, __FILE__, __LINE__, &quot;EXPECT_STRCASEEQ(&quot; #expected &quot;, &quot; #actual &quot;)&quot; )</initializer>
+        <briefdescription>
+<para>C stringek (const char *) azonosságát tesztelő makró (kisbetű/nagybetű azonos) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="131" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1a6ab5f4af3f8a388af059dbd497910ee5" prot="public" static="no">
+        <name>EXPECT_STRCASENE</name>
+        <param><defname>expected</defname></param>
+        <param><defname>actual</defname></param>
+        <initializer><ref refid="namespacegtest__lite_1aea477921e4c26d2a2806bc3011066270" kindref="member">gtest_lite::EXPECTSTR</ref>(expected, actual, gtest_lite::nestrcase, __FILE__, __LINE__, &quot;EXPECT_STRCASENE(&quot; #expected &quot;, &quot; #actual &quot;)&quot;, &quot;etalon&quot; )</initializer>
+        <briefdescription>
+<para>C stringek (const char *) eltéréset tesztelő makró (kisbetű/nagybetű azonos) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="134" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1a4b4fe697f312ef7d2618905a9bc12f04" prot="public" static="no">
+        <name>EXPECT_THROW</name>
+        <param><defname>statement</defname></param>
+        <param><defname>exception_type</defname></param>
+        <initializer>    try { gtest_lite::test.tmp = false; statement; } \
+    catch (exception_type) { gtest_lite::test.tmp = true; } \
+    catch (...) { } \
+    <ref refid="gtest__lite_8h_1a59f6c1f1654aa9d5adf5c143efd1a454" kindref="member">EXPECTTHROW</ref>(statement, &quot;kivetelt dob.&quot;, &quot;nem dobott &apos;&quot;#exception_type&quot;&apos; kivetelt.&quot;)</initializer>
+        <briefdescription>
+<para>Kivételt várunk. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="137" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1a9be43f44d148e8a8d6a89c864bf4e461" prot="public" static="no">
+        <name>EXPECT_ANY_THROW</name>
+        <param><defname>statement</defname></param>
+        <initializer>    try { gtest_lite::test.tmp = false; statement; } \
+    catch (...) { gtest_lite::test.tmp = true; } \
+    <ref refid="gtest__lite_8h_1a59f6c1f1654aa9d5adf5c143efd1a454" kindref="member">EXPECTTHROW</ref>(statement, &quot;kivetelt dob.&quot;, &quot;nem dobott kivetelt.&quot;)</initializer>
+        <briefdescription>
+<para>Kivételt várunk. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="143" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1a2743a1438137ad857aa3f9fec3ff67ec" prot="public" static="no">
+        <name>EXPECT_NO_THROW</name>
+        <param><defname>statement</defname></param>
+        <initializer>    try { gtest_lite::test.tmp = true; statement; } \
+    catch (...) { gtest_lite::test.tmp = false; }\
+    <ref refid="gtest__lite_8h_1a59f6c1f1654aa9d5adf5c143efd1a454" kindref="member">EXPECTTHROW</ref>(statement, &quot;nem dob kivetelt.&quot;, &quot;kivetelt dobott.&quot;)</initializer>
+        <briefdescription>
+<para>Nem várunk kivételt. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="148" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1a895c34d9b192cdc2ba46d2680623485d" prot="public" static="no">
+        <name>ASSERT_NO_THROW</name>
+        <param><defname>statement</defname></param>
+        <initializer>    try { gtest_lite::test.tmp = true; statement; } \
+    catch (...) { gtest_lite::test.tmp = false; }\
+    <ref refid="gtest__lite_8h_1a5137d2bbeb7baffffe2e477a450fd48b" kindref="member">ASSERTTHROW</ref>(statement, &quot;nem dob kivetelt.&quot;, &quot;kivetelt dobott.&quot;)</initializer>
+        <briefdescription>
+<para>Nem várunk kivételt. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="153" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1a5129ea3a961fbd7fe71e6621452047bf" prot="public" static="no">
+        <name>EXPECT_THROW_THROW</name>
+        <param><defname>statement</defname></param>
+        <param><defname>exception_type</defname></param>
+        <initializer>    try { gtest_lite::test.tmp = false; statement; } \
+    catch (exception_type) { gtest_lite::test.tmp = true; throw; } \
+    <ref refid="gtest__lite_8h_1a59f6c1f1654aa9d5adf5c143efd1a454" kindref="member">EXPECTTHROW</ref>(statement, &quot;kivetelt dob.&quot;, &quot;nem dobott &apos;&quot;#exception_type&quot;&apos; kivetelt.&quot;)</initializer>
+        <briefdescription>
+<para>Kivételt várunk és továbbdobjuk <ndash/> ilyen nincs a gtest-ben. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="158" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1a167ba84ecdae79d9d8db07ee949ef9eb" prot="public" static="no">
+        <name>EXPECT_ENVEQ</name>
+        <param><defname>expected</defname></param>
+        <param><defname>actual</defname></param>
+        <initializer><ref refid="namespacegtest__lite_1aea477921e4c26d2a2806bc3011066270" kindref="member">gtest_lite::EXPECTSTR</ref>(std::getenv(expected), actual, <ref refid="namespacegtest__lite_1a34055f353dabbe4ed9063f1d36af6022" kindref="member">gtest_lite::eqstr</ref>, __FILE__, __LINE__, &quot;EXPECT_ENVEQ(&quot; #expected &quot;, &quot; #actual &quot;)&quot; )</initializer>
+        <briefdescription>
+<para>Környezeti változóhoz hasonlít <ndash/> ilyen nincs a gtest-ben. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="163" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1af08de545266a5b3ebfdf5dac3791bad3" prot="public" static="no">
+        <name>EXPECT_ENVCASEEQ</name>
+        <param><defname>expected</defname></param>
+        <param><defname>actual</defname></param>
+        <initializer><ref refid="namespacegtest__lite_1aea477921e4c26d2a2806bc3011066270" kindref="member">gtest_lite::EXPECTSTR</ref>(std::getenv(expected), actual, <ref refid="namespacegtest__lite_1a50e47b21dec025ed15ef3767e556d038" kindref="member">gtest_lite::eqstrcase</ref>, __FILE__, __LINE__, &quot;EXPECT_ENVCASEEQ(&quot; #expected &quot;, &quot; #actual &quot;)&quot; )</initializer>
+        <briefdescription>
+<para>Környezeti változóhoz hasonlít <ndash/> ilyen nincs a gtest-ben (kisbetű/nagybetű azonos) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="166" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1ad806a5e5813ea769dc2edbb5f6e3949d" prot="public" static="no">
+        <name>ASSERT_EQ</name>
+        <param><defname>expected</defname></param>
+        <param><defname>actual</defname></param>
+        <initializer><ref refid="gtest__lite_8h_1ab476c9b9c74e37c420040dbcc9a02615" kindref="member">gtest_lite::ASSERT_</ref>(expected, actual, <ref refid="namespacegtest__lite_1a884f0c7c25d80d78a73c759a8fc43a3d" kindref="member">gtest_lite::eq</ref>, &quot;ASSER_EQ&quot;)</initializer>
+        <briefdescription>
+<para>Azonosságot elváró makró </para>
+        </briefdescription>
+        <detaileddescription>
+<para><hruler/>
+ ASSERT típusú ellenőrzések. CSak 1-2 van megvalósítva. Nem ostream&amp; -val térnek vissza !!! Kivételt várunk </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="177" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1a895c34d9b192cdc2ba46d2680623485d" prot="public" static="no">
+        <name>ASSERT_NO_THROW</name>
+        <param><defname>statement</defname></param>
+        <initializer>    try { gtest_lite::test.tmp = true; statement; } \
+    catch (...) { gtest_lite::test.tmp = false; }\
+    <ref refid="gtest__lite_8h_1a5137d2bbeb7baffffe2e477a450fd48b" kindref="member">ASSERTTHROW</ref>(statement, &quot;nem dob kivetelt.&quot;, &quot;kivetelt dobott.&quot;)</initializer>
+        <briefdescription>
+<para>Nem várunk kivételt. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="180" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1a34bf9a881eb6b2800b0e6cb0abdbd319" prot="public" static="no">
+        <name>CREATE_Has_</name>
+        <param><defname>X</defname></param>
+        <initializer>template&lt;typename T&gt; struct _Has_##X {  \
+    struct Fallback { int X; };         \
+    struct Derived : T, Fallback {};    \
+    template&lt;typename C, C&gt; struct ChT; \
+    template&lt;typename D&gt; static char (&amp;f(ChT&lt;int Fallback::*, &amp;D::X&gt;*))[1]; \
+    template&lt;typename D&gt; static char (&amp;f(...))[2]; \
+    static bool const member = sizeof(f&lt;Derived&gt;(0)) == 2; \
+};</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Segédmakró egy adattag, vagy tagfüggvény létezésének tesztelésére futási időben Ötlet: <ulink url="https://cpptalk.wordpress.com/2009/09/12/substitution-failure-is-not-an-error-2">https://cpptalk.wordpress.com/2009/09/12/substitution-failure-is-not-an-error-2</ulink> Használat: <ref refid="gtest__lite_8h_1a34bf9a881eb6b2800b0e6cb0abdbd319" kindref="member">CREATE_Has_(size)</ref> ... if (Has_size&lt;std::string&gt;::member)... </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="191" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1a59f6c1f1654aa9d5adf5c143efd1a454" prot="public" static="no">
+        <name>EXPECTTHROW</name>
+        <param><defname>statement</defname></param>
+        <param><defname>exp</defname></param>
+        <param><defname>act</defname></param>
+        <initializer>    gtest_lite::test.expect(gtest_lite::test.tmp, __FILE__, __LINE__, #statement) \
+    &lt;&lt; &quot;** Az utasitas &quot; &lt;&lt; (act) \
+    &lt;&lt; &quot;\n** Azt vartuk, hogy &quot; &lt;&lt; (exp) &lt;&lt; std::endl</initializer>
+        <briefdescription>
+<para>EXPECTTHROW: kivételkezelés. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><hruler/>
+ Belső megvalósításhoz tartozó makrók, és osztályok. </para>
+<sect2 id="gtest__lite_8h_1autotoc_md0">
+<title>Nem célszerű közvetlenül használni, vagy módosítani</title>
+</sect2>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="219" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1a5137d2bbeb7baffffe2e477a450fd48b" prot="public" static="no">
+        <name>ASSERTTHROW</name>
+        <param><defname>statement</defname></param>
+        <param><defname>exp</defname></param>
+        <param><defname>act</defname></param>
+        <initializer>    gtest_lite::test.expect(gtest_lite::test.tmp, __FILE__, __LINE__, #statement) \
+    &lt;&lt; &quot;** Az utasitas &quot; &lt;&lt; (act) \
+    &lt;&lt; &quot;\n** Azt vartuk, hogy &quot; &lt;&lt; (exp) &lt;&lt; std::endl; if (!gtest_lite::test.status) { gtest_lite::test.end(); break; }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="223" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1ab476c9b9c74e37c420040dbcc9a02615" prot="public" static="no">
+        <name>ASSERT_</name>
+        <param><defname>expected</defname></param>
+        <param><defname>actual</defname></param>
+        <param><defname>fn</defname></param>
+        <param><defname>op</defname></param>
+        <initializer>    EXPECT_(expected, actual, fn, __FILE__, __LINE__, #op &quot;(&quot; #expected &quot;, &quot; #actual &quot;)&quot; ); \
+    if (!gtest_lite::test.status) { gtest_lite::test.end(); break; }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="227" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1a428e5e5ea2b7f67a0b68fbf57ea0faa7" prot="public" static="no">
+        <name>GTINIT</name>
+        <param><defname>IS</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="235" column="10" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="gtest__lite_8h_1a20ba54bca307f985eb448f71e6896dd5" prot="public" static="no">
+        <name>GTEND</name>
+        <param><defname>os</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="242" column="10" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gtest__lite_8h_1aa57e54fc7cbf742de576263d90ee1660" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void hasMember</definition>
+        <argsstring>(...)</argsstring>
+        <name>hasMember</name>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Segédfüggvény egy publikus adattag, vagy tagfüggvény létezésének tesztelésére fordítási időben </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" line="203" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h" bodystart="203" bodyend="203"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>(v3/2019)</para>
+<para>Google gtest keretrendszerhez hasonló rendszer. Sz.I. 2015., 2016., 2017. (_Has_X) Sz.I. 2018 (template), ENDM, ENDMsg, nullptr_t Sz.I. 2019 singleton Sz.I. 2021 ASSERT.., STRCASE... Sz.I. 2021 EXPEXT_REGEXP</para>
+<para>A tesztelés legalapvetőbb funkcióit támogató függvények és makrók. Nem szálbiztos megvalósítás.</para>
+<para>Szabadon felhasználható, bővíthető.</para>
+<para>Használati példa: Teszteljük az f(x)=2*x függvényt: int f(int x) { return 2*x; }</para>
+<para>int <ref refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main()</ref> { <ref refid="gtest__lite_8h_1a379a7b57e74521cb2c8e99f0e2779a72" kindref="member">TEST(TeszEsetNeve, TesztNeve)</ref> <ref refid="gtest__lite_8h_1aff8385840165a184edc29446aa51936f" kindref="member">EXPECT_EQ(0, f(0))</ref>; <ref refid="gtest__lite_8h_1aff8385840165a184edc29446aa51936f" kindref="member">EXPECT_EQ(4, f(2))</ref> &lt;&lt; &quot;A függvény hibás eredményt adott&quot; &lt;&lt; std::endl; ... END ... // Fatális hiba esetén a teszteset nem fut tovább. Ezek az ASSERT... makrók. // Nem lehet a kiírásukhoz további üzenetet fűzni. PL: <ref refid="gtest__lite_8h_1a379a7b57e74521cb2c8e99f0e2779a72" kindref="member">TEST(TeszEsetNeve, TesztNeve)</ref> <ref refid="gtest__lite_8h_1a895c34d9b192cdc2ba46d2680623485d" kindref="member">ASSERT_NO_THROW(f(0))</ref>; // itt nem lehet &lt;&lt; &quot;duma&quot; <ref refid="gtest__lite_8h_1aff8385840165a184edc29446aa51936f" kindref="member">EXPECT_EQ(4, f(2))</ref> &lt;&lt; &quot;A függvény hibás eredményt adott&quot; &lt;&lt; std::endl; ... END ...</para>
+<para>A működés részleteinek megértése szorgalmi feladat. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>GTEST_LITE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GTEST_LITE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cassert&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;limits&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__cplusplus<sp/>&gt;=<sp/>201103L</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;iterator&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&lt;regex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MEMTRACE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="memtrace_8h" kindref="compound">memtrace.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Két<sp/>makró<sp/>az<sp/>egyes<sp/>tesztek<sp/>elé<sp/>és<sp/>mögé:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>két<sp/>makró<sp/>a<sp/>kapcsos<sp/>zárójelekkel<sp/>egy<sp/>új<sp/>blokkot<sp/>hoz<sp/>létre,<sp/>amiben</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//<sp/>a<sp/>nevek<sp/>lokálisak,<sp/>így<sp/>elkerülhető<sp/>a<sp/>névütközés.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="gtest__lite_8h_1a379a7b57e74521cb2c8e99f0e2779a72" refkind="member"><highlight class="preprocessor">#define<sp/>TEST(C,<sp/>N)<sp/>do<sp/>{<sp/>gtest_lite::test.begin(#C&quot;.&quot;</highlight><highlight class="normal">#N);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="gtest__lite_8h_1a29fd18bed01c4d836c7ebfe73a125c3f" refkind="member"><highlight class="preprocessor">#define<sp/>END<sp/>gtest_lite::test.end();<sp/>}<sp/>while<sp/>(false);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="gtest__lite_8h_1acc9065c889d0797062317b30fd8767d4" refkind="member"><highlight class="preprocessor">#define<sp/>ENDM<sp/>gtest_lite::test.end(true);<sp/>}<sp/>while<sp/>(false);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="gtest__lite_8h_1ad2e2f10cb2a494ff7ae23938dfdfc41a" refkind="member"><highlight class="preprocessor">#define<sp/>ENDMsg(t)<sp/>gtest_lite::test.end(true)<sp/>&lt;&lt;<sp/>t<sp/>&lt;&lt;<sp/>std::endl;<sp/>}<sp/>while<sp/>(false);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Eredmények<sp/>vizsgálatát<sp/>segítő<sp/>makrók.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>paraméterek<sp/>és<sp/>a<sp/>funkciók<sp/>a<sp/>gtest<sp/>keretrendszerrel<sp/>megegyeznek.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="gtest__lite_8h_1a75adcdf89f69b0b615e395daafc315af" refkind="member"><highlight class="preprocessor">#define<sp/>SUCCEED()<sp/>gtest_lite::test.expect(true,<sp/>__FILE__,<sp/>__LINE__,<sp/>&quot;SUCCEED()&quot;</highlight><highlight class="normal">,<sp/>true)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="gtest__lite_8h_1a3e26a8d27caa386ed0ea7ce9d5b7c4ed" refkind="member"><highlight class="preprocessor">#define<sp/>FAIL()<sp/>gtest_lite::test.expect(false,<sp/>__FILE__,<sp/>__LINE__,<sp/>&quot;FAIL()&quot;</highlight><highlight class="normal">,<sp/>true)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="gtest__lite_8h_1adc16b5b0a740c39084ea5c9e960e3063" refkind="member"><highlight class="preprocessor">#define<sp/>ADD_FAILURE()<sp/>gtest_lite::test.expect(false,<sp/>__FILE__,<sp/>__LINE__,<sp/>&quot;ADD_FAILURE()&quot;</highlight><highlight class="normal">,<sp/>true)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="gtest__lite_8h_1aff8385840165a184edc29446aa51936f" refkind="member"><highlight class="preprocessor">#define<sp/>EXPECT_EQ(expected,<sp/>actual)<sp/>gtest_lite::EXPECT_(expected,<sp/>actual,<sp/>gtest_lite::eq,<sp/>__FILE__,<sp/>__LINE__,<sp/>&quot;EXPECT_EQ(&quot;</highlight><highlight class="normal"><sp/>#expected<sp/>&quot;,<sp/>&quot;<sp/>#actual<sp/>&quot;)&quot;<sp/>)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="gtest__lite_8h_1adb8a724f2c5c63ead11073c21fd51198" refkind="member"><highlight class="preprocessor">#define<sp/>EXPECT_NE(expected,<sp/>actual)<sp/>gtest_lite::EXPECT_(expected,<sp/>actual,<sp/>gtest_lite::ne,<sp/>__FILE__,<sp/>__LINE__,<sp/>&quot;EXPECT_NE(&quot;</highlight><highlight class="normal"><sp/>#expected<sp/>&quot;,<sp/>&quot;<sp/>#actual<sp/>&quot;)&quot;,<sp/>&quot;etalon&quot;<sp/>)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="gtest__lite_8h_1ac680be4a2404c20cae831740779d11cd" refkind="member"><highlight class="preprocessor">#define<sp/>EXPECT_LE(expected,<sp/>actual)<sp/>gtest_lite::EXPECT_(expected,<sp/>actual,<sp/>gtest_lite::le,<sp/>__FILE__,<sp/>__LINE__,<sp/>&quot;EXPECT_LE(&quot;</highlight><highlight class="normal"><sp/>#expected<sp/>&quot;,<sp/>&quot;<sp/>#actual<sp/>&quot;)&quot;,<sp/>&quot;etalon&quot;<sp/>)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="gtest__lite_8h_1a46603095284e7bcd2f114cfdc7c79b4f" refkind="member"><highlight class="preprocessor">#define<sp/>EXPECT_LT(expected,<sp/>actual)<sp/>gtest_lite::EXPECT_(expected,<sp/>actual,<sp/>gtest_lite::lt,<sp/>__FILE__,<sp/>__LINE__,<sp/>&quot;EXPECT_LT(&quot;</highlight><highlight class="normal"><sp/>#expected<sp/>&quot;,<sp/>&quot;<sp/>#actual<sp/>&quot;)&quot;,<sp/>&quot;etalon&quot;<sp/>)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="gtest__lite_8h_1aad891c6b36689d35ee54de65351ab224" refkind="member"><highlight class="preprocessor">#define<sp/>EXPECT_GE(expected,<sp/>actual)<sp/>gtest_lite::EXPECT_(expected,<sp/>actual,<sp/>gtest_lite::ge,<sp/>__FILE__,<sp/>__LINE__,<sp/>&quot;EXPECT_GE(&quot;</highlight><highlight class="normal"><sp/>#expected<sp/>&quot;,<sp/>&quot;<sp/>#actual<sp/>&quot;)&quot;,<sp/>&quot;etalon&quot;<sp/>)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="gtest__lite_8h_1ac2262f96c4664cf3e170d2edaaba6c44" refkind="member"><highlight class="preprocessor">#define<sp/>EXPECT_GT(expected,<sp/>actual)<sp/>gtest_lite::EXPECT_(expected,<sp/>actual,<sp/>gtest_lite::gt,<sp/>__FILE__,<sp/>__LINE__,<sp/>&quot;EXPECT_GT(&quot;</highlight><highlight class="normal"><sp/>#expected<sp/>&quot;,<sp/>&quot;<sp/>#actual<sp/>&quot;)&quot;,<sp/>&quot;etalon&quot;<sp/>)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="gtest__lite_8h_1ab400890edc9f419e40c28a224e8ed79f" refkind="member"><highlight class="preprocessor">#define<sp/>EXPECT_TRUE(actual)<sp/><sp/>gtest_lite::EXPECT_(true,<sp/>actual,<sp/><sp/>gtest_lite::eq,<sp/>__FILE__,<sp/>__LINE__,<sp/>&quot;EXPECT_TRUE(&quot;</highlight><highlight class="normal"><sp/>#actual<sp/>&quot;)&quot;<sp/>)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="gtest__lite_8h_1a58cae60fff88d713c4850b50d3e592a6" refkind="member"><highlight class="preprocessor">#define<sp/>EXPECT_FALSE(actual)<sp/>gtest_lite::EXPECT_(false,<sp/>actual,<sp/>gtest_lite::eq,<sp/>__FILE__,<sp/>__LINE__,<sp/>&quot;EXPECT_FALSE(&quot;</highlight><highlight class="normal"><sp/>#actual<sp/>&quot;)&quot;<sp/>)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="gtest__lite_8h_1a5ce7d58df8cb696aa05e77c2370de7a8" refkind="member"><highlight class="preprocessor">#define<sp/>EXPECT_FLOAT_EQ(expected,<sp/>actual)<sp/><sp/>gtest_lite::EXPECT_(expected,<sp/>actual,<sp/>gtest_lite::almostEQ,<sp/>__FILE__,<sp/>__LINE__,<sp/>&quot;EXPECT_FLOAT_EQ(&quot;</highlight><highlight class="normal"><sp/>#expected<sp/>&quot;,<sp/>&quot;<sp/>#actual<sp/>&quot;)&quot;<sp/>)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="gtest__lite_8h_1a6e6277442d96cd18300619c321614397" refkind="member"><highlight class="preprocessor">#define<sp/>EXPECT_DOUBLE_EQ(expected,<sp/>actual)<sp/>gtest_lite::EXPECT_(expected,<sp/>actual,<sp/>gtest_lite::almostEQ,<sp/>__FILE__,<sp/>__LINE__,<sp/>&quot;EXPECT_DOUBLE_EQ(&quot;</highlight><highlight class="normal"><sp/>#expected<sp/>&quot;,<sp/>&quot;<sp/>#actual<sp/>&quot;)&quot;<sp/>)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="gtest__lite_8h_1a5b4b193a92c39b99d7b9404c49feef0b" refkind="member"><highlight class="preprocessor">#define<sp/>EXPECT_STREQ(expected,<sp/>actual)<sp/>gtest_lite::EXPECTSTR(expected,<sp/>actual,<sp/>gtest_lite::eqstr,<sp/>__FILE__,<sp/>__LINE__,<sp/>&quot;EXPECT_STREQ(&quot;</highlight><highlight class="normal"><sp/>#expected<sp/>&quot;,<sp/>&quot;<sp/>#actual<sp/>&quot;)&quot;<sp/>)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="gtest__lite_8h_1aa511aad7b6a6a8e8d0279f16d925b094" refkind="member"><highlight class="preprocessor">#define<sp/>EXPECT_STRNE(expected,<sp/>actual)<sp/>gtest_lite::EXPECTSTR(expected,<sp/>actual,<sp/>gtest_lite::nestr,<sp/>__FILE__,<sp/>__LINE__,<sp/>&quot;EXPECT_STRNE(&quot;</highlight><highlight class="normal"><sp/>#expected<sp/>&quot;,<sp/>&quot;<sp/>#actual<sp/>&quot;)&quot;,<sp/>&quot;etalon&quot;<sp/>)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="gtest__lite_8h_1acd0cb7ae81a768e9cc639804a478e71c" refkind="member"><highlight class="preprocessor">#define<sp/>EXPECT_STRCASEEQ(expected,<sp/>actual)<sp/>gtest_lite::EXPECTSTR(expected,<sp/>actual,<sp/>gtest_lite::eqstrcase,<sp/>__FILE__,<sp/>__LINE__,<sp/>&quot;EXPECT_STRCASEEQ(&quot;</highlight><highlight class="normal"><sp/>#expected<sp/>&quot;,<sp/>&quot;<sp/>#actual<sp/>&quot;)&quot;<sp/>)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="gtest__lite_8h_1a6ab5f4af3f8a388af059dbd497910ee5" refkind="member"><highlight class="preprocessor">#define<sp/>EXPECT_STRCASENE(expected,<sp/>actual)<sp/>gtest_lite::EXPECTSTR(expected,<sp/>actual,<sp/>gtest_lite::nestrcase,<sp/>__FILE__,<sp/>__LINE__,<sp/>&quot;EXPECT_STRCASENE(&quot;</highlight><highlight class="normal"><sp/>#expected<sp/>&quot;,<sp/>&quot;<sp/>#actual<sp/>&quot;)&quot;,<sp/>&quot;etalon&quot;<sp/>)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="gtest__lite_8h_1a4b4fe697f312ef7d2618905a9bc12f04" refkind="member"><highlight class="preprocessor">#define<sp/>EXPECT_THROW(statement,<sp/>exception_type)<sp/>try<sp/>{<sp/>gtest_lite::test.tmp<sp/>=<sp/>false;<sp/>statement;<sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="138"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>catch<sp/>(exception_type)<sp/>{<sp/>gtest_lite::test.tmp<sp/>=<sp/>true;<sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="139"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>catch<sp/>(...)<sp/>{<sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="140"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>EXPECTTHROW(statement,<sp/>&quot;kivetelt<sp/>dob.&quot;</highlight><highlight class="normal">,<sp/>&quot;nem<sp/>dobott<sp/>&apos;&quot;#exception_type&quot;&apos;<sp/>kivetelt.&quot;)</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="gtest__lite_8h_1a9be43f44d148e8a8d6a89c864bf4e461" refkind="member"><highlight class="preprocessor">#define<sp/>EXPECT_ANY_THROW(statement)<sp/>try<sp/>{<sp/>gtest_lite::test.tmp<sp/>=<sp/>false;<sp/>statement;<sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="144"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>catch<sp/>(...)<sp/>{<sp/>gtest_lite::test.tmp<sp/>=<sp/>true;<sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="145"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>EXPECTTHROW(statement,<sp/>&quot;kivetelt<sp/>dob.&quot;</highlight><highlight class="normal">,<sp/>&quot;nem<sp/>dobott<sp/>kivetelt.&quot;)</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="gtest__lite_8h_1a2743a1438137ad857aa3f9fec3ff67ec" refkind="member"><highlight class="preprocessor">#define<sp/>EXPECT_NO_THROW(statement)<sp/>try<sp/>{<sp/>gtest_lite::test.tmp<sp/>=<sp/>true;<sp/>statement;<sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="149"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>catch<sp/>(...)<sp/>{<sp/>gtest_lite::test.tmp<sp/>=<sp/>false;<sp/>}\</highlight></codeline>
+<codeline lineno="150"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>EXPECTTHROW(statement,<sp/>&quot;nem<sp/>dob<sp/>kivetelt.&quot;</highlight><highlight class="normal">,<sp/>&quot;kivetelt<sp/>dobott.&quot;)</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="preprocessor">#define<sp/>ASSERT_NO_THROW(statement)<sp/>try<sp/>{<sp/>gtest_lite::test.tmp<sp/>=<sp/>true;<sp/>statement;<sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="154"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>catch<sp/>(...)<sp/>{<sp/>gtest_lite::test.tmp<sp/>=<sp/>false;<sp/>}\</highlight></codeline>
+<codeline lineno="155"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>ASSERTTHROW(statement,<sp/>&quot;nem<sp/>dob<sp/>kivetelt.&quot;</highlight><highlight class="normal">,<sp/>&quot;kivetelt<sp/>dobott.&quot;)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="gtest__lite_8h_1a5129ea3a961fbd7fe71e6621452047bf" refkind="member"><highlight class="preprocessor">#define<sp/>EXPECT_THROW_THROW(statement,<sp/>exception_type)<sp/>try<sp/>{<sp/>gtest_lite::test.tmp<sp/>=<sp/>false;<sp/>statement;<sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="159"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>catch<sp/>(exception_type)<sp/>{<sp/>gtest_lite::test.tmp<sp/>=<sp/>true;<sp/>throw;<sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="160"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>EXPECTTHROW(statement,<sp/>&quot;kivetelt<sp/>dob.&quot;</highlight><highlight class="normal">,<sp/>&quot;nem<sp/>dobott<sp/>&apos;&quot;#exception_type&quot;&apos;<sp/>kivetelt.&quot;)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="gtest__lite_8h_1a167ba84ecdae79d9d8db07ee949ef9eb" refkind="member"><highlight class="preprocessor">#define<sp/>EXPECT_ENVEQ(expected,<sp/>actual)<sp/>gtest_lite::EXPECTSTR(std::getenv(expected),<sp/>actual,<sp/>gtest_lite::eqstr,<sp/>__FILE__,<sp/>__LINE__,<sp/>&quot;EXPECT_ENVEQ(&quot;</highlight><highlight class="normal"><sp/>#expected<sp/>&quot;,<sp/>&quot;<sp/>#actual<sp/>&quot;)&quot;<sp/>)</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="gtest__lite_8h_1af08de545266a5b3ebfdf5dac3791bad3" refkind="member"><highlight class="preprocessor">#define<sp/>EXPECT_ENVCASEEQ(expected,<sp/>actual)<sp/>gtest_lite::EXPECTSTR(std::getenv(expected),<sp/>actual,<sp/>gtest_lite::eqstrcase,<sp/>__FILE__,<sp/>__LINE__,<sp/>&quot;EXPECT_ENVCASEEQ(&quot;</highlight><highlight class="normal"><sp/>#expected<sp/>&quot;,<sp/>&quot;<sp/>#actual<sp/>&quot;)&quot;<sp/>)</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__cplusplus<sp/>&gt;=<sp/>201103L</highlight></codeline>
+<codeline lineno="170"><highlight class="preprocessor">#<sp/>define<sp/>EXPECT_REGEXP(expected,<sp/>actual,<sp/>match,<sp/>err)<sp/>gtest_lite::EXPECTREGEXP(expected,<sp/>actual,<sp/>match,<sp/>err,<sp/>__FILE__,<sp/>__LINE__,<sp/>&quot;EXPECT_REGEXP(&quot;</highlight><highlight class="normal"><sp/>#expected<sp/>&quot;,<sp/>&quot;<sp/>#actual<sp/>&quot;,<sp/>&quot;<sp/>#match<sp/>&quot;)&quot;<sp/>)</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="175"></codeline>
+<codeline lineno="177" refid="gtest__lite_8h_1ad806a5e5813ea769dc2edbb5f6e3949d" refkind="member"><highlight class="preprocessor">#define<sp/>ASSERT_EQ(expected,<sp/>actual)<sp/>gtest_lite::ASSERT_(expected,<sp/>actual,<sp/>gtest_lite::eq,<sp/>&quot;ASSER_EQ&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="gtest__lite_8h_1a895c34d9b192cdc2ba46d2680623485d" refkind="member"><highlight class="preprocessor">#define<sp/>ASSERT_NO_THROW(statement)<sp/>try<sp/>{<sp/>gtest_lite::test.tmp<sp/>=<sp/>true;<sp/>statement;<sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="181"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>catch<sp/>(...)<sp/>{<sp/>gtest_lite::test.tmp<sp/>=<sp/>false;<sp/>}\</highlight></codeline>
+<codeline lineno="182"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>ASSERTTHROW(statement,<sp/>&quot;nem<sp/>dob<sp/>kivetelt.&quot;</highlight><highlight class="normal">,<sp/>&quot;kivetelt<sp/>dobott.&quot;)</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191" refid="gtest__lite_8h_1a34bf9a881eb6b2800b0e6cb0abdbd319" refkind="member"><highlight class="preprocessor">#define<sp/>CREATE_Has_(X)<sp/>\</highlight></codeline>
+<codeline lineno="192"><highlight class="preprocessor">template&lt;typename<sp/>T&gt;<sp/>struct<sp/>_Has_##X<sp/>{<sp/><sp/>\</highlight></codeline>
+<codeline lineno="193"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>struct<sp/>Fallback<sp/>{<sp/>int<sp/>X;<sp/>};<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="194"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>struct<sp/>Derived<sp/>:<sp/>T,<sp/>Fallback<sp/>{};<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="195"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>template&lt;typename<sp/>C,<sp/>C&gt;<sp/>struct<sp/>ChT;<sp/>\</highlight></codeline>
+<codeline lineno="196"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>template&lt;typename<sp/>D&gt;<sp/>static<sp/>char<sp/>(&amp;f(ChT&lt;int<sp/>Fallback::*,<sp/>&amp;D::X&gt;*))[1];<sp/>\</highlight></codeline>
+<codeline lineno="197"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>template&lt;typename<sp/>D&gt;<sp/>static<sp/>char<sp/>(&amp;f(...))[2];<sp/>\</highlight></codeline>
+<codeline lineno="198"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>static<sp/>bool<sp/>const<sp/>member<sp/>=<sp/>sizeof(f&lt;Derived&gt;(0))<sp/>==<sp/>2;<sp/>\</highlight></codeline>
+<codeline lineno="199"><highlight class="preprocessor">};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203" refid="gtest__lite_8h_1aa57e54fc7cbf742de576263d90ee1660" refkind="member"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="gtest__lite_8h_1aa57e54fc7cbf742de576263d90ee1660" kindref="member">hasMember</ref>(...)<sp/>{}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>F,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="207" refid="struct___is___types" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct___is___types" kindref="compound">_Is_Types</ref><sp/>{</highlight></codeline>
+<codeline lineno="208" refid="struct___is___types_1a56e08a2768c571caab81e9bc47d5acc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>D&gt;<sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>char<sp/>(&amp;<ref refid="struct___is___types_1a56e08a2768c571caab81e9bc47d5acc6" kindref="member">f</ref>(D))[1];</highlight></codeline>
+<codeline lineno="209" refid="struct___is___types_1a013da65c5a92e9bd02f5d361c10d376d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>D&gt;<sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>char<sp/>(&amp;<ref refid="struct___is___types_1a013da65c5a92e9bd02f5d361c10d376d" kindref="member">f</ref>(...))[2];</highlight></codeline>
+<codeline lineno="210" refid="struct___is___types_1aef853f15f013611d0890cb6fc408ae47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct___is___types_1aef853f15f013611d0890cb6fc408ae47" kindref="member">convertable</ref><sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(f&lt;T&gt;(F()))<sp/>==<sp/>1;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"></codeline>
+<codeline lineno="219" refid="gtest__lite_8h_1a59f6c1f1654aa9d5adf5c143efd1a454" refkind="member"><highlight class="preprocessor">#define<sp/>EXPECTTHROW(statement,<sp/>exp,<sp/>act)<sp/>gtest_lite::test.expect(gtest_lite::test.tmp,<sp/>__FILE__,<sp/>__LINE__,<sp/>#statement)<sp/>\</highlight></codeline>
+<codeline lineno="220"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;**<sp/>Az<sp/>utasitas<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>(act)<sp/>\</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;\n**<sp/>Azt<sp/>vartuk,<sp/>hogy<sp/>&quot;<sp/>&lt;&lt;<sp/>(exp)<sp/>&lt;&lt;<sp/>std::endl</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223" refid="gtest__lite_8h_1a5137d2bbeb7baffffe2e477a450fd48b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ASSERTTHROW(statement,<sp/>exp,<sp/>act)<sp/>gtest_lite::test.expect(gtest_lite::test.tmp,<sp/>__FILE__,<sp/>__LINE__,<sp/>#statement)<sp/>\</highlight></codeline>
+<codeline lineno="224"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;**<sp/>Az<sp/>utasitas<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>(act)<sp/>\</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;\n**<sp/>Azt<sp/>vartuk,<sp/>hogy<sp/>&quot;<sp/>&lt;&lt;<sp/>(exp)<sp/>&lt;&lt;<sp/>std::endl;<sp/>if<sp/>(!gtest_lite::test.status)<sp/>{<sp/>gtest_lite::test.end();<sp/>break;<sp/>}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227" refid="gtest__lite_8h_1ab476c9b9c74e37c420040dbcc9a02615" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ASSERT_(expected,<sp/>actual,<sp/>fn,<sp/>op)<sp/>EXPECT_(expected,<sp/>actual,<sp/>fn,<sp/>__FILE__,<sp/>__LINE__,<sp/>#op<sp/>&quot;(&quot;</highlight><highlight class="normal"><sp/>#expected<sp/>&quot;,<sp/>&quot;<sp/>#actual<sp/>&quot;)&quot;<sp/>);<sp/>\</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(!gtest_lite::test.status)<sp/>{<sp/>gtest_lite::test.end();<sp/>break;<sp/>}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>CPORTA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GTINIT(is)<sp/><sp/>\</highlight></codeline>
+<codeline lineno="232"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>int<sp/>magic;<sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="233"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>is<sp/>&gt;&gt;<sp/>magic;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235" refid="gtest__lite_8h_1a428e5e5ea2b7f67a0b68fbf57ea0faa7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GTINIT(IS)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>CPORTA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>CPORTA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GTEND(os)<sp/><sp/>\</highlight></codeline>
+<codeline lineno="240"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>magic<sp/>&lt;&lt;<sp/>(gtest_lite::test.fail()<sp/>?<sp/>&quot;<sp/>NO&quot;</highlight><highlight class="normal"><sp/>:<sp/>&quot;<sp/>OK?&quot;)<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242" refid="gtest__lite_8h_1a20ba54bca307f985eb448f71e6896dd5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GTEND(os)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>CPORTA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246" refid="namespacegtest__lite" refkind="compound"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegtest__lite" kindref="compound">gtest_lite</ref><sp/>{</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251" refid="structgtest__lite_1_1_test" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgtest__lite_1_1_test" kindref="compound">Test</ref><sp/>{</highlight></codeline>
+<codeline lineno="252" refid="structgtest__lite_1_1_test_1a6da678d43b72b9e2bff1c99e1d3c48f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structgtest__lite_1_1_test_1a6da678d43b72b9e2bff1c99e1d3c48f5" kindref="member">sum</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="253" refid="structgtest__lite_1_1_test_1a4fb6ee7bd903717d970e3f0504cdeeab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structgtest__lite_1_1_test_1a4fb6ee7bd903717d970e3f0504cdeeab" kindref="member">failed</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="254" refid="structgtest__lite_1_1_test_1a91d9c63794d2b9b49e0c48d897208560" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structgtest__lite_1_1_test_1a91d9c63794d2b9b49e0c48d897208560" kindref="member">ablocks</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="255" refid="structgtest__lite_1_1_test_1a59a9a7f0ef7867af604ce5678f7a2c13" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structgtest__lite_1_1_test_1a59a9a7f0ef7867af604ce5678f7a2c13" kindref="member">status</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="256" refid="structgtest__lite_1_1_test_1a1145ceb335a60a808b7b4d5d1624b2a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structgtest__lite_1_1_test_1a1145ceb335a60a808b7b4d5d1624b2a5" kindref="member">tmp</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="257" refid="structgtest__lite_1_1_test_1a8d495a42580e3ae337f9c4982136b700" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structgtest__lite_1_1_test_1a8d495a42580e3ae337f9c4982136b700" kindref="member">name</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="258" refid="structgtest__lite_1_1_test_1af4784302d78bb004bcb20b7f75ec06c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::fstream<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">;<sp/><sp/></highlight></codeline>
+<codeline lineno="259" refid="structgtest__lite_1_1_test_1a532aa4c5e33e41ce8139b9c9098aa6f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structgtest__lite_1_1_test" kindref="compound">Test</ref>&amp;<sp/><ref refid="structgtest__lite_1_1_test_1a532aa4c5e33e41ce8139b9c9098aa6f2" kindref="member">getTest</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structgtest__lite_1_1_test" kindref="compound">Test</ref><sp/>instance;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>instance;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="264" refid="structgtest__lite_1_1_test_1a99fb3f2338e4e0512beb6e19c5409078" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgtest__lite_1_1_test_1a99fb3f2338e4e0512beb6e19c5409078" kindref="member">Test</ref>()<sp/>:<ref refid="structgtest__lite_1_1_test_1a6da678d43b72b9e2bff1c99e1d3c48f5" kindref="member">sum</ref>(0),<sp/><ref refid="structgtest__lite_1_1_test_1a4fb6ee7bd903717d970e3f0504cdeeab" kindref="member">failed</ref>(0),<sp/><ref refid="structgtest__lite_1_1_test_1a59a9a7f0ef7867af604ce5678f7a2c13" kindref="member">status</ref>(false),<sp/><ref refid="structgtest__lite_1_1_test_1af4784302d78bb004bcb20b7f75ec06c3" kindref="member">null</ref>(</highlight><highlight class="stringliteral">&quot;/dev/null&quot;</highlight><highlight class="normal">)<sp/>{}</highlight></codeline>
+<codeline lineno="265" refid="structgtest__lite_1_1_test_1aad083ed9e389aeac2d526460ac301c7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgtest__lite_1_1_test_1aad083ed9e389aeac2d526460ac301c7a" kindref="member">Test</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgtest__lite_1_1_test" kindref="compound">Test</ref>&amp;);</highlight></codeline>
+<codeline lineno="266" refid="structgtest__lite_1_1_test_1a35faf2d45ab88d096f0eb25ee5b80b13" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structgtest__lite_1_1_test_1a35faf2d45ab88d096f0eb25ee5b80b13" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgtest__lite_1_1_test" kindref="compound">Test</ref>&amp;);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="269" refid="structgtest__lite_1_1_test_1a2227b70fcc5dfb3c326bf117dd8f7e79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structgtest__lite_1_1_test_1a2227b70fcc5dfb3c326bf117dd8f7e79" kindref="member">begin</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*n)<sp/>{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgtest__lite_1_1_test_1a8d495a42580e3ae337f9c4982136b700" kindref="member">name</ref><sp/>=<sp/>n;<sp/><ref refid="structgtest__lite_1_1_test_1a59a9a7f0ef7867af604ce5678f7a2c13" kindref="member">status</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MEMTRACE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgtest__lite_1_1_test_1a91d9c63794d2b9b49e0c48d897208560" kindref="member">ablocks</ref><sp/>=<sp/>memtrace::allocated_blocks();</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CPORTA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n---&gt;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="structgtest__lite_1_1_test_1a8d495a42580e3ae337f9c4982136b700" kindref="member">name</ref><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>CPORTA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++<ref refid="structgtest__lite_1_1_test_1a6da678d43b72b9e2bff1c99e1d3c48f5" kindref="member">sum</ref>;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="280" refid="structgtest__lite_1_1_test_1a658c1eee35f170294c354ebf4d3fc1ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostream&amp;<sp/><ref refid="structgtest__lite_1_1_test_1a658c1eee35f170294c354ebf4d3fc1ba" kindref="member">end</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>memchk<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MEMTRACE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(memchk<sp/>&amp;&amp;<sp/><ref refid="structgtest__lite_1_1_test_1a91d9c63794d2b9b49e0c48d897208560" kindref="member">ablocks</ref><sp/>!=<sp/>memtrace::allocated_blocks())<sp/>{</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgtest__lite_1_1_test_1a59a9a7f0ef7867af604ce5678f7a2c13" kindref="member">status</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;**<sp/>Lehet,<sp/>hogy<sp/>nem<sp/>szabaditott<sp/>fel<sp/>minden<sp/>memoriat!<sp/>**&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>CPORTA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="structgtest__lite_1_1_test_1a59a9a7f0ef7867af604ce5678f7a2c13" kindref="member">status</ref>)</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>CPORTA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/>(<ref refid="structgtest__lite_1_1_test_1a59a9a7f0ef7867af604ce5678f7a2c13" kindref="member">status</ref><sp/>?<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/>SIKERES&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;**<sp/>HIBAS<sp/>****&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="structgtest__lite_1_1_test_1a8d495a42580e3ae337f9c4982136b700" kindref="member">name</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&lt;---&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="structgtest__lite_1_1_test_1a59a9a7f0ef7867af604ce5678f7a2c13" kindref="member">status</ref>)</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::cerr;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297" refid="structgtest__lite_1_1_test_1aadbfd0f53c56d975f793602996631195" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structgtest__lite_1_1_test_1aadbfd0f53c56d975f793602996631195" kindref="member">fail</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structgtest__lite_1_1_test_1a4fb6ee7bd903717d970e3f0504cdeeab" kindref="member">failed</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299" refid="structgtest__lite_1_1_test_1ab68d48e5096dd799d865d128d63cd12c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structgtest__lite_1_1_test_1ab68d48e5096dd799d865d128d63cd12c" kindref="member">astatus</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structgtest__lite_1_1_test_1a59a9a7f0ef7867af604ce5678f7a2c13" kindref="member">status</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302" refid="structgtest__lite_1_1_test_1a0bca03315e5963f7fdfffd92d2daed6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostream&amp;<sp/><ref refid="structgtest__lite_1_1_test_1a0bca03315e5963f7fdfffd92d2daed6a" kindref="member">expect</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>st,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*expr,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>pr<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!st)<sp/>{</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++<ref refid="structgtest__lite_1_1_test_1a4fb6ee7bd903717d970e3f0504cdeeab" kindref="member">failed</ref>;</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgtest__lite_1_1_test_1a59a9a7f0ef7867af604ce5678f7a2c13" kindref="member">status</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!st<sp/>||<sp/>pr)<sp/>{</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>str(file);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>str.rfind(</highlight><highlight class="stringliteral">&quot;\\&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>==<sp/>std::string::npos)<sp/>i<sp/>=<sp/>str.rfind(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>==<sp/>std::string::npos)<sp/>i<sp/>=<sp/>0;<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>i++;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n****<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>&amp;file[i]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>line<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;):<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>expr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>****&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318" refid="structgtest__lite_1_1_test_1a5a879233c2aa110626668c06140f6e71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgtest__lite_1_1_test_1a5a879233c2aa110626668c06140f6e71" kindref="member">~Test</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structgtest__lite_1_1_test_1a6da678d43b72b9e2bff1c99e1d3c48f5" kindref="member">sum</ref><sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>CPORTA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structgtest__lite_1_1_test_1a4fb6ee7bd903717d970e3f0504cdeeab" kindref="member">failed</ref>)</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>CPORTA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n====<sp/>TESZT<sp/>VEGE<sp/>====<sp/>HIBAS/OSSZES:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="structgtest__lite_1_1_test_1a4fb6ee7bd903717d970e3f0504cdeeab" kindref="member">failed</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="structgtest__lite_1_1_test_1a6da678d43b72b9e2bff1c99e1d3c48f5" kindref="member">sum</ref><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="326"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330" refid="namespacegtest__lite_1a819c9a4e5bf13b0f5d81734978336ca0" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structgtest__lite_1_1_test" kindref="compound">Test</ref>&amp;<sp/><ref refid="namespacegtest__lite_1a819c9a4e5bf13b0f5d81734978336ca0" kindref="member">test</ref><sp/>=<sp/><ref refid="structgtest__lite_1_1_test_1a532aa4c5e33e41ce8139b9c9098aa6f2" kindref="member">Test::getTest</ref>();</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T1,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T2&gt;</highlight></codeline>
+<codeline lineno="334" refid="namespacegtest__lite_1a73d2ede1d983327aea4fdd5b1d2709ce" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="namespacegtest__lite_1a73d2ede1d983327aea4fdd5b1d2709ce" kindref="member">EXPECT_</ref>(T1<sp/>exp,<sp/>T2<sp/>act,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>(*pred)(T1,<sp/>T2),<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line,</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*expr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*lhs<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;elvart&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*rhs<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;aktual&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacegtest__lite_1a819c9a4e5bf13b0f5d81734978336ca0" kindref="member">test</ref>.<ref refid="structgtest__lite_1_1_test_1a0bca03315e5963f7fdfffd92d2daed6a" kindref="member">expect</ref>(pred(exp,<sp/>act),<sp/>file,<sp/>line,<sp/>expr)</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;**<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>lhs<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::boolalpha<sp/>&lt;&lt;<sp/>exp</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n**<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>rhs<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::boolalpha<sp/>&lt;&lt;<sp/>act<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="339"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T1,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T2&gt;</highlight></codeline>
+<codeline lineno="343" refid="namespacegtest__lite_1a835d542f226b31cf5cd28033303aa7d7" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="namespacegtest__lite_1a73d2ede1d983327aea4fdd5b1d2709ce" kindref="member">EXPECT_</ref>(T1*<sp/>exp,<sp/>T2*<sp/>act,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>(*pred)(T1*,<sp/>T2*),<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line,</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*expr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*lhs<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;elvart&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*rhs<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;aktual&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacegtest__lite_1a819c9a4e5bf13b0f5d81734978336ca0" kindref="member">test</ref>.<ref refid="structgtest__lite_1_1_test_1a0bca03315e5963f7fdfffd92d2daed6a" kindref="member">expect</ref>(pred(exp,<sp/>act),<sp/>file,<sp/>line,<sp/>expr)</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;**<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>lhs<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>exp</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n**<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>rhs<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>act<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="348"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__cplusplus<sp/>&gt;=<sp/>201103L</highlight></codeline>
+<codeline lineno="352"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T1&gt;</highlight></codeline>
+<codeline lineno="353"><highlight class="normal">std::ostream&amp;<sp/><ref refid="namespacegtest__lite_1a73d2ede1d983327aea4fdd5b1d2709ce" kindref="member">EXPECT_</ref>(T1*<sp/>exp,<sp/>std::nullptr_t<sp/>act,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>(*pred)(T1*,<sp/>std::nullptr_t),<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line,</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*expr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*lhs<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;elvart&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*rhs<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;aktual&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacegtest__lite_1a819c9a4e5bf13b0f5d81734978336ca0" kindref="member">test</ref>.<ref refid="structgtest__lite_1_1_test_1a0bca03315e5963f7fdfffd92d2daed6a" kindref="member">expect</ref>(pred(exp,<sp/>act),<sp/>file,<sp/>line,<sp/>expr)</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;**<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>lhs<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>exp</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n**<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>rhs<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>act<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="364" refid="namespacegtest__lite_1aea477921e4c26d2a2806bc3011066270" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="namespacegtest__lite_1aea477921e4c26d2a2806bc3011066270" kindref="member">EXPECTSTR</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*exp,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*act,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>(*pred)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*),<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line,</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*expr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*lhs<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;elvart&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*rhs<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;aktual&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacegtest__lite_1a819c9a4e5bf13b0f5d81734978336ca0" kindref="member">test</ref>.<ref refid="structgtest__lite_1_1_test_1a0bca03315e5963f7fdfffd92d2daed6a" kindref="member">expect</ref>(pred(exp,<sp/>act),<sp/>file,<sp/>line,<sp/>expr)</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;**<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>lhs<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>(exp<sp/>==<sp/>NULL<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;NULL<sp/>pointer&quot;</highlight><highlight class="normal"><sp/>:<sp/>std::string(</highlight><highlight class="stringliteral">&quot;\&quot;&quot;</highlight><highlight class="normal">)<sp/>+<sp/>exp<sp/>+<sp/>std::string(</highlight><highlight class="stringliteral">&quot;\&quot;&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n**<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>rhs<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>(act<sp/>==<sp/>NULL<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;NULL<sp/>pointer&quot;</highlight><highlight class="normal"><sp/>:<sp/>std::string(</highlight><highlight class="stringliteral">&quot;\&quot;&quot;</highlight><highlight class="normal">)<sp/>+<sp/>act<sp/>+<sp/>std::string(</highlight><highlight class="stringliteral">&quot;\&quot;&quot;</highlight><highlight class="normal">))<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="369"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__cplusplus<sp/>&gt;=<sp/>201103L</highlight></codeline>
+<codeline lineno="373"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>E,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>S&gt;</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count_regexp(E<sp/>exp,<sp/>S<sp/>str)<sp/>{</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/>std::regex<sp/>rexp(exp);</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>w_beg<sp/>=<sp/>std::sregex_iterator(str.begin(),<sp/>str.end(),<sp/>rexp);</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>w_end<sp/>=<sp/>std::sregex_iterator();</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::distance(w_beg,<sp/>w_end);</highlight></codeline>
+<codeline lineno="379"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>E,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>S&gt;</highlight></codeline>
+<codeline lineno="382"><highlight class="normal">std::ostream&amp;<sp/>EXPECTREGEXP(E<sp/>exp,<sp/>S<sp/>str,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>match,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*err,<sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line,</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*expr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*lhs<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;regexp&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*rhs<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;string&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*m<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;elvart/illeszkedik&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cnt<sp/>=<sp/>count_regexp(exp,<sp/>str);</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(match<sp/>&lt;<sp/>0)<sp/>match<sp/>=<sp/>cnt;</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacegtest__lite_1a819c9a4e5bf13b0f5d81734978336ca0" kindref="member">test</ref>.<ref refid="structgtest__lite_1_1_test_1a0bca03315e5963f7fdfffd92d2daed6a" kindref="member">expect</ref>(cnt<sp/>==<sp/>match,<sp/>file,<sp/>line,<sp/>expr)</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;**<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>lhs<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::string(</highlight><highlight class="stringliteral">&quot;\&quot;&quot;</highlight><highlight class="normal">)<sp/>+<sp/>exp<sp/>+<sp/>std::string(</highlight><highlight class="stringliteral">&quot;\&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n**<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>rhs<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>(err<sp/>==<sp/>NULL<sp/>?<sp/>std::string(</highlight><highlight class="stringliteral">&quot;\&quot;&quot;</highlight><highlight class="normal">)<sp/>+<sp/>str<sp/>+<sp/>std::string(</highlight><highlight class="stringliteral">&quot;\&quot;&quot;</highlight><highlight class="normal">)<sp/>:<sp/>err)</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n**<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>m<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>match<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>cnt<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="391"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T1,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T2&gt;</highlight></codeline>
+<codeline lineno="397" refid="namespacegtest__lite_1a884f0c7c25d80d78a73c759a8fc43a3d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacegtest__lite_1a884f0c7c25d80d78a73c759a8fc43a3d" kindref="member">eq</ref>(T1<sp/>a,<sp/>T2<sp/>b)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a<sp/>==<sp/>b;<sp/>}</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"></highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="400" refid="namespacegtest__lite_1a34055f353dabbe4ed9063f1d36af6022" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacegtest__lite_1a34055f353dabbe4ed9063f1d36af6022" kindref="member">eqstr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*b)<sp/>{</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(a<sp/>!=<sp/>NULL<sp/>&amp;&amp;<sp/>b<sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>strcmp(a,<sp/>b)<sp/>==<sp/>0;</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="404"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"></highlight></codeline>
+<codeline lineno="406"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="407" refid="namespacegtest__lite_1a50e47b21dec025ed15ef3767e556d038" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacegtest__lite_1a50e47b21dec025ed15ef3767e556d038" kindref="member">eqstrcase</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*b)<sp/>{</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(a<sp/>!=<sp/>NULL<sp/>&amp;&amp;<sp/>b<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(toupper(*a)<sp/>==<sp/>toupper(*b)<sp/>&amp;&amp;<sp/>*a<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a++;</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>b++;</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*a<sp/>==<sp/>*b;</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"></highlight></codeline>
+<codeline lineno="417"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight></codeline>
+<codeline lineno="419"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T1,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T2&gt;</highlight></codeline>
+<codeline lineno="420" refid="namespacegtest__lite_1a2f36af995c570e62f68c148f7393eb54" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacegtest__lite_1a2f36af995c570e62f68c148f7393eb54" kindref="member">ne</ref>(T1<sp/>a,<sp/>T2<sp/>b)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a<sp/>!=<sp/>b;<sp/>}</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"></highlight></codeline>
+<codeline lineno="422"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="423" refid="namespacegtest__lite_1a0a34b1bb0d55bc0c6a3e878ec2bcd49f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacegtest__lite_1a0a34b1bb0d55bc0c6a3e878ec2bcd49f" kindref="member">nestr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*b)<sp/>{</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(a<sp/>!=<sp/>NULL<sp/>&amp;&amp;<sp/>b<sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>strcmp(a,<sp/>b)<sp/>!=<sp/>0;</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="427"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"></highlight></codeline>
+<codeline lineno="429"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T1,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T2&gt;</highlight></codeline>
+<codeline lineno="430" refid="namespacegtest__lite_1a5cd2ce368021471b16b4814b179c9c34" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacegtest__lite_1a5cd2ce368021471b16b4814b179c9c34" kindref="member">le</ref>(T1<sp/>a,<sp/>T2<sp/>b)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a<sp/>&lt;=<sp/>b;<sp/>}</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"></highlight></codeline>
+<codeline lineno="432"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T1,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T2&gt;</highlight></codeline>
+<codeline lineno="433" refid="namespacegtest__lite_1afb471377c0d2d30aeeaf8912db72f0ff" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacegtest__lite_1afb471377c0d2d30aeeaf8912db72f0ff" kindref="member">lt</ref>(T1<sp/>a,<sp/>T2<sp/>b)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a<sp/>&lt;<sp/>b;<sp/>}</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"></highlight></codeline>
+<codeline lineno="435"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T1,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T2&gt;</highlight></codeline>
+<codeline lineno="436" refid="namespacegtest__lite_1a77c1a7cf1d34c46c1d97ed39b9f06050" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacegtest__lite_1a77c1a7cf1d34c46c1d97ed39b9f06050" kindref="member">ge</ref>(T1<sp/>a,<sp/>T2<sp/>b)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a<sp/>&gt;=<sp/>b;<sp/>}</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"></highlight></codeline>
+<codeline lineno="438"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T1,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T2&gt;</highlight></codeline>
+<codeline lineno="439" refid="namespacegtest__lite_1aa0100ec9e095a9403a7b70ad4a162fdd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacegtest__lite_1aa0100ec9e095a9403a7b70ad4a162fdd" kindref="member">gt</ref>(T1<sp/>a,<sp/>T2<sp/>b)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a<sp/>&gt;<sp/>b;<sp/>}</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"></highlight></codeline>
+<codeline lineno="445"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="446" refid="namespacegtest__lite_1affbf9748c4e4dec6db137f7c147fee61" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacegtest__lite_1affbf9748c4e4dec6db137f7c147fee61" kindref="member">almostEQ</ref>(T<sp/>a,<sp/>T<sp/><sp/>b)<sp/>{</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>eps:<sp/>ha<sp/>a<sp/>relatív,<sp/>vagy<sp/>abszolút<sp/>hiba<sp/>ettől<sp/>kisebb,<sp/>akkor<sp/>elfogadjuk</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/>eps<sp/>=<sp/>10<sp/>*<sp/>std::numeric_limits&lt;T&gt;::epsilon();<sp/></highlight><highlight class="comment">//<sp/>10-szer<sp/>a<sp/>legkisebb<sp/>érték</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(a<sp/>==<sp/>b)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fabs(a<sp/>-<sp/>b)<sp/>&lt;<sp/>eps)</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>aa<sp/>=<sp/>fabs(a);</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ba<sp/>=<sp/>fabs(b);</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(aa<sp/>&lt;<sp/>ba)<sp/>{</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aa<sp/>=<sp/>ba;</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ba<sp/>=<sp/>fabs(a);</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(aa<sp/>-<sp/>ba)<sp/>&lt;<sp/>aa<sp/>*<sp/>eps;</highlight></codeline>
+<codeline lineno="459"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"></highlight></codeline>
+<codeline lineno="463" refid="classgtest__lite_1_1ostream_redir" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgtest__lite_1_1ostream_redir" kindref="compound">ostreamRedir</ref><sp/>{</highlight></codeline>
+<codeline lineno="464" refid="classgtest__lite_1_1ostream_redir_1a6a39fb873b65f76b40d93ca3793da6d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostream&amp;<sp/><ref refid="classgtest__lite_1_1ostream_redir_1a6a39fb873b65f76b40d93ca3793da6d0" kindref="member">src</ref>;</highlight></codeline>
+<codeline lineno="465" refid="classgtest__lite_1_1ostream_redir_1a566f2a48eefa97078418086497de936e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::streambuf<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classgtest__lite_1_1ostream_redir_1a566f2a48eefa97078418086497de936e" kindref="member">save</ref>;</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="467" refid="classgtest__lite_1_1ostream_redir_1adf5823af2312c504c0306b77d43f2e71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgtest__lite_1_1ostream_redir_1adf5823af2312c504c0306b77d43f2e71" kindref="member">ostreamRedir</ref>(std::ostream&amp;<sp/><ref refid="classgtest__lite_1_1ostream_redir_1a6a39fb873b65f76b40d93ca3793da6d0" kindref="member">src</ref>,<sp/>std::ostream&amp;<sp/>dst)</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classgtest__lite_1_1ostream_redir_1a6a39fb873b65f76b40d93ca3793da6d0" kindref="member">src</ref>(<ref refid="classgtest__lite_1_1ostream_redir_1a6a39fb873b65f76b40d93ca3793da6d0" kindref="member">src</ref>),<sp/><ref refid="classgtest__lite_1_1ostream_redir_1a566f2a48eefa97078418086497de936e" kindref="member">save</ref>(<ref refid="classgtest__lite_1_1ostream_redir_1a6a39fb873b65f76b40d93ca3793da6d0" kindref="member">src</ref>.rdbuf(dst.rdbuf()))<sp/>{}</highlight></codeline>
+<codeline lineno="469" refid="classgtest__lite_1_1ostream_redir_1ab221d3a06097820760b328d4a54749e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgtest__lite_1_1ostream_redir_1ab221d3a06097820760b328d4a54749e2" kindref="member">~ostreamRedir</ref>()<sp/>{<sp/><ref refid="classgtest__lite_1_1ostream_redir_1a6a39fb873b65f76b40d93ca3793da6d0" kindref="member">src</ref>.rdbuf(<ref refid="classgtest__lite_1_1ostream_redir_1a566f2a48eefa97078418086497de936e" kindref="member">save</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="470"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"></highlight></codeline>
+<codeline lineno="472"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>gtest_lite</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="473"><highlight class="normal"></highlight></codeline>
+<codeline lineno="474"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>GTEST_LITE_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/gtest_lite.h"/>
+  </compounddef>
+</doxygen>

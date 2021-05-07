@@ -8,28 +8,96 @@ size_t Catalogue::getSize() {
 	return size;
 }
 
+
+/// <summary>
+/// Adds the clone of the object to the list.
+/// If the product is already in the catalogue, then throws an error!
+/// </summary>
+/// <param name="p"></param> Product to store.
 void Catalogue::Add(Product* p) {
+	//temp array for storing the values,
+	//so they are not lost after resizing the array.
+	//The size is +1 than the original
 	Product** temp = new Product *[++size];
 	for (size_t i = 0; i < size - 1; i++) {
+		//Places the clone into the array
 		temp[i] = list[i]->clone();
+		//deletes the object after cloning it.
 		delete list[i];
 	}
+	//Storing the new product in a the end of a new array.
 	temp[size - 1] = p->clone();
 	delete[] list;
 	delete p;
 	list = temp;
 }
 
+/// <summary>
+/// Iterates through the list and saves all the objects to a file
+/// </summary>
+/// <param name="path"></param> Path to save to
+void Catalogue::Save(std::string path)const {
+	std::ofstream savefile;
+	savefile.open(path);
+	
+	//TODO: Get rid of switch statement
+
+	for (size_t i = 0; i < size; i++) {
+		if (!savefile.is_open())
+			savefile.open(path, std::ios_base::app);
+
+		//casts the object to the appropriate type
+		//Otherwise it would call the Product::SerializeObj() in the << function
+		switch (list[i]->getObj_t())
+		{
+		case obj_t::Product:
+			savefile << *list[i];
+			break;
+		case obj_t::Storage:
+			savefile << (Storage&)*list[i];
+			break;
+
+		case obj_t::RAM:
+			savefile << (RAM&)*list[i];
+			break;
+
+		case obj_t::HDD:
+			savefile << (HDD&)*list[i];
+			break;
+		case obj_t::SSD:
+			savefile << (SSD&)*list[i];
+			break;
+
+		case obj_t::MB:
+			savefile << (Motherboard&)*list[i];
+			break;
+		case obj_t::CPU:
+			savefile << (CPU&)*list[i];
+			break;
+		case obj_t::GPU:
+			savefile << (GPU&)*list[i];
+			break;
+		case obj_t::PC:
+			savefile << (PC&)*list[i];
+			break;
+
+		}
+	}
+	savefile.close();
+}
 
 
 
-
-//Have to overload == operator for this to work!
-//TODO...
+/// <summary>
+/// Removes the object from the list if the two objects' attributes are identical
+/// </summary>
+/// <param name="p"></param> Pointer to the product to compare with.
 void Catalogue::Remove(Product* p) {
 	Product** temp = new Product * [--size];
-	for (size_t i = 0; i < size +1; i++) {
+	bool found = false;
+	for (size_t i = 0; i < size + 1; i++) {
 		if (*p == *list[i]) {
+			found = true;
 			delete p;
 			Product* t = list[i];
 			list[i] = list[size];
@@ -38,6 +106,15 @@ void Catalogue::Remove(Product* p) {
 			break;
 		}
 	}
+	if (!found)
+	{
+		//If there were no object found then the temp array is not needed.
+		//Terminates the object earlier.
+		delete[] temp;
+		return;
+	}
+
+	//Copies the array's element to the new array.
 	for (size_t i = 0; i < size; i++)
 	{
 		temp[i] = list[i]->clone();
@@ -45,8 +122,11 @@ void Catalogue::Remove(Product* p) {
 	}
 	delete[] list;
 	list = temp;
-		
 }
+
+/// <summary>
+/// Clears the catalogue by freeing up all of the allocated memory
+/// </summary>
 void Catalogue::Clear() {
 	for (size_t i = 0; i < size; i++) {
 		if (list[i] != nullptr) {
@@ -61,13 +141,22 @@ Catalogue::~Catalogue() {
 		delete[] list;
 	
 }
+/// <summary>
+/// Overloaded [] operator
+/// Return the element in the Catalogue at the given index.
+/// </summary>
+/// <param name="idx"></param>
+/// <returns></returns>
 Product* Catalogue::operator[](size_t idx){
 	if (idx >= this->size)
 		throw "Over indexed";
 	return list[idx];
 }
+
+
 //case insensitive find function for finding substring
 bool insFind(const std::string& sourceStr, const std::string& subStr);
+
 //Return an array of pointers that meet the criteria
 //Pointer must be deleted manually!
 Product** Catalogue::Search(std::string criteria) {
@@ -102,6 +191,12 @@ Product** Catalogue::Search(std::string criteria) {
 	return searchRes;
 	
 }
+/// <summary>
+/// Sorts the Catalogue with std::sort
+/// Uses lambda function
+/// </summary>
+/// <param name="r"></param>
+/// <param name="reversed"></param>
 void Catalogue::OrderBy(OrderReq r, bool reversed) {
 	switch (r)
 	{
@@ -147,10 +242,17 @@ Product& Catalogue::Iterator::operator*() {
 }
 
 
-//Case insensitive string::find
+/// <summary>
+/// Help function for case insensitive find
+/// Returns true if the string includes the given substring
+/// </summary>
+/// <param name="sourceStr"></param> String to search in
+/// <param name="subStr"></param> String searched
+/// <returns></returns>	Returns if it includes the substring
 bool insFind(const std::string& sourceStr, const std::string& subStr)
 {
 	//iterates through the two strings using the lambda function
+	//The lambda function just converts all characters to capital case, so it can compare them
 	auto it = std::search(
 		sourceStr.begin(), sourceStr.end(),
 		subStr.begin(), subStr.end(),

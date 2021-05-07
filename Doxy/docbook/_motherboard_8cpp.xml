@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__motherboard_8cpp" xml:lang="en-US">
+<title>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp File Reference</title>
+<indexterm><primary>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp</primary></indexterm>
+<programlisting>#include &quot;Motherboard.h&quot;
+#include &lt;fstream&gt;
+#include &lt;sstream&gt;
+#include &quot;processor.h&quot;
+#include &quot;memtrace.h&quot;
+</programlisting>Include dependency graph for Motherboard.cpp:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="_motherboard_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>std::ifstream &amp; <link linkend="__motherboard_8cpp_1a7e4e869735d54ddf02e5165d0fc8a6a3">operator&gt;&gt;</link> (std::ifstream &amp;savefile, <link linkend="_class_motherboard">Motherboard</link> &amp;rhs)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="__motherboard_8cpp_1a7e4e869735d54ddf02e5165d0fc8a6a3"/>    <section>
+    <title>operator&gt;&gt;()</title>
+<indexterm><primary>operator&gt;&gt;</primary><secondary>Motherboard.cpp</secondary></indexterm>
+<indexterm><primary>Motherboard.cpp</primary><secondary>operator&gt;&gt;</secondary></indexterm>
+<para><computeroutput>std::ifstream&amp; operator&gt;&gt; (std::ifstream &amp; savefile, <link linkend="_class_motherboard">Motherboard</link> &amp; rhs)</computeroutput></para></section>
+</section>
+</section>

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_2d081973c2496cccb918f3dc3f9dd1c2" xml:lang="en-US">
+<title>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF Directory Reference</title>
+<indexterm><primary>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_catalogue_8cpp">catalogue.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_catalogue_8h">catalogue.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__computer_8cpp">Computer.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__computer_8h">Computer.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_gtest__lite_8h">gtest_lite.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_main_8cpp">main.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__memory_8cpp">Memory.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__memory_8h">Memory.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_memtrace_8cpp">memtrace.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_memtrace_8h">memtrace.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__motherboard_8cpp">Motherboard.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__motherboard_8h">Motherboard.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_processor_8cpp">processor.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_processor_8h">processor.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_products_8cpp">products.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_products_8h">products.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__videocard_8cpp">Videocard.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__videocard_8h">Videocard.h</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_products_8cpp" xml:lang="en-US">
+<title>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.cpp File Reference</title>
+<indexterm><primary>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.cpp</primary></indexterm>
+<programlisting>#include &quot;products.h&quot;
+#include &lt;string&gt;
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+#include &lt;sstream&gt;
+#include &quot;memtrace.h&quot;
+</programlisting>Include dependency graph for products.cpp:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="products_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>std::ifstream &amp; <link linkend="_products_8cpp_1a3c4c53fadab31183f9737475efa6c3ec">operator&gt;&gt;</link> (std::ifstream &amp;savefile, <link linkend="_class_product">Product</link> &amp;rhs)</para>
+
+<para>Overloads the &gt;&gt; to load the object from file. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_products_8cpp_1a3c4c53fadab31183f9737475efa6c3ec"/>    <section>
+    <title>operator&gt;&gt;()</title>
+<indexterm><primary>operator&gt;&gt;</primary><secondary>products.cpp</secondary></indexterm>
+<indexterm><primary>products.cpp</primary><secondary>operator&gt;&gt;</secondary></indexterm>
+<para><computeroutput>std::ifstream&amp; operator&gt;&gt; (std::ifstream &amp; savefile, <link linkend="_class_product">Product</link> &amp; rhs)</computeroutput></para><para>
+
+<para>Overloads the &gt;&gt; to load the object from file. </para>
+</para>
+
+<para>Overloads the &gt;&gt; to save the object to file. </para>
+</section>
+</section>
+</section>

@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_motherboard_8h" kind="file" language="C++">
+    <compoundname>Motherboard.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">string</includes>
+    <includes refid="products_8h" local="yes">products.h</includes>
+    <includes refid="processor_8h" local="yes">processor.h</includes>
+    <includes refid="memtrace_8h" local="yes">memtrace.h</includes>
+    <includedby refid="catalogue_8h" local="yes">C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h</includedby>
+    <includedby refid="_computer_8h" local="yes">C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h</includedby>
+    <includedby refid="_motherboard_8cpp" local="yes">C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="7">
+        <label>memtrace.h</label>
+        <link refid="memtrace_8h"/>
+      </node>
+      <node id="5">
+        <label>fstream</label>
+      </node>
+      <node id="8">
+        <label>processor.h</label>
+        <link refid="processor_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h</label>
+        <link refid="_motherboard_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>sstream</label>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>products.h</label>
+        <link refid="products_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="7">
+        <label>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp</label>
+        <link refid="_motherboard_8cpp"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.cpp</label>
+        <link refid="_computer_8cpp"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp</label>
+        <link refid="catalogue_8cpp"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h</label>
+        <link refid="_motherboard_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h</label>
+        <link refid="catalogue_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h</label>
+        <link refid="_computer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_motherboard" prot="public">Motherboard</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_motherboard_8h_1adf354b92ab85f8ff2d68abc40d8573bd" prot="public" static="no" strong="no">
+        <type></type>
+        <name>mbType</name>
+        <enumvalue id="_motherboard_8h_1adf354b92ab85f8ff2d68abc40d8573bda7687d6fcbcd0f377bc887e9db0a63c4a" prot="public">
+          <name>ATX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_motherboard_8h_1adf354b92ab85f8ff2d68abc40d8573bdae4cfe297dcce539ae1a53c8b3234929f" prot="public">
+          <name>mATX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_motherboard_8h_1adf354b92ab85f8ff2d68abc40d8573bda24c80a512d46a1326f9be6bb89fe5d38" prot="public">
+          <name>ITX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="10" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="10" bodyend="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_motherboard_8h_1a7e4e869735d54ddf02e5165d0fc8a6a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ifstream &amp;</type>
+        <definition>std::ifstream&amp; operator&gt;&gt;</definition>
+        <argsstring>(std::ifstream &amp;savefile, Motherboard &amp;rhs)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>std::ifstream &amp;</type>
+          <declname>savefile</declname>
+        </param>
+        <param>
+          <type><ref refid="class_motherboard" kindref="compound">Motherboard</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="36" column="15" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="40" bodyend="72" declfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" declline="36" declcolumn="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>MOTHERBOARD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MOTHERBOARD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="products_8h" kindref="compound">products.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="processor_8h" kindref="compound">processor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="memtrace_8h" kindref="compound">memtrace.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="_motherboard_8h_1adf354b92ab85f8ff2d68abc40d8573bda7687d6fcbcd0f377bc887e9db0a63c4a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_motherboard_8h_1adf354b92ab85f8ff2d68abc40d8573bd" kindref="member">mbType</ref><sp/>{<sp/><ref refid="_motherboard_8h_1adf354b92ab85f8ff2d68abc40d8573bda7687d6fcbcd0f377bc887e9db0a63c4a" kindref="member">ATX</ref>,<sp/><ref refid="_motherboard_8h_1adf354b92ab85f8ff2d68abc40d8573bdae4cfe297dcce539ae1a53c8b3234929f" kindref="member">mATX</ref>,<sp/><ref refid="_motherboard_8h_1adf354b92ab85f8ff2d68abc40d8573bda24c80a512d46a1326f9be6bb89fe5d38" kindref="member">ITX</ref><sp/>};</highlight></codeline>
+<codeline lineno="11" refid="class_motherboard" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_motherboard" kindref="compound">Motherboard</ref><sp/>:</highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_product" kindref="compound">Product</ref><sp/>{</highlight></codeline>
+<codeline lineno="12" refid="class_motherboard_1a289ecf61f1bd15373e9dade0598b1eec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_motherboard_1a289ecf61f1bd15373e9dade0598b1eec" kindref="member">chipset</ref>;</highlight></codeline>
+<codeline lineno="13" refid="class_motherboard_1a96c475cc3d6cee4245090a3257f2c6c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="processor_8h_1a84edc84c8145e7997b70f9919ce44d68" kindref="member">socket</ref><sp/><ref refid="class_motherboard_1a96c475cc3d6cee4245090a3257f2c6c6" kindref="member">socketType</ref>;</highlight></codeline>
+<codeline lineno="14" refid="class_motherboard_1a807219a358ae5de54db7e590d6ff77ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_motherboard_1a807219a358ae5de54db7e590d6ff77ec" kindref="member">maxRAM</ref>;</highlight></codeline>
+<codeline lineno="15" refid="class_motherboard_1a7d5fc2dfa0915d7256c8627385c904bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_motherboard_1a7d5fc2dfa0915d7256c8627385c904bd" kindref="member">maxRFreq</ref>;</highlight></codeline>
+<codeline lineno="16" refid="class_motherboard_1a5632309f2b4224c1ba05289d6aaf9c74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_motherboard_1a5632309f2b4224c1ba05289d6aaf9c74" kindref="member">usbPorts</ref>;</highlight></codeline>
+<codeline lineno="17" refid="class_motherboard_1ab237d87d79328daf0903b0c17fc56240" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_motherboard_1ab237d87d79328daf0903b0c17fc56240" kindref="member">sata</ref>;</highlight></codeline>
+<codeline lineno="18" refid="class_motherboard_1a3b141240779b25dec7618b96938a3fba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_motherboard_1a3b141240779b25dec7618b96938a3fba" kindref="member">pcie</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20" refid="class_motherboard_1a7d8e651645b17aea61c4e125fd198140" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_motherboard_1a7d8e651645b17aea61c4e125fd198140" kindref="member">Motherboard</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_motherboard_1a7d8e651645b17aea61c4e125fd198140" kindref="member">Motherboard</ref>(std::string<sp/>chip,<sp/><ref refid="processor_8h_1a84edc84c8145e7997b70f9919ce44d68" kindref="member">socket</ref><sp/>s,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxRam<sp/>=<sp/>64,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxFreq<sp/>=<sp/>2666,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_motherboard_1a5632309f2b4224c1ba05289d6aaf9c74" kindref="member">usbPorts</ref><sp/>=<sp/>2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_motherboard_1ab237d87d79328daf0903b0c17fc56240" kindref="member">sata</ref><sp/>=<sp/>1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_motherboard_1a3b141240779b25dec7618b96938a3fba" kindref="member">pcie</ref><sp/>=<sp/>1);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_motherboard_1a7d8e651645b17aea61c4e125fd198140" kindref="member">Motherboard</ref>(std::string<sp/><ref refid="class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8" kindref="member">name</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_product_1abb2572df7a832a509944905603ba5e4f" kindref="member">price</ref>,<sp/>std::string<sp/>manuf,<sp/>std::string<sp/>descript,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>chip,<sp/><ref refid="processor_8h_1a84edc84c8145e7997b70f9919ce44d68" kindref="member">socket</ref><sp/>s,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxRam<sp/>=<sp/>64,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxFreq<sp/>=<sp/>2666,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_motherboard_1a5632309f2b4224c1ba05289d6aaf9c74" kindref="member">usbPorts</ref><sp/>=<sp/>2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_motherboard_1ab237d87d79328daf0903b0c17fc56240" kindref="member">sata</ref><sp/>=<sp/>1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_motherboard_1a3b141240779b25dec7618b96938a3fba" kindref="member">pcie</ref><sp/>=<sp/>1);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_motherboard_1a7d8e651645b17aea61c4e125fd198140" kindref="member">Motherboard</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_motherboard" kindref="compound">Motherboard</ref>&amp;<sp/>m);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_motherboard_1adfcc0e942c0c6cbeb6fee6d863b9b51f" kindref="member">getChip</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="processor_8h_1a84edc84c8145e7997b70f9919ce44d68" kindref="member">socket</ref><sp/><ref refid="class_motherboard_1a747bcabd7b0baa1e4c4cefd5373c9ee0" kindref="member">getSocket</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_motherboard_1ad93e8a9e213eb7a842323d392ad5471f" kindref="member">getRAM</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_motherboard_1a505b4ef1ac8c36193a6ee79eb921e9fa" kindref="member">getPorts</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_motherboard_1a1534ea6d3be715dd09b964d78a0f91cf" kindref="member">getSata</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_motherboard_1a1bdb19d8e2fc3fdc9b9669fbc688a015" kindref="member">getPCIE</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_motherboard_1a7c35d76cd1952d69308b04ae0804080e" kindref="member">getObjType</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_motherboard_1a9d0666b839ef01ea6072ffeb41653d3c" kindref="member">serializeObj</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_motherboard" kindref="compound">Motherboard</ref>*<sp/><ref refid="class_motherboard_1af3ad07ad9398abe1bdd0315ec9acb7e3" kindref="member">clone</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">std::ifstream&amp;<sp/><ref refid="_motherboard_8h_1a7e4e869735d54ddf02e5165d0fc8a6a3" kindref="member">operator&gt;&gt;</ref>(std::ifstream&amp;<sp/>savefile,<sp/><ref refid="class_motherboard" kindref="compound">Motherboard</ref>&amp;<sp/>rhs);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!MOTHERBOARD_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h"/>
+  </compounddef>
+</doxygen>

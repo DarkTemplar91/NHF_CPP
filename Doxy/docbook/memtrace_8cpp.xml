@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_memtrace_8cpp" xml:lang="en-US">
+<title>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/memtrace.cpp File Reference</title>
+<indexterm><primary>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/memtrace.cpp</primary></indexterm>
+<programlisting>#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+#include &lt;time.h&gt;
+#include &lt;ctype.h&gt;
+</programlisting>Include dependency graph for memtrace.cpp:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="memtrace_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>

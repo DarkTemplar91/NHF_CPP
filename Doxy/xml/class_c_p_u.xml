@@ -1,0 +1,512 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_c_p_u" kind="class" language="C++" prot="public">
+    <compoundname>CPU</compoundname>
+    <basecompoundref refid="class_product" prot="public" virt="non-virtual">Product</basecompoundref>
+    <includes refid="processor_8h" local="no">processor.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_c_p_u_1acf0ec240e61c72c6252a2f8e7b339189" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string CPU::genName</definition>
+        <argsstring></argsstring>
+        <name>genName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="14" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_p_u_1a65f32aa0ee6335f15d7a7087da2564f3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPU::tdp</definition>
+        <argsstring></argsstring>
+        <name>tdp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="15" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_p_u_1a1f1bb470721f49e48139e46bbea9f109" prot="private" static="no" mutable="no">
+        <type><ref refid="processor_8h_1a84edc84c8145e7997b70f9919ce44d68" kindref="member">socket</ref></type>
+        <definition>socket CPU::socketType</definition>
+        <argsstring></argsstring>
+        <name>socketType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="16" column="8" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_p_u_1a5b9fd4e0c27dcff1bcb33fbca6da2a6c" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int CPU::baseClock</definition>
+        <argsstring></argsstring>
+        <name>baseClock</name>
+        <briefdescription>
+<para>Enum for socket type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="17" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_p_u_1ab0af78c0a115e6c8659b43332439f36e" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int CPU::coreCount</definition>
+        <argsstring></argsstring>
+        <name>coreCount</name>
+        <briefdescription>
+<para>Base clock frequency given in Mhz. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="18" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_p_u_1a19e584d567f61b968f2f5e09c86abc4c" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int CPU::threadCount</definition>
+        <argsstring></argsstring>
+        <name>threadCount</name>
+        <briefdescription>
+<para>Number of cores. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="19" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_p_u_1a4ad29b59532a1c456a1aec62437aa5cd" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double CPU::L2_cache</definition>
+        <argsstring></argsstring>
+        <name>L2_cache</name>
+        <briefdescription>
+<para>Number of threads. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="20" column="8" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_p_u_1a3de211accd8ac7dc87cfecb446c4ebf9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CPU::iVGA</definition>
+        <argsstring></argsstring>
+        <name>iVGA</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>size of cache in MB </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="21" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_p_u_1a2fdd8153d0979ccad9ed8452897267f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CPU::CPU</definition>
+        <argsstring>()</argsstring>
+        <name>CPU</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="23" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_p_u_1a12c49868638bbc8d10a596553d147e67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CPU::CPU</definition>
+        <argsstring>(std::string name, int tdp, socket type, unsigned int clock, unsigned int core, unsigned int thread, double c, bool vga)</argsstring>
+        <name>CPU</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tdp</declname>
+        </param>
+        <param>
+          <type><ref refid="processor_8h_1a84edc84c8145e7997b70f9919ce44d68" kindref="member">socket</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>clock</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>core</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>thread</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>vga</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="24" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_p_u_1abbf158ef868abaea8f2719e96b207125" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CPU::CPU</definition>
+        <argsstring>(std::string pName, double price, std::string manuf, std::string descript, std::string name, int tdp, socket type, unsigned int clock, unsigned int core, unsigned int thread, double c, bool vga)</argsstring>
+        <name>CPU</name>
+        <param>
+          <type>std::string</type>
+          <declname>pName</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>price</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>manuf</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>descript</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tdp</declname>
+        </param>
+        <param>
+          <type><ref refid="processor_8h_1a84edc84c8145e7997b70f9919ce44d68" kindref="member">socket</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>clock</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>core</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>thread</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>vga</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="25" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp" bodystart="19" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_p_u_1ae72ec189f1bfd71a915e503eb8425d58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CPU::CPU</definition>
+        <argsstring>(const CPU &amp;c)</argsstring>
+        <name>CPU</name>
+        <param>
+          <type>const <ref refid="class_c_p_u" kindref="compound">CPU</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="27" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_p_u_1a82acaa1b7d2da4e29f374d5166d42aef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string CPU::getGenName</definition>
+        <argsstring>()</argsstring>
+        <name>getGenName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="29" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_p_u_1a2c07fd65f7d19ee89ccfbde0e8b4878d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CPU::getTDP</definition>
+        <argsstring>()</argsstring>
+        <name>getTDP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="30" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_p_u_1a70b831ad7cfe74ce44be5d1349620e87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="processor_8h_1a84edc84c8145e7997b70f9919ce44d68" kindref="member">socket</ref></type>
+        <definition>socket CPU::getSocketType</definition>
+        <argsstring>()</argsstring>
+        <name>getSocketType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="31" column="8" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_p_u_1ad492c4bcbc0fe07eb7bd644be677c87f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string CPU::getStringSocket</definition>
+        <argsstring>()</argsstring>
+        <name>getStringSocket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="32" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp" bodystart="88" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_p_u_1a4040061f11be42ead23ccca8defd734e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int CPU::getBaseClock</definition>
+        <argsstring>()</argsstring>
+        <name>getBaseClock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="33" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_p_u_1a30b19e25587f96ef54b34334dc038e27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int CPU::getCoreCount</definition>
+        <argsstring>()</argsstring>
+        <name>getCoreCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="34" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_p_u_1a6d5058f1c0d00256a861dff8ba9b38fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int CPU::getThreadCount</definition>
+        <argsstring>()</argsstring>
+        <name>getThreadCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="35" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_p_u_1a2ec3047e90d5989e03337d809988b15a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double CPU::getCacheSize</definition>
+        <argsstring>()</argsstring>
+        <name>getCacheSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="36" column="8" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_p_u_1aa025e57bb42da447da66c8bc8e5d5de2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CPU::ivga</definition>
+        <argsstring>()</argsstring>
+        <name>ivga</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="37" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_p_u_1ab4f1ec2a356344187dc6598404012df9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_c_p_u" kindref="compound">CPU</ref> *</type>
+        <definition>CPU * CPU::clone</definition>
+        <argsstring>()</argsstring>
+        <name>clone</name>
+        <reimplements refid="class_product_1a2cc3f5ef8abe14801e185734cfcc3b57">clone</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="39" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp" bodystart="109" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_p_u_1a07222b545e69fcc328b18d7b44a27027" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string CPU::getObjType</definition>
+        <argsstring>()</argsstring>
+        <name>getObjType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="40" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp" bodystart="115" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_p_u_1aa2af36b3447c4e7b4e1f25f699a06824" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void CPU::print</definition>
+        <argsstring>()</argsstring>
+        <name>print</name>
+        <reimplements refid="class_product_1a82a40e1860ffe2c88ea08084037a6c42">print</reimplements>
+        <briefdescription>
+<para>Prints out basic data of a product. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="41" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp" bodystart="83" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_p_u_1a76b924aa80f3acf2bfdd7299f2be6044" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string CPU::serializeObj</definition>
+        <argsstring>()</argsstring>
+        <name>serializeObj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="42" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp" bodystart="8" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CPU</label>
+        <link refid="class_c_p_u"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Product</label>
+        <link refid="class_product"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CPU</label>
+        <link refid="class_c_p_u"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Product</label>
+        <link refid="class_product"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="13" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" bodystart="13" bodyend="45"/>
+    <listofallmembers>
+      <member refid="class_c_p_u_1a5b9fd4e0c27dcff1bcb33fbca6da2a6c" prot="private" virt="non-virtual"><scope>CPU</scope><name>baseClock</name></member>
+      <member refid="class_c_p_u_1ab4f1ec2a356344187dc6598404012df9" prot="public" virt="virtual"><scope>CPU</scope><name>clone</name></member>
+      <member refid="class_c_p_u_1ab0af78c0a115e6c8659b43332439f36e" prot="private" virt="non-virtual"><scope>CPU</scope><name>coreCount</name></member>
+      <member refid="class_c_p_u_1a2fdd8153d0979ccad9ed8452897267f4" prot="public" virt="non-virtual"><scope>CPU</scope><name>CPU</name></member>
+      <member refid="class_c_p_u_1a12c49868638bbc8d10a596553d147e67" prot="public" virt="non-virtual"><scope>CPU</scope><name>CPU</name></member>
+      <member refid="class_c_p_u_1abbf158ef868abaea8f2719e96b207125" prot="public" virt="non-virtual"><scope>CPU</scope><name>CPU</name></member>
+      <member refid="class_c_p_u_1ae72ec189f1bfd71a915e503eb8425d58" prot="public" virt="non-virtual"><scope>CPU</scope><name>CPU</name></member>
+      <member refid="class_product_1a948738c4cb8e65f1f54623001b8c3897" prot="public" virt="non-virtual"><scope>CPU</scope><name>decreaseStock</name></member>
+      <member refid="class_product_1ab88a1ecb238a74583a920a65f8cbee9c" prot="private" virt="non-virtual"><scope>CPU</scope><name>dscrpt</name></member>
+      <member refid="class_c_p_u_1acf0ec240e61c72c6252a2f8e7b339189" prot="private" virt="non-virtual"><scope>CPU</scope><name>genName</name></member>
+      <member refid="class_product_1a9279a6d296d5b8aafa0143bda648c3da" prot="public" virt="non-virtual"><scope>CPU</scope><name>getAmount</name></member>
+      <member refid="class_c_p_u_1a4040061f11be42ead23ccca8defd734e" prot="public" virt="non-virtual"><scope>CPU</scope><name>getBaseClock</name></member>
+      <member refid="class_c_p_u_1a2ec3047e90d5989e03337d809988b15a" prot="public" virt="non-virtual"><scope>CPU</scope><name>getCacheSize</name></member>
+      <member refid="class_c_p_u_1a30b19e25587f96ef54b34334dc038e27" prot="public" virt="non-virtual"><scope>CPU</scope><name>getCoreCount</name></member>
+      <member refid="class_product_1a874a2ad2556c8d82500cce9917d5ed8c" prot="public" virt="non-virtual"><scope>CPU</scope><name>getDescription</name></member>
+      <member refid="class_c_p_u_1a82acaa1b7d2da4e29f374d5166d42aef" prot="public" virt="non-virtual"><scope>CPU</scope><name>getGenName</name></member>
+      <member refid="class_product_1a2f5aeb9d25fcbbcf0f6125351850d4ff" prot="public" virt="non-virtual"><scope>CPU</scope><name>getManufacturer</name></member>
+      <member refid="class_product_1a9cbd896ca6b2d95088be8ad8c3b11e3b" prot="public" virt="non-virtual"><scope>CPU</scope><name>getName</name></member>
+      <member refid="class_product_1a0dc7c2163bf9c07e6283c2cbcaef58d3" prot="public" virt="non-virtual"><scope>CPU</scope><name>getObj_t</name></member>
+      <member refid="class_c_p_u_1a07222b545e69fcc328b18d7b44a27027" prot="public" virt="non-virtual"><scope>CPU</scope><name>getObjType</name></member>
+      <member refid="class_product_1a60e8ab009f51c39442257e96409144de" prot="public" virt="virtual" ambiguityscope="Product::"><scope>CPU</scope><name>getObjType</name></member>
+      <member refid="class_product_1a3be25f647260d61df6063ef706261c7f" prot="public" virt="non-virtual"><scope>CPU</scope><name>getPrice</name></member>
+      <member refid="class_c_p_u_1a70b831ad7cfe74ce44be5d1349620e87" prot="public" virt="non-virtual"><scope>CPU</scope><name>getSocketType</name></member>
+      <member refid="class_c_p_u_1ad492c4bcbc0fe07eb7bd644be677c87f" prot="public" virt="non-virtual"><scope>CPU</scope><name>getStringSocket</name></member>
+      <member refid="class_c_p_u_1a2c07fd65f7d19ee89ccfbde0e8b4878d" prot="public" virt="non-virtual"><scope>CPU</scope><name>getTDP</name></member>
+      <member refid="class_c_p_u_1a6d5058f1c0d00256a861dff8ba9b38fe" prot="public" virt="non-virtual"><scope>CPU</scope><name>getThreadCount</name></member>
+      <member refid="class_product_1ae216152e43f64a82294c2c583396d13f" prot="public" virt="non-virtual"><scope>CPU</scope><name>increaseStock</name></member>
+      <member refid="class_product_1a831f4ac197a88d2c2b7260765714c0d4" prot="private" virt="non-virtual"><scope>CPU</scope><name>inv</name></member>
+      <member refid="class_c_p_u_1a3de211accd8ac7dc87cfecb446c4ebf9" prot="private" virt="non-virtual"><scope>CPU</scope><name>iVGA</name></member>
+      <member refid="class_c_p_u_1aa025e57bb42da447da66c8bc8e5d5de2" prot="public" virt="non-virtual"><scope>CPU</scope><name>ivga</name></member>
+      <member refid="class_c_p_u_1a4ad29b59532a1c456a1aec62437aa5cd" prot="private" virt="non-virtual"><scope>CPU</scope><name>L2_cache</name></member>
+      <member refid="class_product_1af3d21858bb34986f54309b877678daa8" prot="private" virt="non-virtual"><scope>CPU</scope><name>manufacturer</name></member>
+      <member refid="class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8" prot="private" virt="non-virtual"><scope>CPU</scope><name>name</name></member>
+      <member refid="class_product_1af83d5faec51f3cf9c45d68d103a04114" prot="public" virt="virtual"><scope>CPU</scope><name>operator!=</name></member>
+      <member refid="class_product_1a8b72d673cf7d89fb2e375a080af6263d" prot="public" virt="virtual"><scope>CPU</scope><name>operator==</name></member>
+      <member refid="class_product_1abb2572df7a832a509944905603ba5e4f" prot="private" virt="non-virtual"><scope>CPU</scope><name>price</name></member>
+      <member refid="class_c_p_u_1aa2af36b3447c4e7b4e1f25f699a06824" prot="public" virt="virtual"><scope>CPU</scope><name>print</name></member>
+      <member refid="class_product_1a102f72142feba478ffe51c77a170537e" prot="public" virt="non-virtual"><scope>CPU</scope><name>Product</name></member>
+      <member refid="class_product_1accbe232b71fcb8641b7c5021fa4f6e2f" prot="public" virt="non-virtual"><scope>CPU</scope><name>Product</name></member>
+      <member refid="class_product_1a847c1d85e67ce387166a597579a55135" prot="public" virt="non-virtual"><scope>CPU</scope><name>Product</name></member>
+      <member refid="class_c_p_u_1a76b924aa80f3acf2bfdd7299f2be6044" prot="public" virt="non-virtual"><scope>CPU</scope><name>serializeObj</name></member>
+      <member refid="class_product_1a749f163f9319f2cf6e9e0620d7133f0b" prot="public" virt="virtual" ambiguityscope="Product::"><scope>CPU</scope><name>serializeObj</name></member>
+      <member refid="class_product_1a08d9ddfb4db62491607f14ec9fba0d77" prot="public" virt="non-virtual"><scope>CPU</scope><name>setDescription</name></member>
+      <member refid="class_product_1aeeafda76687dbbd8b2f086671c17461d" prot="public" virt="non-virtual"><scope>CPU</scope><name>setManuf</name></member>
+      <member refid="class_product_1a1f49f191dab6643d82aee0490bb96e7c" prot="public" virt="non-virtual"><scope>CPU</scope><name>setName</name></member>
+      <member refid="class_product_1a8ade25d68358bd4cb5b9f7c34fc53b44" prot="public" virt="non-virtual"><scope>CPU</scope><name>setPrice</name></member>
+      <member refid="class_c_p_u_1a1f1bb470721f49e48139e46bbea9f109" prot="private" virt="non-virtual"><scope>CPU</scope><name>socketType</name></member>
+      <member refid="class_product_1afa7216e3fe55009b1862453041a34374" prot="protected" virt="non-virtual"><scope>CPU</scope><name>t</name></member>
+      <member refid="class_c_p_u_1a65f32aa0ee6335f15d7a7087da2564f3" prot="private" virt="non-virtual"><scope>CPU</scope><name>tdp</name></member>
+      <member refid="class_c_p_u_1a19e584d567f61b968f2f5e09c86abc4c" prot="private" virt="non-virtual"><scope>CPU</scope><name>threadCount</name></member>
+      <member refid="class_product_1a18f26095e25405579968c6ede367484f" prot="public" virt="virtual"><scope>CPU</scope><name>~Product</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

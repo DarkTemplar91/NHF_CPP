@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__memory_8cpp" xml:lang="en-US">
+<title>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp File Reference</title>
+<indexterm><primary>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp</primary></indexterm>
+<programlisting>#include &quot;Memory.h&quot;
+#include &lt;fstream&gt;
+#include &lt;sstream&gt;
+#include &quot;memtrace.h&quot;
+</programlisting>Include dependency graph for Memory.cpp:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="_memory_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>std::ifstream &amp; <link linkend="__memory_8cpp_1a12f360ba0d13320dbb5f860216de88db">operator&gt;&gt;</link> (std::ifstream &amp;is, <link linkend="__memory_8h_1a284499ae529838dbabf4c7a520e99a85">ByteUnit</link> &amp;b)</para>
+</listitem>
+            <listitem><para>std::ifstream &amp; <link linkend="__memory_8cpp_1a881da9e9da5a51fd6333a8e6dbcefe37">operator&gt;&gt;</link> (std::ifstream &amp;savefile, <link linkend="_class_storage">Storage</link> &amp;rhs)</para>
+</listitem>
+            <listitem><para>std::ifstream &amp; <link linkend="__memory_8cpp_1abbba1431e02c443d63fd41cf41ca615a">operator&gt;&gt;</link> (std::ifstream &amp;is, <link linkend="__memory_8h_1a462bfa9dfea81692463ecb192183dd01">MemoryType</link> &amp;m)</para>
+</listitem>
+            <listitem><para>std::ifstream &amp; <link linkend="__memory_8cpp_1a5d3c36cdedfc649838c7542f2d8d8b81">operator&gt;&gt;</link> (std::ifstream &amp;savefile, <link linkend="_class_r_a_m">RAM</link> &amp;rhs)</para>
+</listitem>
+            <listitem><para>std::ifstream &amp; <link linkend="__memory_8cpp_1a97ebca926dc01a99103e15b705c29db2">operator&gt;&gt;</link> (std::ifstream &amp;savefile, <link linkend="_class_s_s_d">SSD</link> &amp;rhs)</para>
+</listitem>
+            <listitem><para>std::ifstream &amp; <link linkend="__memory_8cpp_1a3bcab9104df1767d74204644ebd078bf">operator&gt;&gt;</link> (std::ifstream &amp;savefile, <link linkend="_class_h_d_d">HDD</link> &amp;rhs)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="__memory_8cpp_1a12f360ba0d13320dbb5f860216de88db"/>    <section>
+    <title>operator&gt;&gt;()<computeroutput>[1/6]</computeroutput></title>
+<indexterm><primary>operator&gt;&gt;</primary><secondary>Memory.cpp</secondary></indexterm>
+<indexterm><primary>Memory.cpp</primary><secondary>operator&gt;&gt;</secondary></indexterm>
+<para><computeroutput>std::ifstream&amp; operator&gt;&gt; (std::ifstream &amp; is, <link linkend="__memory_8h_1a284499ae529838dbabf4c7a520e99a85">ByteUnit</link> &amp; b)</computeroutput></para>    </section><anchor xml:id="__memory_8cpp_1abbba1431e02c443d63fd41cf41ca615a"/>    <section>
+    <title>operator&gt;&gt;()<computeroutput>[2/6]</computeroutput></title>
+<indexterm><primary>operator&gt;&gt;</primary><secondary>Memory.cpp</secondary></indexterm>
+<indexterm><primary>Memory.cpp</primary><secondary>operator&gt;&gt;</secondary></indexterm>
+<para><computeroutput>std::ifstream&amp; operator&gt;&gt; (std::ifstream &amp; is, <link linkend="__memory_8h_1a462bfa9dfea81692463ecb192183dd01">MemoryType</link> &amp; m)</computeroutput></para>    </section><anchor xml:id="__memory_8cpp_1a3bcab9104df1767d74204644ebd078bf"/>    <section>
+    <title>operator&gt;&gt;()<computeroutput>[3/6]</computeroutput></title>
+<indexterm><primary>operator&gt;&gt;</primary><secondary>Memory.cpp</secondary></indexterm>
+<indexterm><primary>Memory.cpp</primary><secondary>operator&gt;&gt;</secondary></indexterm>
+<para><computeroutput>std::ifstream&amp; operator&gt;&gt; (std::ifstream &amp; savefile, <link linkend="_class_h_d_d">HDD</link> &amp; rhs)</computeroutput></para>    </section><anchor xml:id="__memory_8cpp_1a5d3c36cdedfc649838c7542f2d8d8b81"/>    <section>
+    <title>operator&gt;&gt;()<computeroutput>[4/6]</computeroutput></title>
+<indexterm><primary>operator&gt;&gt;</primary><secondary>Memory.cpp</secondary></indexterm>
+<indexterm><primary>Memory.cpp</primary><secondary>operator&gt;&gt;</secondary></indexterm>
+<para><computeroutput>std::ifstream&amp; operator&gt;&gt; (std::ifstream &amp; savefile, <link linkend="_class_r_a_m">RAM</link> &amp; rhs)</computeroutput></para>    </section><anchor xml:id="__memory_8cpp_1a97ebca926dc01a99103e15b705c29db2"/>    <section>
+    <title>operator&gt;&gt;()<computeroutput>[5/6]</computeroutput></title>
+<indexterm><primary>operator&gt;&gt;</primary><secondary>Memory.cpp</secondary></indexterm>
+<indexterm><primary>Memory.cpp</primary><secondary>operator&gt;&gt;</secondary></indexterm>
+<para><computeroutput>std::ifstream&amp; operator&gt;&gt; (std::ifstream &amp; savefile, <link linkend="_class_s_s_d">SSD</link> &amp; rhs)</computeroutput></para>    </section><anchor xml:id="__memory_8cpp_1a881da9e9da5a51fd6333a8e6dbcefe37"/>    <section>
+    <title>operator&gt;&gt;()<computeroutput>[6/6]</computeroutput></title>
+<indexterm><primary>operator&gt;&gt;</primary><secondary>Memory.cpp</secondary></indexterm>
+<indexterm><primary>Memory.cpp</primary><secondary>operator&gt;&gt;</secondary></indexterm>
+<para><computeroutput>std::ifstream&amp; operator&gt;&gt; (std::ifstream &amp; savefile, <link linkend="_class_storage">Storage</link> &amp; rhs)</computeroutput></para></section>
+</section>
+</section>

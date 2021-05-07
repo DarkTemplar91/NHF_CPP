@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_videocard_8h" kind="file" language="C++">
+    <compoundname>Videocard.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">string</includes>
+    <includes refid="products_8h" local="yes">products.h</includes>
+    <includes refid="memtrace_8h" local="yes">memtrace.h</includes>
+    <includedby refid="catalogue_8h" local="yes">C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h</includedby>
+    <includedby refid="_computer_8h" local="yes">C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h</includedby>
+    <includedby refid="main_8cpp" local="yes">C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/main.cpp</includedby>
+    <includedby refid="_videocard_8cpp" local="yes">C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="7">
+        <label>memtrace.h</label>
+        <link refid="memtrace_8h"/>
+      </node>
+      <node id="5">
+        <label>fstream</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h</label>
+        <link refid="_videocard_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>sstream</label>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>products.h</label>
+        <link refid="products_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6">
+        <label>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.cpp</label>
+        <link refid="_computer_8cpp"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.cpp</label>
+        <link refid="_videocard_8cpp"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp</label>
+        <link refid="catalogue_8cpp"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h</label>
+        <link refid="catalogue_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h</label>
+        <link refid="_videocard_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h</label>
+        <link refid="_computer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_g_p_u" prot="public">GPU</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_videocard_8h_1ad0e8a0eda0c7cb847ceadde59995e8e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ifstream &amp;</type>
+        <definition>std::ifstream&amp; operator&gt;&gt;</definition>
+        <argsstring>(std::ifstream &amp;savefile, GPU &amp;rhs)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>std::ifstream &amp;</type>
+          <declname>savefile</declname>
+        </param>
+        <param>
+          <type><ref refid="class_g_p_u" kindref="compound">GPU</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" line="36" column="15" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.cpp" bodystart="40" bodyend="67" declfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" declline="36" declcolumn="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>VIDEOCARD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VIDEOCARD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="products_8h" kindref="compound">products.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="memtrace_8h" kindref="compound">memtrace.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_g_p_u" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_g_p_u" kindref="compound">GPU</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_product" kindref="compound">Product</ref><sp/>{</highlight></codeline>
+<codeline lineno="10" refid="class_g_p_u_1a0dc45bd568c1a3667d114e59d2eb936b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1a0dc45bd568c1a3667d114e59d2eb936b" kindref="member">portHDMI</ref>;</highlight></codeline>
+<codeline lineno="11" refid="class_g_p_u_1abd8d988998cc1c91e8aef4653d84b93f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1abd8d988998cc1c91e8aef4653d84b93f" kindref="member">portDisplay</ref>;</highlight></codeline>
+<codeline lineno="12" refid="class_g_p_u_1ac88b4ae97f83518d14c34aa95eed81a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1ac88b4ae97f83518d14c34aa95eed81a1" kindref="member">gpuClock</ref>;</highlight></codeline>
+<codeline lineno="13" refid="class_g_p_u_1ad047558e044a698b9b4746366833290e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1ad047558e044a698b9b4746366833290e" kindref="member">memoryClock</ref>;</highlight></codeline>
+<codeline lineno="14" refid="class_g_p_u_1a48611570458ee623b5cb2e761f17a6fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1a48611570458ee623b5cb2e761f17a6fd" kindref="member">vram</ref>;</highlight></codeline>
+<codeline lineno="15" refid="class_g_p_u_1a22c51b5240ede46c1aa9e0bbb1f96562" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1a22c51b5240ede46c1aa9e0bbb1f96562" kindref="member">tdp</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17" refid="class_g_p_u_1a2ca7973e32f63ba3472166a007419a75" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_p_u_1a2ca7973e32f63ba3472166a007419a75" kindref="member">GPU</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_p_u_1a2ca7973e32f63ba3472166a007419a75" kindref="member">GPU</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1a0dc45bd568c1a3667d114e59d2eb936b" kindref="member">portHDMI</ref>,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1abd8d988998cc1c91e8aef4653d84b93f" kindref="member">portDisplay</ref>,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1ac88b4ae97f83518d14c34aa95eed81a1" kindref="member">gpuClock</ref>,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1ad047558e044a698b9b4746366833290e" kindref="member">memoryClock</ref>,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1a48611570458ee623b5cb2e761f17a6fd" kindref="member">vram</ref>,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1a22c51b5240ede46c1aa9e0bbb1f96562" kindref="member">tdp</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_p_u_1a2ca7973e32f63ba3472166a007419a75" kindref="member">GPU</ref>(std::string<sp/><ref refid="class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8" kindref="member">name</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_product_1abb2572df7a832a509944905603ba5e4f" kindref="member">price</ref>,<sp/>std::string<sp/>manuf,<sp/>std::string<sp/>descript,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1a0dc45bd568c1a3667d114e59d2eb936b" kindref="member">portHDMI</ref>,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1abd8d988998cc1c91e8aef4653d84b93f" kindref="member">portDisplay</ref>,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1ac88b4ae97f83518d14c34aa95eed81a1" kindref="member">gpuClock</ref>,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1ad047558e044a698b9b4746366833290e" kindref="member">memoryClock</ref>,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1a48611570458ee623b5cb2e761f17a6fd" kindref="member">vram</ref>,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1a22c51b5240ede46c1aa9e0bbb1f96562" kindref="member">tdp</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_p_u_1a2ca7973e32f63ba3472166a007419a75" kindref="member">GPU</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u" kindref="compound">GPU</ref>&amp;<sp/>g);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1a72b7be0a970a7bf975826cffe78f271b" kindref="member">getHDMIports</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1a44f3ae76203125d5db08408b45315e46" kindref="member">getDisplayports</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1a397f97778ac47250dc55a25c1a877a6d" kindref="member">getGPUclock</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1a9ceef8ec791e1401966be7ebc1f7a639" kindref="member">getMemClock</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1a6de14cc7aa846037ed74b90f97bad87b" kindref="member">getVRAM</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1a5806130e7c25709689917fcff437949a" kindref="member">getTDP</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_g_p_u_1abd4bde632b28ce5577ae7b6d05f947d6" kindref="member">getObjType</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_g_p_u_1aa6accb9ff57ea98080a7496d77fea7e5" kindref="member">serializeObj</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_p_u" kindref="compound">GPU</ref>*<sp/><ref refid="class_g_p_u_1a13535142ba8cacba30f23f6bf8ed5200" kindref="member">clone</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">std::ifstream&amp;<sp/><ref refid="_videocard_8h_1ad0e8a0eda0c7cb847ceadde59995e8e2" kindref="member">operator&gt;&gt;</ref>(std::ifstream&amp;<sp/>savefile,<sp/><ref refid="class_g_p_u" kindref="compound">GPU</ref>&amp;<sp/>rhs);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!VIDEOCARD_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h"/>
+  </compounddef>
+</doxygen>

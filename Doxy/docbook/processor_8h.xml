@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_processor_8h" xml:lang="en-US">
+<title>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h File Reference</title>
+<indexterm><primary>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h</primary></indexterm>
+<programlisting>#include &quot;products.h&quot;
+#include &lt;string&gt;
+#include &lt;iostream&gt;
+#include &quot;memtrace.h&quot;
+</programlisting>Include dependency graph for processor.h:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="processor_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+This graph shows which files directly or indirectly include this file:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="processor_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_c_p_u">CPU</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68">socket</link> { <link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68a89f9926b61ea482e780698f79c10fb2a">AMD_AM4</link>
+, <link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68aa619b515b905fe4d497c26de1acb1c3f">INTEL_1151</link>
+, <link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68a8ad6b82fecc4b442e1cc1995d57f8f51">INTEL_1151V2</link>
+, <link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68a10c3bad51f295015492a8d1cc1380674">INTEL_1200</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>std::ifstream &amp; <link linkend="_processor_8h_1a7b671311d36faa1acd74987a04b16f1f">operator&gt;&gt;</link> (std::ifstream &amp;is, <link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68">socket</link> &amp;s)</para>
+</listitem>
+            <listitem><para>std::ifstream &amp; <link linkend="_processor_8h_1a9b99200e1f81123f911d5e581994dddd">operator&gt;&gt;</link> (std::ifstream &amp;savefile, <link linkend="_class_c_p_u">CPU</link> &amp;rhs)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Enumeration Type Documentation</title>
+<anchor xml:id="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68"/>    <section>
+    <title>socket</title>
+<indexterm><primary>socket</primary><secondary>processor.h</secondary></indexterm>
+<indexterm><primary>processor.h</primary><secondary>socket</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68">socket</link></computeroutput></para>
+<para>This is an enum class for the socket types Only for current desktop CPUs </para>
+<informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>AMD_AM4</primary><secondary>processor.h</secondary></indexterm>
+<indexterm><primary>processor.h</primary><secondary>AMD_AM4</secondary></indexterm>
+<anchor xml:id="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68a89f9926b61ea482e780698f79c10fb2a"/>AMD_AM4</entry><entry></entry></row><row><entry><indexterm><primary>INTEL_1151</primary><secondary>processor.h</secondary></indexterm>
+<indexterm><primary>processor.h</primary><secondary>INTEL_1151</secondary></indexterm>
+<anchor xml:id="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68aa619b515b905fe4d497c26de1acb1c3f"/>INTEL_1151</entry><entry></entry></row><row><entry><indexterm><primary>INTEL_1151V2</primary><secondary>processor.h</secondary></indexterm>
+<indexterm><primary>processor.h</primary><secondary>INTEL_1151V2</secondary></indexterm>
+<anchor xml:id="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68a8ad6b82fecc4b442e1cc1995d57f8f51"/>INTEL_1151V2</entry><entry></entry></row><row><entry><indexterm><primary>INTEL_1200</primary><secondary>processor.h</secondary></indexterm>
+<indexterm><primary>processor.h</primary><secondary>INTEL_1200</secondary></indexterm>
+<anchor xml:id="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68a10c3bad51f295015492a8d1cc1380674"/>INTEL_1200</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_processor_8h_1a7b671311d36faa1acd74987a04b16f1f"/>    <section>
+    <title>operator&gt;&gt;()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator&gt;&gt;</primary><secondary>processor.h</secondary></indexterm>
+<indexterm><primary>processor.h</primary><secondary>operator&gt;&gt;</secondary></indexterm>
+<para><computeroutput>std::ifstream&amp; operator&gt;&gt; (std::ifstream &amp; is, <link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68">socket</link> &amp; s)</computeroutput></para>    </section><anchor xml:id="_processor_8h_1a9b99200e1f81123f911d5e581994dddd"/>    <section>
+    <title>operator&gt;&gt;()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator&gt;&gt;</primary><secondary>processor.h</secondary></indexterm>
+<indexterm><primary>processor.h</primary><secondary>operator&gt;&gt;</secondary></indexterm>
+<para><computeroutput>std::ifstream&amp; operator&gt;&gt; (std::ifstream &amp; savefile, <link linkend="_class_c_p_u">CPU</link> &amp; rhs)</computeroutput></para></section>
+</section>
+</section>

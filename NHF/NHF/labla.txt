@@ -1,0 +1,4 @@
+PRODUCT_OBJ
+{
+name:Ryzen 9 5900x;price:500;description:AMD;manufacturer:cpu;inventory:1;
+}

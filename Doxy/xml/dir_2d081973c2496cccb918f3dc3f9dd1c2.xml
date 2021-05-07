@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_2d081973c2496cccb918f3dc3f9dd1c2" kind="dir">
+    <compoundname>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF</compoundname>
+    <innerfile refid="catalogue_8cpp">catalogue.cpp</innerfile>
+    <innerfile refid="catalogue_8h">catalogue.h</innerfile>
+    <innerfile refid="_computer_8cpp">Computer.cpp</innerfile>
+    <innerfile refid="_computer_8h">Computer.h</innerfile>
+    <innerfile refid="gtest__lite_8h">gtest_lite.h</innerfile>
+    <innerfile refid="main_8cpp">main.cpp</innerfile>
+    <innerfile refid="_memory_8cpp">Memory.cpp</innerfile>
+    <innerfile refid="_memory_8h">Memory.h</innerfile>
+    <innerfile refid="memtrace_8cpp">memtrace.cpp</innerfile>
+    <innerfile refid="memtrace_8h">memtrace.h</innerfile>
+    <innerfile refid="_motherboard_8cpp">Motherboard.cpp</innerfile>
+    <innerfile refid="_motherboard_8h">Motherboard.h</innerfile>
+    <innerfile refid="processor_8cpp">processor.cpp</innerfile>
+    <innerfile refid="processor_8h">processor.h</innerfile>
+    <innerfile refid="products_8cpp">products.cpp</innerfile>
+    <innerfile refid="products_8h">products.h</innerfile>
+    <innerfile refid="_videocard_8cpp">Videocard.cpp</innerfile>
+    <innerfile refid="_videocard_8h">Videocard.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/"/>
+  </compounddef>
+</doxygen>

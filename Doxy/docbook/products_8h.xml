@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_products_8h" xml:lang="en-US">
+<title>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.h File Reference</title>
+<indexterm><primary>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.h</primary></indexterm>
+<programlisting>#include &lt;string&gt;
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+#include &lt;sstream&gt;
+#include &quot;memtrace.h&quot;
+</programlisting>Include dependency graph for products.h:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="products_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+This graph shows which files directly or indirectly include this file:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="products_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_product">Product</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum class <link linkend="_products_8h_1a6f54b54b1983a312948d8ead9f19b9af">obj_t</link> { 
+<link linkend="_products_8h_1a6f54b54b1983a312948d8ead9f19b9afadeb10517653c255364175796ace3553f">Product</link>
+, <link linkend="_products_8h_1a6f54b54b1983a312948d8ead9f19b9afa8c4aa541ee911e8d80451ef8cc304806">Storage</link>
+, <link linkend="_products_8h_1a6f54b54b1983a312948d8ead9f19b9afae53619c1fe611a51eeeb8d148ba6e532">RAM</link>
+, <link linkend="_products_8h_1a6f54b54b1983a312948d8ead9f19b9afa9c2dc227590d4220750b52b21b0aeb99">HDD</link>
+, 
+<link linkend="_products_8h_1a6f54b54b1983a312948d8ead9f19b9afa34df20bab5e85dc75bfc94ef569cced9">SSD</link>
+, <link linkend="_products_8h_1a6f54b54b1983a312948d8ead9f19b9afa8d8fcc1abd550c5f25dbfaa57d59cb67">MB</link>
+, <link linkend="_products_8h_1a6f54b54b1983a312948d8ead9f19b9afa2b55387dd066c5bac646ac61543d152d">CPU</link>
+, <link linkend="_products_8h_1a6f54b54b1983a312948d8ead9f19b9afa52f9ec21735243ad9917cda3ca077d32">GPU</link>
+, 
+<link linkend="_products_8h_1a6f54b54b1983a312948d8ead9f19b9afa88dba0c4e2af76447df43d1e31331a3d">PC</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>template&lt;class T &gt; </para><para>std::ofstream &amp; <link linkend="_products_8h_1a9de3e0ccf990b76a227192215795f84a">operator&lt;&lt;</link> (std::ofstream &amp;savefile, T &amp;rhs)</para>
+
+<para>Template for writing the serialized object to file </para>
+</listitem>
+            <listitem><para>std::ifstream &amp; <link linkend="_products_8h_1a3c4c53fadab31183f9737475efa6c3ec">operator&gt;&gt;</link> (std::ifstream &amp;savefile, <link linkend="_class_product">Product</link> &amp;rhs)</para>
+
+<para>Overloads the &gt;&gt; to save the object to file. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Enumeration Type Documentation</title>
+<anchor xml:id="_products_8h_1a6f54b54b1983a312948d8ead9f19b9af"/>    <section>
+    <title>obj_t</title>
+<indexterm><primary>obj_t</primary><secondary>products.h</secondary></indexterm>
+<indexterm><primary>products.h</primary><secondary>obj_t</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_products_8h_1a6f54b54b1983a312948d8ead9f19b9af">obj_t</link><computeroutput>[strong]</computeroutput></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Product</primary><secondary>products.h</secondary></indexterm>
+<indexterm><primary>products.h</primary><secondary>Product</secondary></indexterm>
+<anchor xml:id="_products_8h_1a6f54b54b1983a312948d8ead9f19b9afadeb10517653c255364175796ace3553f"/>Product</entry><entry></entry></row><row><entry><indexterm><primary>Storage</primary><secondary>products.h</secondary></indexterm>
+<indexterm><primary>products.h</primary><secondary>Storage</secondary></indexterm>
+<anchor xml:id="_products_8h_1a6f54b54b1983a312948d8ead9f19b9afa8c4aa541ee911e8d80451ef8cc304806"/>Storage</entry><entry></entry></row><row><entry><indexterm><primary>RAM</primary><secondary>products.h</secondary></indexterm>
+<indexterm><primary>products.h</primary><secondary>RAM</secondary></indexterm>
+<anchor xml:id="_products_8h_1a6f54b54b1983a312948d8ead9f19b9afae53619c1fe611a51eeeb8d148ba6e532"/>RAM</entry><entry></entry></row><row><entry><indexterm><primary>HDD</primary><secondary>products.h</secondary></indexterm>
+<indexterm><primary>products.h</primary><secondary>HDD</secondary></indexterm>
+<anchor xml:id="_products_8h_1a6f54b54b1983a312948d8ead9f19b9afa9c2dc227590d4220750b52b21b0aeb99"/>HDD</entry><entry></entry></row><row><entry><indexterm><primary>SSD</primary><secondary>products.h</secondary></indexterm>
+<indexterm><primary>products.h</primary><secondary>SSD</secondary></indexterm>
+<anchor xml:id="_products_8h_1a6f54b54b1983a312948d8ead9f19b9afa34df20bab5e85dc75bfc94ef569cced9"/>SSD</entry><entry></entry></row><row><entry><indexterm><primary>MB</primary><secondary>products.h</secondary></indexterm>
+<indexterm><primary>products.h</primary><secondary>MB</secondary></indexterm>
+<anchor xml:id="_products_8h_1a6f54b54b1983a312948d8ead9f19b9afa8d8fcc1abd550c5f25dbfaa57d59cb67"/>MB</entry><entry></entry></row><row><entry><indexterm><primary>CPU</primary><secondary>products.h</secondary></indexterm>
+<indexterm><primary>products.h</primary><secondary>CPU</secondary></indexterm>
+<anchor xml:id="_products_8h_1a6f54b54b1983a312948d8ead9f19b9afa2b55387dd066c5bac646ac61543d152d"/>CPU</entry><entry></entry></row><row><entry><indexterm><primary>GPU</primary><secondary>products.h</secondary></indexterm>
+<indexterm><primary>products.h</primary><secondary>GPU</secondary></indexterm>
+<anchor xml:id="_products_8h_1a6f54b54b1983a312948d8ead9f19b9afa52f9ec21735243ad9917cda3ca077d32"/>GPU</entry><entry></entry></row><row><entry><indexterm><primary>PC</primary><secondary>products.h</secondary></indexterm>
+<indexterm><primary>products.h</primary><secondary>PC</secondary></indexterm>
+<anchor xml:id="_products_8h_1a6f54b54b1983a312948d8ead9f19b9afa88dba0c4e2af76447df43d1e31331a3d"/>PC</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_products_8h_1a9de3e0ccf990b76a227192215795f84a"/>    <section>
+    <title>operator&lt;&lt;()</title>
+<indexterm><primary>operator&lt;&lt;</primary><secondary>products.h</secondary></indexterm>
+<indexterm><primary>products.h</primary><secondary>operator&lt;&lt;</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput>std::ofstream&amp; operator&lt;&lt; (std::ofstream &amp; savefile, T &amp; rhs)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Template for writing the serialized object to file </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>T</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                The object type being saved 
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>savefile</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                The output file stream used for writing to file 
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>rhs</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                rhs is the reference to the object being saved <formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_products_8h_1a3c4c53fadab31183f9737475efa6c3ec"/>    <section>
+    <title>operator&gt;&gt;()</title>
+<indexterm><primary>operator&gt;&gt;</primary><secondary>products.h</secondary></indexterm>
+<indexterm><primary>products.h</primary><secondary>operator&gt;&gt;</secondary></indexterm>
+<para><computeroutput>std::ifstream&amp; operator&gt;&gt; (std::ifstream &amp; savefile, <link linkend="_class_product">Product</link> &amp; rhs)</computeroutput></para><para>
+
+<para>Overloads the &gt;&gt; to save the object to file. </para>
+</para>
+
+<para>Overloads the &gt;&gt; to save the object to file. </para>
+</section>
+</section>
+</section>

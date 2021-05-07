@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index" xml:lang="en-US">
+    <info>
+    <title>NHF</title>
+    </info>
+<chapter>
+    <title>Namespace Documentation</title>
+<xi:include href="namespacegtest__lite.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>Class Documentation</title>
+    <xi:include href="struct___is___types.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_catalogue.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_c_p_u.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_g_p_u.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_h_d_d.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_catalogue_1_1_iterator.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_motherboard.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgtest__lite_1_1ostream_redir.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_p_c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_product.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_r_a_m.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_s_s_d.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_storage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structgtest__lite_1_1_test.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>File Documentation</title>
+    <xi:include href="catalogue_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="catalogue_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_computer_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_computer_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gtest__lite_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="main_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_memory_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_memory_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="memtrace_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="memtrace_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_motherboard_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_motherboard_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="processor_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="processor_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="products_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="products_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_videocard_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_videocard_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

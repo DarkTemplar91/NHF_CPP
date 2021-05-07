@@ -1,0 +1,480 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_memory_8cpp" kind="file" language="C++">
+    <compoundname>Memory.cpp</compoundname>
+    <includes refid="_memory_8h" local="yes">Memory.h</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">sstream</includes>
+    <includes refid="memtrace_8h" local="yes">memtrace.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp</label>
+        <link refid="_memory_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Memory.h</label>
+        <link refid="_memory_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="8">
+        <label>memtrace.h</label>
+        <link refid="memtrace_8h"/>
+      </node>
+      <node id="6">
+        <label>fstream</label>
+      </node>
+      <node id="7">
+        <label>sstream</label>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+      <node id="3">
+        <label>products.h</label>
+        <link refid="products_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_memory_8cpp_1a12f360ba0d13320dbb5f860216de88db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ifstream &amp;</type>
+        <definition>std::ifstream&amp; operator&gt;&gt;</definition>
+        <argsstring>(std::ifstream &amp;is, ByteUnit &amp;b)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>std::ifstream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type><ref refid="_memory_8h_1a284499ae529838dbabf4c7a520e99a85" kindref="member">ByteUnit</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" line="162" column="15" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="162" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="_memory_8cpp_1a881da9e9da5a51fd6333a8e6dbcefe37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ifstream &amp;</type>
+        <definition>std::ifstream&amp; operator&gt;&gt;</definition>
+        <argsstring>(std::ifstream &amp;savefile, Storage &amp;rhs)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>std::ifstream &amp;</type>
+          <declname>savefile</declname>
+        </param>
+        <param>
+          <type><ref refid="class_storage" kindref="compound">Storage</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" line="168" column="15" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="168" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="_memory_8cpp_1abbba1431e02c443d63fd41cf41ca615a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ifstream &amp;</type>
+        <definition>std::ifstream&amp; operator&gt;&gt;</definition>
+        <argsstring>(std::ifstream &amp;is, MemoryType &amp;m)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>std::ifstream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type><ref refid="_memory_8h_1a462bfa9dfea81692463ecb192183dd01" kindref="member">MemoryType</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" line="191" column="15" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="191" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="_memory_8cpp_1a5d3c36cdedfc649838c7542f2d8d8b81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ifstream &amp;</type>
+        <definition>std::ifstream&amp; operator&gt;&gt;</definition>
+        <argsstring>(std::ifstream &amp;savefile, RAM &amp;rhs)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>std::ifstream &amp;</type>
+          <declname>savefile</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_a_m" kindref="compound">RAM</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" line="198" column="15" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="198" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="_memory_8cpp_1a97ebca926dc01a99103e15b705c29db2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ifstream &amp;</type>
+        <definition>std::ifstream&amp; operator&gt;&gt;</definition>
+        <argsstring>(std::ifstream &amp;savefile, SSD &amp;rhs)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>std::ifstream &amp;</type>
+          <declname>savefile</declname>
+        </param>
+        <param>
+          <type><ref refid="class_s_s_d" kindref="compound">SSD</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" line="228" column="15" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="228" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="_memory_8cpp_1a3bcab9104df1767d74204644ebd078bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ifstream &amp;</type>
+        <definition>std::ifstream&amp; operator&gt;&gt;</definition>
+        <argsstring>(std::ifstream &amp;savefile, HDD &amp;rhs)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>std::ifstream &amp;</type>
+          <declname>savefile</declname>
+        </param>
+        <param>
+          <type><ref refid="class_h_d_d" kindref="compound">HDD</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" line="251" column="15" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="251" bodyend="263"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_memory_8h" kindref="compound">Memory.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="memtrace_8h" kindref="compound">memtrace.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//Storage</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><ref refid="class_storage_1aa557b155d438649718b658971c097859" kindref="member">Storage::Storage</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>c,<sp/><ref refid="_memory_8h_1a284499ae529838dbabf4c7a520e99a85" kindref="member">ByteUnit</ref><sp/>bu)<sp/>:capacity(c),<sp/>notation(bu)<sp/>{<sp/>t<sp/>=<sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa8c4aa541ee911e8d80451ef8cc304806" kindref="member">obj_t::Storage</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><ref refid="class_storage_1aa557b155d438649718b658971c097859" kindref="member">Storage::Storage</ref>(std::string<sp/>name,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>price,<sp/>std::string<sp/>descript,<sp/>std::string<sp/>manuf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>c,<sp/><ref refid="_memory_8h_1a284499ae529838dbabf4c7a520e99a85" kindref="member">ByteUnit</ref><sp/>bu)<sp/>:<ref refid="class_product" kindref="compound">Product</ref>(name,<sp/>price,<sp/>manuf,<sp/>descript),</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">capacity(c),<sp/>notation(bu)<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>t<sp/>=<sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa8c4aa541ee911e8d80451ef8cc304806" kindref="member">obj_t::Storage</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><ref refid="class_storage_1aa557b155d438649718b658971c097859" kindref="member">Storage::Storage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_storage" kindref="compound">Storage</ref>&amp;<sp/>m)<sp/>:<sp/><ref refid="class_product" kindref="compound">Product</ref>(m),<sp/>capacity(m.capacity),<sp/>notation(m.notation)<sp/>{<sp/>t<sp/>=<sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa8c4aa541ee911e8d80451ef8cc304806" kindref="member">obj_t::Storage</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_storage_1acdb19059f3115eceb8cb420b18658440" kindref="member">Storage::getCapacity</ref>()</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_storage_1aae754660623b8e0e5046b967cb4cdb73" kindref="member">capacity</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><ref refid="_memory_8h_1a284499ae529838dbabf4c7a520e99a85" kindref="member">ByteUnit</ref><sp/><ref refid="class_storage_1af6dc4a84e1566ab8103623214eee2671" kindref="member">Storage::getSizeType</ref>()</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_storage_1a58275af4fc94f89edd8af0721aea467e" kindref="member">notation</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">std::string<sp/><ref refid="class_storage_1a9c6d68e682a8c329dc0611ce7266f2bc" kindref="member">Storage::getObjType</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;STORAGE_OBJ&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">std::string<sp/><ref refid="class_storage_1ac52c20f77eeb4cb13cc3d02b5818e04c" kindref="member">Storage::getSizeType_string</ref>()</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="class_storage_1a58275af4fc94f89edd8af0721aea467e" kindref="member">notation</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;bit&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;byte&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;kilobyte&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;megabyte&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>4:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;gigabyte&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>5:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;terabyte&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;NaN&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">std::string<sp/><ref refid="class_storage_1a3836c9fff79b96e8c87ab8a5976d89f8" kindref="member">Storage::getNotation</ref>()</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="class_storage_1a58275af4fc94f89edd8af0721aea467e" kindref="member">notation</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0:</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;bit&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;B&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;kB&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3:</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;mB&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>4:</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;gB&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>5:</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;tB&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;NaN&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_storage_1ab10853458f897082ba028cef2477005d" kindref="member">Storage::operator==</ref>(<ref refid="class_storage" kindref="compound">Storage</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Product::operator==(rhs)<sp/>&amp;&amp;<sp/><ref refid="class_storage_1aae754660623b8e0e5046b967cb4cdb73" kindref="member">capacity</ref><sp/>==<sp/>rhs.<ref refid="class_storage_1aae754660623b8e0e5046b967cb4cdb73" kindref="member">capacity</ref>)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_storage_1ac44ec07b755c2a60f976cbd7ae13de81" kindref="member">Storage::operator!=</ref>(<ref refid="class_storage" kindref="compound">Storage</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(<ref refid="class_storage_1ab10853458f897082ba028cef2477005d" kindref="member">Storage::operator==</ref>(rhs));</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">//RAM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><ref refid="class_r_a_m_1a25289e9f70eb7de231f869a6032f179b" kindref="member">RAM::RAM</ref>(<ref refid="_memory_8h_1a462bfa9dfea81692463ecb192183dd01" kindref="member">MemoryType</ref><sp/>type,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>clockSpeed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cl,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>v)<sp/>:type(type),<sp/>clockSpeed(clockSpeed),<sp/>cl(cl),<sp/>v(v)<sp/>{<sp/>t<sp/>=<sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afae53619c1fe611a51eeeb8d148ba6e532" kindref="member">obj_t::RAM</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><ref refid="class_r_a_m_1a25289e9f70eb7de231f869a6032f179b" kindref="member">RAM::RAM</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>c,<sp/><ref refid="_memory_8h_1a284499ae529838dbabf4c7a520e99a85" kindref="member">ByteUnit</ref><sp/>bu,<sp/><ref refid="_memory_8h_1a462bfa9dfea81692463ecb192183dd01" kindref="member">MemoryType</ref><sp/>type,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>clockSpeed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cl,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>v)<sp/>:<ref refid="class_storage" kindref="compound">Storage</ref>(c,<sp/>bu),<sp/>type(type),<sp/>clockSpeed(clockSpeed),<sp/>cl(cl),<sp/>v(v)<sp/>{<sp/>t<sp/>=<sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afae53619c1fe611a51eeeb8d148ba6e532" kindref="member">obj_t::RAM</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><ref refid="class_r_a_m_1a25289e9f70eb7de231f869a6032f179b" kindref="member">RAM::RAM</ref>(std::string<sp/>name,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>price,<sp/>std::string<sp/>descript,<sp/>std::string<sp/>manuf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>c,<sp/><ref refid="_memory_8h_1a284499ae529838dbabf4c7a520e99a85" kindref="member">ByteUnit</ref><sp/>bu,<sp/><ref refid="_memory_8h_1a462bfa9dfea81692463ecb192183dd01" kindref="member">MemoryType</ref><sp/>type,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>clockSpeed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cl,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>v)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>:<ref refid="class_storage" kindref="compound">Storage</ref>(name,<sp/>price,<sp/>descript,<sp/>manuf,<sp/>c,<sp/>bu),<sp/>type(type),<sp/>clockSpeed(clockSpeed),<sp/>cl(cl),<sp/>v(v)<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>t<sp/>=<sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afae53619c1fe611a51eeeb8d148ba6e532" kindref="member">obj_t::RAM</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><ref refid="class_r_a_m_1a25289e9f70eb7de231f869a6032f179b" kindref="member">RAM::RAM</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_r_a_m" kindref="compound">RAM</ref>&amp;<sp/>r)<sp/>:<sp/><ref refid="class_storage" kindref="compound">Storage</ref>(r),<sp/>type(r.type),<sp/>clockSpeed(r.clockSpeed),<sp/>cl(r.cl),<sp/>v(r.v)<sp/>{<sp/>t<sp/>=<sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afae53619c1fe611a51eeeb8d148ba6e532" kindref="member">obj_t::RAM</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><ref refid="_memory_8h_1a462bfa9dfea81692463ecb192183dd01" kindref="member">MemoryType</ref><sp/><ref refid="class_r_a_m_1ae6dcb0ce5ed7f072b803ed005f22e6ec" kindref="member">RAM::getMemType</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_r_a_m_1af6a1d40b000e6f7b61fd596c0ecb8618" kindref="member">type</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_r_a_m_1ad7b791e374a00c8462a64beead0bea95" kindref="member">RAM::getClockSpeed</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_r_a_m_1a06c470d0b80cded09950fa3be4788dc8" kindref="member">clockSpeed</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_r_a_m_1a18b3b49c6522e5ab2b3a403860211d20" kindref="member">RAM::getlatency</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_r_a_m_1ac703baaed79a25ed1467f55d3a24ae10" kindref="member">cl</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_r_a_m_1af2b254d13a98ff26768081de811805b9" kindref="member">RAM::getVoltage</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_r_a_m_1a63f119dea231b01f176e14af27e3223f" kindref="member">v</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">std::string<sp/><ref refid="class_r_a_m_1acacd036409fa0e75f9d28700cbbdf47d" kindref="member">RAM::getObjType</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;RAM_OBJ&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_a_m_1a7fc6466cc5c8038e5aed21650e146da9" kindref="member">RAM::operator==</ref>(<ref refid="class_r_a_m" kindref="compound">RAM</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Storage::operator==(rhs)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rhs.<ref refid="class_r_a_m_1ac703baaed79a25ed1467f55d3a24ae10" kindref="member">cl</ref><sp/>==<sp/><ref refid="class_r_a_m_1ac703baaed79a25ed1467f55d3a24ae10" kindref="member">cl</ref><sp/>&amp;&amp;<sp/>rhs.<ref refid="class_r_a_m_1a06c470d0b80cded09950fa3be4788dc8" kindref="member">clockSpeed</ref><sp/>==<sp/><ref refid="class_r_a_m_1a06c470d0b80cded09950fa3be4788dc8" kindref="member">clockSpeed</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rhs.<ref refid="class_r_a_m_1af6a1d40b000e6f7b61fd596c0ecb8618" kindref="member">type</ref><sp/>==<sp/><ref refid="class_r_a_m_1af6a1d40b000e6f7b61fd596c0ecb8618" kindref="member">type</ref><sp/>&amp;&amp;<sp/>rhs.<ref refid="class_r_a_m_1a63f119dea231b01f176e14af27e3223f" kindref="member">v</ref><sp/>==<sp/><ref refid="class_r_a_m_1a63f119dea231b01f176e14af27e3223f" kindref="member">v</ref>)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_a_m_1a6e77fc59fd9957e975d7946830373e06" kindref="member">RAM::operator!=</ref>(<ref refid="class_r_a_m" kindref="compound">RAM</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(<ref refid="class_r_a_m_1a7fc6466cc5c8038e5aed21650e146da9" kindref="member">RAM::operator==</ref>(rhs));</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment">//SSD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><ref refid="class_s_s_d_1a8de2e51be89fab50489f4411ff99a4b9" kindref="member">SSD::SSD</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_s_s_d" kindref="compound">SSD</ref>&amp;<sp/>s)<sp/>:<ref refid="class_storage" kindref="compound">Storage</ref>(s)<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;rSpeed<sp/>=<sp/>s.<ref refid="class_s_s_d_1a49fb67fecc3e51532c161260a1852099" kindref="member">rSpeed</ref>;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;wSpeed<sp/>=<sp/>s.<ref refid="class_s_s_d_1a17d090f306498b97db010f96be6ef25d" kindref="member">wSpeed</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>t<sp/>=<sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa34df20bab5e85dc75bfc94ef569cced9" kindref="member">obj_t::SSD</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><ref refid="class_s_s_d_1a8de2e51be89fab50489f4411ff99a4b9" kindref="member">SSD::SSD</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wSpeed,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rSpeed)<sp/>:<ref refid="class_storage" kindref="compound">Storage</ref>(),<sp/>wSpeed(wSpeed),<sp/>rSpeed(rSpeed)<sp/>{<sp/>t<sp/>=<sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa34df20bab5e85dc75bfc94ef569cced9" kindref="member">obj_t::SSD</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><ref refid="class_s_s_d_1a8de2e51be89fab50489f4411ff99a4b9" kindref="member">SSD::SSD</ref>(std::string<sp/>name,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>price,<sp/>std::string<sp/>dscrpt,<sp/>std::string<sp/>manufacturer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>c,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_memory_8h_1a284499ae529838dbabf4c7a520e99a85" kindref="member">ByteUnit</ref><sp/>bu,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wSpeed,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rSpeed)<sp/>:<ref refid="class_storage" kindref="compound">Storage</ref>(name,<sp/>price,<sp/>dscrpt,<sp/>manufacturer,<sp/>c,<sp/>bu),</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>wSpeed(wSpeed),<sp/>rSpeed(rSpeed)<sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>t<sp/>=<sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa34df20bab5e85dc75bfc94ef569cced9" kindref="member">obj_t::SSD</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_s_s_d_1a309d748d1273262845bad668e797ae73" kindref="member">SSD::getReadSpeed</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_s_s_d_1a49fb67fecc3e51532c161260a1852099" kindref="member">rSpeed</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_s_s_d_1a16388ad4698bea556b140e2c7e5a6ba7" kindref="member">SSD::getWriteSpeed</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_s_s_d_1a17d090f306498b97db010f96be6ef25d" kindref="member">wSpeed</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">std::string<sp/><ref refid="class_s_s_d_1a4ab856f2201417d79af96755fe67f13b" kindref="member">SSD::getObjType</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;SSD_OBJ&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_s_s_d_1aaaa23a6a0819baf5afc6ab140f728140" kindref="member">SSD::operator==</ref>(<ref refid="class_s_s_d" kindref="compound">SSD</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Storage::operator==(rhs)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rhs.<ref refid="class_s_s_d_1a49fb67fecc3e51532c161260a1852099" kindref="member">rSpeed</ref><sp/>==<sp/><ref refid="class_s_s_d_1a49fb67fecc3e51532c161260a1852099" kindref="member">rSpeed</ref><sp/>&amp;&amp;<sp/>rhs.<ref refid="class_s_s_d_1a17d090f306498b97db010f96be6ef25d" kindref="member">wSpeed</ref><sp/>==<sp/><ref refid="class_s_s_d_1a17d090f306498b97db010f96be6ef25d" kindref="member">wSpeed</ref>)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_s_s_d_1a5561ea54e1f8ac3d1d2aad8905d9a869" kindref="member">SSD::operator!=</ref>(<ref refid="class_s_s_d" kindref="compound">SSD</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">!(<ref refid="class_s_s_d_1aaaa23a6a0819baf5afc6ab140f728140" kindref="member">SSD::operator==</ref>(rhs));</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment">//HDD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><ref refid="class_h_d_d_1a17ac1f17161e721f57c2ce14dfc52485" kindref="member">HDD::HDD</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rpm)<sp/>:<ref refid="class_storage" kindref="compound">Storage</ref>(),<sp/>rpm(rpm)<sp/>{<sp/>t<sp/>=<sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa9c2dc227590d4220750b52b21b0aeb99" kindref="member">obj_t::HDD</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><ref refid="class_h_d_d_1a17ac1f17161e721f57c2ce14dfc52485" kindref="member">HDD::HDD</ref>(std::string<sp/>name,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>price,<sp/>std::string<sp/>dscrpt,<sp/>std::string<sp/>manufacturer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>c,<sp/><ref refid="_memory_8h_1a284499ae529838dbabf4c7a520e99a85" kindref="member">ByteUnit</ref><sp/>bu,</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rpm)<sp/>:</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_storage" kindref="compound">Storage</ref>(name,<sp/>price,<sp/>dscrpt,<sp/>manufacturer,<sp/>c,<sp/>bu),<sp/>rpm(rpm)<sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>t<sp/>=<sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa9c2dc227590d4220750b52b21b0aeb99" kindref="member">obj_t::HDD</ref>;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_h_d_d_1a324a729fcc87a1ee3ae0a8b0efa68b1b" kindref="member">HDD::getRPM</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_h_d_d_1a67787ee337d12b5cf93e071263ab9867" kindref="member">rpm</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">std::string<sp/><ref refid="class_h_d_d_1ae7a29f20418291ed9c9a65ad393729e3" kindref="member">HDD::getObjType</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;HDD_OBJ&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><ref refid="class_h_d_d_1a17ac1f17161e721f57c2ce14dfc52485" kindref="member">HDD::HDD</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_h_d_d" kindref="compound">HDD</ref>&amp;<sp/>h)<sp/>:<sp/><ref refid="class_storage" kindref="compound">Storage</ref>(h)<sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;rpm<sp/>=<sp/>h.<ref refid="class_h_d_d_1a67787ee337d12b5cf93e071263ab9867" kindref="member">rpm</ref>;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>t<sp/>=<sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa9c2dc227590d4220750b52b21b0aeb99" kindref="member">obj_t::HDD</ref>;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_h_d_d_1aa669d46ab7c741e4980226375670f253" kindref="member">HDD::operator==</ref>(<ref refid="class_h_d_d" kindref="compound">HDD</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Storage::operator==(rhs)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rhs.<ref refid="class_h_d_d_1a67787ee337d12b5cf93e071263ab9867" kindref="member">rpm</ref><sp/>==<sp/><ref refid="class_h_d_d_1a67787ee337d12b5cf93e071263ab9867" kindref="member">rpm</ref>)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_h_d_d_1abfa07a249865bcf5e8973fe86e14bb9f" kindref="member">HDD::operator!=</ref>(<ref refid="class_h_d_d" kindref="compound">HDD</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(<ref refid="class_h_d_d_1aa669d46ab7c741e4980226375670f253" kindref="member">HDD::operator==</ref>(rhs));</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal">std::string<sp/><ref refid="class_storage_1ac7065b274cfcf6979a95ac9451846c6f" kindref="member">Storage::serializeObj</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostringstream<sp/>sStream;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>sStream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>this-&gt;<ref refid="class_product_1a749f163f9319f2cf6e9e0620d7133f0b" kindref="member">Product::serializeObj</ref>();</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>sStream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n\tStorage_SPECIF\n\t{\n\t&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\tCapacity:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_storage_1aae754660623b8e0e5046b967cb4cdb73" kindref="member">capacity</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;;notation&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_storage_1a58275af4fc94f89edd8af0721aea467e" kindref="member">notation</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;;\n\t}\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sStream.str();</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">std::ifstream&amp;<sp/><ref refid="_memory_8cpp_1a12f360ba0d13320dbb5f860216de88db" kindref="member">operator&gt;&gt;</ref>(std::ifstream&amp;<sp/>is,<sp/><ref refid="_memory_8h_1a284499ae529838dbabf4c7a520e99a85" kindref="member">ByteUnit</ref>&amp;<sp/>b)<sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>is<sp/>&gt;&gt;<sp/>i;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>b<sp/>=<sp/><ref refid="_memory_8h_1a284499ae529838dbabf4c7a520e99a85" kindref="member">ByteUnit</ref>(i);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>is;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">std::ifstream&amp;<sp/><ref refid="_memory_8cpp_1a12f360ba0d13320dbb5f860216de88db" kindref="member">operator&gt;&gt;</ref>(std::ifstream&amp;<sp/>savefile,<sp/><ref refid="class_storage" kindref="compound">Storage</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!savefile.is_open())</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>savefile.open(</highlight><highlight class="stringliteral">&quot;savefile.txt&quot;</highlight><highlight class="normal">,<sp/>std::ios_base::app);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile<sp/>&gt;&gt;<sp/>(<ref refid="class_product" kindref="compound">Product</ref>&amp;)rhs;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>capacity;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_memory_8h_1a284499ae529838dbabf4c7a520e99a85" kindref="member">ByteUnit</ref><sp/>notation;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>temp;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>std::getline(savefile,<sp/>temp,<sp/></highlight><highlight class="charliteral">&apos;:&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile<sp/>&gt;&gt;<sp/>capacity;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>std::getline(savefile,<sp/>temp,<sp/></highlight><highlight class="charliteral">&apos;:&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile<sp/>&gt;&gt;<sp/>notation;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>rhs<sp/>=<sp/><ref refid="class_storage" kindref="compound">Storage</ref>(rhs.<ref refid="class_product_1a9cbd896ca6b2d95088be8ad8c3b11e3b" kindref="member">getName</ref>(),<sp/>rhs.<ref refid="class_product_1a3be25f647260d61df6063ef706261c7f" kindref="member">getPrice</ref>(),<sp/>rhs.<ref refid="class_product_1a874a2ad2556c8d82500cce9917d5ed8c" kindref="member">getDescription</ref>(),<sp/>rhs.<ref refid="class_product_1a2f5aeb9d25fcbbcf0f6125351850d4ff" kindref="member">getManufacturer</ref>(),<sp/>capacity,<sp/>notation);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>savefile;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal">std::string<sp/><ref refid="class_r_a_m_1ae69fec37d54b641062ed6a2ffd88a184" kindref="member">RAM::serializeObj</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostringstream<sp/>sStream;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>sStream<sp/>&lt;&lt;<sp/>this-&gt;<ref refid="class_storage_1ac7065b274cfcf6979a95ac9451846c6f" kindref="member">Storage::serializeObj</ref>();</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>sStream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n\tRAM_SPECIF\n\t{\n\t&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\ttype&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_r_a_m_1af6a1d40b000e6f7b61fd596c0ecb8618" kindref="member">type</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;;clockspeed:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_r_a_m_1a06c470d0b80cded09950fa3be4788dc8" kindref="member">clockSpeed</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;;cl:&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="class_r_a_m_1ac703baaed79a25ed1467f55d3a24ae10" kindref="member">cl</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;;v:&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="class_r_a_m_1a63f119dea231b01f176e14af27e3223f" kindref="member">v</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;;\n\t}\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sStream.str();</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal">std::ifstream&amp;<sp/><ref refid="_memory_8cpp_1a12f360ba0d13320dbb5f860216de88db" kindref="member">operator&gt;&gt;</ref>(std::ifstream&amp;<sp/>is,<sp/><ref refid="_memory_8h_1a462bfa9dfea81692463ecb192183dd01" kindref="member">MemoryType</ref>&amp;<sp/>m)<sp/>{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>is<sp/>&gt;&gt;<sp/>i;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>m<sp/>=<sp/><ref refid="_memory_8h_1a462bfa9dfea81692463ecb192183dd01" kindref="member">MemoryType</ref>(i);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>is;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal">std::ifstream&amp;<sp/><ref refid="_memory_8cpp_1a12f360ba0d13320dbb5f860216de88db" kindref="member">operator&gt;&gt;</ref>(std::ifstream&amp;<sp/>savefile,<sp/><ref refid="class_r_a_m" kindref="compound">RAM</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!savefile.is_open())</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>savefile.open(</highlight><highlight class="stringliteral">&quot;savefile.txt&quot;</highlight><highlight class="normal">,<sp/>std::ios_base::app);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile<sp/>&gt;&gt;<sp/>(<ref refid="class_product" kindref="compound">Product</ref>&amp;)rhs;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_memory_8h_1a462bfa9dfea81692463ecb192183dd01" kindref="member">MemoryType</ref><sp/>type;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>clockSpeed;<sp/></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cl;<sp/></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>v;<sp/></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>temp;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>std::getline(savefile,<sp/>temp,<sp/></highlight><highlight class="charliteral">&apos;:&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile<sp/>&gt;&gt;<sp/>type;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>std::getline(savefile,<sp/>temp,<sp/></highlight><highlight class="charliteral">&apos;:&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile<sp/>&gt;&gt;<sp/>clockSpeed;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>std::getline(savefile,<sp/>temp,<sp/></highlight><highlight class="charliteral">&apos;:&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile<sp/>&gt;&gt;<sp/>cl;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>std::getline(savefile,<sp/>temp,<sp/></highlight><highlight class="charliteral">&apos;:&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile<sp/>&gt;&gt;<sp/>v;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>rhs<sp/>=<sp/><ref refid="class_r_a_m" kindref="compound">RAM</ref>(rhs.<ref refid="class_product_1a9cbd896ca6b2d95088be8ad8c3b11e3b" kindref="member">getName</ref>(),<sp/>rhs.<ref refid="class_product_1a3be25f647260d61df6063ef706261c7f" kindref="member">getPrice</ref>(),<sp/>rhs.<ref refid="class_product_1a874a2ad2556c8d82500cce9917d5ed8c" kindref="member">getDescription</ref>(),<sp/>rhs.<ref refid="class_product_1a2f5aeb9d25fcbbcf0f6125351850d4ff" kindref="member">getManufacturer</ref>(),</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rhs.<ref refid="class_storage_1acdb19059f3115eceb8cb420b18658440" kindref="member">getCapacity</ref>(),<sp/>rhs.<ref refid="class_storage_1af6dc4a84e1566ab8103623214eee2671" kindref="member">getSizeType</ref>(),<sp/>type,<sp/>clockSpeed,<sp/>cl,<sp/>v);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile.close();</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>savefile;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal">std::string<sp/><ref refid="class_s_s_d_1ac13108d9272a5fecb72f17e675b2d1ed" kindref="member">SSD::serializeObj</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostringstream<sp/>sStream;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>sStream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>this-&gt;<ref refid="class_storage_1ac7065b274cfcf6979a95ac9451846c6f" kindref="member">Storage::serializeObj</ref>();</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>sStream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n\tSSD_SPECIF\n\t{\n\t&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\twSpeed&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_s_s_d_1a17d090f306498b97db010f96be6ef25d" kindref="member">wSpeed</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;;rSpeed&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_s_s_d_1a49fb67fecc3e51532c161260a1852099" kindref="member">rSpeed</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;;\n\t}\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sStream.str();</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal">std::ifstream&amp;<sp/><ref refid="_memory_8cpp_1a12f360ba0d13320dbb5f860216de88db" kindref="member">operator&gt;&gt;</ref>(std::ifstream&amp;<sp/>savefile,<sp/><ref refid="class_s_s_d" kindref="compound">SSD</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!savefile.is_open())</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>savefile.open(</highlight><highlight class="stringliteral">&quot;savefile.txt&quot;</highlight><highlight class="normal">,<sp/>std::ios_base::app);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile<sp/>&gt;&gt;<sp/>(<ref refid="class_storage" kindref="compound">Storage</ref>&amp;)rhs;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>temp;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wSpeed;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rSpeed;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>std::getline(savefile,<sp/>temp,<sp/></highlight><highlight class="charliteral">&apos;:&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile<sp/>&gt;&gt;<sp/>wSpeed;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>std::getline(savefile,<sp/>temp,<sp/></highlight><highlight class="charliteral">&apos;:&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile<sp/>&gt;&gt;<sp/>rSpeed;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>rhs<sp/>=<sp/><ref refid="class_s_s_d" kindref="compound">SSD</ref>(rhs.<ref refid="class_product_1a9cbd896ca6b2d95088be8ad8c3b11e3b" kindref="member">getName</ref>(),<sp/>rhs.<ref refid="class_product_1a3be25f647260d61df6063ef706261c7f" kindref="member">getPrice</ref>(),<sp/>rhs.<ref refid="class_product_1a874a2ad2556c8d82500cce9917d5ed8c" kindref="member">getDescription</ref>(),<sp/>rhs.<ref refid="class_product_1a2f5aeb9d25fcbbcf0f6125351850d4ff" kindref="member">getManufacturer</ref>(),</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rhs.<ref refid="class_storage_1acdb19059f3115eceb8cb420b18658440" kindref="member">getCapacity</ref>(),<sp/>rhs.<ref refid="class_storage_1af6dc4a84e1566ab8103623214eee2671" kindref="member">getSizeType</ref>(),<sp/>wSpeed,<sp/>rSpeed);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile.close();</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>savefile;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal">std::string<sp/><ref refid="class_h_d_d_1a47e1f51cba4da56acf692647b456bc58" kindref="member">HDD::serializeObj</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostringstream<sp/>sStream;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>sStream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>this-&gt;<ref refid="class_storage_1ac7065b274cfcf6979a95ac9451846c6f" kindref="member">Storage::serializeObj</ref>();</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>sStream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n\tHDD_SPECIF\n\t{\n\t&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\trpm&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_h_d_d_1a67787ee337d12b5cf93e071263ab9867" kindref="member">rpm</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;;\n\t}\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sStream.str();</highlight></codeline>
+<codeline lineno="250"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="251"><highlight class="normal">std::ifstream&amp;<sp/><ref refid="_memory_8cpp_1a12f360ba0d13320dbb5f860216de88db" kindref="member">operator&gt;&gt;</ref>(std::ifstream&amp;<sp/>savefile,<sp/><ref refid="class_h_d_d" kindref="compound">HDD</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!savefile.is_open())</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>savefile.open(</highlight><highlight class="stringliteral">&quot;savefile.txt&quot;</highlight><highlight class="normal">,<sp/>std::ios_base::app);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile<sp/>&gt;&gt;<sp/>(<ref refid="class_storage" kindref="compound">Storage</ref>&amp;)rhs;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>temp;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rpm;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>std::getline(savefile,<sp/>temp,<sp/></highlight><highlight class="charliteral">&apos;:&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile<sp/>&gt;&gt;<sp/>rpm;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>rhs<sp/>=<sp/><ref refid="class_h_d_d" kindref="compound">HDD</ref>(rhs.<ref refid="class_product_1a9cbd896ca6b2d95088be8ad8c3b11e3b" kindref="member">getName</ref>(),<sp/>rhs.<ref refid="class_product_1a3be25f647260d61df6063ef706261c7f" kindref="member">getPrice</ref>(),<sp/>rhs.<ref refid="class_product_1a874a2ad2556c8d82500cce9917d5ed8c" kindref="member">getDescription</ref>(),<sp/>rhs.<ref refid="class_product_1a2f5aeb9d25fcbbcf0f6125351850d4ff" kindref="member">getManufacturer</ref>(),</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rhs.<ref refid="class_storage_1acdb19059f3115eceb8cb420b18658440" kindref="member">getCapacity</ref>(),<sp/>rhs.<ref refid="class_storage_1af6dc4a84e1566ab8103623214eee2671" kindref="member">getSizeType</ref>(),<sp/>rpm);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>savefile.close();</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>savefile;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><ref refid="class_r_a_m" kindref="compound">RAM</ref>*<sp/><ref refid="class_r_a_m_1a2dbd94dada94130817a298b91023e4c9" kindref="member">RAM::clone</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_a_m" kindref="compound">RAM</ref>*<sp/>newram<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_r_a_m_1a25289e9f70eb7de231f869a6032f179b" kindref="member">RAM</ref>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>newram;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><ref refid="class_storage" kindref="compound">Storage</ref>*<sp/><ref refid="class_storage_1af7f626e3a0bc9d46c59ef7dd8f57c6c9" kindref="member">Storage::clone</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_storage" kindref="compound">Storage</ref>*<sp/>s<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_storage_1aa557b155d438649718b658971c097859" kindref="member">Storage</ref>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><ref refid="class_s_s_d" kindref="compound">SSD</ref>*<sp/><ref refid="class_s_s_d_1adfbc00ab863bca1aff44b3ff233b5255" kindref="member">SSD::clone</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_s_s_d" kindref="compound">SSD</ref>*<sp/>s<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_s_s_d_1a8de2e51be89fab50489f4411ff99a4b9" kindref="member">SSD</ref>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><ref refid="class_h_d_d" kindref="compound">HDD</ref>*<sp/><ref refid="class_h_d_d_1a434ff76ba146d2e143f2c6803ca73a67" kindref="member">HDD::clone</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_h_d_d" kindref="compound">HDD</ref>*<sp/>h<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_h_d_d_1a17ac1f17161e721f57c2ce14dfc52485" kindref="member">HDD</ref>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>h;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp"/>
+  </compounddef>
+</doxygen>

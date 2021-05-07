@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__videocard_8cpp" xml:lang="en-US">
+<title>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.cpp File Reference</title>
+<indexterm><primary>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.cpp</primary></indexterm>
+<programlisting>#include &quot;Videocard.h&quot;
+#include &lt;string&gt;
+#include &lt;sstream&gt;
+#include &lt;fstream&gt;
+#include &quot;memtrace.h&quot;
+</programlisting>Include dependency graph for Videocard.cpp:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="_videocard_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>std::ifstream &amp; <link linkend="__videocard_8cpp_1ad0e8a0eda0c7cb847ceadde59995e8e2">operator&gt;&gt;</link> (std::ifstream &amp;savefile, <link linkend="_class_g_p_u">GPU</link> &amp;rhs)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="__videocard_8cpp_1ad0e8a0eda0c7cb847ceadde59995e8e2"/>    <section>
+    <title>operator&gt;&gt;()</title>
+<indexterm><primary>operator&gt;&gt;</primary><secondary>Videocard.cpp</secondary></indexterm>
+<indexterm><primary>Videocard.cpp</primary><secondary>operator&gt;&gt;</secondary></indexterm>
+<para><computeroutput>std::ifstream&amp; operator&gt;&gt; (std::ifstream &amp; savefile, <link linkend="_class_g_p_u">GPU</link> &amp; rhs)</computeroutput></para></section>
+</section>
+</section>

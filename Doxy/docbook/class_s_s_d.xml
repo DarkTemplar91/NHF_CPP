@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_s_s_d" xml:lang="en-US">
+<title>SSD Class Reference</title>
+<indexterm><primary>SSD</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Memory.h&gt;</computeroutput>
+</para>
+Inheritance diagram for SSD:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_s_s_d__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for SSD:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_s_s_d__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_s_s_d_1a8de2e51be89fab50489f4411ff99a4b9">SSD</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_s_s_d_1a29d672d46a008f4067e5707e5da39242">SSD</link> (unsigned int <link linkend="_class_s_s_d_1a17d090f306498b97db010f96be6ef25d">wSpeed</link>, unsigned int <link linkend="_class_s_s_d_1a49fb67fecc3e51532c161260a1852099">rSpeed</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_class_s_s_d_1a351234f073d98a3f7dd4834170ef1166">SSD</link> (std::string <link linkend="_class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8">name</link>, double <link linkend="_class_product_1abb2572df7a832a509944905603ba5e4f">price</link>, std::string <link linkend="_class_product_1ab88a1ecb238a74583a920a65f8cbee9c">dscrpt</link>, std::string <link linkend="_class_product_1af3d21858bb34986f54309b877678daa8">manufacturer</link>, size_t c=1, <link linkend="__memory_8h_1a284499ae529838dbabf4c7a520e99a85">ByteUnit</link> bu=<link linkend="__memory_8h_1a284499ae529838dbabf4c7a520e99a85af9deabc33a5630ffb405bb42d7cff365">gigabyte</link>, unsigned int <link linkend="_class_s_s_d_1a17d090f306498b97db010f96be6ef25d">wSpeed</link>=0, unsigned int <link linkend="_class_s_s_d_1a49fb67fecc3e51532c161260a1852099">rSpeed</link>=0)</para>
+</listitem>
+            <listitem><para><link linkend="_class_s_s_d_1ae5c0ad45299683e1d39e34490c2df5f2">SSD</link> (const <link linkend="_class_s_s_d">SSD</link> &amp;ssd)</para>
+</listitem>
+            <listitem><para>unsigned int <link linkend="_class_s_s_d_1a309d748d1273262845bad668e797ae73">getReadSpeed</link> ()</para>
+</listitem>
+            <listitem><para>unsigned int <link linkend="_class_s_s_d_1a16388ad4698bea556b140e2c7e5a6ba7">getWriteSpeed</link> ()</para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_s_s_d_1a4ab856f2201417d79af96755fe67f13b">getObjType</link> ()</para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_s_s_d_1ac13108d9272a5fecb72f17e675b2d1ed">serializeObj</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_s_s_d">SSD</link> * <link linkend="_class_s_s_d_1adfbc00ab863bca1aff44b3ff233b5255">clone</link> ()</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_s_s_d_1aaaa23a6a0819baf5afc6ab140f728140">operator==</link> (<link linkend="_class_s_s_d">SSD</link> &amp;rhs)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_s_s_d_1a5561ea54e1f8ac3d1d2aad8905d9a869">operator!=</link> (<link linkend="_class_s_s_d">SSD</link> &amp;rhs)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>unsigned int <link linkend="_class_s_s_d_1a17d090f306498b97db010f96be6ef25d">wSpeed</link></para>
+</listitem>
+            <listitem><para>unsigned int <link linkend="_class_s_s_d_1a49fb67fecc3e51532c161260a1852099">rSpeed</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_s_s_d_1a8de2e51be89fab50489f4411ff99a4b9"/>    <section>
+    <title>SSD()<computeroutput>[1/4]</computeroutput></title>
+<indexterm><primary>SSD</primary><secondary>SSD</secondary></indexterm>
+<indexterm><primary>SSD</primary><secondary>SSD</secondary></indexterm>
+<para><computeroutput>SSD::SSD ( )<computeroutput>[inline]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_s_s_d_1a29d672d46a008f4067e5707e5da39242"/>    <section>
+    <title>SSD()<computeroutput>[2/4]</computeroutput></title>
+<indexterm><primary>SSD</primary><secondary>SSD</secondary></indexterm>
+<indexterm><primary>SSD</primary><secondary>SSD</secondary></indexterm>
+<para><computeroutput>SSD::SSD (unsigned int wSpeed, unsigned int rSpeed)</computeroutput></para>    </section><anchor xml:id="_class_s_s_d_1a351234f073d98a3f7dd4834170ef1166"/>    <section>
+    <title>SSD()<computeroutput>[3/4]</computeroutput></title>
+<indexterm><primary>SSD</primary><secondary>SSD</secondary></indexterm>
+<indexterm><primary>SSD</primary><secondary>SSD</secondary></indexterm>
+<para><computeroutput>SSD::SSD (std::string name, double price, std::string dscrpt, std::string manufacturer, size_t c = <computeroutput>1</computeroutput>
+, <link linkend="__memory_8h_1a284499ae529838dbabf4c7a520e99a85">ByteUnit</link> bu = <computeroutput><link linkend="__memory_8h_1a284499ae529838dbabf4c7a520e99a85af9deabc33a5630ffb405bb42d7cff365">gigabyte</link></computeroutput>
+, unsigned int wSpeed = <computeroutput>0</computeroutput>
+, unsigned int rSpeed = <computeroutput>0</computeroutput>
+)</computeroutput></para>    </section><anchor xml:id="_class_s_s_d_1ae5c0ad45299683e1d39e34490c2df5f2"/>    <section>
+    <title>SSD()<computeroutput>[4/4]</computeroutput></title>
+<indexterm><primary>SSD</primary><secondary>SSD</secondary></indexterm>
+<indexterm><primary>SSD</primary><secondary>SSD</secondary></indexterm>
+<para><computeroutput>SSD::SSD (const <link linkend="_class_s_s_d">SSD</link> &amp; ssd)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_s_s_d_1adfbc00ab863bca1aff44b3ff233b5255"/>    <section>
+    <title>clone()</title>
+<indexterm><primary>clone</primary><secondary>SSD</secondary></indexterm>
+<indexterm><primary>SSD</primary><secondary>clone</secondary></indexterm>
+<para><computeroutput><link linkend="_class_s_s_d">SSD</link> * SSD::clone ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented from <link linkend="_class_storage_1af7f626e3a0bc9d46c59ef7dd8f57c6c9">Storage</link>.</para>
+    </section><anchor xml:id="_class_s_s_d_1a4ab856f2201417d79af96755fe67f13b"/>    <section>
+    <title>getObjType()</title>
+<indexterm><primary>getObjType</primary><secondary>SSD</secondary></indexterm>
+<indexterm><primary>SSD</primary><secondary>getObjType</secondary></indexterm>
+<para><computeroutput>std::string SSD::getObjType ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented from <link linkend="_class_storage_1a9c6d68e682a8c329dc0611ce7266f2bc">Storage</link>.</para>
+    </section><anchor xml:id="_class_s_s_d_1a309d748d1273262845bad668e797ae73"/>    <section>
+    <title>getReadSpeed()</title>
+<indexterm><primary>getReadSpeed</primary><secondary>SSD</secondary></indexterm>
+<indexterm><primary>SSD</primary><secondary>getReadSpeed</secondary></indexterm>
+<para><computeroutput>unsigned int SSD::getReadSpeed ( )</computeroutput></para>    </section><anchor xml:id="_class_s_s_d_1a16388ad4698bea556b140e2c7e5a6ba7"/>    <section>
+    <title>getWriteSpeed()</title>
+<indexterm><primary>getWriteSpeed</primary><secondary>SSD</secondary></indexterm>
+<indexterm><primary>SSD</primary><secondary>getWriteSpeed</secondary></indexterm>
+<para><computeroutput>unsigned int SSD::getWriteSpeed ( )</computeroutput></para>    </section><anchor xml:id="_class_s_s_d_1a5561ea54e1f8ac3d1d2aad8905d9a869"/>    <section>
+    <title>operator!=()</title>
+<indexterm><primary>operator!=</primary><secondary>SSD</secondary></indexterm>
+<indexterm><primary>SSD</primary><secondary>operator!=</secondary></indexterm>
+<para><computeroutput>bool SSD::operator!= (<link linkend="_class_s_s_d">SSD</link> &amp; rhs)</computeroutput></para>    </section><anchor xml:id="_class_s_s_d_1aaaa23a6a0819baf5afc6ab140f728140"/>    <section>
+    <title>operator==()</title>
+<indexterm><primary>operator==</primary><secondary>SSD</secondary></indexterm>
+<indexterm><primary>SSD</primary><secondary>operator==</secondary></indexterm>
+<para><computeroutput>bool SSD::operator== (<link linkend="_class_s_s_d">SSD</link> &amp; rhs)</computeroutput></para>    </section><anchor xml:id="_class_s_s_d_1ac13108d9272a5fecb72f17e675b2d1ed"/>    <section>
+    <title>serializeObj()</title>
+<indexterm><primary>serializeObj</primary><secondary>SSD</secondary></indexterm>
+<indexterm><primary>SSD</primary><secondary>serializeObj</secondary></indexterm>
+<para><computeroutput>std::string SSD::serializeObj ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_s_s_d_1a49fb67fecc3e51532c161260a1852099"/>    <section>
+    <title>rSpeed</title>
+<indexterm><primary>rSpeed</primary><secondary>SSD</secondary></indexterm>
+<indexterm><primary>SSD</primary><secondary>rSpeed</secondary></indexterm>
+<para><computeroutput>unsigned int SSD::rSpeed<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_s_s_d_1a17d090f306498b97db010f96be6ef25d"/>    <section>
+    <title>wSpeed</title>
+<indexterm><primary>wSpeed</primary><secondary>SSD</secondary></indexterm>
+<indexterm><primary>SSD</primary><secondary>wSpeed</secondary></indexterm>
+<para><computeroutput>unsigned int SSD::wSpeed<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following files:</para>
+C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/<link linkend="__memory_8h">Memory.h</link>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/<link linkend="__memory_8cpp">Memory.cpp</link></section>
+</section>

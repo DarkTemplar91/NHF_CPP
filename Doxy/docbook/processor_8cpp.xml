@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_processor_8cpp" xml:lang="en-US">
+<title>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp File Reference</title>
+<indexterm><primary>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp</primary></indexterm>
+<programlisting>#include &quot;processor.h&quot;
+#include &quot;products.h&quot;
+#include &lt;string&gt;
+#include &lt;sstream&gt;
+#include &lt;fstream&gt;
+#include &quot;memtrace.h&quot;
+</programlisting>Include dependency graph for processor.cpp:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="processor_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>std::ifstream &amp; <link linkend="_processor_8cpp_1a7b671311d36faa1acd74987a04b16f1f">operator&gt;&gt;</link> (std::ifstream &amp;is, <link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68">socket</link> &amp;s)</para>
+</listitem>
+            <listitem><para>std::ifstream &amp; <link linkend="_processor_8cpp_1a9b99200e1f81123f911d5e581994dddd">operator&gt;&gt;</link> (std::ifstream &amp;savefile, <link linkend="_class_c_p_u">CPU</link> &amp;rhs)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_processor_8cpp_1a7b671311d36faa1acd74987a04b16f1f"/>    <section>
+    <title>operator&gt;&gt;()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator&gt;&gt;</primary><secondary>processor.cpp</secondary></indexterm>
+<indexterm><primary>processor.cpp</primary><secondary>operator&gt;&gt;</secondary></indexterm>
+<para><computeroutput>std::ifstream&amp; operator&gt;&gt; (std::ifstream &amp; is, <link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68">socket</link> &amp; s)</computeroutput></para>    </section><anchor xml:id="_processor_8cpp_1a9b99200e1f81123f911d5e581994dddd"/>    <section>
+    <title>operator&gt;&gt;()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator&gt;&gt;</primary><secondary>processor.cpp</secondary></indexterm>
+<indexterm><primary>processor.cpp</primary><secondary>operator&gt;&gt;</secondary></indexterm>
+<para><computeroutput>std::ifstream&amp; operator&gt;&gt; (std::ifstream &amp; savefile, <link linkend="_class_c_p_u">CPU</link> &amp; rhs)</computeroutput></para></section>
+</section>
+</section>

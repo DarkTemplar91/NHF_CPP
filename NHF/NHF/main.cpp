@@ -13,6 +13,7 @@
 int main() {
 	
 	TEST(Product, Read/Write_file) {
+		std::remove("savefile.txt");
 		Product p1 = Product("PlayStation 5", 500, "Sony", "The newest member of the PlayStation family");
 		std::ofstream savefile;
 		savefile << p1;
@@ -27,6 +28,7 @@ int main() {
 		EXPECT_EQ(p1.getDescription(), p2.getDescription()) << "Leírás hibás!";
 		EXPECT_EQ(p1.getManufacturer(), p2.getManufacturer()) << "Gyártó hibás!";
 		EXPECT_EQ(p1.getPrice(), p1.getPrice());
+		std::remove("savefile.txt");
 
 	}END
 	
@@ -39,6 +41,7 @@ int main() {
 		inp >> c2;
 		EXPECT_EQ(c1.getName(), c2.getName()) << "Hiba az öröklődésnél!";
 		EXPECT_EQ(c1.getCoreCount(), c2.getCoreCount());
+		std::remove("savefile.txt");
 
 	}END
 
@@ -55,10 +58,12 @@ int main() {
 		savefile << r1;
 		RAM r2;
 		inp >> r2;
+		std::remove("savefile.txt");
 		EXPECT_EQ(r1.getlatency(), r2.getlatency());
 		Motherboard m2;
 		savefile << m1;
 		inp >> m2;
+		std::remove("savefile.txt");
 		EXPECT_EQ(m1.getPorts(), m2.getPorts());
 		GPU g2;
 		savefile << g1;
@@ -77,7 +82,7 @@ int main() {
 		EXPECT_EQ(c.getSize(), (size_t)2);
 		
 	}END
-
+	
 	TEST(CATALOGUE_H, .search) {
 		Catalogue c = Catalogue();
 		c.Add(new GPU("ASUS Strix RTX 3090 OC", 1200, "ASUS", "Extremely powerful gaming GPU", 2, 2, 23, 42421, 45123, 300));
@@ -107,5 +112,15 @@ int main() {
 			fs += (int)x.getPrice();
 		}
 		EXPECT_EQ(sum, fs);
+	}END
+	
+	TEST(CATALOGUE_H, save / load) {
+		Catalogue cSave = Catalogue();
+		cSave.Add(new Product("Prod1", 100, "-"));
+		cSave.Add(new GPU("GPU1", 300, "BrandName", "-", 2, 2, 3000, 7000, 12, 300));
+		cSave.Add(new HDD("HDD1", 60, "hard drive", "Kingston"));
+		cSave.Add(new CPU("Ryzen 9 5900x", 500, "cpu", "AMD", "Zen 3", 200, socket::AMD_AM4, 3600, 16, 32, 20, false));
+		cSave.Save("stock.txt");
+
 	}END
 }

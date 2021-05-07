@@ -1,0 +1,369 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_product" xml:lang="en-US">
+<title>Product Class Reference</title>
+<indexterm><primary>Product</primary></indexterm>
+<para>
+<computeroutput>#include &lt;products.h&gt;</computeroutput>
+</para>
+Inheritance diagram for Product:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_product__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Product:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_product__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_product_1a102f72142feba478ffe51c77a170537e">Product</link> (const <link linkend="_class_product">Product</link> &amp;p)</para>
+
+<para>The type of the object. Used when reading/writing from/to file. </para>
+</listitem>
+            <listitem><para><link linkend="_class_product_1accbe232b71fcb8641b7c5021fa4f6e2f">Product</link> (std::string <link linkend="_class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8">name</link>, double <link linkend="_class_product_1abb2572df7a832a509944905603ba5e4f">price</link>, std::string manuf, std::string descript=&quot;There is no description for this item!&quot;, size_t inventory=1)</para>
+</listitem>
+            <listitem><para><link linkend="_class_product_1a847c1d85e67ce387166a597579a55135">Product</link> ()</para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_product_1a2f5aeb9d25fcbbcf0f6125351850d4ff">getManufacturer</link> () const</para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_product_1a9cbd896ca6b2d95088be8ad8c3b11e3b">getName</link> () const</para>
+
+<para>MAnufacturer getter. </para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_product_1a874a2ad2556c8d82500cce9917d5ed8c">getDescription</link> () const</para>
+
+<para>Name getter. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_product_1a3be25f647260d61df6063ef706261c7f">getPrice</link> () const</para>
+
+<para>Description getter. </para>
+</listitem>
+            <listitem><para>size_t <link linkend="_class_product_1a9279a6d296d5b8aafa0143bda648c3da">getAmount</link> () const</para>
+
+<para>Price getter. </para>
+</listitem>
+            <listitem><para><link linkend="_products_8h_1a6f54b54b1983a312948d8ead9f19b9af">obj_t</link> <link linkend="_class_product_1a0dc7c2163bf9c07e6283c2cbcaef58d3">getObj_t</link> () const</para>
+
+<para>Returns tha available stock. </para>
+</listitem>
+            <listitem><para>virtual std::string <link linkend="_class_product_1a60e8ab009f51c39442257e96409144de">getObjType</link> () const</para>
+
+<para>Returns the obj_t enum type. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_product_1a1f49f191dab6643d82aee0490bb96e7c">setName</link> (std::string s)</para>
+
+<para>Returns a string with the object type for serialization. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_product_1a08d9ddfb4db62491607f14ec9fba0d77">setDescription</link> (std::string s)</para>
+
+<para>Change name. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_product_1aeeafda76687dbbd8b2f086671c17461d">setManuf</link> (std::string s)</para>
+
+<para>Change description. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_product_1a8ade25d68358bd4cb5b9f7c34fc53b44">setPrice</link> (double p)</para>
+
+<para>Change Manufacturer. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_product_1ae216152e43f64a82294c2c583396d13f">increaseStock</link> (size_t i=1)</para>
+
+<para>Change price. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_product_1a948738c4cb8e65f1f54623001b8c3897">decreaseStock</link> (size_t i=1)</para>
+
+<para>Decreases the stock by i. </para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_product_1a82a40e1860ffe2c88ea08084037a6c42">print</link> ()</para>
+
+<para>Prints out basic data of a product. </para>
+</listitem>
+            <listitem><para>virtual std::string <link linkend="_class_product_1a749f163f9319f2cf6e9e0620d7133f0b">serializeObj</link> () const</para>
+
+<para>Serializes object. </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_class_product">Product</link> * <link linkend="_class_product_1a2cc3f5ef8abe14801e185734cfcc3b57">clone</link> ()</para>
+</listitem>
+            <listitem><para>virtual bool <link linkend="_class_product_1a8b72d673cf7d89fb2e375a080af6263d">operator==</link> (<link linkend="_class_product">Product</link> &amp;rhs)</para>
+</listitem>
+            <listitem><para>virtual bool <link linkend="_class_product_1af83d5faec51f3cf9c45d68d103a04114">operator!=</link> (<link linkend="_class_product">Product</link> &amp;rhs)</para>
+
+<para>Virtual Overloaded == operator for comparison (used when adding to catalogue) </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_class_product_1a18f26095e25405579968c6ede367484f">~Product</link> ()</para>
+
+<para>Virtual Overloaded != operator (used when adding to catalogue) </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_products_8h_1a6f54b54b1983a312948d8ead9f19b9af">obj_t</link> <link linkend="_class_product_1afa7216e3fe55009b1862453041a34374">t</link></para>
+
+<para>The amount of <link linkend="_class_product">Product</link> in stock. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>std::string <link linkend="_class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8">name</link></para>
+</listitem>
+            <listitem><para>double <link linkend="_class_product_1abb2572df7a832a509944905603ba5e4f">price</link></para>
+
+<para>Name of the product. </para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_product_1ab88a1ecb238a74583a920a65f8cbee9c">dscrpt</link></para>
+
+<para>Price of the product. </para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_product_1af3d21858bb34986f54309b877678daa8">manufacturer</link></para>
+
+<para>Description. </para>
+</listitem>
+            <listitem><para>size_t <link linkend="_class_product_1a831f4ac197a88d2c2b7260765714c0d4">inv</link></para>
+
+<para>The manufacturer. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_product_1a102f72142feba478ffe51c77a170537e"/>    <section>
+    <title>Product()<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>Product</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>Product</secondary></indexterm>
+<para><computeroutput>Product::Product (const <link linkend="_class_product">Product</link> &amp; p)</computeroutput></para><para>
+
+<para>The type of the object. Used when reading/writing from/to file. </para>
+</para>
+
+<para>Multiple constructors with different parameters</para>
+    </section><anchor xml:id="_class_product_1accbe232b71fcb8641b7c5021fa4f6e2f"/>    <section>
+    <title>Product()<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>Product</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>Product</secondary></indexterm>
+<para><computeroutput>Product::Product (std::string name, double price, std::string manuf, std::string descript = <computeroutput>&quot;There is no description for this item!&quot;</computeroutput>
+, size_t inventory = <computeroutput>1</computeroutput>
+)</computeroutput></para>    </section><anchor xml:id="_class_product_1a847c1d85e67ce387166a597579a55135"/>    <section>
+    <title>Product()<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>Product</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>Product</secondary></indexterm>
+<para><computeroutput>Product::Product ( )</computeroutput></para>    </section><anchor xml:id="_class_product_1a18f26095e25405579968c6ede367484f"/>    <section>
+    <title>~Product()</title>
+<indexterm><primary>~Product</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>~Product</secondary></indexterm>
+<para><computeroutput>virtual Product::~Product ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Virtual Overloaded != operator (used when adding to catalogue) </para>
+</para>
+
+<para>Virtal destructor </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_product_1a2cc3f5ef8abe14801e185734cfcc3b57"/>    <section>
+    <title>clone()</title>
+<indexterm><primary>clone</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>clone</secondary></indexterm>
+<para><computeroutput><link linkend="_class_product">Product</link> * Product::clone ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented in <link linkend="_class_g_p_u_1a13535142ba8cacba30f23f6bf8ed5200">GPU</link>, <link linkend="_class_c_p_u_1ab4f1ec2a356344187dc6598404012df9">CPU</link>, <link linkend="_class_motherboard_1af3ad07ad9398abe1bdd0315ec9acb7e3">Motherboard</link>, <link linkend="_class_s_s_d_1adfbc00ab863bca1aff44b3ff233b5255">SSD</link>, <link linkend="_class_h_d_d_1a434ff76ba146d2e143f2c6803ca73a67">HDD</link>, <link linkend="_class_r_a_m_1a2dbd94dada94130817a298b91023e4c9">RAM</link>, <link linkend="_class_storage_1af7f626e3a0bc9d46c59ef7dd8f57c6c9">Storage</link>, and <link linkend="_class_p_c_1aa4f5779cf5f9a4ec7806da64a09b8cb3">PC</link>.</para>
+    </section><anchor xml:id="_class_product_1a948738c4cb8e65f1f54623001b8c3897"/>    <section>
+    <title>decreaseStock()</title>
+<indexterm><primary>decreaseStock</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>decreaseStock</secondary></indexterm>
+<para><computeroutput>void Product::decreaseStock (size_t i = <computeroutput>1</computeroutput>
+)</computeroutput></para><para>
+
+<para>Decreases the stock by i. </para>
+</para>
+    </section><anchor xml:id="_class_product_1a9279a6d296d5b8aafa0143bda648c3da"/>    <section>
+    <title>getAmount()</title>
+<indexterm><primary>getAmount</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>getAmount</secondary></indexterm>
+<para><computeroutput>size_t Product::getAmount ( ) const</computeroutput></para><para>
+
+<para>Price getter. </para>
+</para>
+    </section><anchor xml:id="_class_product_1a874a2ad2556c8d82500cce9917d5ed8c"/>    <section>
+    <title>getDescription()</title>
+<indexterm><primary>getDescription</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>getDescription</secondary></indexterm>
+<para><computeroutput>std::string Product::getDescription ( ) const</computeroutput></para><para>
+
+<para>Name getter. </para>
+</para>
+    </section><anchor xml:id="_class_product_1a2f5aeb9d25fcbbcf0f6125351850d4ff"/>    <section>
+    <title>getManufacturer()</title>
+<indexterm><primary>getManufacturer</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>getManufacturer</secondary></indexterm>
+<para><computeroutput>std::string Product::getManufacturer ( ) const</computeroutput></para>    </section><anchor xml:id="_class_product_1a9cbd896ca6b2d95088be8ad8c3b11e3b"/>    <section>
+    <title>getName()</title>
+<indexterm><primary>getName</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>getName</secondary></indexterm>
+<para><computeroutput>std::string Product::getName ( ) const</computeroutput></para><para>
+
+<para>MAnufacturer getter. </para>
+</para>
+    </section><anchor xml:id="_class_product_1a0dc7c2163bf9c07e6283c2cbcaef58d3"/>    <section>
+    <title>getObj_t()</title>
+<indexterm><primary>getObj_t</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>getObj_t</secondary></indexterm>
+<para><computeroutput><link linkend="_products_8h_1a6f54b54b1983a312948d8ead9f19b9af">obj_t</link> Product::getObj_t ( ) const</computeroutput></para><para>
+
+<para>Returns tha available stock. </para>
+</para>
+    </section><anchor xml:id="_class_product_1a60e8ab009f51c39442257e96409144de"/>    <section>
+    <title>getObjType()</title>
+<indexterm><primary>getObjType</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>getObjType</secondary></indexterm>
+<para><computeroutput>std::string Product::getObjType ( ) const<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Returns the obj_t enum type. </para>
+</para>
+    </section><anchor xml:id="_class_product_1a3be25f647260d61df6063ef706261c7f"/>    <section>
+    <title>getPrice()</title>
+<indexterm><primary>getPrice</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>getPrice</secondary></indexterm>
+<para><computeroutput>double Product::getPrice ( ) const</computeroutput></para><para>
+
+<para>Description getter. </para>
+</para>
+    </section><anchor xml:id="_class_product_1ae216152e43f64a82294c2c583396d13f"/>    <section>
+    <title>increaseStock()</title>
+<indexterm><primary>increaseStock</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>increaseStock</secondary></indexterm>
+<para><computeroutput>void Product::increaseStock (size_t i = <computeroutput>1</computeroutput>
+)</computeroutput></para><para>
+
+<para>Change price. </para>
+</para>
+
+<para>Increases the stock by i </para>
+    </section><anchor xml:id="_class_product_1af83d5faec51f3cf9c45d68d103a04114"/>    <section>
+    <title>operator!=()</title>
+<indexterm><primary>operator!=</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>operator!=</secondary></indexterm>
+<para><computeroutput>bool Product::operator!= (<link linkend="_class_product">Product</link> &amp; rhs)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Virtual Overloaded == operator for comparison (used when adding to catalogue) </para>
+</para>
+    </section><anchor xml:id="_class_product_1a8b72d673cf7d89fb2e375a080af6263d"/>    <section>
+    <title>operator==()</title>
+<indexterm><primary>operator==</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>operator==</secondary></indexterm>
+<para><computeroutput>bool Product::operator== (<link linkend="_class_product">Product</link> &amp; rhs)<computeroutput>[virtual]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_product_1a82a40e1860ffe2c88ea08084037a6c42"/>    <section>
+    <title>print()</title>
+<indexterm><primary>print</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>print</secondary></indexterm>
+<para><computeroutput>void Product::print ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Prints out basic data of a product. </para>
+</para>
+<para>
+Reimplemented in <link linkend="_class_c_p_u_1aa2af36b3447c4e7b4e1f25f699a06824">CPU</link>.</para>
+    </section><anchor xml:id="_class_product_1a749f163f9319f2cf6e9e0620d7133f0b"/>    <section>
+    <title>serializeObj()</title>
+<indexterm><primary>serializeObj</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>serializeObj</secondary></indexterm>
+<para><computeroutput>std::string Product::serializeObj ( ) const<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Serializes object. </para>
+</para>
+    </section><anchor xml:id="_class_product_1a08d9ddfb4db62491607f14ec9fba0d77"/>    <section>
+    <title>setDescription()</title>
+<indexterm><primary>setDescription</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>setDescription</secondary></indexterm>
+<para><computeroutput>void Product::setDescription (std::string s)</computeroutput></para><para>
+
+<para>Change name. </para>
+</para>
+    </section><anchor xml:id="_class_product_1aeeafda76687dbbd8b2f086671c17461d"/>    <section>
+    <title>setManuf()</title>
+<indexterm><primary>setManuf</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>setManuf</secondary></indexterm>
+<para><computeroutput>void Product::setManuf (std::string s)</computeroutput></para><para>
+
+<para>Change description. </para>
+</para>
+    </section><anchor xml:id="_class_product_1a1f49f191dab6643d82aee0490bb96e7c"/>    <section>
+    <title>setName()</title>
+<indexterm><primary>setName</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>setName</secondary></indexterm>
+<para><computeroutput>void Product::setName (std::string s)</computeroutput></para><para>
+
+<para>Returns a string with the object type for serialization. </para>
+</para>
+    </section><anchor xml:id="_class_product_1a8ade25d68358bd4cb5b9f7c34fc53b44"/>    <section>
+    <title>setPrice()</title>
+<indexterm><primary>setPrice</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>setPrice</secondary></indexterm>
+<para><computeroutput>void Product::setPrice (double p)</computeroutput></para><para>
+
+<para>Change Manufacturer. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_product_1ab88a1ecb238a74583a920a65f8cbee9c"/>    <section>
+    <title>dscrpt</title>
+<indexterm><primary>dscrpt</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>dscrpt</secondary></indexterm>
+<para><computeroutput>std::string Product::dscrpt<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Price of the product. </para>
+</para>
+    </section><anchor xml:id="_class_product_1a831f4ac197a88d2c2b7260765714c0d4"/>    <section>
+    <title>inv</title>
+<indexterm><primary>inv</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>inv</secondary></indexterm>
+<para><computeroutput>size_t Product::inv<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>The manufacturer. </para>
+</para>
+    </section><anchor xml:id="_class_product_1af3d21858bb34986f54309b877678daa8"/>    <section>
+    <title>manufacturer</title>
+<indexterm><primary>manufacturer</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>manufacturer</secondary></indexterm>
+<para><computeroutput>std::string Product::manufacturer<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Description. </para>
+</para>
+    </section><anchor xml:id="_class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8"/>    <section>
+    <title>name</title>
+<indexterm><primary>name</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>name</secondary></indexterm>
+<para><computeroutput>std::string Product::name<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_product_1abb2572df7a832a509944905603ba5e4f"/>    <section>
+    <title>price</title>
+<indexterm><primary>price</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>price</secondary></indexterm>
+<para><computeroutput>double Product::price<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Name of the product. </para>
+</para>
+    </section><anchor xml:id="_class_product_1afa7216e3fe55009b1862453041a34374"/>    <section>
+    <title>t</title>
+<indexterm><primary>t</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>t</secondary></indexterm>
+<para><computeroutput><link linkend="_products_8h_1a6f54b54b1983a312948d8ead9f19b9af">obj_t</link> Product::t<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+
+<para>The amount of <link linkend="_class_product">Product</link> in stock. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/<link linkend="_products_8h">products.h</link>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/<link linkend="_products_8cpp">products.cpp</link></section>
+</section>

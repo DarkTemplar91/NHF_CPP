@@ -7,18 +7,26 @@
 
 std::string CPU::serializeObj(){
 	std::ostringstream sStream;
-	sStream << "\t"<<this->Product::serializeObj();
+	sStream << "\t"<<this->Product::serializeObj();	///Calls base class's serialize fucntion
 	sStream << "\n\tCPU_SPECIF\n\t{\n\t" << "\tGenName:" << genName << ";tdp:" << tdp << ";SocketType:" << socketType << ";base:" << baseClock <<
-		";core:" << coreCount << ";threads:" << threadCount << ";cache:" << L2_cache << ";ivga:" << iVGA << ";\n\t}";
+		";core:" << coreCount << ";threads:" << threadCount << ";cache:" << L2_cache << ";ivga:" << iVGA << ";\n\t}\n";
 	return sStream.str();
 }
 CPU::CPU(std::string name, int tdp, socket type, unsigned int clock, unsigned int core, unsigned int thread, double c, bool vga) :Product(), genName(name), tdp(tdp),
-socketType(type), baseClock(clock), coreCount(core), threadCount(thread), L2_cache(c), iVGA(vga) {}
+socketType(type), baseClock(clock), coreCount(core), threadCount(thread), L2_cache(c), iVGA(vga) {
+	t = obj_t::CPU;
+}
 CPU::CPU(std::string pName, double price, std::string manuf, std::string descript, std::string name, int tdp,
 	socket type, unsigned int clock, unsigned int core, unsigned int thread, double c, bool vga)
 	:Product(pName, price, manuf, descript),
 	genName(name), tdp(tdp),
-	socketType(type), baseClock(clock), coreCount(core), threadCount(thread), L2_cache(c), iVGA(vga) {}
+	socketType(type), baseClock(clock), coreCount(core), threadCount(thread), L2_cache(c), iVGA(vga) {
+	t = obj_t::CPU;
+}
+CPU::CPU(const CPU& c):Product(c), genName(c.genName), tdp(c.tdp), socketType(c.socketType), baseClock(c.baseClock),
+coreCount(c.coreCount), threadCount(c.threadCount), L2_cache(c.L2_cache), iVGA(c.iVGA) {
+	t = obj_t::CPU;
+}
 
 std::string CPU::getGenName() { return genName; }
 int CPU::getTDP() { return tdp; }
@@ -39,7 +47,7 @@ std::ifstream& operator>>(std::ifstream& is, socket& s) {
 //Reads the object from file
 std::ifstream& operator>>(std::ifstream& savefile, CPU& rhs) {
 	if (!savefile.is_open())
-		savefile.open("savefile.txt");
+		savefile.open("savefile.txt", std::ios_base::app);
 	savefile >> (Product&)rhs;
 	//CPU specif
 	std::string genName;
@@ -73,7 +81,7 @@ std::ifstream& operator>>(std::ifstream& savefile, CPU& rhs) {
 }
 //Prints the basic properties of the object
 void CPU::print() {
-	//TODO
+	std::cout << serializeObj();
 }
 
 
@@ -97,16 +105,7 @@ std::string CPU::getStringSocket() {
 		break;
 	}
 }
-CPU::CPU(const CPU& c) :Product(c) {
-	this->baseClock = c.baseClock;
-	this->coreCount = c.coreCount;
-	this->genName = c.genName;
-	this->iVGA = c.iVGA;
-	this->L2_cache = c.L2_cache;
-	this->socketType = c.socketType;
-	this->tdp = c.tdp;
-	this->threadCount = c.threadCount;
-}
+
 CPU* CPU::clone() {
 
 	CPU* p = new CPU(*this);

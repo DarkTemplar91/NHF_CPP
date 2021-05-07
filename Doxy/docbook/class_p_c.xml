@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_p_c" xml:lang="en-US">
+<title>PC Class Reference</title>
+<indexterm><primary>PC</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Computer.h&gt;</computeroutput>
+</para>
+Inheritance diagram for PC:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_p_c__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for PC:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_p_c__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_p_c_1a213092addb3a1d89b761f780a055f0a3">PC</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_p_c_1ab76d67ed4e2548fdf49b8c7df9c88c46">PC</link> (const <link linkend="_class_p_c">PC</link> &amp;pc)</para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_p_c_1a78b1592a015aa0213ad5ee441daa4dc5">getObjType</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_p_c">PC</link> * <link linkend="_class_p_c_1aa4f5779cf5f9a4ec7806da64a09b8cb3">clone</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_g_p_u">GPU</link> <link linkend="_class_p_c_1a6494081edf14e9c83ee0efa460e5e291">gpu</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_c_p_u">CPU</link> <link linkend="_class_p_c_1aea5e38e403dd8ab8886f5fe3635848c0">cpu</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_motherboard">Motherboard</link> <link linkend="_class_p_c_1a1af1f6ded64f3db1242ed1f472521466">board</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_product">Product</link> <link linkend="_class_p_c_1a69788ef661daba11ea736264beaa5990">pcCase</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_product">Product</link> <link linkend="_class_p_c_1ade767f098d19e2eb30abef9fc1f7e6c4">psu</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_storage">Storage</link> * <link linkend="_class_p_c_1a416bf67d1a321773a55c2c0acd4c761a">pcStorage</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_r_a_m">RAM</link> <link linkend="_class_p_c_1a6f824a50b70b8f8660a1ecae43f01818">ramslots</link> [4]</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_p_c_1a213092addb3a1d89b761f780a055f0a3"/>    <section>
+    <title>PC()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>PC</primary><secondary>PC</secondary></indexterm>
+<indexterm><primary>PC</primary><secondary>PC</secondary></indexterm>
+<para><computeroutput>PC::PC ( )</computeroutput></para>    </section><anchor xml:id="_class_p_c_1ab76d67ed4e2548fdf49b8c7df9c88c46"/>    <section>
+    <title>PC()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>PC</primary><secondary>PC</secondary></indexterm>
+<indexterm><primary>PC</primary><secondary>PC</secondary></indexterm>
+<para><computeroutput>PC::PC (const <link linkend="_class_p_c">PC</link> &amp; pc)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_p_c_1aa4f5779cf5f9a4ec7806da64a09b8cb3"/>    <section>
+    <title>clone()</title>
+<indexterm><primary>clone</primary><secondary>PC</secondary></indexterm>
+<indexterm><primary>PC</primary><secondary>clone</secondary></indexterm>
+<para><computeroutput><link linkend="_class_p_c">PC</link> * PC::clone ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented from <link linkend="_class_product_1a2cc3f5ef8abe14801e185734cfcc3b57">Product</link>.</para>
+    </section><anchor xml:id="_class_p_c_1a78b1592a015aa0213ad5ee441daa4dc5"/>    <section>
+    <title>getObjType()</title>
+<indexterm><primary>getObjType</primary><secondary>PC</secondary></indexterm>
+<indexterm><primary>PC</primary><secondary>getObjType</secondary></indexterm>
+<para><computeroutput>std::string PC::getObjType ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_p_c_1a1af1f6ded64f3db1242ed1f472521466"/>    <section>
+    <title>board</title>
+<indexterm><primary>board</primary><secondary>PC</secondary></indexterm>
+<indexterm><primary>PC</primary><secondary>board</secondary></indexterm>
+<para><computeroutput><link linkend="_class_motherboard">Motherboard</link> PC::board<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_p_c_1aea5e38e403dd8ab8886f5fe3635848c0"/>    <section>
+    <title>cpu</title>
+<indexterm><primary>cpu</primary><secondary>PC</secondary></indexterm>
+<indexterm><primary>PC</primary><secondary>cpu</secondary></indexterm>
+<para><computeroutput><link linkend="_class_c_p_u">CPU</link> PC::cpu<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_p_c_1a6494081edf14e9c83ee0efa460e5e291"/>    <section>
+    <title>gpu</title>
+<indexterm><primary>gpu</primary><secondary>PC</secondary></indexterm>
+<indexterm><primary>PC</primary><secondary>gpu</secondary></indexterm>
+<para><computeroutput><link linkend="_class_g_p_u">GPU</link> PC::gpu<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_p_c_1a69788ef661daba11ea736264beaa5990"/>    <section>
+    <title>pcCase</title>
+<indexterm><primary>pcCase</primary><secondary>PC</secondary></indexterm>
+<indexterm><primary>PC</primary><secondary>pcCase</secondary></indexterm>
+<para><computeroutput><link linkend="_class_product">Product</link> PC::pcCase<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_p_c_1a416bf67d1a321773a55c2c0acd4c761a"/>    <section>
+    <title>pcStorage</title>
+<indexterm><primary>pcStorage</primary><secondary>PC</secondary></indexterm>
+<indexterm><primary>PC</primary><secondary>pcStorage</secondary></indexterm>
+<para><computeroutput><link linkend="_class_storage">Storage</link>* PC::pcStorage<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_p_c_1ade767f098d19e2eb30abef9fc1f7e6c4"/>    <section>
+    <title>psu</title>
+<indexterm><primary>psu</primary><secondary>PC</secondary></indexterm>
+<indexterm><primary>PC</primary><secondary>psu</secondary></indexterm>
+<para><computeroutput><link linkend="_class_product">Product</link> PC::psu<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_p_c_1a6f824a50b70b8f8660a1ecae43f01818"/>    <section>
+    <title>ramslots</title>
+<indexterm><primary>ramslots</primary><secondary>PC</secondary></indexterm>
+<indexterm><primary>PC</primary><secondary>ramslots</secondary></indexterm>
+<para><computeroutput><link linkend="_class_r_a_m">RAM</link> PC::ramslots[4]<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following files:</para>
+C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/<link linkend="__computer_8h">Computer.h</link>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/<link linkend="__computer_8cpp">Computer.cpp</link></section>
+</section>

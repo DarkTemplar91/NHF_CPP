@@ -6,11 +6,21 @@
 
 
 Motherboard::Motherboard(std::string chip, socket s, int maxRam, int maxFreq, int usbPorts, int sata, int pcie) :Product(),
-chipset(chip), socketType(s), maxRAM(maxRam), maxRFreq(maxFreq), usbPorts(usbPorts), sata(sata), pcie(pcie) {}
+chipset(chip), socketType(s), maxRAM(maxRam), maxRFreq(maxFreq), usbPorts(usbPorts), sata(sata), pcie(pcie) {
+	t = obj_t::MB;
+}
 Motherboard::Motherboard(std::string name, double price, std::string manuf, std::string descript,
 	std::string chip, socket s, int maxRam, int maxFreq, int usbPorts, int sata, int pcie)
 	:Product(name, price, manuf, descript),
-	chipset(chip), socketType(s), maxRAM(maxRam), maxRFreq(maxFreq), usbPorts(usbPorts), sata(sata), pcie(pcie) {}
+	chipset(chip), socketType(s), maxRAM(maxRam), maxRFreq(maxFreq), usbPorts(usbPorts), sata(sata), pcie(pcie) {
+	t = obj_t::MB;
+}
+Motherboard::Motherboard(const Motherboard& m):Product(m), chipset(m.chipset),socketType(m.socketType), maxRAM(m.maxRAM),
+maxRFreq(m.maxRFreq), usbPorts(m.usbPorts), sata(m.sata), pcie(m.pcie) {
+	t = obj_t::MB;
+}
+
+
 std::string Motherboard::getChip() { return chipset; }
 socket Motherboard::getSocket() { return socketType; }
 int Motherboard::getRAM() { return maxRAM; }
@@ -21,18 +31,19 @@ std::string Motherboard::getObjType() {
 	return "MB_OBJ";
 }
 
+
 std::string Motherboard::serializeObj() {
 	std::ostringstream sStream;
 	sStream << "\t" << this->Product::serializeObj();
 	sStream << "\n\tMB_SPECIF\n\t{\n\t" << "chipset:" << chipset << ";socket:" << socketType << ";maxRam:" << maxRAM << ";maxFreq:" << maxRFreq
-		<< ";usb:"<<usbPorts<<";sata:"<<sata<<";pcie:"<<pcie<<";\n\t}";
+		<< ";usb:"<<usbPorts<<";sata:"<<sata<<";pcie:"<<pcie<<";\n\t}\n";
 	return sStream.str();
 }
 
 std::ifstream& operator>>(std::ifstream& savefile, Motherboard& rhs) {
 	if (!savefile.is_open())
 	{
-		savefile.open("savefile.txt");
+		savefile.open("savefile.txt", std::ios_base::app);
 	}
 	savefile >> (Product&)rhs;
 	std::string chipset;
@@ -62,16 +73,7 @@ std::ifstream& operator>>(std::ifstream& savefile, Motherboard& rhs) {
 	savefile.close();
 	return savefile;
 }
-Motherboard::Motherboard(const Motherboard& m) :Product(m) {
-	this->chipset = m.chipset;
-	this->maxRAM = m.maxRAM;
-	this->maxRFreq = m.maxRFreq;
-	this->pcie = m.pcie;
-	this->usbPorts = m.usbPorts;
-	this->sata = m.sata;
-	this->socketType = m.socketType;
-	
-}
+
 Motherboard* Motherboard::clone() {
 	Motherboard* m = new Motherboard(*this);
 	return m;

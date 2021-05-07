@@ -11,14 +11,14 @@
 enum socket{AMD_AM4,INTEL_1151,INTEL_1151V2,INTEL_1200};
 
 class CPU : public Product {
-	std::string genName;
-	int tdp;
-	socket socketType; ///Enum for socket type
-	unsigned int baseClock; ///Base clock frequency given in Mhz
-	unsigned int coreCount; ///Number of cores
-	unsigned int threadCount; ///Number of threads
-	double L2_cache; ///size of cache in MB
-	bool iVGA = false;
+	std::string genName;		///Name of the cpu generation
+	int tdp;					///Total drawn power
+	socket socketType;			///Enum for socket type
+	unsigned int baseClock;		///Base clock frequency given in Mhz
+	unsigned int coreCount;		///Number of cores
+	unsigned int threadCount;	///Number of threads
+	double L2_cache;			///size of cache in MB
+	bool iVGA = false;			///Included igpu
 public:
 	CPU() {}
 	CPU(std::string name, int tdp, socket type, unsigned int clock, unsigned int core, unsigned int thread, double c, bool vga);
@@ -43,6 +43,6 @@ public:
 	
 
 };
-std::ifstream& operator>>(std::ifstream& is, socket& s);
+std::ifstream& operator>>(std::ifstream& is, socket& s);  ///overloaded enum for socket
 std::ifstream& operator>>(std::ifstream& savefile, CPU& rhs);
 #endif

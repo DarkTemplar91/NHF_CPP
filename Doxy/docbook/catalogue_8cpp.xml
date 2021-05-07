@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_catalogue_8cpp" xml:lang="en-US">
+<title>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp File Reference</title>
+<indexterm><primary>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp</primary></indexterm>
+<programlisting>#include &quot;catalogue.h&quot;
+#include &quot;memtrace.h&quot;
+#include &lt;string&gt;
+</programlisting>Include dependency graph for catalogue.cpp:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="catalogue_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_catalogue_8cpp_1aaf8a5ecd48b352ef42d27388de9f4f00">insFind</link> (const std::string &amp;sourceStr, const std::string &amp;subStr)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_catalogue_8cpp_1aaf8a5ecd48b352ef42d27388de9f4f00"/>    <section>
+    <title>insFind()</title>
+<indexterm><primary>insFind</primary><secondary>catalogue.cpp</secondary></indexterm>
+<indexterm><primary>catalogue.cpp</primary><secondary>insFind</secondary></indexterm>
+<para><computeroutput>bool insFind (const std::string &amp; sourceStr, const std::string &amp; subStr)</computeroutput></para></section>
+</section>
+</section>

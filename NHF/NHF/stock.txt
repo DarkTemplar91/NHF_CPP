@@ -1,0 +1,36 @@
+PRODUCT_OBJ
+{
+name:Prod1;price:100;description:There is no description for this item!;manufacturer:-;inventory:1;
+}
+GPU_OBJ
+{
+	name:GPU1;price:300;description:-;manufacturer:BrandName;inventory:1;
+	GPU_SPECIF
+	{
+	hdmi:2;display:2;gpuClock:3000;memoryClock:7000;vram:12;tdp:300;
+	}
+
+}
+HDD_OBJ
+{
+		name:HDD1;price:60;description:hard drive;manufacturer:Kingston;inventory:1;
+	Storage_SPECIF
+	{
+		Capacity:1;notation4;
+	}
+
+	HDD_SPECIF
+	{
+		rpm7200;
+	}
+
+}
+CPU_OBJ
+{
+	name:Ryzen 9 5900x;price:500;description:AMD;manufacturer:cpu;inventory:1;
+	CPU_SPECIF
+	{
+		GenName:Zen 3;tdp:200;SocketType:0;base:3600;core:16;threads:32;cache:20;ivga:0;
+	}
+
+}

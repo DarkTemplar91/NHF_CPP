@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_catalogue" xml:lang="en-US">
+<title>Catalogue Class Reference</title>
+<indexterm><primary>Catalogue</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catalogue.h&gt;</computeroutput>
+</para>
+Collaboration diagram for Catalogue:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_catalogue__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_catalogue_1_1_iterator">Iterator</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_catalogue_1a16755e25621142e6c29f3c2574c086ba">Add</link> (<link linkend="_class_product">Product</link> *p)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_catalogue_1aa1cd6a60d22d6bd5cb904c6550668e29">Remove</link> (<link linkend="_class_product">Product</link> *p)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_catalogue_1ae8859b3893a47bb9707f7e5a9e2a4d79">Clear</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_catalogue_1afb2d18cb7a33814c40a526fbb4988018">Save</link> (const std::string path) const</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_catalogue_1a0055df0cb8fbe295bf93df7c29be96e5">Load</link> (const std::string path) const</para>
+</listitem>
+            <listitem><para><link linkend="_class_product">Product</link> ** <link linkend="_class_catalogue_1a36939b9a4416c0fef711440b5b17161d">Search</link> (std::string criteria)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_catalogue_1a15c28294d8e38ca67c105e4fa971835b">OrderBy</link> (<link linkend="_catalogue_8h_1ac13fc3178aad8dbfd71419053e15691d">OrderReq</link> r, bool rev)</para>
+</listitem>
+            <listitem><para>size_t <link linkend="_class_catalogue_1a68cc0da89a96d535a3ea7aeabc2ed944">getSize</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_product">Product</link> * <link linkend="_class_catalogue_1af9ebacaaef724e5c04c334322f81a83b">operator[]</link> (size_t idx)</para>
+</listitem>
+            <listitem><para><link linkend="_class_catalogue_1a406ca1384645f90d84076fa8b3f4b3f2">Catalogue</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_catalogue_1af313b7234d8995e181ddf1bb95d1074c">Catalogue</link> (<link linkend="_class_product">Product</link> **<link linkend="_class_catalogue_1abab6ba1d196fbd84bb273c1b4199ccb2">list</link>, size_t s)</para>
+</listitem>
+            <listitem><para><link linkend="_class_catalogue_1a023fd8d70a58f76d2bbd6ef1e3ef0e9e">~Catalogue</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_catalogue_1_1_iterator">Iterator</link> <link linkend="_class_catalogue_1ab431cf38c861220bd7be72ecbc1cc77e">begin</link> () const</para>
+</listitem>
+            <listitem><para><link linkend="_class_catalogue_1_1_iterator">Iterator</link> <link linkend="_class_catalogue_1a35b500feb3bb24104ccf324088972370">end</link> () const</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_product">Product</link> ** <link linkend="_class_catalogue_1abab6ba1d196fbd84bb273c1b4199ccb2">list</link></para>
+</listitem>
+            <listitem><para>size_t <link linkend="_class_catalogue_1a137484a0db7726821e1577a47b2a37fa">size</link> = 0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_catalogue_1a406ca1384645f90d84076fa8b3f4b3f2"/>    <section>
+    <title>Catalogue()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Catalogue</primary><secondary>Catalogue</secondary></indexterm>
+<indexterm><primary>Catalogue</primary><secondary>Catalogue</secondary></indexterm>
+<para><computeroutput>Catalogue::Catalogue ( )</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1af313b7234d8995e181ddf1bb95d1074c"/>    <section>
+    <title>Catalogue()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Catalogue</primary><secondary>Catalogue</secondary></indexterm>
+<indexterm><primary>Catalogue</primary><secondary>Catalogue</secondary></indexterm>
+<para><computeroutput>Catalogue::Catalogue (<link linkend="_class_product">Product</link> ** list, size_t s)</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1a023fd8d70a58f76d2bbd6ef1e3ef0e9e"/>    <section>
+    <title>~Catalogue()</title>
+<indexterm><primary>~Catalogue</primary><secondary>Catalogue</secondary></indexterm>
+<indexterm><primary>Catalogue</primary><secondary>~Catalogue</secondary></indexterm>
+<para><computeroutput>Catalogue::~Catalogue ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_catalogue_1a16755e25621142e6c29f3c2574c086ba"/>    <section>
+    <title>Add()</title>
+<indexterm><primary>Add</primary><secondary>Catalogue</secondary></indexterm>
+<indexterm><primary>Catalogue</primary><secondary>Add</secondary></indexterm>
+<para><computeroutput>void Catalogue::Add (<link linkend="_class_product">Product</link> * p)</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1ab431cf38c861220bd7be72ecbc1cc77e"/>    <section>
+    <title>begin()</title>
+<indexterm><primary>begin</primary><secondary>Catalogue</secondary></indexterm>
+<indexterm><primary>Catalogue</primary><secondary>begin</secondary></indexterm>
+<para><computeroutput><link linkend="_class_catalogue_1_1_iterator">Catalogue::Iterator</link> Catalogue::begin ( ) const</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1ae8859b3893a47bb9707f7e5a9e2a4d79"/>    <section>
+    <title>Clear()</title>
+<indexterm><primary>Clear</primary><secondary>Catalogue</secondary></indexterm>
+<indexterm><primary>Catalogue</primary><secondary>Clear</secondary></indexterm>
+<para><computeroutput>void Catalogue::Clear ( )</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1a35b500feb3bb24104ccf324088972370"/>    <section>
+    <title>end()</title>
+<indexterm><primary>end</primary><secondary>Catalogue</secondary></indexterm>
+<indexterm><primary>Catalogue</primary><secondary>end</secondary></indexterm>
+<para><computeroutput><link linkend="_class_catalogue_1_1_iterator">Catalogue::Iterator</link> Catalogue::end ( ) const</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1a68cc0da89a96d535a3ea7aeabc2ed944"/>    <section>
+    <title>getSize()</title>
+<indexterm><primary>getSize</primary><secondary>Catalogue</secondary></indexterm>
+<indexterm><primary>Catalogue</primary><secondary>getSize</secondary></indexterm>
+<para><computeroutput>size_t Catalogue::getSize ( )</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1a0055df0cb8fbe295bf93df7c29be96e5"/>    <section>
+    <title>Load()</title>
+<indexterm><primary>Load</primary><secondary>Catalogue</secondary></indexterm>
+<indexterm><primary>Catalogue</primary><secondary>Load</secondary></indexterm>
+<para><computeroutput>void Catalogue::Load (const std::string path) const</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1af9ebacaaef724e5c04c334322f81a83b"/>    <section>
+    <title>operator[]()</title>
+<indexterm><primary>operator[]</primary><secondary>Catalogue</secondary></indexterm>
+<indexterm><primary>Catalogue</primary><secondary>operator[]</secondary></indexterm>
+<para><computeroutput><link linkend="_class_product">Product</link> * Catalogue::operator[] (size_t idx)</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1a15c28294d8e38ca67c105e4fa971835b"/>    <section>
+    <title>OrderBy()</title>
+<indexterm><primary>OrderBy</primary><secondary>Catalogue</secondary></indexterm>
+<indexterm><primary>Catalogue</primary><secondary>OrderBy</secondary></indexterm>
+<para><computeroutput>void Catalogue::OrderBy (<link linkend="_catalogue_8h_1ac13fc3178aad8dbfd71419053e15691d">OrderReq</link> r, bool rev)</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1aa1cd6a60d22d6bd5cb904c6550668e29"/>    <section>
+    <title>Remove()</title>
+<indexterm><primary>Remove</primary><secondary>Catalogue</secondary></indexterm>
+<indexterm><primary>Catalogue</primary><secondary>Remove</secondary></indexterm>
+<para><computeroutput>void Catalogue::Remove (<link linkend="_class_product">Product</link> * p)</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1afb2d18cb7a33814c40a526fbb4988018"/>    <section>
+    <title>Save()</title>
+<indexterm><primary>Save</primary><secondary>Catalogue</secondary></indexterm>
+<indexterm><primary>Catalogue</primary><secondary>Save</secondary></indexterm>
+<para><computeroutput>void Catalogue::Save (const std::string path) const</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1a36939b9a4416c0fef711440b5b17161d"/>    <section>
+    <title>Search()</title>
+<indexterm><primary>Search</primary><secondary>Catalogue</secondary></indexterm>
+<indexterm><primary>Catalogue</primary><secondary>Search</secondary></indexterm>
+<para><computeroutput><link linkend="_class_product">Product</link> ** Catalogue::Search (std::string criteria)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_catalogue_1abab6ba1d196fbd84bb273c1b4199ccb2"/>    <section>
+    <title>list</title>
+<indexterm><primary>list</primary><secondary>Catalogue</secondary></indexterm>
+<indexterm><primary>Catalogue</primary><secondary>list</secondary></indexterm>
+<para><computeroutput><link linkend="_class_product">Product</link>** Catalogue::list<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_catalogue_1a137484a0db7726821e1577a47b2a37fa"/>    <section>
+    <title>size</title>
+<indexterm><primary>size</primary><secondary>Catalogue</secondary></indexterm>
+<indexterm><primary>Catalogue</primary><secondary>size</secondary></indexterm>
+<para><computeroutput>size_t Catalogue::size = 0<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following files:</para>
+C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/<link linkend="_catalogue_8h">catalogue.h</link>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/<link linkend="_catalogue_8cpp">catalogue.cpp</link></section>
+</section>

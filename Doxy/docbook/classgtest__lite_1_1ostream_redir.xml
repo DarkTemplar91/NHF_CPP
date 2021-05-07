@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgtest__lite_1_1ostream_redir" xml:lang="en-US">
+<title>gtest_lite::ostreamRedir Class Reference</title>
+<indexterm><primary>gtest_lite::ostreamRedir</primary></indexterm>
+<para>
+<computeroutput>#include &lt;gtest_lite.h&gt;</computeroutput>
+</para>
+Collaboration diagram for gtest_lite::ostreamRedir:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgtest__lite_1_1ostream_redir__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgtest__lite_1_1ostream_redir_1adf5823af2312c504c0306b77d43f2e71">ostreamRedir</link> (std::ostream &amp;<link linkend="_classgtest__lite_1_1ostream_redir_1a6a39fb873b65f76b40d93ca3793da6d0">src</link>, std::ostream &amp;dst)</para>
+</listitem>
+            <listitem><para><link linkend="_classgtest__lite_1_1ostream_redir_1ab221d3a06097820760b328d4a54749e2">~ostreamRedir</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>std::ostream &amp; <link linkend="_classgtest__lite_1_1ostream_redir_1a6a39fb873b65f76b40d93ca3793da6d0">src</link></para>
+</listitem>
+            <listitem><para>std::streambuf *const <link linkend="_classgtest__lite_1_1ostream_redir_1a566f2a48eefa97078418086497de936e">save</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Segédsablon ostream átirányításához A destruktor visszaállít </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgtest__lite_1_1ostream_redir_1adf5823af2312c504c0306b77d43f2e71"/>    <section>
+    <title>ostreamRedir()</title>
+<indexterm><primary>ostreamRedir</primary><secondary>gtest_lite::ostreamRedir</secondary></indexterm>
+<indexterm><primary>gtest_lite::ostreamRedir</primary><secondary>ostreamRedir</secondary></indexterm>
+<para><computeroutput>gtest_lite::ostreamRedir::ostreamRedir (std::ostream &amp; src, std::ostream &amp; dst)<computeroutput>[inline]</computeroutput></computeroutput></para>    </section><anchor xml:id="_classgtest__lite_1_1ostream_redir_1ab221d3a06097820760b328d4a54749e2"/>    <section>
+    <title>~ostreamRedir()</title>
+<indexterm><primary>~ostreamRedir</primary><secondary>gtest_lite::ostreamRedir</secondary></indexterm>
+<indexterm><primary>gtest_lite::ostreamRedir</primary><secondary>~ostreamRedir</secondary></indexterm>
+<para><computeroutput>gtest_lite::ostreamRedir::~ostreamRedir ( )<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgtest__lite_1_1ostream_redir_1a566f2a48eefa97078418086497de936e"/>    <section>
+    <title>save</title>
+<indexterm><primary>save</primary><secondary>gtest_lite::ostreamRedir</secondary></indexterm>
+<indexterm><primary>gtest_lite::ostreamRedir</primary><secondary>save</secondary></indexterm>
+<para><computeroutput>std::streambuf* const gtest_lite::ostreamRedir::save<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_classgtest__lite_1_1ostream_redir_1a6a39fb873b65f76b40d93ca3793da6d0"/>    <section>
+    <title>src</title>
+<indexterm><primary>src</primary><secondary>gtest_lite::ostreamRedir</secondary></indexterm>
+<indexterm><primary>gtest_lite::ostreamRedir</primary><secondary>src</secondary></indexterm>
+<para><computeroutput>std::ostream&amp; gtest_lite::ostreamRedir::src<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/<link linkend="_gtest__lite_8h">gtest_lite.h</link></section>
+</section>

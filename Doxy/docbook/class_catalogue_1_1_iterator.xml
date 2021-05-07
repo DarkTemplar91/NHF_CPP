@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_catalogue_1_1_iterator" xml:lang="en-US">
+<title>Catalogue::Iterator Class Reference</title>
+<indexterm><primary>Catalogue::Iterator</primary></indexterm>
+<para>
+<computeroutput>#include &lt;catalogue.h&gt;</computeroutput>
+</para>
+Collaboration diagram for Catalogue::Iterator:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_catalogue_1_1_iterator__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_catalogue_1_1_iterator_1a07a6afd7d24ea4ed54e39a9649c2e86b">Iterator</link> (<link linkend="_class_product">Product</link> **p)</para>
+</listitem>
+            <listitem><para><link linkend="_class_catalogue_1_1_iterator">Iterator</link> &amp; <link linkend="_class_catalogue_1_1_iterator_1a710e43cbd5cf6755db5abc514fee2cbc">operator++</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_catalogue_1_1_iterator">Iterator</link> &amp; <link linkend="_class_catalogue_1_1_iterator_1aef9b281974d9a66ba6540a7400041a6e">operator++</link> (int)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_catalogue_1_1_iterator_1aff6647d77a7d91098a2a07374a57a8e2">operator==</link> (const <link linkend="_class_catalogue_1_1_iterator">Iterator</link> &amp;rhs)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_catalogue_1_1_iterator_1a114c19ae7660bb10d913398bd36a9271">operator!=</link> (const <link linkend="_class_catalogue_1_1_iterator">Iterator</link> &amp;rhs)</para>
+</listitem>
+            <listitem><para><link linkend="_class_product">Product</link> &amp; <link linkend="_class_catalogue_1_1_iterator_1a0eb533fe60b2b25c7291f6542e66418e">operator*</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_product">Product</link> ** <link linkend="_class_catalogue_1_1_iterator_1a8314538e578af14c7c3f07d7ec250a42">pointer</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_catalogue_1_1_iterator_1a07a6afd7d24ea4ed54e39a9649c2e86b"/>    <section>
+    <title>Iterator()</title>
+<indexterm><primary>Iterator</primary><secondary>Catalogue::Iterator</secondary></indexterm>
+<indexterm><primary>Catalogue::Iterator</primary><secondary>Iterator</secondary></indexterm>
+<para><computeroutput>Catalogue::Iterator::Iterator (<link linkend="_class_product">Product</link> ** p)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_catalogue_1_1_iterator_1a114c19ae7660bb10d913398bd36a9271"/>    <section>
+    <title>operator!=()</title>
+<indexterm><primary>operator!=</primary><secondary>Catalogue::Iterator</secondary></indexterm>
+<indexterm><primary>Catalogue::Iterator</primary><secondary>operator!=</secondary></indexterm>
+<para><computeroutput>bool Catalogue::Iterator::operator!= (const <link linkend="_class_catalogue_1_1_iterator">Iterator</link> &amp; rhs)</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1_1_iterator_1a0eb533fe60b2b25c7291f6542e66418e"/>    <section>
+    <title>operator*()</title>
+<indexterm><primary>operator*</primary><secondary>Catalogue::Iterator</secondary></indexterm>
+<indexterm><primary>Catalogue::Iterator</primary><secondary>operator*</secondary></indexterm>
+<para><computeroutput><link linkend="_class_product">Product</link> &amp; Catalogue::Iterator::operator* ( )</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1_1_iterator_1a710e43cbd5cf6755db5abc514fee2cbc"/>    <section>
+    <title>operator++()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator++</primary><secondary>Catalogue::Iterator</secondary></indexterm>
+<indexterm><primary>Catalogue::Iterator</primary><secondary>operator++</secondary></indexterm>
+<para><computeroutput><link linkend="_class_catalogue_1_1_iterator">Catalogue::Iterator</link> &amp; Catalogue::Iterator::operator++ ( )</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1_1_iterator_1aef9b281974d9a66ba6540a7400041a6e"/>    <section>
+    <title>operator++()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator++</primary><secondary>Catalogue::Iterator</secondary></indexterm>
+<indexterm><primary>Catalogue::Iterator</primary><secondary>operator++</secondary></indexterm>
+<para><computeroutput><link linkend="_class_catalogue_1_1_iterator">Catalogue::Iterator</link> &amp; Catalogue::Iterator::operator++ (int )</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1_1_iterator_1aff6647d77a7d91098a2a07374a57a8e2"/>    <section>
+    <title>operator==()</title>
+<indexterm><primary>operator==</primary><secondary>Catalogue::Iterator</secondary></indexterm>
+<indexterm><primary>Catalogue::Iterator</primary><secondary>operator==</secondary></indexterm>
+<para><computeroutput>bool Catalogue::Iterator::operator== (const <link linkend="_class_catalogue_1_1_iterator">Iterator</link> &amp; rhs)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_catalogue_1_1_iterator_1a8314538e578af14c7c3f07d7ec250a42"/>    <section>
+    <title>pointer</title>
+<indexterm><primary>pointer</primary><secondary>Catalogue::Iterator</secondary></indexterm>
+<indexterm><primary>Catalogue::Iterator</primary><secondary>pointer</secondary></indexterm>
+<para><computeroutput><link linkend="_class_product">Product</link>** Catalogue::Iterator::pointer<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following files:</para>
+C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/<link linkend="_catalogue_8h">catalogue.h</link>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/<link linkend="_catalogue_8cpp">catalogue.cpp</link></section>
+</section>

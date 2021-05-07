@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_h_d_d" xml:lang="en-US">
+<title>HDD Class Reference</title>
+<indexterm><primary>HDD</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Memory.h&gt;</computeroutput>
+</para>
+Inheritance diagram for HDD:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_h_d_d__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for HDD:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_h_d_d__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_h_d_d_1a17ac1f17161e721f57c2ce14dfc52485">HDD</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_h_d_d_1ab7aefc5718cd32fd951222d6644a4122">HDD</link> (unsigned int <link linkend="_class_h_d_d_1a67787ee337d12b5cf93e071263ab9867">rpm</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_class_h_d_d_1aa8649d3c990b3899d1986565d824a596">HDD</link> (std::string <link linkend="_class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8">name</link>, double <link linkend="_class_product_1abb2572df7a832a509944905603ba5e4f">price</link>, std::string <link linkend="_class_product_1ab88a1ecb238a74583a920a65f8cbee9c">dscrpt</link>, std::string <link linkend="_class_product_1af3d21858bb34986f54309b877678daa8">manufacturer</link>, size_t c=1, <link linkend="__memory_8h_1a284499ae529838dbabf4c7a520e99a85">ByteUnit</link> bu=<link linkend="__memory_8h_1a284499ae529838dbabf4c7a520e99a85af9deabc33a5630ffb405bb42d7cff365">gigabyte</link>, unsigned int <link linkend="_class_h_d_d_1a67787ee337d12b5cf93e071263ab9867">rpm</link>=7200)</para>
+</listitem>
+            <listitem><para><link linkend="_class_h_d_d_1a63611307b026b75757c557df59c1dd60">HDD</link> (const <link linkend="_class_h_d_d">HDD</link> &amp;hdd)</para>
+</listitem>
+            <listitem><para>unsigned int <link linkend="_class_h_d_d_1a324a729fcc87a1ee3ae0a8b0efa68b1b">getRPM</link> ()</para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_h_d_d_1ae7a29f20418291ed9c9a65ad393729e3">getObjType</link> ()</para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_h_d_d_1a47e1f51cba4da56acf692647b456bc58">serializeObj</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_h_d_d">HDD</link> * <link linkend="_class_h_d_d_1a434ff76ba146d2e143f2c6803ca73a67">clone</link> ()</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_h_d_d_1aa669d46ab7c741e4980226375670f253">operator==</link> (<link linkend="_class_h_d_d">HDD</link> &amp;rhs)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_h_d_d_1abfa07a249865bcf5e8973fe86e14bb9f">operator!=</link> (<link linkend="_class_h_d_d">HDD</link> &amp;rhs)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>unsigned int <link linkend="_class_h_d_d_1a67787ee337d12b5cf93e071263ab9867">rpm</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_h_d_d_1a17ac1f17161e721f57c2ce14dfc52485"/>    <section>
+    <title>HDD()<computeroutput>[1/4]</computeroutput></title>
+<indexterm><primary>HDD</primary><secondary>HDD</secondary></indexterm>
+<indexterm><primary>HDD</primary><secondary>HDD</secondary></indexterm>
+<para><computeroutput>HDD::HDD ( )<computeroutput>[inline]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_h_d_d_1ab7aefc5718cd32fd951222d6644a4122"/>    <section>
+    <title>HDD()<computeroutput>[2/4]</computeroutput></title>
+<indexterm><primary>HDD</primary><secondary>HDD</secondary></indexterm>
+<indexterm><primary>HDD</primary><secondary>HDD</secondary></indexterm>
+<para><computeroutput>HDD::HDD (unsigned int rpm)</computeroutput></para>    </section><anchor xml:id="_class_h_d_d_1aa8649d3c990b3899d1986565d824a596"/>    <section>
+    <title>HDD()<computeroutput>[3/4]</computeroutput></title>
+<indexterm><primary>HDD</primary><secondary>HDD</secondary></indexterm>
+<indexterm><primary>HDD</primary><secondary>HDD</secondary></indexterm>
+<para><computeroutput>HDD::HDD (std::string name, double price, std::string dscrpt, std::string manufacturer, size_t c = <computeroutput>1</computeroutput>
+, <link linkend="__memory_8h_1a284499ae529838dbabf4c7a520e99a85">ByteUnit</link> bu = <computeroutput><link linkend="__memory_8h_1a284499ae529838dbabf4c7a520e99a85af9deabc33a5630ffb405bb42d7cff365">gigabyte</link></computeroutput>
+, unsigned int rpm = <computeroutput>7200</computeroutput>
+)</computeroutput></para>    </section><anchor xml:id="_class_h_d_d_1a63611307b026b75757c557df59c1dd60"/>    <section>
+    <title>HDD()<computeroutput>[4/4]</computeroutput></title>
+<indexterm><primary>HDD</primary><secondary>HDD</secondary></indexterm>
+<indexterm><primary>HDD</primary><secondary>HDD</secondary></indexterm>
+<para><computeroutput>HDD::HDD (const <link linkend="_class_h_d_d">HDD</link> &amp; hdd)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_h_d_d_1a434ff76ba146d2e143f2c6803ca73a67"/>    <section>
+    <title>clone()</title>
+<indexterm><primary>clone</primary><secondary>HDD</secondary></indexterm>
+<indexterm><primary>HDD</primary><secondary>clone</secondary></indexterm>
+<para><computeroutput><link linkend="_class_h_d_d">HDD</link> * HDD::clone ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented from <link linkend="_class_storage_1af7f626e3a0bc9d46c59ef7dd8f57c6c9">Storage</link>.</para>
+    </section><anchor xml:id="_class_h_d_d_1ae7a29f20418291ed9c9a65ad393729e3"/>    <section>
+    <title>getObjType()</title>
+<indexterm><primary>getObjType</primary><secondary>HDD</secondary></indexterm>
+<indexterm><primary>HDD</primary><secondary>getObjType</secondary></indexterm>
+<para><computeroutput>std::string HDD::getObjType ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented from <link linkend="_class_storage_1a9c6d68e682a8c329dc0611ce7266f2bc">Storage</link>.</para>
+    </section><anchor xml:id="_class_h_d_d_1a324a729fcc87a1ee3ae0a8b0efa68b1b"/>    <section>
+    <title>getRPM()</title>
+<indexterm><primary>getRPM</primary><secondary>HDD</secondary></indexterm>
+<indexterm><primary>HDD</primary><secondary>getRPM</secondary></indexterm>
+<para><computeroutput>unsigned int HDD::getRPM ( )</computeroutput></para>    </section><anchor xml:id="_class_h_d_d_1abfa07a249865bcf5e8973fe86e14bb9f"/>    <section>
+    <title>operator!=()</title>
+<indexterm><primary>operator!=</primary><secondary>HDD</secondary></indexterm>
+<indexterm><primary>HDD</primary><secondary>operator!=</secondary></indexterm>
+<para><computeroutput>bool HDD::operator!= (<link linkend="_class_h_d_d">HDD</link> &amp; rhs)</computeroutput></para>    </section><anchor xml:id="_class_h_d_d_1aa669d46ab7c741e4980226375670f253"/>    <section>
+    <title>operator==()</title>
+<indexterm><primary>operator==</primary><secondary>HDD</secondary></indexterm>
+<indexterm><primary>HDD</primary><secondary>operator==</secondary></indexterm>
+<para><computeroutput>bool HDD::operator== (<link linkend="_class_h_d_d">HDD</link> &amp; rhs)</computeroutput></para>    </section><anchor xml:id="_class_h_d_d_1a47e1f51cba4da56acf692647b456bc58"/>    <section>
+    <title>serializeObj()</title>
+<indexterm><primary>serializeObj</primary><secondary>HDD</secondary></indexterm>
+<indexterm><primary>HDD</primary><secondary>serializeObj</secondary></indexterm>
+<para><computeroutput>std::string HDD::serializeObj ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_h_d_d_1a67787ee337d12b5cf93e071263ab9867"/>    <section>
+    <title>rpm</title>
+<indexterm><primary>rpm</primary><secondary>HDD</secondary></indexterm>
+<indexterm><primary>HDD</primary><secondary>rpm</secondary></indexterm>
+<para><computeroutput>unsigned int HDD::rpm<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following files:</para>
+C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/<link linkend="__memory_8h">Memory.h</link>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/<link linkend="__memory_8cpp">Memory.cpp</link></section>
+</section>

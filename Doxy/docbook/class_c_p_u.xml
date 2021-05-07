@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_c_p_u" xml:lang="en-US">
+<title>CPU Class Reference</title>
+<indexterm><primary>CPU</primary></indexterm>
+<para>
+<computeroutput>#include &lt;processor.h&gt;</computeroutput>
+</para>
+Inheritance diagram for CPU:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_c_p_u__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for CPU:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_c_p_u__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_c_p_u_1a2fdd8153d0979ccad9ed8452897267f4">CPU</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_c_p_u_1a12c49868638bbc8d10a596553d147e67">CPU</link> (std::string <link linkend="_class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8">name</link>, int <link linkend="_class_c_p_u_1a65f32aa0ee6335f15d7a7087da2564f3">tdp</link>, <link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68">socket</link> type, unsigned int clock, unsigned int core, unsigned int thread, double c, bool vga)</para>
+</listitem>
+            <listitem><para><link linkend="_class_c_p_u_1abbf158ef868abaea8f2719e96b207125">CPU</link> (std::string pName, double <link linkend="_class_product_1abb2572df7a832a509944905603ba5e4f">price</link>, std::string manuf, std::string descript, std::string <link linkend="_class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8">name</link>, int <link linkend="_class_c_p_u_1a65f32aa0ee6335f15d7a7087da2564f3">tdp</link>, <link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68">socket</link> type, unsigned int clock, unsigned int core, unsigned int thread, double c, bool vga)</para>
+</listitem>
+            <listitem><para><link linkend="_class_c_p_u_1ae72ec189f1bfd71a915e503eb8425d58">CPU</link> (const <link linkend="_class_c_p_u">CPU</link> &amp;c)</para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_c_p_u_1a82acaa1b7d2da4e29f374d5166d42aef">getGenName</link> ()</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_c_p_u_1a2c07fd65f7d19ee89ccfbde0e8b4878d">getTDP</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68">socket</link> <link linkend="_class_c_p_u_1a70b831ad7cfe74ce44be5d1349620e87">getSocketType</link> ()</para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_c_p_u_1ad492c4bcbc0fe07eb7bd644be677c87f">getStringSocket</link> ()</para>
+</listitem>
+            <listitem><para>unsigned int <link linkend="_class_c_p_u_1a4040061f11be42ead23ccca8defd734e">getBaseClock</link> ()</para>
+</listitem>
+            <listitem><para>unsigned int <link linkend="_class_c_p_u_1a30b19e25587f96ef54b34334dc038e27">getCoreCount</link> ()</para>
+</listitem>
+            <listitem><para>unsigned int <link linkend="_class_c_p_u_1a6d5058f1c0d00256a861dff8ba9b38fe">getThreadCount</link> ()</para>
+</listitem>
+            <listitem><para>double <link linkend="_class_c_p_u_1a2ec3047e90d5989e03337d809988b15a">getCacheSize</link> ()</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_c_p_u_1aa025e57bb42da447da66c8bc8e5d5de2">ivga</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_c_p_u">CPU</link> * <link linkend="_class_c_p_u_1ab4f1ec2a356344187dc6598404012df9">clone</link> ()</para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_c_p_u_1a07222b545e69fcc328b18d7b44a27027">getObjType</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_c_p_u_1aa2af36b3447c4e7b4e1f25f699a06824">print</link> ()</para>
+
+<para>Prints out basic data of a product. </para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_c_p_u_1a76b924aa80f3acf2bfdd7299f2be6044">serializeObj</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>std::string <link linkend="_class_c_p_u_1acf0ec240e61c72c6252a2f8e7b339189">genName</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_class_c_p_u_1a65f32aa0ee6335f15d7a7087da2564f3">tdp</link></para>
+</listitem>
+            <listitem><para><link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68">socket</link> <link linkend="_class_c_p_u_1a1f1bb470721f49e48139e46bbea9f109">socketType</link></para>
+</listitem>
+            <listitem><para>unsigned int <link linkend="_class_c_p_u_1a5b9fd4e0c27dcff1bcb33fbca6da2a6c">baseClock</link></para>
+
+<para>Enum for socket type. </para>
+</listitem>
+            <listitem><para>unsigned int <link linkend="_class_c_p_u_1ab0af78c0a115e6c8659b43332439f36e">coreCount</link></para>
+
+<para>Base clock frequency given in Mhz. </para>
+</listitem>
+            <listitem><para>unsigned int <link linkend="_class_c_p_u_1a19e584d567f61b968f2f5e09c86abc4c">threadCount</link></para>
+
+<para>Number of cores. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_c_p_u_1a4ad29b59532a1c456a1aec62437aa5cd">L2_cache</link></para>
+
+<para>Number of threads. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_c_p_u_1a3de211accd8ac7dc87cfecb446c4ebf9">iVGA</link> = false</para>
+
+<para>size of cache in MB </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_c_p_u_1a2fdd8153d0979ccad9ed8452897267f4"/>    <section>
+    <title>CPU()<computeroutput>[1/4]</computeroutput></title>
+<indexterm><primary>CPU</primary><secondary>CPU</secondary></indexterm>
+<indexterm><primary>CPU</primary><secondary>CPU</secondary></indexterm>
+<para><computeroutput>CPU::CPU ( )<computeroutput>[inline]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_c_p_u_1a12c49868638bbc8d10a596553d147e67"/>    <section>
+    <title>CPU()<computeroutput>[2/4]</computeroutput></title>
+<indexterm><primary>CPU</primary><secondary>CPU</secondary></indexterm>
+<indexterm><primary>CPU</primary><secondary>CPU</secondary></indexterm>
+<para><computeroutput>CPU::CPU (std::string name, int tdp, <link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68">socket</link> type, unsigned int clock, unsigned int core, unsigned int thread, double c, bool vga)</computeroutput></para>    </section><anchor xml:id="_class_c_p_u_1abbf158ef868abaea8f2719e96b207125"/>    <section>
+    <title>CPU()<computeroutput>[3/4]</computeroutput></title>
+<indexterm><primary>CPU</primary><secondary>CPU</secondary></indexterm>
+<indexterm><primary>CPU</primary><secondary>CPU</secondary></indexterm>
+<para><computeroutput>CPU::CPU (std::string pName, double price, std::string manuf, std::string descript, std::string name, int tdp, <link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68">socket</link> type, unsigned int clock, unsigned int core, unsigned int thread, double c, bool vga)</computeroutput></para>    </section><anchor xml:id="_class_c_p_u_1ae72ec189f1bfd71a915e503eb8425d58"/>    <section>
+    <title>CPU()<computeroutput>[4/4]</computeroutput></title>
+<indexterm><primary>CPU</primary><secondary>CPU</secondary></indexterm>
+<indexterm><primary>CPU</primary><secondary>CPU</secondary></indexterm>
+<para><computeroutput>CPU::CPU (const <link linkend="_class_c_p_u">CPU</link> &amp; c)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_c_p_u_1ab4f1ec2a356344187dc6598404012df9"/>    <section>
+    <title>clone()</title>
+<indexterm><primary>clone</primary><secondary>CPU</secondary></indexterm>
+<indexterm><primary>CPU</primary><secondary>clone</secondary></indexterm>
+<para><computeroutput><link linkend="_class_c_p_u">CPU</link> * CPU::clone ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented from <link linkend="_class_product_1a2cc3f5ef8abe14801e185734cfcc3b57">Product</link>.</para>
+    </section><anchor xml:id="_class_c_p_u_1a4040061f11be42ead23ccca8defd734e"/>    <section>
+    <title>getBaseClock()</title>
+<indexterm><primary>getBaseClock</primary><secondary>CPU</secondary></indexterm>
+<indexterm><primary>CPU</primary><secondary>getBaseClock</secondary></indexterm>
+<para><computeroutput>unsigned int CPU::getBaseClock ( )</computeroutput></para>    </section><anchor xml:id="_class_c_p_u_1a2ec3047e90d5989e03337d809988b15a"/>    <section>
+    <title>getCacheSize()</title>
+<indexterm><primary>getCacheSize</primary><secondary>CPU</secondary></indexterm>
+<indexterm><primary>CPU</primary><secondary>getCacheSize</secondary></indexterm>
+<para><computeroutput>double CPU::getCacheSize ( )</computeroutput></para>    </section><anchor xml:id="_class_c_p_u_1a30b19e25587f96ef54b34334dc038e27"/>    <section>
+    <title>getCoreCount()</title>
+<indexterm><primary>getCoreCount</primary><secondary>CPU</secondary></indexterm>
+<indexterm><primary>CPU</primary><secondary>getCoreCount</secondary></indexterm>
+<para><computeroutput>unsigned int CPU::getCoreCount ( )</computeroutput></para>    </section><anchor xml:id="_class_c_p_u_1a82acaa1b7d2da4e29f374d5166d42aef"/>    <section>
+    <title>getGenName()</title>
+<indexterm><primary>getGenName</primary><secondary>CPU</secondary></indexterm>
+<indexterm><primary>CPU</primary><secondary>getGenName</secondary></indexterm>
+<para><computeroutput>std::string CPU::getGenName ( )</computeroutput></para>    </section><anchor xml:id="_class_c_p_u_1a07222b545e69fcc328b18d7b44a27027"/>    <section>
+    <title>getObjType()</title>
+<indexterm><primary>getObjType</primary><secondary>CPU</secondary></indexterm>
+<indexterm><primary>CPU</primary><secondary>getObjType</secondary></indexterm>
+<para><computeroutput>std::string CPU::getObjType ( )</computeroutput></para>    </section><anchor xml:id="_class_c_p_u_1a70b831ad7cfe74ce44be5d1349620e87"/>    <section>
+    <title>getSocketType()</title>
+<indexterm><primary>getSocketType</primary><secondary>CPU</secondary></indexterm>
+<indexterm><primary>CPU</primary><secondary>getSocketType</secondary></indexterm>
+<para><computeroutput><link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68">socket</link> CPU::getSocketType ( )</computeroutput></para>    </section><anchor xml:id="_class_c_p_u_1ad492c4bcbc0fe07eb7bd644be677c87f"/>    <section>
+    <title>getStringSocket()</title>
+<indexterm><primary>getStringSocket</primary><secondary>CPU</secondary></indexterm>
+<indexterm><primary>CPU</primary><secondary>getStringSocket</secondary></indexterm>
+<para><computeroutput>std::string CPU::getStringSocket ( )</computeroutput></para>    </section><anchor xml:id="_class_c_p_u_1a2c07fd65f7d19ee89ccfbde0e8b4878d"/>    <section>
+    <title>getTDP()</title>
+<indexterm><primary>getTDP</primary><secondary>CPU</secondary></indexterm>
+<indexterm><primary>CPU</primary><secondary>getTDP</secondary></indexterm>
+<para><computeroutput>int CPU::getTDP ( )</computeroutput></para>    </section><anchor xml:id="_class_c_p_u_1a6d5058f1c0d00256a861dff8ba9b38fe"/>    <section>
+    <title>getThreadCount()</title>
+<indexterm><primary>getThreadCount</primary><secondary>CPU</secondary></indexterm>
+<indexterm><primary>CPU</primary><secondary>getThreadCount</secondary></indexterm>
+<para><computeroutput>unsigned int CPU::getThreadCount ( )</computeroutput></para>    </section><anchor xml:id="_class_c_p_u_1aa025e57bb42da447da66c8bc8e5d5de2"/>    <section>
+    <title>ivga()</title>
+<indexterm><primary>ivga</primary><secondary>CPU</secondary></indexterm>
+<indexterm><primary>CPU</primary><secondary>ivga</secondary></indexterm>
+<para><computeroutput>bool CPU::ivga ( )</computeroutput></para>    </section><anchor xml:id="_class_c_p_u_1aa2af36b3447c4e7b4e1f25f699a06824"/>    <section>
+    <title>print()</title>
+<indexterm><primary>print</primary><secondary>CPU</secondary></indexterm>
+<indexterm><primary>CPU</primary><secondary>print</secondary></indexterm>
+<para><computeroutput>void CPU::print ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Prints out basic data of a product. </para>
+</para>
+<para>
+Reimplemented from <link linkend="_class_product_1a82a40e1860ffe2c88ea08084037a6c42">Product</link>.</para>
+    </section><anchor xml:id="_class_c_p_u_1a76b924aa80f3acf2bfdd7299f2be6044"/>    <section>
+    <title>serializeObj()</title>
+<indexterm><primary>serializeObj</primary><secondary>CPU</secondary></indexterm>
+<indexterm><primary>CPU</primary><secondary>serializeObj</secondary></indexterm>
+<para><computeroutput>std::string CPU::serializeObj ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_c_p_u_1a5b9fd4e0c27dcff1bcb33fbca6da2a6c"/>    <section>
+    <title>baseClock</title>
+<indexterm><primary>baseClock</primary><secondary>CPU</secondary></indexterm>
+<indexterm><primary>CPU</primary><secondary>baseClock</secondary></indexterm>
+<para><computeroutput>unsigned int CPU::baseClock<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Enum for socket type. </para>
+</para>
+    </section><anchor xml:id="_class_c_p_u_1ab0af78c0a115e6c8659b43332439f36e"/>    <section>
+    <title>coreCount</title>
+<indexterm><primary>coreCount</primary><secondary>CPU</secondary></indexterm>
+<indexterm><primary>CPU</primary><secondary>coreCount</secondary></indexterm>
+<para><computeroutput>unsigned int CPU::coreCount<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Base clock frequency given in Mhz. </para>
+</para>
+    </section><anchor xml:id="_class_c_p_u_1acf0ec240e61c72c6252a2f8e7b339189"/>    <section>
+    <title>genName</title>
+<indexterm><primary>genName</primary><secondary>CPU</secondary></indexterm>
+<indexterm><primary>CPU</primary><secondary>genName</secondary></indexterm>
+<para><computeroutput>std::string CPU::genName<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_c_p_u_1a3de211accd8ac7dc87cfecb446c4ebf9"/>    <section>
+    <title>iVGA</title>
+<indexterm><primary>iVGA</primary><secondary>CPU</secondary></indexterm>
+<indexterm><primary>CPU</primary><secondary>iVGA</secondary></indexterm>
+<para><computeroutput>bool CPU::iVGA = false<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>size of cache in MB </para>
+</para>
+    </section><anchor xml:id="_class_c_p_u_1a4ad29b59532a1c456a1aec62437aa5cd"/>    <section>
+    <title>L2_cache</title>
+<indexterm><primary>L2_cache</primary><secondary>CPU</secondary></indexterm>
+<indexterm><primary>CPU</primary><secondary>L2_cache</secondary></indexterm>
+<para><computeroutput>double CPU::L2_cache<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Number of threads. </para>
+</para>
+    </section><anchor xml:id="_class_c_p_u_1a1f1bb470721f49e48139e46bbea9f109"/>    <section>
+    <title>socketType</title>
+<indexterm><primary>socketType</primary><secondary>CPU</secondary></indexterm>
+<indexterm><primary>CPU</primary><secondary>socketType</secondary></indexterm>
+<para><computeroutput><link linkend="_processor_8h_1a84edc84c8145e7997b70f9919ce44d68">socket</link> CPU::socketType<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_c_p_u_1a65f32aa0ee6335f15d7a7087da2564f3"/>    <section>
+    <title>tdp</title>
+<indexterm><primary>tdp</primary><secondary>CPU</secondary></indexterm>
+<indexterm><primary>CPU</primary><secondary>tdp</secondary></indexterm>
+<para><computeroutput>int CPU::tdp<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_c_p_u_1a19e584d567f61b968f2f5e09c86abc4c"/>    <section>
+    <title>threadCount</title>
+<indexterm><primary>threadCount</primary><secondary>CPU</secondary></indexterm>
+<indexterm><primary>CPU</primary><secondary>threadCount</secondary></indexterm>
+<para><computeroutput>unsigned int CPU::threadCount<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Number of cores. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/<link linkend="_processor_8h">processor.h</link>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/<link linkend="_processor_8cpp">processor.cpp</link></section>
+</section>

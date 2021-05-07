@@ -1,0 +1,343 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="main_8cpp" kind="file" language="C++">
+    <compoundname>main.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes refid="products_8h" local="yes">products.h</includes>
+    <includes refid="_memory_8h" local="yes">Memory.h</includes>
+    <includes refid="processor_8h" local="yes">processor.h</includes>
+    <includes refid="_videocard_8h" local="yes">Videocard.h</includes>
+    <includes refid="_computer_8h" local="yes">Computer.h</includes>
+    <includes refid="catalogue_8h" local="yes">catalogue.h</includes>
+    <includes local="no">fstream</includes>
+    <includes refid="gtest__lite_8h" local="yes">gtest_lite.h</includes>
+    <includes refid="memtrace_8h" local="yes">memtrace.h</includes>
+    <incdepgraph>
+      <node id="18">
+        <label>limits</label>
+      </node>
+      <node id="14">
+        <label>gtest_lite.h</label>
+        <link refid="gtest__lite_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Memory.h</label>
+        <link refid="_memory_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>cmath</label>
+      </node>
+      <node id="15">
+        <label>cassert</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/main.cpp</label>
+        <link refid="main_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="7">
+        <label>memtrace.h</label>
+        <link refid="memtrace_8h"/>
+      </node>
+      <node id="5">
+        <label>fstream</label>
+      </node>
+      <node id="9">
+        <label>processor.h</label>
+        <link refid="processor_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Motherboard.h</label>
+        <link refid="_motherboard_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>catalogue.h</label>
+        <link refid="catalogue_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Videocard.h</label>
+        <link refid="_videocard_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>sstream</label>
+      </node>
+      <node id="19">
+        <label>cstdlib</label>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="11">
+        <label>Computer.h</label>
+        <link refid="_computer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>cstring</label>
+      </node>
+      <node id="3">
+        <label>products.h</label>
+        <link refid="products_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/main.cpp" line="13" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/main.cpp" bodystart="13" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="products_8h" kindref="compound">products.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_memory_8h" kindref="compound">Memory.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="processor_8h" kindref="compound">processor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_videocard_8h" kindref="compound">Videocard.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_computer_8h" kindref="compound">Computer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="catalogue_8h" kindref="compound">catalogue.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gtest__lite_8h" kindref="compound">gtest_lite.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="memtrace_8h" kindref="compound">memtrace.h</ref>&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gtest__lite_8h_1a379a7b57e74521cb2c8e99f0e2779a72" kindref="member">TEST</ref>(<ref refid="class_product" kindref="compound">Product</ref>,<sp/>Read/Write_file)<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::remove(</highlight><highlight class="stringliteral">&quot;savefile.txt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_product" kindref="compound">Product</ref><sp/>p1<sp/>=<sp/><ref refid="class_product" kindref="compound">Product</ref>(</highlight><highlight class="stringliteral">&quot;PlayStation<sp/>5&quot;</highlight><highlight class="normal">,<sp/>500,<sp/></highlight><highlight class="stringliteral">&quot;Sony&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>newest<sp/>member<sp/>of<sp/>the<sp/>PlayStation<sp/>family&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ofstream<sp/>savefile;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>savefile<sp/>&lt;&lt;<sp/>p1;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(savefile.is_open())</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>savefile.close();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_product" kindref="compound">Product</ref><sp/>p2;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ifstream<sp/>inp;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inp<sp/>&gt;&gt;<sp/>p2;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inp.is_open())</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inp.close();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gtest__lite_8h_1aff8385840165a184edc29446aa51936f" kindref="member">EXPECT_EQ</ref>(p1.<ref refid="class_product_1a9cbd896ca6b2d95088be8ad8c3b11e3b" kindref="member">getName</ref>(),<sp/>p2.<ref refid="class_product_1a9cbd896ca6b2d95088be8ad8c3b11e3b" kindref="member">getName</ref>())<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Név<sp/>hibás!&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gtest__lite_8h_1aff8385840165a184edc29446aa51936f" kindref="member">EXPECT_EQ</ref>(p1.<ref refid="class_product_1a874a2ad2556c8d82500cce9917d5ed8c" kindref="member">getDescription</ref>(),<sp/>p2.<ref refid="class_product_1a874a2ad2556c8d82500cce9917d5ed8c" kindref="member">getDescription</ref>())<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Leírás<sp/>hibás!&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gtest__lite_8h_1aff8385840165a184edc29446aa51936f" kindref="member">EXPECT_EQ</ref>(p1.<ref refid="class_product_1a2f5aeb9d25fcbbcf0f6125351850d4ff" kindref="member">getManufacturer</ref>(),<sp/>p2.<ref refid="class_product_1a2f5aeb9d25fcbbcf0f6125351850d4ff" kindref="member">getManufacturer</ref>())<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Gyártó<sp/>hibás!&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gtest__lite_8h_1aff8385840165a184edc29446aa51936f" kindref="member">EXPECT_EQ</ref>(p1.<ref refid="class_product_1a3be25f647260d61df6063ef706261c7f" kindref="member">getPrice</ref>(),<sp/>p1.<ref refid="class_product_1a3be25f647260d61df6063ef706261c7f" kindref="member">getPrice</ref>());</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::remove(</highlight><highlight class="stringliteral">&quot;savefile.txt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}<ref refid="gtest__lite_8h_1a29fd18bed01c4d836c7ebfe73a125c3f" kindref="member">END</ref></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gtest__lite_8h_1a379a7b57e74521cb2c8e99f0e2779a72" kindref="member">TEST</ref>(PROCESSOR_H,<sp/>READ)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_p_u" kindref="compound">CPU</ref><sp/>c1<sp/>=<sp/><ref refid="class_c_p_u" kindref="compound">CPU</ref>(</highlight><highlight class="stringliteral">&quot;Ryzen<sp/>5&quot;</highlight><highlight class="normal">,<sp/>300,<sp/></highlight><highlight class="stringliteral">&quot;6<sp/>core<sp/>powerful<sp/>gaming<sp/>processor.&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;AMD&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;5600X&quot;</highlight><highlight class="normal">,<sp/>120,<sp/><ref refid="processor_8h_1a84edc84c8145e7997b70f9919ce44d68a89f9926b61ea482e780698f79c10fb2a" kindref="member">socket::AMD_AM4</ref>,<sp/>3700,<sp/>6,<sp/>12,<sp/>3,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ofstream<sp/>savefile;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>savefile<sp/>&lt;&lt;<sp/>c1;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ifstream<sp/>inp;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_p_u" kindref="compound">CPU</ref><sp/>c2;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inp<sp/>&gt;&gt;<sp/>c2;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gtest__lite_8h_1aff8385840165a184edc29446aa51936f" kindref="member">EXPECT_EQ</ref>(c1.<ref refid="class_product_1a9cbd896ca6b2d95088be8ad8c3b11e3b" kindref="member">getName</ref>(),<sp/>c2.<ref refid="class_product_1a9cbd896ca6b2d95088be8ad8c3b11e3b" kindref="member">getName</ref>())<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Hiba<sp/>az<sp/>öröklődésnél!&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gtest__lite_8h_1aff8385840165a184edc29446aa51936f" kindref="member">EXPECT_EQ</ref>(c1.<ref refid="class_c_p_u_1a30b19e25587f96ef54b34334dc038e27" kindref="member">getCoreCount</ref>(),<sp/>c2.<ref refid="class_c_p_u_1a30b19e25587f96ef54b34334dc038e27" kindref="member">getCoreCount</ref>());</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::remove(</highlight><highlight class="stringliteral">&quot;savefile.txt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}<ref refid="gtest__lite_8h_1a29fd18bed01c4d836c7ebfe73a125c3f" kindref="member">END</ref></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_a_m" kindref="compound">RAM</ref><sp/>r1,<sp/>r2;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_motherboard" kindref="compound">Motherboard</ref><sp/>m1,m2;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_p_u" kindref="compound">GPU</ref><sp/>g1,g2;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Tests<sp/>multiple<sp/>inheritance<sp/>and<sp/>file<sp/>I/O<sp/>funcs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gtest__lite_8h_1a379a7b57e74521cb2c8e99f0e2779a72" kindref="member">TEST</ref>(CLASSES,<sp/>cons)<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r1<sp/>=<sp/><ref refid="class_r_a_m" kindref="compound">RAM</ref>(</highlight><highlight class="stringliteral">&quot;HyperX<sp/>Fury<sp/>2x8GB&quot;</highlight><highlight class="normal">,<sp/>100,<sp/></highlight><highlight class="stringliteral">&quot;HyperX<sp/>RAM&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Kingston&quot;</highlight><highlight class="normal">,<sp/>16,<sp/><ref refid="_memory_8h_1a284499ae529838dbabf4c7a520e99a85af9deabc33a5630ffb405bb42d7cff365" kindref="member">ByteUnit::gigabyte</ref>,<sp/><ref refid="_memory_8h_1a462bfa9dfea81692463ecb192183dd01ab11070487ce800d77428c98203b5de5f" kindref="member">MemoryType::DDR4</ref>,<sp/>3200,<sp/>14,<sp/>1.2);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m1<sp/>=<sp/><ref refid="class_motherboard" kindref="compound">Motherboard</ref>(</highlight><highlight class="stringliteral">&quot;MSI<sp/>B550<sp/>Tomahawk&quot;</highlight><highlight class="normal">,<sp/>120,</highlight><highlight class="stringliteral">&quot;MSI&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;B550<sp/>motherboard<sp/>from<sp/>MSI&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;B550&quot;</highlight><highlight class="normal">,<ref refid="processor_8h_1a84edc84c8145e7997b70f9919ce44d68a89f9926b61ea482e780698f79c10fb2a" kindref="member">socket::AMD_AM4</ref>,64,<sp/>4000,<sp/>6,<sp/>4,<sp/>3);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g1<sp/>=<sp/><ref refid="class_g_p_u" kindref="compound">GPU</ref>(</highlight><highlight class="stringliteral">&quot;EVGA<sp/>RTX2060<sp/>KO&quot;</highlight><highlight class="normal">,<sp/>300,<sp/></highlight><highlight class="stringliteral">&quot;EVGA&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Gaming<sp/>GPU&quot;</highlight><highlight class="normal">,<sp/>1,<sp/>1,<sp/>2400,<sp/>7000,<sp/>6,<sp/>300);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ofstream<sp/>savefile;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ifstream<sp/>inp;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>savefile<sp/>&lt;&lt;<sp/>r1;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_a_m" kindref="compound">RAM</ref><sp/>r2;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inp<sp/>&gt;&gt;<sp/>r2;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::remove(</highlight><highlight class="stringliteral">&quot;savefile.txt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gtest__lite_8h_1aff8385840165a184edc29446aa51936f" kindref="member">EXPECT_EQ</ref>(r1.getlatency(),<sp/>r2.<ref refid="class_r_a_m_1a18b3b49c6522e5ab2b3a403860211d20" kindref="member">getlatency</ref>());</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_motherboard" kindref="compound">Motherboard</ref><sp/>m2;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>savefile<sp/>&lt;&lt;<sp/>m1;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inp<sp/>&gt;&gt;<sp/>m2;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::remove(</highlight><highlight class="stringliteral">&quot;savefile.txt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gtest__lite_8h_1aff8385840165a184edc29446aa51936f" kindref="member">EXPECT_EQ</ref>(m1.getPorts(),<sp/>m2.<ref refid="class_motherboard_1a505b4ef1ac8c36193a6ee79eb921e9fa" kindref="member">getPorts</ref>());</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_g_p_u" kindref="compound">GPU</ref><sp/>g2;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>savefile<sp/>&lt;&lt;<sp/>g1;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inp<sp/>&gt;&gt;<sp/>g2;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gtest__lite_8h_1aff8385840165a184edc29446aa51936f" kindref="member">EXPECT_EQ</ref>(g1.getHDMIports()<sp/>,<sp/>g2.<ref refid="class_g_p_u_1a72b7be0a970a7bf975826cffe78f271b" kindref="member">getHDMIports</ref>());</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}<ref refid="gtest__lite_8h_1a29fd18bed01c4d836c7ebfe73a125c3f" kindref="member">END</ref></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gtest__lite_8h_1a379a7b57e74521cb2c8e99f0e2779a72" kindref="member">TEST</ref>(CATALOGUE_H,<sp/>create)<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_catalogue" kindref="compound">Catalogue</ref><sp/>c<sp/>=<sp/><ref refid="class_catalogue" kindref="compound">Catalogue</ref>();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c.<ref refid="class_catalogue_1a16755e25621142e6c29f3c2574c086ba" kindref="member">Add</ref>(r1.clone());</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c.<ref refid="class_catalogue_1a16755e25621142e6c29f3c2574c086ba" kindref="member">Add</ref>(r2.clone());</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c.<ref refid="class_catalogue_1a16755e25621142e6c29f3c2574c086ba" kindref="member">Add</ref>(g2.<ref refid="class_g_p_u_1a13535142ba8cacba30f23f6bf8ed5200" kindref="member">clone</ref>());</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gtest__lite_8h_1a9be43f44d148e8a8d6a89c864bf4e461" kindref="member">EXPECT_ANY_THROW</ref>(c[5])<sp/>&lt;&lt;</highlight><highlight class="stringliteral">&quot;Hibát<sp/>várt!&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gtest__lite_8h_1aff8385840165a184edc29446aa51936f" kindref="member">EXPECT_EQ</ref>(c.<ref refid="class_catalogue_1a68cc0da89a96d535a3ea7aeabc2ed944" kindref="member">getSize</ref>(),<sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">)3);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c.<ref refid="class_catalogue_1aa1cd6a60d22d6bd5cb904c6550668e29" kindref="member">Remove</ref>(g2.<ref refid="class_g_p_u_1a13535142ba8cacba30f23f6bf8ed5200" kindref="member">clone</ref>());</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gtest__lite_8h_1aff8385840165a184edc29446aa51936f" kindref="member">EXPECT_EQ</ref>(c.<ref refid="class_catalogue_1a68cc0da89a96d535a3ea7aeabc2ed944" kindref="member">getSize</ref>(),<sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">)2);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>}<ref refid="gtest__lite_8h_1a29fd18bed01c4d836c7ebfe73a125c3f" kindref="member">END</ref></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gtest__lite_8h_1a379a7b57e74521cb2c8e99f0e2779a72" kindref="member">TEST</ref>(CATALOGUE_H,<sp/>.search)<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_catalogue" kindref="compound">Catalogue</ref><sp/>c<sp/>=<sp/><ref refid="class_catalogue" kindref="compound">Catalogue</ref>();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c.<ref refid="class_catalogue_1a16755e25621142e6c29f3c2574c086ba" kindref="member">Add</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u" kindref="compound">GPU</ref>(</highlight><highlight class="stringliteral">&quot;ASUS<sp/>Strix<sp/>RTX<sp/>3090<sp/>OC&quot;</highlight><highlight class="normal">,<sp/>1200,<sp/></highlight><highlight class="stringliteral">&quot;ASUS&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Extremely<sp/>powerful<sp/>gaming<sp/>GPU&quot;</highlight><highlight class="normal">,<sp/>2,<sp/>2,<sp/>23,<sp/>42421,<sp/>45123,<sp/>300));</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c.<ref refid="class_catalogue_1a16755e25621142e6c29f3c2574c086ba" kindref="member">Add</ref>(<ref refid="class_product" kindref="compound">Product</ref>(</highlight><highlight class="stringliteral">&quot;RTX<sp/>GPU<sp/>Bracket&quot;</highlight><highlight class="normal">,<sp/>100,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">).clone());</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_g_p_u" kindref="compound">GPU</ref><sp/>g<sp/>=<sp/><ref refid="class_g_p_u" kindref="compound">GPU</ref>(</highlight><highlight class="stringliteral">&quot;Asus<sp/>GTX<sp/>1650ti&quot;</highlight><highlight class="normal">,<sp/>150,<sp/></highlight><highlight class="stringliteral">&quot;Asus&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;labla&quot;</highlight><highlight class="normal">,<sp/>2,<sp/>3,<sp/>4532,<sp/>654,<sp/>6,<sp/>8);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c.<ref refid="class_catalogue_1a16755e25621142e6c29f3c2574c086ba" kindref="member">Add</ref>(g.<ref refid="class_g_p_u_1a13535142ba8cacba30f23f6bf8ed5200" kindref="member">clone</ref>());</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_product" kindref="compound">Product</ref>**<sp/>s1<sp/>=<sp/>c.<ref refid="class_catalogue_1a36939b9a4416c0fef711440b5b17161d" kindref="member">Search</ref>(</highlight><highlight class="stringliteral">&quot;Asus&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_product" kindref="compound">Product</ref>**<sp/>s2<sp/>=<sp/>c.<ref refid="class_catalogue_1a36939b9a4416c0fef711440b5b17161d" kindref="member">Search</ref>(</highlight><highlight class="stringliteral">&quot;RTX&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gtest__lite_8h_1aff8385840165a184edc29446aa51936f" kindref="member">EXPECT_EQ</ref>(s1[0]-&gt;getName(),<sp/>c[0]-&gt;getName());</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gtest__lite_8h_1aff8385840165a184edc29446aa51936f" kindref="member">EXPECT_EQ</ref>(s2[1]-&gt;getName(),<sp/>c[1]-&gt;getName());</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>s1;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>s2;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}<ref refid="gtest__lite_8h_1a29fd18bed01c4d836c7ebfe73a125c3f" kindref="member">END</ref></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gtest__lite_8h_1a379a7b57e74521cb2c8e99f0e2779a72" kindref="member">TEST</ref>(CATALOGUE_H,<sp/>Iterators)<sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_catalogue" kindref="compound">Catalogue</ref><sp/>c<sp/>=<sp/><ref refid="class_catalogue" kindref="compound">Catalogue</ref>();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sum<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>srand(0);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>30;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>s<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Product&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(i);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>price<sp/>=<sp/>rand()<sp/>%<sp/>980<sp/>+<sp/>20;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c.<ref refid="class_catalogue_1a16755e25621142e6c29f3c2574c086ba" kindref="member">Add</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_product" kindref="compound">Product</ref>(s,price,</highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sum<sp/>+=<sp/>price;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fs<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>x<sp/>:<sp/>c)<sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fs<sp/>+=<sp/>(int)x.getPrice();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gtest__lite_8h_1aff8385840165a184edc29446aa51936f" kindref="member">EXPECT_EQ</ref>(sum,<sp/>fs);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}<ref refid="gtest__lite_8h_1a29fd18bed01c4d836c7ebfe73a125c3f" kindref="member">END</ref></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gtest__lite_8h_1a379a7b57e74521cb2c8e99f0e2779a72" kindref="member">TEST</ref>(CATALOGUE_H,<sp/>save<sp/>/<sp/>load)<sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_catalogue" kindref="compound">Catalogue</ref><sp/>cSave<sp/>=<sp/><ref refid="class_catalogue" kindref="compound">Catalogue</ref>();</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cSave.<ref refid="class_catalogue_1a16755e25621142e6c29f3c2574c086ba" kindref="member">Add</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_product" kindref="compound">Product</ref>(</highlight><highlight class="stringliteral">&quot;Prod1&quot;</highlight><highlight class="normal">,<sp/>100,<sp/></highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cSave.<ref refid="class_catalogue_1a16755e25621142e6c29f3c2574c086ba" kindref="member">Add</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u" kindref="compound">GPU</ref>(</highlight><highlight class="stringliteral">&quot;GPU1&quot;</highlight><highlight class="normal">,<sp/>300,<sp/></highlight><highlight class="stringliteral">&quot;BrandName&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal">,<sp/>2,<sp/>2,<sp/>3000,<sp/>7000,<sp/>12,<sp/>300));</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cSave.<ref refid="class_catalogue_1a16755e25621142e6c29f3c2574c086ba" kindref="member">Add</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_h_d_d" kindref="compound">HDD</ref>(</highlight><highlight class="stringliteral">&quot;HDD1&quot;</highlight><highlight class="normal">,<sp/>60,<sp/></highlight><highlight class="stringliteral">&quot;hard<sp/>drive&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Kingston&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cSave.<ref refid="class_catalogue_1a16755e25621142e6c29f3c2574c086ba" kindref="member">Add</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_c_p_u" kindref="compound">CPU</ref>(</highlight><highlight class="stringliteral">&quot;Ryzen<sp/>9<sp/>5900x&quot;</highlight><highlight class="normal">,<sp/>500,<sp/></highlight><highlight class="stringliteral">&quot;cpu&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;AMD&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Zen<sp/>3&quot;</highlight><highlight class="normal">,<sp/>200,<sp/><ref refid="processor_8h_1a84edc84c8145e7997b70f9919ce44d68a89f9926b61ea482e780698f79c10fb2a" kindref="member">socket::AMD_AM4</ref>,<sp/>3600,<sp/>16,<sp/>32,<sp/>20,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cSave.<ref refid="class_catalogue_1afb2d18cb7a33814c40a526fbb4988018" kindref="member">Save</ref>(</highlight><highlight class="stringliteral">&quot;stock.txt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>}<ref refid="gtest__lite_8h_1a29fd18bed01c4d836c7ebfe73a125c3f" kindref="member">END</ref></highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/main.cpp"/>
+  </compounddef>
+</doxygen>

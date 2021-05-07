@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_s_s_d" kind="class" language="C++" prot="public">
+    <compoundname>SSD</compoundname>
+    <basecompoundref refid="class_storage" prot="public" virt="non-virtual">Storage</basecompoundref>
+    <includes refid="_memory_8h" local="no">Memory.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_s_d_1a17d090f306498b97db010f96be6ef25d" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int SSD::wSpeed</definition>
+        <argsstring></argsstring>
+        <name>wSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="72" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_s_d_1a49fb67fecc3e51532c161260a1852099" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int SSD::rSpeed</definition>
+        <argsstring></argsstring>
+        <name>rSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="73" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_s_d_1a8de2e51be89fab50489f4411ff99a4b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SSD::SSD</definition>
+        <argsstring>()</argsstring>
+        <name>SSD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="75" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_s_d_1a29d672d46a008f4067e5707e5da39242" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SSD::SSD</definition>
+        <argsstring>(unsigned int wSpeed, unsigned int rSpeed)</argsstring>
+        <name>SSD</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>wSpeed</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>rSpeed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="76" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="110" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_s_d_1a351234f073d98a3f7dd4834170ef1166" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SSD::SSD</definition>
+        <argsstring>(std::string name, double price, std::string dscrpt, std::string manufacturer, size_t c=1, ByteUnit bu=gigabyte, unsigned int wSpeed=0, unsigned int rSpeed=0)</argsstring>
+        <name>SSD</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>price</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>dscrpt</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>manufacturer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>c</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type><ref refid="_memory_8h_1a284499ae529838dbabf4c7a520e99a85" kindref="member">ByteUnit</ref></type>
+          <declname>bu</declname>
+          <defval><ref refid="_memory_8h_1a284499ae529838dbabf4c7a520e99a85af9deabc33a5630ffb405bb42d7cff365" kindref="member">gigabyte</ref></defval>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>wSpeed</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>rSpeed</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="77" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="111" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_s_d_1ae5c0ad45299683e1d39e34490c2df5f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SSD::SSD</definition>
+        <argsstring>(const SSD &amp;ssd)</argsstring>
+        <name>SSD</name>
+        <param>
+          <type>const <ref refid="class_s_s_d" kindref="compound">SSD</ref> &amp;</type>
+          <declname>ssd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="79" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="105" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_s_d_1a309d748d1273262845bad668e797ae73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int SSD::getReadSpeed</definition>
+        <argsstring>()</argsstring>
+        <name>getReadSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="80" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="116" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_s_d_1a16388ad4698bea556b140e2c7e5a6ba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int SSD::getWriteSpeed</definition>
+        <argsstring>()</argsstring>
+        <name>getWriteSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="81" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="117" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_s_d_1a4ab856f2201417d79af96755fe67f13b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string SSD::getObjType</definition>
+        <argsstring>()</argsstring>
+        <name>getObjType</name>
+        <reimplements refid="class_storage_1a9c6d68e682a8c329dc0611ce7266f2bc">getObjType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="82" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="118" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_s_d_1ac13108d9272a5fecb72f17e675b2d1ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string SSD::serializeObj</definition>
+        <argsstring>()</argsstring>
+        <name>serializeObj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="83" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="222" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_s_d_1adfbc00ab863bca1aff44b3ff233b5255" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_s_s_d" kindref="compound">SSD</ref> *</type>
+        <definition>SSD * SSD::clone</definition>
+        <argsstring>()</argsstring>
+        <name>clone</name>
+        <reimplements refid="class_storage_1af7f626e3a0bc9d46c59ef7dd8f57c6c9">clone</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="84" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="272" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_s_d_1aaaa23a6a0819baf5afc6ab140f728140" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SSD::operator==</definition>
+        <argsstring>(SSD &amp;rhs)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="class_s_s_d" kindref="compound">SSD</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="85" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="121" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_s_d_1a5561ea54e1f8ac3d1d2aad8905d9a869" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SSD::operator!=</definition>
+        <argsstring>(SSD &amp;rhs)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type><ref refid="class_s_s_d" kindref="compound">SSD</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="86" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="127" bodyend="129"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Storage</label>
+        <link refid="class_storage"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Product</label>
+        <link refid="class_product"/>
+      </node>
+      <node id="1">
+        <label>SSD</label>
+        <link refid="class_s_s_d"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Storage</label>
+        <link refid="class_storage"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Product</label>
+        <link refid="class_product"/>
+      </node>
+      <node id="1">
+        <label>SSD</label>
+        <link refid="class_s_s_d"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="71" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" bodystart="71" bodyend="87"/>
+    <listofallmembers>
+      <member refid="class_storage_1aae754660623b8e0e5046b967cb4cdb73" prot="private" virt="non-virtual"><scope>SSD</scope><name>capacity</name></member>
+      <member refid="class_s_s_d_1adfbc00ab863bca1aff44b3ff233b5255" prot="public" virt="virtual"><scope>SSD</scope><name>clone</name></member>
+      <member refid="class_product_1a948738c4cb8e65f1f54623001b8c3897" prot="public" virt="non-virtual"><scope>SSD</scope><name>decreaseStock</name></member>
+      <member refid="class_product_1ab88a1ecb238a74583a920a65f8cbee9c" prot="private" virt="non-virtual"><scope>SSD</scope><name>dscrpt</name></member>
+      <member refid="class_product_1a9279a6d296d5b8aafa0143bda648c3da" prot="public" virt="non-virtual"><scope>SSD</scope><name>getAmount</name></member>
+      <member refid="class_storage_1acdb19059f3115eceb8cb420b18658440" prot="public" virt="non-virtual"><scope>SSD</scope><name>getCapacity</name></member>
+      <member refid="class_product_1a874a2ad2556c8d82500cce9917d5ed8c" prot="public" virt="non-virtual"><scope>SSD</scope><name>getDescription</name></member>
+      <member refid="class_product_1a2f5aeb9d25fcbbcf0f6125351850d4ff" prot="public" virt="non-virtual"><scope>SSD</scope><name>getManufacturer</name></member>
+      <member refid="class_product_1a9cbd896ca6b2d95088be8ad8c3b11e3b" prot="public" virt="non-virtual"><scope>SSD</scope><name>getName</name></member>
+      <member refid="class_storage_1a3836c9fff79b96e8c87ab8a5976d89f8" prot="public" virt="non-virtual"><scope>SSD</scope><name>getNotation</name></member>
+      <member refid="class_product_1a0dc7c2163bf9c07e6283c2cbcaef58d3" prot="public" virt="non-virtual"><scope>SSD</scope><name>getObj_t</name></member>
+      <member refid="class_s_s_d_1a4ab856f2201417d79af96755fe67f13b" prot="public" virt="virtual"><scope>SSD</scope><name>getObjType</name></member>
+      <member refid="class_product_1a60e8ab009f51c39442257e96409144de" prot="public" virt="virtual" ambiguityscope="Product::"><scope>SSD</scope><name>getObjType</name></member>
+      <member refid="class_product_1a3be25f647260d61df6063ef706261c7f" prot="public" virt="non-virtual"><scope>SSD</scope><name>getPrice</name></member>
+      <member refid="class_s_s_d_1a309d748d1273262845bad668e797ae73" prot="public" virt="non-virtual"><scope>SSD</scope><name>getReadSpeed</name></member>
+      <member refid="class_storage_1af6dc4a84e1566ab8103623214eee2671" prot="public" virt="non-virtual"><scope>SSD</scope><name>getSizeType</name></member>
+      <member refid="class_storage_1ac52c20f77eeb4cb13cc3d02b5818e04c" prot="public" virt="non-virtual"><scope>SSD</scope><name>getSizeType_string</name></member>
+      <member refid="class_s_s_d_1a16388ad4698bea556b140e2c7e5a6ba7" prot="public" virt="non-virtual"><scope>SSD</scope><name>getWriteSpeed</name></member>
+      <member refid="class_product_1ae216152e43f64a82294c2c583396d13f" prot="public" virt="non-virtual"><scope>SSD</scope><name>increaseStock</name></member>
+      <member refid="class_product_1a831f4ac197a88d2c2b7260765714c0d4" prot="private" virt="non-virtual"><scope>SSD</scope><name>inv</name></member>
+      <member refid="class_product_1af3d21858bb34986f54309b877678daa8" prot="private" virt="non-virtual"><scope>SSD</scope><name>manufacturer</name></member>
+      <member refid="class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8" prot="private" virt="non-virtual"><scope>SSD</scope><name>name</name></member>
+      <member refid="class_storage_1a58275af4fc94f89edd8af0721aea467e" prot="private" virt="non-virtual"><scope>SSD</scope><name>notation</name></member>
+      <member refid="class_s_s_d_1a5561ea54e1f8ac3d1d2aad8905d9a869" prot="public" virt="non-virtual"><scope>SSD</scope><name>operator!=</name></member>
+      <member refid="class_storage_1ac44ec07b755c2a60f976cbd7ae13de81" prot="public" virt="virtual" ambiguityscope="Storage::"><scope>SSD</scope><name>operator!=</name></member>
+      <member refid="class_product_1af83d5faec51f3cf9c45d68d103a04114" prot="public" virt="virtual" ambiguityscope="Product::"><scope>SSD</scope><name>operator!=</name></member>
+      <member refid="class_s_s_d_1aaaa23a6a0819baf5afc6ab140f728140" prot="public" virt="non-virtual"><scope>SSD</scope><name>operator==</name></member>
+      <member refid="class_storage_1ab10853458f897082ba028cef2477005d" prot="public" virt="virtual" ambiguityscope="Storage::"><scope>SSD</scope><name>operator==</name></member>
+      <member refid="class_product_1a8b72d673cf7d89fb2e375a080af6263d" prot="public" virt="virtual" ambiguityscope="Product::"><scope>SSD</scope><name>operator==</name></member>
+      <member refid="class_product_1abb2572df7a832a509944905603ba5e4f" prot="private" virt="non-virtual"><scope>SSD</scope><name>price</name></member>
+      <member refid="class_product_1a82a40e1860ffe2c88ea08084037a6c42" prot="public" virt="virtual"><scope>SSD</scope><name>print</name></member>
+      <member refid="class_product_1a102f72142feba478ffe51c77a170537e" prot="public" virt="non-virtual"><scope>SSD</scope><name>Product</name></member>
+      <member refid="class_product_1accbe232b71fcb8641b7c5021fa4f6e2f" prot="public" virt="non-virtual"><scope>SSD</scope><name>Product</name></member>
+      <member refid="class_product_1a847c1d85e67ce387166a597579a55135" prot="public" virt="non-virtual"><scope>SSD</scope><name>Product</name></member>
+      <member refid="class_s_s_d_1a49fb67fecc3e51532c161260a1852099" prot="private" virt="non-virtual"><scope>SSD</scope><name>rSpeed</name></member>
+      <member refid="class_s_s_d_1ac13108d9272a5fecb72f17e675b2d1ed" prot="public" virt="non-virtual"><scope>SSD</scope><name>serializeObj</name></member>
+      <member refid="class_product_1a749f163f9319f2cf6e9e0620d7133f0b" prot="public" virt="virtual" ambiguityscope="Product::"><scope>SSD</scope><name>serializeObj</name></member>
+      <member refid="class_product_1a08d9ddfb4db62491607f14ec9fba0d77" prot="public" virt="non-virtual"><scope>SSD</scope><name>setDescription</name></member>
+      <member refid="class_product_1aeeafda76687dbbd8b2f086671c17461d" prot="public" virt="non-virtual"><scope>SSD</scope><name>setManuf</name></member>
+      <member refid="class_product_1a1f49f191dab6643d82aee0490bb96e7c" prot="public" virt="non-virtual"><scope>SSD</scope><name>setName</name></member>
+      <member refid="class_product_1a8ade25d68358bd4cb5b9f7c34fc53b44" prot="public" virt="non-virtual"><scope>SSD</scope><name>setPrice</name></member>
+      <member refid="class_s_s_d_1a8de2e51be89fab50489f4411ff99a4b9" prot="public" virt="non-virtual"><scope>SSD</scope><name>SSD</name></member>
+      <member refid="class_s_s_d_1a29d672d46a008f4067e5707e5da39242" prot="public" virt="non-virtual"><scope>SSD</scope><name>SSD</name></member>
+      <member refid="class_s_s_d_1a351234f073d98a3f7dd4834170ef1166" prot="public" virt="non-virtual"><scope>SSD</scope><name>SSD</name></member>
+      <member refid="class_s_s_d_1ae5c0ad45299683e1d39e34490c2df5f2" prot="public" virt="non-virtual"><scope>SSD</scope><name>SSD</name></member>
+      <member refid="class_storage_1aa557b155d438649718b658971c097859" prot="public" virt="non-virtual"><scope>SSD</scope><name>Storage</name></member>
+      <member refid="class_storage_1a51e13f81461a42036b877f158d6c807b" prot="public" virt="non-virtual"><scope>SSD</scope><name>Storage</name></member>
+      <member refid="class_storage_1af1098adcb33fd74e57cd855514014b73" prot="public" virt="non-virtual"><scope>SSD</scope><name>Storage</name></member>
+      <member refid="class_product_1afa7216e3fe55009b1862453041a34374" prot="protected" virt="non-virtual"><scope>SSD</scope><name>t</name></member>
+      <member refid="class_s_s_d_1a17d090f306498b97db010f96be6ef25d" prot="private" virt="non-virtual"><scope>SSD</scope><name>wSpeed</name></member>
+      <member refid="class_product_1a18f26095e25405579968c6ede367484f" prot="public" virt="virtual"><scope>SSD</scope><name>~Product</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

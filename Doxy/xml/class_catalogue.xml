@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_catalogue" kind="class" language="C++" prot="public">
+    <compoundname>Catalogue</compoundname>
+    <includes refid="catalogue_8h" local="no">catalogue.h</includes>
+    <innerclass refid="class_catalogue_1_1_iterator" prot="public">Catalogue::Iterator</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_catalogue_1abab6ba1d196fbd84bb273c1b4199ccb2" prot="private" static="no" mutable="no">
+        <type><ref refid="class_product" kindref="compound">Product</ref> **</type>
+        <definition>Product** Catalogue::list</definition>
+        <argsstring></argsstring>
+        <name>list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="15" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_catalogue_1a137484a0db7726821e1577a47b2a37fa" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Catalogue::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="16" column="8" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_catalogue_1a16755e25621142e6c29f3c2574c086ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catalogue::Add</definition>
+        <argsstring>(Product *p)</argsstring>
+        <name>Add</name>
+        <param>
+          <type><ref refid="class_product" kindref="compound">Product</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="19" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="11" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_catalogue_1aa1cd6a60d22d6bd5cb904c6550668e29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catalogue::Remove</definition>
+        <argsstring>(Product *p)</argsstring>
+        <name>Remove</name>
+        <param>
+          <type><ref refid="class_product" kindref="compound">Product</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="20" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="72" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_catalogue_1ae8859b3893a47bb9707f7e5a9e2a4d79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catalogue::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="21" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="93" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_catalogue_1afb2d18cb7a33814c40a526fbb4988018" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catalogue::Save</definition>
+        <argsstring>(const std::string path) const</argsstring>
+        <name>Save</name>
+        <param>
+          <type>const std::string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="23" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="23" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_catalogue_1a0055df0cb8fbe295bf93df7c29be96e5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catalogue::Load</definition>
+        <argsstring>(const std::string path) const</argsstring>
+        <name>Load</name>
+        <param>
+          <type>const std::string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="24" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_catalogue_1a36939b9a4416c0fef711440b5b17161d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_product" kindref="compound">Product</ref> **</type>
+        <definition>Product ** Catalogue::Search</definition>
+        <argsstring>(std::string criteria)</argsstring>
+        <name>Search</name>
+        <param>
+          <type>std::string</type>
+          <declname>criteria</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="26" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="118" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="class_catalogue_1a15c28294d8e38ca67c105e4fa971835b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catalogue::OrderBy</definition>
+        <argsstring>(OrderReq r, bool rev)</argsstring>
+        <name>OrderBy</name>
+        <param>
+          <type><ref refid="catalogue_8h_1ac13fc3178aad8dbfd71419053e15691d" kindref="member">OrderReq</ref></type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>rev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="27" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="150" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="class_catalogue_1a68cc0da89a96d535a3ea7aeabc2ed944" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Catalogue::getSize</definition>
+        <argsstring>()</argsstring>
+        <name>getSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="29" column="8" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_catalogue_1af9ebacaaef724e5c04c334322f81a83b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_product" kindref="compound">Product</ref> *</type>
+        <definition>Product * Catalogue::operator[]</definition>
+        <argsstring>(size_t idx)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>size_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="30" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="107" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="class_catalogue_1a406ca1384645f90d84076fa8b3f4b3f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Catalogue::Catalogue</definition>
+        <argsstring>()</argsstring>
+        <name>Catalogue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="31" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_catalogue_1af313b7234d8995e181ddf1bb95d1074c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Catalogue::Catalogue</definition>
+        <argsstring>(Product **list, size_t s)</argsstring>
+        <name>Catalogue</name>
+        <param>
+          <type><ref refid="class_product" kindref="compound">Product</ref> **</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="32" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="6" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_catalogue_1a023fd8d70a58f76d2bbd6ef1e3ef0e9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Catalogue::~Catalogue</definition>
+        <argsstring>()</argsstring>
+        <name>~Catalogue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="33" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="101" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="class_catalogue_1ab431cf38c861220bd7be72ecbc1cc77e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_catalogue_1_1_iterator" kindref="compound">Iterator</ref></type>
+        <definition>Catalogue::Iterator Catalogue::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="37" column="10" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="167" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="class_catalogue_1a35b500feb3bb24104ccf324088972370" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_catalogue_1_1_iterator" kindref="compound">Iterator</ref></type>
+        <definition>Catalogue::Iterator Catalogue::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="38" column="10" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="170" bodyend="172"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Catalogue</label>
+        <link refid="class_catalogue"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-list</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Product</label>
+        <link refid="class_product"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="14" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" bodystart="14" bodyend="52"/>
+    <listofallmembers>
+      <member refid="class_catalogue_1a16755e25621142e6c29f3c2574c086ba" prot="public" virt="non-virtual"><scope>Catalogue</scope><name>Add</name></member>
+      <member refid="class_catalogue_1ab431cf38c861220bd7be72ecbc1cc77e" prot="public" virt="non-virtual"><scope>Catalogue</scope><name>begin</name></member>
+      <member refid="class_catalogue_1a406ca1384645f90d84076fa8b3f4b3f2" prot="public" virt="non-virtual"><scope>Catalogue</scope><name>Catalogue</name></member>
+      <member refid="class_catalogue_1af313b7234d8995e181ddf1bb95d1074c" prot="public" virt="non-virtual"><scope>Catalogue</scope><name>Catalogue</name></member>
+      <member refid="class_catalogue_1ae8859b3893a47bb9707f7e5a9e2a4d79" prot="public" virt="non-virtual"><scope>Catalogue</scope><name>Clear</name></member>
+      <member refid="class_catalogue_1a35b500feb3bb24104ccf324088972370" prot="public" virt="non-virtual"><scope>Catalogue</scope><name>end</name></member>
+      <member refid="class_catalogue_1a68cc0da89a96d535a3ea7aeabc2ed944" prot="public" virt="non-virtual"><scope>Catalogue</scope><name>getSize</name></member>
+      <member refid="class_catalogue_1abab6ba1d196fbd84bb273c1b4199ccb2" prot="private" virt="non-virtual"><scope>Catalogue</scope><name>list</name></member>
+      <member refid="class_catalogue_1a0055df0cb8fbe295bf93df7c29be96e5" prot="public" virt="non-virtual"><scope>Catalogue</scope><name>Load</name></member>
+      <member refid="class_catalogue_1af9ebacaaef724e5c04c334322f81a83b" prot="public" virt="non-virtual"><scope>Catalogue</scope><name>operator[]</name></member>
+      <member refid="class_catalogue_1a15c28294d8e38ca67c105e4fa971835b" prot="public" virt="non-virtual"><scope>Catalogue</scope><name>OrderBy</name></member>
+      <member refid="class_catalogue_1aa1cd6a60d22d6bd5cb904c6550668e29" prot="public" virt="non-virtual"><scope>Catalogue</scope><name>Remove</name></member>
+      <member refid="class_catalogue_1afb2d18cb7a33814c40a526fbb4988018" prot="public" virt="non-virtual"><scope>Catalogue</scope><name>Save</name></member>
+      <member refid="class_catalogue_1a36939b9a4416c0fef711440b5b17161d" prot="public" virt="non-virtual"><scope>Catalogue</scope><name>Search</name></member>
+      <member refid="class_catalogue_1a137484a0db7726821e1577a47b2a37fa" prot="private" virt="non-virtual"><scope>Catalogue</scope><name>size</name></member>
+      <member refid="class_catalogue_1a023fd8d70a58f76d2bbd6ef1e3ef0e9e" prot="public" virt="non-virtual"><scope>Catalogue</scope><name>~Catalogue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

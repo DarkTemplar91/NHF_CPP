@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_p_c" kind="class" language="C++" prot="public">
+    <compoundname>PC</compoundname>
+    <basecompoundref refid="class_product" prot="public" virt="non-virtual">Product</basecompoundref>
+    <includes refid="_computer_8h" local="no">Computer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_p_c_1a6494081edf14e9c83ee0efa460e5e291" prot="private" static="no" mutable="no">
+        <type><ref refid="class_g_p_u" kindref="compound">GPU</ref></type>
+        <definition>GPU PC::gpu</definition>
+        <argsstring></argsstring>
+        <name>gpu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="15" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_c_1aea5e38e403dd8ab8886f5fe3635848c0" prot="private" static="no" mutable="no">
+        <type><ref refid="class_c_p_u" kindref="compound">CPU</ref></type>
+        <definition>CPU PC::cpu</definition>
+        <argsstring></argsstring>
+        <name>cpu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="16" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_c_1a1af1f6ded64f3db1242ed1f472521466" prot="private" static="no" mutable="no">
+        <type><ref refid="class_motherboard" kindref="compound">Motherboard</ref></type>
+        <definition>Motherboard PC::board</definition>
+        <argsstring></argsstring>
+        <name>board</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="17" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_c_1a69788ef661daba11ea736264beaa5990" prot="private" static="no" mutable="no">
+        <type><ref refid="class_product" kindref="compound">Product</ref></type>
+        <definition>Product PC::pcCase</definition>
+        <argsstring></argsstring>
+        <name>pcCase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="18" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_c_1ade767f098d19e2eb30abef9fc1f7e6c4" prot="private" static="no" mutable="no">
+        <type><ref refid="class_product" kindref="compound">Product</ref></type>
+        <definition>Product PC::psu</definition>
+        <argsstring></argsstring>
+        <name>psu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="19" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_c_1a416bf67d1a321773a55c2c0acd4c761a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_storage" kindref="compound">Storage</ref> *</type>
+        <definition>Storage* PC::pcStorage</definition>
+        <argsstring></argsstring>
+        <name>pcStorage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="20" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_c_1a6f824a50b70b8f8660a1ecae43f01818" prot="private" static="no" mutable="no">
+        <type><ref refid="class_r_a_m" kindref="compound">RAM</ref></type>
+        <definition>RAM PC::ramslots[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>ramslots</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="21" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_p_c_1a213092addb3a1d89b761f780a055f0a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PC::PC</definition>
+        <argsstring>()</argsstring>
+        <name>PC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_p_c_1ab76d67ed4e2548fdf49b8c7df9c88c46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PC::PC</definition>
+        <argsstring>(const PC &amp;pc)</argsstring>
+        <name>PC</name>
+        <param>
+          <type>const <ref refid="class_p_c" kindref="compound">PC</ref> &amp;</type>
+          <declname>pc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="24" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.cpp" bodystart="7" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_p_c_1a78b1592a015aa0213ad5ee441daa4dc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string PC::getObjType</definition>
+        <argsstring>()</argsstring>
+        <name>getObjType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="25" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.cpp" bodystart="4" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_p_c_1aa4f5779cf5f9a4ec7806da64a09b8cb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_p_c" kindref="compound">PC</ref> *</type>
+        <definition>PC * PC::clone</definition>
+        <argsstring>()</argsstring>
+        <name>clone</name>
+        <reimplements refid="class_product_1a2cc3f5ef8abe14801e185734cfcc3b57">clone</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="26" column="4" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.cpp" bodystart="17" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>PC</label>
+        <link refid="class_p_c"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Product</label>
+        <link refid="class_product"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Storage</label>
+        <link refid="class_storage"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PC</label>
+        <link refid="class_p_c"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-pcStorage</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-cpu</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>-gpu</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>-ramslots</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-pcCase</edgelabel>
+          <edgelabel>-psu</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>-board</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CPU</label>
+        <link refid="class_c_p_u"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>GPU</label>
+        <link refid="class_g_p_u"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Product</label>
+        <link refid="class_product"/>
+      </node>
+      <node id="7">
+        <label>Motherboard</label>
+        <link refid="class_motherboard"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>RAM</label>
+        <link refid="class_r_a_m"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="14" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" bodystart="14" bodyend="28"/>
+    <listofallmembers>
+      <member refid="class_p_c_1a1af1f6ded64f3db1242ed1f472521466" prot="private" virt="non-virtual"><scope>PC</scope><name>board</name></member>
+      <member refid="class_p_c_1aa4f5779cf5f9a4ec7806da64a09b8cb3" prot="public" virt="virtual"><scope>PC</scope><name>clone</name></member>
+      <member refid="class_p_c_1aea5e38e403dd8ab8886f5fe3635848c0" prot="private" virt="non-virtual"><scope>PC</scope><name>cpu</name></member>
+      <member refid="class_product_1a948738c4cb8e65f1f54623001b8c3897" prot="public" virt="non-virtual"><scope>PC</scope><name>decreaseStock</name></member>
+      <member refid="class_product_1ab88a1ecb238a74583a920a65f8cbee9c" prot="private" virt="non-virtual"><scope>PC</scope><name>dscrpt</name></member>
+      <member refid="class_product_1a9279a6d296d5b8aafa0143bda648c3da" prot="public" virt="non-virtual"><scope>PC</scope><name>getAmount</name></member>
+      <member refid="class_product_1a874a2ad2556c8d82500cce9917d5ed8c" prot="public" virt="non-virtual"><scope>PC</scope><name>getDescription</name></member>
+      <member refid="class_product_1a2f5aeb9d25fcbbcf0f6125351850d4ff" prot="public" virt="non-virtual"><scope>PC</scope><name>getManufacturer</name></member>
+      <member refid="class_product_1a9cbd896ca6b2d95088be8ad8c3b11e3b" prot="public" virt="non-virtual"><scope>PC</scope><name>getName</name></member>
+      <member refid="class_product_1a0dc7c2163bf9c07e6283c2cbcaef58d3" prot="public" virt="non-virtual"><scope>PC</scope><name>getObj_t</name></member>
+      <member refid="class_p_c_1a78b1592a015aa0213ad5ee441daa4dc5" prot="public" virt="non-virtual"><scope>PC</scope><name>getObjType</name></member>
+      <member refid="class_product_1a60e8ab009f51c39442257e96409144de" prot="public" virt="virtual" ambiguityscope="Product::"><scope>PC</scope><name>getObjType</name></member>
+      <member refid="class_product_1a3be25f647260d61df6063ef706261c7f" prot="public" virt="non-virtual"><scope>PC</scope><name>getPrice</name></member>
+      <member refid="class_p_c_1a6494081edf14e9c83ee0efa460e5e291" prot="private" virt="non-virtual"><scope>PC</scope><name>gpu</name></member>
+      <member refid="class_product_1ae216152e43f64a82294c2c583396d13f" prot="public" virt="non-virtual"><scope>PC</scope><name>increaseStock</name></member>
+      <member refid="class_product_1a831f4ac197a88d2c2b7260765714c0d4" prot="private" virt="non-virtual"><scope>PC</scope><name>inv</name></member>
+      <member refid="class_product_1af3d21858bb34986f54309b877678daa8" prot="private" virt="non-virtual"><scope>PC</scope><name>manufacturer</name></member>
+      <member refid="class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8" prot="private" virt="non-virtual"><scope>PC</scope><name>name</name></member>
+      <member refid="class_product_1af83d5faec51f3cf9c45d68d103a04114" prot="public" virt="virtual"><scope>PC</scope><name>operator!=</name></member>
+      <member refid="class_product_1a8b72d673cf7d89fb2e375a080af6263d" prot="public" virt="virtual"><scope>PC</scope><name>operator==</name></member>
+      <member refid="class_p_c_1a213092addb3a1d89b761f780a055f0a3" prot="public" virt="non-virtual"><scope>PC</scope><name>PC</name></member>
+      <member refid="class_p_c_1ab76d67ed4e2548fdf49b8c7df9c88c46" prot="public" virt="non-virtual"><scope>PC</scope><name>PC</name></member>
+      <member refid="class_p_c_1a69788ef661daba11ea736264beaa5990" prot="private" virt="non-virtual"><scope>PC</scope><name>pcCase</name></member>
+      <member refid="class_p_c_1a416bf67d1a321773a55c2c0acd4c761a" prot="private" virt="non-virtual"><scope>PC</scope><name>pcStorage</name></member>
+      <member refid="class_product_1abb2572df7a832a509944905603ba5e4f" prot="private" virt="non-virtual"><scope>PC</scope><name>price</name></member>
+      <member refid="class_product_1a82a40e1860ffe2c88ea08084037a6c42" prot="public" virt="virtual"><scope>PC</scope><name>print</name></member>
+      <member refid="class_product_1a102f72142feba478ffe51c77a170537e" prot="public" virt="non-virtual"><scope>PC</scope><name>Product</name></member>
+      <member refid="class_product_1accbe232b71fcb8641b7c5021fa4f6e2f" prot="public" virt="non-virtual"><scope>PC</scope><name>Product</name></member>
+      <member refid="class_product_1a847c1d85e67ce387166a597579a55135" prot="public" virt="non-virtual"><scope>PC</scope><name>Product</name></member>
+      <member refid="class_p_c_1ade767f098d19e2eb30abef9fc1f7e6c4" prot="private" virt="non-virtual"><scope>PC</scope><name>psu</name></member>
+      <member refid="class_p_c_1a6f824a50b70b8f8660a1ecae43f01818" prot="private" virt="non-virtual"><scope>PC</scope><name>ramslots</name></member>
+      <member refid="class_product_1a749f163f9319f2cf6e9e0620d7133f0b" prot="public" virt="virtual"><scope>PC</scope><name>serializeObj</name></member>
+      <member refid="class_product_1a08d9ddfb4db62491607f14ec9fba0d77" prot="public" virt="non-virtual"><scope>PC</scope><name>setDescription</name></member>
+      <member refid="class_product_1aeeafda76687dbbd8b2f086671c17461d" prot="public" virt="non-virtual"><scope>PC</scope><name>setManuf</name></member>
+      <member refid="class_product_1a1f49f191dab6643d82aee0490bb96e7c" prot="public" virt="non-virtual"><scope>PC</scope><name>setName</name></member>
+      <member refid="class_product_1a8ade25d68358bd4cb5b9f7c34fc53b44" prot="public" virt="non-virtual"><scope>PC</scope><name>setPrice</name></member>
+      <member refid="class_product_1afa7216e3fe55009b1862453041a34374" prot="protected" virt="non-virtual"><scope>PC</scope><name>t</name></member>
+      <member refid="class_product_1a18f26095e25405579968c6ede367484f" prot="public" virt="virtual"><scope>PC</scope><name>~Product</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

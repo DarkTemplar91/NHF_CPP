@@ -7,12 +7,12 @@
 #include "memtrace.h"
 
 class GPU : public Product {
-	unsigned int portHDMI;
-	unsigned int portDisplay;
-	unsigned int gpuClock;
-	unsigned int memoryClock;
-	unsigned int vram;
-	unsigned int tdp;
+	unsigned int portHDMI;			///Number of HDMI ports on GPU
+	unsigned int portDisplay;		///Number of Display ports on GPU
+	unsigned int gpuClock;			///GPU Clock in Mhz
+	unsigned int memoryClock;		///Memory Clock in Mhz
+	unsigned int vram;				///VRAM in GB
+	unsigned int tdp;				///total power drawn
 public:
 	GPU() {}
 	GPU(unsigned int portHDMI, unsigned int portDisplay,

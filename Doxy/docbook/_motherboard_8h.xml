@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__motherboard_8h" xml:lang="en-US">
+<title>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h File Reference</title>
+<indexterm><primary>C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h</primary></indexterm>
+<programlisting>#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &quot;products.h&quot;
+#include &quot;processor.h&quot;
+#include &quot;memtrace.h&quot;
+</programlisting>Include dependency graph for Motherboard.h:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="_motherboard_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+This graph shows which files directly or indirectly include this file:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="_motherboard_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_motherboard">Motherboard</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="__motherboard_8h_1adf354b92ab85f8ff2d68abc40d8573bd">mbType</link> { <link linkend="__motherboard_8h_1adf354b92ab85f8ff2d68abc40d8573bda7687d6fcbcd0f377bc887e9db0a63c4a">ATX</link>
+, <link linkend="__motherboard_8h_1adf354b92ab85f8ff2d68abc40d8573bdae4cfe297dcce539ae1a53c8b3234929f">mATX</link>
+, <link linkend="__motherboard_8h_1adf354b92ab85f8ff2d68abc40d8573bda24c80a512d46a1326f9be6bb89fe5d38">ITX</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>std::ifstream &amp; <link linkend="__motherboard_8h_1a7e4e869735d54ddf02e5165d0fc8a6a3">operator&gt;&gt;</link> (std::ifstream &amp;savefile, <link linkend="_class_motherboard">Motherboard</link> &amp;rhs)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Enumeration Type Documentation</title>
+<anchor xml:id="__motherboard_8h_1adf354b92ab85f8ff2d68abc40d8573bd"/>    <section>
+    <title>mbType</title>
+<indexterm><primary>mbType</primary><secondary>Motherboard.h</secondary></indexterm>
+<indexterm><primary>Motherboard.h</primary><secondary>mbType</secondary></indexterm>
+<para><computeroutput>enum <link linkend="__motherboard_8h_1adf354b92ab85f8ff2d68abc40d8573bd">mbType</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>ATX</primary><secondary>Motherboard.h</secondary></indexterm>
+<indexterm><primary>Motherboard.h</primary><secondary>ATX</secondary></indexterm>
+<anchor xml:id="__motherboard_8h_1adf354b92ab85f8ff2d68abc40d8573bda7687d6fcbcd0f377bc887e9db0a63c4a"/>ATX</entry><entry></entry></row><row><entry><indexterm><primary>mATX</primary><secondary>Motherboard.h</secondary></indexterm>
+<indexterm><primary>Motherboard.h</primary><secondary>mATX</secondary></indexterm>
+<anchor xml:id="__motherboard_8h_1adf354b92ab85f8ff2d68abc40d8573bdae4cfe297dcce539ae1a53c8b3234929f"/>mATX</entry><entry></entry></row><row><entry><indexterm><primary>ITX</primary><secondary>Motherboard.h</secondary></indexterm>
+<indexterm><primary>Motherboard.h</primary><secondary>ITX</secondary></indexterm>
+<anchor xml:id="__motherboard_8h_1adf354b92ab85f8ff2d68abc40d8573bda24c80a512d46a1326f9be6bb89fe5d38"/>ITX</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="__motherboard_8h_1a7e4e869735d54ddf02e5165d0fc8a6a3"/>    <section>
+    <title>operator&gt;&gt;()</title>
+<indexterm><primary>operator&gt;&gt;</primary><secondary>Motherboard.h</secondary></indexterm>
+<indexterm><primary>Motherboard.h</primary><secondary>operator&gt;&gt;</secondary></indexterm>
+<para><computeroutput>std::ifstream&amp; operator&gt;&gt; (std::ifstream &amp; savefile, <link linkend="_class_motherboard">Motherboard</link> &amp; rhs)</computeroutput></para></section>
+</section>
+</section>

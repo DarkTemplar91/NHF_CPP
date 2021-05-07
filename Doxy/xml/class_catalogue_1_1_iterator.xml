@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_catalogue_1_1_iterator" kind="class" language="C++" prot="public">
+    <compoundname>Catalogue::Iterator</compoundname>
+    <includes refid="catalogue_8h" local="no">catalogue.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_catalogue_1_1_iterator_1a8314538e578af14c7c3f07d7ec250a42" prot="private" static="no" mutable="no">
+        <type><ref refid="class_product" kindref="compound">Product</ref> **</type>
+        <definition>Product** Catalogue::Iterator::pointer</definition>
+        <argsstring></argsstring>
+        <name>pointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="41" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_catalogue_1_1_iterator_1a07a6afd7d24ea4ed54e39a9649c2e86b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Catalogue::Iterator::Iterator</definition>
+        <argsstring>(Product **p)</argsstring>
+        <name>Iterator</name>
+        <param>
+          <type><ref refid="class_product" kindref="compound">Product</ref> **</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="43" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_catalogue_1_1_iterator_1a710e43cbd5cf6755db5abc514fee2cbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_catalogue_1_1_iterator" kindref="compound">Iterator</ref> &amp;</type>
+        <definition>Catalogue::Iterator &amp; Catalogue::Iterator::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="44" column="10" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="175" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="class_catalogue_1_1_iterator_1aef9b281974d9a66ba6540a7400041a6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_catalogue_1_1_iterator" kindref="compound">Iterator</ref> &amp;</type>
+        <definition>Catalogue::Iterator &amp; Catalogue::Iterator::operator++</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator++</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="45" column="10" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="179" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="class_catalogue_1_1_iterator_1aff6647d77a7d91098a2a07374a57a8e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catalogue::Iterator::operator==</definition>
+        <argsstring>(const Iterator &amp;rhs)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="class_catalogue_1_1_iterator" kindref="compound">Iterator</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="46" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="184" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="class_catalogue_1_1_iterator_1a114c19ae7660bb10d913398bd36a9271" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catalogue::Iterator::operator!=</definition>
+        <argsstring>(const Iterator &amp;rhs)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="class_catalogue_1_1_iterator" kindref="compound">Iterator</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="47" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="187" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="class_catalogue_1_1_iterator_1a0eb533fe60b2b25c7291f6542e66418e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_product" kindref="compound">Product</ref> &amp;</type>
+        <definition>Product &amp; Catalogue::Iterator::operator*</definition>
+        <argsstring>()</argsstring>
+        <name>operator*</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="48" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="190" bodyend="192"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Catalogue::Iterator</label>
+        <link refid="class_catalogue_1_1_iterator"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-pointer</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Product</label>
+        <link refid="class_product"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="40" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" bodystart="40" bodyend="50"/>
+    <listofallmembers>
+      <member refid="class_catalogue_1_1_iterator_1a07a6afd7d24ea4ed54e39a9649c2e86b" prot="public" virt="non-virtual"><scope>Catalogue::Iterator</scope><name>Iterator</name></member>
+      <member refid="class_catalogue_1_1_iterator_1a114c19ae7660bb10d913398bd36a9271" prot="public" virt="non-virtual"><scope>Catalogue::Iterator</scope><name>operator!=</name></member>
+      <member refid="class_catalogue_1_1_iterator_1a0eb533fe60b2b25c7291f6542e66418e" prot="public" virt="non-virtual"><scope>Catalogue::Iterator</scope><name>operator*</name></member>
+      <member refid="class_catalogue_1_1_iterator_1a710e43cbd5cf6755db5abc514fee2cbc" prot="public" virt="non-virtual"><scope>Catalogue::Iterator</scope><name>operator++</name></member>
+      <member refid="class_catalogue_1_1_iterator_1aef9b281974d9a66ba6540a7400041a6e" prot="public" virt="non-virtual"><scope>Catalogue::Iterator</scope><name>operator++</name></member>
+      <member refid="class_catalogue_1_1_iterator_1aff6647d77a7d91098a2a07374a57a8e2" prot="public" virt="non-virtual"><scope>Catalogue::Iterator</scope><name>operator==</name></member>
+      <member refid="class_catalogue_1_1_iterator_1a8314538e578af14c7c3f07d7ec250a42" prot="private" virt="non-virtual"><scope>Catalogue::Iterator</scope><name>pointer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

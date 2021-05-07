@@ -6,20 +6,26 @@
 #include <string>
 #include "memtrace.h"
 
+/// <summary>
+/// Enumerator for multiples of byte
+/// </summary>
 enum ByteUnit{bit, byte, kilobyte, megabyte, gigabyte, terabyte};
 
+/// <summary>
+/// Base class for data storage/memory
+/// </summary>
 class Storage : public Product {
-	size_t capacity;
-	ByteUnit notation;
+	size_t capacity;		///Capacity of storage
+	ByteUnit notation;		///Unit of capacity
 public:
 	Storage(const Storage& m);
 	Storage(size_t c = 1, ByteUnit bu = ByteUnit::gigabyte);
 	Storage(std::string name, double price, std::string descript, std::string manuf, size_t c, ByteUnit bu);
-	size_t getCapacity()const;
-	ByteUnit getSizeType()const;
-	std::string getSizeType_string()const;
-	std::string getNotation()const;
-	std::string serializeObj();
+	size_t getCapacity()const;			///Returns capacity
+	ByteUnit getSizeType()const;		///Returns the unit type
+	std::string getNotation()const;		///Return notation in string
+	std::string serializeObj();			///Serializes object
+
 
 	virtual bool operator==(Storage& rhs);
 	virtual bool operator!=(Storage& rhs);
@@ -28,39 +34,55 @@ public:
 	
 
 };
+
+/// <summary>
+/// Enumerator for RAM types
+/// </summary>
 enum MemoryType{DDR,DDR2,DDR3,DDR4,DDR5,SO_DIMM,SO_DIMM2};
+/// <summary>
+/// Class for modelling Random Access Memory
+/// Inheriting from storage
+/// </summary>
 class RAM : public Storage {
-	MemoryType type;
-	int clockSpeed; //in Mhz
-	int cl; //Cas Latency
-	double v; //Voltage;
+	MemoryType type;		///Memory type
+	int clockSpeed;			///Clockspeed of RAM in Mhz
+	int cl;					///Cas Latency
+	double v;				///Voltage;
 public:
 	RAM() {}
 	RAM(const RAM& r);
 	RAM(MemoryType type, int clockSpeed, int cl, double v);
 	RAM(size_t c, ByteUnit bu, MemoryType type, int clockSpeed, int cl, double v);
 	RAM(std::string name, double price, std::string descript, std::string manuf, size_t c, ByteUnit bu, MemoryType type, int clockSpeed, int cl, double v);
-	MemoryType getMemType();
-	int getClockSpeed();
-	int getlatency();
-	double getVoltage();
+	
+	MemoryType getMemType();		///Returns memory type
+	int getClockSpeed();			///Returns clockspeed of RAM
+	int getlatency();				///Returns latency
+	double getVoltage();			///Returns stock voltage
+	
 	std::string getObjType();
 	std::string serializeObj();
+	
 	RAM* clone();
 
 	bool operator!=(RAM& rhs);
 	bool operator==(RAM& rhs);
 };
-
+/// <summary>
+/// Class for modelling Hard Drive Disks.
+/// Inheriting from Storage
+/// </summary>
 class HDD :public Storage {
-	unsigned int rpm;
+	unsigned int rpm;		///Round per minute
 public:
 	HDD() {}
 	HDD(unsigned int rpm);
 	HDD(std::string name, double price, std::string dscrpt, std::string manufacturer, size_t c = 1, ByteUnit bu = gigabyte,
 		unsigned int rpm = 7200);
 	HDD(const HDD& hdd);
-	unsigned int getRPM();
+
+	unsigned int getRPM();		///Returns RPM of HDD
+
 	std::string getObjType();
 	std::string serializeObj();
 	HDD* clone();
@@ -68,17 +90,23 @@ public:
 	bool operator!=(HDD& rhs);
 
 };
+/// <summary>
+/// Class for modelling SSDs
+/// Inheriting directly from Storage class
+/// </summary>
 class SSD : public Storage {
-	unsigned int wSpeed;
-	unsigned int rSpeed;
+	unsigned int wSpeed;	///Write speed (MB/s)
+	unsigned int rSpeed;	///Read speed (MB/s)
 public:
 	SSD() {}
 	SSD(unsigned int wSpeed, unsigned int rSpeed);
 	SSD(std::string name, double price, std::string dscrpt, std::string manufacturer, size_t c = 1,
 		ByteUnit bu = gigabyte, unsigned int wSpeed = 0, unsigned int rSpeed = 0);
 	SSD(const SSD& ssd);
-	unsigned int getReadSpeed();
-	unsigned int getWriteSpeed();
+
+	unsigned int getReadSpeed();	///Returns Read speed
+	unsigned int getWriteSpeed();	///Returns write speed
+
 	std::string getObjType();
 	std::string serializeObj();
 	SSD* clone();
