@@ -1,5 +1,5 @@
 <map id="HDD" name="HDD">
-<area shape="rect" id="node1" title="Class for modelling Hard Drive Disks. Inheriting from Storage" alt="" coords="17,784,128,979"/>
-<area shape="rect" id="node2" href="$class_storage.html" title="Base class for data storage/memory" alt="" coords="15,512,130,736"/>
+<area shape="rect" id="node1" title="Class for modelling Hard Drive Disks. Inheriting from Storage" alt="" coords="17,799,128,1008"/>
+<area shape="rect" id="node2" href="$class_storage.html" title="Base class for data storage/memory" alt="" coords="15,512,130,751"/>
 <area shape="rect" id="node3" href="$class_product.html" title=" " alt="" coords="5,5,140,464"/>
 </map>

@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['t_418',['t',['../class_product.html#afa7216e3fe55009b1862453041a34374',1,'Product']]],
-  ['tdp_419',['tdp',['../class_c_p_u.html#a65f32aa0ee6335f15d7a7087da2564f3',1,'CPU::tdp()'],['../class_g_p_u.html#a22c51b5240ede46c1aa9e0bbb1f96562',1,'GPU::tdp()']]],
-  ['test_420',['test',['../namespacegtest__lite.html#a819c9a4e5bf13b0f5d81734978336ca0',1,'gtest_lite']]],
-  ['threadcount_421',['threadCount',['../class_c_p_u.html#a19e584d567f61b968f2f5e09c86abc4c',1,'CPU']]],
-  ['tmp_422',['tmp',['../structgtest__lite_1_1_test.html#a1145ceb335a60a808b7b4d5d1624b2a5',1,'gtest_lite::Test']]],
-  ['type_423',['type',['../class_r_a_m.html#af6a1d40b000e6f7b61fd596c0ecb8618',1,'RAM']]]
+  ['sata_429',['sata',['../class_motherboard.html#ab237d87d79328daf0903b0c17fc56240',1,'Motherboard']]],
+  ['save_430',['save',['../classgtest__lite_1_1ostream_redir.html#a566f2a48eefa97078418086497de936e',1,'gtest_lite::ostreamRedir']]],
+  ['size_431',['size',['../class_catalogue.html#a137484a0db7726821e1577a47b2a37fa',1,'Catalogue']]],
+  ['sockettype_432',['socketType',['../class_motherboard.html#a96c475cc3d6cee4245090a3257f2c6c6',1,'Motherboard::socketType()'],['../class_c_p_u.html#a1f1bb470721f49e48139e46bbea9f109',1,'CPU::socketType()']]],
+  ['src_433',['src',['../classgtest__lite_1_1ostream_redir.html#a6a39fb873b65f76b40d93ca3793da6d0',1,'gtest_lite::ostreamRedir']]],
+  ['status_434',['status',['../structgtest__lite_1_1_test.html#a59a9a7f0ef7867af604ce5678f7a2c13',1,'gtest_lite::Test']]],
+  ['sum_435',['sum',['../structgtest__lite_1_1_test.html#a6da678d43b72b9e2bff1c99e1d3c48f5',1,'gtest_lite::Test']]]
 ];

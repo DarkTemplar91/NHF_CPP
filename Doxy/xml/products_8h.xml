@@ -240,6 +240,13 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
+        <enumvalue id="products_8h_1a6f54b54b1983a312948d8ead9f19b9afab50339a10e1de285ac99d4c3990b8693" prot="public">
+          <name>NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <briefdescription>
 <para>Enumerator for the object types </para>
         </briefdescription>
@@ -251,17 +258,17 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="products_8h_1ac2faf34b8deb32d47403eb685de6c3f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="products_8h_1a68e4e5e858be16ab75e1166ea9f45301" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::ifstream &amp;</type>
         <definition>std::ifstream&amp; operator&gt;&gt;</definition>
-        <argsstring>(std::ofstream &amp;of, obj_t rhs)</argsstring>
+        <argsstring>(std::ifstream &amp;s, obj_t &amp;rhs)</argsstring>
         <name>operator&gt;&gt;</name>
         <param>
-          <type>std::ofstream &amp;</type>
-          <declname>of</declname>
+          <type>std::ifstream &amp;</type>
+          <declname>s</declname>
         </param>
         <param>
-          <type><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9af" kindref="member">obj_t</ref></type>
+          <type><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9af" kindref="member">obj_t</ref> &amp;</type>
           <declname>rhs</declname>
         </param>
         <briefdescription>
@@ -270,7 +277,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.h" line="14" column="15" declfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.h" declline="14" declcolumn="15"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.h" line="14" column="15" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.cpp" bodystart="30" bodyend="35" declfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.h" declline="14" declcolumn="15"/>
       </memberdef>
       <memberdef kind="function" id="products_8h_1a9de3e0ccf990b76a227192215795f84a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -364,8 +371,8 @@ rhs is the reference to the object being saved <simplesect kind="return"><para><
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="memtrace_8h" kindref="compound">memtrace.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13" refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9af" refkind="member"><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9af" kindref="member">obj_t</ref>{<ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afadeb10517653c255364175796ace3553f" kindref="member">Product</ref>,<ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa8c4aa541ee911e8d80451ef8cc304806" kindref="member">Storage</ref>,<sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afae53619c1fe611a51eeeb8d148ba6e532" kindref="member">RAM</ref>,<sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa9c2dc227590d4220750b52b21b0aeb99" kindref="member">HDD</ref>,<sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa34df20bab5e85dc75bfc94ef569cced9" kindref="member">SSD</ref>,<ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa8d8fcc1abd550c5f25dbfaa57d59cb67" kindref="member">MB</ref>,<ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa2b55387dd066c5bac646ac61543d152d" kindref="member">CPU</ref>,<ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa52f9ec21735243ad9917cda3ca077d32" kindref="member">GPU</ref>,<ref refid="class_p_c" kindref="compound">PC</ref>};</highlight></codeline>
-<codeline lineno="14" refid="products_8h_1ac2faf34b8deb32d47403eb685de6c3f6" refkind="member"><highlight class="normal">std::ifstream&amp;<sp/><ref refid="products_8h_1ac2faf34b8deb32d47403eb685de6c3f6" kindref="member">operator&gt;&gt;</ref>(std::ofstream&amp;<sp/>of,<ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9af" kindref="member">obj_t</ref><sp/>rhs);</highlight></codeline>
+<codeline lineno="13" refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9af" refkind="member"><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9af" kindref="member">obj_t</ref>{<ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afadeb10517653c255364175796ace3553f" kindref="member">Product</ref>,<ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa8c4aa541ee911e8d80451ef8cc304806" kindref="member">Storage</ref>,<sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afae53619c1fe611a51eeeb8d148ba6e532" kindref="member">RAM</ref>,<sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa9c2dc227590d4220750b52b21b0aeb99" kindref="member">HDD</ref>,<sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa34df20bab5e85dc75bfc94ef569cced9" kindref="member">SSD</ref>,<ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa8d8fcc1abd550c5f25dbfaa57d59cb67" kindref="member">MB</ref>,<ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa2b55387dd066c5bac646ac61543d152d" kindref="member">CPU</ref>,<ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa52f9ec21735243ad9917cda3ca077d32" kindref="member">GPU</ref>,<ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afa88dba0c4e2af76447df43d1e31331a3d" kindref="member">PC</ref>,<sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9afab50339a10e1de285ac99d4c3990b8693" kindref="member">NONE</ref>};</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">std::ifstream&amp;<sp/><ref refid="products_8h_1a68e4e5e858be16ab75e1166ea9f45301" kindref="member">operator&gt;&gt;</ref>(std::ifstream&amp;<sp/>s,<ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9af" kindref="member">obj_t</ref>&amp;<sp/>rhs);</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//Template<sp/>for<sp/>writing<sp/>the<sp/>serialized<sp/>object<sp/>to<sp/>file</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
@@ -395,7 +402,7 @@ rhs is the reference to the object being saved <simplesect kind="return"><para><
 <codeline lineno="48" refid="class_product_1af3d21858bb34986f54309b877678daa8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_product_1af3d21858bb34986f54309b877678daa8" kindref="member">manufacturer</ref>;<sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="49" refid="class_product_1a831f4ac197a88d2c2b7260765714c0d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_product_1a831f4ac197a88d2c2b7260765714c0d4" kindref="member">inv</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="51" refid="class_product_1afa7216e3fe55009b1862453041a34374" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9af" kindref="member">obj_t</ref><sp/><ref refid="class_product_1afa7216e3fe55009b1862453041a34374" kindref="member">t</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51" refid="class_product_1ae3a90763e1d49c6bac9843767c20b91b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="products_8h_1a6f54b54b1983a312948d8ead9f19b9af" kindref="member">obj_t</ref><sp/><ref refid="class_product_1ae3a90763e1d49c6bac9843767c20b91b" kindref="member">oType</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_product_1a847c1d85e67ce387166a597579a55135" kindref="member">Product</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_product" kindref="compound">Product</ref>&amp;<sp/>p);</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_product_1a847c1d85e67ce387166a597579a55135" kindref="member">Product</ref>(std::string<sp/><ref refid="class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8" kindref="member">name</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_product_1abb2572df7a832a509944905603ba5e4f" kindref="member">price</ref>,<sp/>std::string<sp/>manuf,<sp/>std::string<sp/>descript<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;There<sp/>is<sp/>no<sp/>description<sp/>for<sp/>this<sp/>item!&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>inventory=1);</highlight></codeline>
@@ -432,7 +439,7 @@ rhs is the reference to the object being saved <simplesect kind="return"><para><
 <codeline lineno="93"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="94"><highlight class="normal"></highlight></codeline>
 <codeline lineno="95"><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal">std::ifstream&amp;<sp/><ref refid="products_8h_1ac2faf34b8deb32d47403eb685de6c3f6" kindref="member">operator&gt;&gt;</ref>(std::ifstream&amp;<sp/>savefile,<sp/><ref refid="class_product" kindref="compound">Product</ref>&amp;<sp/>rhs);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">std::ifstream&amp;<sp/><ref refid="products_8h_1a68e4e5e858be16ab75e1166ea9f45301" kindref="member">operator&gt;&gt;</ref>(std::ifstream&amp;<sp/>savefile,<sp/><ref refid="class_product" kindref="compound">Product</ref>&amp;<sp/>rhs);</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"></highlight></codeline>
 <codeline lineno="99"><highlight class="normal"><sp/></highlight></codeline>
 <codeline lineno="100"><highlight class="normal"><sp/></highlight></codeline>

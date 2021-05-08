@@ -57,11 +57,15 @@ Collaboration diagram for RAM:<para>
 
 <para>Returns latency. </para>
 </listitem>
-            <listitem><para>std::string <link linkend="_class_r_a_m_1ae69fec37d54b641062ed6a2ffd88a184">serializeObj</link> ()</para>
+            <listitem><para>std::string <link linkend="_class_r_a_m_1a15ab2492102ae822e8ea760f9613b543">serializeObj</link> () const</para>
 
 <para>Returns stock voltage. </para>
 </listitem>
             <listitem><para><link linkend="_class_r_a_m">RAM</link> * <link linkend="_class_r_a_m_1a2dbd94dada94130817a298b91023e4c9">clone</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_r_a_m_1a1424aff28af127d0ae7b343c01c1df1d">print</link> ()</para>
+
+<para>Serializes object. </para>
 </listitem>
             <listitem><para>bool <link linkend="_class_r_a_m_1a6e77fc59fd9957e975d7946830373e06">operator!=</link> (<link linkend="_class_r_a_m">RAM</link> &amp;rhs)</para>
 </listitem>
@@ -170,14 +174,26 @@ Reimplemented from <link linkend="_class_storage_1af7f626e3a0bc9d46c59ef7dd8f57c
     <title>operator==()</title>
 <indexterm><primary>operator==</primary><secondary>RAM</secondary></indexterm>
 <indexterm><primary>RAM</primary><secondary>operator==</secondary></indexterm>
-<para><computeroutput>bool RAM::operator== (<link linkend="_class_r_a_m">RAM</link> &amp; rhs)</computeroutput></para>    </section><anchor xml:id="_class_r_a_m_1ae69fec37d54b641062ed6a2ffd88a184"/>    <section>
+<para><computeroutput>bool RAM::operator== (<link linkend="_class_r_a_m">RAM</link> &amp; rhs)</computeroutput></para>    </section><anchor xml:id="_class_r_a_m_1a1424aff28af127d0ae7b343c01c1df1d"/>    <section>
+    <title>print()</title>
+<indexterm><primary>print</primary><secondary>RAM</secondary></indexterm>
+<indexterm><primary>RAM</primary><secondary>print</secondary></indexterm>
+<para><computeroutput>void RAM::print ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Serializes object. </para>
+</para>
+<para>
+Reimplemented from <link linkend="_class_storage_1a73df5f67fd76f334e3511b2850882974">Storage</link>.</para>
+    </section><anchor xml:id="_class_r_a_m_1a15ab2492102ae822e8ea760f9613b543"/>    <section>
     <title>serializeObj()</title>
 <indexterm><primary>serializeObj</primary><secondary>RAM</secondary></indexterm>
 <indexterm><primary>RAM</primary><secondary>serializeObj</secondary></indexterm>
-<para><computeroutput>std::string RAM::serializeObj ( )</computeroutput></para><para>
+<para><computeroutput>std::string RAM::serializeObj ( ) const<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
 
 <para>Returns stock voltage. </para>
 </para>
+<para>
+Reimplemented from <link linkend="_class_storage_1a598d2e8f3fcd8caf5d3042ddecd4896e">Storage</link>.</para>
 </section>
 </section>
 <section>

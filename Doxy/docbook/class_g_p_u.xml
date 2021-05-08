@@ -48,7 +48,9 @@ Collaboration diagram for GPU:<para>
 </listitem>
             <listitem><para>unsigned int <link linkend="_class_g_p_u_1a5806130e7c25709689917fcff437949a">getTDP</link> ()</para>
 </listitem>
-            <listitem><para>std::string <link linkend="_class_g_p_u_1aa6accb9ff57ea98080a7496d77fea7e5">serializeObj</link> ()</para>
+            <listitem><para>std::string <link linkend="_class_g_p_u_1a9c68f0e1fb0b97fc7c5e91a7bf881c7b">serializeObj</link> () const</para>
+
+<para>Serializes object. </para>
 </listitem>
             <listitem><para><link linkend="_class_g_p_u">GPU</link> * <link linkend="_class_g_p_u_1a13535142ba8cacba30f23f6bf8ed5200">clone</link> ()</para>
 </listitem>
@@ -140,12 +142,18 @@ Reimplemented from <link linkend="_class_product_1a2cc3f5ef8abe14801e185734cfcc3
     <title>getVRAM()</title>
 <indexterm><primary>getVRAM</primary><secondary>GPU</secondary></indexterm>
 <indexterm><primary>GPU</primary><secondary>getVRAM</secondary></indexterm>
-<para><computeroutput>unsigned int GPU::getVRAM ( )</computeroutput></para>    </section><anchor xml:id="_class_g_p_u_1aa6accb9ff57ea98080a7496d77fea7e5"/>    <section>
+<para><computeroutput>unsigned int GPU::getVRAM ( )</computeroutput></para>    </section><anchor xml:id="_class_g_p_u_1a9c68f0e1fb0b97fc7c5e91a7bf881c7b"/>    <section>
     <title>serializeObj()</title>
 <indexterm><primary>serializeObj</primary><secondary>GPU</secondary></indexterm>
 <indexterm><primary>GPU</primary><secondary>serializeObj</secondary></indexterm>
-<para><computeroutput>std::string GPU::serializeObj ( )</computeroutput></para>
+<para><computeroutput>std::string GPU::serializeObj ( ) const<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Serializes object. </para>
+</para>
+
 <para>Calls base class&apos;s</para>
+<para>
+Reimplemented from <link linkend="_class_product_1a749f163f9319f2cf6e9e0620d7133f0b">Product</link>.</para>
 </section>
 </section>
 <section>

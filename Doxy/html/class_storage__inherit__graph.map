@@ -1,7 +1,7 @@
 <map id="Storage" name="Storage">
-<area shape="rect" id="node1" title="Base class for data storage/memory" alt="" coords="149,512,263,736"/>
-<area shape="rect" id="node3" href="$class_h_d_d.html" title="Class for modelling Hard Drive Disks. Inheriting from Storage" alt="" coords="5,835,116,1030"/>
-<area shape="rect" id="node4" href="$class_r_a_m.html" title="Class for modelling Random Access Memory Inheriting from storage" alt="" coords="141,784,271,1081"/>
-<area shape="rect" id="node5" href="$class_s_s_d.html" title="Class for modelling SSDs Inheriting directly from Storage class" alt="" coords="295,821,423,1045"/>
+<area shape="rect" id="node1" title="Base class for data storage/memory" alt="" coords="149,512,263,751"/>
+<area shape="rect" id="node3" href="$class_h_d_d.html" title="Class for modelling Hard Drive Disks. Inheriting from Storage" alt="" coords="5,850,116,1059"/>
+<area shape="rect" id="node4" href="$class_r_a_m.html" title="Class for modelling Random Access Memory Inheriting from storage" alt="" coords="141,799,271,1111"/>
+<area shape="rect" id="node5" href="$class_s_s_d.html" title="Class for modelling SSDs Inheriting directly from Storage class" alt="" coords="295,835,423,1074"/>
 <area shape="rect" id="node2" href="$class_product.html" title=" " alt="" coords="139,5,273,464"/>
 </map>

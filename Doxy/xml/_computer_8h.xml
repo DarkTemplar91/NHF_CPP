@@ -148,6 +148,29 @@
       </node>
     </invincdepgraph>
     <innerclass refid="class_p_c" prot="public">PC</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_computer_8h_1a094baadcaabe5a03730bcc6b4d4dc424" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ifstream &amp;</type>
+        <definition>std::ifstream&amp; operator&gt;&gt;</definition>
+        <argsstring>(std::ifstream &amp;fs, PC &amp;rhs)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>std::ifstream &amp;</type>
+          <declname>fs</declname>
+        </param>
+        <param>
+          <type><ref refid="class_p_c" kindref="compound">PC</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="42" column="15" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.cpp" bodystart="70" bodyend="108" declfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" declline="42" declcolumn="15"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -165,23 +188,35 @@
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_motherboard_8h" kindref="compound">Motherboard.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="memtrace_8h" kindref="compound">memtrace.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14" refid="class_p_c" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_p_c" kindref="compound">PC</ref><sp/>:</highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_product" kindref="compound">Product</ref><sp/>{</highlight></codeline>
-<codeline lineno="15" refid="class_p_c_1a6494081edf14e9c83ee0efa460e5e291" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_p_u" kindref="compound">GPU</ref><sp/><ref refid="class_p_c_1a6494081edf14e9c83ee0efa460e5e291" kindref="member">gpu</ref>;</highlight></codeline>
-<codeline lineno="16" refid="class_p_c_1aea5e38e403dd8ab8886f5fe3635848c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_p_u" kindref="compound">CPU</ref><sp/><ref refid="class_p_c_1aea5e38e403dd8ab8886f5fe3635848c0" kindref="member">cpu</ref>;</highlight></codeline>
-<codeline lineno="17" refid="class_p_c_1a1af1f6ded64f3db1242ed1f472521466" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_motherboard" kindref="compound">Motherboard</ref><sp/><ref refid="class_p_c_1a1af1f6ded64f3db1242ed1f472521466" kindref="member">board</ref>;</highlight></codeline>
-<codeline lineno="18" refid="class_p_c_1a69788ef661daba11ea736264beaa5990" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_product" kindref="compound">Product</ref><sp/><ref refid="class_p_c_1a69788ef661daba11ea736264beaa5990" kindref="member">pcCase</ref>;</highlight></codeline>
-<codeline lineno="19" refid="class_p_c_1ade767f098d19e2eb30abef9fc1f7e6c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_product" kindref="compound">Product</ref><sp/><ref refid="class_p_c_1ade767f098d19e2eb30abef9fc1f7e6c4" kindref="member">psu</ref>;</highlight></codeline>
-<codeline lineno="20" refid="class_p_c_1a416bf67d1a321773a55c2c0acd4c761a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_storage" kindref="compound">Storage</ref>*<sp/><ref refid="class_p_c_1a416bf67d1a321773a55c2c0acd4c761a" kindref="member">pcStorage</ref>;</highlight></codeline>
-<codeline lineno="21" refid="class_p_c_1a6f824a50b70b8f8660a1ecae43f01818" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_a_m" kindref="compound">RAM</ref><sp/><ref refid="class_p_c_1a6f824a50b70b8f8660a1ecae43f01818" kindref="member">ramslots</ref>[4];</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="23" refid="class_p_c_1a213092addb3a1d89b761f780a055f0a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_p_c_1a213092addb3a1d89b761f780a055f0a3" kindref="member">PC</ref>();</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_p_c_1a213092addb3a1d89b761f780a055f0a3" kindref="member">PC</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_p_c" kindref="compound">PC</ref>&amp;<sp/>pc);</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_p_c" kindref="compound">PC</ref>*<sp/><ref refid="class_p_c_1aa4f5779cf5f9a4ec7806da64a09b8cb3" kindref="member">clone</ref>();</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!COMPUTER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_p_c" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_p_c" kindref="compound">PC</ref><sp/>:</highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_product" kindref="compound">Product</ref><sp/>{</highlight></codeline>
+<codeline lineno="17" refid="class_p_c_1a6494081edf14e9c83ee0efa460e5e291" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_p_u" kindref="compound">GPU</ref><sp/><ref refid="class_p_c_1a6494081edf14e9c83ee0efa460e5e291" kindref="member">gpu</ref>;<sp/></highlight></codeline>
+<codeline lineno="18" refid="class_p_c_1aea5e38e403dd8ab8886f5fe3635848c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_p_u" kindref="compound">CPU</ref><sp/><ref refid="class_p_c_1aea5e38e403dd8ab8886f5fe3635848c0" kindref="member">cpu</ref>;</highlight></codeline>
+<codeline lineno="19" refid="class_p_c_1a1af1f6ded64f3db1242ed1f472521466" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_motherboard" kindref="compound">Motherboard</ref><sp/><ref refid="class_p_c_1a1af1f6ded64f3db1242ed1f472521466" kindref="member">board</ref>;</highlight></codeline>
+<codeline lineno="20" refid="class_p_c_1a69788ef661daba11ea736264beaa5990" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_product" kindref="compound">Product</ref><sp/><ref refid="class_p_c_1a69788ef661daba11ea736264beaa5990" kindref="member">pcCase</ref>;</highlight></codeline>
+<codeline lineno="21" refid="class_p_c_1ade767f098d19e2eb30abef9fc1f7e6c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_product" kindref="compound">Product</ref><sp/><ref refid="class_p_c_1ade767f098d19e2eb30abef9fc1f7e6c4" kindref="member">psu</ref>;</highlight></codeline>
+<codeline lineno="22" refid="class_p_c_1a416bf67d1a321773a55c2c0acd4c761a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_storage" kindref="compound">Storage</ref>*<sp/><ref refid="class_p_c_1a416bf67d1a321773a55c2c0acd4c761a" kindref="member">pcStorage</ref>;</highlight></codeline>
+<codeline lineno="23" refid="class_p_c_1a805a5aa4387f0c4144c128944a80681e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_a_m" kindref="compound">RAM</ref><sp/><ref refid="class_p_c_1a805a5aa4387f0c4144c128944a80681e" kindref="member">ramslots</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">//The<sp/>RAM<sp/>sticks<sp/>corresponding<sp/>to<sp/>the<sp/>usual<sp/>4<sp/>slots</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_p_c_1a213092addb3a1d89b761f780a055f0a3" kindref="member">PC</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_p_c_1a213092addb3a1d89b761f780a055f0a3" kindref="member">PC</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_p_c" kindref="compound">PC</ref>&amp;<sp/>pc);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_p_c_1a213092addb3a1d89b761f780a055f0a3" kindref="member">PC</ref>(<ref refid="class_g_p_u" kindref="compound">GPU</ref>&amp;<sp/><ref refid="class_p_c_1a6494081edf14e9c83ee0efa460e5e291" kindref="member">gpu</ref>,<sp/><ref refid="class_c_p_u" kindref="compound">CPU</ref>&amp;<sp/><ref refid="class_p_c_1aea5e38e403dd8ab8886f5fe3635848c0" kindref="member">cpu</ref>,<sp/><ref refid="class_motherboard" kindref="compound">Motherboard</ref>&amp;<sp/>mb,<sp/><ref refid="class_product" kindref="compound">Product</ref>&amp;<sp/><ref refid="class_p_c_1a69788ef661daba11ea736264beaa5990" kindref="member">pcCase</ref>,<sp/><ref refid="class_product" kindref="compound">Product</ref>&amp;<sp/><ref refid="class_p_c_1ade767f098d19e2eb30abef9fc1f7e6c4" kindref="member">psu</ref>,<sp/><ref refid="class_storage" kindref="compound">Storage</ref>*<sp/>s,<sp/><ref refid="class_r_a_m" kindref="compound">RAM</ref>&amp;<sp/>ram);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_p_c" kindref="compound">PC</ref>*<sp/><ref refid="class_p_c_1aa4f5779cf5f9a4ec7806da64a09b8cb3" kindref="member">clone</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_p_c_1a32aa5111878b4f5e2410f59ebb1ae650" kindref="member">print</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_p_c_1a35db2210308424b6c94515036a11235b" kindref="member">serializeObj</ref>()</highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_p_c_1a115da8404d548672d21556278fbcf3d9" kindref="member">~PC</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_p_c_1aec5fd7f3198f2f3a59145ad8d2cf6567" kindref="member">assignGPU</ref>(<ref refid="class_g_p_u" kindref="compound">GPU</ref>&amp;);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_p_c_1aba2f7995dd3f5896a9c3214f6b420d57" kindref="member">assignCPU</ref>(<ref refid="class_c_p_u" kindref="compound">CPU</ref>&amp;);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_p_c_1a908c6dd821193af721cccc0166cc8a9e" kindref="member">assignMB</ref>(<ref refid="class_motherboard" kindref="compound">Motherboard</ref>&amp;);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_p_c_1a553f909b532d5c49d82504f6a6c5ed95" kindref="member">assignCase</ref>(<ref refid="class_product" kindref="compound">Product</ref>&amp;);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_p_c_1a3522ab4a80973cad93767ca87805f739" kindref="member">assignPSU</ref>(<ref refid="class_product" kindref="compound">Product</ref>&amp;);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_p_c_1af825826be8a2191d67c33dc36940985e" kindref="member">assignStorage</ref>(<ref refid="class_storage" kindref="compound">Storage</ref>*);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_p_c_1adb7459899bd3be54b2c8039af1eb7373" kindref="member">assignRAM</ref>(<ref refid="class_r_a_m" kindref="compound">RAM</ref>&amp;);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">std::ifstream&amp;<sp/><ref refid="_computer_8h_1a094baadcaabe5a03730bcc6b4d4dc424" kindref="member">operator&gt;&gt;</ref>(std::ifstream&amp;<sp/>fs,<sp/><ref refid="class_p_c" kindref="compound">PC</ref>&amp;<sp/>rhs);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!COMPUTER_H</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h"/>
   </compounddef>

@@ -58,7 +58,9 @@ Collaboration diagram for Motherboard:<para>
 
 <para>Returns number of SATA ports. </para>
 </listitem>
-            <listitem><para>std::string <link linkend="_class_motherboard_1a9d0666b839ef01ea6072ffeb41653d3c">serializeObj</link> ()</para>
+            <listitem><para>std::string <link linkend="_class_motherboard_1a5cd6459fe3e4823aeeb5d2b255d68aef">serializeObj</link> () const</para>
+
+<para>Serializes object. </para>
 </listitem>
             <listitem><para><link linkend="_class_motherboard">Motherboard</link> * <link linkend="_class_motherboard_1af3ad07ad9398abe1bdd0315ec9acb7e3">clone</link> ()</para>
 </listitem>
@@ -184,11 +186,17 @@ Reimplemented from <link linkend="_class_product_1a2cc3f5ef8abe14801e185734cfcc3
 
 <para>Returns type of chipset. </para>
 </para>
-    </section><anchor xml:id="_class_motherboard_1a9d0666b839ef01ea6072ffeb41653d3c"/>    <section>
+    </section><anchor xml:id="_class_motherboard_1a5cd6459fe3e4823aeeb5d2b255d68aef"/>    <section>
     <title>serializeObj()</title>
 <indexterm><primary>serializeObj</primary><secondary>Motherboard</secondary></indexterm>
 <indexterm><primary>Motherboard</primary><secondary>serializeObj</secondary></indexterm>
-<para><computeroutput>std::string Motherboard::serializeObj ( )</computeroutput></para></section>
+<para><computeroutput>std::string Motherboard::serializeObj ( ) const<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Serializes object. </para>
+</para>
+<para>
+Reimplemented from <link linkend="_class_product_1a749f163f9319f2cf6e9e0620d7133f0b">Product</link>.</para>
+</section>
 </section>
 <section>
 <title>Member Data Documentation</title>

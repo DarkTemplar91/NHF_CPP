@@ -8,13 +8,13 @@
 GPU::GPU(unsigned int portHDMI, unsigned int portDisplay,
 	unsigned int gpuClock, unsigned int memoryClock, unsigned int vram, unsigned int tdp) : Product(),
 	portHDMI(portHDMI), portDisplay(portDisplay), gpuClock(gpuClock), memoryClock(memoryClock), vram(vram), tdp(tdp) {
-	t = obj_t::GPU;
+	oType = obj_t::GPU;
 }
 GPU::GPU(std::string name, double price, std::string manuf, std::string descript, unsigned int portHDMI, unsigned int portDisplay,
 	unsigned int gpuClock, unsigned int memoryClock, unsigned int vram, unsigned int tdp) :
 	Product(name, price, manuf, descript),
 	portHDMI(portHDMI), portDisplay(portDisplay), gpuClock(gpuClock), memoryClock(memoryClock), vram(vram), tdp(tdp) {
-	t = obj_t::GPU;
+	oType = obj_t::GPU;
 }
 GPU::GPU(const GPU& g) : Product(g) {
 	this->gpuClock = g.gpuClock;
@@ -26,7 +26,7 @@ GPU::GPU(const GPU& g) : Product(g) {
 }
 GPU* GPU::clone() {
 	GPU* g = new GPU(*this);
-	g->t = obj_t::GPU;
+	g->oType = obj_t::GPU;
 	return g;
 }
 

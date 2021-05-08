@@ -81,11 +81,11 @@ Inheritance diagram for Product:</div>
 <area shape="rect" href="class_c_p_u.html" title=" " alt="" coords="5,512,140,912"/>
 <area shape="rect" href="class_g_p_u.html" title=" " alt="" coords="164,556,296,868"/>
 <area shape="rect" href="class_motherboard.html" title=" " alt="" coords="321,549,435,875"/>
-<area shape="rect" href="class_p_c.html" title=" " alt="" coords="460,615,549,809"/>
-<area shape="rect" href="class_storage.html" title="Base class for data storage/memory" alt="" coords="574,600,689,824"/>
-<area shape="rect" href="class_h_d_d.html" title="Class for modelling Hard Drive Disks. Inheriting from Storage" alt="" coords="431,1011,541,1206"/>
-<area shape="rect" href="class_r_a_m.html" title="Class for modelling Random Access Memory Inheriting from storage" alt="" coords="566,960,697,1257"/>
-<area shape="rect" href="class_s_s_d.html" title="Class for modelling SSDs Inheriting directly from Storage class" alt="" coords="721,997,849,1221"/>
+<area shape="rect" href="class_p_c.html" title="Prebuilt pc class" alt="" coords="459,534,585,890"/>
+<area shape="rect" href="class_storage.html" title="Base class for data storage/memory" alt="" coords="609,593,723,831"/>
+<area shape="rect" href="class_h_d_d.html" title="Class for modelling Hard Drive Disks. Inheriting from Storage" alt="" coords="465,1011,576,1221"/>
+<area shape="rect" href="class_r_a_m.html" title="Class for modelling Random Access Memory Inheriting from storage" alt="" coords="601,960,731,1272"/>
+<area shape="rect" href="class_s_s_d.html" title="Class for modelling SSDs Inheriting directly from Storage class" alt="" coords="755,997,883,1235"/>
 </map>
 </div>
 <div class="dynheader">
@@ -163,9 +163,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:afa7216e3fe55009b1862453041a34374"><td class="memItemLeft" align="right" valign="top"><a class="el" href="products_8h.html#a6f54b54b1983a312948d8ead9f19b9af">obj_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_product.html#afa7216e3fe55009b1862453041a34374">t</a></td></tr>
-<tr class="memdesc:afa7216e3fe55009b1862453041a34374"><td class="mdescLeft">&#160;</td><td class="mdescRight">The amount of <a class="el" href="class_product.html">Product</a> in stock.  <a href="class_product.html#afa7216e3fe55009b1862453041a34374">More...</a><br /></td></tr>
-<tr class="separator:afa7216e3fe55009b1862453041a34374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3a90763e1d49c6bac9843767c20b91b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="products_8h.html#a6f54b54b1983a312948d8ead9f19b9af">obj_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_product.html#ae3a90763e1d49c6bac9843767c20b91b">oType</a></td></tr>
+<tr class="memdesc:ae3a90763e1d49c6bac9843767c20b91b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The amount of <a class="el" href="class_product.html">Product</a> in stock.  <a href="class_product.html#ae3a90763e1d49c6bac9843767c20b91b">More...</a><br /></td></tr>
+<tr class="separator:ae3a90763e1d49c6bac9843767c20b91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -576,7 +576,7 @@ Private Attributes</h2></td></tr>
 
 <p>Prints out basic data of a product to the output stream. </p>
 
-<p>Reimplemented in <a class="el" href="class_c_p_u.html#aa2af36b3447c4e7b4e1f25f699a06824">CPU</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_p_u.html#aa2af36b3447c4e7b4e1f25f699a06824">CPU</a>, <a class="el" href="class_s_s_d.html#a753647f5a39c66e794efd6fed291795b">SSD</a>, <a class="el" href="class_h_d_d.html#ab80de8626bc38aa1d3398121b159717e">HDD</a>, <a class="el" href="class_r_a_m.html#a1424aff28af127d0ae7b343c01c1df1d">RAM</a>, <a class="el" href="class_storage.html#a73df5f67fd76f334e3511b2850882974">Storage</a>, and <a class="el" href="class_p_c.html#a32aa5111878b4f5e2410f59ebb1ae650">PC</a>.</p>
 
 </div>
 </div>
@@ -604,6 +604,8 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Serializes object. </p>
+
+<p>Reimplemented in <a class="el" href="class_g_p_u.html#a9c68f0e1fb0b97fc7c5e91a7bf881c7b">GPU</a>, <a class="el" href="class_c_p_u.html#ae3a32cc02d31f2193bc53ad052fba3a6">CPU</a>, <a class="el" href="class_motherboard.html#a5cd6459fe3e4823aeeb5d2b255d68aef">Motherboard</a>, <a class="el" href="class_s_s_d.html#a0ed308b29e11e06c4c8b84fcab515c4a">SSD</a>, <a class="el" href="class_h_d_d.html#ad64f75db764118f6e47eafd5c6bc9bdc">HDD</a>, <a class="el" href="class_r_a_m.html#a15ab2492102ae822e8ea760f9613b543">RAM</a>, <a class="el" href="class_storage.html#a598d2e8f3fcd8caf5d3042ddecd4896e">Storage</a>, and <a class="el" href="class_p_c.html#a35db2210308424b6c94515036a11235b">PC</a>.</p>
 
 </div>
 </div>
@@ -782,6 +784,30 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ae3a90763e1d49c6bac9843767c20b91b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3a90763e1d49c6bac9843767c20b91b">&#9670;&nbsp;</a></span>oType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="products_8h.html#a6f54b54b1983a312948d8ead9f19b9af">obj_t</a> Product::oType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The amount of <a class="el" href="class_product.html">Product</a> in stock. </p>
+
+</div>
+</div>
 <a id="abb2572df7a832a509944905603ba5e4f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abb2572df7a832a509944905603ba5e4f">&#9670;&nbsp;</a></span>price</h2>
 
@@ -803,30 +829,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Name of the product. </p>
-
-</div>
-</div>
-<a id="afa7216e3fe55009b1862453041a34374"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa7216e3fe55009b1862453041a34374">&#9670;&nbsp;</a></span>t</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="products_8h.html#a6f54b54b1983a312948d8ead9f19b9af">obj_t</a> Product::t</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The amount of <a class="el" href="class_product.html">Product</a> in stock. </p>
 
 </div>
 </div>

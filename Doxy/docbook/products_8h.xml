@@ -47,6 +47,7 @@ This graph shows which files directly or indirectly include this file:<para>
 , <link linkend="_products_8h_1a6f54b54b1983a312948d8ead9f19b9afa52f9ec21735243ad9917cda3ca077d32">GPU</link>
 , 
 <link linkend="_products_8h_1a6f54b54b1983a312948d8ead9f19b9afa88dba0c4e2af76447df43d1e31331a3d">PC</link>
+, <link linkend="_products_8h_1a6f54b54b1983a312948d8ead9f19b9afab50339a10e1de285ac99d4c3990b8693">NONE</link>
  }</para>
 
 <para>Enumerator for the object types </para>
@@ -56,7 +57,7 @@ This graph shows which files directly or indirectly include this file:<para>
 <simplesect>
     <title>Functions    </title>
         <itemizedlist>
-            <listitem><para>std::ifstream &amp; <link linkend="_products_8h_1ac2faf34b8deb32d47403eb685de6c3f6">operator&gt;&gt;</link> (std::ofstream &amp;of, <link linkend="_products_8h_1a6f54b54b1983a312948d8ead9f19b9af">obj_t</link> rhs)</para>
+            <listitem><para>std::ifstream &amp; <link linkend="_products_8h_1a68e4e5e858be16ab75e1166ea9f45301">operator&gt;&gt;</link> (std::ifstream &amp;s, <link linkend="_products_8h_1a6f54b54b1983a312948d8ead9f19b9af">obj_t</link> &amp;rhs)</para>
 </listitem>
             <listitem><para>template&lt;class T &gt; </para><para>std::ofstream &amp; <link linkend="_products_8h_1a9de3e0ccf990b76a227192215795f84a">operator&lt;&lt;</link> (std::ofstream &amp;savefile, T &amp;rhs)</para>
 
@@ -102,7 +103,9 @@ This graph shows which files directly or indirectly include this file:<para>
 <indexterm><primary>products.h</primary><secondary>GPU</secondary></indexterm>
 <anchor xml:id="_products_8h_1a6f54b54b1983a312948d8ead9f19b9afa52f9ec21735243ad9917cda3ca077d32"/>GPU</entry><entry></entry></row><row><entry><indexterm><primary>PC</primary><secondary>products.h</secondary></indexterm>
 <indexterm><primary>products.h</primary><secondary>PC</secondary></indexterm>
-<anchor xml:id="_products_8h_1a6f54b54b1983a312948d8ead9f19b9afa88dba0c4e2af76447df43d1e31331a3d"/>PC</entry><entry></entry></row>    </tbody>
+<anchor xml:id="_products_8h_1a6f54b54b1983a312948d8ead9f19b9afa88dba0c4e2af76447df43d1e31331a3d"/>PC</entry><entry></entry></row><row><entry><indexterm><primary>NONE</primary><secondary>products.h</secondary></indexterm>
+<indexterm><primary>products.h</primary><secondary>NONE</secondary></indexterm>
+<anchor xml:id="_products_8h_1a6f54b54b1983a312948d8ead9f19b9afab50339a10e1de285ac99d4c3990b8693"/>NONE</entry><entry></entry></row>    </tbody>
     </tgroup>
 </informaltable>
 </section>
@@ -180,8 +183,12 @@ Parameters                    </title>
 <para></para>
 </formalpara>
 </para>
-    </section><anchor xml:id="_products_8h_1a3c4c53fadab31183f9737475efa6c3ec"/>    <section>
+    </section><anchor xml:id="_products_8h_1a68e4e5e858be16ab75e1166ea9f45301"/>    <section>
     <title>operator&gt;&gt;()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator&gt;&gt;</primary><secondary>products.h</secondary></indexterm>
+<indexterm><primary>products.h</primary><secondary>operator&gt;&gt;</secondary></indexterm>
+<para><computeroutput>std::ifstream&amp; operator&gt;&gt; (std::ifstream &amp; s, <link linkend="_products_8h_1a6f54b54b1983a312948d8ead9f19b9af">obj_t</link> &amp; rhs)</computeroutput></para>    </section><anchor xml:id="_products_8h_1a3c4c53fadab31183f9737475efa6c3ec"/>    <section>
+    <title>operator&gt;&gt;()<computeroutput>[2/2]</computeroutput></title>
 <indexterm><primary>operator&gt;&gt;</primary><secondary>products.h</secondary></indexterm>
 <indexterm><primary>products.h</primary><secondary>operator&gt;&gt;</secondary></indexterm>
 <para><computeroutput>std::ifstream&amp; operator&gt;&gt; (std::ifstream &amp; savefile, <link linkend="_class_product">Product</link> &amp; rhs)</computeroutput></para><para>
@@ -190,10 +197,6 @@ Parameters                    </title>
 </para>
 
 <para>Overloads the &gt;&gt; to save the object to file. </para>
-    </section><anchor xml:id="_products_8h_1ac2faf34b8deb32d47403eb685de6c3f6"/>    <section>
-    <title>operator&gt;&gt;()<computeroutput>[2/2]</computeroutput></title>
-<indexterm><primary>operator&gt;&gt;</primary><secondary>products.h</secondary></indexterm>
-<indexterm><primary>products.h</primary><secondary>operator&gt;&gt;</secondary></indexterm>
-<para><computeroutput>std::ifstream&amp; operator&gt;&gt; (std::ofstream &amp; of, <link linkend="_products_8h_1a6f54b54b1983a312948d8ead9f19b9af">obj_t</link> rhs)</computeroutput></para></section>
+</section>
 </section>
 </section>

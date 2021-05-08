@@ -13,4 +13,19 @@
         </mediaobject>
     </informalfigure>
 </para>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>std::ifstream &amp; <link linkend="__computer_8cpp_1a094baadcaabe5a03730bcc6b4d4dc424">operator&gt;&gt;</link> (std::ifstream &amp;fs, <link linkend="_class_p_c">PC</link> &amp;rhs)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="__computer_8cpp_1a094baadcaabe5a03730bcc6b4d4dc424"/>    <section>
+    <title>operator&gt;&gt;()</title>
+<indexterm><primary>operator&gt;&gt;</primary><secondary>Computer.cpp</secondary></indexterm>
+<indexterm><primary>Computer.cpp</primary><secondary>operator&gt;&gt;</secondary></indexterm>
+<para><computeroutput>std::ifstream&amp; operator&gt;&gt; (std::ifstream &amp; fs, <link linkend="_class_p_c">PC</link> &amp; rhs)</computeroutput></para></section>
+</section>
 </section>

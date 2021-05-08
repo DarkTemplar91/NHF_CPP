@@ -402,12 +402,14 @@
         </inbodydescription>
         <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="40" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp" bodystart="83" bodyend="85"/>
       </memberdef>
-      <memberdef kind="function" id="class_c_p_u_1a76b924aa80f3acf2bfdd7299f2be6044" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_c_p_u_1ae3a32cc02d31f2193bc53ad052fba3a6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>std::string</type>
         <definition>std::string CPU::serializeObj</definition>
-        <argsstring>()</argsstring>
+        <argsstring>() const</argsstring>
         <name>serializeObj</name>
+        <reimplements refid="class_product_1a749f163f9319f2cf6e9e0620d7133f0b">serializeObj</reimplements>
         <briefdescription>
+<para>Serializes object. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -481,19 +483,18 @@
       <member refid="class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8" prot="private" virt="non-virtual"><scope>CPU</scope><name>name</name></member>
       <member refid="class_product_1af83d5faec51f3cf9c45d68d103a04114" prot="public" virt="virtual"><scope>CPU</scope><name>operator!=</name></member>
       <member refid="class_product_1a8b72d673cf7d89fb2e375a080af6263d" prot="public" virt="virtual"><scope>CPU</scope><name>operator==</name></member>
+      <member refid="class_product_1ae3a90763e1d49c6bac9843767c20b91b" prot="protected" virt="non-virtual"><scope>CPU</scope><name>oType</name></member>
       <member refid="class_product_1abb2572df7a832a509944905603ba5e4f" prot="private" virt="non-virtual"><scope>CPU</scope><name>price</name></member>
       <member refid="class_c_p_u_1aa2af36b3447c4e7b4e1f25f699a06824" prot="public" virt="virtual"><scope>CPU</scope><name>print</name></member>
       <member refid="class_product_1a102f72142feba478ffe51c77a170537e" prot="public" virt="non-virtual"><scope>CPU</scope><name>Product</name></member>
       <member refid="class_product_1accbe232b71fcb8641b7c5021fa4f6e2f" prot="public" virt="non-virtual"><scope>CPU</scope><name>Product</name></member>
       <member refid="class_product_1a847c1d85e67ce387166a597579a55135" prot="public" virt="non-virtual"><scope>CPU</scope><name>Product</name></member>
-      <member refid="class_c_p_u_1a76b924aa80f3acf2bfdd7299f2be6044" prot="public" virt="non-virtual"><scope>CPU</scope><name>serializeObj</name></member>
-      <member refid="class_product_1a749f163f9319f2cf6e9e0620d7133f0b" prot="public" virt="virtual" ambiguityscope="Product::"><scope>CPU</scope><name>serializeObj</name></member>
+      <member refid="class_c_p_u_1ae3a32cc02d31f2193bc53ad052fba3a6" prot="public" virt="virtual"><scope>CPU</scope><name>serializeObj</name></member>
       <member refid="class_product_1a08d9ddfb4db62491607f14ec9fba0d77" prot="public" virt="non-virtual"><scope>CPU</scope><name>setDescription</name></member>
       <member refid="class_product_1aeeafda76687dbbd8b2f086671c17461d" prot="public" virt="non-virtual"><scope>CPU</scope><name>setManuf</name></member>
       <member refid="class_product_1a1f49f191dab6643d82aee0490bb96e7c" prot="public" virt="non-virtual"><scope>CPU</scope><name>setName</name></member>
       <member refid="class_product_1a8ade25d68358bd4cb5b9f7c34fc53b44" prot="public" virt="non-virtual"><scope>CPU</scope><name>setPrice</name></member>
       <member refid="class_c_p_u_1a1f1bb470721f49e48139e46bbea9f109" prot="private" virt="non-virtual"><scope>CPU</scope><name>socketType</name></member>
-      <member refid="class_product_1afa7216e3fe55009b1862453041a34374" prot="protected" virt="non-virtual"><scope>CPU</scope><name>t</name></member>
       <member refid="class_c_p_u_1a65f32aa0ee6335f15d7a7087da2564f3" prot="private" virt="non-virtual"><scope>CPU</scope><name>tdp</name></member>
       <member refid="class_c_p_u_1a19e584d567f61b968f2f5e09c86abc4c" prot="private" virt="non-virtual"><scope>CPU</scope><name>threadCount</name></member>
       <member refid="class_product_1a18f26095e25405579968c6ede367484f" prot="public" virt="virtual"><scope>CPU</scope><name>~Product</name></member>

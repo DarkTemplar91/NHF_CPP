@@ -60,7 +60,9 @@ Collaboration diagram for CPU:<para>
 
 <para>Prints out basic data of a product to the output stream. </para>
 </listitem>
-            <listitem><para>std::string <link linkend="_class_c_p_u_1a76b924aa80f3acf2bfdd7299f2be6044">serializeObj</link> ()</para>
+            <listitem><para>std::string <link linkend="_class_c_p_u_1ae3a32cc02d31f2193bc53ad052fba3a6">serializeObj</link> () const</para>
+
+<para>Serializes object. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -180,12 +182,18 @@ Reimplemented from <link linkend="_class_product_1a2cc3f5ef8abe14801e185734cfcc3
 </para>
 <para>
 Reimplemented from <link linkend="_class_product_1a82a40e1860ffe2c88ea08084037a6c42">Product</link>.</para>
-    </section><anchor xml:id="_class_c_p_u_1a76b924aa80f3acf2bfdd7299f2be6044"/>    <section>
+    </section><anchor xml:id="_class_c_p_u_1ae3a32cc02d31f2193bc53ad052fba3a6"/>    <section>
     <title>serializeObj()</title>
 <indexterm><primary>serializeObj</primary><secondary>CPU</secondary></indexterm>
 <indexterm><primary>CPU</primary><secondary>serializeObj</secondary></indexterm>
-<para><computeroutput>std::string CPU::serializeObj ( )</computeroutput></para>
+<para><computeroutput>std::string CPU::serializeObj ( ) const<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Serializes object. </para>
+</para>
+
 <para>Calls base class&apos;s serialize fucntion</para>
+<para>
+Reimplemented from <link linkend="_class_product_1a749f163f9319f2cf6e9e0620d7133f0b">Product</link>.</para>
 </section>
 </section>
 <section>

@@ -326,12 +326,14 @@
         </inbodydescription>
         <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="34" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="29" bodyend="29"/>
       </memberdef>
-      <memberdef kind="function" id="class_motherboard_1a9d0666b839ef01ea6072ffeb41653d3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_motherboard_1a5cd6459fe3e4823aeeb5d2b255d68aef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>std::string</type>
         <definition>std::string Motherboard::serializeObj</definition>
-        <argsstring>()</argsstring>
+        <argsstring>() const</argsstring>
         <name>serializeObj</name>
+        <reimplements refid="class_product_1a749f163f9319f2cf6e9e0620d7133f0b">serializeObj</reimplements>
         <briefdescription>
+<para>Serializes object. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -413,6 +415,7 @@
       <member refid="class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8" prot="private" virt="non-virtual"><scope>Motherboard</scope><name>name</name></member>
       <member refid="class_product_1af83d5faec51f3cf9c45d68d103a04114" prot="public" virt="virtual"><scope>Motherboard</scope><name>operator!=</name></member>
       <member refid="class_product_1a8b72d673cf7d89fb2e375a080af6263d" prot="public" virt="virtual"><scope>Motherboard</scope><name>operator==</name></member>
+      <member refid="class_product_1ae3a90763e1d49c6bac9843767c20b91b" prot="protected" virt="non-virtual"><scope>Motherboard</scope><name>oType</name></member>
       <member refid="class_motherboard_1a3b141240779b25dec7618b96938a3fba" prot="private" virt="non-virtual"><scope>Motherboard</scope><name>pcie</name></member>
       <member refid="class_product_1abb2572df7a832a509944905603ba5e4f" prot="private" virt="non-virtual"><scope>Motherboard</scope><name>price</name></member>
       <member refid="class_product_1a82a40e1860ffe2c88ea08084037a6c42" prot="public" virt="virtual"><scope>Motherboard</scope><name>print</name></member>
@@ -420,14 +423,12 @@
       <member refid="class_product_1accbe232b71fcb8641b7c5021fa4f6e2f" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>Product</name></member>
       <member refid="class_product_1a847c1d85e67ce387166a597579a55135" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>Product</name></member>
       <member refid="class_motherboard_1ab237d87d79328daf0903b0c17fc56240" prot="private" virt="non-virtual"><scope>Motherboard</scope><name>sata</name></member>
-      <member refid="class_motherboard_1a9d0666b839ef01ea6072ffeb41653d3c" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>serializeObj</name></member>
-      <member refid="class_product_1a749f163f9319f2cf6e9e0620d7133f0b" prot="public" virt="virtual" ambiguityscope="Product::"><scope>Motherboard</scope><name>serializeObj</name></member>
+      <member refid="class_motherboard_1a5cd6459fe3e4823aeeb5d2b255d68aef" prot="public" virt="virtual"><scope>Motherboard</scope><name>serializeObj</name></member>
       <member refid="class_product_1a08d9ddfb4db62491607f14ec9fba0d77" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>setDescription</name></member>
       <member refid="class_product_1aeeafda76687dbbd8b2f086671c17461d" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>setManuf</name></member>
       <member refid="class_product_1a1f49f191dab6643d82aee0490bb96e7c" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>setName</name></member>
       <member refid="class_product_1a8ade25d68358bd4cb5b9f7c34fc53b44" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>setPrice</name></member>
       <member refid="class_motherboard_1a96c475cc3d6cee4245090a3257f2c6c6" prot="private" virt="non-virtual"><scope>Motherboard</scope><name>socketType</name></member>
-      <member refid="class_product_1afa7216e3fe55009b1862453041a34374" prot="protected" virt="non-virtual"><scope>Motherboard</scope><name>t</name></member>
       <member refid="class_motherboard_1a5632309f2b4224c1ba05289d6aaf9c74" prot="private" virt="non-virtual"><scope>Motherboard</scope><name>usbPorts</name></member>
       <member refid="class_product_1a18f26095e25405579968c6ede367484f" prot="public" virt="virtual"><scope>Motherboard</scope><name>~Product</name></member>
     </listofallmembers>

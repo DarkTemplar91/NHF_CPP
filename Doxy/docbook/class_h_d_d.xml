@@ -43,9 +43,13 @@ Collaboration diagram for HDD:<para>
 </listitem>
             <listitem><para>unsigned int <link linkend="_class_h_d_d_1a324a729fcc87a1ee3ae0a8b0efa68b1b">getRPM</link> ()</para>
 </listitem>
-            <listitem><para>std::string <link linkend="_class_h_d_d_1a47e1f51cba4da56acf692647b456bc58">serializeObj</link> ()</para>
+            <listitem><para>void <link linkend="_class_h_d_d_1ab80de8626bc38aa1d3398121b159717e">print</link> ()</para>
 
 <para>Returns RPM of <link linkend="_class_h_d_d">HDD</link>. </para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_h_d_d_1ad64f75db764118f6e47eafd5c6bc9bdc">serializeObj</link> () const</para>
+
+<para>Return notation in string. </para>
 </listitem>
             <listitem><para><link linkend="_class_h_d_d">HDD</link> * <link linkend="_class_h_d_d_1a434ff76ba146d2e143f2c6803ca73a67">clone</link> ()</para>
 </listitem>
@@ -119,14 +123,26 @@ Reimplemented from <link linkend="_class_storage_1af7f626e3a0bc9d46c59ef7dd8f57c
     <title>operator==()</title>
 <indexterm><primary>operator==</primary><secondary>HDD</secondary></indexterm>
 <indexterm><primary>HDD</primary><secondary>operator==</secondary></indexterm>
-<para><computeroutput>bool HDD::operator== (<link linkend="_class_h_d_d">HDD</link> &amp; rhs)</computeroutput></para>    </section><anchor xml:id="_class_h_d_d_1a47e1f51cba4da56acf692647b456bc58"/>    <section>
-    <title>serializeObj()</title>
-<indexterm><primary>serializeObj</primary><secondary>HDD</secondary></indexterm>
-<indexterm><primary>HDD</primary><secondary>serializeObj</secondary></indexterm>
-<para><computeroutput>std::string HDD::serializeObj ( )</computeroutput></para><para>
+<para><computeroutput>bool HDD::operator== (<link linkend="_class_h_d_d">HDD</link> &amp; rhs)</computeroutput></para>    </section><anchor xml:id="_class_h_d_d_1ab80de8626bc38aa1d3398121b159717e"/>    <section>
+    <title>print()</title>
+<indexterm><primary>print</primary><secondary>HDD</secondary></indexterm>
+<indexterm><primary>HDD</primary><secondary>print</secondary></indexterm>
+<para><computeroutput>void HDD::print ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
 
 <para>Returns RPM of <link linkend="_class_h_d_d">HDD</link>. </para>
 </para>
+<para>
+Reimplemented from <link linkend="_class_storage_1a73df5f67fd76f334e3511b2850882974">Storage</link>.</para>
+    </section><anchor xml:id="_class_h_d_d_1ad64f75db764118f6e47eafd5c6bc9bdc"/>    <section>
+    <title>serializeObj()</title>
+<indexterm><primary>serializeObj</primary><secondary>HDD</secondary></indexterm>
+<indexterm><primary>HDD</primary><secondary>serializeObj</secondary></indexterm>
+<para><computeroutput>std::string HDD::serializeObj ( ) const<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Return notation in string. </para>
+</para>
+<para>
+Reimplemented from <link linkend="_class_storage_1a598d2e8f3fcd8caf5d3042ddecd4896e">Storage</link>.</para>
 </section>
 </section>
 <section>

@@ -14,18 +14,18 @@ std::string CPU::serializeObj()const{
 }
 CPU::CPU(std::string name, int tdp, socket type, unsigned int clock, unsigned int core, unsigned int thread, double c, bool vga) :Product(), genName(name), tdp(tdp),
 socketType(type), baseClock(clock), coreCount(core), threadCount(thread), L2_cache(c), iVGA(vga) {
-	t = obj_t::CPU;
+	oType = obj_t::CPU;
 }
 CPU::CPU(std::string pName, double price, std::string manuf, std::string descript, std::string name, int tdp,
 	socket type, unsigned int clock, unsigned int core, unsigned int thread, double c, bool vga)
 	:Product(pName, price, manuf, descript),
 	genName(name), tdp(tdp),
 	socketType(type), baseClock(clock), coreCount(core), threadCount(thread), L2_cache(c), iVGA(vga) {
-	t = obj_t::CPU;
+	oType = obj_t::CPU;
 }
 CPU::CPU(const CPU& c):Product(c), genName(c.genName), tdp(c.tdp), socketType(c.socketType), baseClock(c.baseClock),
 coreCount(c.coreCount), threadCount(c.threadCount), L2_cache(c.L2_cache), iVGA(c.iVGA) {
-	t = obj_t::CPU;
+	oType = obj_t::CPU;
 }
 
 std::string CPU::getGenName() { return genName; }

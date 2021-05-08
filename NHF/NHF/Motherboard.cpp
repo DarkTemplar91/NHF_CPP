@@ -7,17 +7,17 @@
 
 Motherboard::Motherboard(std::string chip, socket s, int maxRam, int maxFreq, int usbPorts, int sata, int pcie) :Product(),
 chipset(chip), socketType(s), maxRAM(maxRam), maxRFreq(maxFreq), usbPorts(usbPorts), sata(sata), pcie(pcie) {
-	t = obj_t::MB;
+	oType = obj_t::MB;
 }
 Motherboard::Motherboard(std::string name, double price, std::string manuf, std::string descript,
 	std::string chip, socket s, int maxRam, int maxFreq, int usbPorts, int sata, int pcie)
 	:Product(name, price, manuf, descript),
 	chipset(chip), socketType(s), maxRAM(maxRam), maxRFreq(maxFreq), usbPorts(usbPorts), sata(sata), pcie(pcie) {
-	t = obj_t::MB;
+	oType = obj_t::MB;
 }
 Motherboard::Motherboard(const Motherboard& m):Product(m), chipset(m.chipset),socketType(m.socketType), maxRAM(m.maxRAM),
 maxRFreq(m.maxRFreq), usbPorts(m.usbPorts), sata(m.sata), pcie(m.pcie) {
-	t = obj_t::MB;
+	oType = obj_t::MB;
 }
 
 

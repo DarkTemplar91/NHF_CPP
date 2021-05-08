@@ -45,7 +45,7 @@ Collaboration diagram for Catalogue:<para>
 
 <para>Saves the catalogue to a file given by the &apos;path&apos; variable. It uses the classes&apos; overloaded serializeObj method </para>
 </listitem>
-            <listitem><para>void <link linkend="_class_catalogue_1a0055df0cb8fbe295bf93df7c29be96e5">Load</link> (const std::string path) const</para>
+            <listitem><para>void <link linkend="_class_catalogue_1ad53dfc2b8ba76d4da007e74e1133a1dc">Load</link> (const std::string path)</para>
 
 <para>Loads the catalogue from a file by creting objects from the data read and placing them into the catalogue </para>
 </listitem>
@@ -211,11 +211,11 @@ Parameters                    </title>
     <title>getSize()</title>
 <indexterm><primary>getSize</primary><secondary>Catalogue</secondary></indexterm>
 <indexterm><primary>Catalogue</primary><secondary>getSize</secondary></indexterm>
-<para><computeroutput>size_t Catalogue::getSize ( )</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1a0055df0cb8fbe295bf93df7c29be96e5"/>    <section>
+<para><computeroutput>size_t Catalogue::getSize ( )</computeroutput></para>    </section><anchor xml:id="_class_catalogue_1ad53dfc2b8ba76d4da007e74e1133a1dc"/>    <section>
     <title>Load()</title>
 <indexterm><primary>Load</primary><secondary>Catalogue</secondary></indexterm>
 <indexterm><primary>Catalogue</primary><secondary>Load</secondary></indexterm>
-<para><computeroutput>void Catalogue::Load (const std::string path) const</computeroutput></para><para>
+<para><computeroutput>void Catalogue::Load (const std::string path)</computeroutput></para><para>
 
 <para>Loads the catalogue from a file by creting objects from the data read and placing them into the catalogue </para>
 </para>

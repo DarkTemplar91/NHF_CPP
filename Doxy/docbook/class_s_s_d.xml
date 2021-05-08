@@ -47,9 +47,13 @@ Collaboration diagram for SSD:<para>
 
 <para>Returns Read speed. </para>
 </listitem>
-            <listitem><para>std::string <link linkend="_class_s_s_d_1ac13108d9272a5fecb72f17e675b2d1ed">serializeObj</link> ()</para>
+            <listitem><para>void <link linkend="_class_s_s_d_1a753647f5a39c66e794efd6fed291795b">print</link> ()</para>
 
 <para>Returns write speed. </para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_s_s_d_1a0ed308b29e11e06c4c8b84fcab515c4a">serializeObj</link> () const</para>
+
+<para>Return notation in string. </para>
 </listitem>
             <listitem><para><link linkend="_class_s_s_d">SSD</link> * <link linkend="_class_s_s_d_1adfbc00ab863bca1aff44b3ff233b5255">clone</link> ()</para>
 </listitem>
@@ -136,14 +140,26 @@ Reimplemented from <link linkend="_class_storage_1af7f626e3a0bc9d46c59ef7dd8f57c
     <title>operator==()</title>
 <indexterm><primary>operator==</primary><secondary>SSD</secondary></indexterm>
 <indexterm><primary>SSD</primary><secondary>operator==</secondary></indexterm>
-<para><computeroutput>bool SSD::operator== (<link linkend="_class_s_s_d">SSD</link> &amp; rhs)</computeroutput></para>    </section><anchor xml:id="_class_s_s_d_1ac13108d9272a5fecb72f17e675b2d1ed"/>    <section>
-    <title>serializeObj()</title>
-<indexterm><primary>serializeObj</primary><secondary>SSD</secondary></indexterm>
-<indexterm><primary>SSD</primary><secondary>serializeObj</secondary></indexterm>
-<para><computeroutput>std::string SSD::serializeObj ( )</computeroutput></para><para>
+<para><computeroutput>bool SSD::operator== (<link linkend="_class_s_s_d">SSD</link> &amp; rhs)</computeroutput></para>    </section><anchor xml:id="_class_s_s_d_1a753647f5a39c66e794efd6fed291795b"/>    <section>
+    <title>print()</title>
+<indexterm><primary>print</primary><secondary>SSD</secondary></indexterm>
+<indexterm><primary>SSD</primary><secondary>print</secondary></indexterm>
+<para><computeroutput>void SSD::print ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
 
 <para>Returns write speed. </para>
 </para>
+<para>
+Reimplemented from <link linkend="_class_storage_1a73df5f67fd76f334e3511b2850882974">Storage</link>.</para>
+    </section><anchor xml:id="_class_s_s_d_1a0ed308b29e11e06c4c8b84fcab515c4a"/>    <section>
+    <title>serializeObj()</title>
+<indexterm><primary>serializeObj</primary><secondary>SSD</secondary></indexterm>
+<indexterm><primary>SSD</primary><secondary>serializeObj</secondary></indexterm>
+<para><computeroutput>std::string SSD::serializeObj ( ) const<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Return notation in string. </para>
+</para>
+<para>
+Reimplemented from <link linkend="_class_storage_1a598d2e8f3fcd8caf5d3042ddecd4896e">Storage</link>.</para>
 </section>
 </section>
 <section>

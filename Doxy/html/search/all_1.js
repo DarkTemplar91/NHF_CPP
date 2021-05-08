@@ -9,6 +9,13 @@ var searchData=
   ['assert_5feq_7',['ASSERT_EQ',['../gtest__lite_8h.html#ad806a5e5813ea769dc2edbb5f6e3949d',1,'gtest_lite.h']]],
   ['assert_5fno_5fthrow_8',['ASSERT_NO_THROW',['../gtest__lite_8h.html#a895c34d9b192cdc2ba46d2680623485d',1,'ASSERT_NO_THROW():&#160;gtest_lite.h'],['../gtest__lite_8h.html#a895c34d9b192cdc2ba46d2680623485d',1,'ASSERT_NO_THROW():&#160;gtest_lite.h']]],
   ['assertthrow_9',['ASSERTTHROW',['../gtest__lite_8h.html#a5137d2bbeb7baffffe2e477a450fd48b',1,'gtest_lite.h']]],
-  ['astatus_10',['astatus',['../structgtest__lite_1_1_test.html#ab68d48e5096dd799d865d128d63cd12c',1,'gtest_lite::Test']]],
-  ['atx_11',['ATX',['../_motherboard_8h.html#adf354b92ab85f8ff2d68abc40d8573bda7687d6fcbcd0f377bc887e9db0a63c4a',1,'Motherboard.h']]]
+  ['assigncase_10',['assignCase',['../class_p_c.html#a553f909b532d5c49d82504f6a6c5ed95',1,'PC']]],
+  ['assigncpu_11',['assignCPU',['../class_p_c.html#aba2f7995dd3f5896a9c3214f6b420d57',1,'PC']]],
+  ['assigngpu_12',['assignGPU',['../class_p_c.html#aec5fd7f3198f2f3a59145ad8d2cf6567',1,'PC']]],
+  ['assignmb_13',['assignMB',['../class_p_c.html#a908c6dd821193af721cccc0166cc8a9e',1,'PC']]],
+  ['assignpsu_14',['assignPSU',['../class_p_c.html#a3522ab4a80973cad93767ca87805f739',1,'PC']]],
+  ['assignram_15',['assignRAM',['../class_p_c.html#adb7459899bd3be54b2c8039af1eb7373',1,'PC']]],
+  ['assignstorage_16',['assignStorage',['../class_p_c.html#af825826be8a2191d67c33dc36940985e',1,'PC']]],
+  ['astatus_17',['astatus',['../structgtest__lite_1_1_test.html#ab68d48e5096dd799d865d128d63cd12c',1,'gtest_lite::Test']]],
+  ['atx_18',['ATX',['../_motherboard_8h.html#adf354b92ab85f8ff2d68abc40d8573bda7687d6fcbcd0f377bc887e9db0a63c4a',1,'Motherboard.h']]]
 ];

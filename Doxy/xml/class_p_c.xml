@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="15" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" bodystart="15" bodyend="-1"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="17" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_p_c_1aea5e38e403dd8ab8886f5fe3635848c0" prot="private" static="no" mutable="no">
         <type><ref refid="class_c_p_u" kindref="compound">CPU</ref></type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="16" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" bodystart="16" bodyend="-1"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="18" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_p_c_1a1af1f6ded64f3db1242ed1f472521466" prot="private" static="no" mutable="no">
         <type><ref refid="class_motherboard" kindref="compound">Motherboard</ref></type>
@@ -42,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="17" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" bodystart="17" bodyend="-1"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="19" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_p_c_1a69788ef661daba11ea736264beaa5990" prot="private" static="no" mutable="no">
         <type><ref refid="class_product" kindref="compound">Product</ref></type>
@@ -55,7 +55,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="18" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" bodystart="18" bodyend="-1"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="20" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" bodystart="20" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_p_c_1ade767f098d19e2eb30abef9fc1f7e6c4" prot="private" static="no" mutable="no">
         <type><ref refid="class_product" kindref="compound">Product</ref></type>
@@ -68,7 +68,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="19" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" bodystart="19" bodyend="-1"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="21" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" bodystart="21" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_p_c_1a416bf67d1a321773a55c2c0acd4c761a" prot="private" static="no" mutable="no">
         <type><ref refid="class_storage" kindref="compound">Storage</ref> *</type>
@@ -81,12 +81,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="20" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" bodystart="20" bodyend="-1"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="22" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" bodystart="22" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="class_p_c_1a6f824a50b70b8f8660a1ecae43f01818" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="class_p_c_1a805a5aa4387f0c4144c128944a80681e" prot="private" static="no" mutable="no">
         <type><ref refid="class_r_a_m" kindref="compound">RAM</ref></type>
-        <definition>RAM PC::ramslots[4]</definition>
-        <argsstring>[4]</argsstring>
+        <definition>RAM PC::ramslots</definition>
+        <argsstring></argsstring>
         <name>ramslots</name>
         <briefdescription>
         </briefdescription>
@@ -94,7 +94,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="21" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" bodystart="21" bodyend="-1"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="23" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" bodystart="23" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -109,7 +109,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="23" column="1"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="25" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.cpp" bodystart="4" bodyend="4"/>
       </memberdef>
       <memberdef kind="function" id="class_p_c_1ab76d67ed4e2548fdf49b8c7df9c88c46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -126,7 +126,48 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="24" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.cpp" bodystart="5" bodyend="14"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="26" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.cpp" bodystart="5" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_p_c_1a276ecd0da9d14195bced383cdcce40ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PC::PC</definition>
+        <argsstring>(GPU &amp;gpu, CPU &amp;cpu, Motherboard &amp;mb, Product &amp;pcCase, Product &amp;psu, Storage *s, RAM &amp;ram)</argsstring>
+        <name>PC</name>
+        <param>
+          <type><ref refid="class_g_p_u" kindref="compound">GPU</ref> &amp;</type>
+          <declname>gpu</declname>
+        </param>
+        <param>
+          <type><ref refid="class_c_p_u" kindref="compound">CPU</ref> &amp;</type>
+          <declname>cpu</declname>
+        </param>
+        <param>
+          <type><ref refid="class_motherboard" kindref="compound">Motherboard</ref> &amp;</type>
+          <declname>mb</declname>
+        </param>
+        <param>
+          <type><ref refid="class_product" kindref="compound">Product</ref> &amp;</type>
+          <declname>pcCase</declname>
+        </param>
+        <param>
+          <type><ref refid="class_product" kindref="compound">Product</ref> &amp;</type>
+          <declname>psu</declname>
+        </param>
+        <param>
+          <type><ref refid="class_storage" kindref="compound">Storage</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_a_m" kindref="compound">RAM</ref> &amp;</type>
+          <declname>ram</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="27" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.cpp" bodystart="15" bodyend="24"/>
       </memberdef>
       <memberdef kind="function" id="class_p_c_1aa4f5779cf5f9a4ec7806da64a09b8cb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_p_c" kindref="compound">PC</ref> *</type>
@@ -140,10 +181,173 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="25" column="4" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.cpp" bodystart="15" bodyend="18"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="28" column="4" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.cpp" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_p_c_1a32aa5111878b4f5e2410f59ebb1ae650" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void PC::print</definition>
+        <argsstring>()</argsstring>
+        <name>print</name>
+        <reimplements refid="class_product_1a82a40e1860ffe2c88ea08084037a6c42">print</reimplements>
+        <briefdescription>
+<para>Prints out basic data of a product to the output stream. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="29" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.cpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_p_c_1a35db2210308424b6c94515036a11235b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string PC::serializeObj</definition>
+        <argsstring>() const</argsstring>
+        <name>serializeObj</name>
+        <reimplements refid="class_product_1a749f163f9319f2cf6e9e0620d7133f0b">serializeObj</reimplements>
+        <briefdescription>
+<para>Serializes object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="30" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.cpp" bodystart="29" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_p_c_1a115da8404d548672d21556278fbcf3d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PC::~PC</definition>
+        <argsstring>()</argsstring>
+        <name>~PC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="31" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.cpp" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_p_c_1aec5fd7f3198f2f3a59145ad8d2cf6567" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PC::assignGPU</definition>
+        <argsstring>(GPU &amp;)</argsstring>
+        <name>assignGPU</name>
+        <param>
+          <type><ref refid="class_g_p_u" kindref="compound">GPU</ref> &amp;</type>
+          <defname>gpu</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="33" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.cpp" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_p_c_1aba2f7995dd3f5896a9c3214f6b420d57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PC::assignCPU</definition>
+        <argsstring>(CPU &amp;)</argsstring>
+        <name>assignCPU</name>
+        <param>
+          <type><ref refid="class_c_p_u" kindref="compound">CPU</ref> &amp;</type>
+          <defname>cpu</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="34" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.cpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_p_c_1a908c6dd821193af721cccc0166cc8a9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PC::assignMB</definition>
+        <argsstring>(Motherboard &amp;)</argsstring>
+        <name>assignMB</name>
+        <param>
+          <type><ref refid="class_motherboard" kindref="compound">Motherboard</ref> &amp;</type>
+          <defname>mb</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="35" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.cpp" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_p_c_1a553f909b532d5c49d82504f6a6c5ed95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PC::assignCase</definition>
+        <argsstring>(Product &amp;)</argsstring>
+        <name>assignCase</name>
+        <param>
+          <type><ref refid="class_product" kindref="compound">Product</ref> &amp;</type>
+          <defname>c</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="36" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.cpp" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_p_c_1a3522ab4a80973cad93767ca87805f739" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PC::assignPSU</definition>
+        <argsstring>(Product &amp;)</argsstring>
+        <name>assignPSU</name>
+        <param>
+          <type><ref refid="class_product" kindref="compound">Product</ref> &amp;</type>
+          <defname>psu</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="37" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.cpp" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_p_c_1af825826be8a2191d67c33dc36940985e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PC::assignStorage</definition>
+        <argsstring>(Storage *)</argsstring>
+        <name>assignStorage</name>
+        <param>
+          <type><ref refid="class_storage" kindref="compound">Storage</ref> *</type>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="38" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.cpp" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_p_c_1adb7459899bd3be54b2c8039af1eb7373" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PC::assignRAM</definition>
+        <argsstring>(RAM &amp;)</argsstring>
+        <name>assignRAM</name>
+        <param>
+          <type><ref refid="class_r_a_m" kindref="compound">RAM</ref> &amp;</type>
+          <defname>r</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="39" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.cpp" bodystart="62" bodyend="64"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Prebuilt pc class </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -220,8 +424,15 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="14" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" bodystart="14" bodyend="27"/>
+    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" line="16" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Computer.h" bodystart="16" bodyend="41"/>
     <listofallmembers>
+      <member refid="class_p_c_1a553f909b532d5c49d82504f6a6c5ed95" prot="public" virt="non-virtual"><scope>PC</scope><name>assignCase</name></member>
+      <member refid="class_p_c_1aba2f7995dd3f5896a9c3214f6b420d57" prot="public" virt="non-virtual"><scope>PC</scope><name>assignCPU</name></member>
+      <member refid="class_p_c_1aec5fd7f3198f2f3a59145ad8d2cf6567" prot="public" virt="non-virtual"><scope>PC</scope><name>assignGPU</name></member>
+      <member refid="class_p_c_1a908c6dd821193af721cccc0166cc8a9e" prot="public" virt="non-virtual"><scope>PC</scope><name>assignMB</name></member>
+      <member refid="class_p_c_1a3522ab4a80973cad93767ca87805f739" prot="public" virt="non-virtual"><scope>PC</scope><name>assignPSU</name></member>
+      <member refid="class_p_c_1adb7459899bd3be54b2c8039af1eb7373" prot="public" virt="non-virtual"><scope>PC</scope><name>assignRAM</name></member>
+      <member refid="class_p_c_1af825826be8a2191d67c33dc36940985e" prot="public" virt="non-virtual"><scope>PC</scope><name>assignStorage</name></member>
       <member refid="class_p_c_1a1af1f6ded64f3db1242ed1f472521466" prot="private" virt="non-virtual"><scope>PC</scope><name>board</name></member>
       <member refid="class_p_c_1aa4f5779cf5f9a4ec7806da64a09b8cb3" prot="public" virt="virtual"><scope>PC</scope><name>clone</name></member>
       <member refid="class_p_c_1aea5e38e403dd8ab8886f5fe3635848c0" prot="private" virt="non-virtual"><scope>PC</scope><name>cpu</name></member>
@@ -241,23 +452,25 @@
       <member refid="class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8" prot="private" virt="non-virtual"><scope>PC</scope><name>name</name></member>
       <member refid="class_product_1af83d5faec51f3cf9c45d68d103a04114" prot="public" virt="virtual"><scope>PC</scope><name>operator!=</name></member>
       <member refid="class_product_1a8b72d673cf7d89fb2e375a080af6263d" prot="public" virt="virtual"><scope>PC</scope><name>operator==</name></member>
+      <member refid="class_product_1ae3a90763e1d49c6bac9843767c20b91b" prot="protected" virt="non-virtual"><scope>PC</scope><name>oType</name></member>
       <member refid="class_p_c_1a213092addb3a1d89b761f780a055f0a3" prot="public" virt="non-virtual"><scope>PC</scope><name>PC</name></member>
       <member refid="class_p_c_1ab76d67ed4e2548fdf49b8c7df9c88c46" prot="public" virt="non-virtual"><scope>PC</scope><name>PC</name></member>
+      <member refid="class_p_c_1a276ecd0da9d14195bced383cdcce40ad" prot="public" virt="non-virtual"><scope>PC</scope><name>PC</name></member>
       <member refid="class_p_c_1a69788ef661daba11ea736264beaa5990" prot="private" virt="non-virtual"><scope>PC</scope><name>pcCase</name></member>
       <member refid="class_p_c_1a416bf67d1a321773a55c2c0acd4c761a" prot="private" virt="non-virtual"><scope>PC</scope><name>pcStorage</name></member>
       <member refid="class_product_1abb2572df7a832a509944905603ba5e4f" prot="private" virt="non-virtual"><scope>PC</scope><name>price</name></member>
-      <member refid="class_product_1a82a40e1860ffe2c88ea08084037a6c42" prot="public" virt="virtual"><scope>PC</scope><name>print</name></member>
+      <member refid="class_p_c_1a32aa5111878b4f5e2410f59ebb1ae650" prot="public" virt="virtual"><scope>PC</scope><name>print</name></member>
       <member refid="class_product_1a102f72142feba478ffe51c77a170537e" prot="public" virt="non-virtual"><scope>PC</scope><name>Product</name></member>
       <member refid="class_product_1accbe232b71fcb8641b7c5021fa4f6e2f" prot="public" virt="non-virtual"><scope>PC</scope><name>Product</name></member>
       <member refid="class_product_1a847c1d85e67ce387166a597579a55135" prot="public" virt="non-virtual"><scope>PC</scope><name>Product</name></member>
       <member refid="class_p_c_1ade767f098d19e2eb30abef9fc1f7e6c4" prot="private" virt="non-virtual"><scope>PC</scope><name>psu</name></member>
-      <member refid="class_p_c_1a6f824a50b70b8f8660a1ecae43f01818" prot="private" virt="non-virtual"><scope>PC</scope><name>ramslots</name></member>
-      <member refid="class_product_1a749f163f9319f2cf6e9e0620d7133f0b" prot="public" virt="virtual"><scope>PC</scope><name>serializeObj</name></member>
+      <member refid="class_p_c_1a805a5aa4387f0c4144c128944a80681e" prot="private" virt="non-virtual"><scope>PC</scope><name>ramslots</name></member>
+      <member refid="class_p_c_1a35db2210308424b6c94515036a11235b" prot="public" virt="virtual"><scope>PC</scope><name>serializeObj</name></member>
       <member refid="class_product_1a08d9ddfb4db62491607f14ec9fba0d77" prot="public" virt="non-virtual"><scope>PC</scope><name>setDescription</name></member>
       <member refid="class_product_1aeeafda76687dbbd8b2f086671c17461d" prot="public" virt="non-virtual"><scope>PC</scope><name>setManuf</name></member>
       <member refid="class_product_1a1f49f191dab6643d82aee0490bb96e7c" prot="public" virt="non-virtual"><scope>PC</scope><name>setName</name></member>
       <member refid="class_product_1a8ade25d68358bd4cb5b9f7c34fc53b44" prot="public" virt="non-virtual"><scope>PC</scope><name>setPrice</name></member>
-      <member refid="class_product_1afa7216e3fe55009b1862453041a34374" prot="protected" virt="non-virtual"><scope>PC</scope><name>t</name></member>
+      <member refid="class_p_c_1a115da8404d548672d21556278fbcf3d9" prot="public" virt="non-virtual"><scope>PC</scope><name>~PC</name></member>
       <member refid="class_product_1a18f26095e25405579968c6ede367484f" prot="public" virt="virtual"><scope>PC</scope><name>~Product</name></member>
     </listofallmembers>
   </compounddef>

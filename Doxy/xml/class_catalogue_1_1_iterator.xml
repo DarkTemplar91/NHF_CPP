@@ -52,7 +52,7 @@ Returns an <ref refid="class_catalogue_1_1_iterator" kindref="compound">Iterator
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="117" column="10" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="233" bodyend="236"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="117" column="10" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="317" bodyend="320"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1_1_iterator_1aef9b281974d9a66ba6540a7400041a6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_catalogue_1_1_iterator" kindref="compound">Iterator</ref> &amp;</type>
@@ -72,7 +72,7 @@ Returns another pointer pointing to the current element. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="124" column="10" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="237" bodyend="241"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="124" column="10" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="321" bodyend="325"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1_1_iterator_1aff6647d77a7d91098a2a07374a57a8e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -89,7 +89,7 @@ Returns another pointer pointing to the current element. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="127" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="242" bodyend="244"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="127" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="326" bodyend="328"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1_1_iterator_1a114c19ae7660bb10d913398bd36a9271" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -107,7 +107,7 @@ Returns another pointer pointing to the current element. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="128" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="245" bodyend="247"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="128" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="329" bodyend="331"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1_1_iterator_1a0eb533fe60b2b25c7291f6542e66418e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_product" kindref="compound">Product</ref> &amp;</type>
@@ -121,7 +121,7 @@ Returns another pointer pointing to the current element. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="129" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="248" bodyend="250"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="129" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="332" bodyend="334"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

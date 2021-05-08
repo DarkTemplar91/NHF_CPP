@@ -47,7 +47,7 @@ Product* Product::clone() {
 	return p;
 }
 std::string Product::getObjType() const {
-	switch (t)
+	switch (oType)
 	{
 	case obj_t::Product:
 		return "0\nPRODUCT_OBJ";
@@ -88,7 +88,7 @@ std::string Product::getName() const { return name; }
 std::string Product::getDescription() const { return dscrpt; }
 double Product::getPrice() const { return price; }
 size_t Product::getAmount()const { return inv; }
-obj_t Product::getObj_t()const { return t; }
+obj_t Product::getObj_t()const { return oType; }
 
 void Product::setName(std::string s) { name = s; }
 void Product::setDescription(std::string s) { dscrpt = s; }
@@ -105,9 +105,9 @@ void Product::decreaseStock(size_t i) {
 	inv -= i;
 }
 
-Product::Product(const Product& p) :name(p.name), price(p.price), dscrpt(p.dscrpt), manufacturer(p.manufacturer), inv(1),t(obj_t::Product) {};
-Product::Product(std::string name, double price, std::string manuf, std::string descript, size_t inv) :name(name), price(price), dscrpt(descript), manufacturer(manuf), inv(inv), t(obj_t::Product) {}
-Product::Product() : name("Unnamed Product"), price(0), dscrpt("There is no description for this item!"), inv(0), t(obj_t::Product) {}
+Product::Product(const Product& p) :name(p.name), price(p.price), dscrpt(p.dscrpt), manufacturer(p.manufacturer), inv(1),oType(obj_t::Product) {};
+Product::Product(std::string name, double price, std::string manuf, std::string descript, size_t inv) :name(name), price(price), dscrpt(descript), manufacturer(manuf), inv(inv), oType(obj_t::Product) {}
+Product::Product() : name("Unnamed Product"), price(0), dscrpt("There is no description for this item!"), inv(0), oType(obj_t::Product) {}
 
 bool Product::operator==(Product& rhs) {
 	if (rhs.price == price && rhs.manufacturer == manufacturer

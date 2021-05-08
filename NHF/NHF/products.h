@@ -48,7 +48,7 @@ class Product {
 	std::string manufacturer;   ///The manufacturer
 	size_t inv;					///The amount of Product in stock
 protected:
-	obj_t t;					///The type of the object. Used when reading/writing from/to file.
+	obj_t oType;					///The type of the object. Used when reading/writing from/to file.
 public:
 	/// <summary>
 	/// Multiple constructors with different parameters

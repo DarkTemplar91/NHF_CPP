@@ -289,12 +289,14 @@
         </inbodydescription>
         <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.h" line="29" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Videocard.cpp" bodystart="38" bodyend="38"/>
       </memberdef>
-      <memberdef kind="function" id="class_g_p_u_1aa6accb9ff57ea98080a7496d77fea7e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_g_p_u_1a9c68f0e1fb0b97fc7c5e91a7bf881c7b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>std::string</type>
         <definition>std::string GPU::serializeObj</definition>
-        <argsstring>()</argsstring>
+        <argsstring>() const</argsstring>
         <name>serializeObj</name>
+        <reimplements refid="class_product_1a749f163f9319f2cf6e9e0620d7133f0b">serializeObj</reimplements>
         <briefdescription>
+<para>Serializes object. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -376,6 +378,7 @@
       <member refid="class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8" prot="private" virt="non-virtual"><scope>GPU</scope><name>name</name></member>
       <member refid="class_product_1af83d5faec51f3cf9c45d68d103a04114" prot="public" virt="virtual"><scope>GPU</scope><name>operator!=</name></member>
       <member refid="class_product_1a8b72d673cf7d89fb2e375a080af6263d" prot="public" virt="virtual"><scope>GPU</scope><name>operator==</name></member>
+      <member refid="class_product_1ae3a90763e1d49c6bac9843767c20b91b" prot="protected" virt="non-virtual"><scope>GPU</scope><name>oType</name></member>
       <member refid="class_g_p_u_1abd8d988998cc1c91e8aef4653d84b93f" prot="private" virt="non-virtual"><scope>GPU</scope><name>portDisplay</name></member>
       <member refid="class_g_p_u_1a0dc45bd568c1a3667d114e59d2eb936b" prot="private" virt="non-virtual"><scope>GPU</scope><name>portHDMI</name></member>
       <member refid="class_product_1abb2572df7a832a509944905603ba5e4f" prot="private" virt="non-virtual"><scope>GPU</scope><name>price</name></member>
@@ -383,13 +386,11 @@
       <member refid="class_product_1a102f72142feba478ffe51c77a170537e" prot="public" virt="non-virtual"><scope>GPU</scope><name>Product</name></member>
       <member refid="class_product_1accbe232b71fcb8641b7c5021fa4f6e2f" prot="public" virt="non-virtual"><scope>GPU</scope><name>Product</name></member>
       <member refid="class_product_1a847c1d85e67ce387166a597579a55135" prot="public" virt="non-virtual"><scope>GPU</scope><name>Product</name></member>
-      <member refid="class_g_p_u_1aa6accb9ff57ea98080a7496d77fea7e5" prot="public" virt="non-virtual"><scope>GPU</scope><name>serializeObj</name></member>
-      <member refid="class_product_1a749f163f9319f2cf6e9e0620d7133f0b" prot="public" virt="virtual" ambiguityscope="Product::"><scope>GPU</scope><name>serializeObj</name></member>
+      <member refid="class_g_p_u_1a9c68f0e1fb0b97fc7c5e91a7bf881c7b" prot="public" virt="virtual"><scope>GPU</scope><name>serializeObj</name></member>
       <member refid="class_product_1a08d9ddfb4db62491607f14ec9fba0d77" prot="public" virt="non-virtual"><scope>GPU</scope><name>setDescription</name></member>
       <member refid="class_product_1aeeafda76687dbbd8b2f086671c17461d" prot="public" virt="non-virtual"><scope>GPU</scope><name>setManuf</name></member>
       <member refid="class_product_1a1f49f191dab6643d82aee0490bb96e7c" prot="public" virt="non-virtual"><scope>GPU</scope><name>setName</name></member>
       <member refid="class_product_1a8ade25d68358bd4cb5b9f7c34fc53b44" prot="public" virt="non-virtual"><scope>GPU</scope><name>setPrice</name></member>
-      <member refid="class_product_1afa7216e3fe55009b1862453041a34374" prot="protected" virt="non-virtual"><scope>GPU</scope><name>t</name></member>
       <member refid="class_g_p_u_1a22c51b5240ede46c1aa9e0bbb1f96562" prot="private" virt="non-virtual"><scope>GPU</scope><name>tdp</name></member>
       <member refid="class_g_p_u_1a48611570458ee623b5cb2e761f17a6fd" prot="private" virt="non-virtual"><scope>GPU</scope><name>vram</name></member>
       <member refid="class_product_1a18f26095e25405579968c6ede367484f" prot="public" virt="virtual"><scope>GPU</scope><name>~Product</name></member>

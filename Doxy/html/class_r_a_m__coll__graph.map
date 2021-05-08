@@ -1,5 +1,5 @@
 <map id="RAM" name="RAM">
-<area shape="rect" id="node1" title="Class for modelling Random Access Memory Inheriting from storage" alt="" coords="7,784,138,1081"/>
-<area shape="rect" id="node2" href="$class_storage.html" title="Base class for data storage/memory" alt="" coords="15,512,130,736"/>
+<area shape="rect" id="node1" title="Class for modelling Random Access Memory Inheriting from storage" alt="" coords="7,799,138,1111"/>
+<area shape="rect" id="node2" href="$class_storage.html" title="Base class for data storage/memory" alt="" coords="15,512,130,751"/>
 <area shape="rect" id="node3" href="$class_product.html" title=" " alt="" coords="5,5,140,464"/>
 </map>

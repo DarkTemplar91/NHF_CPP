@@ -5,12 +5,12 @@
 
 //Storage
 //Storage constructors
-Storage::Storage(size_t c, ByteUnit bu) :capacity(c), notation(bu) { t = obj_t::Storage; }
+Storage::Storage(size_t c, ByteUnit bu) :capacity(c), notation(bu) { oType = obj_t::Storage; }
 Storage::Storage(std::string name, double price, std::string descript, std::string manuf, size_t c, ByteUnit bu) :Product(name, price, manuf, descript),
 capacity(c), notation(bu) {
-	t = obj_t::Storage;
+	oType = obj_t::Storage;
 }
-Storage::Storage(const Storage& m) : Product(m), capacity(m.capacity), notation(m.notation) { t = obj_t::Storage; }
+Storage::Storage(const Storage& m) : Product(m), capacity(m.capacity), notation(m.notation) { oType = obj_t::Storage; }
 //End of constructors
 
 size_t Storage::getCapacity()const { return capacity; }
@@ -53,13 +53,13 @@ bool Storage::operator!=(Storage& rhs) {
 
 //RAM
 //RAM constructors
-RAM::RAM(MemoryType type, int clockSpeed, int cl, double v) :type(type), clockSpeed(clockSpeed), cl(cl), v(v) { t = obj_t::RAM; }
-RAM::RAM(size_t c, ByteUnit bu, MemoryType type, int clockSpeed, int cl, double v) :Storage(c, bu), type(type), clockSpeed(clockSpeed), cl(cl), v(v) { t = obj_t::RAM; }
+RAM::RAM(MemoryType type, int clockSpeed, int cl, double v) :type(type), clockSpeed(clockSpeed), cl(cl), v(v) { oType = obj_t::RAM; }
+RAM::RAM(size_t c, ByteUnit bu, MemoryType type, int clockSpeed, int cl, double v) :Storage(c, bu), type(type), clockSpeed(clockSpeed), cl(cl), v(v) { oType = obj_t::RAM; }
 RAM::RAM(std::string name, double price, std::string descript, std::string manuf, size_t c, ByteUnit bu, MemoryType type, int clockSpeed, int cl, double v)
 	:Storage(name, price, descript, manuf, c, bu), type(type), clockSpeed(clockSpeed), cl(cl), v(v) {
-	t = obj_t::RAM;
+	oType = obj_t::RAM;
 }
-RAM::RAM(const RAM& r) : Storage(r), type(r.type), clockSpeed(r.clockSpeed), cl(r.cl), v(r.v) { t = obj_t::RAM; }
+RAM::RAM(const RAM& r) : Storage(r), type(r.type), clockSpeed(r.clockSpeed), cl(r.cl), v(r.v) { oType = obj_t::RAM; }
 //End of RAM constructors
 
 MemoryType RAM::getMemType() { return type; }
@@ -84,13 +84,13 @@ bool RAM::operator!=(RAM& rhs) {
 SSD::SSD(const SSD& s) :Storage(s) {
 	this->rSpeed = s.rSpeed;
 	this->wSpeed = s.wSpeed;
-	t = obj_t::SSD;
+	oType = obj_t::SSD;
 }
-SSD::SSD(unsigned int wSpeed, unsigned int rSpeed) :Storage(), wSpeed(wSpeed), rSpeed(rSpeed) { t = obj_t::SSD; }
+SSD::SSD(unsigned int wSpeed, unsigned int rSpeed) :Storage(), wSpeed(wSpeed), rSpeed(rSpeed) { oType = obj_t::SSD; }
 SSD::SSD(std::string name, double price, std::string dscrpt, std::string manufacturer, size_t c,
 	ByteUnit bu, unsigned int wSpeed, unsigned int rSpeed) :Storage(name, price, dscrpt, manufacturer, c, bu),
 	wSpeed(wSpeed), rSpeed(rSpeed) {
-	t = obj_t::SSD;
+	oType = obj_t::SSD;
 }
 
 unsigned int SSD::getReadSpeed() { return rSpeed; }
@@ -109,16 +109,16 @@ bool SSD::operator!=(SSD& rhs) {
 
 //HDD
 //HDD constructors
-HDD::HDD(unsigned int rpm) :Storage(), rpm(rpm) { t = obj_t::HDD; }
+HDD::HDD(unsigned int rpm) :Storage(), rpm(rpm) { oType = obj_t::HDD; }
 HDD::HDD(std::string name, double price, std::string dscrpt, std::string manufacturer, size_t c, ByteUnit bu,
 	unsigned int rpm) :
 	Storage(name, price, dscrpt, manufacturer, c, bu), rpm(rpm) {
-	t = obj_t::HDD;
+	oType = obj_t::HDD;
 }
 unsigned int HDD::getRPM() { return rpm; }
 HDD::HDD(const HDD& h) : Storage(h) {
 	this->rpm = h.rpm;
-	t = obj_t::HDD;
+	oType = obj_t::HDD;
 }
 bool HDD::operator==(HDD& rhs) {
 	if (Storage::operator==(rhs) &&

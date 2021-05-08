@@ -319,7 +319,7 @@ Catalogue::Iterator& Catalogue::Iterator::operator++() {
 	return *this;
 }
 Catalogue::Iterator& Catalogue::Iterator::operator++(int) {
-    Iterator tmp(*this);
+	Iterator tmp = *this;
 	operator++();
 	return tmp;
 }

@@ -162,7 +162,7 @@
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1a5806130e7c25709689917fcff437949a" kindref="member">getTDP</ref>();</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_g_p_u_1aa6accb9ff57ea98080a7496d77fea7e5" kindref="member">serializeObj</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_g_p_u_1a9c68f0e1fb0b97fc7c5e91a7bf881c7b" kindref="member">serializeObj</ref>()</highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_p_u" kindref="compound">GPU</ref>*<sp/><ref refid="class_g_p_u_1a13535142ba8cacba30f23f6bf8ed5200" kindref="member">clone</ref>();</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal">};</highlight></codeline>

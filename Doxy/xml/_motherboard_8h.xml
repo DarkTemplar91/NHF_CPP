@@ -211,7 +211,7 @@
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_motherboard_1a1bdb19d8e2fc3fdc9b9669fbc688a015" kindref="member">getPCIE</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_motherboard_1a9d0666b839ef01ea6072ffeb41653d3c" kindref="member">serializeObj</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_motherboard_1a5cd6459fe3e4823aeeb5d2b255d68aef" kindref="member">serializeObj</ref>()</highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_motherboard" kindref="compound">Motherboard</ref>*<sp/><ref refid="class_motherboard_1af3ad07ad9398abe1bdd0315ec9acb7e3" kindref="member">clone</ref>();</highlight></codeline>
 <codeline lineno="39"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>

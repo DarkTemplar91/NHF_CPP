@@ -156,11 +156,15 @@
         </inbodydescription>
         <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="26" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="18" bodyend="41"/>
       </memberdef>
-      <memberdef kind="function" id="class_storage_1ac7065b274cfcf6979a95ac9451846c6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_storage_1a598d2e8f3fcd8caf5d3042ddecd4896e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>std::string</type>
         <definition>std::string Storage::serializeObj</definition>
-        <argsstring>()</argsstring>
+        <argsstring>() const</argsstring>
         <name>serializeObj</name>
+        <reimplements refid="class_product_1a749f163f9319f2cf6e9e0620d7133f0b">serializeObj</reimplements>
+        <reimplementedby refid="class_r_a_m_1a15ab2492102ae822e8ea760f9613b543">serializeObj</reimplementedby>
+        <reimplementedby refid="class_h_d_d_1ad64f75db764118f6e47eafd5c6bc9bdc">serializeObj</reimplementedby>
+        <reimplementedby refid="class_s_s_d_1a0ed308b29e11e06c4c8b84fcab515c4a">serializeObj</reimplementedby>
         <briefdescription>
 <para>Return notation in string. </para>
         </briefdescription>
@@ -169,6 +173,24 @@
         <inbodydescription>
         </inbodydescription>
         <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="27" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="133" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="class_storage_1a73df5f67fd76f334e3511b2850882974" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Storage::print</definition>
+        <argsstring>()</argsstring>
+        <name>print</name>
+        <reimplements refid="class_product_1a82a40e1860ffe2c88ea08084037a6c42">print</reimplements>
+        <reimplementedby refid="class_r_a_m_1a1424aff28af127d0ae7b343c01c1df1d">print</reimplementedby>
+        <reimplementedby refid="class_h_d_d_1ab80de8626bc38aa1d3398121b159717e">print</reimplementedby>
+        <reimplementedby refid="class_s_s_d_1a753647f5a39c66e794efd6fed291795b">print</reimplementedby>
+        <briefdescription>
+<para>Serializes object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="29" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="257" bodyend="260"/>
       </memberdef>
       <memberdef kind="function" id="class_storage_1ab10853458f897082ba028cef2477005d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -180,13 +202,12 @@
           <declname>rhs</declname>
         </param>
         <briefdescription>
-<para>Serializes object. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="30" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="43" bodyend="47"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="31" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="43" bodyend="47"/>
       </memberdef>
       <memberdef kind="function" id="class_storage_1ac44ec07b755c2a60f976cbd7ae13de81" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -203,7 +224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="31" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="48" bodyend="50"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="32" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="48" bodyend="50"/>
       </memberdef>
       <memberdef kind="function" id="class_storage_1af7f626e3a0bc9d46c59ef7dd8f57c6c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_storage" kindref="compound">Storage</ref> *</type>
@@ -220,7 +241,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="32" column="17" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="245" bodyend="248"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="33" column="17" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="244" bodyend="247"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -270,7 +291,7 @@
         <link refid="class_product"/>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="17" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" bodystart="17" bodyend="35"/>
+    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="17" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" bodystart="17" bodyend="36"/>
     <listofallmembers>
       <member refid="class_storage_1aae754660623b8e0e5046b967cb4cdb73" prot="private" virt="non-virtual"><scope>Storage</scope><name>capacity</name></member>
       <member refid="class_storage_1af7f626e3a0bc9d46c59ef7dd8f57c6c9" prot="public" virt="virtual"><scope>Storage</scope><name>clone</name></member>
@@ -295,13 +316,13 @@
       <member refid="class_product_1af83d5faec51f3cf9c45d68d103a04114" prot="public" virt="virtual" ambiguityscope="Product::"><scope>Storage</scope><name>operator!=</name></member>
       <member refid="class_storage_1ab10853458f897082ba028cef2477005d" prot="public" virt="virtual"><scope>Storage</scope><name>operator==</name></member>
       <member refid="class_product_1a8b72d673cf7d89fb2e375a080af6263d" prot="public" virt="virtual" ambiguityscope="Product::"><scope>Storage</scope><name>operator==</name></member>
+      <member refid="class_product_1ae3a90763e1d49c6bac9843767c20b91b" prot="protected" virt="non-virtual"><scope>Storage</scope><name>oType</name></member>
       <member refid="class_product_1abb2572df7a832a509944905603ba5e4f" prot="private" virt="non-virtual"><scope>Storage</scope><name>price</name></member>
-      <member refid="class_product_1a82a40e1860ffe2c88ea08084037a6c42" prot="public" virt="virtual"><scope>Storage</scope><name>print</name></member>
+      <member refid="class_storage_1a73df5f67fd76f334e3511b2850882974" prot="public" virt="virtual"><scope>Storage</scope><name>print</name></member>
       <member refid="class_product_1a102f72142feba478ffe51c77a170537e" prot="public" virt="non-virtual"><scope>Storage</scope><name>Product</name></member>
       <member refid="class_product_1accbe232b71fcb8641b7c5021fa4f6e2f" prot="public" virt="non-virtual"><scope>Storage</scope><name>Product</name></member>
       <member refid="class_product_1a847c1d85e67ce387166a597579a55135" prot="public" virt="non-virtual"><scope>Storage</scope><name>Product</name></member>
-      <member refid="class_storage_1ac7065b274cfcf6979a95ac9451846c6f" prot="public" virt="non-virtual"><scope>Storage</scope><name>serializeObj</name></member>
-      <member refid="class_product_1a749f163f9319f2cf6e9e0620d7133f0b" prot="public" virt="virtual" ambiguityscope="Product::"><scope>Storage</scope><name>serializeObj</name></member>
+      <member refid="class_storage_1a598d2e8f3fcd8caf5d3042ddecd4896e" prot="public" virt="virtual"><scope>Storage</scope><name>serializeObj</name></member>
       <member refid="class_product_1a08d9ddfb4db62491607f14ec9fba0d77" prot="public" virt="non-virtual"><scope>Storage</scope><name>setDescription</name></member>
       <member refid="class_product_1aeeafda76687dbbd8b2f086671c17461d" prot="public" virt="non-virtual"><scope>Storage</scope><name>setManuf</name></member>
       <member refid="class_product_1a1f49f191dab6643d82aee0490bb96e7c" prot="public" virt="non-virtual"><scope>Storage</scope><name>setName</name></member>
@@ -309,7 +330,6 @@
       <member refid="class_storage_1aa557b155d438649718b658971c097859" prot="public" virt="non-virtual"><scope>Storage</scope><name>Storage</name></member>
       <member refid="class_storage_1a51e13f81461a42036b877f158d6c807b" prot="public" virt="non-virtual"><scope>Storage</scope><name>Storage</name></member>
       <member refid="class_storage_1af1098adcb33fd74e57cd855514014b73" prot="public" virt="non-virtual"><scope>Storage</scope><name>Storage</name></member>
-      <member refid="class_product_1afa7216e3fe55009b1862453041a34374" prot="protected" virt="non-virtual"><scope>Storage</scope><name>t</name></member>
       <member refid="class_product_1a18f26095e25405579968c6ede367484f" prot="public" virt="virtual"><scope>Storage</scope><name>~Product</name></member>
     </listofallmembers>
   </compounddef>
