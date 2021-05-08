@@ -5,7 +5,7 @@
 #include <fstream>
 #include "memtrace.h"
 
-std::string CPU::serializeObj(){
+std::string CPU::serializeObj()const{
 	std::ostringstream sStream;
 	sStream << "\t"<<this->Product::serializeObj();	///Calls base class's serialize fucntion
 	sStream << "\n\tCPU_SPECIF\n\t{\n\t" << "\tGenName:" << genName << ";tdp:" << tdp << ";SocketType:" << socketType << ";base:" << baseClock <<
@@ -75,7 +75,7 @@ std::ifstream& operator>>(std::ifstream& savefile, CPU& rhs) {
 	savefile >> L2_cache;
 	std::getline(savefile, temp, ':');
 	savefile >> iVGA;
-	savefile.close();
+	std::getline(savefile, temp, '}');
 	rhs = CPU(rhs.getName(),rhs.getPrice(),rhs.getManufacturer(),rhs.getDescription(),genName, tdp, socketType, baseClock, coreCount, threadCount, L2_cache, iVGA);
 	return savefile;
 }

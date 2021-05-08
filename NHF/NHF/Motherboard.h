@@ -34,7 +34,7 @@ public:
 	int getPCIE();			
 
 	
-	std::string serializeObj();
+	std::string serializeObj()const;
 	Motherboard* clone();
 };
 

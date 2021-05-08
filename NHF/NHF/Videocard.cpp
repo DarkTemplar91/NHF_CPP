@@ -38,7 +38,7 @@ unsigned int GPU::getVRAM() { return vram; }
 unsigned int GPU::getTDP() { return tdp; }
 
 
-std::string GPU::serializeObj() {
+std::string GPU::serializeObj()const {
 	std::ostringstream sStream;
 	sStream << "\t" << this->Product::serializeObj();	///Calls base class's
 	sStream << "\n\tGPU_SPECIF\n\t{\n\t" << "hdmi:" << portHDMI << ";display:" << portDisplay << 
@@ -69,8 +69,8 @@ std::ifstream& operator>>(std::ifstream& savefile, GPU& rhs) {
 	savefile >> vram;
 	std::getline(savefile, temp, ':');
 	savefile >> tdp;
+	std::getline(savefile, temp, '}');
 	rhs = GPU(rhs.getName(), rhs.getPrice(), rhs.getDescription(), rhs.getManufacturer(),
 		portHDMI,portDisplay,gpuClock,memoryClock,vram,tdp);
-	savefile.close();
 	return savefile;
 }

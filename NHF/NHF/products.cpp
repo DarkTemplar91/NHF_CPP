@@ -24,10 +24,10 @@ std::ifstream& operator>>(std::ifstream& savefile, Product& rhs) {
 	std::getline(savefile, manuf, ';');
 	std::getline(savefile, temp, ':');
 	savefile >> inv;
-	rhs = Product(name, price, manuf, desc);
+	rhs = Product(name, price, manuf, desc,inv);
 	return savefile;
 }
-std::ifstream& operator>>(std::ifstream& s, obj_t rhs) {
+std::ifstream& operator>>(std::ifstream& s, obj_t& rhs) {
 	int temp;
 	s >> temp;
 	rhs = static_cast<obj_t>(temp);
@@ -100,8 +100,8 @@ void Product::increaseStock(size_t i) {
 	this->inv += i;
 }
 void Product::decreaseStock(size_t i) {
-	if (inv - i < 0)
-		throw "Product in stock cannot be less than 0!";
+	if (inv < i)
+		throw std::exception("Product in stock cannot be less than 0!");
 	inv -= i;
 }
 

@@ -130,10 +130,10 @@ bool HDD::operator!=(HDD& rhs) {
 	return !(HDD::operator==(rhs));
 }
 
-std::string Storage::serializeObj() {
+std::string Storage::serializeObj()const {
 	std::ostringstream sStream;
-	sStream << "\t" << this->Product::serializeObj();
-	sStream << "\n\tStorage_SPECIF\n\t{\n\t" << "\tCapacity:" << capacity << ";notation" << notation<<";\n\t}\n";
+	sStream << this->Product::serializeObj();
+	sStream << "\n\tStorage_SPECIF\n\t{\n\t" << "\tCapacity:" << capacity << ";notation:" << notation<<";\n\t}\n";
 	return sStream.str();
 }
 std::ifstream& operator>>(std::ifstream& is, ByteUnit& b) {
@@ -157,10 +157,10 @@ std::ifstream& operator>>(std::ifstream& savefile, Storage& rhs) {
 	return savefile;
 }
 
-std::string RAM::serializeObj() {
+std::string RAM::serializeObj() const{
 	std::ostringstream sStream;
 	sStream << this->Storage::serializeObj();
-	sStream << "\n\tRAM_SPECIF\n\t{\n\t" << "\ttype" << type << ";clockspeed:" << clockSpeed << ";cl:"
+	sStream << "\n\tRAM_SPECIF\n\t{\n\t" << "\ttype:" << type << ";clockspeed:" << clockSpeed << ";cl:"
 		<< cl<<";v:"<<v << ";\n\t}\n";
 	return sStream.str();
 }
@@ -173,7 +173,7 @@ std::ifstream& operator>>(std::ifstream& is, MemoryType& m) {
 std::ifstream& operator>>(std::ifstream& savefile, RAM& rhs) {
 	if (!savefile.is_open())
 		savefile.open("savefile.txt", std::ios_base::app);
-	savefile >> (Product&)rhs;
+	savefile >> (Storage&)rhs;
 	MemoryType type;
 	int clockSpeed; 
 	int cl; 
@@ -187,17 +187,16 @@ std::ifstream& operator>>(std::ifstream& savefile, RAM& rhs) {
 	savefile >> cl;
 	std::getline(savefile, temp, ':');
 	savefile >> v;
-
+	std::getline(savefile, temp, '}');
 	rhs = RAM(rhs.getName(), rhs.getPrice(), rhs.getDescription(), rhs.getManufacturer(),
 		rhs.getCapacity(), rhs.getSizeType(), type, clockSpeed, cl, v);
-	savefile.close();
 	return savefile;
 }
 
-std::string SSD::serializeObj() {
+std::string SSD::serializeObj() const{
 	std::ostringstream sStream;
-	sStream << "\t" << this->Storage::serializeObj();
-	sStream << "\n\tSSD_SPECIF\n\t{\n\t" << "\twSpeed" << wSpeed << ";rSpeed" << rSpeed << ";\n\t}\n";
+	sStream << this->Storage::serializeObj();
+	sStream << "\n\tSSD_SPECIF\n\t{\n\t" << "\twSpeed:" << wSpeed << ";rSpeed:" << rSpeed << ";\n\t}\n";
 	return sStream.str();
 }
 std::ifstream& operator>>(std::ifstream& savefile, SSD& rhs) {
@@ -211,16 +210,16 @@ std::ifstream& operator>>(std::ifstream& savefile, SSD& rhs) {
 	savefile >> wSpeed;
 	std::getline(savefile, temp, ':');
 	savefile >> rSpeed;
+	std::getline(savefile, temp, '}');
 	rhs = SSD(rhs.getName(), rhs.getPrice(), rhs.getDescription(), rhs.getManufacturer(),
 		rhs.getCapacity(), rhs.getSizeType(), wSpeed, rSpeed);
-	savefile.close();
 	return savefile;
 }
 
-std::string HDD::serializeObj() {
+std::string HDD::serializeObj()const {
 	std::ostringstream sStream;
-	sStream << "\t" << this->Storage::serializeObj();
-	sStream << "\n\tHDD_SPECIF\n\t{\n\t" << "\trpm" << rpm<<";\n\t}\n";
+	sStream  << this->Storage::serializeObj();
+	sStream << "\n\tHDD_SPECIF\n\t{\n\t" << "\trpm:" << rpm<<";\n\t}\n";
 	return sStream.str();
 }
 std::ifstream& operator>>(std::ifstream& savefile, HDD& rhs) {
@@ -231,9 +230,9 @@ std::ifstream& operator>>(std::ifstream& savefile, HDD& rhs) {
 	unsigned int rpm;
 	std::getline(savefile, temp, ':');
 	savefile >> rpm;
+	std::getline(savefile, temp, '}');
 	rhs = HDD(rhs.getName(), rhs.getPrice(), rhs.getDescription(), rhs.getManufacturer(),
 		rhs.getCapacity(), rhs.getSizeType(), rpm);
-	savefile.close();
 	return savefile;
 }
 
@@ -253,4 +252,21 @@ SSD* SSD::clone() {
 HDD* HDD::clone() {
 	HDD* h = new HDD(*this);
 	return h;
+}
+
+void Storage::print() {
+	std::cout << "Storage:"<<std::endl;
+	std::cout << this->serializeObj();
+}
+void HDD::print() {
+	std::cout << "HDD:"<<std::endl;
+	std::cout << this->serializeObj();
+}
+void SSD::print() {
+	std::cout << "SSD:"<<std::endl;
+	std::cout << this->serializeObj();
+}
+void RAM::print() {
+	std::cout << "RAM:" << std::endl;
+	std::cout << this->serializeObj();
 }

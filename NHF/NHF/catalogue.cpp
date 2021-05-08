@@ -31,7 +31,6 @@ void Catalogue::Add(Product* p) {
 	delete p;
 	list = temp;
 }
-
 /// <summary>
 /// Iterates through the list and saves all the objects to a file
 /// </summary>
@@ -87,18 +86,22 @@ void Catalogue::Save(std::string path)const {
 }
 
 void Catalogue::Load(std::string path) {
-	obj_t type=obj_t::Product;
+	obj_t type=obj_t::GPU;
 	std::ifstream s;
 	s.open(path);
 	s >> type;
-	while (true) {
-		s.open(path);
+	std::string temp;
+	while (type!=obj_t::NONE) {
+		if(!s.is_open())
+			s.open(path);
 		switch (type)
 		{
 		case obj_t::Product:
 		{
 			Product p;
 			s >> p;
+			std::getline(s, temp, '}');
+			std::getline(s, temp, '\n');
 			Add(p.clone());
 			break;
 		}
@@ -112,6 +115,8 @@ void Catalogue::Load(std::string path) {
 		case obj_t::RAM:
 		{	RAM r;
 		s >> r;
+
+		std::getline(s, temp, '}');
 		Add(r.clone());
 		break;
 		}
@@ -119,6 +124,7 @@ void Catalogue::Load(std::string path) {
 		{
 			HDD hdd;
 			s >> hdd;
+			std::getline(s, temp, '}');
 			Add(hdd.clone());
 			break;
 		}
@@ -126,6 +132,7 @@ void Catalogue::Load(std::string path) {
 		{
 			SSD ssd;
 			s >> ssd;
+			std::getline(s, temp, '}');
 			Add(ssd.clone());
 			break;
 		}
@@ -133,6 +140,7 @@ void Catalogue::Load(std::string path) {
 		{
 			Motherboard mb;
 			s >> mb;
+			std::getline(s, temp, '}');
 			Add(mb.clone());
 			break;
 		}
@@ -140,6 +148,7 @@ void Catalogue::Load(std::string path) {
 		{
 			CPU cpu;
 			s >> cpu;
+			std::getline(s, temp, '}');
 			Add(cpu.clone());
 			break;
 		}
@@ -147,6 +156,7 @@ void Catalogue::Load(std::string path) {
 		{
 			GPU gpu;
 			s >> gpu;
+			std::getline(s, temp, '}');
 			Add(gpu.clone());
 			break;
 		}
@@ -158,9 +168,12 @@ void Catalogue::Load(std::string path) {
 		}
 			break;
 		default:
+			type = obj_t::NONE;
 			break;
 		}
-		s >> type;
+		if(type!=obj_t::NONE)
+			s >> type;
+
 	}
 	
 }

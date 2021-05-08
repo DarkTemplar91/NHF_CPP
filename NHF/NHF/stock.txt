@@ -16,15 +16,15 @@ GPU_OBJ
 3
 HDD_OBJ
 {
-		name:HDD1;price:60;description:hard drive;manufacturer:Kingston;inventory:1;
+name:HDD1;price:60;description:hard drive;manufacturer:Kingston;inventory:1;
 	Storage_SPECIF
 	{
-		Capacity:1;notation4;
+		Capacity:2;notation:5;
 	}
 
 	HDD_SPECIF
 	{
-		rpm7200;
+		rpm:5400;
 	}
 
 }

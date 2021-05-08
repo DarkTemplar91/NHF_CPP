@@ -29,7 +29,7 @@ public:
 	unsigned int getTDP();
 
 
-	std::string serializeObj();
+	std::string serializeObj()const;
 	GPU* clone();
 
 };

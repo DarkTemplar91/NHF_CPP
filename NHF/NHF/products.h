@@ -11,7 +11,7 @@
 /// Enumerator for the object types
 /// </summary>
 enum class obj_t{Product,Storage, RAM, HDD, SSD,MB,CPU,GPU,PC, NONE};
-std::ifstream& operator>>(std::ifstream& s,obj_t rhs);
+std::ifstream& operator>>(std::ifstream& s,obj_t& rhs);
 
 //Template for writing the serialized object to file
 

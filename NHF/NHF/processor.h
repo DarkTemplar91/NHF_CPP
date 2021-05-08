@@ -38,7 +38,7 @@ public:
 	
 	CPU* clone();
 	void print();
-	std::string serializeObj();
+	std::string serializeObj()const;
 	
 
 };

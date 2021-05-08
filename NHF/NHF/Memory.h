@@ -24,8 +24,9 @@ public:
 	size_t getCapacity()const;			///Returns capacity
 	ByteUnit getSizeType()const;		///Returns the unit type
 	std::string getNotation()const;		///Return notation in string
-	std::string serializeObj();			///Serializes object
+	std::string serializeObj()const;	///Serializes object
 
+	void print();
 
 	virtual bool operator==(Storage& rhs);
 	virtual bool operator!=(Storage& rhs);
@@ -59,9 +60,10 @@ public:
 	int getlatency();				///Returns latency
 	double getVoltage();			///Returns stock voltage
 	
-	std::string serializeObj();
+	std::string serializeObj()const;
 	
 	RAM* clone();
+	void print();
 
 	bool operator!=(RAM& rhs);
 	bool operator==(RAM& rhs);
@@ -81,7 +83,9 @@ public:
 
 	unsigned int getRPM();		///Returns RPM of HDD
 
-	std::string serializeObj();
+	void print();
+
+	std::string serializeObj()const;
 	HDD* clone();
 	bool operator==(HDD& rhs);
 	bool operator!=(HDD& rhs);
@@ -104,7 +108,9 @@ public:
 	unsigned int getReadSpeed();	///Returns Read speed
 	unsigned int getWriteSpeed();	///Returns write speed
 
-	std::string serializeObj();
+	void print();
+
+	std::string serializeObj()const;
 	SSD* clone();
 	bool operator==(SSD& rhs);
 	bool operator!=(SSD& rhs);

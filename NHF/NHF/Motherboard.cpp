@@ -29,7 +29,7 @@ int Motherboard::getSata() { return sata; }
 int Motherboard::getPCIE() { return pcie; }
 
 
-std::string Motherboard::serializeObj() {
+std::string Motherboard::serializeObj() const{
 	std::ostringstream sStream;
 	sStream << "\t" << this->Product::serializeObj();
 	sStream << "\n\tMB_SPECIF\n\t{\n\t" << "chipset:" << chipset << ";socket:" << socketType << ";maxRam:" << maxRAM << ";maxFreq:" << maxRFreq
@@ -65,9 +65,9 @@ std::ifstream& operator>>(std::ifstream& savefile, Motherboard& rhs) {
 	savefile >> sata;
 	std::getline(savefile, temp, ':');
 	savefile >> pcie;
+	std::getline(savefile, temp, '}');
 	rhs = Motherboard(rhs.getName(),rhs.getPrice(),rhs.getManufacturer(),rhs.getDescription(),
 		chipset, socketType, maxRAM,maxRFreq, usbPorts,sata,pcie);
-	savefile.close();
 	return savefile;
 }
 
