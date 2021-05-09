@@ -24,18 +24,18 @@ GPU::GPU(const GPU& g) : Product(g) {
 	this->tdp = g.tdp;
 	this->vram = g.vram;
 }
-GPU* GPU::clone() {
+GPU* GPU::clone()const {
 	GPU* g = new GPU(*this);
 	g->oType = obj_t::GPU;
 	return g;
 }
 
-unsigned int GPU::getHDMIports() { return portHDMI; }
-unsigned int GPU::getDisplayports() { return portDisplay; }
-unsigned int GPU::getGPUclock() { return gpuClock; }
-unsigned int GPU::getMemClock() { return memoryClock; }
-unsigned int GPU::getVRAM() { return vram; }
-unsigned int GPU::getTDP() { return tdp; }
+unsigned int GPU::getHDMIports()const { return portHDMI; }
+unsigned int GPU::getDisplayports()const { return portDisplay; }
+unsigned int GPU::getGPUclock()const { return gpuClock; }
+unsigned int GPU::getMemClock()const { return memoryClock; }
+unsigned int GPU::getVRAM()const { return vram; }
+unsigned int GPU::getTDP()const { return tdp; }
 
 
 std::string GPU::serializeObj()const {
@@ -70,7 +70,18 @@ std::ifstream& operator>>(std::ifstream& savefile, GPU& rhs) {
 	std::getline(savefile, temp, ':');
 	savefile >> tdp;
 	std::getline(savefile, temp, '}');
-	rhs = GPU(rhs.getName(), rhs.getPrice(), rhs.getDescription(), rhs.getManufacturer(),
+	rhs = GPU(rhs.getName(), rhs.getPrice(), rhs.getManufacturer(), rhs.getDescription(),
 		portHDMI,portDisplay,gpuClock,memoryClock,vram,tdp);
 	return savefile;
+}
+
+bool GPU::operator==(GPU& rhs) const{
+	if (rhs.vram == vram && rhs.gpuClock == gpuClock && rhs.memoryClock == memoryClock &&
+		rhs.portDisplay == portDisplay && rhs.portHDMI == portHDMI &&
+		rhs.tdp == tdp && this->Product::operator==(rhs))
+		return true;
+	return false;
+}
+bool GPU::operator!=(GPU& rhs)const {
+	return !(this->operator==(rhs));
 }

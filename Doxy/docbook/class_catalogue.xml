@@ -220,6 +220,8 @@ Parameters                    </title>
 <para>Loads the catalogue from a file by creting objects from the data read and placing them into the catalogue </para>
 </para>
 
+<para>Loads the objects into the catalogue from file</para>
+
 <para>
                 <formalpara>
                     <title>
@@ -239,7 +241,28 @@ Parameters                    </title>
                     </table>
                     </para>
                 </formalpara>
-                Path to the file to read from </para>
+                Path to the file to read from</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>path</entry>
+                                <entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
     </section><anchor xml:id="_class_catalogue_1af9ebacaaef724e5c04c334322f81a83b"/>    <section>
     <title>operator[]()</title>
 <indexterm><primary>operator[]</primary><secondary>Catalogue</secondary></indexterm>

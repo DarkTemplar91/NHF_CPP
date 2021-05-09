@@ -5,6 +5,10 @@
 #include <fstream>
 #include "memtrace.h"
 
+std::ostream& operator<<(std::ostream& os,const socket& s) {
+	os << static_cast<int>(s);
+	return os;
+}
 std::string CPU::serializeObj()const{
 	std::ostringstream sStream;
 	sStream << "\t"<<this->Product::serializeObj();	///Calls base class's serialize fucntion
@@ -28,14 +32,14 @@ coreCount(c.coreCount), threadCount(c.threadCount), L2_cache(c.L2_cache), iVGA(c
 	oType = obj_t::CPU;
 }
 
-std::string CPU::getGenName() { return genName; }
-int CPU::getTDP() { return tdp; }
-socket CPU::getSocketType() { return socketType; }
-unsigned int CPU::getBaseClock() { return baseClock; }
-unsigned int CPU::getCoreCount() { return coreCount; }
-unsigned int CPU::getThreadCount() { return threadCount; }
-double CPU::getCacheSize() { return L2_cache; }
-bool CPU::ivga() { return iVGA; }
+std::string CPU::getGenName()const { return genName; }
+int CPU::getTDP()const { return tdp; }
+socket CPU::getSocketType()const { return socketType; }
+unsigned int CPU::getBaseClock()const { return baseClock; }
+unsigned int CPU::getCoreCount()const { return coreCount; }
+unsigned int CPU::getThreadCount()const { return threadCount; }
+double CPU::getCacheSize()const { return L2_cache; }
+bool CPU::ivga()const { return iVGA; }
 
 
 std::ifstream& operator>>(std::ifstream& is, socket& s) {
@@ -80,24 +84,24 @@ std::ifstream& operator>>(std::ifstream& savefile, CPU& rhs) {
 	return savefile;
 }
 //Prints the basic properties of the object
-void CPU::print() {
+void CPU::print()const {
 	std::cout << serializeObj();
 }
 
 
-std::string CPU::getStringSocket() {
+std::string CPU::getStringSocket()const {
 	switch (this->socketType)
 	{
-	case AMD_AM4:
+	case socket::AMD_AM4:
 		return "AMD AM4";
 		break;
-	case INTEL_1151:
+	case socket::INTEL_1151:
 		return "INTEL 1151";
 		break;
-	case INTEL_1151V2:
+	case socket::INTEL_1151V2:
 		return "INTEL 1151v2";
 		break;
-	case INTEL_1200:
+	case socket::INTEL_1200:
 		return "INTEL 1200";
 		break;
 	default:
@@ -106,7 +110,7 @@ std::string CPU::getStringSocket() {
 	}
 }
 
-CPU* CPU::clone() {
+CPU* CPU::clone()const {
 
 	CPU* p = new CPU(*this);
 	return p;
@@ -114,6 +118,15 @@ CPU* CPU::clone() {
 }
 
 
-
+bool CPU::operator==(CPU& rhs) const{
+	if (rhs.baseClock == baseClock && rhs.coreCount == coreCount && rhs.genName == genName &&
+		rhs.iVGA == iVGA && rhs.L2_cache == L2_cache && rhs.threadCount == threadCount &&
+		rhs.socketType == socketType && this->Product::operator==(rhs))
+		return true;
+	return false;
+}
+bool CPU::operator!=(CPU& rhs)const {
+	return !(this->operator==(rhs));
+}
 
 

@@ -48,6 +48,8 @@
     <member refid="class_c_p_u_1ab4f1ec2a356344187dc6598404012df9" kind="function"><name>clone</name></member>
     <member refid="class_c_p_u_1aa2af36b3447c4e7b4e1f25f699a06824" kind="function"><name>print</name></member>
     <member refid="class_c_p_u_1ae3a32cc02d31f2193bc53ad052fba3a6" kind="function"><name>serializeObj</name></member>
+    <member refid="class_c_p_u_1a9118f119822e1bcef98ba7bb0ab2b8a1" kind="function"><name>operator==</name></member>
+    <member refid="class_c_p_u_1a4fdd9268f87165e4dc921e87b09d0060" kind="function"><name>operator!=</name></member>
   </compound>
   <compound refid="class_g_p_u" kind="class"><name>GPU</name>
     <member refid="class_g_p_u_1a0dc45bd568c1a3667d114e59d2eb936b" kind="variable"><name>portHDMI</name></member>
@@ -66,6 +68,8 @@
     <member refid="class_g_p_u_1a9ceef8ec791e1401966be7ebc1f7a639" kind="function"><name>getMemClock</name></member>
     <member refid="class_g_p_u_1a6de14cc7aa846037ed74b90f97bad87b" kind="function"><name>getVRAM</name></member>
     <member refid="class_g_p_u_1a5806130e7c25709689917fcff437949a" kind="function"><name>getTDP</name></member>
+    <member refid="class_g_p_u_1a39c6e1c580fcd0d2ea9f7a05a8f84c40" kind="function"><name>operator==</name></member>
+    <member refid="class_g_p_u_1aab94bf32694b3c3e94c62226a5d51587" kind="function"><name>operator!=</name></member>
     <member refid="class_g_p_u_1a9c68f0e1fb0b97fc7c5e91a7bf881c7b" kind="function"><name>serializeObj</name></member>
     <member refid="class_g_p_u_1a13535142ba8cacba30f23f6bf8ed5200" kind="function"><name>clone</name></member>
   </compound>
@@ -79,8 +83,8 @@
     <member refid="class_h_d_d_1ab80de8626bc38aa1d3398121b159717e" kind="function"><name>print</name></member>
     <member refid="class_h_d_d_1ad64f75db764118f6e47eafd5c6bc9bdc" kind="function"><name>serializeObj</name></member>
     <member refid="class_h_d_d_1a434ff76ba146d2e143f2c6803ca73a67" kind="function"><name>clone</name></member>
-    <member refid="class_h_d_d_1aa669d46ab7c741e4980226375670f253" kind="function"><name>operator==</name></member>
-    <member refid="class_h_d_d_1abfa07a249865bcf5e8973fe86e14bb9f" kind="function"><name>operator!=</name></member>
+    <member refid="class_h_d_d_1a141c43f704cac14c45ad5639beeda55f" kind="function"><name>operator==</name></member>
+    <member refid="class_h_d_d_1a2b4889e38aef393aa6fcd83e3ae1b910" kind="function"><name>operator!=</name></member>
   </compound>
   <compound refid="class_catalogue_1_1_iterator" kind="class"><name>Catalogue::Iterator</name>
     <member refid="class_catalogue_1_1_iterator_1a8314538e578af14c7c3f07d7ec250a42" kind="variable"><name>pointer</name></member>
@@ -109,6 +113,8 @@
     <member refid="class_motherboard_1a505b4ef1ac8c36193a6ee79eb921e9fa" kind="function"><name>getPorts</name></member>
     <member refid="class_motherboard_1a1534ea6d3be715dd09b964d78a0f91cf" kind="function"><name>getSata</name></member>
     <member refid="class_motherboard_1a1bdb19d8e2fc3fdc9b9669fbc688a015" kind="function"><name>getPCIE</name></member>
+    <member refid="class_motherboard_1af470ee03ed1320ae14fa586d0d69db6c" kind="function"><name>operator==</name></member>
+    <member refid="class_motherboard_1ab565c529a843b5d869a5a0c11a2e54fb" kind="function"><name>operator!=</name></member>
     <member refid="class_motherboard_1a5cd6459fe3e4823aeeb5d2b255d68aef" kind="function"><name>serializeObj</name></member>
     <member refid="class_motherboard_1af3ad07ad9398abe1bdd0315ec9acb7e3" kind="function"><name>clone</name></member>
   </compound>
@@ -133,6 +139,13 @@
     <member refid="class_p_c_1a32aa5111878b4f5e2410f59ebb1ae650" kind="function"><name>print</name></member>
     <member refid="class_p_c_1a35db2210308424b6c94515036a11235b" kind="function"><name>serializeObj</name></member>
     <member refid="class_p_c_1a115da8404d548672d21556278fbcf3d9" kind="function"><name>~PC</name></member>
+    <member refid="class_p_c_1a41c99108434e93d45e0e8c0703d50594" kind="function"><name>getGPU</name></member>
+    <member refid="class_p_c_1a2f5c77d6115ec4564296fc1e73dba807" kind="function"><name>getCPU</name></member>
+    <member refid="class_p_c_1a7627615a84bb2ceb14385fb14ad4f046" kind="function"><name>getMB</name></member>
+    <member refid="class_p_c_1acb410f8e45b710394461dbdc5f29b644" kind="function"><name>getCase</name></member>
+    <member refid="class_p_c_1aea2dd5107a26ebe7b450191128a28d62" kind="function"><name>getPSU</name></member>
+    <member refid="class_p_c_1ab460e00243a61bc7581a239182d71c39" kind="function"><name>getStorage</name></member>
+    <member refid="class_p_c_1a15cfe0aed257ad7e3c394ec1908837e0" kind="function"><name>getRAM</name></member>
     <member refid="class_p_c_1aec5fd7f3198f2f3a59145ad8d2cf6567" kind="function"><name>assignGPU</name></member>
     <member refid="class_p_c_1aba2f7995dd3f5896a9c3214f6b420d57" kind="function"><name>assignCPU</name></member>
     <member refid="class_p_c_1a908c6dd821193af721cccc0166cc8a9e" kind="function"><name>assignMB</name></member>
@@ -167,8 +180,8 @@
     <member refid="class_product_1a82a40e1860ffe2c88ea08084037a6c42" kind="function"><name>print</name></member>
     <member refid="class_product_1a749f163f9319f2cf6e9e0620d7133f0b" kind="function"><name>serializeObj</name></member>
     <member refid="class_product_1a2cc3f5ef8abe14801e185734cfcc3b57" kind="function"><name>clone</name></member>
-    <member refid="class_product_1a8b72d673cf7d89fb2e375a080af6263d" kind="function"><name>operator==</name></member>
-    <member refid="class_product_1af83d5faec51f3cf9c45d68d103a04114" kind="function"><name>operator!=</name></member>
+    <member refid="class_product_1aafbdeeeddc23cf08650f431d77edec1a" kind="function"><name>operator==</name></member>
+    <member refid="class_product_1a8ee6823389aa0bc2255d02d3a1bb9b0f" kind="function"><name>operator!=</name></member>
     <member refid="class_product_1a18f26095e25405579968c6ede367484f" kind="function"><name>~Product</name></member>
   </compound>
   <compound refid="class_r_a_m" kind="class"><name>RAM</name>
@@ -188,8 +201,8 @@
     <member refid="class_r_a_m_1a15ab2492102ae822e8ea760f9613b543" kind="function"><name>serializeObj</name></member>
     <member refid="class_r_a_m_1a2dbd94dada94130817a298b91023e4c9" kind="function"><name>clone</name></member>
     <member refid="class_r_a_m_1a1424aff28af127d0ae7b343c01c1df1d" kind="function"><name>print</name></member>
-    <member refid="class_r_a_m_1a6e77fc59fd9957e975d7946830373e06" kind="function"><name>operator!=</name></member>
-    <member refid="class_r_a_m_1a7fc6466cc5c8038e5aed21650e146da9" kind="function"><name>operator==</name></member>
+    <member refid="class_r_a_m_1a96be3ca8c9f5f22fac889ab506c01580" kind="function"><name>operator!=</name></member>
+    <member refid="class_r_a_m_1a70961c90671e81db85f1c8422a01ab73" kind="function"><name>operator==</name></member>
   </compound>
   <compound refid="class_s_s_d" kind="class"><name>SSD</name>
     <member refid="class_s_s_d_1a17d090f306498b97db010f96be6ef25d" kind="variable"><name>wSpeed</name></member>
@@ -203,8 +216,8 @@
     <member refid="class_s_s_d_1a753647f5a39c66e794efd6fed291795b" kind="function"><name>print</name></member>
     <member refid="class_s_s_d_1a0ed308b29e11e06c4c8b84fcab515c4a" kind="function"><name>serializeObj</name></member>
     <member refid="class_s_s_d_1adfbc00ab863bca1aff44b3ff233b5255" kind="function"><name>clone</name></member>
-    <member refid="class_s_s_d_1aaaa23a6a0819baf5afc6ab140f728140" kind="function"><name>operator==</name></member>
-    <member refid="class_s_s_d_1a5561ea54e1f8ac3d1d2aad8905d9a869" kind="function"><name>operator!=</name></member>
+    <member refid="class_s_s_d_1a9211758eb8ccfd3fff4edfc8cfde1fab" kind="function"><name>operator==</name></member>
+    <member refid="class_s_s_d_1ad4992ef53222777923ae3bdabca7dbc4" kind="function"><name>operator!=</name></member>
   </compound>
   <compound refid="class_storage" kind="class"><name>Storage</name>
     <member refid="class_storage_1aae754660623b8e0e5046b967cb4cdb73" kind="variable"><name>capacity</name></member>
@@ -217,8 +230,8 @@
     <member refid="class_storage_1a3836c9fff79b96e8c87ab8a5976d89f8" kind="function"><name>getNotation</name></member>
     <member refid="class_storage_1a598d2e8f3fcd8caf5d3042ddecd4896e" kind="function"><name>serializeObj</name></member>
     <member refid="class_storage_1a73df5f67fd76f334e3511b2850882974" kind="function"><name>print</name></member>
-    <member refid="class_storage_1ab10853458f897082ba028cef2477005d" kind="function"><name>operator==</name></member>
-    <member refid="class_storage_1ac44ec07b755c2a60f976cbd7ae13de81" kind="function"><name>operator!=</name></member>
+    <member refid="class_storage_1aded6acc644aaf0e55749d8e85aed2464" kind="function"><name>operator==</name></member>
+    <member refid="class_storage_1a984a17c1466fcf769a44fcc8aa9abb3a" kind="function"><name>operator!=</name></member>
     <member refid="class_storage_1af7f626e3a0bc9d46c59ef7dd8f57c6c9" kind="function"><name>clone</name></member>
   </compound>
   <compound refid="structgtest__lite_1_1_test" kind="struct"><name>gtest_lite::Test</name>

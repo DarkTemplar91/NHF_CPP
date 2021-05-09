@@ -1,10 +1,11 @@
 #include "catalogue.h"
-#include "memtrace.h"
 #include <string>
+#include <algorithm>
+#include "memtrace.h"
 
 Catalogue::Catalogue() :size(0){}
 Catalogue::Catalogue(Product** list,size_t s) : list(list), size(s){}
-size_t Catalogue::getSize() {
+size_t Catalogue::getSize()const {
 	return size;
 }
 
@@ -15,10 +16,20 @@ size_t Catalogue::getSize() {
 /// </summary>
 /// <param name="p"></param> Product to store.
 void Catalogue::Add(Product* p) {
+	
+	//Checking if the list already containt the product.
+	for (size_t i = 0; i < size; i++) {
+		if (*p == *list[i])
+		{
+			delete p;
+			throw "The catalogue already contains the given product. Try incrementing instead!";
+		}
+	}
+
+	Product** temp = new Product *[++size];
 	//temp array for storing the values,
 	//so they are not lost after resizing the array.
 	//The size is +1 than the original
-	Product** temp = new Product *[++size];
 	for (size_t i = 0; i < size - 1; i++) {
 		//Places the clone into the array
 		temp[i] = list[i]->clone();
@@ -39,7 +50,6 @@ void Catalogue::Save(std::string path)const {
 	std::ofstream savefile;
 	savefile.open(path);
 	
-	//TODO: Get rid of switch statement
 
 	for (size_t i = 0; i < size; i++) {
 		if (!savefile.is_open())
@@ -79,18 +89,30 @@ void Catalogue::Save(std::string path)const {
 		case obj_t::PC:
 			savefile << (PC&)*list[i];
 			break;
-
+		case obj_t::NONE:
+			throw "Nem megfelelő objektum típus!";
+				break;
+		default:
+			throw "Valami elromlott!";
+			break;
+		
 		}
+		
 	}
 	savefile.close();
 }
-
+/// <summary>
+/// Loads the objects into the catalogue from file
+/// </summary>
+/// <param name="path"></param>
 void Catalogue::Load(std::string path) {
 	obj_t type=obj_t::GPU;
 	std::ifstream s;
 	s.open(path);
 	s >> type;
 	std::string temp;
+	//At each iteration, it reads in a obj_t variable, that determines what the following object is
+	//Depending on the value, it calls the appropriate class's >> function.
 	while (type!=obj_t::NONE) {
 		if(!s.is_open())
 			s.open(path);
@@ -115,7 +137,6 @@ void Catalogue::Load(std::string path) {
 		case obj_t::RAM:
 		{	RAM r;
 		s >> r;
-
 		std::getline(s, temp, '}');
 		Add(r.clone());
 		break;
@@ -166,6 +187,8 @@ void Catalogue::Load(std::string path) {
 			s >> pc;
 			Add(pc.clone());
 		}
+			break;
+		case obj_t::NONE:
 			break;
 		default:
 			type = obj_t::NONE;
@@ -226,6 +249,8 @@ void Catalogue::Clear() {
 			list[i] = nullptr;
 		}
 	}
+	size = 0;
+	
 }
 Catalogue::~Catalogue() {
 	Clear();
@@ -239,9 +264,9 @@ Catalogue::~Catalogue() {
 /// </summary>
 /// <param name="idx"></param>
 /// <returns></returns>
-Product* Catalogue::operator[](size_t idx){
+Product* Catalogue::operator[](size_t idx)const{
 	if (idx >= this->size)
-		throw "Over indexed";
+		throw std::out_of_range("Over indexed");
 	return list[idx];
 }
 
@@ -251,7 +276,7 @@ bool insFind(const std::string& sourceStr, const std::string& subStr);
 
 //Return an array of pointers that meet the criteria
 //Pointer must be deleted manually!
-Product** Catalogue::Search(std::string criteria) {
+Product** Catalogue::Search(std::string criteria)const {
 	Product** searchRes=0;
 	size_t rSize = 0;
 	for (size_t i = 0; i < size; i++) {
@@ -284,24 +309,37 @@ Product** Catalogue::Search(std::string criteria) {
 	
 }
 /// <summary>
+/// Functor for comparison
+/// </summary>
+struct lessOrMore {
+	bool reversed;
+	OrderReq req;
+	lessOrMore(bool reversed, OrderReq r) :reversed(reversed), req(r) {}
+	template<class T>
+	bool operator()(T* p1, T* p2)const {
+		if (req == OrderReq::Price)
+		{
+			if (reversed)
+				return p1->getPrice() > p2->getPrice();
+			return p1->getPrice() < p2->getPrice();
+		}
+		else {
+			if (reversed)
+				return p1->getName() > p2->getName();
+			return p1->getName() < p2->getName();
+		}
+	
+	}
+};
+/// <summary>
 /// Sorts the Catalogue with std::sort
-/// Uses lambda function
+/// Uses functor
 /// </summary>
 /// <param name="r"></param>
 /// <param name="reversed"></param>
-void Catalogue::OrderBy(OrderReq r, bool reversed) {
-	switch (r)
-	{
-	case Price:
-		std::sort(&list[0], &list[size], [&r = reversed](Product* lhs, Product* rhs) {return r ? lhs->getPrice() > rhs->getPrice() : lhs->getPrice() < rhs->getPrice(); });
-		break;
-	case Name:
-		std::sort(&list[0], &list[size], [&r = reversed](Product* lhs, Product* rhs) {return r ? (lhs->getName() > rhs->getName()) : (lhs->getName() < rhs->getName()); });
-		break;
-	default:
-		throw "Rossz rendezési kritérium!";
-		break;
-	}
+void Catalogue::OrderBy(OrderReq r, bool reversed)const {
+	lessOrMore comp = lessOrMore(reversed, r);
+	std::sort(&list[0], &list[size], comp);
 }
 
 
@@ -318,15 +356,10 @@ Catalogue::Iterator& Catalogue::Iterator::operator++() {
 	++pointer;
 	return *this;
 }
-Catalogue::Iterator& Catalogue::Iterator::operator++(int) {
-	Iterator tmp = *this;
-	operator++();
-	return tmp;
-}
-bool Catalogue::Iterator::operator==(const Iterator& rhs) {
+bool Catalogue::Iterator::operator==(const Iterator& rhs)const {
 	return rhs.pointer == pointer;
 }
-bool Catalogue::Iterator::operator!=(const Iterator& rhs) {
+bool Catalogue::Iterator::operator!=(const Iterator& rhs)const {
 	return !(operator==(rhs));
 }
 Product& Catalogue::Iterator::operator*() {

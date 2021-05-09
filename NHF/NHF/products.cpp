@@ -19,9 +19,9 @@ std::ifstream& operator>>(std::ifstream& savefile, Product& rhs) {
 	std::getline(savefile, temp, ':');
 	savefile >> price;
 	std::getline(savefile, temp, ':');
-	std::getline(savefile, desc, ';');
-	std::getline(savefile, temp, ':');
 	std::getline(savefile, manuf, ';');
+	std::getline(savefile, temp, ':');
+	std::getline(savefile, desc, ';');
 	std::getline(savefile, temp, ':');
 	savefile >> inv;
 	rhs = Product(name, price, manuf, desc,inv);
@@ -33,16 +33,16 @@ std::ifstream& operator>>(std::ifstream& s, obj_t& rhs) {
 	rhs = static_cast<obj_t>(temp);
 	return s;
 }
-void Product::print() {
+void Product::print()const {
 	std::cout << serializeObj();
 }
 std::string Product::serializeObj() const {
 	std::ostringstream sStream;
-	sStream << "name:" << name << ";price:" << price << ";description:" << dscrpt << ";manufacturer:" << manufacturer << ";inventory:"<<inv<<";";
+	sStream << "name:" << name << ";price:" << price <<  ";manufacturer:" << manufacturer << ";description:" << dscrpt<< ";inventory:"<<inv<<";";
 	return sStream.str();
 }
 
-Product* Product::clone() {
+Product* Product::clone()const {
 	Product* p = new Product(*this);
 	return p;
 }
@@ -101,7 +101,7 @@ void Product::increaseStock(size_t i) {
 }
 void Product::decreaseStock(size_t i) {
 	if (inv < i)
-		throw std::exception("Product in stock cannot be less than 0!");
+		throw "Product in stock cannot be less than 0!";
 	inv -= i;
 }
 
@@ -109,12 +109,12 @@ Product::Product(const Product& p) :name(p.name), price(p.price), dscrpt(p.dscrp
 Product::Product(std::string name, double price, std::string manuf, std::string descript, size_t inv) :name(name), price(price), dscrpt(descript), manufacturer(manuf), inv(inv), oType(obj_t::Product) {}
 Product::Product() : name("Unnamed Product"), price(0), dscrpt("There is no description for this item!"), inv(0), oType(obj_t::Product) {}
 
-bool Product::operator==(Product& rhs) {
+bool Product::operator==(Product& rhs)const {
 	if (rhs.price == price && rhs.manufacturer == manufacturer
-		&& rhs.name == rhs.name)
+		&& rhs.name == name)
 		return true;
 	return false;
 }
-bool Product::operator!=(Product& rhs) {
+bool Product::operator!=(Product& rhs)const {
 	return !(Product::operator==(rhs));
 }

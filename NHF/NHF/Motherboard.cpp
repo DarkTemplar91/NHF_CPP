@@ -21,12 +21,12 @@ maxRFreq(m.maxRFreq), usbPorts(m.usbPorts), sata(m.sata), pcie(m.pcie) {
 }
 
 
-std::string Motherboard::getChip() { return chipset; }
-socket Motherboard::getSocket() { return socketType; }
-int Motherboard::getRAM() { return maxRAM; }
-int Motherboard::getPorts() { return usbPorts; }
-int Motherboard::getSata() { return sata; }
-int Motherboard::getPCIE() { return pcie; }
+std::string Motherboard::getChip()const { return chipset; }
+socket Motherboard::getSocket()const { return socketType; }
+int Motherboard::getRAM()const { return maxRAM; }
+int Motherboard::getPorts()const { return usbPorts; }
+int Motherboard::getSata()const { return sata; }
+int Motherboard::getPCIE()const { return pcie; }
 
 
 std::string Motherboard::serializeObj() const{
@@ -71,7 +71,18 @@ std::ifstream& operator>>(std::ifstream& savefile, Motherboard& rhs) {
 	return savefile;
 }
 
-Motherboard* Motherboard::clone() {
+Motherboard* Motherboard::clone()const {
 	Motherboard* m = new Motherboard(*this);
 	return m;
+}
+
+bool Motherboard::operator==(Motherboard& rhs)const {
+	if (rhs.chipset == chipset && rhs.maxRAM == maxRAM && rhs.socketType == socketType
+		&& rhs.maxRFreq == maxRFreq && rhs.pcie == pcie && rhs.sata == sata &&
+		this->Product::operator==(rhs))
+		return true;
+	return false;
+}
+bool Motherboard::operator!=(Motherboard& rhs)const {
+	return !(this->operator==(rhs));
 }

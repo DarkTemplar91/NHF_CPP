@@ -57,9 +57,9 @@ Collaboration diagram for Storage:<para>
 
 <para>Serializes object. </para>
 </listitem>
-            <listitem><para>virtual bool <link linkend="_class_storage_1ab10853458f897082ba028cef2477005d">operator==</link> (<link linkend="_class_storage">Storage</link> &amp;rhs)</para>
+            <listitem><para>bool <link linkend="_class_storage_1aded6acc644aaf0e55749d8e85aed2464">operator==</link> (<link linkend="_class_storage">Storage</link> &amp;rhs) const</para>
 </listitem>
-            <listitem><para>virtual bool <link linkend="_class_storage_1ac44ec07b755c2a60f976cbd7ae13de81">operator!=</link> (<link linkend="_class_storage">Storage</link> &amp;rhs)</para>
+            <listitem><para>bool <link linkend="_class_storage_1a984a17c1466fcf769a44fcc8aa9abb3a">operator!=</link> (<link linkend="_class_storage">Storage</link> &amp;rhs) const</para>
 </listitem>
             <listitem><para>virtual <link linkend="_class_storage">Storage</link> * <link linkend="_class_storage_1af7f626e3a0bc9d46c59ef7dd8f57c6c9">clone</link> ()</para>
 </listitem>
@@ -138,15 +138,15 @@ Reimplemented in <link linkend="_class_s_s_d_1adfbc00ab863bca1aff44b3ff233b5255"
 
 <para>Returns capacity. </para>
 </para>
-    </section><anchor xml:id="_class_storage_1ac44ec07b755c2a60f976cbd7ae13de81"/>    <section>
+    </section><anchor xml:id="_class_storage_1a984a17c1466fcf769a44fcc8aa9abb3a"/>    <section>
     <title>operator!=()</title>
 <indexterm><primary>operator!=</primary><secondary>Storage</secondary></indexterm>
 <indexterm><primary>Storage</primary><secondary>operator!=</secondary></indexterm>
-<para><computeroutput>bool Storage::operator!= (<link linkend="_class_storage">Storage</link> &amp; rhs)<computeroutput>[virtual]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_storage_1ab10853458f897082ba028cef2477005d"/>    <section>
+<para><computeroutput>bool Storage::operator!= (<link linkend="_class_storage">Storage</link> &amp; rhs) const</computeroutput></para>    </section><anchor xml:id="_class_storage_1aded6acc644aaf0e55749d8e85aed2464"/>    <section>
     <title>operator==()</title>
 <indexterm><primary>operator==</primary><secondary>Storage</secondary></indexterm>
 <indexterm><primary>Storage</primary><secondary>operator==</secondary></indexterm>
-<para><computeroutput>bool Storage::operator== (<link linkend="_class_storage">Storage</link> &amp; rhs)<computeroutput>[virtual]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_storage_1a73df5f67fd76f334e3511b2850882974"/>    <section>
+<para><computeroutput>bool Storage::operator== (<link linkend="_class_storage">Storage</link> &amp; rhs) const</computeroutput></para>    </section><anchor xml:id="_class_storage_1a73df5f67fd76f334e3511b2850882974"/>    <section>
     <title>print()</title>
 <indexterm><primary>print</primary><secondary>Storage</secondary></indexterm>
 <indexterm><primary>Storage</primary><secondary>print</secondary></indexterm>

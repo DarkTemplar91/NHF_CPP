@@ -57,9 +57,9 @@ Collaboration diagram for SSD:<para>
 </listitem>
             <listitem><para><link linkend="_class_s_s_d">SSD</link> * <link linkend="_class_s_s_d_1adfbc00ab863bca1aff44b3ff233b5255">clone</link> ()</para>
 </listitem>
-            <listitem><para>bool <link linkend="_class_s_s_d_1aaaa23a6a0819baf5afc6ab140f728140">operator==</link> (<link linkend="_class_s_s_d">SSD</link> &amp;rhs)</para>
+            <listitem><para>bool <link linkend="_class_s_s_d_1a9211758eb8ccfd3fff4edfc8cfde1fab">operator==</link> (<link linkend="_class_s_s_d">SSD</link> &amp;rhs) const</para>
 </listitem>
-            <listitem><para>bool <link linkend="_class_s_s_d_1a5561ea54e1f8ac3d1d2aad8905d9a869">operator!=</link> (<link linkend="_class_s_s_d">SSD</link> &amp;rhs)</para>
+            <listitem><para>bool <link linkend="_class_s_s_d_1ad4992ef53222777923ae3bdabca7dbc4">operator!=</link> (<link linkend="_class_s_s_d">SSD</link> &amp;rhs) const</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -132,15 +132,15 @@ Reimplemented from <link linkend="_class_storage_1af7f626e3a0bc9d46c59ef7dd8f57c
 
 <para>Returns Read speed. </para>
 </para>
-    </section><anchor xml:id="_class_s_s_d_1a5561ea54e1f8ac3d1d2aad8905d9a869"/>    <section>
+    </section><anchor xml:id="_class_s_s_d_1ad4992ef53222777923ae3bdabca7dbc4"/>    <section>
     <title>operator!=()</title>
 <indexterm><primary>operator!=</primary><secondary>SSD</secondary></indexterm>
 <indexterm><primary>SSD</primary><secondary>operator!=</secondary></indexterm>
-<para><computeroutput>bool SSD::operator!= (<link linkend="_class_s_s_d">SSD</link> &amp; rhs)</computeroutput></para>    </section><anchor xml:id="_class_s_s_d_1aaaa23a6a0819baf5afc6ab140f728140"/>    <section>
+<para><computeroutput>bool SSD::operator!= (<link linkend="_class_s_s_d">SSD</link> &amp; rhs) const</computeroutput></para>    </section><anchor xml:id="_class_s_s_d_1a9211758eb8ccfd3fff4edfc8cfde1fab"/>    <section>
     <title>operator==()</title>
 <indexterm><primary>operator==</primary><secondary>SSD</secondary></indexterm>
 <indexterm><primary>SSD</primary><secondary>operator==</secondary></indexterm>
-<para><computeroutput>bool SSD::operator== (<link linkend="_class_s_s_d">SSD</link> &amp; rhs)</computeroutput></para>    </section><anchor xml:id="_class_s_s_d_1a753647f5a39c66e794efd6fed291795b"/>    <section>
+<para><computeroutput>bool SSD::operator== (<link linkend="_class_s_s_d">SSD</link> &amp; rhs) const</computeroutput></para>    </section><anchor xml:id="_class_s_s_d_1a753647f5a39c66e794efd6fed291795b"/>    <section>
     <title>print()</title>
 <indexterm><primary>print</primary><secondary>SSD</secondary></indexterm>
 <indexterm><primary>SSD</primary><secondary>print</secondary></indexterm>

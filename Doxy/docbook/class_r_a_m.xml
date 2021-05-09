@@ -67,9 +67,9 @@ Collaboration diagram for RAM:<para>
 
 <para>Serializes object. </para>
 </listitem>
-            <listitem><para>bool <link linkend="_class_r_a_m_1a6e77fc59fd9957e975d7946830373e06">operator!=</link> (<link linkend="_class_r_a_m">RAM</link> &amp;rhs)</para>
+            <listitem><para>bool <link linkend="_class_r_a_m_1a96be3ca8c9f5f22fac889ab506c01580">operator!=</link> (<link linkend="_class_r_a_m">RAM</link> &amp;rhs) const</para>
 </listitem>
-            <listitem><para>bool <link linkend="_class_r_a_m_1a7fc6466cc5c8038e5aed21650e146da9">operator==</link> (<link linkend="_class_r_a_m">RAM</link> &amp;rhs)</para>
+            <listitem><para>bool <link linkend="_class_r_a_m_1a70961c90671e81db85f1c8422a01ab73">operator==</link> (<link linkend="_class_r_a_m">RAM</link> &amp;rhs) const</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -166,15 +166,15 @@ Reimplemented from <link linkend="_class_storage_1af7f626e3a0bc9d46c59ef7dd8f57c
 
 <para>Returns latency. </para>
 </para>
-    </section><anchor xml:id="_class_r_a_m_1a6e77fc59fd9957e975d7946830373e06"/>    <section>
+    </section><anchor xml:id="_class_r_a_m_1a96be3ca8c9f5f22fac889ab506c01580"/>    <section>
     <title>operator!=()</title>
 <indexterm><primary>operator!=</primary><secondary>RAM</secondary></indexterm>
 <indexterm><primary>RAM</primary><secondary>operator!=</secondary></indexterm>
-<para><computeroutput>bool RAM::operator!= (<link linkend="_class_r_a_m">RAM</link> &amp; rhs)</computeroutput></para>    </section><anchor xml:id="_class_r_a_m_1a7fc6466cc5c8038e5aed21650e146da9"/>    <section>
+<para><computeroutput>bool RAM::operator!= (<link linkend="_class_r_a_m">RAM</link> &amp; rhs) const</computeroutput></para>    </section><anchor xml:id="_class_r_a_m_1a70961c90671e81db85f1c8422a01ab73"/>    <section>
     <title>operator==()</title>
 <indexterm><primary>operator==</primary><secondary>RAM</secondary></indexterm>
 <indexterm><primary>RAM</primary><secondary>operator==</secondary></indexterm>
-<para><computeroutput>bool RAM::operator== (<link linkend="_class_r_a_m">RAM</link> &amp; rhs)</computeroutput></para>    </section><anchor xml:id="_class_r_a_m_1a1424aff28af127d0ae7b343c01c1df1d"/>    <section>
+<para><computeroutput>bool RAM::operator== (<link linkend="_class_r_a_m">RAM</link> &amp; rhs) const</computeroutput></para>    </section><anchor xml:id="_class_r_a_m_1a1424aff28af127d0ae7b343c01c1df1d"/>    <section>
     <title>print()</title>
 <indexterm><primary>print</primary><secondary>RAM</secondary></indexterm>
 <indexterm><primary>RAM</primary><secondary>print</secondary></indexterm>

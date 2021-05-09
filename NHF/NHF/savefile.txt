@@ -1,7 +1,7 @@
 7
 GPU_OBJ
 {
-	name:EVGA RTX2060 KO;price:300;description:Gaming GPU;manufacturer:EVGA;inventory:1;
+	name:EVGA RTX2060 KO;price:300;manufacturer:EVGA;description:Gaming GPU;inventory:1;
 	GPU_SPECIF
 	{
 	hdmi:1;display:1;gpuClock:2400;memoryClock:7000;vram:6;tdp:300;

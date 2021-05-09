@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['byteunit_445',['ByteUnit',['../_memory_8h.html#a284499ae529838dbabf4c7a520e99a85',1,'Memory.h']]]
+  ['byteunit_457',['ByteUnit',['../_memory_8h.html#a284499ae529838dbabf4c7a520e99a85',1,'Memory.h']]]
 ];

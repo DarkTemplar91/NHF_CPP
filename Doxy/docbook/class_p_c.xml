@@ -49,6 +49,20 @@ Collaboration diagram for PC:<para>
 </listitem>
             <listitem><para><link linkend="_class_p_c_1a115da8404d548672d21556278fbcf3d9">~PC</link> ()</para>
 </listitem>
+            <listitem><para><link linkend="_class_g_p_u">GPU</link> &amp; <link linkend="_class_p_c_1a41c99108434e93d45e0e8c0703d50594">getGPU</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_c_p_u">CPU</link> &amp; <link linkend="_class_p_c_1a2f5c77d6115ec4564296fc1e73dba807">getCPU</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_motherboard">Motherboard</link> &amp; <link linkend="_class_p_c_1a7627615a84bb2ceb14385fb14ad4f046">getMB</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_product">Product</link> &amp; <link linkend="_class_p_c_1acb410f8e45b710394461dbdc5f29b644">getCase</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_product">Product</link> &amp; <link linkend="_class_p_c_1aea2dd5107a26ebe7b450191128a28d62">getPSU</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_storage">Storage</link> * <link linkend="_class_p_c_1ab460e00243a61bc7581a239182d71c39">getStorage</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_r_a_m">RAM</link> &amp; <link linkend="_class_p_c_1a15cfe0aed257ad7e3c394ec1908837e0">getRAM</link> ()</para>
+</listitem>
             <listitem><para>void <link linkend="_class_p_c_1aec5fd7f3198f2f3a59145ad8d2cf6567">assignGPU</link> (<link linkend="_class_g_p_u">GPU</link> &amp;)</para>
 </listitem>
             <listitem><para>void <link linkend="_class_p_c_1aba2f7995dd3f5896a9c3214f6b420d57">assignCPU</link> (<link linkend="_class_c_p_u">CPU</link> &amp;)</para>
@@ -150,7 +164,35 @@ Collaboration diagram for PC:<para>
 <indexterm><primary>PC</primary><secondary>clone</secondary></indexterm>
 <para><computeroutput><link linkend="_class_p_c">PC</link> * PC::clone ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
 Reimplemented from <link linkend="_class_product_1a2cc3f5ef8abe14801e185734cfcc3b57">Product</link>.</para>
-    </section><anchor xml:id="_class_p_c_1a32aa5111878b4f5e2410f59ebb1ae650"/>    <section>
+    </section><anchor xml:id="_class_p_c_1acb410f8e45b710394461dbdc5f29b644"/>    <section>
+    <title>getCase()</title>
+<indexterm><primary>getCase</primary><secondary>PC</secondary></indexterm>
+<indexterm><primary>PC</primary><secondary>getCase</secondary></indexterm>
+<para><computeroutput><link linkend="_class_product">Product</link> &amp; PC::getCase ( )</computeroutput></para>    </section><anchor xml:id="_class_p_c_1a2f5c77d6115ec4564296fc1e73dba807"/>    <section>
+    <title>getCPU()</title>
+<indexterm><primary>getCPU</primary><secondary>PC</secondary></indexterm>
+<indexterm><primary>PC</primary><secondary>getCPU</secondary></indexterm>
+<para><computeroutput><link linkend="_class_c_p_u">CPU</link> &amp; PC::getCPU ( )</computeroutput></para>    </section><anchor xml:id="_class_p_c_1a41c99108434e93d45e0e8c0703d50594"/>    <section>
+    <title>getGPU()</title>
+<indexterm><primary>getGPU</primary><secondary>PC</secondary></indexterm>
+<indexterm><primary>PC</primary><secondary>getGPU</secondary></indexterm>
+<para><computeroutput><link linkend="_class_g_p_u">GPU</link> &amp; PC::getGPU ( )</computeroutput></para>    </section><anchor xml:id="_class_p_c_1a7627615a84bb2ceb14385fb14ad4f046"/>    <section>
+    <title>getMB()</title>
+<indexterm><primary>getMB</primary><secondary>PC</secondary></indexterm>
+<indexterm><primary>PC</primary><secondary>getMB</secondary></indexterm>
+<para><computeroutput><link linkend="_class_motherboard">Motherboard</link> &amp; PC::getMB ( )</computeroutput></para>    </section><anchor xml:id="_class_p_c_1aea2dd5107a26ebe7b450191128a28d62"/>    <section>
+    <title>getPSU()</title>
+<indexterm><primary>getPSU</primary><secondary>PC</secondary></indexterm>
+<indexterm><primary>PC</primary><secondary>getPSU</secondary></indexterm>
+<para><computeroutput><link linkend="_class_product">Product</link> &amp; PC::getPSU ( )</computeroutput></para>    </section><anchor xml:id="_class_p_c_1a15cfe0aed257ad7e3c394ec1908837e0"/>    <section>
+    <title>getRAM()</title>
+<indexterm><primary>getRAM</primary><secondary>PC</secondary></indexterm>
+<indexterm><primary>PC</primary><secondary>getRAM</secondary></indexterm>
+<para><computeroutput><link linkend="_class_r_a_m">RAM</link> &amp; PC::getRAM ( )</computeroutput></para>    </section><anchor xml:id="_class_p_c_1ab460e00243a61bc7581a239182d71c39"/>    <section>
+    <title>getStorage()</title>
+<indexterm><primary>getStorage</primary><secondary>PC</secondary></indexterm>
+<indexterm><primary>PC</primary><secondary>getStorage</secondary></indexterm>
+<para><computeroutput><link linkend="_class_storage">Storage</link> * PC::getStorage ( )</computeroutput></para>    </section><anchor xml:id="_class_p_c_1a32aa5111878b4f5e2410f59ebb1ae650"/>    <section>
     <title>print()</title>
 <indexterm><primary>print</primary><secondary>PC</secondary></indexterm>
 <indexterm><primary>PC</primary><secondary>print</secondary></indexterm>

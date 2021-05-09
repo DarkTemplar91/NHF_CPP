@@ -64,6 +64,10 @@ Collaboration diagram for CPU:<para>
 
 <para>Serializes object. </para>
 </listitem>
+            <listitem><para>bool <link linkend="_class_c_p_u_1a9118f119822e1bcef98ba7bb0ab2b8a1">operator==</link> (<link linkend="_class_c_p_u">CPU</link> &amp;rhs) const</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_c_p_u_1a4fdd9268f87165e4dc921e87b09d0060">operator!=</link> (<link linkend="_class_c_p_u">CPU</link> &amp;rhs) const</para>
+</listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
@@ -172,7 +176,15 @@ Reimplemented from <link linkend="_class_product_1a2cc3f5ef8abe14801e185734cfcc3
     <title>ivga()</title>
 <indexterm><primary>ivga</primary><secondary>CPU</secondary></indexterm>
 <indexterm><primary>CPU</primary><secondary>ivga</secondary></indexterm>
-<para><computeroutput>bool CPU::ivga ( )</computeroutput></para>    </section><anchor xml:id="_class_c_p_u_1aa2af36b3447c4e7b4e1f25f699a06824"/>    <section>
+<para><computeroutput>bool CPU::ivga ( )</computeroutput></para>    </section><anchor xml:id="_class_c_p_u_1a4fdd9268f87165e4dc921e87b09d0060"/>    <section>
+    <title>operator!=()</title>
+<indexterm><primary>operator!=</primary><secondary>CPU</secondary></indexterm>
+<indexterm><primary>CPU</primary><secondary>operator!=</secondary></indexterm>
+<para><computeroutput>bool CPU::operator!= (<link linkend="_class_c_p_u">CPU</link> &amp; rhs) const</computeroutput></para>    </section><anchor xml:id="_class_c_p_u_1a9118f119822e1bcef98ba7bb0ab2b8a1"/>    <section>
+    <title>operator==()</title>
+<indexterm><primary>operator==</primary><secondary>CPU</secondary></indexterm>
+<indexterm><primary>CPU</primary><secondary>operator==</secondary></indexterm>
+<para><computeroutput>bool CPU::operator== (<link linkend="_class_c_p_u">CPU</link> &amp; rhs) const</computeroutput></para>    </section><anchor xml:id="_class_c_p_u_1aa2af36b3447c4e7b4e1f25f699a06824"/>    <section>
     <title>print()</title>
 <indexterm><primary>print</primary><secondary>CPU</secondary></indexterm>
 <indexterm><primary>CPU</primary><secondary>print</secondary></indexterm>

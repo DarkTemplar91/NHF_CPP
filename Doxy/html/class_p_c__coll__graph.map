@@ -1,9 +1,9 @@
 <map id="PC" name="PC">
-<area shape="rect" id="node1" title="Prebuilt pc class" alt="" coords="260,1589,386,1857"/>
-<area shape="rect" id="node2" href="$class_product.html" title=" " alt="" coords="282,5,417,464"/>
-<area shape="rect" id="node3" href="$class_storage.html" title="Base class for data storage/memory" alt="" coords="222,513,336,752"/>
-<area shape="rect" id="node4" href="$class_c_p_u.html" title=" " alt="" coords="306,776,441,1176"/>
-<area shape="rect" id="node5" href="$class_g_p_u.html" title=" " alt="" coords="448,820,580,1132"/>
-<area shape="rect" id="node7" href="$class_motherboard.html" title=" " alt="" coords="567,1200,682,1527"/>
-<area shape="rect" id="node6" href="$class_r_a_m.html" title="Class for modelling Random Access Memory Inheriting from storage" alt="" coords="258,1207,388,1519"/>
+<area shape="rect" id="node1" title="Prebuilt pc class" alt="" coords="256,1648,381,2019"/>
+<area shape="rect" id="node2" href="$class_product.html" title=" " alt="" coords="278,5,413,464"/>
+<area shape="rect" id="node3" href="$class_storage.html" title="Base class for data storage/memory" alt="" coords="217,513,332,752"/>
+<area shape="rect" id="node4" href="$class_c_p_u.html" title=" " alt="" coords="302,776,437,1205"/>
+<area shape="rect" id="node5" href="$class_g_p_u.html" title="Class for representing GPU" alt="" coords="443,820,575,1161"/>
+<area shape="rect" id="node7" href="$class_motherboard.html" title=" " alt="" coords="563,1229,677,1585"/>
+<area shape="rect" id="node6" href="$class_r_a_m.html" title="Class for modelling Random Access Memory Inheriting from storage" alt="" coords="253,1251,384,1563"/>
 </map>

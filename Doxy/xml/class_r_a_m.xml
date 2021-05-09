@@ -311,10 +311,10 @@
         </inbodydescription>
         <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="66" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="269" bodyend="272"/>
       </memberdef>
-      <memberdef kind="function" id="class_r_a_m_1a6e77fc59fd9957e975d7946830373e06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_r_a_m_1a96be3ca8c9f5f22fac889ab506c01580" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool RAM::operator!=</definition>
-        <argsstring>(RAM &amp;rhs)</argsstring>
+        <argsstring>(RAM &amp;rhs) const</argsstring>
         <name>operator!=</name>
         <param>
           <type><ref refid="class_r_a_m" kindref="compound">RAM</ref> &amp;</type>
@@ -328,10 +328,10 @@
         </inbodydescription>
         <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.h" line="68" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Memory.cpp" bodystart="76" bodyend="78"/>
       </memberdef>
-      <memberdef kind="function" id="class_r_a_m_1a7fc6466cc5c8038e5aed21650e146da9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_r_a_m_1a70961c90671e81db85f1c8422a01ab73" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool RAM::operator==</definition>
-        <argsstring>(RAM &amp;rhs)</argsstring>
+        <argsstring>(RAM &amp;rhs) const</argsstring>
         <name>operator==</name>
         <param>
           <type><ref refid="class_r_a_m" kindref="compound">RAM</ref> &amp;</type>
@@ -414,12 +414,12 @@
       <member refid="class_product_1af3d21858bb34986f54309b877678daa8" prot="private" virt="non-virtual"><scope>RAM</scope><name>manufacturer</name></member>
       <member refid="class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8" prot="private" virt="non-virtual"><scope>RAM</scope><name>name</name></member>
       <member refid="class_storage_1a58275af4fc94f89edd8af0721aea467e" prot="private" virt="non-virtual"><scope>RAM</scope><name>notation</name></member>
-      <member refid="class_r_a_m_1a6e77fc59fd9957e975d7946830373e06" prot="public" virt="non-virtual"><scope>RAM</scope><name>operator!=</name></member>
-      <member refid="class_storage_1ac44ec07b755c2a60f976cbd7ae13de81" prot="public" virt="virtual" ambiguityscope="Storage::"><scope>RAM</scope><name>operator!=</name></member>
-      <member refid="class_product_1af83d5faec51f3cf9c45d68d103a04114" prot="public" virt="virtual" ambiguityscope="Product::"><scope>RAM</scope><name>operator!=</name></member>
-      <member refid="class_r_a_m_1a7fc6466cc5c8038e5aed21650e146da9" prot="public" virt="non-virtual"><scope>RAM</scope><name>operator==</name></member>
-      <member refid="class_storage_1ab10853458f897082ba028cef2477005d" prot="public" virt="virtual" ambiguityscope="Storage::"><scope>RAM</scope><name>operator==</name></member>
-      <member refid="class_product_1a8b72d673cf7d89fb2e375a080af6263d" prot="public" virt="virtual" ambiguityscope="Product::"><scope>RAM</scope><name>operator==</name></member>
+      <member refid="class_r_a_m_1a96be3ca8c9f5f22fac889ab506c01580" prot="public" virt="non-virtual"><scope>RAM</scope><name>operator!=</name></member>
+      <member refid="class_storage_1a984a17c1466fcf769a44fcc8aa9abb3a" prot="public" virt="non-virtual" ambiguityscope="Storage::"><scope>RAM</scope><name>operator!=</name></member>
+      <member refid="class_product_1a8ee6823389aa0bc2255d02d3a1bb9b0f" prot="public" virt="virtual" ambiguityscope="Product::"><scope>RAM</scope><name>operator!=</name></member>
+      <member refid="class_r_a_m_1a70961c90671e81db85f1c8422a01ab73" prot="public" virt="non-virtual"><scope>RAM</scope><name>operator==</name></member>
+      <member refid="class_storage_1aded6acc644aaf0e55749d8e85aed2464" prot="public" virt="non-virtual" ambiguityscope="Storage::"><scope>RAM</scope><name>operator==</name></member>
+      <member refid="class_product_1aafbdeeeddc23cf08650f431d77edec1a" prot="public" virt="virtual" ambiguityscope="Product::"><scope>RAM</scope><name>operator==</name></member>
       <member refid="class_product_1ae3a90763e1d49c6bac9843767c20b91b" prot="protected" virt="non-virtual"><scope>RAM</scope><name>oType</name></member>
       <member refid="class_product_1abb2572df7a832a509944905603ba5e4f" prot="private" virt="non-virtual"><scope>RAM</scope><name>price</name></member>
       <member refid="class_r_a_m_1a1424aff28af127d0ae7b343c01c1df1d" prot="public" virt="virtual"><scope>RAM</scope><name>print</name></member>

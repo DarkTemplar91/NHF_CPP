@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['mbtype_446',['mbType',['../_motherboard_8h.html#adf354b92ab85f8ff2d68abc40d8573bd',1,'Motherboard.h']]],
-  ['memorytype_447',['MemoryType',['../_memory_8h.html#a462bfa9dfea81692463ecb192183dd01',1,'Memory.h']]]
+  ['mbtype_458',['mbType',['../_motherboard_8h.html#adf354b92ab85f8ff2d68abc40d8573bd',1,'Motherboard.h']]],
+  ['memorytype_459',['MemoryType',['../_memory_8h.html#a462bfa9dfea81692463ecb192183dd01',1,'Memory.h']]]
 ];

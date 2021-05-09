@@ -14,21 +14,29 @@
 /// Prebuilt pc class
 /// </summary>
 class PC :public Product {
-	GPU gpu; 
-	CPU cpu;
-	Motherboard board;
-	Product pcCase;
-	Product psu;
-	Storage* pcStorage;
-	RAM ramslots;	//The RAM sticks corresponding to the usual 4 slots
+	GPU gpu=GPU();
+	CPU cpu=CPU();
+	Motherboard board=Motherboard();
+	Product pcCase=Product();
+	Product psu=Product();
+	Storage* pcStorage{};
+	RAM ramslots=RAM();
 public:
 	PC();
 	PC(const PC& pc);
 	PC(GPU& gpu, CPU& cpu, Motherboard& mb, Product& pcCase, Product& psu, Storage* s, RAM& ram);
-	PC* clone();
-	void print();
+	PC* clone()const;
+	void print()const;
 	std::string serializeObj()const;
 	~PC();
+
+	GPU& getGPU();
+	CPU& getCPU();
+	Motherboard& getMB();
+	Product& getCase();
+	Product& getPSU();
+	Storage* getStorage();
+	RAM& getRAM();
 
 	void assignGPU(GPU&);
 	void assignCPU(CPU&);

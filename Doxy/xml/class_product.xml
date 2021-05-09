@@ -182,7 +182,7 @@
         <argsstring>() const</argsstring>
         <name>getName</name>
         <briefdescription>
-<para>MAnufacturer getter. </para>
+<para>Manufacturer getter. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -434,10 +434,10 @@
         </inbodydescription>
         <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.h" line="84" column="17" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.cpp" bodystart="45" bodyend="48"/>
       </memberdef>
-      <memberdef kind="function" id="class_product_1a8b72d673cf7d89fb2e375a080af6263d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="class_product_1aafbdeeeddc23cf08650f431d77edec1a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
         <definition>bool Product::operator==</definition>
-        <argsstring>(Product &amp;rhs)</argsstring>
+        <argsstring>(Product &amp;rhs) const</argsstring>
         <name>operator==</name>
         <param>
           <type><ref refid="class_product" kindref="compound">Product</ref> &amp;</type>
@@ -451,10 +451,10 @@
         </inbodydescription>
         <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.h" line="87" column="14" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/products.cpp" bodystart="112" bodyend="117"/>
       </memberdef>
-      <memberdef kind="function" id="class_product_1af83d5faec51f3cf9c45d68d103a04114" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="class_product_1a8ee6823389aa0bc2255d02d3a1bb9b0f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
         <definition>bool Product::operator!=</definition>
-        <argsstring>(Product &amp;rhs)</argsstring>
+        <argsstring>(Product &amp;rhs) const</argsstring>
         <name>operator!=</name>
         <param>
           <type><ref refid="class_product" kindref="compound">Product</ref> &amp;</type>
@@ -565,8 +565,8 @@
       <member refid="class_product_1a831f4ac197a88d2c2b7260765714c0d4" prot="private" virt="non-virtual"><scope>Product</scope><name>inv</name></member>
       <member refid="class_product_1af3d21858bb34986f54309b877678daa8" prot="private" virt="non-virtual"><scope>Product</scope><name>manufacturer</name></member>
       <member refid="class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8" prot="private" virt="non-virtual"><scope>Product</scope><name>name</name></member>
-      <member refid="class_product_1af83d5faec51f3cf9c45d68d103a04114" prot="public" virt="virtual"><scope>Product</scope><name>operator!=</name></member>
-      <member refid="class_product_1a8b72d673cf7d89fb2e375a080af6263d" prot="public" virt="virtual"><scope>Product</scope><name>operator==</name></member>
+      <member refid="class_product_1a8ee6823389aa0bc2255d02d3a1bb9b0f" prot="public" virt="virtual"><scope>Product</scope><name>operator!=</name></member>
+      <member refid="class_product_1aafbdeeeddc23cf08650f431d77edec1a" prot="public" virt="virtual"><scope>Product</scope><name>operator==</name></member>
       <member refid="class_product_1ae3a90763e1d49c6bac9843767c20b91b" prot="protected" virt="non-virtual"><scope>Product</scope><name>oType</name></member>
       <member refid="class_product_1abb2572df7a832a509944905603ba5e4f" prot="private" virt="non-virtual"><scope>Product</scope><name>price</name></member>
       <member refid="class_product_1a82a40e1860ffe2c88ea08084037a6c42" prot="public" virt="virtual"><scope>Product</scope><name>print</name></member>

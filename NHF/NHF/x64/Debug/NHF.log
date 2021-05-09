@@ -1,16 +1,10 @@
 ﻿  catalogue.cpp
   Computer.cpp
-C:\Users\szasz\Desktop\Egyetem\Prog2\HF\NHF\NHF\NHF\Computer.cpp(105,44): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   main.cpp
-C:\Users\szasz\Desktop\Egyetem\Prog2\HF\NHF\NHF\NHF\main.cpp(173,78): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
   Memory.cpp
-  memtrace.cpp
-C:\Users\szasz\Desktop\Egyetem\Prog2\HF\NHF\NHF\NHF\memtrace.cpp(399,57): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\szasz\Desktop\Egyetem\Prog2\HF\NHF\NHF\NHF\memtrace.cpp(400,39): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
   Motherboard.cpp
   processor.cpp
   products.cpp
   Videocard.cpp
   Generating Code...
-C:\Users\szasz\Desktop\Egyetem\Prog2\HF\NHF\NHF\NHF\catalogue.cpp(324): warning C4172: returning address of local variable or temporary: tmp
-  NHF.vcxproj -> C:\Users\szasz\Desktop\Egyetem\Prog2\HF\NHF\NHF\x64\Debug\NHF.exe
+C:\Users\szasz\Desktop\Egyetem\Prog2\HF\NHF\NHF\NHF\Videocard.cpp : fatal error C1090: PDB API call failed, error code '3': C:\Users\szasz\Desktop\Egyetem\Prog2\HF\NHF\NHF\NHF\x64\Debug\vc142.pdb

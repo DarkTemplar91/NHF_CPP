@@ -71,7 +71,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="32" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="17" bodyend="33"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="32" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="17" bodyend="43"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1aa1cd6a60d22d6bd5cb904c6550668e29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -108,7 +108,7 @@ Pointer to the product to compare with. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="40" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="187" bodyend="217"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="40" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="201" bodyend="231"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1ae8859b3893a47bb9707f7e5a9e2a4d79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -123,7 +123,7 @@ Pointer to the product to compare with. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="46" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="222" bodyend="229"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="46" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="236" bodyend="245"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1afb2d18cb7a33814c40a526fbb4988018" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -160,7 +160,7 @@ Path to save to </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="53" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="38" bodyend="86"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="53" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="48" bodyend="96"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1ad53dfc2b8ba76d4da007e74e1133a1dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -175,6 +175,7 @@ Path to save to </para>
 <para>Loads the catalogue from a file by creting objects from the data read and placing them into the catalogue </para>
         </briefdescription>
         <detaileddescription>
+<para>Loads the objects into the catalogue from file</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>path</parametername>
@@ -183,11 +184,20 @@ Path to save to </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-Path to the file to read from </para>
+Path to the file to read from</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="60" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="88" bodyend="179"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="60" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="101" bodyend="193"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1a36939b9a4416c0fef711440b5b17161d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_product" kindref="compound">Product</ref> **</type>
@@ -216,7 +226,7 @@ Array of <ref refid="class_product" kindref="compound">Product</ref> pointers wi
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="69" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="254" bodyend="285"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="69" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="270" bodyend="301"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1a15c28294d8e38ca67c105e4fa971835b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -273,7 +283,7 @@ Reverse order?</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="78" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="292" bodyend="305"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="78" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="308" bodyend="321"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1a68cc0da89a96d535a3ea7aeabc2ed944" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>size_t</type>
@@ -328,7 +338,7 @@ The n-th element of the catalogue</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="89" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="242" bodyend="246"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="89" column="9" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="258" bodyend="262"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1a406ca1384645f90d84076fa8b3f4b3f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -375,7 +385,7 @@ The n-th element of the catalogue</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="93" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="230" bodyend="235"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="93" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="246" bodyend="251"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1ab431cf38c861220bd7be72ecbc1cc77e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_catalogue_1_1_iterator" kindref="compound">Iterator</ref></type>
@@ -392,7 +402,7 @@ The n-th element of the catalogue</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="102" column="10" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="309" bodyend="311"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="102" column="10" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="325" bodyend="327"/>
       </memberdef>
       <memberdef kind="function" id="class_catalogue_1a35b500feb3bb24104ccf324088972370" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_catalogue_1_1_iterator" kindref="compound">Iterator</ref></type>
@@ -409,7 +419,7 @@ The n-th element of the catalogue</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="107" column="10" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="312" bodyend="314"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.h" line="107" column="10" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/catalogue.cpp" bodystart="328" bodyend="330"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

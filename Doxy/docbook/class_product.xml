@@ -38,7 +38,7 @@ Collaboration diagram for Product:<para>
 </listitem>
             <listitem><para>std::string <link linkend="_class_product_1a9cbd896ca6b2d95088be8ad8c3b11e3b">getName</link> () const</para>
 
-<para>MAnufacturer getter. </para>
+<para>Manufacturer getter. </para>
 </listitem>
             <listitem><para>std::string <link linkend="_class_product_1a874a2ad2556c8d82500cce9917d5ed8c">getDescription</link> () const</para>
 
@@ -94,9 +94,9 @@ Collaboration diagram for Product:<para>
 </listitem>
             <listitem><para>virtual <link linkend="_class_product">Product</link> * <link linkend="_class_product_1a2cc3f5ef8abe14801e185734cfcc3b57">clone</link> ()</para>
 </listitem>
-            <listitem><para>virtual bool <link linkend="_class_product_1a8b72d673cf7d89fb2e375a080af6263d">operator==</link> (<link linkend="_class_product">Product</link> &amp;rhs)</para>
+            <listitem><para>virtual bool <link linkend="_class_product_1aafbdeeeddc23cf08650f431d77edec1a">operator==</link> (<link linkend="_class_product">Product</link> &amp;rhs) const</para>
 </listitem>
-            <listitem><para>virtual bool <link linkend="_class_product_1af83d5faec51f3cf9c45d68d103a04114">operator!=</link> (<link linkend="_class_product">Product</link> &amp;rhs)</para>
+            <listitem><para>virtual bool <link linkend="_class_product_1a8ee6823389aa0bc2255d02d3a1bb9b0f">operator!=</link> (<link linkend="_class_product">Product</link> &amp;rhs) const</para>
 
 <para>Virtual Overloaded == operator for comparison (used when adding to catalogue) </para>
 </listitem>
@@ -215,7 +215,7 @@ Reimplemented in <link linkend="_class_g_p_u_1a13535142ba8cacba30f23f6bf8ed5200"
 <indexterm><primary>Product</primary><secondary>getName</secondary></indexterm>
 <para><computeroutput>std::string Product::getName ( ) const</computeroutput></para><para>
 
-<para>MAnufacturer getter. </para>
+<para>Manufacturer getter. </para>
 </para>
     </section><anchor xml:id="_class_product_1a0dc7c2163bf9c07e6283c2cbcaef58d3"/>    <section>
     <title>getObj_t()</title>
@@ -252,19 +252,19 @@ Reimplemented in <link linkend="_class_g_p_u_1a13535142ba8cacba30f23f6bf8ed5200"
 </para>
 
 <para>Increases the stock by i </para>
-    </section><anchor xml:id="_class_product_1af83d5faec51f3cf9c45d68d103a04114"/>    <section>
+    </section><anchor xml:id="_class_product_1a8ee6823389aa0bc2255d02d3a1bb9b0f"/>    <section>
     <title>operator!=()</title>
 <indexterm><primary>operator!=</primary><secondary>Product</secondary></indexterm>
 <indexterm><primary>Product</primary><secondary>operator!=</secondary></indexterm>
-<para><computeroutput>bool Product::operator!= (<link linkend="_class_product">Product</link> &amp; rhs)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+<para><computeroutput>bool Product::operator!= (<link linkend="_class_product">Product</link> &amp; rhs) const<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
 
 <para>Virtual Overloaded == operator for comparison (used when adding to catalogue) </para>
 </para>
-    </section><anchor xml:id="_class_product_1a8b72d673cf7d89fb2e375a080af6263d"/>    <section>
+    </section><anchor xml:id="_class_product_1aafbdeeeddc23cf08650f431d77edec1a"/>    <section>
     <title>operator==()</title>
 <indexterm><primary>operator==</primary><secondary>Product</secondary></indexterm>
 <indexterm><primary>Product</primary><secondary>operator==</secondary></indexterm>
-<para><computeroutput>bool Product::operator== (<link linkend="_class_product">Product</link> &amp; rhs)<computeroutput>[virtual]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_product_1a82a40e1860ffe2c88ea08084037a6c42"/>    <section>
+<para><computeroutput>bool Product::operator== (<link linkend="_class_product">Product</link> &amp; rhs) const<computeroutput>[virtual]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_product_1a82a40e1860ffe2c88ea08084037a6c42"/>    <section>
     <title>print()</title>
 <indexterm><primary>print</primary><secondary>Product</secondary></indexterm>
 <indexterm><primary>Product</primary><secondary>print</secondary></indexterm>

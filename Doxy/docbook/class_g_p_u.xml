@@ -3,6 +3,11 @@
 <title>GPU Class Reference</title>
 <indexterm><primary>GPU</primary></indexterm>
 <para>
+
+<para>Class for representing <link linkend="_class_g_p_u">GPU</link> </para>
+ 
+</para>
+<para>
 <computeroutput>#include &lt;Videocard.h&gt;</computeroutput>
 </para>
 Inheritance diagram for GPU:<para>
@@ -48,6 +53,10 @@ Collaboration diagram for GPU:<para>
 </listitem>
             <listitem><para>unsigned int <link linkend="_class_g_p_u_1a5806130e7c25709689917fcff437949a">getTDP</link> ()</para>
 </listitem>
+            <listitem><para>bool <link linkend="_class_g_p_u_1a39c6e1c580fcd0d2ea9f7a05a8f84c40">operator==</link> (<link linkend="_class_g_p_u">GPU</link> &amp;rhs) const</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_g_p_u_1aab94bf32694b3c3e94c62226a5d51587">operator!=</link> (<link linkend="_class_g_p_u">GPU</link> &amp;rhs) const</para>
+</listitem>
             <listitem><para>std::string <link linkend="_class_g_p_u_1a9c68f0e1fb0b97fc7c5e91a7bf881c7b">serializeObj</link> () const</para>
 
 <para>Serializes object. </para>
@@ -86,6 +95,13 @@ Collaboration diagram for GPU:<para>
 <simplesect>
     <title>Additional Inherited Members    </title>
 </simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Class for representing <link linkend="_class_g_p_u">GPU</link> </para>
+
+
+</section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
 <anchor xml:id="_class_g_p_u_1a2ca7973e32f63ba3472166a007419a75"/>    <section>
@@ -142,7 +158,15 @@ Reimplemented from <link linkend="_class_product_1a2cc3f5ef8abe14801e185734cfcc3
     <title>getVRAM()</title>
 <indexterm><primary>getVRAM</primary><secondary>GPU</secondary></indexterm>
 <indexterm><primary>GPU</primary><secondary>getVRAM</secondary></indexterm>
-<para><computeroutput>unsigned int GPU::getVRAM ( )</computeroutput></para>    </section><anchor xml:id="_class_g_p_u_1a9c68f0e1fb0b97fc7c5e91a7bf881c7b"/>    <section>
+<para><computeroutput>unsigned int GPU::getVRAM ( )</computeroutput></para>    </section><anchor xml:id="_class_g_p_u_1aab94bf32694b3c3e94c62226a5d51587"/>    <section>
+    <title>operator!=()</title>
+<indexterm><primary>operator!=</primary><secondary>GPU</secondary></indexterm>
+<indexterm><primary>GPU</primary><secondary>operator!=</secondary></indexterm>
+<para><computeroutput>bool GPU::operator!= (<link linkend="_class_g_p_u">GPU</link> &amp; rhs) const</computeroutput></para>    </section><anchor xml:id="_class_g_p_u_1a39c6e1c580fcd0d2ea9f7a05a8f84c40"/>    <section>
+    <title>operator==()</title>
+<indexterm><primary>operator==</primary><secondary>GPU</secondary></indexterm>
+<indexterm><primary>GPU</primary><secondary>operator==</secondary></indexterm>
+<para><computeroutput>bool GPU::operator== (<link linkend="_class_g_p_u">GPU</link> &amp; rhs) const</computeroutput></para>    </section><anchor xml:id="_class_g_p_u_1a9c68f0e1fb0b97fc7c5e91a7bf881c7b"/>    <section>
     <title>serializeObj()</title>
 <indexterm><primary>serializeObj</primary><secondary>GPU</secondary></indexterm>
 <indexterm><primary>GPU</primary><secondary>serializeObj</secondary></indexterm>

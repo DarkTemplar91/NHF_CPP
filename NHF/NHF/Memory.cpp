@@ -17,22 +17,22 @@ size_t Storage::getCapacity()const { return capacity; }
 ByteUnit Storage::getSizeType()const { return notation; }
 std::string Storage::getNotation()const {
 	switch (notation) {
-	case 0:
+	case ByteUnit::bit:
 		return "bit";
 		break;
-	case 1:
+	case ByteUnit::byte:
 		return "byte";
 		break;
-	case 2:
+	case ByteUnit::kilobyte:
 		return "KB";
 		break;
-	case 3:
+	case ByteUnit::megabyte:
 		return "MB";
 		break;
-	case 4:
+	case ByteUnit::gigabyte:
 		return "GB";
 		break;
-	case 5:
+	case ByteUnit::terabyte:
 		return "TB";
 		break;
 	default: return "NaN";
@@ -40,12 +40,12 @@ std::string Storage::getNotation()const {
 	}
 }
 
-bool Storage::operator==(Storage& rhs) {
+bool Storage::operator==(Storage& rhs)const {
 	if (Product::operator==(rhs) && capacity == rhs.capacity)
 		return true;
 	return false;
 }
-bool Storage::operator!=(Storage& rhs) {
+bool Storage::operator!=(Storage& rhs)const {
 	return !(Storage::operator==(rhs));
 }
 
@@ -62,18 +62,18 @@ RAM::RAM(std::string name, double price, std::string descript, std::string manuf
 RAM::RAM(const RAM& r) : Storage(r), type(r.type), clockSpeed(r.clockSpeed), cl(r.cl), v(r.v) { oType = obj_t::RAM; }
 //End of RAM constructors
 
-MemoryType RAM::getMemType() { return type; }
-int RAM::getClockSpeed() { return clockSpeed; }
-int RAM::getlatency() { return cl; }
-double RAM::getVoltage() { return v; }
-bool RAM::operator==(RAM& rhs) {
+MemoryType RAM::getMemType()const { return type; }
+int RAM::getClockSpeed()const { return clockSpeed; }
+int RAM::getlatency()const { return cl; }
+double RAM::getVoltage()const { return v; }
+bool RAM::operator==(RAM& rhs) const{
 	if (Storage::operator==(rhs) &&
 		rhs.cl == cl && rhs.clockSpeed == clockSpeed &&
 		rhs.type == type && rhs.v == v)
 		return true;
 	return false;
 }
-bool RAM::operator!=(RAM& rhs) {
+bool RAM::operator!=(RAM& rhs)const {
 	return !(RAM::operator==(rhs));
 }
 //
@@ -93,15 +93,15 @@ SSD::SSD(std::string name, double price, std::string dscrpt, std::string manufac
 	oType = obj_t::SSD;
 }
 
-unsigned int SSD::getReadSpeed() { return rSpeed; }
-unsigned int SSD::getWriteSpeed() { return wSpeed; }
-bool SSD::operator==(SSD& rhs) {
+unsigned int SSD::getReadSpeed()const { return rSpeed; }
+unsigned int SSD::getWriteSpeed()const { return wSpeed; }
+bool SSD::operator==(SSD& rhs)const {
 	if (Storage::operator==(rhs) &&
 		rhs.rSpeed == rSpeed && rhs.wSpeed == wSpeed)
 		return true;
 	return false;
 }
-bool SSD::operator!=(SSD& rhs) {
+bool SSD::operator!=(SSD& rhs)const {
 	return!(SSD::operator==(rhs));
 }
 //
@@ -115,21 +115,25 @@ HDD::HDD(std::string name, double price, std::string dscrpt, std::string manufac
 	Storage(name, price, dscrpt, manufacturer, c, bu), rpm(rpm) {
 	oType = obj_t::HDD;
 }
-unsigned int HDD::getRPM() { return rpm; }
+unsigned int HDD::getRPM()const { return rpm; }
 HDD::HDD(const HDD& h) : Storage(h) {
 	this->rpm = h.rpm;
 	oType = obj_t::HDD;
 }
-bool HDD::operator==(HDD& rhs) {
+bool HDD::operator==(HDD& rhs)const {
 	if (Storage::operator==(rhs) &&
 		rhs.rpm == rpm)
 		return true;
 	return false;
 }
-bool HDD::operator!=(HDD& rhs) {
+bool HDD::operator!=(HDD& rhs)const {
 	return !(HDD::operator==(rhs));
 }
 
+std::ostream& operator<<(std::ostream& os, const ByteUnit& s) {
+	os << static_cast<int>(s);
+	return os;
+}
 std::string Storage::serializeObj()const {
 	std::ostringstream sStream;
 	sStream << this->Product::serializeObj();
@@ -157,6 +161,10 @@ std::ifstream& operator>>(std::ifstream& savefile, Storage& rhs) {
 	return savefile;
 }
 
+std::ostream& operator<<(std::ostream& os, const MemoryType& s) {
+	os << static_cast<int>(s);
+	return os;
+}
 std::string RAM::serializeObj() const{
 	std::ostringstream sStream;
 	sStream << this->Storage::serializeObj();
@@ -237,36 +245,36 @@ std::ifstream& operator>>(std::ifstream& savefile, HDD& rhs) {
 }
 
 
-RAM* RAM::clone() {
+RAM* RAM::clone()const {
 	RAM* newram = new RAM(*this);
 	return newram;
 }
-Storage* Storage::clone() {
+Storage* Storage::clone()const {
 	Storage* s = new Storage(*this);
 	return s;
 }
-SSD* SSD::clone() {
+SSD* SSD::clone()const {
 	SSD* s = new SSD(*this);
 	return s;
 }
-HDD* HDD::clone() {
+HDD* HDD::clone()const {
 	HDD* h = new HDD(*this);
 	return h;
 }
 
-void Storage::print() {
+void Storage::print()const {
 	std::cout << "Storage:"<<std::endl;
 	std::cout << this->serializeObj();
 }
-void HDD::print() {
+void HDD::print()const {
 	std::cout << "HDD:"<<std::endl;
 	std::cout << this->serializeObj();
 }
-void SSD::print() {
+void SSD::print()const {
 	std::cout << "SSD:"<<std::endl;
 	std::cout << this->serializeObj();
 }
-void RAM::print() {
+void RAM::print()const {
 	std::cout << "RAM:" << std::endl;
 	std::cout << this->serializeObj();
 }

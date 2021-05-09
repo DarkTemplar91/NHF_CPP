@@ -170,7 +170,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="41" column="15" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="40" bodyend="72" declfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" declline="41" declcolumn="15"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="42" column="15" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="40" bodyend="72" declfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" declline="42" declcolumn="15"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -210,15 +210,16 @@
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_motherboard_1a1534ea6d3be715dd09b964d78a0f91cf" kindref="member">getSata</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_motherboard_1a1bdb19d8e2fc3fdc9b9669fbc688a015" kindref="member">getPCIE</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_motherboard_1a5cd6459fe3e4823aeeb5d2b255d68aef" kindref="member">serializeObj</ref>()</highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_motherboard" kindref="compound">Motherboard</ref>*<sp/><ref refid="class_motherboard_1af3ad07ad9398abe1bdd0315ec9acb7e3" kindref="member">clone</ref>();</highlight></codeline>
-<codeline lineno="39"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal">std::ifstream&amp;<sp/><ref refid="_motherboard_8h_1a7e4e869735d54ddf02e5165d0fc8a6a3" kindref="member">operator&gt;&gt;</ref>(std::ifstream&amp;<sp/>savefile,<sp/><ref refid="class_motherboard" kindref="compound">Motherboard</ref>&amp;<sp/>rhs);</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_motherboard_1af470ee03ed1320ae14fa586d0d69db6c" kindref="member">operator==</ref>(<ref refid="class_motherboard" kindref="compound">Motherboard</ref>&amp;<sp/>mb)</highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_motherboard_1ab565c529a843b5d869a5a0c11a2e54fb" kindref="member">operator!=</ref>(<ref refid="class_motherboard" kindref="compound">Motherboard</ref>&amp;<sp/>mb)</highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_motherboard_1a5cd6459fe3e4823aeeb5d2b255d68aef" kindref="member">serializeObj</ref>()</highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_motherboard" kindref="compound">Motherboard</ref>*<sp/><ref refid="class_motherboard_1af3ad07ad9398abe1bdd0315ec9acb7e3" kindref="member">clone</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">std::ifstream&amp;<sp/><ref refid="_motherboard_8h_1a7e4e869735d54ddf02e5165d0fc8a6a3" kindref="member">operator&gt;&gt;</ref>(std::ifstream&amp;<sp/>savefile,<sp/><ref refid="class_motherboard" kindref="compound">Motherboard</ref>&amp;<sp/>rhs);</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!MOTHERBOARD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!MOTHERBOARD_H</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h"/>
   </compounddef>

@@ -6,6 +6,7 @@
 #include "Computer.h"
 #include "catalogue.h"
 #include <fstream>
+#include <algorithm>
 #include "gtest_lite.h"
 #include "memtrace.h" 
 
@@ -74,15 +75,11 @@ int main() {
 		std::remove("savefile.txt");
 
 	}END
-
-	RAM r1, r2;
-	Motherboard m1,m2;
-	GPU g1,g2;
 	//Tests multiple inheritance and file I/O funcs
 		TEST(CLASSES, cons) {
-		r1 = RAM("HyperX Fury 2x8GB", 100, "HyperX RAM", "Kingston", 16, ByteUnit::gigabyte, MemoryType::DDR4, 3200, 14, 1.2);
-		m1 = Motherboard("MSI B550 Tomahawk", 120,"MSI","B550 motherboard from MSI","B550",socket::AMD_AM4,64, 4000, 6, 4, 3);
-		g1 = GPU("EVGA RTX2060 KO", 300, "EVGA", "Gaming GPU", 1, 1, 2400, 7000, 6, 300);
+		RAM r1 = RAM("HyperX Fury 2x8GB", 100, "HyperX RAM", "Kingston", 16, ByteUnit::gigabyte, MemoryType::DDR4, 3200, 14, 1.2);
+		Motherboard m1 = Motherboard("MSI B550 Tomahawk", 120,"MSI","B550 motherboard from MSI","B550",socket::AMD_AM4,64, 4000, 6, 4, 3);
+		GPU g1 = GPU("EVGA RTX2060 KO", 300, "EVGA", "Gaming GPU", 1, 1, 2400, 7000, 6, 300);
 		std::ofstream savefile;
 		std::ifstream inp;
 		savefile << r1;
@@ -107,13 +104,15 @@ int main() {
 
 	TEST(CATALOGUE_H, create) {
 		Catalogue c = Catalogue();
+		RAM r1 = RAM("HyperX Fury 2x8GB", 100, "HyperX RAM", "Kingston", 16, ByteUnit::gigabyte, MemoryType::DDR4, 3200, 14, 1.2);
+		GPU g1 = GPU("EVGA RTX2060 KO", 300, "EVGA", "Gaming GPU", 1, 1, 2400, 7000, 6, 300);
 		c.Add(r1.clone());
-		c.Add(r2.clone());
-		c.Add(g2.clone());
-		EXPECT_ANY_THROW(c[5]) <<"Hibát várt!";
-		EXPECT_EQ(c.getSize(), (size_t)3);
-		c.Remove(g2.clone());
+		c.Add(g1.clone());
+		EXPECT_ANY_THROW(c.Add(g1.clone()));
+		EXPECT_THROW(c[5], std::out_of_range) <<"Hibát várt!";
 		EXPECT_EQ(c.getSize(), (size_t)2);
+		c.Remove(g1.clone());
+		EXPECT_EQ(c.getSize(), (size_t)1);
 		
 	}END
 	
@@ -168,13 +167,14 @@ int main() {
 		cLoad[2]->print();
 
 	}END
+	//Saving complex object PC and reading it in.
 	TEST(PC, ) {
 		GPU g = GPU("RTX 3090", 1500, "EVGA", "Gaming GPU", 1, 2, 3000, 8000, 24, 400);
-		CPU c = CPU("Ryzen 9 5900x",600,"AMD","cpu","Zen 3", 200, socket::AMD_AM4, 4.2, 16, 32, 4, false);
+		CPU c = CPU("Ryzen 9 5900x",600,"AMD","cpu","Zen 3", 200, socket::AMD_AM4, 4200, 16, 32, 4, false);
 		Product case1 = Product("Generic pc case", 60, "Generic manuf");
 		Product psu = Product("1200W PSU", 300, "manuf");
 		SSD* s=new SSD("Samsung 970 EVO", 300, "", "Samsung",2,ByteUnit::terabyte);
-		RAM r = RAM("HyperX 16 GB 3200 Mhz",200,"Kingston","RAM",16,ByteUnit::gigabyte,DDR4,3200,14,1.3);
+		RAM r = RAM("HyperX 16 GB 3200 Mhz",200,"Kingston","RAM",16,ByteUnit::gigabyte,MemoryType::DDR4,3200,14,1.3);
 		Motherboard mb = Motherboard("MSI B550 Tomahawk", 120, "MSI", "mb", "B550", socket::AMD_AM4, 64, 4200);
 		PC pc = PC(g,c,mb,case1,psu,s,r);
 		std::ofstream of;
@@ -186,7 +186,43 @@ int main() {
 		std::ifstream is;
 		is.open("pc.txt");
 		is >> p2;
-		std::cout << "";
+		EXPECT_TRUE(pc.getGPU() == p2.getGPU());
+		EXPECT_TRUE(*pc.getStorage() == *pc.getStorage());
 
 	}END
+	//Testing the sorting functionality
+	TEST(CATALOGUE_H, sort) {
+		Catalogue cSort = Catalogue();
+		cSort.Add(new Product("p1", 500, "-"));
+		cSort.Add(new Product("p1", 1, "-"));
+		cSort.Add(new Product("p1", 1200, "-"));
+		cSort.Add(new Product("p1", 58, "-"));
+		cSort.Add(new Product("p1", 94, "-"));
+		cSort.OrderBy(OrderReq::Price, true);
+		bool sorted = true;
+		for (size_t i=0; i < cSort.getSize()-1; i++) {
+			if (cSort[i]->getPrice() < cSort[i + 1]->getPrice())
+			{
+				sorted = false;
+				break;
+			}
+		}
+		EXPECT_TRUE(sorted);
+		cSort.Clear();
+		cSort.Add(new Product("úhpőabdc", 0, "-"));
+		cSort.Add(new Product("abc", 0, "-"));
+		cSort.Add(new Product("zsd", 0, "-"));
+		cSort.Add(new Product("dsgsd", 0, "-"));
+		cSort.Add(new Product("fhewrwef", 0, "-"));
+		cSort.OrderBy(OrderReq::Name, false);
+		for (size_t i = 0; i < cSort.getSize() - 1; i++) {
+			if (cSort[i]->getName() > cSort[i + 1]->getName())
+			{
+				sorted = false;
+				break;
+			}
+		}
+		EXPECT_TRUE(sorted);
+	}END
+	
 }

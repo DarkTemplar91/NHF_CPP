@@ -22,7 +22,7 @@ PC::PC(GPU& gpu, CPU& cpu, Motherboard& mb, Product& pcCase, Product& psu, Stora
 	this->setName(ss.str());
 	this->increaseStock(1);
 }
-PC* PC::clone() {
+PC* PC::clone()const {
 	PC* newpc = new PC(*this);
 	return newpc;
 }
@@ -36,7 +36,7 @@ std::string PC::serializeObj()const {
 	ss << "\n}\n";
 	return ss.str();
 }
-void PC::print() {
+void PC::print()const {
 	std::cout << serializeObj();
 }
 PC::~PC() {
@@ -67,6 +67,14 @@ void PC::assignStorage(Storage* s) {
 	delete s;
 }
 
+GPU& PC::getGPU() { return gpu; }
+CPU& PC::getCPU() { return cpu; };
+Motherboard& PC::getMB() { return board; }
+Product& PC::getCase() { return pcCase; }
+Product& PC::getPSU() { return psu; }
+RAM& PC::getRAM() { return ramslots; }
+Storage* PC::getStorage() { return pcStorage; }
+
 std::ifstream& operator>>(std::ifstream& fs, PC& rhs) {
 	GPU g; CPU c; Motherboard mb; RAM r; Product p; Product case1;
 	Product base;
@@ -80,6 +88,7 @@ std::ifstream& operator>>(std::ifstream& fs, PC& rhs) {
 	std::string str;
 	std::getline(fs,str , '\n');
 	fs >> t;
+	//t determines if the storage type is SSD or HDD. It correspondes to the enum value
 	if (t == 4) {
 		SSD* s = new SSD();
 		fs >> *s;
@@ -102,7 +111,7 @@ std::ifstream& operator>>(std::ifstream& fs, PC& rhs) {
 	rhs.setDescription(base.getDescription());
 	rhs.setManuf(base.getManufacturer());
 	rhs.setName(base.getName());
-	int delta=base.getAmount()-rhs.getAmount();
+	int delta=(int)base.getAmount()-(int)rhs.getAmount();
 	delta < 0 ? rhs.decreaseStock(delta) : rhs.increaseStock(delta);
 	return fs;
 }

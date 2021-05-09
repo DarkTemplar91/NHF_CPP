@@ -5,7 +5,9 @@ Here are the classes, structs, unions and interfaces with brief descriptions:<li
 <para>Segédsablon típuskonverzió futás közbeni ellenőrzésere </para>
 <link linkend="_class_catalogue">Catalogue</link>
 <para><link linkend="_class_catalogue">Catalogue</link> class An instance of <link linkend="_class_catalogue">Catalogue</link> stores and manages severak Products The Products are stored in a dynamically allocated array using a <link linkend="_class_product">Product</link> pointer array </para>
-<link linkend="_class_c_p_u">CPU</link><link linkend="_class_g_p_u">GPU</link><link linkend="_class_h_d_d">HDD</link>
+<link linkend="_class_c_p_u">CPU</link><link linkend="_class_g_p_u">GPU</link>
+<para>Class for representing <link linkend="_class_g_p_u">GPU</link> </para>
+<link linkend="_class_h_d_d">HDD</link>
 <para>Class for modelling Hard Drive Disks. Inheriting from <link linkend="_class_storage">Storage</link> </para>
 <link linkend="_class_catalogue_1_1_iterator">Catalogue::Iterator</link><link linkend="_class_motherboard">Motherboard</link><link linkend="_classgtest__lite_1_1ostream_redir">gtest_lite::ostreamRedir</link><link linkend="_class_p_c">PC</link>
 <para>Prebuilt pc class </para>

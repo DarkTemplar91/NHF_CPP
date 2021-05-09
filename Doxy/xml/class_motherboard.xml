@@ -326,6 +326,40 @@
         </inbodydescription>
         <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="34" column="5" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="29" bodyend="29"/>
       </memberdef>
+      <memberdef kind="function" id="class_motherboard_1af470ee03ed1320ae14fa586d0d69db6c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Motherboard::operator==</definition>
+        <argsstring>(Motherboard &amp;mb) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="class_motherboard" kindref="compound">Motherboard</ref> &amp;</type>
+          <declname>mb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="36" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="79" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motherboard_1ab565c529a843b5d869a5a0c11a2e54fb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Motherboard::operator!=</definition>
+        <argsstring>(Motherboard &amp;mb) const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type><ref refid="class_motherboard" kindref="compound">Motherboard</ref> &amp;</type>
+          <declname>mb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="37" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="86" bodyend="88"/>
+      </memberdef>
       <memberdef kind="function" id="class_motherboard_1a5cd6459fe3e4823aeeb5d2b255d68aef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>std::string</type>
         <definition>std::string Motherboard::serializeObj</definition>
@@ -339,7 +373,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="37" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="32" bodyend="38"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="38" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="32" bodyend="38"/>
       </memberdef>
       <memberdef kind="function" id="class_motherboard_1af3ad07ad9398abe1bdd0315ec9acb7e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_motherboard" kindref="compound">Motherboard</ref> *</type>
@@ -353,7 +387,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="38" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="74" bodyend="77"/>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="39" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.cpp" bodystart="74" bodyend="77"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -384,7 +418,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="14" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="14" bodyend="39"/>
+    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" line="14" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/Motherboard.h" bodystart="14" bodyend="40"/>
     <listofallmembers>
       <member refid="class_motherboard_1a289ecf61f1bd15373e9dade0598b1eec" prot="private" virt="non-virtual"><scope>Motherboard</scope><name>chipset</name></member>
       <member refid="class_motherboard_1af3ad07ad9398abe1bdd0315ec9acb7e3" prot="public" virt="virtual"><scope>Motherboard</scope><name>clone</name></member>
@@ -413,8 +447,10 @@
       <member refid="class_motherboard_1a73378524673636ce81453b7c19f9cdb3" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>Motherboard</name></member>
       <member refid="class_motherboard_1a751a0f579be28f20e94828d576e76edd" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>Motherboard</name></member>
       <member refid="class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8" prot="private" virt="non-virtual"><scope>Motherboard</scope><name>name</name></member>
-      <member refid="class_product_1af83d5faec51f3cf9c45d68d103a04114" prot="public" virt="virtual"><scope>Motherboard</scope><name>operator!=</name></member>
-      <member refid="class_product_1a8b72d673cf7d89fb2e375a080af6263d" prot="public" virt="virtual"><scope>Motherboard</scope><name>operator==</name></member>
+      <member refid="class_motherboard_1ab565c529a843b5d869a5a0c11a2e54fb" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>operator!=</name></member>
+      <member refid="class_product_1a8ee6823389aa0bc2255d02d3a1bb9b0f" prot="public" virt="virtual" ambiguityscope="Product::"><scope>Motherboard</scope><name>operator!=</name></member>
+      <member refid="class_motherboard_1af470ee03ed1320ae14fa586d0d69db6c" prot="public" virt="non-virtual"><scope>Motherboard</scope><name>operator==</name></member>
+      <member refid="class_product_1aafbdeeeddc23cf08650f431d77edec1a" prot="public" virt="virtual" ambiguityscope="Product::"><scope>Motherboard</scope><name>operator==</name></member>
       <member refid="class_product_1ae3a90763e1d49c6bac9843767c20b91b" prot="protected" virt="non-virtual"><scope>Motherboard</scope><name>oType</name></member>
       <member refid="class_motherboard_1a3b141240779b25dec7618b96938a3fba" prot="private" virt="non-virtual"><scope>Motherboard</scope><name>pcie</name></member>
       <member refid="class_product_1abb2572df7a832a509944905603ba5e4f" prot="private" virt="non-virtual"><scope>Motherboard</scope><name>price</name></member>

@@ -6,13 +6,17 @@
 #include "products.h"
 #include "memtrace.h"
 
+
+/// <summary>
+/// Class for representing GPU
+/// </summary>
 class GPU : public Product {
-	unsigned int portHDMI;			///Number of HDMI ports on GPU
-	unsigned int portDisplay;		///Number of Display ports on GPU
-	unsigned int gpuClock;			///GPU Clock in Mhz
-	unsigned int memoryClock;		///Memory Clock in Mhz
-	unsigned int vram;				///VRAM in GB
-	unsigned int tdp;				///total power drawn
+	unsigned int portHDMI=0;		///Number of HDMI ports on GPU
+	unsigned int portDisplay=0;		///Number of Display ports on GPU
+	unsigned int gpuClock=0;		///GPU Clock in Mhz
+	unsigned int memoryClock=0;		///Memory Clock in Mhz
+	unsigned int vram=0;			///VRAM in GB
+	unsigned int tdp=0;				///total power drawn
 public:
 	GPU() {}
 	GPU(unsigned int portHDMI, unsigned int portDisplay,
@@ -21,16 +25,17 @@ public:
 		unsigned int gpuClock, unsigned int memoryClock, unsigned int vram, unsigned int tdp);
 	GPU(const GPU& g);
 
-	unsigned int getHDMIports();
-	unsigned int getDisplayports();
-	unsigned int getGPUclock();
-	unsigned int getMemClock();
-	unsigned int getVRAM();
-	unsigned int getTDP();
+	unsigned int getHDMIports()const;
+	unsigned int getDisplayports()const;
+	unsigned int getGPUclock()const;
+	unsigned int getMemClock()const;
+	unsigned int getVRAM()const;
+	unsigned int getTDP()const;
 
-
+	bool operator==(GPU& rhs)const;
+	bool operator!=(GPU& rhs)const;
 	std::string serializeObj()const;
-	GPU* clone();
+	GPU* clone()const;
 
 };
 std::ifstream& operator>>(std::ifstream& savefile, GPU& rhs);

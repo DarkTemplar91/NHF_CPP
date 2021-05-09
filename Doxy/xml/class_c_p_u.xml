@@ -418,6 +418,40 @@
         </inbodydescription>
         <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="41" column="13" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp" bodystart="8" bodyend="14"/>
       </memberdef>
+      <memberdef kind="function" id="class_c_p_u_1a9118f119822e1bcef98ba7bb0ab2b8a1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CPU::operator==</definition>
+        <argsstring>(CPU &amp;rhs) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="class_c_p_u" kindref="compound">CPU</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="42" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp" bodystart="117" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_p_u_1a4fdd9268f87165e4dc921e87b09d0060" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CPU::operator!=</definition>
+        <argsstring>(CPU &amp;rhs) const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type><ref refid="class_c_p_u" kindref="compound">CPU</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="43" column="6" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.cpp" bodystart="124" bodyend="126"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
@@ -447,7 +481,7 @@
         <link refid="class_product"/>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="13" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" bodystart="13" bodyend="44"/>
+    <location file="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" line="13" column="1" bodyfile="C:/Users/szasz/Desktop/Egyetem/Prog2/HF/NHF/NHF/NHF/processor.h" bodystart="13" bodyend="46"/>
     <listofallmembers>
       <member refid="class_c_p_u_1a5b9fd4e0c27dcff1bcb33fbca6da2a6c" prot="private" virt="non-virtual"><scope>CPU</scope><name>baseClock</name></member>
       <member refid="class_c_p_u_1ab4f1ec2a356344187dc6598404012df9" prot="public" virt="virtual"><scope>CPU</scope><name>clone</name></member>
@@ -476,13 +510,15 @@
       <member refid="class_c_p_u_1a6d5058f1c0d00256a861dff8ba9b38fe" prot="public" virt="non-virtual"><scope>CPU</scope><name>getThreadCount</name></member>
       <member refid="class_product_1ae216152e43f64a82294c2c583396d13f" prot="public" virt="non-virtual"><scope>CPU</scope><name>increaseStock</name></member>
       <member refid="class_product_1a831f4ac197a88d2c2b7260765714c0d4" prot="private" virt="non-virtual"><scope>CPU</scope><name>inv</name></member>
-      <member refid="class_c_p_u_1a3de211accd8ac7dc87cfecb446c4ebf9" prot="private" virt="non-virtual"><scope>CPU</scope><name>iVGA</name></member>
       <member refid="class_c_p_u_1aa025e57bb42da447da66c8bc8e5d5de2" prot="public" virt="non-virtual"><scope>CPU</scope><name>ivga</name></member>
+      <member refid="class_c_p_u_1a3de211accd8ac7dc87cfecb446c4ebf9" prot="private" virt="non-virtual"><scope>CPU</scope><name>iVGA</name></member>
       <member refid="class_c_p_u_1a4ad29b59532a1c456a1aec62437aa5cd" prot="private" virt="non-virtual"><scope>CPU</scope><name>L2_cache</name></member>
       <member refid="class_product_1af3d21858bb34986f54309b877678daa8" prot="private" virt="non-virtual"><scope>CPU</scope><name>manufacturer</name></member>
       <member refid="class_product_1a6f88e6ff8cb26b1cce49a41e72e4fcb8" prot="private" virt="non-virtual"><scope>CPU</scope><name>name</name></member>
-      <member refid="class_product_1af83d5faec51f3cf9c45d68d103a04114" prot="public" virt="virtual"><scope>CPU</scope><name>operator!=</name></member>
-      <member refid="class_product_1a8b72d673cf7d89fb2e375a080af6263d" prot="public" virt="virtual"><scope>CPU</scope><name>operator==</name></member>
+      <member refid="class_c_p_u_1a4fdd9268f87165e4dc921e87b09d0060" prot="public" virt="non-virtual"><scope>CPU</scope><name>operator!=</name></member>
+      <member refid="class_product_1a8ee6823389aa0bc2255d02d3a1bb9b0f" prot="public" virt="virtual" ambiguityscope="Product::"><scope>CPU</scope><name>operator!=</name></member>
+      <member refid="class_c_p_u_1a9118f119822e1bcef98ba7bb0ab2b8a1" prot="public" virt="non-virtual"><scope>CPU</scope><name>operator==</name></member>
+      <member refid="class_product_1aafbdeeeddc23cf08650f431d77edec1a" prot="public" virt="virtual" ambiguityscope="Product::"><scope>CPU</scope><name>operator==</name></member>
       <member refid="class_product_1ae3a90763e1d49c6bac9843767c20b91b" prot="protected" virt="non-virtual"><scope>CPU</scope><name>oType</name></member>
       <member refid="class_product_1abb2572df7a832a509944905603ba5e4f" prot="private" virt="non-virtual"><scope>CPU</scope><name>price</name></member>
       <member refid="class_c_p_u_1aa2af36b3447c4e7b4e1f25f699a06824" prot="public" virt="virtual"><scope>CPU</scope><name>print</name></member>

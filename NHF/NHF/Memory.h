@@ -9,14 +9,14 @@
 /// <summary>
 /// Enumerator for multiples of byte
 /// </summary>
-enum ByteUnit{bit, byte, kilobyte, megabyte, gigabyte, terabyte};
+enum class ByteUnit{bit, byte, kilobyte, megabyte, gigabyte, terabyte};
 
 /// <summary>
 /// Base class for data storage/memory
 /// </summary>
 class Storage : public Product {
-	size_t capacity;		///Capacity of storage
-	ByteUnit notation;		///Unit of capacity
+	size_t capacity=0;						///Capacity of storage
+	ByteUnit notation=ByteUnit::gigabyte;	///Unit of capacity
 public:
 	Storage(const Storage& m);
 	Storage(size_t c = 1, ByteUnit bu = ByteUnit::gigabyte);
@@ -26,11 +26,11 @@ public:
 	std::string getNotation()const;		///Return notation in string
 	std::string serializeObj()const;	///Serializes object
 
-	void print();
+	void print()const;
 
-	virtual bool operator==(Storage& rhs);
-	virtual bool operator!=(Storage& rhs);
-	virtual Storage* clone();
+	bool operator==(Storage& rhs)const;
+	bool operator!=(Storage& rhs)const;
+	virtual Storage* clone()const;
 	
 
 };
@@ -38,16 +38,16 @@ public:
 /// <summary>
 /// Enumerator for RAM types
 /// </summary>
-enum MemoryType{DDR,DDR2,DDR3,DDR4,DDR5,SO_DIMM,SO_DIMM2};
+enum class MemoryType{DDR,DDR2,DDR3,DDR4,DDR5,SO_DIMM,SO_DIMM2};
 /// <summary>
 /// Class for modelling Random Access Memory
 /// Inheriting from storage
 /// </summary>
 class RAM : public Storage {
-	MemoryType type;		///Memory type
-	int clockSpeed;			///Clockspeed of RAM in Mhz
-	int cl;					///Cas Latency
-	double v;				///Voltage;
+	MemoryType type=MemoryType::DDR4;		///Memory type
+	int clockSpeed=0;							///Clockspeed of RAM in Mhz
+	int cl=0;									///Cas Latency
+	double v=0;								///Voltage;
 public:
 	RAM() {}
 	RAM(const RAM& r);
@@ -55,40 +55,40 @@ public:
 	RAM(size_t c, ByteUnit bu, MemoryType type, int clockSpeed, int cl, double v);
 	RAM(std::string name, double price, std::string descript, std::string manuf, size_t c, ByteUnit bu, MemoryType type, int clockSpeed, int cl, double v);
 	
-	MemoryType getMemType();		///Returns memory type
-	int getClockSpeed();			///Returns clockspeed of RAM
-	int getlatency();				///Returns latency
-	double getVoltage();			///Returns stock voltage
+	MemoryType getMemType()const;		///Returns memory type
+	int getClockSpeed()const;			///Returns clockspeed of RAM
+	int getlatency()const;				///Returns latency
+	double getVoltage()const;			///Returns stock voltage
 	
 	std::string serializeObj()const;
 	
-	RAM* clone();
-	void print();
+	RAM* clone()const;
+	void print()const;
 
-	bool operator!=(RAM& rhs);
-	bool operator==(RAM& rhs);
+	bool operator!=(RAM& rhs)const;
+	bool operator==(RAM& rhs)const;
 };
 /// <summary>
 /// Class for modelling Hard Drive Disks.
 /// Inheriting from Storage
 /// </summary>
 class HDD :public Storage {
-	unsigned int rpm;		///Round per minute
+	unsigned int rpm=0;		///Round per minute
 public:
 	HDD() {}
 	HDD(unsigned int rpm);
-	HDD(std::string name, double price, std::string dscrpt, std::string manufacturer, size_t c = 1, ByteUnit bu = gigabyte,
+	HDD(std::string name, double price, std::string dscrpt, std::string manufacturer, size_t c = 1, ByteUnit bu = ByteUnit::gigabyte,
 		unsigned int rpm = 7200);
 	HDD(const HDD& hdd);
 
-	unsigned int getRPM();		///Returns RPM of HDD
+	unsigned int getRPM()const;		///Returns RPM of HDD
 
-	void print();
+	void print()const;
 
 	std::string serializeObj()const;
-	HDD* clone();
-	bool operator==(HDD& rhs);
-	bool operator!=(HDD& rhs);
+	HDD* clone()const;
+	bool operator==(HDD& rhs)const;
+	bool operator!=(HDD& rhs)const;
 
 };
 /// <summary>
@@ -96,24 +96,24 @@ public:
 /// Inheriting directly from Storage class
 /// </summary>
 class SSD : public Storage {
-	unsigned int wSpeed;	///Write speed (MB/s)
-	unsigned int rSpeed;	///Read speed (MB/s)
+	unsigned int wSpeed=0;	///Write speed (MB/s)
+	unsigned int rSpeed=0;	///Read speed (MB/s)
 public:
 	SSD() {}
 	SSD(unsigned int wSpeed, unsigned int rSpeed);
 	SSD(std::string name, double price, std::string dscrpt, std::string manufacturer, size_t c = 1,
-		ByteUnit bu = gigabyte, unsigned int wSpeed = 0, unsigned int rSpeed = 0);
+		ByteUnit bu = ByteUnit::gigabyte, unsigned int wSpeed = 0, unsigned int rSpeed = 0);
 	SSD(const SSD& ssd);
 
-	unsigned int getReadSpeed();	///Returns Read speed
-	unsigned int getWriteSpeed();	///Returns write speed
+	unsigned int getReadSpeed()const;	///Returns Read speed
+	unsigned int getWriteSpeed()const;	///Returns write speed
 
-	void print();
+	void print()const;
 
 	std::string serializeObj()const;
-	SSD* clone();
-	bool operator==(SSD& rhs);
-	bool operator!=(SSD& rhs);
+	SSD* clone()const;
+	bool operator==(SSD& rhs)const;
+	bool operator!=(SSD& rhs)const;
 };
 
 std::ifstream& operator>>(std::ifstream& savefile, Storage& rhs);

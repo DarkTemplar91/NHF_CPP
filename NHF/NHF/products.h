@@ -42,13 +42,13 @@ inline std::ofstream& operator<<(std::ofstream& savefile, T& rhs) {
 
 
 class Product {
-	std::string name;			///Name of the product
-	double price;				///Price of the product
-	std::string dscrpt;		    ///Description
-	std::string manufacturer;   ///The manufacturer
-	size_t inv;					///The amount of Product in stock
+	std::string name="";			///Name of the product
+	double price=0;					///Price of the product
+	std::string dscrpt="";		    ///Description
+	std::string manufacturer="";	///The manufacturer
+	size_t inv=0;					///The amount of Product in stock
 protected:
-	obj_t oType;					///The type of the object. Used when reading/writing from/to file.
+	obj_t oType=obj_t::Product;		///The type of the object. Used when reading/writing from/to file.
 public:
 	/// <summary>
 	/// Multiple constructors with different parameters
@@ -57,7 +57,7 @@ public:
 	Product(std::string name, double price, std::string manuf, std::string descript = "There is no description for this item!", size_t inventory=1);
 	Product();
 
-	std::string getManufacturer() const;	///MAnufacturer getter
+	std::string getManufacturer() const;	///Manufacturer getter
 	std::string getName() const;			///Name getter
 	std::string getDescription() const;		///Description getter
 	double getPrice() const;				///Price getter
@@ -77,15 +77,15 @@ public:
 	void decreaseStock(size_t i=1);
 	
 	///Prints out basic data of a product to the output stream
-	virtual void print();
+	virtual void print()const;
 	/// Serializes object
 	virtual std::string serializeObj()const;
 	
-	virtual Product* clone();
+	virtual Product* clone()const;
 
 
-	virtual bool operator==(Product& rhs);		///Virtual Overloaded == operator for comparison (used when adding to catalogue)
-	virtual bool operator!=(Product& rhs);		///Virtual Overloaded != operator (used when adding to catalogue)
+	virtual bool operator==(Product& rhs)const;		///Virtual Overloaded == operator for comparison (used when adding to catalogue)
+	virtual bool operator!=(Product& rhs)const;		///Virtual Overloaded != operator (used when adding to catalogue)
 	
 	/// Virtal destructor
 	virtual ~Product() {}

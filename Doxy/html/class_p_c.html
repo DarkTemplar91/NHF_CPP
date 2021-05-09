@@ -79,7 +79,7 @@ Inheritance diagram for PC:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_p_c__inherit__graph.png" border="0" usemap="#a_p_c_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_p_c_inherit__map" id="a_p_c_inherit__map">
-<area shape="rect" title="Prebuilt pc class" alt="" coords="10,512,135,868"/>
+<area shape="rect" title="Prebuilt pc class" alt="" coords="10,512,135,971"/>
 <area shape="rect" href="class_product.html" title=" " alt="" coords="5,5,140,464"/>
 </map>
 </div>
@@ -88,13 +88,13 @@ Collaboration diagram for PC:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_p_c__coll__graph.png" border="0" usemap="#a_p_c_coll__map" alt="Collaboration graph"/></div>
 <map name="a_p_c_coll__map" id="a_p_c_coll__map">
-<area shape="rect" title="Prebuilt pc class" alt="" coords="260,1589,386,1857"/>
-<area shape="rect" href="class_product.html" title=" " alt="" coords="282,5,417,464"/>
-<area shape="rect" href="class_storage.html" title="Base class for data storage/memory" alt="" coords="222,513,336,752"/>
-<area shape="rect" href="class_c_p_u.html" title=" " alt="" coords="306,776,441,1176"/>
-<area shape="rect" href="class_g_p_u.html" title=" " alt="" coords="448,820,580,1132"/>
-<area shape="rect" href="class_motherboard.html" title=" " alt="" coords="567,1200,682,1527"/>
-<area shape="rect" href="class_r_a_m.html" title="Class for modelling Random Access Memory Inheriting from storage" alt="" coords="258,1207,388,1519"/>
+<area shape="rect" title="Prebuilt pc class" alt="" coords="256,1648,381,2019"/>
+<area shape="rect" href="class_product.html" title=" " alt="" coords="278,5,413,464"/>
+<area shape="rect" href="class_storage.html" title="Base class for data storage/memory" alt="" coords="217,513,332,752"/>
+<area shape="rect" href="class_c_p_u.html" title=" " alt="" coords="302,776,437,1205"/>
+<area shape="rect" href="class_g_p_u.html" title="Class for representing GPU" alt="" coords="443,820,575,1161"/>
+<area shape="rect" href="class_motherboard.html" title=" " alt="" coords="563,1229,677,1585"/>
+<area shape="rect" href="class_r_a_m.html" title="Class for modelling Random Access Memory Inheriting from storage" alt="" coords="253,1251,384,1563"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -116,6 +116,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a35db2210308424b6c94515036a11235b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a115da8404d548672d21556278fbcf3d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_c.html#a115da8404d548672d21556278fbcf3d9">~PC</a> ()</td></tr>
 <tr class="separator:a115da8404d548672d21556278fbcf3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41c99108434e93d45e0e8c0703d50594"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_p_u.html">GPU</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_c.html#a41c99108434e93d45e0e8c0703d50594">getGPU</a> ()</td></tr>
+<tr class="separator:a41c99108434e93d45e0e8c0703d50594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f5c77d6115ec4564296fc1e73dba807"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_p_u.html">CPU</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_c.html#a2f5c77d6115ec4564296fc1e73dba807">getCPU</a> ()</td></tr>
+<tr class="separator:a2f5c77d6115ec4564296fc1e73dba807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7627615a84bb2ceb14385fb14ad4f046"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_motherboard.html">Motherboard</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_c.html#a7627615a84bb2ceb14385fb14ad4f046">getMB</a> ()</td></tr>
+<tr class="separator:a7627615a84bb2ceb14385fb14ad4f046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb410f8e45b710394461dbdc5f29b644"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_product.html">Product</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_c.html#acb410f8e45b710394461dbdc5f29b644">getCase</a> ()</td></tr>
+<tr class="separator:acb410f8e45b710394461dbdc5f29b644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea2dd5107a26ebe7b450191128a28d62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_product.html">Product</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_c.html#aea2dd5107a26ebe7b450191128a28d62">getPSU</a> ()</td></tr>
+<tr class="separator:aea2dd5107a26ebe7b450191128a28d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab460e00243a61bc7581a239182d71c39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_storage.html">Storage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_c.html#ab460e00243a61bc7581a239182d71c39">getStorage</a> ()</td></tr>
+<tr class="separator:ab460e00243a61bc7581a239182d71c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15cfe0aed257ad7e3c394ec1908837e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_r_a_m.html">RAM</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_c.html#a15cfe0aed257ad7e3c394ec1908837e0">getRAM</a> ()</td></tr>
+<tr class="separator:a15cfe0aed257ad7e3c394ec1908837e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec5fd7f3198f2f3a59145ad8d2cf6567"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_c.html#aec5fd7f3198f2f3a59145ad8d2cf6567">assignGPU</a> (<a class="el" href="class_g_p_u.html">GPU</a> &amp;)</td></tr>
 <tr class="separator:aec5fd7f3198f2f3a59145ad8d2cf6567"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba2f7995dd3f5896a9c3214f6b420d57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_c.html#aba2f7995dd3f5896a9c3214f6b420d57">assignCPU</a> (<a class="el" href="class_c_p_u.html">CPU</a> &amp;)</td></tr>
@@ -141,7 +155,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2f5aeb9d25fcbbcf0f6125351850d4ff inherit pub_methods_class_product"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_product.html#a2f5aeb9d25fcbbcf0f6125351850d4ff">getManufacturer</a> () const</td></tr>
 <tr class="separator:a2f5aeb9d25fcbbcf0f6125351850d4ff inherit pub_methods_class_product"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cbd896ca6b2d95088be8ad8c3b11e3b inherit pub_methods_class_product"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_product.html#a9cbd896ca6b2d95088be8ad8c3b11e3b">getName</a> () const</td></tr>
-<tr class="memdesc:a9cbd896ca6b2d95088be8ad8c3b11e3b inherit pub_methods_class_product"><td class="mdescLeft">&#160;</td><td class="mdescRight">MAnufacturer getter.  <a href="class_product.html#a9cbd896ca6b2d95088be8ad8c3b11e3b">More...</a><br /></td></tr>
+<tr class="memdesc:a9cbd896ca6b2d95088be8ad8c3b11e3b inherit pub_methods_class_product"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manufacturer getter.  <a href="class_product.html#a9cbd896ca6b2d95088be8ad8c3b11e3b">More...</a><br /></td></tr>
 <tr class="separator:a9cbd896ca6b2d95088be8ad8c3b11e3b inherit pub_methods_class_product"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a874a2ad2556c8d82500cce9917d5ed8c inherit pub_methods_class_product"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_product.html#a874a2ad2556c8d82500cce9917d5ed8c">getDescription</a> () const</td></tr>
 <tr class="memdesc:a874a2ad2556c8d82500cce9917d5ed8c inherit pub_methods_class_product"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name getter.  <a href="class_product.html#a874a2ad2556c8d82500cce9917d5ed8c">More...</a><br /></td></tr>
@@ -176,11 +190,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a948738c4cb8e65f1f54623001b8c3897 inherit pub_methods_class_product"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_product.html#a948738c4cb8e65f1f54623001b8c3897">decreaseStock</a> (size_t i=1)</td></tr>
 <tr class="memdesc:a948738c4cb8e65f1f54623001b8c3897 inherit pub_methods_class_product"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decreases the stock by i.  <a href="class_product.html#a948738c4cb8e65f1f54623001b8c3897">More...</a><br /></td></tr>
 <tr class="separator:a948738c4cb8e65f1f54623001b8c3897 inherit pub_methods_class_product"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b72d673cf7d89fb2e375a080af6263d inherit pub_methods_class_product"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_product.html#a8b72d673cf7d89fb2e375a080af6263d">operator==</a> (<a class="el" href="class_product.html">Product</a> &amp;rhs)</td></tr>
-<tr class="separator:a8b72d673cf7d89fb2e375a080af6263d inherit pub_methods_class_product"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af83d5faec51f3cf9c45d68d103a04114 inherit pub_methods_class_product"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_product.html#af83d5faec51f3cf9c45d68d103a04114">operator!=</a> (<a class="el" href="class_product.html">Product</a> &amp;rhs)</td></tr>
-<tr class="memdesc:af83d5faec51f3cf9c45d68d103a04114 inherit pub_methods_class_product"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual Overloaded == operator for comparison (used when adding to catalogue)  <a href="class_product.html#af83d5faec51f3cf9c45d68d103a04114">More...</a><br /></td></tr>
-<tr class="separator:af83d5faec51f3cf9c45d68d103a04114 inherit pub_methods_class_product"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafbdeeeddc23cf08650f431d77edec1a inherit pub_methods_class_product"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_product.html#aafbdeeeddc23cf08650f431d77edec1a">operator==</a> (<a class="el" href="class_product.html">Product</a> &amp;rhs) const</td></tr>
+<tr class="separator:aafbdeeeddc23cf08650f431d77edec1a inherit pub_methods_class_product"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ee6823389aa0bc2255d02d3a1bb9b0f inherit pub_methods_class_product"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_product.html#a8ee6823389aa0bc2255d02d3a1bb9b0f">operator!=</a> (<a class="el" href="class_product.html">Product</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a8ee6823389aa0bc2255d02d3a1bb9b0f inherit pub_methods_class_product"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual Overloaded == operator for comparison (used when adding to catalogue)  <a href="class_product.html#a8ee6823389aa0bc2255d02d3a1bb9b0f">More...</a><br /></td></tr>
+<tr class="separator:a8ee6823389aa0bc2255d02d3a1bb9b0f inherit pub_methods_class_product"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18f26095e25405579968c6ede367484f inherit pub_methods_class_product"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_product.html#a18f26095e25405579968c6ede367484f">~Product</a> ()</td></tr>
 <tr class="memdesc:a18f26095e25405579968c6ede367484f inherit pub_methods_class_product"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual Overloaded != operator (used when adding to catalogue)  <a href="class_product.html#a18f26095e25405579968c6ede367484f">More...</a><br /></td></tr>
 <tr class="separator:a18f26095e25405579968c6ede367484f inherit pub_methods_class_product"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -473,6 +487,125 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="class_product.html#a2cc3f5ef8abe14801e185734cfcc3b57">Product</a>.</p>
+
+</div>
+</div>
+<a id="acb410f8e45b710394461dbdc5f29b644"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb410f8e45b710394461dbdc5f29b644">&#9670;&nbsp;</a></span>getCase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_product.html">Product</a> &amp; PC::getCase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f5c77d6115ec4564296fc1e73dba807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f5c77d6115ec4564296fc1e73dba807">&#9670;&nbsp;</a></span>getCPU()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_p_u.html">CPU</a> &amp; PC::getCPU </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a41c99108434e93d45e0e8c0703d50594"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41c99108434e93d45e0e8c0703d50594">&#9670;&nbsp;</a></span>getGPU()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_p_u.html">GPU</a> &amp; PC::getGPU </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7627615a84bb2ceb14385fb14ad4f046"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7627615a84bb2ceb14385fb14ad4f046">&#9670;&nbsp;</a></span>getMB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_motherboard.html">Motherboard</a> &amp; PC::getMB </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea2dd5107a26ebe7b450191128a28d62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea2dd5107a26ebe7b450191128a28d62">&#9670;&nbsp;</a></span>getPSU()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_product.html">Product</a> &amp; PC::getPSU </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15cfe0aed257ad7e3c394ec1908837e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15cfe0aed257ad7e3c394ec1908837e0">&#9670;&nbsp;</a></span>getRAM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_r_a_m.html">RAM</a> &amp; PC::getRAM </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab460e00243a61bc7581a239182d71c39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab460e00243a61bc7581a239182d71c39">&#9670;&nbsp;</a></span>getStorage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_storage.html">Storage</a> * PC::getStorage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

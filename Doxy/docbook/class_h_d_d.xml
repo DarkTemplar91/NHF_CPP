@@ -53,9 +53,9 @@ Collaboration diagram for HDD:<para>
 </listitem>
             <listitem><para><link linkend="_class_h_d_d">HDD</link> * <link linkend="_class_h_d_d_1a434ff76ba146d2e143f2c6803ca73a67">clone</link> ()</para>
 </listitem>
-            <listitem><para>bool <link linkend="_class_h_d_d_1aa669d46ab7c741e4980226375670f253">operator==</link> (<link linkend="_class_h_d_d">HDD</link> &amp;rhs)</para>
+            <listitem><para>bool <link linkend="_class_h_d_d_1a141c43f704cac14c45ad5639beeda55f">operator==</link> (<link linkend="_class_h_d_d">HDD</link> &amp;rhs) const</para>
 </listitem>
-            <listitem><para>bool <link linkend="_class_h_d_d_1abfa07a249865bcf5e8973fe86e14bb9f">operator!=</link> (<link linkend="_class_h_d_d">HDD</link> &amp;rhs)</para>
+            <listitem><para>bool <link linkend="_class_h_d_d_1a2b4889e38aef393aa6fcd83e3ae1b910">operator!=</link> (<link linkend="_class_h_d_d">HDD</link> &amp;rhs) const</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -115,15 +115,15 @@ Reimplemented from <link linkend="_class_storage_1af7f626e3a0bc9d46c59ef7dd8f57c
     <title>getRPM()</title>
 <indexterm><primary>getRPM</primary><secondary>HDD</secondary></indexterm>
 <indexterm><primary>HDD</primary><secondary>getRPM</secondary></indexterm>
-<para><computeroutput>unsigned int HDD::getRPM ( )</computeroutput></para>    </section><anchor xml:id="_class_h_d_d_1abfa07a249865bcf5e8973fe86e14bb9f"/>    <section>
+<para><computeroutput>unsigned int HDD::getRPM ( )</computeroutput></para>    </section><anchor xml:id="_class_h_d_d_1a2b4889e38aef393aa6fcd83e3ae1b910"/>    <section>
     <title>operator!=()</title>
 <indexterm><primary>operator!=</primary><secondary>HDD</secondary></indexterm>
 <indexterm><primary>HDD</primary><secondary>operator!=</secondary></indexterm>
-<para><computeroutput>bool HDD::operator!= (<link linkend="_class_h_d_d">HDD</link> &amp; rhs)</computeroutput></para>    </section><anchor xml:id="_class_h_d_d_1aa669d46ab7c741e4980226375670f253"/>    <section>
+<para><computeroutput>bool HDD::operator!= (<link linkend="_class_h_d_d">HDD</link> &amp; rhs) const</computeroutput></para>    </section><anchor xml:id="_class_h_d_d_1a141c43f704cac14c45ad5639beeda55f"/>    <section>
     <title>operator==()</title>
 <indexterm><primary>operator==</primary><secondary>HDD</secondary></indexterm>
 <indexterm><primary>HDD</primary><secondary>operator==</secondary></indexterm>
-<para><computeroutput>bool HDD::operator== (<link linkend="_class_h_d_d">HDD</link> &amp; rhs)</computeroutput></para>    </section><anchor xml:id="_class_h_d_d_1ab80de8626bc38aa1d3398121b159717e"/>    <section>
+<para><computeroutput>bool HDD::operator== (<link linkend="_class_h_d_d">HDD</link> &amp; rhs) const</computeroutput></para>    </section><anchor xml:id="_class_h_d_d_1ab80de8626bc38aa1d3398121b159717e"/>    <section>
     <title>print()</title>
 <indexterm><primary>print</primary><secondary>HDD</secondary></indexterm>
 <indexterm><primary>HDD</primary><secondary>print</secondary></indexterm>

@@ -2,29 +2,29 @@
 PRODUCT_OBJ
 {
 
-name:Pre-built PC: RTX 3090, Ryzen 9 5900x, 16 GB RAM;price:3080;description:There is no description for this item!;manufacturer:;inventory:1;
-	name:RTX 3090;price:1500;description:Gaming GPU;manufacturer:EVGA;inventory:1;
+name:Pre-built PC: RTX 3090, Ryzen 9 5900x, 16 GB RAM;price:3080;manufacturer:;description:There is no description for this item!;inventory:1;
+	name:RTX 3090;price:1500;manufacturer:EVGA;description:Gaming GPU;inventory:1;
 	GPU_SPECIF
 	{
 	hdmi:1;display:2;gpuClock:3000;memoryClock:8000;vram:24;tdp:400;
 	}
 
-	name:Ryzen 9 5900x;price:600;description:cpu;manufacturer:AMD;inventory:1;
+	name:Ryzen 9 5900x;price:600;manufacturer:AMD;description:cpu;inventory:1;
 	CPU_SPECIF
 	{
-		GenName:Zen 3;tdp:200;SocketType:0;base:4;core:16;threads:32;cache:4;ivga:0;
+		GenName:Zen 3;tdp:200;SocketType:0;base:4200;core:16;threads:32;cache:4;ivga:0;
 	}
 
-	name:MSI B550 Tomahawk;price:120;description:mb;manufacturer:MSI;inventory:1;
+	name:MSI B550 Tomahawk;price:120;manufacturer:MSI;description:mb;inventory:1;
 	MB_SPECIF
 	{
 	chipset:B550;socket:0;maxRam:64;maxFreq:4200;usb:2;sata:1;pcie:1;
 	}
 
-name:Generic pc case;price:60;description:There is no description for this item!;manufacturer:Generic manuf;inventory:1;
-name:1200W PSU;price:300;description:There is no description for this item!;manufacturer:manuf;inventory:1;
+name:Generic pc case;price:60;manufacturer:Generic manuf;description:There is no description for this item!;inventory:1;
+name:1200W PSU;price:300;manufacturer:manuf;description:There is no description for this item!;inventory:1;
 4
-SSD_OBJname:Samsung 970 EVO;price:300;description:;manufacturer:Samsung;inventory:1;
+SSD_OBJname:Samsung 970 EVO;price:300;manufacturer:Samsung;description:;inventory:1;
 	Storage_SPECIF
 	{
 		Capacity:2;notation:5;
@@ -35,7 +35,7 @@ SSD_OBJname:Samsung 970 EVO;price:300;description:;manufacturer:Samsung;inventor
 		wSpeed:0;rSpeed:0;
 	}
 
-name:HyperX 16 GB 3200 Mhz;price:200;description:Kingston;manufacturer:RAM;inventory:1;
+name:HyperX 16 GB 3200 Mhz;price:200;manufacturer:RAM;description:Kingston;inventory:1;
 	Storage_SPECIF
 	{
 		Capacity:16;notation:4;
